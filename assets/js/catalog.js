@@ -56,6 +56,7 @@ window.CATALOG = (function () {
     },
     /* ----- สินค้าที่กำลังจะเปิดขายบนเว็บ (โชว์เป็น "เร็ว ๆ นี้") ----- */
     { id: "wynn-tools", category: "tools", glyph: "🧰", live: false,
+      image: "assets/img/products/wynn-tools.svg",
       name_th: "เครื่องมือช่าง WYNNTOOLS", name_en: "WYNNTOOLS hand tools",
       tagline_th: "ของแท้ นำเข้าโดยตรง — เราคือผู้นำเข้าแต่เพียงผู้เดียวในไทย",
       tagline_en: "Genuine, imported direct — exclusive importer in Thailand" },
