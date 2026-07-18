@@ -54,16 +54,11 @@ window.CATALOG = (function () {
         },
       ],
     },
-    /* ----- สินค้าที่กำลังจะเปิดขาย (โชว์เป็น "เร็ว ๆ นี้") ----- */
-    { id: "plug-switch", category: "electrical", glyph: "🔌", live: false,
-      name_th: "ชุดปลั๊ก-สวิตช์", name_en: "Plug & switch set",
-      tagline_th: "มาตรฐาน มอก. ทนทาน ติดตั้งง่าย", tagline_en: "TIS-certified, durable, easy fit" },
-    { id: "led-bulb", category: "lighting", glyph: "💡", live: false,
-      name_th: "หลอด LED ประหยัดไฟ", name_en: "LED bulbs",
-      tagline_th: "สว่างจริง อายุใช้งานยาว", tagline_en: "Bright, long-lasting" },
-    { id: "tool-kit", category: "tools", glyph: "🧰", live: false,
-      name_th: "ชุดเครื่องมือช่าง", name_en: "Tool kit",
-      tagline_th: "ครบชุด ใช้งานได้จริง", tagline_en: "Complete, job-ready" },
+    /* ----- สินค้าที่กำลังจะเปิดขายบนเว็บ (โชว์เป็น "เร็ว ๆ นี้") ----- */
+    { id: "wynn-tools", category: "tools", glyph: "🧰", live: false,
+      name_th: "เครื่องมือช่าง WYNNTOOLS", name_en: "WYNNTOOLS hand tools",
+      tagline_th: "ของแท้ นำเข้าโดยตรง — เราคือผู้นำเข้าแต่เพียงผู้เดียวในไทย",
+      tagline_en: "Genuine, imported direct — exclusive importer in Thailand" },
   ];
 
   /* ---------- หมวดหมู่ (ใช้บนหน้าแรก + หน้ารวมสินค้า) ---------- */
@@ -71,21 +66,12 @@ window.CATALOG = (function () {
     { key: "lighter", icon: '<path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/>', th: "ไฟฟู่ / ไฟแช็ก", en: "Jet lighters",
       dth: "ไฟแช็กหัวฟู่ กันลม เติมแก๊สได้ ปลีก-ส่ง", den: "Windproof refillable jet lighters",
       url: "products/jet-lighter.html", live: true, accent: "amber" },
-    { key: "electrical", icon: '<rect x="4" y="4" width="16" height="6" rx="1"/><path d="M8 10v10M16 10v10M4 20h16"/>', th: "อุปกรณ์ไฟฟ้า", en: "Electrical",
-      dth: "ปลั๊ก สวิตช์ สายไฟ เบรกเกอร์ มาตรฐาน มอก.", den: "Plugs, switches, wire, breakers",
+    { key: "tools", icon: '<path d="m14 7 3 3M5 17l-2 4 4-2 11-11a2.1 2.1 0 0 0-3-3z"/>', th: "เครื่องมือช่าง WYNNTOOLS", en: "WYNNTOOLS hand tools",
+      dth: "ของแท้ นำเข้าแต่เพียงผู้เดียวในไทย — เร็ว ๆ นี้บนเว็บ", den: "Genuine, exclusive Thai importer — online soon",
       url: "products/index.html", live: false, accent: "blue" },
-    { key: "lighting", icon: '<path d="M15 7h5v5M20 7 9 18l-4-4"/><circle cx="6" cy="18" r="2"/>', th: "หลอด &amp; โคมไฟ", en: "Bulbs &amp; lighting",
-      dth: "หลอด LED โคมไฟ ดาวน์ไลท์ ประหยัดไฟ", den: "LED bulbs, downlights, fixtures",
+    { key: "hardware", icon: '<circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/>', th: "ฮาร์ดแวร์ &amp; อื่น ๆ", en: "Hardware &amp; more",
+      dth: "หน้าร้านสำเพ็งมีอีกเพียบ — ทักถามได้เลย", den: "Much more in-store at Sampheng — just ask",
       url: "products/index.html", live: false, accent: "amber" },
-    { key: "tools", icon: '<path d="m14 7 3 3M5 17l-2 4 4-2 11-11a2.1 2.1 0 0 0-3-3z"/>', th: "เครื่องมือช่าง", en: "Hand tools",
-      dth: "ไขควง คีม ค้อน สว่าน เครื่องมือครบชุด", den: "Screwdrivers, pliers, drills",
-      url: "products/index.html", live: false, accent: "blue" },
-    { key: "fasteners", icon: '<circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/>', th: "น็อต สกรู ฮาร์ดแวร์", en: "Fasteners",
-      dth: "น็อต สกรู พุก บานพับ อะไหล่จิปาถะ", den: "Nuts, screws, anchors, hinges",
-      url: "products/index.html", live: false, accent: "amber" },
-    { key: "home", icon: '<path d="M3 7h18v13H3zM3 7l3-4h12l3 4M9 12h6"/>', th: "ของใช้ในบ้าน", en: "Home supplies",
-      dth: "อุปกรณ์ประปา ของใช้เบ็ดเตล็ดในบ้าน", den: "Plumbing & household items",
-      url: "products/index.html", live: false, accent: "blue" },
   ];
 
   /* ---------- helpers ---------- */

@@ -27,7 +27,7 @@
   font-size:.9rem;font-weight:600;color:var(--ink-2);font-family:inherit;transition:.15s}
 .fchip:hover{border-color:var(--amber)}
 .fchip.on{background:var(--navy);color:var(--amber);border-color:var(--navy)}
-.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,300px));justify-content:center;gap:18px;margin-top:8px}
 .prod{overflow:hidden;display:flex;flex-direction:column}
 .prod .thumb{aspect-ratio:4/3;display:grid;place-items:center;position:relative;background:radial-gradient(120% 120% at 50% 0%,var(--surface-2),var(--bg-soft))}
 .prod .thumb .glyph{font-size:3.4rem;filter:drop-shadow(0 8px 14px rgba(16,26,48,.18))}

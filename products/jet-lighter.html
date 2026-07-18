@@ -55,6 +55,10 @@
 .hero-flag b{color:var(--amber);font-family:"Chakra Petch"}
 /* ---------- colors: 2 คอลัมน์ รูปจริงคู่กับตัวเลือกสี ---------- */
 .colors-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:34px;align-items:center}
+/* ---------- pricing: หัวข้อคู่รูปเทียบขนาด ---------- */
+.sizes-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;margin-bottom:8px}
+.sizes-photo{width:100%;height:auto;max-width:430px;justify-self:end;border-radius:var(--radius);
+  border:1px solid var(--line);box-shadow:var(--shadow);display:block}
 .colors-photo{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);
   box-shadow:var(--shadow);display:block;background:#fff}
 .whole-side{display:grid;gap:14px;align-content:start}
@@ -137,6 +141,8 @@
   .stage{order:-1}
   .colors-grid{grid-template-columns:1fr;gap:20px}
   .colors-grid .colors-photo{order:-1}
+  .sizes-grid{grid-template-columns:1fr;gap:18px}
+  .sizes-photo{max-width:100%;justify-self:stretch}
   .feat-grid{grid-template-columns:repeat(2,1fr)}
   .price-grid{grid-template-columns:1fr}
   .whole .wrap{grid-template-columns:1fr}
@@ -216,9 +222,15 @@
 <!-- ===== PRICING ===== -->
 <section id="pricing" style="padding-top:10px">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow" data-th="เลือกแพ็กเกจ" data-en="Choose a pack">เลือกแพ็กเกจ</span>
-      <h2 data-th="ราคาปลีก &amp; ราคาส่ง" data-en="Retail &amp; wholesale">ราคาปลีก &amp; ราคาส่ง</h2>
+    <div class="sizes-grid">
+      <div>
+        <div class="sec-head">
+          <span class="eyebrow" data-th="เลือกแพ็กเกจ" data-en="Choose a pack">เลือกแพ็กเกจ</span>
+          <h2 data-th="ราคาปลีก &amp; ราคาส่ง" data-en="Retail &amp; wholesale">ราคาปลีก &amp; ราคาส่ง</h2>
+          <p data-th="มี 2 ขนาดให้เลือก — <b>รุ่นใหญ่</b> บอดี้สูง แก๊สเยอะ ใช้ทน · <b>รุ่นเล็ก</b> กะทัดรัด พกพาง่าย" data-en="Two sizes — <b>Large</b> holds more gas, lasts longer · <b>Compact</b> fits in your pocket">มี 2 ขนาดให้เลือก — <b>รุ่นใหญ่</b> บอดี้สูง แก๊สเยอะ ใช้ทน · <b>รุ่นเล็ก</b> กะทัดรัด พกพาง่าย</p>
+        </div>
+      </div>
+      <img class="sizes-photo" src="../assets/img/products/jet-lighter-sizes.webp" alt="เทียบขนาดไฟฟู่ รุ่นใหญ่กับรุ่นเล็ก" loading="lazy" width="1400" height="1050">
     </div>
     <div class="price-grid" id="priceGrid"></div>
   </div>
@@ -589,7 +601,7 @@ renderProduct();
     "@context":"https://schema.org","@type":"Product",
     "name":"ไฟฟู่ M.T.T. (M.T.T. Jet Lighter)",
     "description":"ไฟแช็กหัวฟู่ เปลวไฟเจ็ทแรงดันสูง เจอลมไม่ดับ เติมแก๊สบิวเทนใช้ซ้ำได้ 5 สี มาตรฐาน มอก. 879-2553",
-    "image":["https://www.mttaweephan.com/assets/img/products/jet-lighter.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-flame.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-colors.webp"],
+    "image":["https://www.mttaweephan.com/assets/img/products/jet-lighter.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-flame.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-colors.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-sizes.webp"],
     "brand":{"@type":"Brand","name":"M.T.T. (ม ทวีภัณฑ์)"},
     "offers":{"@type":"AggregateOffer","priceCurrency":"THB","lowPrice":box,"highPrice":r.max,"availability":"https://schema.org/InStock"}
   };
