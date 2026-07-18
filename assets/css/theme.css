@@ -47,10 +47,10 @@ html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100
 #site-header{display:block;min-height:64px}
 body{
   margin:0;background:var(--bg);color:var(--ink);
-  font-family:"IBM Plex Sans Thai",system-ui,-apple-system,sans-serif;
+  font-family:"Anuphan",system-ui,-apple-system,sans-serif;
   line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden;
 }
-h1,h2,h3,h4,.display{font-family:"Chakra Petch","IBM Plex Sans Thai",sans-serif;letter-spacing:.2px;line-height:1.18;margin:0}
+h1,h2,h3,h4,.display{font-family:"Kanit","Anuphan",sans-serif;letter-spacing:.2px;line-height:1.18;margin:0}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;height:auto;display:block} /* height:auto กัน attribute height ทำภาพยืด */
 button{font-family:inherit}
@@ -66,7 +66,7 @@ html.pending-lang [data-th]{visibility:hidden}
 .prod:hover .thumb img{transform:scale(1.05)}
 
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-.eyebrow{font-family:"Chakra Petch",sans-serif;font-size:.75rem;letter-spacing:.24em;
+.eyebrow{font-family:"Kanit",sans-serif;font-size:.75rem;letter-spacing:.24em;
   text-transform:uppercase;color:var(--amber-dark);font-weight:600}
 .muted{color:var(--ink-dim)}
 .center{text-align:center}
@@ -74,7 +74,7 @@ html.pending-lang [data-th]{visibility:hidden}
 /* ---------- buttons ---------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:600;
   padding:13px 24px;border-radius:999px;cursor:pointer;border:1px solid transparent;font-size:1rem;
-  font-family:"IBM Plex Sans Thai",sans-serif;transition:transform .15s ease,box-shadow .2s,background .2s,border-color .2s;white-space:nowrap}
+  font-family:"Anuphan",sans-serif;transition:transform .15s ease,box-shadow .2s,background .2s,border-color .2s;white-space:nowrap}
 .btn:active{transform:translateY(1px)}
 .btn svg{width:18px;height:18px;flex:none}
 .btn-primary{background:linear-gradient(135deg,var(--amber),var(--amber-dark));color:#241400;
@@ -93,19 +93,19 @@ html.pending-lang [data-th]{visibility:hidden}
 .site-header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.9);
   backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
-.brand{display:flex;align-items:center;gap:11px;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:1.16rem;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:11px;font-family:"Kanit",sans-serif;font-weight:700;font-size:1.16rem;color:var(--ink)}
 .brand .mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;flex:none;
   background:linear-gradient(150deg,var(--navy),var(--navy-2));color:var(--amber);
   font-size:1rem;font-weight:700;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
 .brand .mark svg{width:20px;height:20px}
 .brand .b-th{display:flex;flex-direction:column;line-height:1.05}
-.brand .b-th small{font-family:"IBM Plex Sans Thai";font-weight:500;font-size:.62rem;color:var(--ink-mute);letter-spacing:.14em;text-transform:uppercase}
+.brand .b-th small{font-family:"Anuphan";font-weight:500;font-size:.62rem;color:var(--ink-mute);letter-spacing:.14em;text-transform:uppercase}
 .nav-links{display:flex;align-items:center;gap:26px;font-size:.94rem;font-weight:500}
 .nav-links a{color:var(--ink-2);transition:color .15s;position:relative;padding:4px 0}
 .nav-links a:hover{color:var(--amber-dark)}
 .nav-links a.active{color:var(--ink);font-weight:600}
 .nav-right{display:flex;align-items:center;gap:10px}
-.lang{display:flex;border:1px solid var(--line-strong);border-radius:999px;overflow:hidden;font-family:"Chakra Petch",sans-serif}
+.lang{display:flex;border:1px solid var(--line-strong);border-radius:999px;overflow:hidden;font-family:"Kanit",sans-serif}
 .lang button{background:transparent;color:var(--ink-dim);border:0;padding:5px 11px;font-size:.78rem;cursor:pointer;font-family:inherit;font-weight:600;transition:.15s}
 .lang button.on{background:var(--navy);color:var(--amber)}
 .nav-toggle{display:none;background:transparent;border:1px solid var(--line-strong);border-radius:10px;width:42px;height:40px;cursor:pointer;color:var(--ink)}
@@ -115,7 +115,7 @@ html.pending-lang [data-th]{visibility:hidden}
 .cart-btn:hover{border-color:var(--amber);color:var(--amber-dark)}
 .cart-btn svg{width:20px;height:20px}
 .cart-badge{position:absolute;top:-7px;right:-7px;min-width:19px;height:19px;padding:0 5px;border-radius:999px;
-  background:var(--amber);color:#241400;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:.72rem;
+  background:var(--amber);color:#241400;font-family:"Kanit",sans-serif;font-weight:700;font-size:.72rem;
   display:grid;place-items:center;line-height:1;box-shadow:0 2px 6px rgba(217,126,6,.4)}
 .cart-badge[hidden]{display:none}
 
@@ -125,6 +125,11 @@ section{padding:64px 0}
 .sec-head.ctr{margin-left:auto;margin-right:auto;text-align:center}
 .sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:10px 0 10px;font-weight:700}
 .sec-head p{color:var(--ink-dim);margin:0;font-size:1.02rem}
+/* แถบ accent ใต้หัวข้อทุก section — เอกลักษณ์แบรนด์ */
+.sec-head h2::after{content:"";display:block;width:52px;height:4px;border-radius:999px;
+  margin-top:13px;background:linear-gradient(90deg,var(--amber),var(--amber-dark))}
+.sec-head.ctr h2::after{margin-left:auto;margin-right:auto}
+.sec-head p{margin-top:10px}
 
 /* ---------- cards / grid ---------- */
 .grid{display:grid;gap:18px}
@@ -145,7 +150,7 @@ section{padding:64px 0}
 .foot-brand .brand{color:#fff}
 .foot-brand .brand .mark{background:linear-gradient(150deg,var(--amber),var(--amber-dark));color:var(--navy)}
 .foot-brand p{color:#93a0bd;font-size:.9rem;margin:14px 0 0;max-width:34ch}
-.foot-col h4{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#7a879f;font-weight:600;margin-bottom:14px;font-family:"Chakra Petch"}
+.foot-col h4{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#7a879f;font-weight:600;margin-bottom:14px;font-family:"Kanit"}
 .foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.92rem}
 .foot-contact{display:grid;gap:11px;font-size:.92rem}
 .foot-contact .row{display:flex;gap:10px;align-items:flex-start}
@@ -178,7 +183,7 @@ section{padding:64px 0}
 .pay-alt{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);text-align:left}
 .pay-alt .lbl{font-size:.78rem;color:var(--ink-mute);margin-bottom:4px}
 .pay-alt .acct{display:flex;align-items:center;gap:8px;justify-content:space-between;gap:10px}
-.pay-alt .acct b{font-family:"Chakra Petch";font-size:.9rem;font-weight:600;color:var(--ink)}
+.pay-alt .acct b{font-family:"Kanit";font-size:.9rem;font-weight:600;color:var(--ink)}
 .copy-btn{background:var(--surface-2);border:1px solid var(--line);border-radius:8px;color:var(--ink-2);
   font-size:.78rem;font-weight:600;padding:5px 10px;cursor:pointer;white-space:nowrap;font-family:inherit}
 .copy-btn:hover{border-color:var(--amber);color:var(--amber-dark)}
@@ -188,8 +193,8 @@ section{padding:64px 0}
   border-top:1px solid var(--line);box-shadow:0 -6px 22px rgba(16,26,48,.12);padding:10px 16px;
   display:none;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .25s}
 .mobile-cta.show{transform:translateY(0)}
-.mobile-cta .mc-total{font-family:"Chakra Petch";line-height:1.1}
-.mobile-cta .mc-total small{display:block;color:var(--ink-mute);font-size:.72rem;font-weight:500;font-family:"IBM Plex Sans Thai"}
+.mobile-cta .mc-total{font-family:"Kanit";line-height:1.1}
+.mobile-cta .mc-total small{display:block;color:var(--ink-mute);font-size:.72rem;font-weight:500;font-family:"Anuphan"}
 .mobile-cta .mc-total b{font-size:1.3rem;color:var(--amber-dark)}
 .mobile-cta .btn{flex:1;max-width:220px}
 

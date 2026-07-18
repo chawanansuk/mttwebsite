@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- ภาพประกอบเครื่องมือช่าง (ชั่วคราว รอรูปถ่ายจริงจาก WYNNTOOLS) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f9fafb"/><stop offset="1" stop-color="#eef0f4"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c7ced9"/><stop offset=".5" stop-color="#9aa4b5"/><stop offset="1" stop-color="#7e8898"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5a01f"/><stop offset="1" stop-color="#d97e06"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2a4a"/><stop offset="1" stop-color="#101a30"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="520" rx="330" ry="34" fill="#101a30" opacity=".08"/>
+
+  <!-- ประแจเลื่อน -->
+  <g transform="rotate(-24 250 300) translate(120 210)">
+    <rect x="60" y="38" width="240" height="34" rx="10" fill="url(#steel)"/>
+    <rect x="60" y="42" width="240" height="8" rx="4" fill="#ffffff" opacity=".35"/>
+    <path d="M60 20h56l-8 30 10 24-14 22H60a44 44 0 0 1 0-76z" fill="url(#steel)"/>
+    <rect x="76" y="6" width="14" height="34" rx="6" fill="url(#amber)"/>
+    <rect x="286" y="30" width="26" height="50" rx="8" fill="url(#navy)"/>
+  </g>
+
+  <!-- ค้อน -->
+  <g transform="rotate(18 540 240) translate(400 90)">
+    <rect x="88" y="70" width="46" height="240" rx="16" fill="url(#amber)"/>
+    <rect x="96" y="76" width="10" height="226" rx="5" fill="#ffffff" opacity=".3"/>
+    <rect x="40" y="26" width="150" height="58" rx="14" fill="url(#navy)"/>
+    <path d="M40 42c-20 4-30 10-34 18 6 8 16 12 34 14z" fill="url(#navy)"/>
+    <rect x="48" y="34" width="132" height="10" rx="5" fill="#ffffff" opacity=".18"/>
+  </g>
+
+  <!-- ไขควง -->
+  <g transform="rotate(-8 400 430) translate(210 380)">
+    <rect x="0" y="18" width="150" height="36" rx="16" fill="url(#navy)"/>
+    <rect x="10" y="24" width="120" height="8" rx="4" fill="#ffffff" opacity=".22"/>
+    <rect x="146" y="26" width="34" height="20" rx="6" fill="url(#amber)"/>
+    <rect x="178" y="31" width="180" height="10" rx="5" fill="url(#steel)"/>
+    <path d="M358 26l26 10-26 10z" fill="url(#steel)"/>
+  </g>
+
+  <!-- คีม -->
+  <g transform="rotate(18 560 430) translate(470 330)">
+    <path d="M52 6c26 4 44 22 48 44l-22 8c-6-16-18-28-34-32z" fill="url(#steel)"/>
+    <path d="M96 44c8 4 12 12 8 20l-30 10-10-22z" fill="url(#steel)"/>
+    <rect x="18" y="58" width="26" height="140" rx="13" transform="rotate(-14 31 128)" fill="url(#amber)"/>
+    <rect x="66" y="66" width="26" height="140" rx="13" transform="rotate(10 79 136)" fill="url(#navy)"/>
+    <circle cx="56" cy="62" r="12" fill="#5c6678"/>
+    <circle cx="56" cy="62" r="5" fill="#2c3442"/>
+  </g>
+
+  <!-- น็อตประดับ -->
+  <g fill="#aab3c2">
+    <path d="M126 470l14 8v16l-14 8-14-8v-16z"/>
+    <circle cx="126" cy="486" r="6" fill="#7e8898"/>
+    <path d="M672 150l14 8v16l-14 8-14-8v-16z"/>
+    <circle cx="672" cy="166" r="6" fill="#7e8898"/>
+  </g>
+</svg>
