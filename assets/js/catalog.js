@@ -27,6 +27,7 @@ window.CATALOG = (function () {
       category: "lighter",
       name_th: "ไฟฟู่ M.T.T.", name_en: "M.T.T. Jet Lighter",
       glyph: "🔥",
+      image: "assets/img/products/jet-lighter.webp",
       tagline_th: "หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี",
       tagline_en: "High-pressure jet, windproof, refillable, 5 colors",
       live: true,
