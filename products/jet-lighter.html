@@ -44,11 +44,21 @@
 .p-tag{font-size:.82rem;color:#c3c0cf;border:1px solid rgba(255,255,255,.16);padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.04)}
 .p-tag b{color:var(--amber);font-weight:600}
 .stage{display:grid;place-items:center}
-.hero-photo{width:100%;max-width:560px;border-radius:var(--radius-lg);display:block;
-  box-shadow:0 24px 60px rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.08)}
-.colors-photo{width:100%;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin-top:24px;display:block}
-.whole-side{display:grid;gap:14px}
-.box-photo{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,.12);display:block;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.hero-shot{position:relative;width:100%;max-width:540px}
+.hero-shot::before{content:"";position:absolute;inset:-12% -8%;z-index:0;
+  background:radial-gradient(closest-side,rgba(47,139,255,.35),transparent 72%);filter:blur(24px)}
+.hero-photo{position:relative;z-index:1;width:100%;height:auto;border-radius:var(--radius-lg);display:block;
+  box-shadow:0 24px 60px rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.1)}
+.hero-flag{position:absolute;z-index:2;left:16px;top:16px;display:inline-flex;align-items:center;gap:8px;
+  background:rgba(8,12,22,.7);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);
+  color:#fff;border-radius:999px;padding:8px 15px;font-size:.85rem;font-weight:600}
+.hero-flag b{color:var(--amber);font-family:"Chakra Petch"}
+/* ---------- colors: 2 คอลัมน์ รูปจริงคู่กับตัวเลือกสี ---------- */
+.colors-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:34px;align-items:center}
+.colors-photo{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);
+  box-shadow:var(--shadow);display:block;background:#fff}
+.whole-side{display:grid;gap:14px;align-content:start}
+.box-photo{width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12);display:block;box-shadow:0 14px 40px rgba(0,0,0,.35)}
 .feat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:26px}
 .feat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 16px;box-shadow:var(--shadow-sm)}
 .feat .ic{width:42px;height:42px;border-radius:11px;background:var(--amber-soft);display:grid;place-items:center;margin-bottom:12px;color:var(--amber-dark)}
@@ -125,6 +135,8 @@
 @media(max-width:900px){
   .p-hero-grid{grid-template-columns:1fr}
   .stage{order:-1}
+  .colors-grid{grid-template-columns:1fr;gap:20px}
+  .colors-grid .colors-photo{order:-1}
   .feat-grid{grid-template-columns:repeat(2,1fr)}
   .price-grid{grid-template-columns:1fr}
   .whole .wrap{grid-template-columns:1fr}
@@ -168,7 +180,10 @@
       </div>
     </div>
     <div class="stage">
-      <img class="hero-photo" src="../assets/img/products/jet-lighter-flame.webp" alt="ไฟฟู่ M.T.T. เปลวไฟเจ็ทสีน้ำเงินแรงดันสูง" width="1400" height="933" fetchpriority="high">
+      <div class="hero-shot">
+        <span class="hero-flag">🔥 <span data-th="เปลวเจ็ทสีน้ำเงิน · แรงดันสูง" data-en="Blue jet flame · high pressure">เปลวเจ็ทสีน้ำเงิน · แรงดันสูง</span></span>
+        <img class="hero-photo" src="../assets/img/products/jet-lighter-flame.webp" alt="ไฟฟู่ M.T.T. เปลวไฟเจ็ทสีน้ำเงินแรงดันสูง" width="1400" height="933" fetchpriority="high">
+      </div>
     </div>
   </div>
 </section>
@@ -184,13 +199,17 @@
 <!-- ===== COLORS ===== -->
 <section>
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow" data-th="มีให้เลือก 5 สี" data-en="5 colors">มีให้เลือก 5 สี</span>
-      <h2 data-th="เลือกสีที่ใช่" data-en="Pick your color">เลือกสีที่ใช่</h2>
-      <p data-th="ของจริงบอดี้ใสทั้ง 5 สี มองเห็นระดับแก๊สชัด — เลือกสีที่ต้องการได้ตอนสั่งซื้อ" data-en="Real clear bodies in 5 colors, gas level always visible — pick your colors at checkout.">ของจริงบอดี้ใสทั้ง 5 สี มองเห็นระดับแก๊สชัด — เลือกสีที่ต้องการได้ตอนสั่งซื้อ</p>
+    <div class="colors-grid">
+      <div>
+        <div class="sec-head">
+          <span class="eyebrow" data-th="มีให้เลือก 5 สี" data-en="5 colors">มีให้เลือก 5 สี</span>
+          <h2 data-th="เลือกสีที่ใช่" data-en="Pick your color">เลือกสีที่ใช่</h2>
+          <p data-th="ของจริงบอดี้ใสทั้ง 5 สี มองเห็นระดับแก๊สชัด — เลือกสีที่ต้องการได้ตอนสั่งซื้อ" data-en="Real clear bodies in 5 colors, gas level always visible — pick your colors at checkout.">ของจริงบอดี้ใสทั้ง 5 สี มองเห็นระดับแก๊สชัด — เลือกสีที่ต้องการได้ตอนสั่งซื้อ</p>
+        </div>
+        <div class="swatches" id="swatches"></div>
+      </div>
+      <img class="colors-photo" src="../assets/img/products/jet-lighter-colors.webp" alt="ไฟฟู่ M.T.T. ครบ 5 สี — เหลือง เขียว ฟ้า ม่วง ส้ม" loading="lazy" width="1600" height="800">
     </div>
-    <img class="colors-photo" src="../assets/img/products/jet-lighter-colors.webp" alt="ไฟฟู่ M.T.T. ครบ 5 สี — เหลือง เขียว ฟ้า ม่วง ส้ม" loading="lazy" width="1600" height="800">
-    <div class="swatches" id="swatches"></div>
   </div>
 </section>
 

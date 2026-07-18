@@ -59,6 +59,26 @@ for (const path of ALL_PAGES) {
   await page.close();
 }
 
+/* ---- รูปไม่ยืดผิดสัดส่วน (aspect-ratio guard) ---- */
+console.log("\n[ รูปไม่ยืดผิดสัดส่วน ]");
+for (const [path, w] of [["/products/jet-lighter.html", 1280], ["/products/jet-lighter.html", 390], ["/index.html", 1280]]) {
+  const page = await newPage({ width: w, height: 900 });
+  await page.goto(base + path, { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(400);
+  const bad = await page.evaluate(() =>
+    [...document.querySelectorAll("img")].map((im) => {
+      if (!im.naturalWidth) return null;
+      const r = im.getBoundingClientRect();
+      if (r.width < 10 || r.height < 10) return null;
+      if (getComputedStyle(im).objectFit === "cover") return null; // ตั้งใจ crop
+      const natAR = im.naturalWidth / im.naturalHeight, renAR = r.width / r.height;
+      return Math.abs(natAR - renAR) / natAR > 0.02
+        ? im.src.split("/").pop() + " " + natAR.toFixed(2) + "→" + renAR.toFixed(2) : null;
+    }).filter(Boolean));
+  assert(bad.length === 0, `${path} @${w}px ไม่มีรูปยืด${bad.length ? " → " + bad.join(", ") : ""}`);
+  await page.close();
+}
+
 /* ---- ไม่มี overflow แนวนอนบนมือถือ (BUG-1 guard) ---- */
 console.log("\n[ ไม่มี overflow แนวนอน @360/390 ]");
 for (const w of [360, 390]) {
