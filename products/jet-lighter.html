@@ -12,9 +12,9 @@
 <meta property="og:type" content="product">
 <meta property="og:locale" content="th_TH">
 <meta property="og:url" content="https://www.mttaweephan.com/products/jet-lighter.html">
-<meta property="og:image" content="https://www.mttaweephan.com/assets/img/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="https://www.mttaweephan.com/assets/img/products/jet-lighter-flame.webp">
+<meta property="og:image:width" content="1400">
+<meta property="og:image:height" content="933">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
@@ -43,20 +43,12 @@
 .p-hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .p-tag{font-size:.82rem;color:#c3c0cf;border:1px solid rgba(255,255,255,.16);padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.04)}
 .p-tag b{color:var(--amber);font-weight:600}
-.stage{position:relative;height:380px;display:grid;place-items:end center}
-.lighter{position:relative;width:172px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
-.l-body{position:absolute;bottom:0;left:26px;width:120px;height:210px;border-radius:14px 14px 22px 22px;background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 78%,#fff 8%),color-mix(in srgb,var(--accent) 55%,#000 10%));border:2px solid color-mix(in srgb,var(--accent) 60%,#000 20%);opacity:.94;box-shadow:inset 0 0 30px rgba(255,255,255,.25)}
-.l-body::after{content:"";position:absolute;left:14px;top:16px;width:20px;height:150px;border-radius:20px;background:linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,0))}
-.lion{position:absolute;bottom:44px;left:56px;width:60px;text-align:center;z-index:3}
-.lion span{font-family:"Chakra Petch";font-weight:700;font-size:.6rem;color:#7a1f10;background:#fff;border-radius:3px;padding:1px 5px;border:1px solid #c9402a}
-.head{position:absolute;bottom:150px;left:8px;width:150px;height:96px;transform:rotate(-2deg);z-index:4}
-.nozzle{position:absolute;top:-2px;left:8px;width:52px;height:52px;border-radius:12px 14px 10px 10px;background:linear-gradient(150deg,#3a3a44,#17171d);border:2px solid #0c0c10}
-.nozzle::before{content:"";position:absolute;top:12px;left:12px;width:26px;height:26px;border-radius:50%;background:radial-gradient(#111,#000);box-shadow:inset 0 0 0 3px #2a2a32}
-.grip{position:absolute;bottom:0;left:0;width:150px;height:56px;border-radius:12px;background:linear-gradient(160deg,#33333c,#15151b);border:2px solid #0c0c10}
-.flame{position:absolute;left:22px;top:-88px;width:26px;height:96px;z-index:2;transform-origin:bottom center;animation:flick .12s infinite alternate ease-in-out}
-.flame .core{position:absolute;inset:0;border-radius:50% 50% 46% 46%/70% 70% 30% 30%;background:radial-gradient(closest-side at 50% 78%,#fff 4%,#8fd4ff 34%,#2f8bff 68%,rgba(47,139,255,0) 100%);filter:blur(.4px)}
-.flame .inner{position:absolute;left:7px;top:34px;width:12px;height:52px;border-radius:50% 50% 46% 46%/70% 70% 30% 30%;background:radial-gradient(closest-side at 50% 80%,#fff 20%,#bfe9ff 60%,rgba(255,255,255,0));opacity:.9}
-@keyframes flick{from{transform:scaleY(1) scaleX(1)}to{transform:scaleY(1.08) scaleX(.94) translateX(1px)}}
+.stage{display:grid;place-items:center}
+.hero-photo{width:100%;max-width:560px;border-radius:var(--radius-lg);display:block;
+  box-shadow:0 24px 60px rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.08)}
+.colors-photo{width:100%;border-radius:var(--radius);border:1px solid var(--line);box-shadow:var(--shadow-sm);margin-top:24px;display:block}
+.whole-side{display:grid;gap:14px}
+.box-photo{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,.12);display:block;box-shadow:0 14px 40px rgba(0,0,0,.35)}
 .feat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:26px}
 .feat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 16px;box-shadow:var(--shadow-sm)}
 .feat .ic{width:42px;height:42px;border-radius:11px;background:var(--amber-soft);display:grid;place-items:center;margin-bottom:12px;color:var(--amber-dark)}
@@ -132,7 +124,7 @@
 .faq-card p{font-size:.88rem;color:var(--ink-dim);margin:0}
 @media(max-width:900px){
   .p-hero-grid{grid-template-columns:1fr}
-  .stage{height:320px;order:-1}
+  .stage{order:-1}
   .feat-grid{grid-template-columns:repeat(2,1fr)}
   .price-grid{grid-template-columns:1fr}
   .whole .wrap{grid-template-columns:1fr}
@@ -142,7 +134,6 @@
   body{padding-bottom:70px}
 }
 @media(max-width:480px){ .feat-grid{grid-template-columns:1fr 1fr} }
-@media(prefers-reduced-motion:reduce){.flame{animation:none}}
 </style>
 </head>
 <body>
@@ -176,16 +167,8 @@
         <span class="p-tag"><b>5</b> <span data-th="สีนีออน" data-en="neon colors">สีนีออน</span></span>
       </div>
     </div>
-    <div class="stage" aria-hidden="true">
-      <div class="lighter">
-        <div class="head">
-          <div class="flame"><div class="core"></div><div class="inner"></div></div>
-          <div class="nozzle"></div>
-          <div class="grip"></div>
-        </div>
-        <div class="l-body"></div>
-        <div class="lion"><span>M.T.T.</span></div>
-      </div>
+    <div class="stage">
+      <img class="hero-photo" src="../assets/img/products/jet-lighter-flame.webp" alt="ไฟฟู่ M.T.T. เปลวไฟเจ็ทสีน้ำเงินแรงดันสูง" width="1400" height="933" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -204,8 +187,9 @@
     <div class="sec-head">
       <span class="eyebrow" data-th="มีให้เลือก 5 สี" data-en="5 colors">มีให้เลือก 5 สี</span>
       <h2 data-th="เลือกสีที่ใช่" data-en="Pick your color">เลือกสีที่ใช่</h2>
-      <p data-th="แตะเพื่อดูสี — บอดี้ใสมองเห็นระดับแก๊สได้ตลอด" data-en="Tap to preview — clear body shows the gas level.">แตะเพื่อดูสี — บอดี้ใสมองเห็นระดับแก๊สได้ตลอด</p>
+      <p data-th="ของจริงบอดี้ใสทั้ง 5 สี มองเห็นระดับแก๊สชัด — เลือกสีที่ต้องการได้ตอนสั่งซื้อ" data-en="Real clear bodies in 5 colors, gas level always visible — pick your colors at checkout.">ของจริงบอดี้ใสทั้ง 5 สี มองเห็นระดับแก๊สชัด — เลือกสีที่ต้องการได้ตอนสั่งซื้อ</p>
     </div>
+    <img class="colors-photo" src="../assets/img/products/jet-lighter-colors.webp" alt="ไฟฟู่ M.T.T. ครบ 5 สี — เหลือง เขียว ฟ้า ม่วง ส้ม" loading="lazy" width="1600" height="800">
     <div class="swatches" id="swatches"></div>
   </div>
 </section>
@@ -233,7 +217,10 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span data-th="สั่งจำนวนมากคุยราคาพิเศษเพิ่มได้ทาง LINE" data-en="Bulk orders? Ask for a special rate on LINE">สั่งจำนวนมากคุยราคาพิเศษเพิ่มได้ทาง LINE</span></li>
       </ul>
     </div>
-    <div class="whole-cards" id="wholeCards"></div>
+    <div class="whole-side">
+      <img class="box-photo" src="../assets/img/products/jet-lighter-box.webp" alt="ไฟฟู่ M.T.T. ยกกล่อง 15 ชิ้น คละสี" loading="lazy" width="1400" height="1050">
+      <div class="whole-cards" id="wholeCards"></div>
+    </div>
   </div>
 </section>
 
@@ -583,7 +570,7 @@ renderProduct();
     "@context":"https://schema.org","@type":"Product",
     "name":"ไฟฟู่ M.T.T. (M.T.T. Jet Lighter)",
     "description":"ไฟแช็กหัวฟู่ เปลวไฟเจ็ทแรงดันสูง เจอลมไม่ดับ เติมแก๊สบิวเทนใช้ซ้ำได้ 5 สี มาตรฐาน มอก. 879-2553",
-    "image":"https://www.mttaweephan.com/assets/img/og-image.png",
+    "image":["https://www.mttaweephan.com/assets/img/products/jet-lighter.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-flame.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-colors.webp"],
     "brand":{"@type":"Brand","name":"M.T.T. (ม ทวีภัณฑ์)"},
     "offers":{"@type":"AggregateOffer","priceCurrency":"THB","lowPrice":box,"highPrice":r.max,"availability":"https://schema.org/InStock"}
   };
