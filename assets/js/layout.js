@@ -67,7 +67,7 @@
         '<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-shop="address">—</span></div>' +
       '</div></div>' +
     '</div><div class="foot-bottom">' +
-      '<span>© 2026 ม ทวีภัณฑ์ (M.T.T.) · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>' +
+      '<span>© 2026 ม.ทวีภัณฑ์ · ' + (S.legal_th || "") + ' · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>' +
       '<span data-th="ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด" data-en="Built for the easiest ordering">ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด</span>' +
     '</div></div></footer>';
   }
@@ -102,12 +102,20 @@
     fill("[data-shop=line-id]", S.LINE_ID || "");
     fill("[data-shop=phone]", S.PHONE || "");
     fill("[data-shop=phone-tel]", "tel:" + (S.PHONE_TEL || ""), "href");
+    fill("[data-shop=phone-more]", S.PHONE_MORE || "");
     fill("[data-shop=email]", S.EMAIL || "");
     fill("[data-shop=email-href]", "mailto:" + (S.EMAIL || ""), "href");
     fill("[data-shop=address]", S.ADDRESS_TH || "");
     fill("[data-shop=hours]", S.HOURS_TH || "");
     fill("[data-shop=bank]", S.BANK_ACCOUNT || "");
     fill("[data-shop=promptpay]", S.PROMPTPAY_ID || "");
+    // ค่าไหนว่าง → ซ่อนแถวนั้นทั้งแถว (กันโชว์ช่องเปล่า/ข้อมูลปลอม)
+    [["email", S.EMAIL], ["phone-more", S.PHONE_MORE], ["bank", S.BANK_ACCOUNT]].forEach(function (pair) {
+      if (!pair[1]) document.querySelectorAll("[data-shop=" + pair[0] + "]").forEach(function (el) {
+        var row = el.closest(".row") || el.closest(".pay-alt") || el;
+        row.style.display = "none";
+      });
+    });
   };
   window.mttFillShop();
 
