@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
+<title>สินค้าทั้งหมด | ม ทวีภัณฑ์ — อุปกรณ์ไฟฟ้า &amp; ฮาร์ดแวร์</title>
+<meta name="description" content="รวมสินค้าทั้งหมดของ ม ทวีภัณฑ์ — ไฟฟู่ อุปกรณ์ไฟฟ้า หลอดไฟ เครื่องมือช่าง ฮาร์ดแวร์ ราคาปลีก-ส่ง ส่งทั่วไทย">
+<link rel="canonical" href="https://www.mttaweephan.com/products/">
+<meta property="og:title" content="สินค้าทั้งหมด | ม ทวีภัณฑ์">
+<meta property="og:description" content="ไฟฟู่ อุปกรณ์ไฟฟ้า หลอดไฟ เครื่องมือช่าง ฮาร์ดแวร์ ปลีก-ส่ง">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="th_TH">
+<meta property="og:image" content="https://www.mttaweephan.com/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#101a30">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/theme.css">
+<style>
+.plist-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(245,160,31,.14),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:52px 0 8px}
+.filters{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 6px}
+.fchip{cursor:pointer;border:1px solid var(--line-strong);background:var(--surface);border-radius:999px;padding:8px 16px;
+  font-size:.9rem;font-weight:600;color:var(--ink-2);font-family:inherit;transition:.15s}
+.fchip:hover{border-color:var(--amber)}
+.fchip.on{background:var(--navy);color:var(--amber);border-color:var(--navy)}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
+.prod{overflow:hidden;display:flex;flex-direction:column}
+.prod .thumb{aspect-ratio:4/3;display:grid;place-items:center;position:relative;background:radial-gradient(120% 120% at 50% 0%,var(--surface-2),var(--bg-soft))}
+.prod .thumb .glyph{font-size:3.4rem;filter:drop-shadow(0 8px 14px rgba(16,26,48,.18))}
+.prod .thumb .flag{position:absolute;top:12px;left:12px}
+.prod .body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1}
+.prod .body h3{font-size:1.06rem;margin-bottom:3px}
+.prod .body .desc{color:var(--ink-dim);font-size:.85rem;margin:0 0 12px;flex:1}
+.prod .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.prod .price{font-family:"Chakra Petch";font-weight:700;font-size:1.28rem}
+.prod .price.soon{font-size:.95rem;color:var(--ink-mute)}
+.empty{grid-column:1/-1;text-align:center;color:var(--ink-mute);padding:40px 0}
+@media(max-width:860px){.pgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.pgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+
+<section class="plist-hero">
+  <div class="wrap">
+    <span class="eyebrow" data-th="สินค้าทั้งหมด" data-en="All products">สินค้าทั้งหมด</span>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.8rem);margin:8px 0 6px" data-th="เลือกดูสินค้าของเรา" data-en="Browse our products">เลือกดูสินค้าของเรา</h1>
+    <p class="muted" style="margin:0" data-th="กรองตามหมวดหมู่ได้ · สินค้าบางรายการกำลังทยอยเปิดขาย" data-en="Filter by category · more items coming soon">กรองตามหมวดหมู่ได้ · สินค้าบางรายการกำลังทยอยเปิดขาย</p>
+    <div class="filters" id="filters"></div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="pgrid" id="pgrid"></div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script>window.MTT_BASE="../";window.MTT_PAGE="products";</script>
+<script src="../assets/js/shop-config.js"></script>
+<script src="../assets/js/catalog.js"></script>
+<script src="../assets/js/cart.js"></script>
+<script>
+function L(){ return (window.MTT && window.MTT.getLang()) || "th"; }
+let activeCat = "all";
+
+function catName(key){
+  const th=L()==="th";
+  if(key==="all") return th?"ทั้งหมด":"All";
+  const c=CATALOG.categories.find(x=>x.key===key);
+  return c ? (th?c.th:c.en) : key;
+}
+function renderFilters(){
+  const cats=["all", ...CATALOG.categories.map(c=>c.key)];
+  document.getElementById("filters").innerHTML=cats.map(k=>
+    `<button type="button" class="fchip ${k===activeCat?"on":""}" aria-pressed="${k===activeCat}" onclick="setCat('${k}')">${catName(k)}</button>`
+  ).join("");
+}
+function setCat(k){ activeCat=k; renderFilters(); renderGrid(); }
+
+function renderGrid(){
+  const th=L()==="th";
+  const list=CATALOG.products.filter(p=>activeCat==="all"||p.category===activeCat);
+  const el=document.getElementById("pgrid");
+  if(!list.length){ el.innerHTML=`<div class="empty">${th?"ยังไม่มีสินค้าในหมวดนี้ — เร็ว ๆ นี้":"No items yet — coming soon"}</div>`; return; }
+  el.innerHTML=list.map(p=>{
+    const flagTxt=p.live?(th?p.flag_th:p.flag_en):"";
+    const flag=flagTxt?`<span class="flag"><span class="badge">${flagTxt}</span></span>`:"";
+    const price=p.live?`<div class="price">${CATALOG.priceLabel(p,L())}</div>`:`<div class="price soon">${th?"เร็ว ๆ นี้":"Coming soon"}</div>`;
+    const href=p.live?p.url.replace(/^products\//,''):CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
+    const ext=p.live?"":' target="_blank" rel="noopener"';
+    const ctaLabel=p.live?(th?"สั่งซื้อ":"Order"):(th?"ถามของ":"Ask");
+    const ctaCls=p.live?"btn btn-primary btn-sm":"btn btn-ghost btn-sm";
+    return `<a class="card prod${p.live?"":" soon"}" href="${href}"${ext}>
+      <div class="thumb">${CATALOG.productThumb(p,"../")}${flag}</div>
+      <div class="body"><h3>${th?p.name_th:p.name_en}</h3>
+      <p class="desc">${th?p.tagline_th:p.tagline_en}</p>
+      <div class="row">${price}<span class="${ctaCls}">${ctaLabel}</span></div></div>
+    </a>`;
+  }).join("");
+}
+function renderAll(){ renderFilters(); renderGrid(); }
+document.addEventListener("langchange", renderAll);
+renderAll();
+</script>
+<script src="../assets/js/layout.js"></script>
+<script src="/_vercel/insights/script.js" defer></script>
+</body>
+</html>

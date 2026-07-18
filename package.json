@@ -1,0 +1,12 @@
+{
+  "name": "mttwebsite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "เว็บไซต์ร้าน ม ทวีภัณฑ์ (static site)",
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}
