@@ -15,6 +15,7 @@ window.SHOP = {
   LINE_ID: "@yourlineid",
   PHONE: "081-234-5678",
   PHONE_TEL: "0812345678",
+  BANK_ACCOUNT: "ธ.กสิกรไทย 123-4-56789-0 (ม ทวีภัณฑ์)", // บัญชีสำรองสำหรับคนที่ไม่สะดวกสแกน QR
   EMAIL: "shop@mttaweephan.com",
   ADDRESS_TH: "123 ถนนตัวอย่าง ต.ในเมือง อ.เมือง จ.กรุงเทพฯ 10000",
   HOURS_TH: "จ.–ส. 08:00–18:00 น.",

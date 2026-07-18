@@ -11,8 +11,8 @@
   --surface-2:#f9fafb;
   --ink:#141b2b;
   --ink-2:#33405a;
-  --ink-dim:#5b6880;
-  --ink-mute:#8a93a6;
+  --ink-dim:#54617a;
+  --ink-mute:#6b7385;
   --line:#e3e7ee;
   --line-strong:#cfd6e2;
 
@@ -42,7 +42,9 @@
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+/* reserve header height before layout.js injects it (reduce layout shift) */
+#site-header{display:block;min-height:64px}
 body{
   margin:0;background:var(--bg);color:var(--ink);
   font-family:"IBM Plex Sans Thai",system-ui,-apple-system,sans-serif;
@@ -99,6 +101,14 @@ button{font-family:inherit}
 .lang button.on{background:var(--navy);color:var(--amber)}
 .nav-toggle{display:none;background:transparent;border:1px solid var(--line-strong);border-radius:10px;width:42px;height:40px;cursor:pointer;color:var(--ink)}
 .nav-toggle svg{width:22px;height:22px;margin:auto}
+.cart-btn{position:relative;display:grid;place-items:center;width:40px;height:40px;border-radius:10px;
+  border:1px solid var(--line-strong);color:var(--ink-2);transition:border-color .15s,color .15s}
+.cart-btn:hover{border-color:var(--amber);color:var(--amber-dark)}
+.cart-btn svg{width:20px;height:20px}
+.cart-badge{position:absolute;top:-7px;right:-7px;min-width:19px;height:19px;padding:0 5px;border-radius:999px;
+  background:var(--amber);color:#241400;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:.72rem;
+  display:grid;place-items:center;line-height:1;box-shadow:0 2px 6px rgba(217,126,6,.4)}
+.cart-badge[hidden]{display:none}
 
 /* ---------- sections ---------- */
 section{padding:64px 0}
@@ -141,6 +151,39 @@ section{padding:64px 0}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 .toast b{color:var(--amber)}
 
+/* ---------- order form (name / address / phone) ---------- */
+.order-form{display:grid;gap:10px;margin:6px 0 4px}
+.order-form label{font-size:.82rem;color:var(--ink-dim);font-weight:500;display:block;margin-bottom:3px}
+.order-form input,.order-form textarea{width:100%;font-family:inherit;font-size:.95rem;color:var(--ink);
+  background:var(--surface-2);border:1px solid var(--line);border-radius:11px;padding:11px 13px;transition:border-color .15s}
+.order-form input:focus,.order-form textarea:focus{border-color:var(--amber);background:var(--surface)}
+.order-form textarea{resize:vertical;min-height:64px}
+.of-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.of-row{grid-template-columns:1fr}}
+
+/* savings badge on price options */
+.save{display:inline-block;background:#e4f6ec;color:var(--green);font-size:.68rem;font-weight:700;
+  padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:middle}
+
+/* alt payment (bank copy) */
+.pay-alt{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);text-align:left}
+.pay-alt .lbl{font-size:.78rem;color:var(--ink-mute);margin-bottom:4px}
+.pay-alt .acct{display:flex;align-items:center;gap:8px;justify-content:space-between;gap:10px}
+.pay-alt .acct b{font-family:"Chakra Petch";font-size:.9rem;font-weight:600;color:var(--ink)}
+.copy-btn{background:var(--surface-2);border:1px solid var(--line);border-radius:8px;color:var(--ink-2);
+  font-size:.78rem;font-weight:600;padding:5px 10px;cursor:pointer;white-space:nowrap;font-family:inherit}
+.copy-btn:hover{border-color:var(--amber);color:var(--amber-dark)}
+
+/* ---------- sticky mobile checkout bar ---------- */
+.mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:130;background:var(--surface);
+  border-top:1px solid var(--line);box-shadow:0 -6px 22px rgba(16,26,48,.12);padding:10px 16px;
+  display:none;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .25s}
+.mobile-cta.show{transform:translateY(0)}
+.mobile-cta .mc-total{font-family:"Chakra Petch";line-height:1.1}
+.mobile-cta .mc-total small{display:block;color:var(--ink-mute);font-size:.72rem;font-weight:500;font-family:"IBM Plex Sans Thai"}
+.mobile-cta .mc-total b{font-size:1.3rem;color:var(--amber-dark)}
+.mobile-cta .btn{flex:1;max-width:220px}
+
 /* ---------- floating LINE ---------- */
 .fab-line{position:fixed;right:20px;bottom:22px;z-index:120;background:#06c755;color:#fff;
   border-radius:999px;padding:13px 20px;font-weight:600;display:inline-flex;align-items:center;gap:9px;
@@ -159,9 +202,14 @@ section{padding:64px 0}
   .foot-grid{grid-template-columns:1fr 1fr;gap:26px}
   .foot-brand{grid-column:1/-1}
 }
+@media(max-width:900px){
+  .mobile-cta{display:flex}
+  body.mcta-on .fab-line{bottom:78px}
+}
 @media(max-width:520px){
   .foot-grid{grid-template-columns:1fr}
   .fab-line span{display:none}
   .brand .b-th small{display:none}
+  .nav-links{top:64px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}
