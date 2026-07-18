@@ -54,7 +54,14 @@ h1,h2,h3,h4,.display{font-family:"Chakra Petch","IBM Plex Sans Thai",sans-serif;
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 button{font-family:inherit}
-:focus-visible{outline:none;box-shadow:var(--ring);border-radius:8px}
+/* UP-4: ring ตาม border-radius ของ element เอง (ไม่บังคับ 8px ที่ทำให้ปุ่มวงรีเพี้ยน) */
+:focus-visible{outline:2px solid transparent;box-shadow:var(--ring)}
+/* UP-1: กันข้อความไทยแวบก่อนสลับเป็นอังกฤษ (เฉพาะผู้ใช้ที่บันทึกภาษา EN ไว้) */
+html.pending-lang [data-th]{visibility:hidden}
+/* UP-2 / C-2: การ์ดสินค้า "เร็ว ๆ นี้" + รองรับรูปสินค้าจริง */
+.prod.soon{opacity:.86}
+.prod.soon .thumb{filter:grayscale(.4)}
+.prod .thumb img{width:100%;height:100%;object-fit:cover}
 
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
 .eyebrow{font-family:"Chakra Petch",sans-serif;font-size:.75rem;letter-spacing:.24em;
@@ -201,15 +208,27 @@ section{padding:64px 0}
   .nav-toggle{display:grid;place-items:center}
   .foot-grid{grid-template-columns:1fr 1fr;gap:26px}
   .foot-brand{grid-column:1/-1}
+  /* UF-1: หุบแถบขวาให้พอดีมือถือ — ปุ่ม LINE บน header เหลือไอคอน (มี FAB อยู่แล้ว) */
+  .nav-right{gap:8px}
+  .brand{flex:none;white-space:nowrap}
+  .site-header .btn-line{width:40px;height:40px;padding:0;justify-content:center;flex:none}
+  .site-header .btn-line span{display:none}
 }
 @media(max-width:900px){
   .mobile-cta{display:flex}
   body.mcta-on .fab-line{bottom:78px}
+  /* UF-3: ยก toast ให้พ้นแถบสั่งซื้อลอยตอนมีของในตะกร้า */
+  body.mcta-on .toast{bottom:96px}
 }
 @media(max-width:520px){
   .foot-grid{grid-template-columns:1fr}
   .fab-line span{display:none}
   .brand .b-th small{display:none}
   .nav-links{top:64px}
+}
+@media(max-width:400px){
+  /* UF-1: จอเล็กมาก — ซ่อนปุ่ม LINE บน header ทั้งปุ่ม (ใช้ FAB ลอยแทน) เหลือ ตะกร้า/ภาษา/เมนู */
+  .site-header .btn-line{display:none}
+  .nav-right{gap:6px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}

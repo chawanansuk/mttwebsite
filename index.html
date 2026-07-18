@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
 <title>ม ทวีภัณฑ์ | อุปกรณ์ไฟฟ้า &amp; ฮาร์ดแวร์ ปลีก-ส่ง ส่งทั่วไทย</title>
 <meta name="description" content="ม ทวีภัณฑ์ (M.T.T.) ศูนย์รวมอุปกรณ์ไฟฟ้า เครื่องมือช่าง และฮาร์ดแวร์ครบวงจร ราคาปลีก-ส่ง ส่งทั่วไทย เก็บเงินปลายทางได้ สั่งง่ายผ่าน LINE">
 <link rel="canonical" href="https://www.mttaweephan.com/">
@@ -72,13 +73,13 @@
 .prod .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .prod .price{font-family:"Chakra Petch";font-weight:700;font-size:1.28rem}
 .prod .price.soon{font-size:.95rem;color:var(--ink-mute)}
-.why{background:var(--bg-soft)}
+.section-alt{background:var(--bg-soft)}
 .why-grid{grid-template-columns:repeat(4,1fr)}
-.why .w{padding:22px}
-.why .w .ic{width:44px;height:44px;border-radius:12px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--amber-dark);margin-bottom:12px;box-shadow:var(--shadow-sm)}
-.why .w .ic svg{width:24px;height:24px}
-.why .w h3{font-size:1.05rem;margin-bottom:5px}
-.why .w p{color:var(--ink-dim);font-size:.88rem;margin:0}
+.why-grid .w{padding:22px}
+.why-grid .w .ic{width:44px;height:44px;border-radius:12px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--amber-dark);margin-bottom:12px;box-shadow:var(--shadow-sm)}
+.why-grid .w .ic svg{width:24px;height:24px}
+.why-grid .w h3{font-size:1.05rem;margin-bottom:5px}
+.why-grid .w p{color:var(--ink-dim);font-size:.88rem;margin:0}
 .cta-band{background:linear-gradient(120deg,var(--navy),var(--navy-2));color:#fff;border-radius:var(--radius-lg);padding:44px;display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
 .cta-band::before{content:"";position:absolute;inset:auto -60px -120px auto;width:340px;height:340px;background:radial-gradient(closest-side,rgba(245,160,31,.4),transparent);filter:blur(10px)}
 .cta-band h2{font-size:clamp(1.6rem,3.2vw,2.2rem);position:relative}
@@ -174,7 +175,7 @@
 </section>
 
 <!-- ===== FEATURED ===== -->
-<section id="featured" class="why" style="padding-top:56px">
+<section id="featured" class="section-alt" style="padding-top:56px">
   <div class="wrap">
     <div class="sec-head ctr">
       <span class="eyebrow" data-th="สินค้าเด่น" data-en="Featured">สินค้าเด่น</span>
@@ -222,13 +223,13 @@
 </section>
 
 <!-- ===== CONTACT ===== -->
-<section id="contact" class="why">
+<section id="contact" class="section-alt">
   <div class="wrap">
     <div class="sec-head ctr">
       <span class="eyebrow" data-th="ติดต่อร้าน" data-en="Contact">ติดต่อร้าน</span>
       <h2 data-th="สอบถาม &amp; สั่งซื้อ" data-en="Ask &amp; order">สอบถาม &amp; สั่งซื้อ</h2>
     </div>
-    <div class="grid contact-grid">
+    <div class="grid contact-grid" id="contactGrid">
       <div class="card contact-card">
         <div class="contact-list">
           <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg></div><div><b>LINE</b><span data-shop="line-id">@yourlineid</span></div></div>
@@ -241,7 +242,7 @@
           <a class="btn btn-ghost btn-sm" data-shop="phone-tel" href="#" data-th="โทรเลย" data-en="Call now">โทรเลย</a>
         </div>
       </div>
-      <div class="map-card">
+      <div class="map-card" id="mapCard">
         <div>
           <div class="pin">📍</div>
           <b data-th="แผนที่ร้าน" data-en="Store location">แผนที่ร้าน</b>
@@ -284,19 +285,19 @@ function renderFeatured(){
     const price = p.live
       ? `<div class="price">${CATALOG.priceLabel(p, L())}</div>`
       : `<div class="price soon">${th?"เร็ว ๆ นี้":"Coming soon"}</div>`;
-    const cta = p.live
-      ? `<span class="btn btn-primary btn-sm">${th?"สั่งซื้อ":"Order"}</span>`
-      : `<a class="btn btn-ghost btn-sm" data-shop="line-url" href="${(window.SHOP&&window.SHOP.LINE_URL)||'#'}" target="_blank" rel="noopener">${th?"ถามของ":"Ask"}</a>`;
-    const wrapStart = p.live ? `<a class="card prod" href="${p.url}">` : `<div class="card prod">`;
-    const wrapEnd   = p.live ? `</a>` : `</div>`;
-    return `${wrapStart}
-      <div class="thumb"><span class="glyph">${p.glyph}</span>${flag}</div>
+    // ทั้งการ์ดคลิกได้: live → ไปหน้าสินค้า, soon → ทัก LINE พร้อมข้อความ (CTA เป็น span ไม่ซ้อน <a>)
+    const href = p.live ? p.url : CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
+    const ext = p.live ? "" : ' target="_blank" rel="noopener"';
+    const ctaLabel = p.live ? (th?"สั่งซื้อ":"Order") : (th?"ถามของ":"Ask");
+    const ctaCls = p.live ? "btn btn-primary btn-sm" : "btn btn-ghost btn-sm";
+    return `<a class="card prod${p.live?"":" soon"}" href="${href}"${ext}>
+      <div class="thumb">${CATALOG.productThumb(p,"")}${flag}</div>
       <div class="body">
         <h3>${th?p.name_th:p.name_en}</h3>
         <p class="desc">${th?p.tagline_th:p.tagline_en}</p>
-        <div class="row">${price}${cta}</div>
+        <div class="row">${price}<span class="${ctaCls}">${ctaLabel}</span></div>
       </div>
-    ${wrapEnd}`;
+    </a>`;
   }).join("");
 }
 
@@ -309,6 +310,21 @@ function renderHeroPrice(){
 function renderHome(){ renderCats(); renderFeatured(); renderHeroPrice(); }
 document.addEventListener("langchange", renderHome);
 renderHome();
+
+/* ---------- UP-3: แผนที่ — ถ้ามี MAPS_EMBED_URL ฝัง iframe, ถ้าไม่มีซ่อนช่อง ---------- */
+(function(){
+  const url = ((window.SHOP && window.SHOP.MAPS_EMBED_URL) || "").trim();
+  const mc = document.getElementById("mapCard");
+  const cg = document.getElementById("contactGrid");
+  if(!mc || !cg) return;
+  if(url){
+    mc.innerHTML = '<iframe title="แผนที่ร้าน ม ทวีภัณฑ์" src="'+url+'" style="border:0;width:100%;height:100%;min-height:280px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>';
+    mc.style.padding = "0";
+  } else {
+    mc.style.display = "none";
+    cg.style.gridTemplateColumns = "1fr";
+  }
+})();
 
 /* ---------- JSON-LD (Store) ---------- */
 (function(){

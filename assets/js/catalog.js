@@ -131,9 +131,24 @@ window.CATALOG = (function () {
     }));
   }
 
+  // UP-2: ลิงก์ทัก LINE พร้อมข้อความตั้งต้น (ถ้ามี LINE_ID จะ prefill ข้อความให้)
+  function lineAsk(text) {
+    const S = window.SHOP || {};
+    const id = (S.LINE_ID || "").replace(/^@/, "");
+    if (id) return "https://line.me/R/oaMessage/@" + id + "/?" + encodeURIComponent(text || "");
+    return S.LINE_URL || "#";
+  }
+  // C-2: รูปสินค้า — ถ้ามี p.image ใช้รูปจริง (loading=lazy) ถ้าไม่มี fallback เป็น emoji
+  function productThumb(p, base) {
+    base = base || "";
+    if (p.image) return '<img src="' + base + p.image + '" alt="' + (p.name_th || "") + '" loading="lazy">';
+    return '<span class="glyph">' + (p.glyph || "📦") + '</span>';
+  }
+
   return {
     colors, products, categories,
     byId, allOptions, optionById,
     unitPriceRange, boxMinPerPiece, savingsPct, perPiece, priceLabel, wholesaleCards,
+    lineAsk, productThumb,
   };
 })();

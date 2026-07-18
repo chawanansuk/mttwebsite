@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
 <title>สินค้าทั้งหมด | ม ทวีภัณฑ์ — อุปกรณ์ไฟฟ้า &amp; ฮาร์ดแวร์</title>
 <meta name="description" content="รวมสินค้าทั้งหมดของ ม ทวีภัณฑ์ — ไฟฟู่ อุปกรณ์ไฟฟ้า หลอดไฟ เครื่องมือช่าง ฮาร์ดแวร์ ราคาปลีก-ส่ง ส่งทั่วไทย">
 <link rel="canonical" href="https://www.mttaweephan.com/products/">
@@ -93,15 +94,16 @@ function renderGrid(){
     const flagTxt=p.live?(th?p.flag_th:p.flag_en):"";
     const flag=flagTxt?`<span class="flag"><span class="badge">${flagTxt}</span></span>`:"";
     const price=p.live?`<div class="price">${CATALOG.priceLabel(p,L())}</div>`:`<div class="price soon">${th?"เร็ว ๆ นี้":"Coming soon"}</div>`;
-    const cta=p.live
-      ?`<span class="btn btn-primary btn-sm">${th?"สั่งซื้อ":"Order"}</span>`
-      :`<a class="btn btn-ghost btn-sm" data-shop="line-url" href="${(window.SHOP&&window.SHOP.LINE_URL)||'#'}" target="_blank" rel="noopener">${th?"ถามของ":"Ask"}</a>`;
-    const s=p.live?`<a class="card prod" href="${p.url.replace(/^products\//,'')}">`:`<div class="card prod">`;
-    const e=p.live?`</a>`:`</div>`;
-    return `${s}<div class="thumb"><span class="glyph">${p.glyph}</span>${flag}</div>
+    const href=p.live?p.url.replace(/^products\//,''):CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
+    const ext=p.live?"":' target="_blank" rel="noopener"';
+    const ctaLabel=p.live?(th?"สั่งซื้อ":"Order"):(th?"ถามของ":"Ask");
+    const ctaCls=p.live?"btn btn-primary btn-sm":"btn btn-ghost btn-sm";
+    return `<a class="card prod${p.live?"":" soon"}" href="${href}"${ext}>
+      <div class="thumb">${CATALOG.productThumb(p,"../")}${flag}</div>
       <div class="body"><h3>${th?p.name_th:p.name_en}</h3>
       <p class="desc">${th?p.tagline_th:p.tagline_en}</p>
-      <div class="row">${price}${cta}</div></div>${e}`;
+      <div class="row">${price}<span class="${ctaCls}">${ctaLabel}</span></div></div>
+    </a>`;
   }).join("");
 }
 function renderAll(){ renderFilters(); renderGrid(); }

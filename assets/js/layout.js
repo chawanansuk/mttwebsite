@@ -133,6 +133,7 @@
   function applyLang(l) {
     lang = l;
     document.documentElement.lang = l;
+    document.documentElement.classList.remove("pending-lang"); // UP-1: เผยข้อความหลังสลับภาษาเสร็จ
     document.querySelectorAll("[data-th]").forEach(function (el) {
       var v = el.getAttribute("data-" + l);
       if (v != null) el.innerHTML = v;

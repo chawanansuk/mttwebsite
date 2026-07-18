@@ -19,5 +19,9 @@ window.SHOP = {
   EMAIL: "shop@mttaweephan.com",
   ADDRESS_TH: "123 ถนนตัวอย่าง ต.ในเมือง อ.เมือง จ.กรุงเทพฯ 10000",
   HOURS_TH: "จ.–ส. 08:00–18:00 น.",
-  FACEBOOK_URL: "#"
+  FACEBOOK_URL: "#",
+
+  // วาง URL ฝัง Google Maps ของร้าน (คัดลอกจาก Google Maps > แชร์ > ฝังแผนที่ > src="...")
+  // ถ้าเว้นว่าง หน้าแรกจะซ่อนช่องแผนที่ให้อัตโนมัติ
+  MAPS_EMBED_URL: ""
 };
