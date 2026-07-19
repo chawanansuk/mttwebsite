@@ -4,7 +4,8 @@
   "private": true,
   "description": "เว็บไซต์ร้าน ม ทวีภัณฑ์ (static site)",
   "scripts": {
-    "test": "node test/smoke.mjs"
+    "test": "node test/smoke.mjs",
+    "linkcheck": "node _links.mjs"
   },
   "devDependencies": {
     "playwright": "^1.48.0"

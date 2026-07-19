@@ -189,6 +189,24 @@
     toastTimer = setTimeout(function () { toastEl.classList.remove("show"); }, 2000);
   };
 
+  /* ---------- conversion tracking (Vercel Web Analytics custom events) ----------
+     วัดว่าลูกค้ากด "ทัก LINE" / "โทร" จากตำแหน่งไหน — รู้ conversion จริง
+     ปลอดภัยแม้ยังไม่เปิด Analytics: window.va ไม่มี → no-op เงียบ ๆ */
+  function track(name, data) {
+    try { if (typeof window.va === "function") window.va("event", data ? Object.assign({ name: name }, data) : { name: name }); } catch (e) {}
+  }
+  window.mttTrack = track;
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a,button") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    if (a.matches("[data-shop=line-url], .btn-line, .fab-line") || href.indexOf("line.me") >= 0) {
+      track("line_click", { where: (a.id || a.getAttribute("data-shop") || a.className || "").toString().slice(0, 60) });
+    } else if (href.indexOf("tel:") === 0 || a.matches("[data-shop=phone-tel]")) {
+      track("phone_click");
+    }
+  }, true);
+
   /* fire once so pages render in the saved language */
   applyLang(lang);
 })();
