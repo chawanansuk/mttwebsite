@@ -11,7 +11,7 @@ import { extname, join, resolve } from "path";
 
 const ROOT = resolve(process.argv[2] || ".");
 const MIME = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript",
-  ".svg": "image/svg+xml", ".png": "image/png", ".xml": "application/xml", ".txt": "text/plain", ".json": "application/json" };
+  ".svg": "image/svg+xml", ".png": "image/png", ".webp": "image/webp", ".xml": "application/xml", ".txt": "text/plain", ".json": "application/json" };
 const IGNORE = [/fonts\.g/i, /_vercel/i, /favicon\.ico/i, /net::ERR/i, /Failed to load resource/i];
 const ignorable = (t) => IGNORE.some((r) => r.test(t));
 
@@ -34,7 +34,8 @@ function assert(cond, msg) { if (cond) log("✓ " + msg); else { fails.push(msg)
 
 process.on("unhandledRejection", (e) => { console.error("\n❌ UNHANDLED: " + (e && e.message || e)); process.exit(1); });
 
-const browser = await chromium.launch();
+// ตั้ง CHROMIUM_PATH ได้ ถ้าเครื่องมี Chromium อยู่แล้วแต่เวอร์ชันไม่ตรงกับที่ Playwright ดาวน์โหลด
+const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
 async function newPage(vp) {
   const page = await browser.newPage(vp ? { viewport: vp } : undefined);
   page.setDefaultNavigationTimeout(30000);      // การโหลดหน้า (cold start ช้าได้)

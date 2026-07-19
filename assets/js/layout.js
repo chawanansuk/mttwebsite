@@ -160,6 +160,15 @@
   window.MTT = { getLang: function () { return lang; }, applyLang: applyLang };
 
   /* ---------- cart badge ---------- */
+  // ล้างรายการค้างที่ id ไม่มีใน catalog แล้ว (เช่นเปลี่ยนรหัสแพ็กเกจ)
+  // ไม่งั้น badge จะนับของที่มองไม่เห็น/ลบไม่ได้ในหน้าตะกร้า
+  if (window.Cart && window.CATALOG) {
+    var validIds = {};
+    CATALOG.products.forEach(function (p) {
+      CATALOG.allOptions(p).forEach(function (o) { validIds[o.id] = true; });
+    });
+    Cart.ids().forEach(function (id) { if (!validIds[id]) Cart.set(id, 0); });
+  }
   function updateBadge() {
     var el = document.getElementById("cartBadge");
     if (!el || !window.Cart) return;

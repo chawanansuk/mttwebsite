@@ -545,9 +545,19 @@ function buildOrderText(){
   return lines.join("\n");
 }
 function copyText(txt){
-  if(navigator.clipboard&&navigator.clipboard.writeText) return navigator.clipboard.writeText(txt);
-  const ta=document.createElement("textarea");ta.value=txt;document.body.appendChild(ta);ta.select();
-  try{document.execCommand("copy")}catch(e){} document.body.removeChild(ta);return Promise.resolve();
+  // คัดลอกแบบ synchronous ก่อน เพื่อให้เสร็จภายใน user gesture (จำเป็นตอนเปิด LINE ต่อทันที)
+  try{
+    const ta=document.createElement("textarea");
+    ta.value=txt;ta.setAttribute("readonly","");
+    ta.style.cssText="position:fixed;top:0;left:0;opacity:0";
+    document.body.appendChild(ta);
+    ta.select();ta.setSelectionRange(0,txt.length); // iOS ต้องมี selection range
+    const ok=document.execCommand("copy");
+    document.body.removeChild(ta);
+    if(ok) return Promise.resolve();
+  }catch(e){}
+  if(navigator.clipboard&&navigator.clipboard.writeText) return navigator.clipboard.writeText(txt).catch(()=>{});
+  return Promise.resolve();
 }
 function copyOrder(){
   const th=L()==="th";
@@ -559,10 +569,9 @@ function copyAndLine(){
   const th=L()==="th";
   const txt=buildOrderText();
   if(!txt){mttToast(th?"ยังไม่มีสินค้าในตะกร้า":"Cart is empty");return;}
-  copyText(txt).then(()=>{
-    mttToast(th?"คัดลอกแล้ว! วางในแชท LINE ได้เลย":"Copied! Paste in LINE chat");
-    setTimeout(()=>window.open(CONFIG.LINE_URL,"_blank","noopener"),600);
-  });
+  copyText(txt).then(()=>mttToast(th?"คัดลอกแล้ว! วางในแชท LINE ได้เลย":"Copied! Paste in LINE chat"));
+  // เปิด LINE แบบ synchronous ภายใน click handler — ถ้าหน่วงผ่าน setTimeout จะโดน popup blocker (โดยเฉพาะ iOS)
+  window.open(CONFIG.LINE_URL,"_blank","noopener");
 }
 function copyBank(){
   const th=L()==="th";
