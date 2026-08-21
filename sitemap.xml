@@ -26,6 +26,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.mttaweephan.com/products/safety-pins-tags.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.mttaweephan.com/products/safety-pins-diaper.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.mttaweephan.com/articles/which-safety-pin-size.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.mttaweephan.com/products/safety-pins-000.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

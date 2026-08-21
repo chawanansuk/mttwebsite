@@ -47,7 +47,7 @@ async function newPage(vp) {
   return page;
 }
 
-const ALL_PAGES = ["/index.html", "/products/index.html", "/products/tools.html", "/products/safety-pins.html", "/products/safety-pins-running.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/privacy.html", "/404.html"];
+const ALL_PAGES = ["/index.html", "/products/index.html", "/products/tools.html", "/products/safety-pins.html", "/products/safety-pins-running.html", "/products/safety-pins-tags.html", "/products/safety-pins-diaper.html", "/articles/which-safety-pin-size.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/privacy.html", "/404.html"];
 
 /* ---- โหลดได้ ไม่มี JS error ทุกหน้า ---- */
 console.log("\n[ โหลดทุกหน้า ]");

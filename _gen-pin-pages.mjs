@@ -90,6 +90,14 @@ const PINS = [
     faqx_en: ["What are jumbo pins for?", "Keychains and crafts, hanging big fabric signs, and shop displays — gilt finish available for décor work."] },
 ];
 
+/* ---------- ลิงก์คู่มือที่เกี่ยวข้องรายเบอร์ (landing/บทความ) ---------- */
+const REL = {
+  "000": ["safety-pins-tags.html", "คู่มือเข็มกลัดติดป้ายราคา →", "Tag-pin guide →"],
+  "00":  ["safety-pins-tags.html", "คู่มือเข็มกลัดติดป้ายราคา →", "Tag-pin guide →"],
+  "2":   ["safety-pins-running.html", "คู่มือผู้จัดงานวิ่ง →", "Race-organizer guide →"],
+  "4":   ["safety-pins-diaper.html", "คู่มือเข็มกลัดผ้าอ้อม →", "Diaper-pin guide →"],
+};
+
 /* ---------- helpers ---------- */
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const jstr = (s) => JSON.stringify(s);
@@ -278,7 +286,7 @@ ${compareRows}
         </tbody>
       </table>
     </div>
-    <p style="font-size:.85rem;color:var(--ink-mute);margin-top:8px"><a href="safety-pins.html#size-table" data-th="ดูตารางขนาดครบทุกเบอร์ →" data-en="Full size chart →">ดูตารางขนาดครบทุกเบอร์ →</a></p>
+    <p style="font-size:.85rem;color:var(--ink-mute);margin-top:8px"><a href="safety-pins.html#size-table" data-th="ดูตารางขนาดครบทุกเบอร์ →" data-en="Full size chart →">ดูตารางขนาดครบทุกเบอร์ →</a>${REL[p.no] ? ` · <a href="${REL[p.no][0]}" data-th="${esc(REL[p.no][1])}" data-en="${esc(REL[p.no][2])}">${esc(REL[p.no][1])}</a>` : ""} · <a href="../articles/which-safety-pin-size.html" data-th="เบอร์ไหนใช้ทำอะไร →" data-en="Size-choosing guide →">เบอร์ไหนใช้ทำอะไร →</a></p>
 
     <h2 class="sec-h" data-th="คำถามที่พบบ่อย" data-en="FAQ">คำถามที่พบบ่อย</h2>
     <div class="faq">

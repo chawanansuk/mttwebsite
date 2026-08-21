@@ -6,7 +6,7 @@ const server=http.createServer((req,res)=>{let p=decodeURIComponent(req.url.spli
 await new Promise(r=>server.listen(0,r));const port=server.address().port;const base='http://localhost:'+port;
 // ตั้ง CHROMIUM_PATH ได้ ถ้าเครื่องมี Chromium อยู่แล้วแต่เวอร์ชันไม่ตรงกับที่ Playwright ดาวน์โหลด
 const b=await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
-const pages=['/index.html','/products/index.html','/products/tools.html','/products/safety-pins.html','/products/safety-pins-running.html','/products/safety-pins-000.html','/products/safety-pins-00.html','/products/safety-pins-0.html','/products/safety-pins-1.html','/products/safety-pins-2.html','/products/safety-pins-3.html','/products/safety-pins-4.html','/products/safety-pins-5.html','/products/safety-pins-6.html','/products/safety-pins-7.html','/products/jet-lighter.html','/privacy.html','/404.html'];
+const pages=['/index.html','/products/index.html','/products/tools.html','/products/safety-pins.html','/products/safety-pins-running.html','/products/safety-pins-tags.html','/products/safety-pins-diaper.html','/articles/which-safety-pin-size.html','/products/safety-pins-000.html','/products/safety-pins-00.html','/products/safety-pins-0.html','/products/safety-pins-1.html','/products/safety-pins-2.html','/products/safety-pins-3.html','/products/safety-pins-4.html','/products/safety-pins-5.html','/products/safety-pins-6.html','/products/safety-pins-7.html','/products/jet-lighter.html','/privacy.html','/404.html'];
 const seen=new Set(); const broken=[]; const anchors=[];
 for(const path of pages){
   const p=await b.newPage();
