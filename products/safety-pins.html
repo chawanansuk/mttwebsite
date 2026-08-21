@@ -61,6 +61,11 @@
 .trust .badge{font-size:.83rem;padding:7px 14px}
 .sec-h{font-size:clamp(1.25rem,2.6vw,1.7rem);margin:42px 0 6px}
 .sec-sub{color:var(--ink-dim);font-size:.92rem;margin:0 0 18px}
+/* ชิปลิงก์ไปหน้ารายเบอร์ */
+.filters{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 6px}
+.fchip{border:1px solid var(--line-strong);background:var(--surface);border-radius:999px;padding:8px 16px;
+  font-size:.9rem;font-weight:600;color:var(--ink-2);text-decoration:none;transition:.15s}
+.fchip:hover{border-color:var(--amber);color:var(--amber-dark)}
 /* ---- การ์ดรายเบอร์ ---- */
 .pin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,285px));justify-content:center;gap:16px;margin-top:14px}
 .pin-card{display:flex;flex-direction:column;padding:18px 18px 16px}
@@ -147,18 +152,24 @@ table.size td b{font-family:"Kanit"}
           <th data-th="ชื่อเรียกอื่น" data-en="Also called">ชื่อเรียกอื่น</th>
         </tr></thead>
         <tbody>
-          <tr><td><b>000</b></td><td>19</td><td>1.9</td><td>3/4"</td><td>720–1,500</td><td data-th="เบอร์จิ๋ว, 3/0" data-en="Tiny, 3/0">เบอร์จิ๋ว, 3/0</td></tr>
-          <tr><td><b>00</b></td><td>22–23</td><td>2.3</td><td>7/8"</td><td>864–1,440</td><td>2/0</td></tr>
-          <tr><td><b>0</b></td><td>28</td><td>2.8</td><td>1-1/16"</td><td>864–1,728</td><td>—</td></tr>
-          <tr><td><b>1</b></td><td>31–34</td><td>3.1–3.4</td><td>1-1/4"</td><td>864</td><td>—</td></tr>
-          <tr><td><b>2</b></td><td>38</td><td>3.8</td><td>1-1/2"</td><td>864</td><td data-th="เบอร์งานวิ่ง" data-en="Race-bib size">เบอร์งานวิ่ง</td></tr>
-          <tr><td><b>3</b></td><td>47</td><td>4.7</td><td>1-7/8"</td><td>408–432</td><td>—</td></tr>
-          <tr><td><b>4</b></td><td>55–56</td><td>5.6</td><td>2-1/4"</td><td>432</td><td data-th="เข็มกลัดผ้าห่ม (blanket pin)" data-en="Blanket / diaper pin">เข็มกลัดผ้าห่ม (blanket pin)</td></tr>
-          <tr><td><b>5</b></td><td>65</td><td>6.5</td><td>2-1/2"</td><td>216</td><td>—</td></tr>
-          <tr><td><b>6</b></td><td>75</td><td>7.5</td><td>3"</td><td>144</td><td>—</td></tr>
-          <tr><td><b>7</b></td><td>85</td><td>8.5</td><td>3-1/4"</td><td>144</td><td data-th="เข็มกลัดยักษ์" data-en="Jumbo pin">เข็มกลัดยักษ์</td></tr>
+          <tr><td><a href="safety-pins-000.html"><b>000</b></a></td><td>19</td><td>1.9</td><td>3/4"</td><td>720–1,500</td><td data-th="เบอร์จิ๋ว, 3/0" data-en="Tiny, 3/0">เบอร์จิ๋ว, 3/0</td></tr>
+          <tr><td><a href="safety-pins-00.html"><b>00</b></a></td><td>22–23</td><td>2.3</td><td>7/8"</td><td>864–1,440</td><td>2/0</td></tr>
+          <tr><td><a href="safety-pins-0.html"><b>0</b></a></td><td>28</td><td>2.8</td><td>1-1/16"</td><td>864–1,728</td><td>—</td></tr>
+          <tr><td><a href="safety-pins-1.html"><b>1</b></a></td><td>31–34</td><td>3.1–3.4</td><td>1-1/4"</td><td>864</td><td>—</td></tr>
+          <tr><td><a href="safety-pins-2.html"><b>2</b></a></td><td>38</td><td>3.8</td><td>1-1/2"</td><td>864</td><td data-th="เบอร์งานวิ่ง" data-en="Race-bib size">เบอร์งานวิ่ง</td></tr>
+          <tr><td><a href="safety-pins-3.html"><b>3</b></a></td><td>47</td><td>4.7</td><td>1-7/8"</td><td>408–432</td><td>—</td></tr>
+          <tr><td><a href="safety-pins-4.html"><b>4</b></a></td><td>55–56</td><td>5.6</td><td>2-1/4"</td><td>432</td><td data-th="เข็มกลัดผ้าห่ม (blanket pin)" data-en="Blanket / diaper pin">เข็มกลัดผ้าห่ม (blanket pin)</td></tr>
+          <tr><td><a href="safety-pins-5.html"><b>5</b></a></td><td>65</td><td>6.5</td><td>2-1/2"</td><td>216</td><td>—</td></tr>
+          <tr><td><a href="safety-pins-6.html"><b>6</b></a></td><td>75</td><td>7.5</td><td>3"</td><td>144</td><td>—</td></tr>
+          <tr><td><a href="safety-pins-7.html"><b>7</b></a></td><td>85</td><td>8.5</td><td>3-1/4"</td><td>144</td><td data-th="เข็มกลัดยักษ์" data-en="Jumbo pin">เข็มกลัดยักษ์</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <p class="sec-sub" style="margin-top:12px" data-th="เจาะลึกรายเบอร์ (ขนาด การใช้งาน คำถามที่พบบ่อย):" data-en="Deep-dive by size (specs, uses, FAQ):">เจาะลึกรายเบอร์ (ขนาด การใช้งาน คำถามที่พบบ่อย):</p>
+    <div class="filters" style="margin-top:0">
+      <a class="fchip" href="safety-pins-000.html">เบอร์ 000</a><a class="fchip" href="safety-pins-00.html">เบอร์ 00</a><a class="fchip" href="safety-pins-0.html">เบอร์ 0</a><a class="fchip" href="safety-pins-1.html">เบอร์ 1</a><a class="fchip" href="safety-pins-2.html">เบอร์ 2</a><a class="fchip" href="safety-pins-3.html">เบอร์ 3</a><a class="fchip" href="safety-pins-4.html">เบอร์ 4</a><a class="fchip" href="safety-pins-5.html">เบอร์ 5</a><a class="fchip" href="safety-pins-6.html">เบอร์ 6</a><a class="fchip" href="safety-pins-7.html">เบอร์ 7</a>
+      <a class="fchip" href="safety-pins-running.html" data-th="🏃 เข็มกลัดงานวิ่ง" data-en="🏃 Race pins">🏃 เข็มกลัดงานวิ่ง</a>
     </div>
 
     <h2 class="sec-h" data-th="หน่วยขายแบบค้าส่ง" data-en="Wholesale units">หน่วยขายแบบค้าส่ง</h2>
@@ -176,6 +187,7 @@ table.size td b{font-family:"Kanit"}
         <span class="res" id="calcRes"></span>
         <a class="btn btn-primary btn-sm" id="calcAsk" href="#" target="_blank" rel="noopener" data-th="ขอราคางานวิ่ง" data-en="Get event quote">ขอราคางานวิ่ง</a>
       </div>
+      <p style="margin:12px 0 0;font-size:.85rem"><a href="safety-pins-running.html" style="color:#7fe0a9" data-th="คู่มือผู้จัดงานวิ่งฉบับเต็ม (เผื่อสำรอง ใบกำกับภาษี ระยะเวลาสั่ง) →" data-en="Full race-organizer guide →">คู่มือผู้จัดงานวิ่งฉบับเต็ม (เผื่อสำรอง ใบกำกับภาษี ระยะเวลาสั่ง) →</a></p>
     </div>
 
     <h2 class="sec-h" data-th="สเปคสินค้า" data-en="Specifications">สเปคสินค้า</h2>
