@@ -62,6 +62,11 @@ window.CATALOG = (function () {
       name_th: "เครื่องมือช่าง WYNNTOOLS", name_en: "WYNNTOOLS hand tools",
       tagline_th: "คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย",
       tagline_en: "Pliers, wrenches, electrical, measuring — exclusive Thai importer" },
+    { id: "safety-pins", category: "pins", glyph: "🧷", live: false,
+      url: "products/safety-pins.html",
+      name_th: "เข็มกลัดซ่อนปลาย เบอร์ 000–7", name_en: "Safety pins size 000–7",
+      tagline_th: "ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง",
+      tagline_en: "Every size in one place — box, gross, or dozen, counted not weighed" },
   ];
 
   /* ---------- หมวดหมู่ (ใช้บนหน้าแรก + หน้ารวมสินค้า) ---------- */
@@ -72,6 +77,9 @@ window.CATALOG = (function () {
     { key: "tools", icon: '<path d="m14 7 3 3M5 17l-2 4 4-2 11-11a2.1 2.1 0 0 0-3-3z"/>', th: "เครื่องมือช่าง WYNNTOOLS", en: "WYNNTOOLS hand tools",
       dth: "คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ดูรายการแล้วเช็คราคาได้เลย", den: "Pliers, wrenches, electrical, measuring — browse & ask price",
       url: "products/tools.html", live: true, accent: "blue" },
+    { key: "pins", icon: '<path d="M5 19a3.5 3.5 0 0 0 5 0l9-9a3.5 3.5 0 0 0-5-5l-8 8"/><path d="m14 5 5 5"/>', th: "เข็มกลัดซ่อนปลาย", en: "Safety pins",
+      dth: "ครบทุกเบอร์ 000–7 ขายส่งยกกล่อง แบ่งขายได้", den: "All sizes 000–7, wholesale by the box",
+      url: "products/safety-pins.html", live: true, accent: "amber" },
     { key: "hardware", icon: '<circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/>', th: "ฮาร์ดแวร์ &amp; อื่น ๆ", en: "Hardware &amp; more",
       dth: "หน้าร้านสำเพ็งมีอีกเพียบ — ทักถามได้เลย", den: "Much more in-store at Sampheng — just ask",
       url: "products/index.html", live: false, accent: "amber" },

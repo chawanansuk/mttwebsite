@@ -18,6 +18,7 @@
     { key: "cats",     th: "หมวดหมู่",       en: "Categories", href: BASE + "index.html#categories" },
     { key: "products", th: "สินค้าทั้งหมด",  en: "Products",   href: BASE + "products/index.html" },
     { key: "tools",    th: "เครื่องมือช่าง",  en: "Tools",      href: BASE + "products/tools.html" },
+    { key: "pins",     th: "เข็มกลัด",        en: "Safety pins", href: BASE + "products/safety-pins.html" },
     { key: "contact",  th: "ติดต่อ",         en: "Contact",    href: BASE + "index.html#contact" },
   ];
   var CHECKOUT = BASE + "products/jet-lighter.html#order";
@@ -56,6 +57,7 @@
       '<div class="foot-col"><h4 data-th="สินค้า" data-en="Products">สินค้า</h4><ul>' +
         '<li><a href="' + BASE + 'products/jet-lighter.html" data-th="ไฟฟู่ / ไฟแช็ก" data-en="Jet lighters">ไฟฟู่ / ไฟแช็ก</a></li>' +
         '<li><a href="' + BASE + 'products/tools.html" data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS tools">เครื่องมือช่าง WYNNTOOLS</a></li>' +
+        '<li><a href="' + BASE + 'products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a></li>' +
         '<li><a href="' + BASE + 'products/index.html" data-th="สินค้าทั้งหมด" data-en="All products">สินค้าทั้งหมด</a></li>' +
         '<li><a href="' + BASE + 'index.html#categories" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a></li></ul></div>' +
       '<div class="foot-col"><h4 data-th="ลิงก์" data-en="Links">ลิงก์</h4><ul>' +
