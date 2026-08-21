@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
-<title>สินค้าทั้งหมด | ม ทวีภัณฑ์ — อุปกรณ์ไฟฟ้า &amp; ฮาร์ดแวร์</title>
-<meta name="description" content="รวมสินค้าทั้งหมดของ ม ทวีภัณฑ์ — ไฟฟู่ อุปกรณ์ไฟฟ้า หลอดไฟ เครื่องมือช่าง ฮาร์ดแวร์ ราคาปลีก-ส่ง ส่งทั่วไทย">
+<title>สินค้าทั้งหมด | ม ทวีภัณฑ์ — เครื่องมือช่าง &amp; ฮาร์ดแวร์</title>
+<meta name="description" content="รวมสินค้าทั้งหมดของ ม ทวีภัณฑ์ — ไฟฟู่ เครื่องมือช่าง WYNNTOOLS ฮาร์ดแวร์ ราคาปลีก-ส่ง ส่งทั่วไทย">
 <link rel="canonical" href="https://www.mttaweephan.com/products">
 <meta property="og:title" content="สินค้าทั้งหมด | ม ทวีภัณฑ์">
 <meta property="og:url" content="https://www.mttaweephan.com/products">
-<meta property="og:description" content="ไฟฟู่ อุปกรณ์ไฟฟ้า หลอดไฟ เครื่องมือช่าง ฮาร์ดแวร์ ปลีก-ส่ง">
+<meta property="og:description" content="ไฟฟู่ เครื่องมือช่าง WYNNTOOLS ฮาร์ดแวร์ ปลีก-ส่ง">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="th_TH">
 <meta property="og:image" content="https://www.mttaweephan.com/assets/img/og-image.png">
@@ -94,10 +94,11 @@ function renderGrid(){
   el.innerHTML=list.map(p=>{
     const flagTxt=p.live?(th?p.flag_th:p.flag_en):"";
     const flag=flagTxt?`<span class="flag"><span class="badge">${flagTxt}</span></span>`:"";
-    const price=p.live?`<div class="price">${CATALOG.priceLabel(p,L())}</div>`:`<div class="price soon">${th?"เร็ว ๆ นี้":"Coming soon"}</div>`;
-    const href=p.live?p.url.replace(/^products\//,''):CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
-    const ext=p.live?"":' target="_blank" rel="noopener"';
-    const ctaLabel=p.live?(th?"สั่งซื้อ":"Order"):(th?"ถามของ":"Ask");
+    const linked=p.live||!!p.url;
+    const price=p.live?`<div class="price">${CATALOG.priceLabel(p,L())}</div>`:`<div class="price soon">${linked?(th?"สอบถามราคา":"Ask price"):(th?"เร็ว ๆ นี้":"Coming soon")}</div>`;
+    const href=linked?p.url.replace(/^products\//,''):CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
+    const ext=linked?"":' target="_blank" rel="noopener"';
+    const ctaLabel=p.live?(th?"สั่งซื้อ":"Order"):(linked?(th?"ดูสินค้า":"View"):(th?"ถามของ":"Ask"));
     const ctaCls=p.live?"btn btn-primary btn-sm":"btn btn-ghost btn-sm";
     return `<a class="card prod${p.live?"":" soon"}" href="${href}"${ext}>
       <div class="thumb">${CATALOG.productThumb(p,"../")}${flag}</div>

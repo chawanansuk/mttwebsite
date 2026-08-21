@@ -47,7 +47,7 @@ async function newPage(vp) {
   return page;
 }
 
-const ALL_PAGES = ["/index.html", "/products/index.html", "/products/jet-lighter.html", "/privacy.html", "/404.html"];
+const ALL_PAGES = ["/index.html", "/products/index.html", "/products/tools.html", "/products/jet-lighter.html", "/privacy.html", "/404.html"];
 
 /* ---- โหลดได้ ไม่มี JS error ทุกหน้า ---- */
 console.log("\n[ โหลดทุกหน้า ]");

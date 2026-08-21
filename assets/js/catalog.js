@@ -55,11 +55,13 @@ window.CATALOG = (function () {
       ],
     },
     /* ----- สินค้าที่กำลังจะเปิดขายบนเว็บ (โชว์เป็น "เร็ว ๆ นี้") ----- */
+    /* live:false + url = มีหน้ารวมของตัวเองแล้ว (โชว์ "สอบถามราคา" ลิงก์ไปหน้านั้น ไม่ใช่ทัก LINE) */
     { id: "wynn-tools", category: "tools", glyph: "🧰", live: false,
+      url: "products/tools.html",
       image: "assets/img/products/wynn-tools.svg",
       name_th: "เครื่องมือช่าง WYNNTOOLS", name_en: "WYNNTOOLS hand tools",
-      tagline_th: "ของแท้ นำเข้าโดยตรง — เราคือผู้นำเข้าแต่เพียงผู้เดียวในไทย",
-      tagline_en: "Genuine, imported direct — exclusive importer in Thailand" },
+      tagline_th: "คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย",
+      tagline_en: "Pliers, wrenches, electrical, measuring — exclusive Thai importer" },
   ];
 
   /* ---------- หมวดหมู่ (ใช้บนหน้าแรก + หน้ารวมสินค้า) ---------- */
@@ -68,8 +70,8 @@ window.CATALOG = (function () {
       dth: "ไฟแช็กหัวฟู่ กันลม เติมแก๊สได้ ปลีก-ส่ง", den: "Windproof refillable jet lighters",
       url: "products/jet-lighter.html", live: true, accent: "amber" },
     { key: "tools", icon: '<path d="m14 7 3 3M5 17l-2 4 4-2 11-11a2.1 2.1 0 0 0-3-3z"/>', th: "เครื่องมือช่าง WYNNTOOLS", en: "WYNNTOOLS hand tools",
-      dth: "ของแท้ นำเข้าแต่เพียงผู้เดียวในไทย — เร็ว ๆ นี้บนเว็บ", den: "Genuine, exclusive Thai importer — online soon",
-      url: "products/index.html", live: false, accent: "blue" },
+      dth: "คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ดูรายการแล้วเช็คราคาได้เลย", den: "Pliers, wrenches, electrical, measuring — browse & ask price",
+      url: "products/tools.html", live: true, accent: "blue" },
     { key: "hardware", icon: '<circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/>', th: "ฮาร์ดแวร์ &amp; อื่น ๆ", en: "Hardware &amp; more",
       dth: "หน้าร้านสำเพ็งมีอีกเพียบ — ทักถามได้เลย", den: "Much more in-store at Sampheng — just ask",
       url: "products/index.html", live: false, accent: "amber" },

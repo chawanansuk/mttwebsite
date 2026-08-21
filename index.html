@@ -290,13 +290,14 @@ function renderFeatured(){
   document.getElementById("featGrid").innerHTML = CATALOG.products.map(p=>{
     const flagTxt = p.live ? (th?p.flag_th:p.flag_en) : "";
     const flag = flagTxt ? `<span class="flag"><span class="badge">${flagTxt}</span></span>` : "";
+    // ทั้งการ์ดคลิกได้: live → หน้าสั่งซื้อ, มี url (หน้ารวมของตัวเอง) → หน้านั้น, ไม่มีทั้งคู่ → ทัก LINE
+    const linked = p.live || !!p.url;
     const price = p.live
       ? `<div class="price">${CATALOG.priceLabel(p, L())}</div>`
-      : `<div class="price soon">${th?"เร็ว ๆ นี้":"Coming soon"}</div>`;
-    // ทั้งการ์ดคลิกได้: live → ไปหน้าสินค้า, soon → ทัก LINE พร้อมข้อความ (CTA เป็น span ไม่ซ้อน <a>)
-    const href = p.live ? p.url : CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
-    const ext = p.live ? "" : ' target="_blank" rel="noopener"';
-    const ctaLabel = p.live ? (th?"สั่งซื้อ":"Order") : (th?"ถามของ":"Ask");
+      : `<div class="price soon">${linked?(th?"สอบถามราคา":"Ask price"):(th?"เร็ว ๆ นี้":"Coming soon")}</div>`;
+    const href = linked ? p.url : CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
+    const ext = linked ? "" : ' target="_blank" rel="noopener"';
+    const ctaLabel = p.live ? (th?"สั่งซื้อ":"Order") : (linked?(th?"ดูสินค้า":"View"):(th?"ถามของ":"Ask"));
     const ctaCls = p.live ? "btn btn-primary btn-sm" : "btn btn-ghost btn-sm";
     return `<a class="card prod${p.live?"":" soon"}" href="${href}"${ext}>
       <div class="thumb">${CATALOG.productThumb(p,"")}${flag}</div>
