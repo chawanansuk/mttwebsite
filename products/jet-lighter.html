@@ -70,11 +70,11 @@
 .feat .ic svg{width:22px;height:22px}
 .feat h3{font-size:1rem;margin-bottom:4px;font-weight:600;font-family:"Anuphan"}
 .feat p{font-size:.85rem;color:var(--ink-dim);margin:0}
-.swatches{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
-.sw{cursor:pointer;border:2px solid var(--line);border-radius:14px;padding:8px;background:var(--surface);display:flex;flex-direction:column;align-items:center;gap:8px;width:96px;transition:border-color .15s,transform .15s,box-shadow .2s;font-family:inherit}
+.swatches{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.sw{cursor:pointer;border:2px solid var(--line);border-radius:14px;padding:8px;background:var(--surface);display:flex;flex-direction:column;align-items:center;gap:7px;width:88px;transition:border-color .15s,transform .15s,box-shadow .2s;font-family:inherit}
 .sw:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}
 .sw.on{border-color:var(--amber);box-shadow:var(--ring)}
-.sw .dot{width:52px;height:52px;border-radius:50%;box-shadow:inset 0 -6px 12px rgba(0,0,0,.25),0 4px 14px rgba(0,0,0,.15)}
+.sw .dot{width:46px;height:46px;border-radius:50%;box-shadow:inset 0 -6px 12px rgba(0,0,0,.25),0 4px 14px rgba(0,0,0,.15)}
 .sw span{font-size:.82rem;color:var(--ink-dim)}
 .sw.on span{color:var(--ink);font-weight:600}
 .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px}
@@ -105,7 +105,13 @@
 .order-grid{display:grid;grid-template-columns:1fr .82fr;gap:24px;margin-top:26px;align-items:start}
 .cart{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm)}
 .cart h3{margin-bottom:14px;font-size:1.2rem}
-.cart-empty{color:var(--ink-mute);text-align:center;padding:30px 0;font-size:.92rem}
+.cart-empty{color:var(--ink-mute);text-align:center;padding:22px 0 26px;font-size:.92rem}
+/* ปุ่มหยิบแพ็กยอดนิยมตอนตะกร้ายังว่าง — ลดขั้นตอนไม่ต้องเลื่อนกลับขึ้นไป */
+.qadds{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+.qadd{cursor:pointer;font-family:inherit;font-size:.88rem;font-weight:600;color:var(--ink-2);
+  background:var(--surface);border:1.5px solid var(--line-strong);border-radius:999px;padding:9px 16px;transition:.15s}
+.qadd b{color:var(--amber-dark);font-family:"Kanit"}
+.qadd:hover{border-color:var(--amber);transform:translateY(-1px);box-shadow:var(--shadow-sm)}
 .line-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
 .line-item .li-name{flex:1}
 .line-item .li-name b{font-weight:600;font-size:.95rem}
@@ -443,7 +449,13 @@ function renderCart(){
   const el=document.getElementById("cartItems");
   const ids=Cart.ids();
   if(ids.length===0){
-    el.innerHTML=`<div class="cart-empty">${th?"ยังไม่มีสินค้า — เลือกแพ็กเกจด้านบนได้เลย":"Empty — pick a pack above to start."}</div>`;
+    // แพ็กยอดนิยม: ตัวที่ติดธง best + กล่องที่เฉลี่ยต่อชิ้นถูกสุด — กดหยิบได้เลยไม่ต้องเลื่อนขึ้น
+    const all=CATALOG.allOptions(PRODUCT);
+    const cheapBox=all.filter(o=>o.box).sort((a,b)=>(a.price/a.qty)-(b.price/b.qty))[0];
+    const quicks=all.filter(o=>o.best).concat(cheapBox?[cheapBox]:[]);
+    el.innerHTML=`<div class="cart-empty">${th?"ตะกร้ายังว่าง — หยิบแพ็กยอดนิยมได้เลย":"Cart's empty — grab a popular pack:"}
+      <div class="qadds">${quicks.map(o=>`<button type="button" class="qadd" onclick="addToCart('${o.id}')">＋ ${th?o.variant.name_th:o.variant.name_en} · ${th?o.label_th:o.label_en} <b>฿${o.price}</b></button>`).join("")}</div>
+    </div>`;
     document.getElementById("colorPickWrap").style.display="none";
     document.getElementById("orderForm").style.display="none";
   }else{
