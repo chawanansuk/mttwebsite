@@ -208,9 +208,8 @@ ${faqSchema}
 .trust .badge{font-size:.83rem;padding:7px 14px}
 .cta-row{display:flex;flex-wrap:wrap;gap:10px}
 .sizebox{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);padding:22px;margin-top:8px}
-.sizebar{height:14px;position:relative;margin:6px 0 16px}
-.sizebar i{position:absolute;left:0;top:3px;height:8px;border-radius:99px;background:linear-gradient(90deg,var(--amber),var(--amber-dark));box-shadow:0 2px 8px rgba(18,161,80,.35)}
-.sizebar::after{content:"";position:absolute;left:0;right:0;top:6px;height:2px;background:var(--line);z-index:-1}
+.pinvis{margin:8px 0 18px;min-height:44px;display:flex;align-items:center}
+.pinvis img{display:block;height:auto;max-width:100%}
 .spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .spec-grid .it{background:var(--bg-soft);border-radius:var(--r);padding:12px 14px}
 .spec-grid .it small{display:block;color:var(--ink-mute);font-size:.75rem;margin-bottom:2px}
@@ -263,7 +262,7 @@ table.cmp tr.me td{background:#e9f8f0}
 
     <div class="sizebox">
       <small style="color:var(--ink-mute)" data-th="ความยาวเทียบเบอร์ใหญ่สุด (เบอร์ 7 = 85 มม.)" data-en="Length vs the largest size (7 = 85 mm)">ความยาวเทียบเบอร์ใหญ่สุด (เบอร์ 7 = 85 มม.)</small>
-      <div class="sizebar" aria-hidden="true"><i style="width:${Math.round(p.mm / MAXMM * 100)}%"></i></div>
+      <div class="pinvis" aria-hidden="true"><img src="../assets/img/products/safety-pin.svg" alt="" style="width:${Math.round(p.mm / MAXMM * 100)}%"></div>
       <div class="spec-grid">
         <div class="it"><small data-th="ความยาว" data-en="Length">ความยาว</small><b>${p.cm} ซม. · ${p.mm} มม. (${esc(p.inch)})</b></div>
         <div class="it"><small data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</small><b>~${p.pack} ตัว</b></div>

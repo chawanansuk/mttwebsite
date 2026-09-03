@@ -57,6 +57,10 @@
 <style>
 .pin-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.16),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:52px 0 8px}
 .pin-hero h1{font-size:clamp(1.85rem,4vw,2.7rem);margin:8px 0 6px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+.hero-pins{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 30px rgba(16,26,48,.12))}
+.pinvis{margin:10px 0 10px;min-height:38px;display:flex;align-items:center}
+.pinvis img{display:block;height:auto}
 .trust{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 4px}
 .trust .badge{font-size:.83rem;padding:7px 14px}
 .sec-h{font-size:clamp(1.25rem,2.6vw,1.7rem);margin:42px 0 6px}
@@ -111,7 +115,7 @@ table.size td b{font-family:"Kanit"}
 .faq details[open] summary::after{content:"–"}
 .faq .a{padding:0 0 14px;color:var(--ink-2);font-size:.9rem}
 .brand-note{margin:26px 0 0;color:var(--ink-mute);font-size:.85rem}
-@media(max-width:860px){.pin-grid{grid-template-columns:1fr 1fr}.unit-grid{grid-template-columns:1fr}}
+@media(max-width:860px){.pin-grid{grid-template-columns:1fr 1fr}.unit-grid{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr;gap:18px}.hero-pins{max-width:380px;margin:0 auto}}
 @media(max-width:480px){.pin-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -119,7 +123,8 @@ table.size td b{font-family:"Kanit"}
 <div id="site-header"></div>
 
 <section class="pin-hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div>
     <span class="eyebrow" data-th="ขายส่ง สำเพ็ง · ครบทุกเบอร์ที่เดียว" data-en="Sampheng wholesale · every size in one place">ขายส่ง สำเพ็ง · ครบทุกเบอร์ที่เดียว</span>
     <h1 data-th="เข็มกลัดซ่อนปลาย เบอร์ 000–7" data-en="Safety pins, size 000–7">เข็มกลัดซ่อนปลาย เบอร์ 000–7</h1>
     <p class="muted" style="margin:0;max-width:660px" data-th="เหล็กสปริงชุบนิกเกิล ปลายเข็มซ่อนในฝาครอบ ไม่ทิ่มมือ — มีครบตั้งแต่เบอร์จิ๋ว 000 ถึงเบอร์ยักษ์ 7 ขายยกกล่องราคาส่ง แบ่งขายเป็นพวง/กุรุสก็ได้ กดที่เบอร์เพื่อเช็คราคาทาง LINE" data-en="Nickel-plated spring steel, point safely capped — every size from tiny 000 to jumbo 7. Wholesale by the box, or split by dozen/gross. Tap a size to ask price on LINE.">เหล็กสปริงชุบนิกเกิล ปลายเข็มซ่อนในฝาครอบ ไม่ทิ่มมือ — มีครบตั้งแต่เบอร์จิ๋ว 000 ถึงเบอร์ยักษ์ 7 ขายยกกล่องราคาส่ง แบ่งขายเป็นพวง/กุรุสก็ได้ กดที่เบอร์เพื่อเช็คราคาทาง LINE</p>
@@ -129,6 +134,8 @@ table.size td b{font-family:"Kanit"}
       <span class="badge" data-th="📦 แบ่งขาย พวง/กุรุส/กล่อง" data-en="📦 Dozen / gross / box">📦 แบ่งขาย พวง/กุรุส/กล่อง</span>
       <span class="badge" data-th="🧾 ออกใบกำกับภาษีได้" data-en="🧾 Tax invoice available">🧾 ออกใบกำกับภาษีได้</span>
     </div>
+    </div>
+    <img class="hero-pins" src="../assets/img/products/safety-pins.svg" alt="เข็มกลัดซ่อนปลายหลายขนาด สีเงิน ทอง ดำ" width="640" height="400">
   </div>
 </section>
 
@@ -136,7 +143,7 @@ table.size td b{font-family:"Kanit"}
   <div class="wrap">
 
     <h2 class="sec-h" data-th="เลือกเบอร์ที่ต้องการ" data-en="Pick your size">เลือกเบอร์ที่ต้องการ</h2>
-    <p class="sec-sub" data-th="แถบสีเขียว = ความยาวจริงเทียบกันทุกเบอร์ (โดยประมาณ ±2–3 มม.)" data-en="Green bar = actual relative length (approx. ±2–3 mm)">แถบสีเขียว = ความยาวจริงเทียบกันทุกเบอร์ (โดยประมาณ ±2–3 มม.)</p>
+    <p class="sec-sub" data-th="รูปเข็มในการ์ด = ความยาวจริงเทียบกันทุกเบอร์ (โดยประมาณ ±2–3 มม.)" data-en="Pin drawings are to scale across sizes (approx. ±2–3 mm)">รูปเข็มในการ์ด = ความยาวจริงเทียบกันทุกเบอร์ (โดยประมาณ ±2–3 มม.)</p>
     <div class="pin-grid" id="pinGrid"></div>
 
     <h2 class="sec-h" id="size-table" data-th="ตารางเทียบขนาดเข็มกลัดทุกเบอร์" data-en="Safety pin size chart">ตารางเทียบขนาดเข็มกลัดทุกเบอร์</h2>
@@ -259,7 +266,7 @@ function renderPins(){
     const flag = p.flag_th ? `<span class="badge green flag">${th?p.flag_th:p.flag_en}</span>` : "";
     return `<a class="card pin-card" href="${ask}" target="_blank" rel="noopener" aria-label="${name}">
       <div class="head"><span class="num">${th?"เบอร์ ":"#"}${p.no}${flag}</span><span class="len">${p.cm} ${th?"ซม.":"cm"} · ${p.mm} ${th?"มม.":"mm"}</span></div>
-      <div class="sizebar" aria-hidden="true"><i style="width:${Math.round(p.mm/maxMM*maxW)}%"></i></div>
+      <div class="pinvis" aria-hidden="true"><img src="../assets/img/products/safety-pin.svg" alt="" loading="lazy" style="width:${Math.round(p.mm/maxMM*maxW)}%"></div>
       <p class="use">${th?p.uth:p.uen}</p>
       <p class="pack">${th?"บรรจุ ~":"~"}${p.pack} ${th?"ตัว/กล่อง":"pcs/box"}</p>
       <div class="row"><span class="tagm">${th?"ปลีก-ส่ง ทักถามได้":"Retail & bulk"}</span><span class="btn btn-primary btn-sm">${th?"เช็คราคา":"Ask price"}</span></div>
