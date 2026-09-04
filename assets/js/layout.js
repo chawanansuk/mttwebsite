@@ -76,6 +76,25 @@
     '</div></div></footer>';
   }
 
+  /* แถบเมนูล่าง (มือถือ) — 4 ปลายทาง: หน้าแรก / สินค้า / ตะกร้า / LINE (ซ่อนบนจอใหญ่ผ่าน CSS) */
+  var PRODUCT_PAGES = { products: 1, tools: 1, pins: 1 };
+  function tabbarHTML() {
+    var cur = function (k) { return k === "home" ? (PAGE === "home") : (PAGE in PRODUCT_PAGES); };
+    return '<nav class="tabbar" aria-label="เมนูหลัก">' +
+      '<a href="' + BASE + 'index.html"' + (cur("home") ? ' aria-current="page"' : '') + '>' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg>' +
+        '<span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a>' +
+      '<a href="' + BASE + 'products/index.html"' + (cur("products") ? ' aria-current="page"' : '') + '>' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M3 7 12 3l9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg>' +
+        '<span data-th="สินค้า" data-en="Products">สินค้า</span></a>' +
+      '<a href="' + CHECKOUT + '" aria-label="ตะกร้าสินค้า">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>' +
+        '<span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>' +
+      '<a class="tab-line" data-shop="line-url" href="#" target="_blank" rel="noopener">' +
+        LINE_ICON + '<span data-th="ทัก LINE" data-en="LINE">ทัก LINE</span></a>' +
+    '</nav>';
+  }
+
   function fabHTML() {
     return '<a class="fab-line" data-shop="line-url" href="#" target="_blank" rel="noopener" aria-label="สั่งทาง LINE">' +
       LINE_ICON + '<span data-th="สั่งทาง LINE" data-en="Order on LINE">สั่งทาง LINE</span></a>';
@@ -91,6 +110,7 @@
   inject("site-header", headerHTML(), "start");
   inject("site-footer", footerHTML(), "end");
   document.body.insertAdjacentHTML("beforeend", fabHTML());
+  document.body.insertAdjacentHTML("beforeend", tabbarHTML());
   if (!document.querySelector(".toast")) {
     document.body.insertAdjacentHTML("beforeend", '<div class="toast" id="toast" role="status" aria-live="polite"></div>');
   }
@@ -174,11 +194,12 @@
     Cart.ids().forEach(function (id) { if (!validIds[id]) Cart.set(id, 0); });
   }
   function updateBadge() {
-    var el = document.getElementById("cartBadge");
-    if (!el || !window.Cart) return;
+    if (!window.Cart) return;
     var n = window.Cart.count();
-    el.textContent = n;
-    el.hidden = n <= 0;
+    ["cartBadge", "tabCartBadge"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) { el.textContent = n; el.hidden = n <= 0; }
+    });
   }
   document.addEventListener("cartchange", updateBadge);
   updateBadge();

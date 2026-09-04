@@ -140,11 +140,65 @@
 .pay .noqr{color:var(--ink-mute);font-size:.9rem;padding:40px 10px}
 .faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
 .faq-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm)}
-.faq-card .ic{color:var(--amber-dark);margin-bottom:10px}
+.faq-card .ic{color:var(--amber-dark);margin-bottom:10px;display:block}
 .faq-card .ic svg{width:26px;height:26px}
 .faq-card h3{font-size:1.05rem;margin-bottom:6px}
 .faq-card p{font-size:.88rem;color:var(--ink-dim);margin:0}
+/* จอใหญ่: การ์ดเปิดตลอด (JS ตั้ง open) — summary ไม่ต้องดูเป็นปุ่ม */
+.faq-card summary{list-style:none;cursor:default}
+.faq-card summary::-webkit-details-marker{display:none}
+.swipe-hint{display:none}
 @media(max-width:900px){
+  /* ---- density budget (มือถือ): ย่อทุก section ให้กระชับ เป้าหมาย ~5 จอ ---- */
+  .p-hero-grid{padding:22px 0 24px;gap:16px}
+  .p-hero h1{font-size:clamp(1.7rem,7.5vw,2.3rem);margin:8px 0 10px}
+  .p-hero p.lead{font-size:.98rem;margin-bottom:14px}
+  .p-hero .from{margin-bottom:14px}
+  .p-hero-tags{margin-top:14px}
+  .hero-photo{max-height:210px;object-fit:cover}
+  /* ฟีเจอร์ 5 ข้อ: แถบปัดแนวนอน + การ์ดถัดไปโผล่ + ป้ายบอกว่าปัดได้ (กฎ affordance) */
+  .swipe-hint{display:inline-block;margin-left:10px;font-size:.78rem;color:var(--ink-mute);font-weight:600}
+  .feat-grid{display:flex;overflow-x:auto;gap:10px;margin-top:14px;padding:2px 22px 8px;margin-left:-22px;margin-right:-22px;
+    scroll-snap-type:x mandatory;scroll-padding-left:22px;scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+  .feat-grid::-webkit-scrollbar{display:none}
+  .feat{flex:0 0 68%;scroll-snap-align:start;padding:14px 14px}
+  .feat .ic{width:36px;height:36px;margin-bottom:8px}
+  .feat p{font-size:.82rem}
+  .sec-head h2{font-size:1.5rem;margin:6px 0 6px}
+  .sec-head p{font-size:.92rem}
+  .colors-photo,.sizes-photo{max-height:150px;object-fit:cover}
+  .box-photo{max-height:150px;object-fit:cover}
+  .swatches{margin-top:14px}
+  .price-grid{gap:12px;margin-top:14px}
+  .pcard{padding:16px}
+  .pcard h3{font-size:1.25rem}
+  .pcard .spec{margin-bottom:10px}
+  .opt{padding:9px 12px;margin-bottom:8px}
+  .whole .wrap{gap:16px}
+  .whole ul{gap:6px}
+  .order-grid{margin-top:14px;gap:14px}
+  .cart,.pay{padding:16px}
+  /* เรื่องที่ควรรู้: พับเป็นหัวข้อ กดขยาย */
+  .faq-grid{gap:8px;margin-top:12px}
+  .faq-card{padding:0}
+  .faq-card summary{cursor:pointer;display:flex;align-items:center;gap:10px;padding:12px 16px}
+  .faq-card summary::after{content:"+";margin-left:auto;font-size:1.2rem;color:var(--amber);flex:none}
+  .faq-card[open] summary::after{content:"–"}
+  .faq-card .ic{margin:0;display:grid}
+  .faq-card .ic svg{width:22px;height:22px}
+  .faq-card h3{margin:0;font-size:.98rem}
+  .faq-card p{padding:0 16px 14px}
+  #faq{padding-top:34px}
+  /* กล่อง QR โชว์เมื่อมีของในตะกร้าเท่านั้น (ตอนว่างมันคือพื้นที่เปล่า 0.6 จอ) */
+  body:not(.mcta-on) .pay{display:none}
+  /* ส่วนยกกล่อง: ราคาซ้ำกับการ์ดด้านบนแล้ว มือถือเหลือรูปกล่อง (หลักฐาน) + ราคา 2 แถว */
+  .whole .wrap{gap:12px}
+  .whole ul{display:none}
+  .whole h2{font-size:1.3rem;margin:6px 0 0}
+  .box-photo{max-height:120px}
+  .wc{padding:11px 14px}
+  section{padding:28px 0}
   .p-hero-grid{grid-template-columns:1fr}
   .stage{order:-1}
   .colors-grid{grid-template-columns:1fr;gap:20px}
@@ -157,7 +211,6 @@
   .order-grid{grid-template-columns:1fr}
   .pay{position:static}
   .faq-grid{grid-template-columns:1fr}
-  body{padding-bottom:70px}
 }
 @media(max-width:480px){ .feat-grid{grid-template-columns:1fr 1fr} }
 </style>
@@ -206,6 +259,7 @@
 <section style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <span class="eyebrow" data-th="ทำไมต้องไฟฟู่" data-en="Why jet flame">ทำไมต้องไฟฟู่</span>
+    <span class="swipe-hint" aria-hidden="true" data-th="ปัดดูทั้ง 5 ข้อ →" data-en="Swipe for all 5 →">ปัดดูทั้ง 5 ข้อ →</span>
     <div class="feat-grid" id="featGrid"></div>
   </div>
 </section>
@@ -326,21 +380,21 @@
       <h2 data-th="เรื่องที่ควรรู้" data-en="Good to know">เรื่องที่ควรรู้</h2>
     </div>
     <div class="faq-grid">
-      <div class="faq-card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8zM5.5 18.5a2 2 0 1 0 0 .01M18.5 18.5a2 2 0 1 0 0 .01"/></svg></div>
-        <h3 data-th="การจัดส่ง" data-en="Shipping">การจัดส่ง</h3>
+      <details class="faq-card">
+        <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8zM5.5 18.5a2 2 0 1 0 0 .01M18.5 18.5a2 2 0 1 0 0 .01"/></svg></span>
+        <h3 data-th="การจัดส่ง" data-en="Shipping">การจัดส่ง</h3></summary>
         <p data-th="สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้" data-en="Contains flammable gas — sent by supported ground couriers. Nationwide, COD available.">สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้</p>
-      </div>
-      <div class="faq-card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
-        <h3 data-th="การชำระเงิน" data-en="Payment">การชำระเงิน</h3>
+      </details>
+      <details class="faq-card">
+        <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+        <h3 data-th="การชำระเงิน" data-en="Payment">การชำระเงิน</h3></summary>
         <p data-th="โอนผ่าน PromptPay / โอนธนาคาร หรือเก็บเงินปลายทาง เลือกได้ตามสะดวก" data-en="PromptPay / bank transfer, or cash on delivery. Your choice.">โอนผ่าน PromptPay / โอนธนาคาร หรือเก็บเงินปลายทาง เลือกได้ตามสะดวก</p>
-      </div>
-      <div class="faq-card">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3 data-th="มาตรฐานสินค้า" data-en="Standard">มาตรฐานสินค้า</h3>
+      </details>
+      <details class="faq-card">
+        <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h3 data-th="มาตรฐานสินค้า" data-en="Standard">มาตรฐานสินค้า</h3></summary>
         <p data-th="ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553 เติมแก๊สบิวเทนได้ ใช้งานซ้ำ" data-en="Gas lighter per TIS 879-2553. Refillable with butane, reusable.">ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553 เติมแก๊สบิวเทนได้ ใช้งานซ้ำ</p>
-      </div>
+      </details>
     </div>
   </div>
 </section>
@@ -644,6 +698,9 @@ renderProduct();
   };
   [product,faq,breadcrumb].forEach(d=>{const s=document.createElement("script");s.type="application/ld+json";s.textContent=JSON.stringify(d);document.head.appendChild(s);});
 })();
+/* จอใหญ่: เปิดการ์ด 'เรื่องที่ควรรู้' ทั้งหมด (มือถือพับไว้ ประหยัดจอ) */
+function syncFaqOpen(){ var big=window.innerWidth>900; document.querySelectorAll('.faq-card').forEach(function(d){ d.open=big; }); }
+syncFaqOpen(); window.addEventListener('resize', syncFaqOpen);
 </script>
 <script src="../assets/js/layout.js?v=2"></script>
 <script src="/_vercel/insights/script.js" defer></script>

@@ -39,6 +39,8 @@
   --shadow-lg:0 18px 50px rgba(16,26,48,.18);
   --maxw:1180px;
   --ring:0 0 0 3px rgba(18,161,80,.32);
+  /* app chrome (มือถือ): ความสูงแถบเมนูล่าง — ทุก sticky/padding อ้างค่าเดียวกัน */
+  --tabbar-h:58px;
 }
 
 *{box-sizing:border-box}
@@ -205,6 +207,20 @@ section{padding:64px 0}
 .fab-line:hover{transform:translateY(-3px)}
 .fab-line svg{width:20px;height:20px}
 
+/* ---------- bottom tab bar (มือถือ): หน้าแรก · สินค้า · ตะกร้า · LINE ---------- */
+.tabbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:125;
+  height:calc(var(--tabbar-h) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);
+  grid-auto-flow:column;grid-auto-columns:1fr;background:var(--surface);border-top:1px solid var(--line);
+  box-shadow:0 -4px 18px rgba(16,26,48,.08)}
+.tabbar a{display:grid;place-items:center;align-content:center;gap:3px;min-height:48px;font-size:.7rem;font-weight:600;
+  color:var(--ink-mute);text-decoration:none;position:relative;-webkit-tap-highlight-color:transparent}
+.tabbar a svg{width:22px;height:22px}
+.tabbar a[aria-current="page"]{color:var(--amber-dark)}
+.tabbar a.tab-line{color:#06c755}
+.tabbar .tab-badge{position:absolute;top:6px;left:calc(50% + 6px);min-width:17px;height:17px;padding:0 4px;border-radius:999px;
+  background:var(--amber);color:#fff;font-size:.66rem;font-weight:700;display:grid;place-items:center;font-family:"Kanit"}
+.tabbar .tab-badge[hidden]{display:none}
+
 /* ---------- responsive ---------- */
 @media(max-width:860px){
   .nav-links{position:fixed;inset:64px 0 auto 0;background:var(--surface);flex-direction:column;
@@ -222,13 +238,21 @@ section{padding:64px 0}
   .site-header .btn-line span{display:none}
 }
 @media(max-width:900px){
-  .mobile-cta{display:flex}
-  body.mcta-on .fab-line{bottom:78px}
+  /* แถบเมนูล่างแทน FAB — ปุ่ม LINE ย้ายไปเป็นแท็บ, เนื้อหาเผื่อที่ให้แถบ */
+  .tabbar{display:grid}
+  .fab-line{display:none}
+  body{padding-bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom))}
+  .mobile-cta{display:flex;bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom))}
+  body.mcta-on{padding-bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 66px)}
+  .toast{bottom:calc(var(--tabbar-h) + 16px)}
   /* UF-3: ยก toast ให้พ้นแถบสั่งซื้อลอยตอนมีของในตะกร้า */
-  body.mcta-on .toast{bottom:96px}
+  body.mcta-on .toast{bottom:calc(var(--tabbar-h) + 90px)}
 }
 @media(max-width:520px){
-  .foot-grid{grid-template-columns:1fr}
+  /* footer มือถือ: คอลัมน์ลิงก์คู่กัน + ระยะแน่นขึ้น (density) */
+  .foot-grid{grid-template-columns:1fr 1fr;gap:18px 16px}
+  .site-footer{padding:34px 0 18px}
+  .foot-col ul{gap:6px}
   .fab-line span{display:none}
   .brand .b-th small{display:none}
   .nav-links{top:64px}
