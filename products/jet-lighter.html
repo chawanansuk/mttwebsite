@@ -36,6 +36,18 @@
   "duration": "PT10S"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "ไฟฟู่ M.T.T. ตราสิงโต รุ่นเล็ก MTTFF02 และรุ่นใหญ่ MTTFF01 ครบ 5 สี",
+  "description": "คลิปโชว์ไฟแช็คหัวพ่นไฟ (ไฟฟู่) ทั้ง 2 รุ่น รุ่นเล็ก 5 สี (ส้ม เขียว ฟ้า ม่วง เหลือง) และรุ่นใหญ่ 5 สี (ส้ม แดง เหลือง เขียว น้ำเงิน)",
+  "thumbnailUrl": "https://www.mttaweephan.com/assets/img/products/jet-lighter-models-poster.webp",
+  "contentUrl": "https://www.mttaweephan.com/assets/video/jet-lighter-models.mp4",
+  "uploadDate": "2026-09-05",
+  "duration": "PT12S"
+}
+</script>
 <script src="../assets/js/vendor/qrcode.min.js"></script>
 <style>
 .breadcrumb{background:var(--surface);border-bottom:1px solid var(--line);font-size:.86rem}
@@ -80,6 +92,7 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
   border:1px solid var(--line);box-shadow:var(--shadow);display:block}
 .colors-photo{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);
   box-shadow:var(--shadow);display:block;background:#fff}
+video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
 .whole-side{display:grid;gap:14px;align-content:start}
 .box-photo{width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12);display:block;box-shadow:0 14px 40px rgba(0,0,0,.35)}
 .feat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:26px}
@@ -205,6 +218,7 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
   .sec-head h2{font-size:1.5rem;margin:6px 0 6px}
   .sec-head p{font-size:.92rem}
   .sizes-photo{max-height:150px;object-fit:cover}
+  video.sizes-video{max-height:230px;object-position:50% 40%}
   .cblocks{grid-template-columns:1fr;gap:12px;margin-top:12px}
   .cblock img{aspect-ratio:5/2.2}
   .pmedia{margin:-16px -16px 12px;aspect-ratio:16/7}
@@ -333,7 +347,13 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
           <p data-th="มี 2 ขนาดให้เลือก — <b>รุ่นใหญ่</b> บอดี้สูง แก๊สเยอะ ใช้ทน · <b>รุ่นเล็ก</b> กะทัดรัด พกพาง่าย" data-en="Two sizes — <b>Large</b> holds more gas, lasts longer · <b>Compact</b> fits in your pocket">มี 2 ขนาดให้เลือก — <b>รุ่นใหญ่</b> บอดี้สูง แก๊สเยอะ ใช้ทน · <b>รุ่นเล็ก</b> กะทัดรัด พกพาง่าย</p>
         </div>
       </div>
-      <img class="sizes-photo" src="../assets/img/products/jet-lighter-sizes.webp" alt="เทียบขนาดไฟฟู่ รุ่นใหญ่กับรุ่นเล็ก" loading="lazy" width="1400" height="1050">
+      <video class="sizes-photo sizes-video" id="modelsVideo" muted loop playsinline preload="metadata" width="640" height="640"
+        poster="../assets/img/products/jet-lighter-models-poster.webp"
+        aria-label="คลิปไฟฟู่ M.T.T. ตราสิงโต รุ่นเล็ก 5 สี และรุ่นใหญ่ 5 สี">
+        <source src="../assets/video/jet-lighter-models.webm" type="video/webm">
+        <source src="../assets/video/jet-lighter-models.mp4" type="video/mp4">
+        <img src="../assets/img/products/jet-lighter-sizes.webp" alt="เทียบขนาดไฟฟู่ รุ่นใหญ่กับรุ่นเล็ก" width="1400" height="1050">
+      </video>
     </div>
     <div class="price-grid" id="priceGrid"></div>
   </div>
@@ -766,6 +786,13 @@ renderProduct();
     b.setAttribute('aria-pressed', v.muted?'false':'true');
     b.innerHTML=(v.muted?'🔇 ':'🔊 ')+'<span data-th="'+(v.muted?'เปิดเสียง':'ปิดเสียง')+'" data-en="'+(v.muted?'Sound on':'Mute')+'">'+(th?(v.muted?'เปิดเสียง':'ปิดเสียง'):(v.muted?'Sound on':'Mute'))+'</span>';
   });
+})();
+/* คลิป 2 รุ่น (ส่วนเทียบขนาด): เล่นเมื่อเลื่อนมาถึงเท่านั้น หยุดเมื่อพ้นจอ (ประหยัดดาต้า) + เคารพ reduce-motion */
+(function(){
+  var v=document.getElementById('modelsVideo'); if(!v) return;
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if(!('IntersectionObserver' in window)){ v.play().catch(function(){}); return; }
+  new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ v.play().catch(function(){}); } else { v.pause(); } }); },{threshold:.35}).observe(v);
 })();
 /* จอใหญ่: เปิดการ์ด 'เรื่องที่ควรรู้' ทั้งหมด (มือถือพับไว้ ประหยัดจอ) */
 function syncFaqOpen(){ var big=window.innerWidth>900; document.querySelectorAll('.faq-card').forEach(function(d){ d.open=big; }); }
