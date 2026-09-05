@@ -88,7 +88,15 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
 .feat .ic svg{width:22px;height:22px}
 .feat h3{font-size:1rem;margin-bottom:4px;font-weight:600;font-family:"Anuphan"}
 .feat p{font-size:.85rem;color:var(--ink-dim);margin:0}
-.swatches{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+/* บล็อกสีตามรุ่น: รูปเรียง 5 สี + สวอตช์ */
+.cblocks{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}
+.cblock{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+.cblock img{width:100%;aspect-ratio:5/3;object-fit:cover;object-position:50% 90%;display:block;background:#fff}
+.cblock .cb-body{padding:14px 16px 16px}
+.cblock .cb-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.cblock h3{font-size:1.15rem}
+.cblock .cb-code{font-size:.78rem;color:var(--ink-mute);font-weight:600;white-space:nowrap}
+.swatches{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .sw{cursor:pointer;border:2px solid var(--line);border-radius:14px;padding:8px;background:var(--surface);display:flex;flex-direction:column;align-items:center;gap:7px;width:88px;transition:border-color .15s,transform .15s,box-shadow .2s;font-family:inherit}
 .sw:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}
 .sw.on{border-color:var(--amber);box-shadow:var(--ring)}
@@ -98,6 +106,11 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
 .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px}
 .pcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;box-shadow:var(--shadow-sm)}
 .pcard .kicker{font-family:"Kanit";font-weight:600;color:var(--amber-dark);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+/* หัวการ์ดราคา: รูปประจำรุ่น + รหัส/ความสูง */
+.pmedia{position:relative;margin:-24px -24px 16px;aspect-ratio:16/8;overflow:hidden;background:#0e1220}
+.pmedia img{width:100%;height:100%;object-fit:cover;object-position:50% 80%;display:block}
+.pmedia .pcode{position:absolute;left:12px;bottom:12px;background:rgba(8,12,22,.72);backdrop-filter:blur(6px);color:#fff;
+  border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px;font-size:.78rem;font-weight:600;font-family:"Kanit"}
 .pcard h3{font-size:1.5rem;margin:6px 0 2px}
 .pcard .spec{font-size:.9rem;color:var(--ink-mute);margin:0 0 18px}
 .opt{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px;background:var(--surface-2);transition:border-color .15s,box-shadow .15s}
@@ -115,6 +128,9 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
 .whole ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px}
 .whole li{display:flex;gap:10px;color:#c7c3d3;font-size:.95rem}
 .whole li svg{width:20px;height:20px;color:var(--amber);flex:none;margin-top:2px}
+.box-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.box-pair figure{margin:0}
+.box-pair figcaption{font-size:.78rem;color:#a9a5b8;margin-top:6px;text-align:center}
 .whole-cards{display:grid;gap:12px}
 .wc{background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between}
 .wc b{font-family:"Kanit";font-size:1.05rem;color:#fff}
@@ -142,6 +158,8 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
 .cart-total .amt{font-family:"Kanit";font-weight:700;font-size:1.9rem;color:var(--amber-dark)}
 .color-pick{margin:16px 0}
 .color-pick .lbl{font-size:.85rem;color:var(--ink-dim);margin-bottom:8px}
+.cp-var{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;margin-bottom:8px}
+.cp-var .cp-name{font-family:"Kanit";font-weight:600;font-size:.85rem;min-width:64px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{cursor:pointer;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.82rem;color:var(--ink-dim);display:flex;align-items:center;gap:6px;background:var(--surface-2);font-family:inherit}
 .chip .cd{width:12px;height:12px;border-radius:50%}
@@ -186,7 +204,11 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
   .feat p{font-size:.82rem}
   .sec-head h2{font-size:1.5rem;margin:6px 0 6px}
   .sec-head p{font-size:.92rem}
-  .colors-photo,.sizes-photo{max-height:150px;object-fit:cover}
+  .sizes-photo{max-height:150px;object-fit:cover}
+  .cblocks{grid-template-columns:1fr;gap:12px;margin-top:12px}
+  .cblock img{aspect-ratio:5/2.2}
+  .pmedia{margin:-16px -16px 12px;aspect-ratio:16/7}
+  .box-pair{gap:8px}
   .box-photo{max-height:150px;object-fit:cover}
   .swatches{margin-top:14px}
   .price-grid{gap:12px;margin-top:14px}
@@ -220,8 +242,6 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
   section{padding:28px 0}
   .p-hero-grid{grid-template-columns:1fr}
   .stage{order:-1}
-  .colors-grid{grid-template-columns:1fr;gap:20px}
-  .colors-grid .colors-photo{order:-1}
   .sizes-grid{grid-template-columns:1fr;gap:18px}
   .sizes-photo{max-width:100%;justify-self:stretch}
   .feat-grid{grid-template-columns:repeat(2,1fr)}
@@ -293,17 +313,12 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
 <!-- ===== COLORS ===== -->
 <section>
   <div class="wrap">
-    <div class="colors-grid">
-      <div>
-        <div class="sec-head">
-          <span class="eyebrow" data-th="มีให้เลือก 5 สี" data-en="5 colors">มีให้เลือก 5 สี</span>
-          <h2 data-th="เลือกสีที่ใช่" data-en="Pick your color">เลือกสีที่ใช่</h2>
-          <p data-th="ของจริงบอดี้ใสทั้ง 5 สี มองเห็นระดับแก๊สชัด — เลือกสีที่ต้องการได้ตอนสั่งซื้อ" data-en="Real clear bodies in 5 colors, gas level always visible — pick your colors at checkout.">ของจริงบอดี้ใสทั้ง 5 สี มองเห็นระดับแก๊สชัด — เลือกสีที่ต้องการได้ตอนสั่งซื้อ</p>
-        </div>
-        <div class="swatches" id="swatches"></div>
-      </div>
-      <img class="colors-photo" src="../assets/img/products/jet-lighter-colors.webp" alt="ไฟฟู่ M.T.T. ครบ 5 สี — เหลือง เขียว ฟ้า ม่วง ส้ม" loading="lazy" width="1600" height="800">
+    <div class="sec-head">
+      <span class="eyebrow" data-th="แต่ละรุ่นมี 5 สี" data-en="5 colors per model">แต่ละรุ่นมี 5 สี</span>
+      <h2 data-th="เลือกสีที่ใช่" data-en="Pick your color">เลือกสีที่ใช่</h2>
+      <p data-th="บอดี้ใสมองเห็นระดับแก๊สชัด — รุ่นใหญ่กับรุ่นเล็กใช้ชุดสีต่างกัน เลือกสีของแต่ละรุ่นได้ตอนสั่งซื้อ" data-en="Clear bodies, gas level always visible — large and compact come in different color sets; pick per model at checkout.">บอดี้ใสมองเห็นระดับแก๊สชัด — รุ่นใหญ่กับรุ่นเล็กใช้ชุดสีต่างกัน เลือกสีของแต่ละรุ่นได้ตอนสั่งซื้อ</p>
     </div>
+    <div class="cblocks" id="colorBlocks"></div>
   </div>
 </section>
 
@@ -337,7 +352,10 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
       </ul>
     </div>
     <div class="whole-side">
-      <img class="box-photo" src="../assets/img/products/jet-lighter-box.webp" alt="ไฟฟู่ M.T.T. ยกกล่อง 15 ชิ้น คละสี" loading="lazy" width="1400" height="1050">
+      <div class="box-pair">
+        <figure><img class="box-photo" src="../assets/img/products/jet-large-box.webp" alt="ไฟฟู่ M.T.T. ตราสิงโต รุ่นใหญ่ MTTFF01 กล่อง 15 ชิ้น คละสี" loading="lazy" width="1200" height="1000"><figcaption data-th="รุ่นใหญ่ MTTFF01 · 15 ชิ้น/กล่อง" data-en="Large MTTFF01 · 15 pcs/box">รุ่นใหญ่ MTTFF01 · 15 ชิ้น/กล่อง</figcaption></figure>
+        <figure><img class="box-photo" src="../assets/img/products/jet-compact-box.webp" alt="ไฟฟู่ M.T.T. ตราสิงโต รุ่นเล็ก MTTFF02 กล่อง 20 ชิ้น คละสี" loading="lazy" width="1200" height="1000"><figcaption data-th="รุ่นเล็ก MTTFF02 · 20 ชิ้น/กล่อง" data-en="Compact MTTFF02 · 20 pcs/box">รุ่นเล็ก MTTFF02 · 20 ชิ้น/กล่อง</figcaption></figure>
+      </div>
       <div class="whole-cards" id="wholeCards"></div>
     </div>
   </div>
@@ -442,7 +460,11 @@ video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
    ไฟฟู่ — logic (ดึงข้อมูลจาก CATALOG, ตะกร้าจาก window.Cart)
    ========================================================== */
 const PRODUCT = CATALOG.byId("jet-lighter");
-const COLORS = CATALOG.colors;
+/* สีตามรุ่น: key ในตะกร้าเป็น "<variant>:<color>" เช่น large:red — ล้าง key รูปแบบเก่าทิ้ง */
+const COLOR_KEYS = new Set(PRODUCT.variants.flatMap(v=>v.colors.map(c=>v.key+":"+c.key)));
+Cart.colors().forEach(k=>{ if(!COLOR_KEYS.has(k)) Cart.toggleColor(k); });
+function colorOf(key){ const [vk,ck]=key.split(":"); const v=PRODUCT.variants.find(x=>x.key===vk); const c=v&&v.colors.find(x=>x.key===ck); return c?{v,c}:null; }
+function variantsInCart(){ return PRODUCT.variants.filter(v=>v.options.some(o=>Cart.qty(o.id)>0)); }
 const CONFIG = { PROMPTPAY_ID: SHOP.PROMPTPAY_ID, LINE_URL: SHOP.LINE_URL };
 
 /* จุดเด่นสินค้า (marketing copy เฉพาะหน้านี้) */
@@ -454,7 +476,7 @@ const FEATURES = [
   {ic:'<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>', th:"ล็อกนิรภัย", en:"Safety lock", dth:"สวิตช์ On/Lock กันเผลอกด", den:"On/Lock switch"},
 ];
 
-let activeSwatch = "green";
+let activeSwatch = "compact:green";
 function L(){ return (window.MTT && window.MTT.getLang()) || "th"; }
 function optById(id){ return CATALOG.optionById(PRODUCT, id); }
 
@@ -482,23 +504,29 @@ function renderFeatures(){
 }
 function renderSwatches(){
   const th=L()==="th";
-  document.getElementById("swatches").innerHTML=COLORS.map(c=>`
-    <button type="button" class="sw ${c.key===activeSwatch?"on":""}" aria-pressed="${c.key===activeSwatch}" onclick="pickSwatch('${c.key}')">
-      <span class="dot" style="background:${c.hex}"></span>
-      <span>${th?c.th:c.en}</span>
-    </button>`).join("");
-  document.getElementById("colorChips").innerHTML=COLORS.map(c=>{
-    const on=Cart.hasColor(c.key);
-    return `<button type="button" class="chip ${on?"on":""}" aria-pressed="${on}" onclick="toggleColor('${c.key}')">
-      <span class="cd" style="background:${c.hex}"></span>${th?c.th:c.en}
-    </button>`;
-  }).join("");
+  // บล็อกสีตามรุ่น (รูปเรียง 5 สีของจริง + สวอตช์)
+  document.getElementById("colorBlocks").innerHTML=PRODUCT.variants.map(v=>`
+    <div class="cblock">
+      <img src="../${v.img_colors}" alt="ไฟฟู่ ${v.name_th} ${v.code} ครบ 5 สี — ${v.colors.map(c=>c.th).join(" ")}" loading="lazy" width="1100" height="1100">
+      <div class="cb-body">
+        <div class="cb-head"><h3>${th?v.name_th:v.name_en} · 5 ${th?"สี":"colors"}</h3><span class="cb-code">${v.code} · ${th?"สูง":"H"} ${v.height_cm} ${th?"ซม.":"cm"}</span></div>
+        <div class="swatches">${v.colors.map(c=>{const k=v.key+":"+c.key;return `
+          <button type="button" class="sw ${k===activeSwatch?"on":""}" aria-pressed="${k===activeSwatch}" onclick="pickSwatch('${k}')">
+            <span class="dot" style="background:${c.hex}"></span><span>${th?c.th:c.en}</span>
+          </button>`;}).join("")}</div>
+      </div>
+    </div>`).join("");
+  // ชิปเลือกสีในตะกร้า: เฉพาะรุ่นที่มีของในตะกร้า
+  document.getElementById("colorChips").innerHTML=variantsInCart().map(v=>`
+    <div class="cp-var"><span class="cp-name">${th?v.name_th:v.name_en}:</span>${v.colors.map(c=>{const k=v.key+":"+c.key;const on=Cart.hasColor(k);
+      return `<button type="button" class="chip ${on?"on":""}" aria-pressed="${on}" onclick="toggleColor('${k}')"><span class="cd" style="background:${c.hex}"></span>${th?c.th:c.en}</button>`;}).join("")}</div>`).join("");
 }
 function renderPricing(){
   const th=L()==="th";
   document.getElementById("priceGrid").innerHTML=PRODUCT.variants.map(v=>`
     <div class="pcard">
-      <span class="kicker">${th?v.name_th:v.name_en}</span>
+      <div class="pmedia"><img src="../${v.img_life}" alt="ไฟฟู่ ${v.name_th} ${v.code} สูง ${v.height_cm} ซม." loading="lazy" width="1100" height="1100"><span class="pcode">${v.code} · ${th?"สูง":"H"} ${v.height_cm} ${th?"ซม.":"cm"}</span></div>
+      <span class="kicker">${th?"ไฟพ่นแก๊ส ตราสิงโต":"Lion-brand jet torch"} · ${v.code}</span>
       <h3>${th?v.name_th:v.name_en}</h3>
       <p class="spec">${th?v.spec_th:v.spec_en}</p>
       ${v.options.map(o=>{
@@ -569,8 +597,7 @@ function chgQty(id,d){ Cart.add(id,d); }
 function toggleColor(k){ Cart.toggleColor(k); }
 function pickSwatch(k){
   activeSwatch=k;
-  const c=COLORS.find(x=>x.key===k);
-  document.documentElement.style.setProperty("--accent",c.hex);
+  const hit=colorOf(k); if(hit) document.documentElement.style.setProperty("--accent",hit.c.hex);
   renderSwatches();
 }
 
@@ -623,10 +650,14 @@ function buildOrderText(){
   ids.forEach(id=>{ const o=optById(id); if(!o) return;
     const name=(th?o.variant.name_th:o.variant.name_en)+" "+(th?o.label_th:o.label_en);
     lines.push(`• ${name} x${Cart.qty(id)} = ฿${o.price*Cart.qty(id)}`); });
+  // สีที่เลือก แยกตามรุ่น
   const cols=Cart.colors();
   if(cols.length>0){
-    const names=cols.map(k=>{const c=COLORS.find(x=>x.key===k);return c?(th?c.th:c.en):k;}).join(", ");
-    lines.push("", (th?"🎨 สีที่ต้องการ: ":"🎨 Colors: ")+names);
+    lines.push("");
+    PRODUCT.variants.forEach(v=>{
+      const names=cols.map(colorOf).filter(h=>h&&h.v.key===v.key).map(h=>th?h.c.th:h.c.en);
+      if(names.length) lines.push((th?"🎨 สี ":"🎨 Colors ")+(th?v.name_th:v.name_en)+": "+names.join(", "));
+    });
   }
   lines.push("", (th?"💰 ยอดรวม: ฿":"💰 Total: ฿")+cartTotal().toLocaleString());
   lines.push("", th?"📍 ชื่อ-ที่อยู่จัดส่ง:":"📍 Shipping details:");
@@ -704,8 +735,9 @@ renderProduct();
     "@context":"https://schema.org","@type":"Product",
     "name":"ไฟฟู่ M.T.T. — ไฟแช็คหัวพ่นไฟ (Jet Torch Lighter)",
     "description":"ไฟฟู่ ไฟแช็คหัวพ่นไฟ เปลวไฟเจ็ทสีน้ำเงินแรงดันสูง เจอลมไม่ดับ เติมแก๊สบิวเทนใช้ซ้ำได้ มี 2 ขนาด 5 สี มาตรฐาน มอก. 879-2553",
-    "image":["https://www.mttaweephan.com/assets/img/products/jet-lighter.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-flame.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-colors.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-sizes.webp"],
-    "brand":{"@type":"Brand","name":"M.T.T. (ม ทวีภัณฑ์)"},
+    "image":["https://www.mttaweephan.com/assets/img/products/jet-lighter.webp","https://www.mttaweephan.com/assets/img/products/jet-large-colors.webp","https://www.mttaweephan.com/assets/img/products/jet-compact-colors.webp","https://www.mttaweephan.com/assets/img/products/jet-large-box.webp","https://www.mttaweephan.com/assets/img/products/jet-compact-box.webp","https://www.mttaweephan.com/assets/img/products/jet-lighter-flame.webp"],
+    "brand":{"@type":"Brand","name":"ตราสิงโต M.T.T. (ม ทวีภัณฑ์)"},
+    "model":"MTTFF01 (รุ่นใหญ่ 11 ซม.) / MTTFF02 (รุ่นเล็ก 8 ซม.)",
     "offers":{"@type":"AggregateOffer","priceCurrency":"THB","lowPrice":box,"highPrice":r.max,"availability":"https://schema.org/InStock"}
   };
   const faq={

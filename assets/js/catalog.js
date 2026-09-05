@@ -5,13 +5,22 @@
    ค่าติดต่อ/พร้อมเพย์/LINE อยู่ที่ shop-config.js
    ============================================================ */
 window.CATALOG = (function () {
-  /* ---------- สี ---------- */
+  /* ---------- สี (ชุดสีต่างกันตามรุ่น — ตามแพ็กเกจจริง) ---------- */
+  // รุ่นเล็ก MTTFF02: ส้ม เขียว ฟ้า ม่วง เหลือง
   const colors = [
-    { key: "yellow", th: "เหลือง", en: "Yellow", hex: "#f5d000" },
+    { key: "orange", th: "ส้ม",    en: "Orange", hex: "#ff7a2f" },
     { key: "green",  th: "เขียว",  en: "Green",  hex: "#5fe84b" },
     { key: "blue",   th: "ฟ้า",    en: "Blue",   hex: "#2fa8ff" },
     { key: "purple", th: "ม่วง",   en: "Purple", hex: "#b56bff" },
-    { key: "orange", th: "ส้ม",    en: "Orange", hex: "#ff7a2f" },
+    { key: "yellow", th: "เหลือง", en: "Yellow", hex: "#f5d000" },
+  ];
+  // รุ่นใหญ่ MTTFF01: ส้ม แดง เหลือง เขียว น้ำเงิน
+  const colorsLarge = [
+    { key: "orange", th: "ส้ม",     en: "Orange", hex: "#ff7a2f" },
+    { key: "red",    th: "แดง",     en: "Red",    hex: "#e8352e" },
+    { key: "yellow", th: "เหลือง",  en: "Yellow", hex: "#f5d000" },
+    { key: "green",  th: "เขียว",   en: "Green",  hex: "#22c55e" },
+    { key: "navy",   th: "น้ำเงิน", en: "Blue",   hex: "#1d4ed8" },
   ];
 
   /* ---------- สินค้า ----------
@@ -36,7 +45,11 @@ window.CATALOG = (function () {
       variants: [
         {
           key: "large", name_th: "รุ่นใหญ่", name_en: "Large",
-          spec_th: "บอดี้ใหญ่ แก๊สเยอะ ใช้ทน", spec_en: "Big body · more gas", retail: 59,
+          code: "MTTFF01", height_cm: 11, colors: colorsLarge,
+          img_colors: "assets/img/products/jet-large-colors.webp",
+          img_life: "assets/img/products/jet-large-lifestyle.webp",
+          img_box: "assets/img/products/jet-large-box.webp",
+          spec_th: "บอดี้ใหญ่ แก๊สเยอะ ใช้ทน · สูง 11 ซม.", spec_en: "Big body · more gas · 11 cm tall", retail: 59,
           options: [
             { id: "L1", qty: 1,  label_th: "1 ชิ้น", label_en: "1 pc",  note_th: "ปลีก",  note_en: "retail", price: 59,  best: false },
             { id: "L3", qty: 3,  label_th: "3 ชิ้น", label_en: "3 pcs", note_th: "โปรคุ้ม", note_en: "deal",  price: 100, best: true },
@@ -45,7 +58,11 @@ window.CATALOG = (function () {
         },
         {
           key: "compact", name_th: "รุ่นเล็ก", name_en: "Compact",
-          spec_th: "พกพาง่าย น้ำหนักเบา", spec_en: "Pocket size · light", retail: 45,
+          code: "MTTFF02", height_cm: 8, colors: colors,
+          img_colors: "assets/img/products/jet-compact-colors.webp",
+          img_life: "assets/img/products/jet-compact-lifestyle.webp",
+          img_box: "assets/img/products/jet-compact-box.webp",
+          spec_th: "พกพาง่าย มีโซ่คล้อง · สูง 8 ซม.", spec_en: "Pocket size with keychain · 8 cm tall", retail: 45,
           options: [
             { id: "S1", qty: 1,  label_th: "1 ชิ้น", label_en: "1 pc",  note_th: "ปลีก",  note_en: "retail", price: 45,  best: false },
             { id: "S3", qty: 3,  label_th: "3 ชิ้น", label_en: "3 pcs", note_th: "โปรคุ้ม", note_en: "deal",  price: 100, best: true },
@@ -145,7 +162,7 @@ window.CATALOG = (function () {
   }
 
   return {
-    colors, products, categories,
+    colors, colorsLarge, products, categories,
     byId, allOptions, optionById,
     unitPriceRange, boxMinPerPiece, savingsPct, perPiece, priceLabel, wholesaleCards,
     lineAsk, productThumb,
