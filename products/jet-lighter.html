@@ -220,7 +220,16 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
   .sizes-photo{max-height:150px;object-fit:cover}
   video.sizes-video{max-height:230px;object-position:50% 40%}
   .cblocks{grid-template-columns:1fr;gap:12px;margin-top:12px}
-  .cblock img{aspect-ratio:5/2.2}
+  /* มือถือ: คงสัดส่วน 5/3 ให้เห็นไฟแช็กเต็มตัว + สวอตช์เล็กลงให้ 5 สีอยู่แถวเดียว */
+  .cblock img{aspect-ratio:5/3}
+  .cblock .cb-body{padding:12px 12px 14px}
+  .cblock h3{font-size:1.02rem}
+  .cblock .cb-code{font-size:.72rem}
+  .swatches{gap:6px}
+  .sw{width:calc((100% - 24px)/5);padding:6px 2px;gap:4px;border-radius:11px}
+  .sw .dot{width:30px;height:30px}
+  .sw span{font-size:.7rem}
+  .pmedia .pcode{top:10px;bottom:auto;left:10px;font-size:.72rem}
   .pmedia{margin:-16px -16px 12px;aspect-ratio:16/7}
   .box-pair{gap:8px}
   .box-photo{max-height:150px;object-fit:cover}
