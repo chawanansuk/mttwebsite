@@ -11,7 +11,7 @@ import { extname, join, resolve } from "path";
 
 const ROOT = resolve(process.argv[2] || ".");
 const MIME = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript",
-  ".svg": "image/svg+xml", ".png": "image/png", ".webp": "image/webp", ".xml": "application/xml", ".txt": "text/plain", ".json": "application/json" };
+  ".svg": "image/svg+xml", ".png": "image/png", ".webp": "image/webp", ".mp4": "video/mp4", ".webm": "video/webm", ".xml": "application/xml", ".txt": "text/plain", ".json": "application/json" };
 const IGNORE = [/fonts\.g/i, /_vercel/i, /favicon\.ico/i, /net::ERR/i, /Failed to load resource/i];
 const ignorable = (t) => IGNORE.some((r) => r.test(t));
 
@@ -150,6 +150,7 @@ console.log("\n[ products/jet-lighter.html ]");
   await page.goto(base + "/products/jet-lighter.html", { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(200);
   assert((await page.$eval("#heroFrom", (e) => e.textContent)).includes("฿"), "ราคาเริ่มต้นจาก catalog");
+  assert(!!(await page.$('#heroVideo source[src$=".mp4"]')) && !!(await page.$('#heroVideo[poster]')), "คลิป hero มี source mp4 + poster");
   assert((await page.$$eval(".pcard .save", (e) => e.length)) >= 2, "มี badge ประหยัด % อย่างน้อย 2");
   await page.click(".add");
   await page.waitForTimeout(180);

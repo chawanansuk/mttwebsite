@@ -24,6 +24,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/theme.css?v=2">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "ไฟฟู่รุ่นเล็ก M.T.T. ตราสิงโต MTTFF02 ยกกล่อง 20 ชิ้น",
+  "description": "คลิปสินค้าไฟแช็คหัวพ่นไฟ (ไฟฟู่) รุ่นเล็ก พกพาง่าย เติมแก๊สได้ บอดี้ใส 5 สี บรรจุกล่องละ 20 ชิ้น",
+  "thumbnailUrl": "https://www.mttaweephan.com/assets/img/products/jet-lighter-compact-poster.webp",
+  "contentUrl": "https://www.mttaweephan.com/assets/video/jet-lighter-compact.mp4",
+  "uploadDate": "2026-09-05",
+  "duration": "PT10S"
+}
+</script>
 <script src="../assets/js/vendor/qrcode.min.js"></script>
 <style>
 .breadcrumb{background:var(--surface);border-bottom:1px solid var(--line);font-size:.86rem}
@@ -54,6 +66,12 @@
   background:rgba(8,12,22,.7);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);
   color:#fff;border-radius:999px;padding:8px 15px;font-size:.85rem;font-weight:600}
 .hero-flag b{color:var(--amber);font-family:"Kanit"}
+video.hero-photo{aspect-ratio:6/5;object-fit:cover;background:#0b0f1a}
+/* ปุ่มเปิด/ปิดเสียงคลิป — บอกชัดว่ากดได้ (กฎ affordance) */
+.hero-sound{position:absolute;z-index:2;right:14px;bottom:14px;cursor:pointer;font-family:inherit;font-size:.82rem;font-weight:600;
+  color:#fff;background:rgba(8,12,22,.7);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:8px 14px;
+  display:inline-flex;align-items:center;gap:6px;transition:background .15s}
+.hero-sound:hover{background:rgba(8,12,22,.9)}
 /* ---------- colors: 2 คอลัมน์ รูปจริงคู่กับตัวเลือกสี ---------- */
 .colors-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:34px;align-items:center}
 /* ---------- pricing: หัวข้อคู่รูปเทียบขนาด ---------- */
@@ -156,6 +174,7 @@
   .p-hero .from{margin-bottom:14px}
   .p-hero-tags{margin-top:14px}
   .hero-photo{max-height:210px;object-fit:cover}
+  video.hero-photo{max-height:250px}
   /* ฟีเจอร์ 5 ข้อ: แถบปัดแนวนอน + การ์ดถัดไปโผล่ + ป้ายบอกว่าปัดได้ (กฎ affordance) */
   .swipe-hint{display:inline-block;margin-left:10px;font-size:.78rem;color:var(--ink-mute);font-weight:600}
   .feat-grid{display:flex;overflow-x:auto;gap:10px;margin-top:14px;padding:2px 22px 8px;margin-left:-22px;margin-right:-22px;
@@ -248,8 +267,15 @@
     </div>
     <div class="stage">
       <div class="hero-shot">
-        <span class="hero-flag">🔥 <span data-th="เปลวเจ็ทสีน้ำเงิน · แรงดันสูง" data-en="Blue jet flame · high pressure">เปลวเจ็ทสีน้ำเงิน · แรงดันสูง</span></span>
-        <img class="hero-photo" src="../assets/img/products/jet-lighter-flame.webp" alt="ไฟฟู่ M.T.T. เปลวไฟเจ็ทสีน้ำเงินแรงดันสูง" width="1400" height="933" fetchpriority="high">
+        <span class="hero-flag">🎬 <span data-th="รุ่นเล็ก MTTFF02 · ยกกล่อง 20 ชิ้น" data-en="Compact MTTFF02 · box of 20">รุ่นเล็ก MTTFF02 · ยกกล่อง 20 ชิ้น</span></span>
+        <video class="hero-photo" id="heroVideo" autoplay muted loop playsinline preload="auto" width="720" height="600"
+          poster="../assets/img/products/jet-lighter-compact-poster.webp"
+          aria-label="คลิปไฟฟู่รุ่นเล็ก M.T.T. ตราสิงโต พร้อมกล่อง 20 ชิ้น">
+          <source src="../assets/video/jet-lighter-compact.webm" type="video/webm">
+          <source src="../assets/video/jet-lighter-compact.mp4" type="video/mp4">
+          <img src="../assets/img/products/jet-lighter-flame.webp" alt="ไฟฟู่ M.T.T. เปลวไฟเจ็ทสีน้ำเงินแรงดันสูง" width="1400" height="933">
+        </video>
+        <button type="button" class="hero-sound" id="heroSound" aria-pressed="false">🔇 <span data-th="เปิดเสียง" data-en="Sound on">เปิดเสียง</span></button>
       </div>
     </div>
   </div>
@@ -697,6 +723,17 @@ renderProduct();
     ]
   };
   [product,faq,breadcrumb].forEach(d=>{const s=document.createElement("script");s.type="application/ld+json";s.textContent=JSON.stringify(d);document.head.appendChild(s);});
+})();
+/* คลิป hero: เล่นวนแบบปิดเสียง กดปุ่มเพื่อเปิดเสียง; ผู้ใช้ที่ตั้งค่า reduce-motion จะเห็นภาพนิ่ง */
+(function(){
+  var v=document.getElementById('heroVideo'), b=document.getElementById('heroSound'); if(!v||!b) return;
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ v.removeAttribute('autoplay'); v.pause(); }
+  b.addEventListener('click', function(){
+    v.muted=!v.muted; if(v.paused) v.play();
+    var th=(window.MTT&&window.MTT.getLang()||'th')==='th';
+    b.setAttribute('aria-pressed', v.muted?'false':'true');
+    b.innerHTML=(v.muted?'🔇 ':'🔊 ')+'<span data-th="'+(v.muted?'เปิดเสียง':'ปิดเสียง')+'" data-en="'+(v.muted?'Sound on':'Mute')+'">'+(th?(v.muted?'เปิดเสียง':'ปิดเสียง'):(v.muted?'Sound on':'Mute'))+'</span>';
+  });
 })();
 /* จอใหญ่: เปิดการ์ด 'เรื่องที่ควรรู้' ทั้งหมด (มือถือพับไว้ ประหยัดจอ) */
 function syncFaqOpen(){ var big=window.innerWidth>900; document.querySelectorAll('.faq-card').forEach(function(d){ d.open=big; }); }

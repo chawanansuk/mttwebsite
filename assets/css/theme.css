@@ -193,8 +193,8 @@ section{padding:64px 0}
 /* ---------- sticky mobile checkout bar ---------- */
 .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:130;background:var(--surface);
   border-top:1px solid var(--line);box-shadow:0 -6px 22px rgba(16,26,48,.12);padding:10px 16px;
-  display:none;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .25s}
-.mobile-cta.show{transform:translateY(0)}
+  display:none;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .25s,visibility .25s;visibility:hidden}
+.mobile-cta.show{transform:translateY(0);visibility:visible}
 .mobile-cta .mc-total{font-family:"Kanit";line-height:1.1}
 .mobile-cta .mc-total small{display:block;color:var(--ink-mute);font-size:.72rem;font-weight:500;font-family:"Anuphan"}
 .mobile-cta .mc-total b{font-size:1.3rem;color:var(--amber-dark)}
