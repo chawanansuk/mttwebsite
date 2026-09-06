@@ -141,10 +141,19 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
 .whole ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px}
 .whole li{display:flex;gap:10px;color:#c7c3d3;font-size:.95rem}
 .whole li svg{width:20px;height:20px;color:var(--amber);flex:none;margin-top:2px}
-.box-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.box-pair figure{margin:0}
-.box-pair figcaption{font-size:.78rem;color:#a9a5b8;margin-top:6px;text-align:center}
-.whole-cards{display:grid;gap:12px}
+/* การ์ดกล่องต่อรุ่น: รูปกล่อง + ราคา + ปุ่มหยิบ (สั่งยกกล่องได้จากตรงนี้เลย) */
+.whole-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.wbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.wbox img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#0b0f1a}
+.wbox .wb-body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.wbox .wb-name{font-family:"Kanit";font-weight:600;color:#fff;font-size:1.02rem;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.wbox .wb-name small{font-family:"Anuphan";font-weight:600;color:#a9a5b8;font-size:.74rem}
+.wbox .wb-meta{color:#c7c3d3;font-size:.8rem;margin:3px 0 10px}
+.wbox .wb-meta b{color:var(--amber);font-weight:700}
+.wbox .wb-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
+.wbox .wb-price{font-family:"Kanit";font-weight:700;font-size:1.4rem;color:var(--amber)}
+.wbox .wb-price small{font-size:.72rem;color:#a9a5b8;font-family:"Anuphan";font-weight:600;display:block;line-height:1}
+.whole-line{margin-top:12px;color:#fff;border-color:rgba(255,255,255,.28);justify-content:center}
 .wc{background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between}
 .wc b{font-family:"Kanit";font-size:1.05rem;color:#fff}
 .wc small{display:block;color:#a9a5b8;font-size:.78rem}
@@ -260,8 +269,13 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
   .whole .wrap{gap:12px}
   .whole ul{display:none}
   .whole h2{font-size:1.3rem;margin:6px 0 0}
-  .box-photo{max-height:120px}
-  .wc{padding:11px 14px}
+  .whole-cards{grid-template-columns:1fr;gap:10px}
+  .wbox{display:grid;grid-template-columns:112px 1fr}
+  .wbox img{aspect-ratio:auto;height:100%}
+  .wbox .wb-body{padding:10px 12px 12px}
+  .wbox .wb-name{font-size:.95rem}
+  .wbox .wb-meta{font-size:.76rem;margin-bottom:8px}
+  .wbox .wb-price{font-size:1.25rem}
   section{padding:28px 0}
   .p-hero-grid{grid-template-columns:1fr}
   .stage{order:-1}
@@ -381,11 +395,8 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
       </ul>
     </div>
     <div class="whole-side">
-      <div class="box-pair">
-        <figure><img class="box-photo" src="../assets/img/products/jet-large-box.webp" alt="ไฟฟู่ M.T.T. ตราสิงโต รุ่นใหญ่ MTTFF01 กล่อง 15 ชิ้น คละสี" loading="lazy" width="1200" height="1000"><figcaption data-th="รุ่นใหญ่ MTTFF01 · 15 ชิ้น/กล่อง" data-en="Large MTTFF01 · 15 pcs/box">รุ่นใหญ่ MTTFF01 · 15 ชิ้น/กล่อง</figcaption></figure>
-        <figure><img class="box-photo" src="../assets/img/products/jet-compact-box.webp" alt="ไฟฟู่ M.T.T. ตราสิงโต รุ่นเล็ก MTTFF02 กล่อง 20 ชิ้น คละสี" loading="lazy" width="1200" height="1000"><figcaption data-th="รุ่นเล็ก MTTFF02 · 20 ชิ้น/กล่อง" data-en="Compact MTTFF02 · 20 pcs/box">รุ่นเล็ก MTTFF02 · 20 ชิ้น/กล่อง</figcaption></figure>
-      </div>
       <div class="whole-cards" id="wholeCards"></div>
+      <a class="btn btn-ghost btn-sm whole-line" id="wholeLine" href="#" target="_blank" rel="noopener" data-th="สั่งหลายกล่อง / คละรุ่น ทัก LINE ขอราคาพิเศษ →" data-en="Several boxes or mixed models? Ask LINE for a special rate →">สั่งหลายกล่อง / คละรุ่น ทัก LINE ขอราคาพิเศษ →</a>
     </div>
   </div>
 </section>
@@ -574,11 +585,22 @@ function renderPricing(){
     </div>`).join("");
 }
 function renderWholesale(){
-  document.getElementById("wholeCards").innerHTML=CATALOG.wholesaleCards(PRODUCT, L()).map(w=>`
-    <div class="wc">
-      <div><b>${w.label}</b><small>${w.per}</small></div>
-      <div class="p">${w.price}</div>
-    </div>`).join("");
+  const th=L()==="th";
+  document.getElementById("wholeCards").innerHTML=PRODUCT.variants.map(v=>{
+    const o=v.options.find(x=>x.box); if(!o) return "";
+    const per=CATALOG.perPiece(o), pct=CATALOG.savingsPct({...o,retail:v.retail});
+    return `<div class="wbox">
+      <img src="../${v.img_box}" alt="ไฟฟู่ M.T.T. ตราสิงโต ${v.name_th} ${v.code} กล่อง ${o.qty} ชิ้น คละสี" loading="lazy" width="1200" height="1000">
+      <div class="wb-body">
+        <div class="wb-name">${th?v.name_th:v.name_en} <small>${v.code}</small></div>
+        <div class="wb-meta">${o.qty} ${th?"ชิ้น/กล่อง":"pcs/box"} · ${th?"คละครบ 5 สี":"all 5 colors"} · ${th?"ประหยัด":"save"} <b>${pct}%</b></div>
+        <div class="wb-row"><span class="wb-price">฿${o.price}<small>${th?"เฉลี่ย ฿"+per+"/ชิ้น":"~฿"+per+"/pc"}</small></span>
+          <button class="btn btn-primary btn-sm" onclick="addToCart('${o.id}')">+ ${th?"หยิบ 1 กล่อง":"Add 1 box"}</button></div>
+      </div>
+    </div>`;
+  }).join("");
+  const ln=document.getElementById("wholeLine");
+  if(ln) ln.href=CATALOG.lineAsk(th?"สอบถามราคาส่งไฟฟู่ยกกล่องจำนวนมาก (คละรุ่น/หลายกล่อง)":"Bulk price for jet lighters, several boxes / mixed models");
 }
 
 function renderCart(){
