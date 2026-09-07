@@ -96,10 +96,14 @@ for (const path of ALL_PAGES) {
       if (prev && l > prev + 1) jumps.push("h" + prev + "->h" + l);
       prev = l;
     });
-    return { t: t.length, d: d.length, h1: document.querySelectorAll("h1").length, jumps };
+    const robots = (document.querySelector("meta[name=robots]") || {}).content || "";
+    return { t: t.length, d: d.length, h1: document.querySelectorAll("h1").length, jumps, noindex: /noindex/i.test(robots) };
   });
-  assert(seo.t > 0 && seo.t <= 62, `${path} title ${seo.t} ตัวอักษร (ต้อง 1-62)`);
-  assert(seo.d > 0 && seo.d <= 155, `${path} meta description ${seo.d} ตัวอักษร (ต้อง 1-155)`);
+  // หน้า noindex (เช่น 404) ไม่ขึ้นผลค้นหา จึงไม่ต้องมี title/description ตามเกณฑ์ SERP
+  if (!seo.noindex) {
+    assert(seo.t > 0 && seo.t <= 62, `${path} title ${seo.t} ตัวอักษร (ต้อง 1-62)`);
+    assert(seo.d > 0 && seo.d <= 155, `${path} meta description ${seo.d} ตัวอักษร (ต้อง 1-155)`);
+  }
   assert(seo.h1 === 1, `${path} มี h1 เดียว (พบ ${seo.h1})`);
   assert(seo.jumps.length === 0, `${path} ลำดับหัวข้อไม่ข้ามชั้น${seo.jumps.length ? " → " + seo.jumps.join(",") : ""}`);
   await page.close();
