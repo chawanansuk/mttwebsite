@@ -80,6 +80,31 @@ for (const [path, w] of [["/products/jet-lighter.html", 1280], ["/products/jet-l
   await page.close();
 }
 
+/* ---- SEO guard: title/description ยาวพอดี SERP + ลำดับหัวข้อไม่ข้ามชั้น ---- */
+console.log("\n[ SEO: title/desc/heading ]");
+for (const path of ALL_PAGES) {
+  const page = await newPage({ width: 1280, height: 900 });
+  await page.goto(base + path, { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(200);
+  const seo = await page.evaluate(() => {
+    const t = document.title;
+    const d = (document.querySelector("meta[name=description]") || {}).content || "";
+    const jumps = [];
+    let prev = 0;
+    document.querySelectorAll("h1,h2,h3,h4").forEach((h) => {
+      const l = +h.tagName[1];
+      if (prev && l > prev + 1) jumps.push("h" + prev + "->h" + l);
+      prev = l;
+    });
+    return { t: t.length, d: d.length, h1: document.querySelectorAll("h1").length, jumps };
+  });
+  assert(seo.t > 0 && seo.t <= 62, `${path} title ${seo.t} ตัวอักษร (ต้อง 1-62)`);
+  assert(seo.d > 0 && seo.d <= 155, `${path} meta description ${seo.d} ตัวอักษร (ต้อง 1-155)`);
+  assert(seo.h1 === 1, `${path} มี h1 เดียว (พบ ${seo.h1})`);
+  assert(seo.jumps.length === 0, `${path} ลำดับหัวข้อไม่ข้ามชั้น${seo.jumps.length ? " → " + seo.jumps.join(",") : ""}`);
+  await page.close();
+}
+
 /* ---- ไม่มี overflow แนวนอนบนมือถือ (BUG-1 guard) ---- */
 console.log("\n[ ไม่มี overflow แนวนอน @360/390 ]");
 for (const w of [360, 390]) {

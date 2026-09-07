@@ -54,18 +54,18 @@
       '<div class="foot-brand"><div class="brand"><span class="mark">' + BOLT + '</span>' +
         '<span class="b-th">ม ทวีภัณฑ์<small>M.T.T. Hardware</small></span></div>' +
         '<p data-th="ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย" data-en="Tools & hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand. Retail & wholesale, nationwide.">ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย</p></div>' +
-      '<div class="foot-col"><h4 data-th="สินค้า" data-en="Products">สินค้า</h4><ul>' +
+      '<div class="foot-col"><h2 data-th="สินค้า" data-en="Products">สินค้า</h2><ul>' +
         '<li><a href="' + BASE + 'products/jet-lighter.html" data-th="ไฟฟู่ / ไฟแช็ก" data-en="Jet lighters">ไฟฟู่ / ไฟแช็ก</a></li>' +
         '<li><a href="' + BASE + 'products/tools.html" data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS tools">เครื่องมือช่าง WYNNTOOLS</a></li>' +
         '<li><a href="' + BASE + 'products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a></li>' +
         '<li><a href="' + BASE + 'products/index.html" data-th="สินค้าทั้งหมด" data-en="All products">สินค้าทั้งหมด</a></li>' +
         '<li><a href="' + BASE + 'index.html#categories" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a></li></ul></div>' +
-      '<div class="foot-col"><h4 data-th="ลิงก์" data-en="Links">ลิงก์</h4><ul>' +
+      '<div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">ลิงก์</h2><ul>' +
         '<li><a href="' + BASE + 'index.html#why" data-th="ทำไมต้องเรา" data-en="Why us">ทำไมต้องเรา</a></li>' +
         '<li><a href="' + BASE + 'index.html#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a></li>' +
         '<li><a href="' + BASE + 'privacy.html" data-th="ความเป็นส่วนตัว" data-en="Privacy">ความเป็นส่วนตัว</a></li>' +
         '<li><a data-shop="line-url" href="#" target="_blank" rel="noopener">LINE OA</a></li></ul></div>' +
-      '<div class="foot-col"><h4 data-th="ติดต่อ" data-en="Contact">ติดต่อ</h4><div class="foot-contact">' +
+      '<div class="foot-col"><h2 data-th="ติดต่อ" data-en="Contact">ติดต่อ</h2><div class="foot-contact">' +
         '<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a data-shop="phone-tel" href="#"><span data-shop="phone">—</span></a></div>' +
         '<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a data-shop="email-href" href="#"><span data-shop="email">—</span></a></div>' +
         '<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-shop="address">—</span></div>' +
@@ -128,7 +128,8 @@
     fill("[data-shop=phone-tel]", "tel:" + (S.PHONE_TEL || ""), "href");
     fill("[data-shop=phone-more]", S.PHONE_MORE || "");
     fill("[data-shop=email]", S.EMAIL || "");
-    fill("[data-shop=email-href]", "mailto:" + (S.EMAIL || ""), "href");
+    // ไม่มีอีเมล = ไม่ต้องใส่ href (กันลิงก์ mailto: เปล่าค้างใน DOM)
+    if (S.EMAIL) fill("[data-shop=email-href]", "mailto:" + S.EMAIL, "href");
     fill("[data-shop=address]", S.ADDRESS_TH || "");
     fill("[data-shop=hours]", S.HOURS_TH || "");
     fill("[data-shop=bank]", S.BANK_ACCOUNT || "");

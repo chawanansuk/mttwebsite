@@ -44,6 +44,8 @@
 }
 
 *{box-sizing:border-box}
+/* หัวข้อสำหรับ screen reader / โครงสร้าง SEO โดยไม่เปลี่ยนหน้าตา */
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
 /* reserve header height before layout.js injects it (reduce layout shift) */
 #site-header{display:block;min-height:64px}
@@ -152,7 +154,7 @@ section{padding:64px 0}
 .foot-brand .brand{color:#fff}
 .foot-brand .brand .mark{background:linear-gradient(150deg,var(--amber),var(--amber-dark));color:var(--navy)}
 .foot-brand p{color:#93a0bd;font-size:.9rem;margin:14px 0 0;max-width:34ch}
-.foot-col h4{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#7a879f;font-weight:600;margin-bottom:14px;font-family:"Kanit"}
+.foot-col h2{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#7a879f;font-weight:600;margin-bottom:14px;font-family:"Kanit";line-height:1.2}
 .foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.92rem}
 .foot-contact{display:grid;gap:11px;font-size:.92rem}
 .foot-contact .row{display:flex;gap:10px;align-items:flex-start}

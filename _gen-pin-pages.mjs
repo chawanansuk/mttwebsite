@@ -111,7 +111,10 @@ function neighbors(i) {
 
 function pageHTML(p, i) {
   const title = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} (${p.mm} มม.) ขายส่งยกกล่อง | ม ทวีภัณฑ์`;
-  const desc = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ยาว ${p.cm} ซม. (${p.mm} มม.) เหล็กชุบนิกเกิล เหมาะ${p.uses_th[0]} ขายยกกล่อง ${p.pack} ตัว ราคาส่ง แบ่งขายพวง/กุรุส นับจำนวนจริง ส่งทั่วไทย`;
+  // meta description ต้อง <=155 ตัวอักษร (Google ตัดที่ราว ๆ นี้) — ต่อท้ายเท่าที่ยังพอดี
+  const use = p.uses_th[0].split(' — ')[0];
+  const descBase = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ยาว ${p.cm} ซม. (${p.mm} มม.) เหล็กชุบนิกเกิล เหมาะ${use} ขายยกกล่อง ${p.pack} ตัว ราคาส่ง`;
+  const desc = [' นับจำนวนจริง', ' ส่งทั่วไทย'].reduce((acc, tail) => (acc + tail).length <= 155 ? acc + tail : acc, descBase);
   const url = `${SITE}/products/safety-pins-${p.no}.html`;
   const near = neighbors(i);
   const lineMsg = `สอบถามราคา เข็มกลัดซ่อนปลาย เบอร์ ${p.no} (${p.mm} มม.) ยกกล่อง/แบ่งขาย`;
