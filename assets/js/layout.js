@@ -59,6 +59,7 @@
         '<li><a href="' + BASE + 'products/tools.html" data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS tools">เครื่องมือช่าง WYNNTOOLS</a></li>' +
         '<li><a href="' + BASE + 'products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a></li>' +
         '<li><a href="' + BASE + 'products/safety-pins-wholesale.html" data-th="เข็มกลัด ขายส่งยกกล่อง" data-en="Safety pins wholesale">เข็มกลัด ขายส่งยกกล่อง</a></li>' +
+        '<li><a href="' + BASE + 'products/safety-pins-canvas.html" data-th="เข็มกลัดผ้าใบ เต็นท์" data-en="Canvas & tent pins">เข็มกลัดผ้าใบ เต็นท์</a></li>' +
         '<li><a href="' + BASE + 'products/index.html" data-th="สินค้าทั้งหมด" data-en="All products">สินค้าทั้งหมด</a></li>' +
         '<li><a href="' + BASE + 'index.html#categories" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a></li></ul></div>' +
       '<div class="foot-col"><h2 data-th="บทความ" data-en="Guides">บทความ</h2><ul>' +

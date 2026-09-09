@@ -96,6 +96,9 @@ const REL = {
   "00":  ["safety-pins-tags.html", "คู่มือเข็มกลัดติดป้ายราคา →", "Tag-pin guide →"],
   "2":   ["safety-pins-running.html", "คู่มือผู้จัดงานวิ่ง →", "Race-organizer guide →"],
   "4":   ["safety-pins-diaper.html", "คู่มือเข็มกลัดผ้าอ้อม →", "Diaper-pin guide →"],
+  "5":   ["safety-pins-canvas.html", "คู่มืองานผ้าใบ เต็นท์ →", "Canvas & tent guide →"],
+  "6":   ["safety-pins-canvas.html", "คู่มืองานผ้าใบ เต็นท์ →", "Canvas & tent guide →"],
+  "7":   ["safety-pins-canvas.html", "คู่มืองานผ้าใบ เต็นท์ →", "Canvas & tent guide →"],
 };
 
 /* ---------- helpers ---------- */
