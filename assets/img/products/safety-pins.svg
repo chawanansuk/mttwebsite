@@ -1,22 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="เข็มกลัดซ่อนปลายหลายขนาด สีเงิน ทอง และดำ">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="เข็มกลัดซ่อนปลาย 3 ขนาด ชุบนิกเกิลสีเงิน">
   <defs>
     <linearGradient id="silver" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="64">
       <stop offset="0" stop-color="#e3e8ee"/><stop offset=".45" stop-color="#b6c0cc"/><stop offset="1" stop-color="#7e8998"/>
     </linearGradient>
     <linearGradient id="silverCap" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="64">
       <stop offset="0" stop-color="#eef1f5"/><stop offset=".5" stop-color="#b3bcc9"/><stop offset="1" stop-color="#7c8796"/>
-    </linearGradient>
-    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="64">
-      <stop offset="0" stop-color="#fff3c4"/><stop offset=".45" stop-color="#e8c25a"/><stop offset="1" stop-color="#b8892a"/>
-    </linearGradient>
-    <linearGradient id="goldCap" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="64">
-      <stop offset="0" stop-color="#f7e39b"/><stop offset=".5" stop-color="#d4a83c"/><stop offset="1" stop-color="#9a6f1c"/>
-    </linearGradient>
-    <linearGradient id="black" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="64">
-      <stop offset="0" stop-color="#6b727c"/><stop offset=".45" stop-color="#3a3f47"/><stop offset="1" stop-color="#15181d"/>
-    </linearGradient>
-    <linearGradient id="blackCap" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="64">
-      <stop offset="0" stop-color="#5a606a"/><stop offset=".5" stop-color="#2d3138"/><stop offset="1" stop-color="#0f1115"/>
     </linearGradient>
     <filter id="sh" x="-10%" y="-40%" width="120%" height="180%">
       <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#101a30" flood-opacity=".18"/>
@@ -37,8 +25,8 @@
   <!-- พื้นหลังโปร่ง — เรียง 5 ขนาด: 7 · 4 · 2 · 0 · 000 -->
   <g filter="url(#sh)">
     <use href="#pin" x="40"  y="44"  width="560" height="179" style="--wire:url(#silver);--cap:url(#silverCap)"/>
-    <use href="#pin" x="100" y="186" width="420" height="134" style="--wire:url(#gold);--cap:url(#goldCap)"/>
-    <use href="#pin" x="180" y="290" width="300" height="96"  style="--wire:url(#black);--cap:url(#blackCap)"/>
+    <use href="#pin" x="100" y="186" width="420" height="134" style="--wire:url(#silver);--cap:url(#silverCap)"/>
+    <use href="#pin" x="180" y="290" width="300" height="96"  style="--wire:url(#silver);--cap:url(#silverCap)"/>
   </g>
   <style>
     use .w{stroke:var(--wire)} use .c{fill:var(--cap)}
