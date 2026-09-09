@@ -60,6 +60,10 @@
         '<li><a href="' + BASE + 'products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a></li>' +
         '<li><a href="' + BASE + 'products/index.html" data-th="สินค้าทั้งหมด" data-en="All products">สินค้าทั้งหมด</a></li>' +
         '<li><a href="' + BASE + 'index.html#categories" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a></li></ul></div>' +
+      '<div class="foot-col"><h2 data-th="บทความ" data-en="Guides">บทความ</h2><ul>' +
+        '<li><a href="' + BASE + 'articles/which-jet-lighter-brand.html" data-th="ไฟฟู่ยี่ห้อไหนดี" data-en="Which jet lighter">ไฟฟู่ยี่ห้อไหนดี</a></li>' +
+        '<li><a href="' + BASE + 'articles/moto-vs-lion-jet-lighter.html" data-th="เทียบ MOTO กับ ตราสิงโต" data-en="MOTO vs Lion brand">เทียบ MOTO กับ ตราสิงโต</a></li>' +
+        '<li><a href="' + BASE + 'articles/which-safety-pin-size.html" data-th="เข็มกลัดเบอร์ไหนใช้ทำอะไร" data-en="Which safety-pin size">เข็มกลัดเบอร์ไหนใช้ทำอะไร</a></li></ul></div>' +
       '<div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">ลิงก์</h2><ul>' +
         '<li><a href="' + BASE + 'index.html#why" data-th="ทำไมต้องเรา" data-en="Why us">ทำไมต้องเรา</a></li>' +
         '<li><a href="' + BASE + 'index.html#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a></li>' +

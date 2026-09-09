@@ -197,6 +197,11 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
 .pay .qr-hint{font-size:.8rem;color:var(--ink-dim);margin-top:10px;line-height:1.5}
 .pay .noqr{color:var(--ink-mute);font-size:.9rem;padding:40px 10px}
 .faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.readnext{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.readnext a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;color:var(--ink);text-decoration:none}
+.readnext a:hover{border-color:var(--amber);box-shadow:var(--shadow-sm)}
+.readnext a b{font-family:"Kanit";display:block;font-size:.95rem;margin-bottom:2px}
+.readnext a span{font-size:.82rem;color:var(--ink-dim)}
 .faq-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm)}
 .faq-card .ic{color:var(--amber-dark);margin-bottom:10px;display:block}
 .faq-card .ic svg{width:26px;height:26px}
@@ -289,6 +294,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
   .order-grid{grid-template-columns:1fr}
   .pay{position:static}
   .faq-grid{grid-template-columns:1fr}
+  .readnext{grid-template-columns:1fr;gap:8px}
 }
 @media(max-width:480px){ .feat-grid{grid-template-columns:1fr 1fr} }
 </style>
@@ -481,6 +487,27 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
         <h3 data-th="มาตรฐานสินค้า" data-en="Standard">มาตรฐานสินค้า</h3></summary>
         <p data-th="ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553 เติมแก๊สบิวเทนได้ ใช้งานซ้ำ" data-en="Gas lighter per TIS 879-2553. Refillable with butane, reusable.">ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553 เติมแก๊สบิวเทนได้ ใช้งานซ้ำ</p>
       </details>
+      <details class="faq-card">
+        <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h7v12H3zM14 6h7v12h-7z"/><path d="M12 4v16"/></svg></span>
+        <h3 data-th="ต่างจากไฟฟู่ยี่ห้อ MOTO ยังไง" data-en="How does it compare to MOTO?">ต่างจากไฟฟู่ยี่ห้อ MOTO ยังไง</h3></summary>
+        <p><span data-th="เป็นไฟแช็กหัวพ่นเจ็ทเหมือนกัน ต่างที่คุณซื้อตรงจากผู้นำเข้า ราคาต่อชิ้นประกาศไว้ชัด และถามสต็อกกับหน้าร้านได้เอง —" data-en="Both are butane jet lighters; the difference is buying direct from the importer at a published per-piece price —">เป็นไฟแช็กหัวพ่นเจ็ทเหมือนกัน ต่างที่คุณซื้อตรงจากผู้นำเข้า ราคาต่อชิ้นประกาศไว้ชัด และถามสต็อกกับหน้าร้านได้เอง —</span> <a href="../articles/moto-vs-lion-jet-lighter.html" data-th="ดูตารางเทียบช่องต่อช่อง" data-en="see the full side-by-side">ดูตารางเทียบช่องต่อช่อง</a></p>
+      </details>
+      <details class="faq-card">
+        <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20h16M6 16V8m6 8V4m6 12v-6"/></svg></span>
+        <h3 data-th="ใช้แทนรุ่น MT-013 / MT-019 ได้ไหม" data-en="Can it replace MT-013 / MT-019?">ใช้แทนรุ่น MT-013 / MT-019 ได้ไหม</h3></summary>
+        <p data-th="ใช้งานทดแทนกันได้ในงานทั่วไป แต่ขนาดตัวเครื่องไม่เท่ากันเป๊ะ รุ่นใหญ่ MTTFF01 สูง 11 ซม. รุ่นเล็ก MTTFF02 สูง 8 ซม. ถ้าอยากได้ขนาดใกล้ของเดิม ถ่ายรูปเทียบไม้บรรทัดส่งมาทาง LINE ได้เลย" data-en="Yes for general use, though sizes differ: MTTFF01 is 11 cm, MTTFF02 is 8 cm. Send a photo against a ruler on LINE and we'll match it.">ใช้งานทดแทนกันได้ในงานทั่วไป แต่ขนาดตัวเครื่องไม่เท่ากันเป๊ะ รุ่นใหญ่ MTTFF01 สูง 11 ซม. รุ่นเล็ก MTTFF02 สูง 8 ซม. ถ้าอยากได้ขนาดใกล้ของเดิม ถ่ายรูปเทียบไม้บรรทัดส่งมาทาง LINE ได้เลย</p>
+      </details>
+      <details class="faq-card">
+        <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.4"/><circle cx="15" cy="10" r="1.4"/><circle cx="12" cy="15" r="1.4"/></svg></span>
+        <h3 data-th="เลือกสีในกล่องเองได้ไหม" data-en="Can I choose the colour mix?">เลือกสีในกล่องเองได้ไหม</h3></summary>
+        <p data-th="ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง รุ่นเล็กมี 5 สี (ส้ม เขียว ฟ้า ม่วง เหลือง) รุ่นใหญ่มี 5 สี (ส้ม แดง เหลือง เขียว น้ำเงิน)" data-en="Yes — set the count per colour when ordering a box. Compact: orange, green, blue, purple, yellow. Large: orange, red, yellow, green, navy.">ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง รุ่นเล็กมี 5 สี (ส้ม เขียว ฟ้า ม่วง เหลือง) รุ่นใหญ่มี 5 สี (ส้ม แดง เหลือง เขียว น้ำเงิน)</p>
+      </details>
+    </div>
+
+    <div class="readnext">
+      <a href="../articles/moto-vs-lion-jet-lighter.html"><b data-th="เทียบกับไฟฟู่ MOTO (โมโต)" data-en="Compared with MOTO">เทียบกับไฟฟู่ MOTO (โมโต)</b><span data-th="ตารางช่องต่อช่อง ชิ้นต่อกล่อง ราคาต่อชิ้น" data-en="Field by field: box counts, per-piece price">ตารางช่องต่อช่อง ชิ้นต่อกล่อง ราคาต่อชิ้น</span></a>
+      <a href="../articles/which-jet-lighter-brand.html"><b data-th="ไฟฟู่ยี่ห้อไหนดี" data-en="Which brand to stock">ไฟฟู่ยี่ห้อไหนดี</b><span data-th="5 จุดที่ต้องดูก่อนซื้อยกกล่อง" data-en="5 checks before buying a box">5 จุดที่ต้องดูก่อนซื้อยกกล่อง</span></a>
+      <a href="jet-lighter-alternative-moto.html"><b data-th="กำลังหาไฟฟู่แทน MOTO?" data-en="Looking for a MOTO alternative?">กำลังหาไฟฟู่แทน MOTO?</b><span data-th="สรุปสเปค ราคา และวิธีสั่งยกกล่อง" data-en="Specs, price and how to order by the box">สรุปสเปค ราคา และวิธีสั่งยกกล่อง</span></a>
     </div>
   </div>
 </section>
@@ -797,7 +824,10 @@ renderProduct();
     "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":"จัดส่งอย่างไร","acceptedAnswer":{"@type":"Answer","text":"สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้"}},
       {"@type":"Question","name":"ชำระเงินอย่างไร","acceptedAnswer":{"@type":"Answer","text":"โอนผ่าน PromptPay / โอนธนาคาร หรือเก็บเงินปลายทาง"}},
-      {"@type":"Question","name":"ได้มาตรฐานไหม","acceptedAnswer":{"@type":"Answer","text":"ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553 เติมแก๊สบิวเทนได้ ใช้งานซ้ำ"}}
+      {"@type":"Question","name":"ได้มาตรฐานไหม","acceptedAnswer":{"@type":"Answer","text":"ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553 เติมแก๊สบิวเทนได้ ใช้งานซ้ำ"}},
+      {"@type":"Question","name":"ต่างจากไฟฟู่ยี่ห้อ MOTO ยังไง","acceptedAnswer":{"@type":"Answer","text":"เป็นไฟแช็กหัวพ่นเจ็ทเหมือนกัน ต่างที่ซื้อตรงจากผู้นำเข้า ราคาต่อชิ้นประกาศไว้ชัด ยกกล่องเฉลี่ย 24 บาทต่อชิ้น และถามสต็อกกับหน้าร้านสำเพ็งได้โดยตรง หมายเหตุ MOTO เป็นเครื่องหมายการค้าของเจ้าของแบรนด์ ม.ทวีภัณฑ์ ไม่ได้ขายสินค้ายี่ห้อดังกล่าว"}},
+      {"@type":"Question","name":"ใช้แทนรุ่น MT-013 หรือ MT-019 ได้ไหม","acceptedAnswer":{"@type":"Answer","text":"ใช้งานทดแทนกันได้ในงานทั่วไป แต่ขนาดตัวเครื่องไม่เท่ากันเป๊ะ รุ่นใหญ่ MTTFF01 สูง 11 ซม. รุ่นเล็ก MTTFF02 สูง 8 ซม. ถ้าอยากได้ขนาดใกล้ของเดิม ถ่ายรูปเทียบไม้บรรทัดส่งมาทาง LINE ได้"}},
+      {"@type":"Question","name":"เลือกสีในกล่องเองได้ไหม","acceptedAnswer":{"@type":"Answer","text":"ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง รุ่นเล็กมี 5 สี ส้ม เขียว ฟ้า ม่วง เหลือง รุ่นใหญ่มี 5 สี ส้ม แดง เหลือง เขียว น้ำเงิน"}}
     ]
   };
   const breadcrumb={

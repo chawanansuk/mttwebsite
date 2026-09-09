@@ -150,7 +150,7 @@ section{padding:64px 0}
 .site-footer{background:var(--navy);color:#c8d0e0;padding:52px 0 26px;margin-top:24px}
 .site-footer a{color:#c8d0e0;transition:color .15s}
 .site-footer a:hover{color:var(--amber)}
-.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:32px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.15fr;gap:28px}
 .foot-brand .brand{color:#fff}
 .foot-brand .brand .mark{background:linear-gradient(150deg,var(--amber),var(--amber-dark));color:var(--navy)}
 .foot-brand p{color:#93a0bd;font-size:.9rem;margin:14px 0 0;max-width:34ch}

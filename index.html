@@ -165,6 +165,13 @@
   .why-grid{grid-template-columns:1fr}
   .trust .wrap{grid-template-columns:1fr}
 }
+.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.gcard{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;color:var(--ink);text-decoration:none;transition:border-color .18s,box-shadow .18s,transform .18s}
+.gcard:hover{border-color:var(--amber);box-shadow:var(--shadow);transform:translateY(-2px)}
+.gcard .tag{display:inline-block;font-family:"Kanit";font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber-dark);background:var(--amber-soft);border-radius:999px;padding:3px 10px;margin-bottom:10px}
+.gcard h3{font-size:1.02rem;margin:0 0 6px}
+.gcard p{font-size:.86rem;color:var(--ink-dim);margin:0}
+@media(max-width:900px){.guide-grid{grid-template-columns:1fr;gap:10px}.gcard{padding:16px}}
 </style>
 </head>
 <body>
@@ -237,6 +244,34 @@
       <p data-th="กดเข้าไปดูรายละเอียด สั่งซื้อ และสร้าง QR พร้อมเพย์ได้เลย" data-en="Tap to view details, order, and get a PromptPay QR.">กดเข้าไปดูรายละเอียด สั่งซื้อ และสร้าง QR พร้อมเพย์ได้เลย</p>
     </div>
     <div class="grid feat-grid" id="featGrid"></div>
+  </div>
+</section>
+
+<!-- ===== GUIDES ===== -->
+<section id="guides" style="padding-top:52px">
+  <div class="wrap">
+    <div class="sec-head ctr">
+      <span class="eyebrow" data-th="คู่มือเลือกซื้อ" data-en="Buying guides">คู่มือเลือกซื้อ</span>
+      <h2 data-th="ยังเลือกไม่ถูก? อ่านก่อนสั่ง" data-en="Not sure yet? Read before you order">ยังเลือกไม่ถูก? อ่านก่อนสั่ง</h2>
+      <p data-th="เทียบยี่ห้อ เทียบเบอร์ และคิดต้นทุนต่อชิ้น สรุปจากประสบการณ์หน้าร้านสำเพ็ง" data-en="Compare brands, compare sizes, work out the per-piece cost — straight from the Sampheng counter.">เทียบยี่ห้อ เทียบเบอร์ และคิดต้นทุนต่อชิ้น สรุปจากประสบการณ์หน้าร้านสำเพ็ง</p>
+    </div>
+    <div class="guide-grid">
+      <a class="gcard" href="articles/moto-vs-lion-jet-lighter.html">
+        <span class="tag" data-th="ไฟฟู่" data-en="Jet lighters">ไฟฟู่</span>
+        <h3 data-th="ไฟฟู่ MOTO (โมโต) เทียบกับ ตราสิงโต" data-en="MOTO jet lighters vs Lion brand">ไฟฟู่ MOTO (โมโต) เทียบกับ ตราสิงโต</h3>
+        <p data-th="ตารางช่องต่อช่อง — ชิ้นต่อกล่อง ราคาต่อชิ้น การเติมแก๊ส และช่องทางซื้อ" data-en="Field by field — box counts, per-piece price, refilling, where to buy">ตารางช่องต่อช่อง — ชิ้นต่อกล่อง ราคาต่อชิ้น การเติมแก๊ส และช่องทางซื้อ</p>
+      </a>
+      <a class="gcard" href="articles/which-jet-lighter-brand.html">
+        <span class="tag" data-th="ไฟฟู่" data-en="Jet lighters">ไฟฟู่</span>
+        <h3 data-th="ไฟฟู่ยี่ห้อไหนดี? 5 จุดที่ต้องดู" data-en="Which jet lighter? 5 things to check">ไฟฟู่ยี่ห้อไหนดี? 5 จุดที่ต้องดู</h3>
+        <p data-th="วิธีเช็คหัวพ่น วาล์วเติมแก๊ส และการคิดราคาต่อชิ้นก่อนซื้อยกกล่อง" data-en="Check the jet, the refill valve, and the real per-piece cost before buying a box">วิธีเช็คหัวพ่น วาล์วเติมแก๊ส และการคิดราคาต่อชิ้นก่อนซื้อยกกล่อง</p>
+      </a>
+      <a class="gcard" href="articles/which-safety-pin-size.html">
+        <span class="tag" data-th="เข็มกลัด" data-en="Safety pins">เข็มกลัด</span>
+        <h3 data-th="เข็มกลัดเบอร์ไหนใช้ทำอะไร" data-en="Which safety-pin size for which job">เข็มกลัดเบอร์ไหนใช้ทำอะไร</h3>
+        <p data-th="ตารางงาน→เบอร์ ครบทั้ง 10 เบอร์ 000–7 พร้อมวิธีวัดขนาดที่ถูกต้อง" data-en="Job-to-size table for all ten sizes 000–7, plus how to measure">ตารางงาน→เบอร์ ครบทั้ง 10 เบอร์ 000–7 พร้อมวิธีวัดขนาดที่ถูกต้อง</p>
+      </a>
+    </div>
   </div>
 </section>
 
