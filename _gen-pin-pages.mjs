@@ -5,7 +5,7 @@
    ============================================================ */
 import { writeFileSync } from "fs";
 
-const SITE = "https://www.mttaweephan.com";
+const SITE = "https://mtthardware.com";
 
 const PINS = [
   { no: "000", mm: 19, cm: "1.9", inch: '3/4"', pack: "720–1,500",
