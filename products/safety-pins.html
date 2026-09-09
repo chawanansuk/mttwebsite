@@ -150,7 +150,8 @@ table.size td b{font-family:"Kanit"}
 .faq details[open] summary::after{content:"–"}
 .faq .a{padding:0 0 14px;color:var(--ink-2);font-size:.9rem}
 .brand-note{margin:26px 0 0;color:var(--ink-mute);font-size:.85rem}
-@media(max-width:860px){.pin-grid{grid-template-columns:1fr 1fr}.unit-grid{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr;gap:18px}.hero-pins{max-width:380px;margin:0 auto}}
+.hero-tall{display:none}
+@media(max-width:860px){.pin-grid{grid-template-columns:1fr 1fr}.unit-grid{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr;gap:18px}.hero-wide{display:none}.hero-tall{display:block;width:100%;max-width:420px;height:auto;margin:0 auto;border-radius:var(--radius-sm)}}
 @media(max-width:480px){.pin-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -170,13 +171,17 @@ table.size td b{font-family:"Kanit"}
       <span class="badge" data-th="🧾 ออกใบกำกับภาษีได้" data-en="🧾 Tax invoice available">🧾 ออกใบกำกับภาษีได้</span>
     </div>
     </div>
-    <video class="hero-pins" id="sizeVideo" muted playsinline loop autoplay preload="metadata"
+    <video class="hero-pins hero-wide" id="sizeVideo" muted playsinline loop autoplay preload="metadata"
            poster="../assets/img/products/safety-pin-sizes.webp" width="1535" height="1024"
            aria-label="ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7 ตั้งแต่ 19 มม. ถึง 85 มม. พร้อมขนาดลวด">
       <source src="../assets/video/safety-pin-sizes.webm" type="video/webm">
       <source src="../assets/video/safety-pin-sizes.mp4" type="video/mp4">
       <img src="../assets/img/products/safety-pin-sizes.webp" alt="ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7 ตั้งแต่ 19 มม. ถึง 85 มม. พร้อมขนาดลวด" width="1535" height="1024">
     </video>
+    <img class="hero-tall" src="../assets/img/products/safety-pin-sizes-tall.webp"
+         srcset="../assets/img/products/safety-pin-sizes-tall-sm.webp 640w, ../assets/img/products/safety-pin-sizes-tall.webp 1024w"
+         sizes="(max-width:860px) 92vw, 420px" loading="lazy"
+         alt="ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต 10 เบอร์ เรียง 2 แถว พร้อมความยาวและขนาดลวดแต่ละเบอร์" width="1024" height="1536">
   </div>
 </section>
 
