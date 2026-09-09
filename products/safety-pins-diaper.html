@@ -60,20 +60,20 @@
 .safe-grid b{display:block;font-family:"Kanit";font-size:1rem;margin-bottom:4px}
 .safe-grid p{color:var(--ink-dim);font-size:.86rem;margin:0}
 .use-list{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;padding:0;margin:0;list-style:none}
-.use-list li{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);font-size:.9rem}
+.use-list li{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);font-size:.9rem}
 .use-list li::before{content:"✔ ";color:var(--amber-dark);font-weight:700}
-.tip-band{background:var(--amber-soft);border:1px solid rgba(18,161,80,.25);border-radius:var(--r-lg);padding:20px 22px;margin-top:16px}
+.tip-band{background:var(--amber-soft);border:1px solid rgba(18,161,80,.25);border-radius:var(--radius-lg);padding:20px 22px;margin-top:16px}
 .tip-band b{font-family:"Kanit";color:var(--amber-dark)}
 .tip-band ol{margin:8px 0 0 18px;padding:0;color:var(--ink-2);font-size:.9rem}
 .tip-band li{margin-bottom:4px}
 .faq{margin-top:6px;display:grid;gap:10px}
-.faq details{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:0 18px}
+.faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
 .faq summary{cursor:pointer;font-family:"Kanit";font-weight:600;font-size:.95rem;padding:13px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";font-size:1.2rem;color:var(--amber);flex:none}
 .faq details[open] summary::after{content:"–"}
 .faq .a{padding:0 0 13px;color:var(--ink-2);font-size:.88rem}
-.cta-band{background:var(--navy);color:#fff;border-radius:var(--r-lg);padding:28px;margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.cta-band{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:28px;margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
 .cta-band h2{color:#fff;font-size:1.25rem;margin:0 0 4px}
 .cta-band p{color:#c2cbde;margin:0;font-size:.9rem}
 @media(max-width:760px){.safe-grid{grid-template-columns:1fr}.use-list{grid-template-columns:1fr}}
@@ -96,6 +96,7 @@
     <div class="cta-row">
       <a class="btn btn-primary" data-line-ask="สอบถามราคา เข็มกลัดผ้าอ้อม เบอร์ 4 (พวง/ยกกล่อง)" href="#" target="_blank" rel="noopener" data-th="เช็คราคาทาง LINE" data-en="Ask price on LINE">เช็คราคาทาง LINE</a>
       <a class="btn btn-ghost" href="safety-pins-4.html" data-th="ดูสเปคเบอร์ 4 เต็ม ๆ" data-en="Full size-4 specs">ดูสเปคเบอร์ 4 เต็ม ๆ</a>
+      <a class="btn btn-ghost" href="safety-pins-wholesale.html" data-th="สั่งยกกล่อง ราคาส่ง" data-en="Wholesale by the box">สั่งยกกล่อง ราคาส่ง</a>
     </div>
   </div>
 </section>

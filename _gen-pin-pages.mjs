@@ -263,6 +263,7 @@ table.cmp tr.me td{background:#e9f8f0}
     <div class="cta-row">
       <a class="btn btn-primary" data-line-ask="${esc(lineMsg)}" href="#" target="_blank" rel="noopener" data-th="เช็คราคาเบอร์ ${p.no} ทาง LINE" data-en="Ask price on LINE">เช็คราคาเบอร์ ${p.no} ทาง LINE</a>
       <a class="btn btn-ghost" href="safety-pins.html" data-th="ดูครบทุกเบอร์ 000–7" data-en="See all sizes 000–7">ดูครบทุกเบอร์ 000–7</a>
+      <a class="btn btn-ghost" href="safety-pins-wholesale.html" data-th="ราคาส่ง ยกกล่อง" data-en="Wholesale by the box">ราคาส่ง ยกกล่อง</a>
     </div>
   </div>
 </section>
@@ -301,7 +302,7 @@ ${compareRows}
         </tbody>
       </table>
     </div>
-    <p style="font-size:.85rem;color:var(--ink-mute);margin-top:8px"><a href="safety-pins.html#size-table" data-th="ดูตารางขนาดครบทุกเบอร์ →" data-en="Full size chart →">ดูตารางขนาดครบทุกเบอร์ →</a>${REL[p.no] ? ` · <a href="${REL[p.no][0]}" data-th="${esc(REL[p.no][1])}" data-en="${esc(REL[p.no][2])}">${esc(REL[p.no][1])}</a>` : ""} · <a href="../articles/which-safety-pin-size.html" data-th="เบอร์ไหนใช้ทำอะไร →" data-en="Size-choosing guide →">เบอร์ไหนใช้ทำอะไร →</a></p>
+    <p style="font-size:.85rem;color:var(--ink-mute);margin-top:8px"><a href="safety-pins.html#size-table" data-th="ดูตารางขนาดครบทุกเบอร์ →" data-en="Full size chart →">ดูตารางขนาดครบทุกเบอร์ →</a>${REL[p.no] ? ` · <a href="${REL[p.no][0]}" data-th="${esc(REL[p.no][1])}" data-en="${esc(REL[p.no][2])}">${esc(REL[p.no][1])}</a>` : ""} · <a href="../articles/which-safety-pin-size.html" data-th="เบอร์ไหนใช้ทำอะไร →" data-en="Size-choosing guide →">เบอร์ไหนใช้ทำอะไร →</a> · <a href="safety-pins-wholesale.html" data-th="สั่งยกกล่อง ราคาส่ง →" data-en="Wholesale by the box →">สั่งยกกล่อง ราคาส่ง →</a></p>
 
     <h2 class="sec-h" data-th="คำถามที่พบบ่อย" data-en="FAQ">คำถามที่พบบ่อย</h2>
     <div class="faq">

@@ -121,7 +121,7 @@
 .pin-card .tagm{font-size:.8rem;font-weight:600;color:var(--ink-mute)}
 .pin-card .flag{margin-left:6px}
 /* ---- ตารางขนาด ---- */
-.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.size{width:100%;border-collapse:collapse;font-size:.88rem;min-width:560px}
 table.size th{font-family:"Kanit";font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
 table.size td{padding:9px 14px;border-top:1px solid var(--line)}
@@ -133,7 +133,7 @@ table.size td b{font-family:"Kanit"}
 .unit b{display:block;font-family:"Kanit";font-size:1.15rem;margin-bottom:2px}
 .unit span{color:var(--ink-dim);font-size:.85rem}
 /* ---- เครื่องคิดงานวิ่ง ---- */
-.calc{background:var(--navy);color:#fff;border-radius:var(--r-lg);padding:26px 26px 24px;margin-top:16px}
+.calc{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:26px 26px 24px;margin-top:16px}
 .calc h3{color:#fff;font-size:1.15rem;margin-bottom:4px}
 .calc p{color:#c2cbde;font-size:.88rem;margin:0 0 14px}
 .calc .rowc{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
@@ -143,7 +143,7 @@ table.size td b{font-family:"Kanit"}
 .calc .res{font-family:"Kanit";font-size:1.05rem;color:#7fe0a9}
 /* ---- FAQ ---- */
 .faq{margin-top:14px;display:grid;gap:10px}
-.faq details{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:0 18px}
+.faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
 .faq summary{cursor:pointer;font-family:"Kanit";font-weight:600;font-size:.98rem;padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";font-size:1.2rem;color:var(--amber);flex:none}
@@ -172,6 +172,10 @@ table.size td b{font-family:"Kanit"}
       <span class="badge" data-th="🔢 นับจำนวนจริง ไม่ชั่ง" data-en="🔢 Counted, not weighed">🔢 นับจำนวนจริง ไม่ชั่ง</span>
       <span class="badge" data-th="📦 แบ่งขาย พวง/กุรุส/กล่อง" data-en="📦 Dozen / gross / box">📦 แบ่งขาย พวง/กุรุส/กล่อง</span>
       <span class="badge" data-th="🧾 ออกใบกำกับภาษีได้" data-en="🧾 Tax invoice available">🧾 ออกใบกำกับภาษีได้</span>
+    </div>
+    <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px">
+      <a class="btn btn-primary" href="safety-pins-wholesale.html" data-th="ราคาส่ง ยกกล่อง ครบทุกเบอร์" data-en="Wholesale — all sizes by the box">ราคาส่ง ยกกล่อง ครบทุกเบอร์</a>
+      <a class="btn btn-ghost" href="../articles/which-safety-pin-size.html" data-th="เบอร์ไหนใช้ทำอะไร" data-en="Which size for which job">เบอร์ไหนใช้ทำอะไร</a>
     </div>
     </div>
     <video class="hero-pins hero-wide" id="sizeVideo" muted playsinline loop autoplay preload="metadata"
