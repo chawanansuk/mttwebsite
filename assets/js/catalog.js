@@ -80,7 +80,7 @@ window.CATALOG = (function () {
       tagline_th: "คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย",
       tagline_en: "Pliers, wrenches, electrical, measuring — exclusive Thai importer" },
     { id: "safety-pins", category: "pins", glyph: "🧷", live: false,
-      image: "assets/img/products/safety-pins.svg",
+      image: "assets/img/products/safety-pins-hero.webp",
       url: "products/safety-pins.html",
       name_th: "เข็มกลัดซ่อนปลาย เบอร์ 000–7", name_en: "Safety pins size 000–7",
       tagline_th: "ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง",
