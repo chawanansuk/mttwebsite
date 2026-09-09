@@ -26,6 +26,18 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7",
+  "description": "คลิปแสดงเข็มกลัดซ่อนปลายทั้ง 10 เบอร์เรียงตามขนาด พร้อมความยาวและขนาดลวดของแต่ละเบอร์ ตั้งแต่เบอร์ 000 (0.65 × 19 มม.) ถึงเบอร์ 7 (1.35 × 85 มม.)",
+  "thumbnailUrl": "https://mtthardware.com/assets/img/products/safety-pin-sizes.webp",
+  "contentUrl": "https://mtthardware.com/assets/video/safety-pin-sizes.mp4",
+  "uploadDate": "2026-09-09",
+  "duration": "PT10S"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "เข็มกลัดซ่อนปลาย ครบทุกเบอร์ 000-7",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
@@ -81,7 +93,7 @@
 .pin-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.16),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:52px 0 8px}
 .pin-hero h1{font-size:clamp(1.85rem,4vw,2.7rem);margin:8px 0 6px}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
-.hero-pins{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 30px rgba(16,26,48,.12))}
+.hero-pins{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 30px rgba(16,26,48,.12));background:#fff;border-radius:var(--radius-sm)}
 .pinvis{margin:10px 0 10px;min-height:38px;display:flex;align-items:center}
 .pinvis img{display:block;height:auto}
 .trust{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 4px}
@@ -158,10 +170,13 @@ table.size td b{font-family:"Kanit"}
       <span class="badge" data-th="🧾 ออกใบกำกับภาษีได้" data-en="🧾 Tax invoice available">🧾 ออกใบกำกับภาษีได้</span>
     </div>
     </div>
-    <picture>
-      <source media="(max-width:860px)" srcset="../assets/img/products/safety-pin-sizes-sm.webp" width="768" height="512">
-      <img class="hero-pins" src="../assets/img/products/safety-pin-sizes.webp" alt="ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7 ตั้งแต่ 19 มม. ถึง 85 มม. พร้อมขนาดลวด" width="1535" height="1024" fetchpriority="high">
-    </picture>
+    <video class="hero-pins" id="sizeVideo" muted playsinline loop autoplay preload="metadata"
+           poster="../assets/img/products/safety-pin-sizes.webp" width="1535" height="1024"
+           aria-label="ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7 ตั้งแต่ 19 มม. ถึง 85 มม. พร้อมขนาดลวด">
+      <source src="../assets/video/safety-pin-sizes.webm" type="video/webm">
+      <source src="../assets/video/safety-pin-sizes.mp4" type="video/mp4">
+      <img src="../assets/img/products/safety-pin-sizes.webp" alt="ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7 ตั้งแต่ 19 มม. ถึง 85 มม. พร้อมขนาดลวด" width="1535" height="1024">
+    </video>
   </div>
 </section>
 
@@ -259,6 +274,12 @@ table.size td b{font-family:"Kanit"}
 
 <div id="site-footer"></div>
 
+<script>
+/* เคารพ prefers-reduced-motion: หยุดคลิป โชว์ poster (มีข้อมูลครบเหมือนกัน) */
+(function(){var v=document.getElementById("sizeVideo");
+ if(v&&window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches){v.autoplay=false;v.removeAttribute("autoplay");try{v.pause();}catch(e){}}
+})();
+</script>
 <script>window.MTT_BASE="../";window.MTT_PAGE="pins";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
 <script src="../assets/js/catalog.js?v=2"></script>
