@@ -69,8 +69,8 @@ npm test          # โหลดทุกหน้า เช็ค JS error, ต
 - หน้ารวมสินค้า: `/products/`
 - Vercel Web Analytics เปิดใช้ได้จาก Dashboard (สคริปต์ `/_vercel/insights` ฝังไว้แล้ว)
 
-หลัง deploy: ตั้งโดเมนจริง แล้วแก้ URL ใน `sitemap.xml`, `robots.txt`, tag `canonical`/`og:*`
-(ตอนนี้ตั้งเป็น `www.mttaweephan.com` เป็นตัวอย่าง)
+โดเมนหลักของเว็บคือ `mtthardware.com` (แบบไม่มี www) ตั้งไว้แล้วใน `sitemap.xml`,
+`robots.txt` และ tag `canonical`/`og:*` ทุกหน้า — ถ้าย้ายโดเมนต้องแก้ทั้งสามที่พร้อมกัน
 
 ## ฟีเจอร์
 

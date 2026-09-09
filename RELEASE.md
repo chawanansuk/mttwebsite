@@ -17,9 +17,11 @@
       (เช่น `image:"assets/img/products/jet-lighter.webp"`) — ระบบจะสลับจาก emoji เป็นรูปให้อัตโนมัติ
 
 ## 3) โดเมน & SEO
-- [ ] จดโดเมน + ตั้งใน Vercel
-- [ ] แก้โดเมนตัวอย่าง `www.mttaweephan.com` ให้เป็นโดเมนจริงใน:
-      `sitemap.xml`, `robots.txt`, tag `canonical` และ `og:*` ทุกหน้า
+- [ ] จดโดเมน `mtthardware.com` (ผู้ให้บริการไทย ขอใบกำกับภาษีตอนชำระเงิน)
+- [ ] ตั้ง DNS: `A @ 76.76.21.21` + `CNAME www cname.vercel-dns.com`
+- [ ] เพิ่มโดเมนใน Vercel → Settings → Domains (ตั้ง non-www เป็นตัวหลัก, www redirect มาหา)
+- [x] URL ในโค้ดชี้ไป `https://mtthardware.com` แล้วทุกจุด
+      (`sitemap.xml`, `robots.txt`, tag `canonical` และ `og:*` ทุกหน้า)
 - [ ] ยืนยันเว็บใน Google Search Console + submit `sitemap.xml`
 - [ ] สร้าง Google Business Profile (ปักหมุดร้าน) — เอา URL ฝังมาใส่ `MAPS_EMBED_URL`
 
