@@ -39,6 +39,15 @@ const META = {
     lead_en: "Automatic wire strippers, crimping pliers for every size from 0.5 to 38 mm², RJ-45 crimpers, digital multimeters, clamp meters, soldering irons and heat guns.",
     eyebrow_th: "หมวดช่างไฟฟ้า", eyebrow_en: "Electrical tools",
   },
+  automotive: {
+    file: "tools-automotive.html",
+    title: "เครื่องมือช่างยนต์ WYNN'S TOOLS เหล็กดูด กากบาท อัดจารบี",
+    desc: "เครื่องมือช่างยนต์ WYNN'S TOOLS — เหล็กดูด 3 ขา ถอดกรองน้ำมัน ประแจกากบาท เหล็กงัดยาง กระบอกอัดจารบี ปืนฉีดลม เกจวัดลมยาง โคมไฟซ่อมรถ",
+    kw: "เครื่องมือช่างยนต์, เหล็กดูด 3 ขา, ถอดกรองน้ำมัน, ประแจกากบาท, เหล็กงัดยาง, กระบอกอัดจารบี, ปืนฉีดลม, เกจวัดลมยาง, ตัวถอดสปริงโช๊ค",
+    lead_th: "เครื่องมือเฉพาะทางสำหรับอู่และช่างยนต์ ตั้งแต่เหล็กดูด 3 ขา 3–16 นิ้ว ชุดถ้วยถอดกรองน้ำมัน 14 ชิ้น ตัวถอดสปริงโช๊ค ประแจกากบาทถอดล้อ ไปจนถึงกระบอกอัดจารบี ปืนฉีดลม เกจวัดลมยาง และโคมไฟ LED ซ่อมรถ",
+    lead_en: "Specialist tools for workshops: 3-jaw pullers from 3 to 16 inches, 14-cup oil filter sets, coil spring compressors, cross rim wrenches, grease guns, air blow guns, tyre gauges and LED work lamps.",
+    eyebrow_th: "หมวดช่างยนต์", eyebrow_en: "Automotive tools",
+  },
   screwdrivers: {
     file: "tools-screwdrivers.html",
     title: "ไขควง WYNN'S TOOLS ไขควงตอก ชุดซ่อมมือถือ ดอกถอนเกลียว",
