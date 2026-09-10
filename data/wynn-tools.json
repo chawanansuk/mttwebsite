@@ -1,0 +1,3796 @@
+{
+  "_source": "แคตตาล็อก WYNN'S TOOLS (วินส์ทูลส์) ฉบับภาษาไทย — ถอดข้อมูลจากไฟล์สแกน",
+  "_fields": "code=รหัส, th/en=ชื่อ, size=ขนาด, pcs=จำนวน(แพ็ก/ลัง), meas=ขนาดลัง, kg=น้ำหนักลัง, mat=วัสดุ",
+  "categories": [
+    {
+      "id": "holding",
+      "th": "เครื่องมือประเภทจับยึด",
+      "en": "Holding Tools Series",
+      "groups": [
+        {
+          "th": "คีมมินิ 5 นิ้ว",
+          "en": "Mini Pliers Series",
+          "mat": "SK-55 เหล็กกล้าคาร์บอนสูง",
+          "notes_th": [
+            "หลอมด้วยเหล็กกล้าคาร์บอนสูงคุณภาพเยี่ยม ทำให้คีมแข็งแรงและทนทาน",
+            "คมตัดชุบร้อนพิเศษ ทำให้คมและทนสูง",
+            "หัวคีมได้รับการขัดเงาให้เนียนสะอาด"
+          ],
+          "items": [
+            {
+              "code": "WNS105C",
+              "th": "คีมมินิปากจิ้งจก",
+              "en": "Mini Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "21kg"
+            },
+            {
+              "code": "WNS105A",
+              "th": "คีมตัดปากเฉียงมินิ",
+              "en": "Mini Diagonal Cutting Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "21kg"
+            },
+            {
+              "code": "WNS105F",
+              "th": "คีมมินิปากแบน",
+              "en": "Flat-Nose Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "21kg"
+            },
+            {
+              "code": "WNS105B",
+              "th": "คีมมินิปากแหลมไม่มีฟัน",
+              "en": "Pointed-Nose Pliers Without Tooth",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "21kg"
+            },
+            {
+              "code": "WNS105N",
+              "th": "คีมมินิปากแหลมมีฟัน",
+              "en": "Mini Long Nose Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "21kg"
+            },
+            {
+              "code": "WNS105M",
+              "th": "คีมมินิปากเข็ม",
+              "en": "Mini Needle Nose Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "21kg"
+            },
+            {
+              "code": "WNS105G",
+              "th": "คีมมินิปากแหลมปลายงอ",
+              "en": "Mini Bent-Nose Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "21kg"
+            },
+            {
+              "code": "WNS105K",
+              "th": "คีมมินิปากนกแก้ว",
+              "en": "Mini End Cutting Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "21kg"
+            }
+          ]
+        },
+        {
+          "th": "คีมมินิ 5 นิ้ว ด้ามหุ้ม",
+          "en": "Mini Nickel-Iron Plated Pliers with Double-Color Handle",
+          "mat": "C-ALLOY เหล็กผสมชุบนิกเกิล-เหล็ก",
+          "notes_th": [
+            "หลอมด้วยเหล็กผสมพิเศษคุณภาพเยี่ยม ทำให้คีมมีความทนทานสูงมาก",
+            "หัวคีมชุบนิกเกิล ป้องกันสนิม การกัดกร่อน การตกกระแทก และทำให้หัวคีมเงาและสวยงาม"
+          ],
+          "items": [
+            {
+              "code": "S105A",
+              "th": "คีมมินิปากแหลมด้ามหุ้ม",
+              "en": "Mini Long Nose Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "17kg"
+            },
+            {
+              "code": "S105B",
+              "th": "คีมตัดปากเฉียงมินิด้ามหุ้ม",
+              "en": "Mini Diagonal Cutting Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "17kg"
+            },
+            {
+              "code": "S105C",
+              "th": "คีมมินิปากแบนด้ามหุ้ม",
+              "en": "Mini Flat Nose Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "17kg"
+            },
+            {
+              "code": "S105F",
+              "th": "คีมปากจิ้งจกด้ามหุ้ม (ปากรวม)",
+              "en": "Mini Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "17kg"
+            },
+            {
+              "code": "S105G",
+              "th": "คีมมินิปากนกแก้วด้ามหุ้ม",
+              "en": "Mini End Cutting Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "17kg"
+            },
+            {
+              "code": "S105H",
+              "th": "คีมมินิปากเข็มด้ามหุ้ม",
+              "en": "Mini Needle Nose Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "17kg"
+            },
+            {
+              "code": "S105N",
+              "th": "คีมมินิปากแหลม แกนกลม",
+              "en": "Mini Round Nose Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "17kg"
+            }
+          ]
+        },
+        {
+          "th": "คีมปากรวม / คีมตัด",
+          "en": "Combination & Cutting Pliers",
+          "mat": "CR-V Chromium-Vanadium / SK-55",
+          "items": [
+            {
+              "code": "W3455",
+              "th": "คีมจับปากรวม ตัด ปอกและย้ำสายไฟ",
+              "en": "Multi-Functional Combination Pliers",
+              "size": "250mm",
+              "pcs": "6/60",
+              "meas": "55X33X22.5cm",
+              "kg": "33kg",
+              "mat": "CR-V",
+              "notes_th": "ปากตัดความแข็งระดับ HRC58-63 · ตัดลวดสลิง 3 มม. · ตัดสายไฟ 0.5 มม. · ย้ำสายไฟด้วยขนาดเล็กได้"
+            },
+            {
+              "code": "W3144",
+              "th": "คีมปากรวม",
+              "en": "Multi-Functional Combination Pliers",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "43.5X27X28.8cm",
+              "kg": "25kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "AC208",
+              "th": "คีมปากรวม ทรงยุโรป",
+              "en": "European Type Combination Pliers",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "43.5X27X26cm",
+              "kg": "25kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "AC406",
+              "th": "คีมปากรวม ทรงยุโรป",
+              "en": "European Type Combination Pliers",
+              "size": "150mm",
+              "pcs": "6/60",
+              "meas": "45X23.5X23.5cm",
+              "kg": "22kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WN218N",
+              "th": "คีมตัดปากเฉียง ปอกสายไฟได้",
+              "en": "Japan E-Type Diagonal Cutting Pliers",
+              "size": "150mm",
+              "pcs": "6/120",
+              "meas": "58.5X24.3X36cm",
+              "kg": "24kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W00100",
+              "th": "คีมปากรวม ด้ามจับ 3 สี",
+              "en": "Combination Pliers with Tri-Color Handle",
+              "size": "150mm",
+              "pcs": "12/96",
+              "meas": "48X38X25.5cm",
+              "kg": "25kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W00200",
+              "th": "คีมปากยาว ด้ามจับ 3 สี",
+              "en": "Long Nose Pliers with Tri-Color Handle",
+              "size": "150mm",
+              "pcs": "12/96",
+              "meas": "48X38X25.5cm",
+              "kg": "20kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W00300",
+              "th": "คีมปากตัด ด้ามจับ 3 สี",
+              "en": "Diagonal Cutting Pliers with Tri-Color Handle",
+              "size": "150mm",
+              "pcs": "12/96",
+              "meas": "48X38X25.5cm",
+              "kg": "24kg",
+              "mat": "CR-V"
+            }
+          ]
+        },
+        {
+          "th": "คีมปากแหลม / คีมปากจระเข้ / คีมปากแบน",
+          "en": "Long Nose, Combination & Flat Nose Pliers",
+          "mat": "CR-V / SK-55",
+          "items": [
+            {
+              "code": "W3456",
+              "th": "คีมปากแหลม จับ ตัด ปอกและย้ำสายไฟ",
+              "en": "Multi Function Long Nose Pliers",
+              "size": "230mm",
+              "pcs": "6/60",
+              "meas": "55X33X22.5cm",
+              "kg": "33kg",
+              "mat": "CR-V",
+              "notes_th": "ปากตัดแข็งระดับ HRC59-63 ตัดสายทองแดงได้ · ผ่อนแรงกว่าคีมปกติ 30%"
+            },
+            {
+              "code": "W508P",
+              "th": "คีมปากแหลม มีปากตัด",
+              "en": "American Type Long Nose Pliers",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "49X28X32cm",
+              "kg": "21kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W106P",
+              "th": "คีมปากแหลม มีปากตัด",
+              "en": "American Type Long Nose Pliers",
+              "size": "150mm",
+              "pcs": "6/60",
+              "meas": "49.5X25X34cm",
+              "kg": "14kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W208P",
+              "th": "คีมปากจระเข้",
+              "en": "American Type Combination Pliers",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "49X28X32cm",
+              "kg": "26kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W406P",
+              "th": "คีมปากจระเข้",
+              "en": "American Type Combination Pliers",
+              "size": "150mm",
+              "pcs": "6/60",
+              "meas": "49.5X25X34cm",
+              "kg": "18kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W106",
+              "th": "คีมปากแบน แบบไม่มีฟัน",
+              "en": "Flat Nose Pliers",
+              "size": "150mm",
+              "pcs": "6/120",
+              "meas": "58.5X24.3X36cm",
+              "kg": "",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W608P",
+              "th": "คีมตัดปากเฉียง",
+              "en": "American Type Diagonal Cutting Pliers",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "49X28X32cm",
+              "kg": "24kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W306P",
+              "th": "คีมตัดปากเฉียง",
+              "en": "American Type Diagonal Cutting Pliers",
+              "size": "150mm",
+              "pcs": "6/60",
+              "meas": "49.5X25X34cm",
+              "kg": "16kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS105D",
+              "th": "คีมตัดปากเฉียงสไตล์อเมริกัน",
+              "en": "American Type Side Cutting Pliers",
+              "size": "125mm",
+              "pcs": "12/240",
+              "meas": "43X40.5X36.5cm",
+              "kg": "28kg",
+              "mat": "SK-55",
+              "notes_th": "ความแข็ง HRC52-58 ตัดลวด 0.8–1 มม. เหมาะงานไฟฟ้า ปอกสายไฟ ตัดเส้นลวด ตัดพลาสติก"
+            },
+            {
+              "code": "WNS106D",
+              "th": "คีมตัดปากเฉียงสไตล์อเมริกัน",
+              "en": "American Type Side Cutting Pliers",
+              "size": "150mm",
+              "pcs": "20/160",
+              "meas": "48X38X25.5cm",
+              "kg": "23kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WS175B",
+              "th": "คีมตัดปากเฉียงสไตล์อเมริกัน",
+              "en": "American Type Side Cutting Pliers",
+              "size": "175mm",
+              "pcs": "12/72",
+              "meas": "51X28X22cm",
+              "kg": "20kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WB208",
+              "th": "คีมปากจระเข้ จับ ตัด ปอกและย้ำสายไฟ",
+              "en": "Multi-Purpose Combination Pliers",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "43.5X27X26cm",
+              "kg": "22kg",
+              "mat": "SK-55",
+              "notes_th": "มีปากย้ำสายไฟ 2 ขนาด ปอกสายไฟได้หลายขนาด"
+            }
+          ]
+        },
+        {
+          "th": "คีมหนีบ/ถ่างแหวน และคีมตาไก่",
+          "en": "Circlip & Grommet Pliers",
+          "mat": "SK-55 / CR-V / เหล็กอัลลอย",
+          "items": [
+            {
+              "code": "W208K",
+              "th": "คีมปากจระเข้พาวเวอร์สปริง",
+              "en": "Energy Saving Combination Pliers",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "45.5X28.5X28.8cm",
+              "kg": "21kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WHS175B",
+              "th": "คีมหนีบแหวนปากตรง",
+              "en": "Internal Circlip Pliers Straight",
+              "size": "175mm",
+              "pcs": "6/120",
+              "meas": "58X24X34.5cm",
+              "kg": "19kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WHS330B",
+              "th": "คีมหนีบแหวนปากตรง",
+              "en": "Internal Circlip Pliers Straight",
+              "size": "330mm",
+              "pcs": "6/36",
+              "meas": "50X39X20cm",
+              "kg": "20kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WHB175B",
+              "th": "คีมหนีบแหวนปากงอ",
+              "en": "Internal Circlip Plier Bent Nose",
+              "size": "175mm",
+              "pcs": "6/120",
+              "meas": "58X24X34.5cm",
+              "kg": "19kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WHB330B",
+              "th": "คีมหนีบแหวนปากงอ",
+              "en": "Internal Circlip Plier Bent Nose",
+              "size": "330mm",
+              "pcs": "6/36",
+              "meas": "50X39X20cm",
+              "kg": "20kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WSS175B",
+              "th": "คีมถ่างแหวนปากตรง",
+              "en": "External Circlip Pliers Straight",
+              "size": "175mm",
+              "pcs": "6/120",
+              "meas": "58X24X34.5cm",
+              "kg": "19kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WSS330B",
+              "th": "คีมถ่างแหวนปากตรง",
+              "en": "External Circlip Pliers Straight",
+              "size": "330mm",
+              "pcs": "6/36",
+              "meas": "39X37X21cm",
+              "kg": "19.5kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WSB175B",
+              "th": "คีมถ่างแหวนปากงอ",
+              "en": "External Circlip Pliers Bent Nose",
+              "size": "175mm",
+              "pcs": "6/120",
+              "meas": "58X24X34.5cm",
+              "kg": "19kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WSB330B",
+              "th": "คีมถ่างแหวนปากงอ",
+              "en": "External Circlip Pliers Bent Nose",
+              "size": "330mm",
+              "pcs": "6/36",
+              "meas": "39X37X21cm",
+              "kg": "19.5kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS01",
+              "th": "คีมถ่างและหนีบแหวนชุด 4in1",
+              "en": "4-in-1 Circlip Pliers",
+              "size": "175mm",
+              "pcs": "6/60",
+              "meas": "60X28X38cm",
+              "kg": "14kg",
+              "mat": "SK-55",
+              "notes_th": "มีปาก 4 แบบให้เลือกใช้ 45° / 90° / 180°"
+            },
+            {
+              "code": "W3272",
+              "th": "ชุดคีมเจาะตาไก่ ย้ำตาไก่ ปรับขนาดได้",
+              "en": "Multi-Function Grommet Setting Pliers",
+              "size": "7mm, 8mm, 12mm",
+              "pcs": "6/24",
+              "meas": "36.5X31X39.5cm",
+              "kg": "10kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "เปลี่ยนหัวย้ำได้ 3 ขนาด ในชุดมีแถมตาไก่ขนาดละ 10 ชิ้น ใช้กับหนัง ยาง กระดาษ พลาสติก"
+            }
+          ]
+        },
+        {
+          "th": "คีมเจาะรู คีมถอนตะปู และคีมงานก่อสร้าง",
+          "en": "Punch, Pincer & Construction Pliers",
+          "mat": "เหล็กอัลลอย / #65MN / CR-V",
+          "items": [
+            {
+              "code": "W0378",
+              "th": "คีมเจาะรู",
+              "en": "Drilling Pliers",
+              "size": "2.5, 3.0, 3.5, 4.0, 4.5, 5.0mm",
+              "pcs": "6/24",
+              "meas": "34X27X33cm",
+              "kg": "12.5kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "เจาะรูหนัง เข็มขัด กระดาษ การ์ดบอร์ด พีวีซี"
+            },
+            {
+              "code": "W0555",
+              "th": "ชุดคีมเจาะรูหนัง กดกระดุม คีมย้ำตาไก่",
+              "en": "Belt Puncher and Button Pressure Tool Kits",
+              "size": "2.5, 3, 3.5, 4, 4.5, 5mm",
+              "pcs": "10/20",
+              "meas": "51.5X32.5X34cm",
+              "kg": "12kg",
+              "mat": "#65MN เหล็กแมงกานีส"
+            },
+            {
+              "code": "W0089A",
+              "th": "คีมปากนกแก้วผูกลวด",
+              "en": "Towers Pincers",
+              "size": "200mm",
+              "pcs": "10/60",
+              "meas": "51X28X22cm",
+              "kg": "16kg",
+              "mat": "CR-V",
+              "notes_th": "เหมาะสำหรับงานก่อสร้างและงานตกแต่ง"
+            },
+            {
+              "code": "W0087A",
+              "th": "คีมถอนตะปู",
+              "en": "Carpenters Pincers",
+              "size": "200mm",
+              "pcs": "10/60",
+              "meas": "51X28X22cm",
+              "kg": "17kg",
+              "mat": "CR-V",
+              "notes_th": "ด้ามจับหุ้มสองชั้น เหมาะงานไม้ งานทำรองเท้า"
+            },
+            {
+              "code": "W0088A",
+              "th": "คีมถอนตะปู ด้ามยางนุ่ม",
+              "en": "Carpenters Pincers",
+              "size": "200mm",
+              "pcs": "10/60",
+              "meas": "51X28X22cm",
+              "kg": "17kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0144",
+              "th": "คีมตัดเหล็ก ตัดหัวตะปู",
+              "en": "German Type End Cutting Pliers",
+              "size": "150mm",
+              "pcs": "15/120",
+              "meas": "48X38X25.5cm",
+              "kg": "33kg",
+              "mat": "CR-V",
+              "notes_th": "ปากตัดชุบแข็ง คงทน ไม่บิ่นหรือกร่อน คีมรมดำป้องกันสนิม"
+            }
+          ]
+        },
+        {
+          "th": "ประแจจับท่อ แคลมป์ และปากกาจับชิ้นงาน",
+          "en": "Pipe Wrenches, Clamps & Bench Vises",
+          "mat": "SK-55 / HT-250",
+          "items": [
+            {
+              "code": "W450C",
+              "th": "ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว",
+              "en": "Heavy Duty Pipe Wrench",
+              "size": "450mm",
+              "pcs": "4/12",
+              "meas": "45X33X15cm",
+              "kg": "27kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W600C",
+              "th": "ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว",
+              "en": "Heavy Duty Pipe Wrench",
+              "size": "600mm",
+              "pcs": "2/10",
+              "meas": "56X38X13cm",
+              "kg": "38kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W900C",
+              "th": "ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว",
+              "en": "Heavy Duty Pipe Wrench",
+              "size": "900mm",
+              "pcs": "1/4",
+              "meas": "79X20X9cm",
+              "kg": "27kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W450B",
+              "th": "ประแจจับท่อขาเดียว รุ่นงานหนัก สีแดง",
+              "en": "Heavy Duty Pipe Wrench",
+              "size": "450mm",
+              "pcs": "4/12",
+              "meas": "45X33X15cm",
+              "kg": "27kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W600B",
+              "th": "ประแจจับท่อขาเดียว รุ่นงานหนัก สีแดง",
+              "en": "Heavy Duty Pipe Wrench",
+              "size": "600mm",
+              "pcs": "2/10",
+              "meas": "56X38X13cm",
+              "kg": "38kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0133",
+              "th": "ประแจจับท่อ ขาคู่",
+              "en": "Bent Nose Pipe Wrench 90°",
+              "size": "1\"",
+              "pcs": "36",
+              "meas": "34X43X15.5cm",
+              "kg": "23kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0134",
+              "th": "ประแจจับท่อ ขาคู่",
+              "en": "Bent Nose Pipe Wrench 90°",
+              "size": "1.5\"",
+              "pcs": "24",
+              "meas": "44X25X24cm",
+              "kg": "28kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0135",
+              "th": "ประแจจับท่อ ขาคู่",
+              "en": "Bent Nose Pipe Wrench 90°",
+              "size": "2\"",
+              "pcs": "12",
+              "meas": "59X28X14cm",
+              "kg": "25kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0136",
+              "th": "ประแจจับท่อ ขาคู่",
+              "en": "Bent Nose Pipe Wrench 90°",
+              "size": "3\"",
+              "pcs": "6",
+              "meas": "68X20.5X12cm",
+              "kg": "19kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0137",
+              "th": "ประแจจับท่อ ขาคู่",
+              "en": "Bent Nose Pipe Wrench 90°",
+              "size": "4\"",
+              "pcs": "6",
+              "meas": "77X25X15cm",
+              "kg": "25kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0559",
+              "th": "แคลมป์แบบคีมสปริงคู่ (2 ชิ้น)",
+              "en": "2pcs Ratchet Type Clamps",
+              "size": "อ้าได้ 50mm / 70mm",
+              "pcs": "6/24",
+              "meas": "43.5X40.5X33.7cm",
+              "kg": "20.5kg",
+              "mat": "SK-55",
+              "notes_th": "เหมาะงานเชื่อมต่อ เชื่อมโลหะ และการประกอบ"
+            },
+            {
+              "code": "W0473A",
+              "th": "ซีแคลมป์",
+              "en": "Heavy G-Shape Clamp",
+              "size": "1\"",
+              "pcs": "12/144",
+              "meas": "37X17X19cm",
+              "kg": "16kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0473B",
+              "th": "ซีแคลมป์",
+              "en": "Heavy G-Shape Clamp",
+              "size": "2\"",
+              "pcs": "12/72",
+              "meas": "40X18X14cm",
+              "kg": "15kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0473C",
+              "th": "ซีแคลมป์",
+              "en": "Heavy G-Shape Clamp",
+              "size": "3\"",
+              "pcs": "6/36",
+              "meas": "36X19X20cm",
+              "kg": "19kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0473D",
+              "th": "ซีแคลมป์",
+              "en": "Heavy G-Shape Clamp",
+              "size": "4\"",
+              "pcs": "6/36",
+              "meas": "37X21X23cm",
+              "kg": "26kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0473E",
+              "th": "ซีแคลมป์",
+              "en": "Heavy G-Shape Clamp",
+              "size": "5\"",
+              "pcs": "6/30",
+              "meas": "69X25X14cm",
+              "kg": "28kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0473F",
+              "th": "ซีแคลมป์",
+              "en": "Heavy G-Shape Clamp",
+              "size": "6\"",
+              "pcs": "6/24",
+              "meas": "31X29X28cm",
+              "kg": "32kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0473G",
+              "th": "ซีแคลมป์",
+              "en": "Heavy G-Shape Clamp",
+              "size": "8\"",
+              "pcs": "6/12",
+              "meas": "36X28X17cm",
+              "kg": "20kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0473H",
+              "th": "ซีแคลมป์",
+              "en": "Heavy G-Shape Clamp",
+              "size": "10\"",
+              "pcs": "5/10",
+              "meas": "38X26X17cm",
+              "kg": "20kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W0473I",
+              "th": "ซีแคลมป์",
+              "en": "Heavy G-Shape Clamp",
+              "size": "12\"",
+              "pcs": "5/10",
+              "meas": "47X31X18cm",
+              "kg": "29kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "W2488",
+              "th": "ปากกาจับชิ้นงาน แบบยึดติดโต๊ะ",
+              "en": "Dovetail Type Parallel Bench Vise",
+              "size": "50mm",
+              "pcs": "10",
+              "meas": "44X38X23cm",
+              "kg": "28kg",
+              "mat": "HT-250"
+            },
+            {
+              "code": "W2484",
+              "th": "ปากกาจับชิ้นงาน รุ่นงานหนัก",
+              "en": "Heavy Duty M Type Precision Hinged Pipe Vise",
+              "size": "4\" (ปาก 100mm · อ้า 75mm · คอลึก 56mm · ทั่ง 65X65mm)",
+              "pcs": "2",
+              "meas": "32X29.4X20.3cm",
+              "kg": "16kg",
+              "mat": "HT-250",
+              "notes_th": "ฐานหมุนได้ 360° จับวัสดุทรงกลม Ø13.5-36"
+            },
+            {
+              "code": "W2486",
+              "th": "ปากกาจับชิ้นงาน รุ่นงานหนัก",
+              "en": "Heavy Duty M Type Precision Hinged Pipe Vise",
+              "size": "6\" (ปาก 150mm · อ้า 125mm · คอลึก 75mm · ทั่ง 115X115mm)",
+              "pcs": "1",
+              "meas": "38X23.5X22cm",
+              "kg": "15kg",
+              "mat": "HT-250",
+              "notes_th": "จับวัสดุทรงกลม Ø13.5-56"
+            },
+            {
+              "code": "W2487",
+              "th": "ปากกาจับชิ้นงาน รุ่นงานหนัก",
+              "en": "Heavy Duty M Type Precision Hinged Pipe Vise",
+              "size": "8\" (ปาก 200mm · อ้า 150mm · คอลึก 86mm · ทั่ง 140X140mm)",
+              "pcs": "1",
+              "meas": "45.5X23.5X24.5cm",
+              "kg": "22kg",
+              "mat": "HT-250",
+              "notes_th": "จับวัสดุทรงกลม Ø13.5-68"
+            },
+            {
+              "code": "WNS508A",
+              "th": "คีมคอม้า ชุบนิกเกิล",
+              "en": "Water Pump Pliers Nickel Alloy Plated",
+              "size": "200mm",
+              "pcs": "10/60",
+              "meas": "51X28X22cm",
+              "kg": "17kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS5010A",
+              "th": "คีมคอม้า ชุบนิกเกิล",
+              "en": "Water Pump Pliers Nickel Alloy Plated",
+              "size": "250mm",
+              "pcs": "6/60",
+              "meas": "55X33X22.5cm",
+              "kg": "26kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS5012A",
+              "th": "คีมคอม้า ชุบนิกเกิล",
+              "en": "Water Pump Pliers Nickel Alloy Plated",
+              "size": "300mm",
+              "pcs": "6/36",
+              "meas": "38X34X25cm",
+              "kg": "22kg",
+              "mat": "SK-55"
+            }
+          ]
+        },
+        {
+          "th": "คีมคอม้า คีมปากขยาย และคีมล็อค",
+          "en": "Water Pump, Slip Joint & Locking Pliers",
+          "mat": "SK-55 / C-ALLOY / เหล็กอัลลอย / CR-V",
+          "items": [
+            {
+              "code": "W0475A",
+              "th": "คีมจับท่อ ด้ามหุ้มหนา",
+              "en": "Water Pump Pliers",
+              "size": "250mm",
+              "pcs": "8/48",
+              "meas": "56X33X22cm",
+              "kg": "24kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS506E",
+              "th": "คีมปากขยาย",
+              "en": "Slip Joint Pliers",
+              "size": "150mm",
+              "pcs": "20/160",
+              "meas": "48X38X25.5cm",
+              "kg": "24kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS508E",
+              "th": "คีมปากขยาย",
+              "en": "Slip Joint Pliers",
+              "size": "200mm",
+              "pcs": "12/72",
+              "meas": "51X28X22cm",
+              "kg": "19kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS508D",
+              "th": "คีมปากขยาย ชุบนิกเกิล",
+              "en": "Slip Joint Pliers Nickel Alloy Plated",
+              "size": "200mm",
+              "pcs": "12/72",
+              "meas": "51X28X22cm",
+              "kg": "19kg",
+              "mat": "C-ALLOY"
+            },
+            {
+              "code": "W0039",
+              "th": "คีมล็อคแผ่นโลหะ (คีมล็อคปากเป็ด)",
+              "en": "Lock-Grip Pliers",
+              "size": "SM250mm",
+              "pcs": "50",
+              "meas": "",
+              "kg": "",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0028",
+              "th": "คีมล็อคตัวซี (มีแผ่นรองหน้าสัมผัส)",
+              "en": "C-Clamp Locking Pliers",
+              "size": "C450mm",
+              "pcs": "6/24",
+              "meas": "46X30X30cm",
+              "kg": "30kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0029",
+              "th": "คีมล็อคตัวซี (มีแผ่นรองหน้าสัมผัส)",
+              "en": "C-Clamp Locking Pliers",
+              "size": "C275mm",
+              "pcs": "10/40",
+              "meas": "52X36X30cm",
+              "kg": "30kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0033",
+              "th": "คีมล็อคตัวซี",
+              "en": "C-Clamp Locking Pliers",
+              "size": "C275mm",
+              "pcs": "10/40",
+              "meas": "52X36X30cm",
+              "kg": "30kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0042",
+              "th": "คีมล็อคปากแหลม",
+              "en": "Lock-Grip Pliers",
+              "size": "CD225mm",
+              "pcs": "10/60",
+              "meas": "57X31X24cm",
+              "kg": "22kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0043",
+              "th": "คีมล็อคปากแหลม",
+              "en": "Lock-Grip Pliers",
+              "size": "CD160mm",
+              "pcs": "12/72",
+              "meas": "51X28X22cm",
+              "kg": "20kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0041",
+              "th": "คีมล็อคงานเชื่อม",
+              "en": "Lock-Grip Pliers",
+              "size": "W250mm",
+              "pcs": "50",
+              "meas": "46X31X20cm",
+              "kg": "31kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "WSB10",
+              "th": "คีมล็อคปากโค้ง",
+              "en": "Lock-Grip Pliers",
+              "size": "CR250mm",
+              "pcs": "10/60",
+              "meas": "57X31X24cm",
+              "kg": "28kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "WSB607",
+              "th": "คีมล็อคปากโค้ง",
+              "en": "Lock-Grip Pliers",
+              "size": "CR175mm",
+              "pcs": "10/60",
+              "meas": "51X28X22cm",
+              "kg": "20kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0125",
+              "th": "คีมล็อคปากโค้ง ด้ามหุ้มยาง",
+              "en": "Lock-Grip Pliers",
+              "size": "CR250mm",
+              "pcs": "10/60",
+              "meas": "57X31X24cm",
+              "kg": "31kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0127",
+              "th": "คีมล็อคโซ่",
+              "en": "Chain Lock Pliers",
+              "size": "L450mm",
+              "pcs": "6/36",
+              "meas": "38X34X25cm",
+              "kg": "29kg",
+              "mat": "โซ่เหล็ก Manganese #45"
+            },
+            {
+              "code": "W0130",
+              "th": "คีมล็อคคู่มินิ 5 นิ้ว",
+              "en": "Lock-Grip Pliers",
+              "size": "WR125mm / CD125mm",
+              "pcs": "12/144",
+              "meas": "37.5X36.5X27cm",
+              "kg": "30kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0037",
+              "th": "คีมล็อคปากตรง",
+              "en": "Lock-Grip Pliers",
+              "size": "R250mm",
+              "pcs": "10/60",
+              "meas": "57X31X24cm",
+              "kg": "32kg",
+              "mat": "เหล็กอัลลอยชนิดพิเศษ"
+            },
+            {
+              "code": "88-10",
+              "th": "คีมล็อคปากตรงอย่างดี (บรรจุแบบแผง)",
+              "en": "Lock-Grip Pliers",
+              "size": "10 นิ้ว",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V",
+              "notes_th": "ปากคีม Chromium Vanadium HRC50 · ตัวคีมเหล็กคาร์บอน A3 HRC40"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electrical",
+      "th": "เครื่องมือกลุ่มช่างไฟฟ้า",
+      "en": "Electrical Tools Series",
+      "groups": [
+        {
+          "th": "คีมตัด-ปอก-ย้ำสายไฟ",
+          "en": "Electrician's Shears & Cable Cutters",
+          "mat": "CR-V / SK-5 เหล็กสปริง",
+          "items": [
+            {
+              "code": "W1051",
+              "th": "คีมตัด-ปอก-ย้ำสายไฟ",
+              "en": "Multi-Purpose Electrician's Shears",
+              "size": "8\"/200mm",
+              "pcs": "10/90",
+              "meas": "51X28X32cm",
+              "kg": "18kg",
+              "notes_th": "ปอกสาย AWG 10-22 · ตัดสายไฟ 5.5/3.5/2/1.25/0.8/0.5/0.32 ตร.มม. · ย้ำสายไฟ 0.5-2.0 ตร.มม. · แข็งระดับ HRC55"
+            },
+            {
+              "code": "W1052",
+              "th": "คีมตัด-ปอกสายไฟ",
+              "en": "Multi-Purpose Electrician's Shears",
+              "size": "6\"/150mm",
+              "pcs": "15/120",
+              "meas": "48X38X25.5cm",
+              "kg": "20kg",
+              "notes_th": "ปอกสาย AWG 10-22 · ตัดสายไฟ 6/4/2.5/1.5/1/0.5/0.3 ตร.มม."
+            },
+            {
+              "code": "W1053",
+              "th": "คีมตัดเคเบิล-ปอก-ย้ำสายไฟ",
+              "en": "Multifunction Cable Shears",
+              "size": "7\"/175mm",
+              "pcs": "15/120",
+              "meas": "48X38X25.5cm",
+              "kg": "26kg",
+              "notes_th": "ปอกสาย AWG 12-18 · ตัดเคเบิลได้ถึง 16 มม. · ย้ำสายไฟ 0.5-2.0 ตร.มม."
+            },
+            {
+              "code": "WS1055",
+              "th": "คีมตัด-ปอก-ย้ำสายไฟและเคเบิล",
+              "en": "Multi-Function Cable Cutter",
+              "size": "",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V",
+              "notes_th": "ปอกสาย 16 ตร.มม. · ปอกสาย 16-8AWG · ช่วงย้ำสายไฟ 16-18, 20-22, 22-26, 10-14"
+            },
+            {
+              "code": "WS1056",
+              "th": "คีมตัด-ปอกสายเคเบิล",
+              "en": "Multi-Function Cable Cutter",
+              "size": "",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V",
+              "notes_th": "ตัดสายลวดเหล็กได้ · ปอกสาย 16-8AWG · ล็อคได้"
+            },
+            {
+              "code": "WS1057",
+              "th": "คีมตัด-ปอก-ย้ำสายไฟปากโค้ง",
+              "en": "Multi-Function Curved Nose Electric Cutter",
+              "size": "",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "SK-5 เหล็กสปริง",
+              "notes_th": "ตัดแผ่นอลูมิเนียม สังกะสี เหล็กบาง สแตนเลสบาง · ปอกสาย 16-8 AWG"
+            }
+          ]
+        },
+        {
+          "th": "คีมปอกสายไฟ",
+          "en": "Wire Strippers",
+          "mat": "Z-ALLOY / เหล็กอัลลอย",
+          "items": [
+            {
+              "code": "W3366A",
+              "th": "คีมปอกสายไฟอัตโนมัติ",
+              "en": "Automatic Wire Strippers",
+              "size": "170mm",
+              "pcs": "6/48",
+              "meas": "50X39.5X23cm",
+              "kg": "20kg",
+              "mat": "Z-ALLOY",
+              "notes_th": "ปอกได้ 0.5/1.2/1.6/2.0 ตร.มม. (AWG24/16/14/12) · มีตัวล็อคระยะปอก"
+            },
+            {
+              "code": "WNS205A",
+              "th": "คีมตัดสายไฟปากเฉียง",
+              "en": "Electrical Diagonal Pliers",
+              "size": "5\"/125mm",
+              "pcs": "20/160",
+              "meas": "48X38X25.5cm",
+              "kg": "14kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W0249",
+              "th": "คีมตัด-ปอกสายไฟปากเฉียง",
+              "en": "Electronics Black Wire Strippers",
+              "size": "",
+              "pcs": "6/60",
+              "meas": "35X35X30cm",
+              "kg": "8kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "มีร่องปอกสายไฟขนาด 2 ตร.มม. หรือเล็กกว่า"
+            },
+            {
+              "code": "WS0246",
+              "th": "คีมปอกสายไฟ",
+              "en": "Black Wire Strippers",
+              "size": "180mm",
+              "pcs": "15/90",
+              "meas": "51X28X22cm",
+              "kg": "15kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "ปอกได้ 0.8/1/1.2/1.6/2/2.6/3.2 ตร.มม. (AWG20/18/16/14/12/10/8)"
+            },
+            {
+              "code": "WS2502",
+              "th": "คีมปอกสายไฟ",
+              "en": "Black Wire Stripper",
+              "size": "130mm",
+              "pcs": "10/160",
+              "meas": "48X38X25cm",
+              "kg": "26kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "ปอกได้ AWG 22-10 หรือ 0.65-2.6 ตร.มม. · มีที่ปรับขนาดสายที่จะปอก"
+            },
+            {
+              "code": "WS2203",
+              "th": "5in1 คีมย้ำปอกตัดอเนกประสงค์",
+              "en": "Black Wire Stripper 5-in-1",
+              "size": "225mm",
+              "pcs": "12/108",
+              "meas": "51X28X32cm",
+              "kg": "28kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "ปอกสาย 0.5-5.0 ตร.มม. · ย้ำหางปลา 0.5-5.0 ตร.มม. · ตัดน็อต M2.6 M3 M3.5 M4 M5"
+            },
+            {
+              "code": "W01A",
+              "th": "คีมปอกสายไฟอัตโนมัติ แบบปากเป็ด",
+              "en": "Wire Stripper Cutting",
+              "size": "170mm",
+              "pcs": "10/60",
+              "meas": "39.5X28X36cm",
+              "kg": "15.5kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "ปอกสายไฟ 0.8 ถึง 4 ตร.มม. · ปรับความแรงในการปอกได้ · ปอกได้ทั้งสาย"
+            }
+          ]
+        },
+        {
+          "th": "คีมย้ำหางปลา และคีมเข้าสายแลน",
+          "en": "Crimping & Modular Plug Tools",
+          "mat": "SK-55 / CR-V / เหล็กอัลลอย",
+          "items": [
+            {
+              "code": "W1040",
+              "th": "คีมตัด-ปอกสายไฟ",
+              "en": "Multi-Functional Cable Cutter",
+              "size": "",
+              "pcs": "12/96",
+              "meas": "48X38X25.5cm",
+              "kg": "",
+              "mat": "CR-V",
+              "notes_th": "ร่องฟันปอกสายไฟ 16 ตร.มม. · ร่องปอก 1.3/2.0/3.3/5.26/8.36/16 ตร.มม. · ตัดท่อ PVC/PPR ได้"
+            },
+            {
+              "code": "W0475",
+              "th": "คีมปอกสายไฟอัตโนมัติ",
+              "en": "Automatic Wire Strippers",
+              "size": "205mm",
+              "pcs": "10/60",
+              "meas": "39.5X28X36cm",
+              "kg": "21kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "ปากคีม HRC52-57 ปากตัด HRC45-55 · ย้ำหางปลาเปลือย 8-22AWG · ย้ำหางปลาหุ้ม 10-22AWG · ย้ำหางปลารถยนต์ 7-8 มม."
+            },
+            {
+              "code": "W0283",
+              "th": "คีมเข้าสายแลน-โทรศัพท์",
+              "en": "Modular Plug Crimping Tool",
+              "size": "8\" (200mm)",
+              "pcs": "12/48",
+              "meas": "52.5X26X24cm",
+              "kg": "21kg",
+              "mat": "SK-55",
+              "notes_th": "ใช้ได้กับ 4P4C&4P2C, 6P6C/RJ-12, 6P4C/RJ-11&6P2C, 8P8C/RJ-45, 8P6C, 8P4C&8P2C"
+            },
+            {
+              "code": "DD-2",
+              "th": "คีมย้ำหางปลา (ระบบล้อเฟือง)",
+              "en": "Ratchet Cold-Pressed Terminal Clamp (Industrial Level)",
+              "size": "0.5 / 1 / 2.5 / 4 / 6 / 10 ตร.มม.",
+              "pcs": "6/36",
+              "meas": "41X34X24cm",
+              "kg": "22kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "YG-202B",
+              "th": "คีมย้ำ",
+              "en": "Cold Press Pliers",
+              "size": "185mm",
+              "pcs": "10/90",
+              "meas": "51X28X32cm",
+              "kg": "14kg",
+              "mat": "SK-55",
+              "notes_th": "ย้ำ AWG 26-28/22-26/20-22/22-23/14-18/10-14/16-18"
+            },
+            {
+              "code": "HD-005",
+              "th": "คีมย้ำหางปลา",
+              "en": "Cold Press Pliers",
+              "size": "255mm",
+              "pcs": "6/36",
+              "meas": "41X34X24cm",
+              "kg": "22kg",
+              "mat": "SK-55",
+              "notes_th": "เหมาะสำหรับ 0.5-10 ตร.มม. · มีที่ปรับแรงย้ำ เปลี่ยนหัวย้ำได้"
+            },
+            {
+              "code": "HD-6L",
+              "th": "คีมย้ำหางปลา 6L",
+              "en": "Crimping Pliers",
+              "size": "",
+              "pcs": "6/60",
+              "meas": "55X33X22.5cm",
+              "kg": "24kg",
+              "mat": "SK-55",
+              "notes_th": "เหมาะสำหรับ 0.5/1/1.5/2.5/4/6 ตร.มม."
+            },
+            {
+              "code": "HD-8L",
+              "th": "คีมย้ำหางปลา 8L",
+              "en": "Crimping Pliers",
+              "size": "300mm",
+              "pcs": "6/36",
+              "meas": "41X34X24cm",
+              "kg": "19kg",
+              "mat": "SK-55",
+              "notes_th": "เหมาะสำหรับ 1.25-1.5/2.0-5.5/6-8 ตร.มม."
+            },
+            {
+              "code": "HD-16L",
+              "th": "คีมย้ำหางปลา 16L",
+              "en": "Crimping Pliers",
+              "size": "",
+              "pcs": "6/36",
+              "meas": "41X34X24cm",
+              "kg": "19kg",
+              "mat": "SK-55",
+              "notes_th": "เหมาะสำหรับย้ำ 1.25-1.5/2-2.5/5.5-6/8-10/14-16 ตร.มม."
+            },
+            {
+              "code": "HD-25LA",
+              "th": "คีมย้ำหางปลา 25L อย่างดี",
+              "en": "Crimping Pliers",
+              "size": "350mm",
+              "pcs": "20",
+              "meas": "48X26X18cm",
+              "kg": "18kg",
+              "mat": "SK-55",
+              "notes_th": "รุ่นอัพเกรดจากรุ่น B มีเกียร์และสปริงวัสดุดีกว่า · ย้ำ 5.5-6/8-10/14-16/22-25 ตร.มม."
+            },
+            {
+              "code": "HD-25LB",
+              "th": "คีมย้ำหางปลา 25L",
+              "en": "Crimping Pliers",
+              "size": "350mm",
+              "pcs": "20",
+              "meas": "48X26X18cm",
+              "kg": "18kg",
+              "mat": "SK-55",
+              "notes_th": "ย้ำ 5.5-6/8-10/14-16/22-25 ตร.มม."
+            },
+            {
+              "code": "HD-38L",
+              "th": "คีมย้ำหางปลา 38L",
+              "en": "Crimping Pliers",
+              "size": "365mm",
+              "pcs": "20",
+              "meas": "48X26X18cm",
+              "kg": "18kg",
+              "mat": "SK-55",
+              "notes_th": "ย้ำ 5.5/8/14/22/38 ตร.มม."
+            }
+          ]
+        },
+        {
+          "th": "ปืนเป่าลมร้อน ปืนกาว และอุปกรณ์บัดกรี",
+          "en": "Heat Guns, Glue Guns & Soldering",
+          "mat": "",
+          "items": [
+            {
+              "code": "W3389B",
+              "th": "ปืนเชื่อมพลาสติก PVC 700W",
+              "en": "Plastic Welding Torch",
+              "size": "700W",
+              "pcs": "10",
+              "meas": "44.5X39X31cm",
+              "kg": "7.8kg",
+              "notes_th": "เหมาะงานเชื่อม งานตกแต่ง รวมศูนย์ความร้อนเพื่อละลายวัตถุได้"
+            },
+            {
+              "code": "W0337",
+              "th": "ปืนเป่าลมร้อน",
+              "en": "Hot Air Gun",
+              "size": "1600W/8A",
+              "pcs": "6/24",
+              "meas": "57.5X52X57cm",
+              "kg": "20kg",
+              "notes_th": "ลอกสี หดฟิล์ม ดัดงอพลาสติก ปรับได้ 2 ระดับ"
+            },
+            {
+              "code": "W0338D",
+              "th": "ปืนยิงกาว",
+              "en": "Hot Melt Glue Gun",
+              "size": "25W",
+              "pcs": "24/96",
+              "meas": "68X40.5X42.5cm",
+              "kg": "20kg",
+              "notes_th": "ยิงกาวออกมาได้เร็ว เสมอ อายุการใช้งานนาน"
+            },
+            {
+              "code": "W0617",
+              "th": "ที่ดูดตะกั่ว",
+              "en": "Tin Suction Pump",
+              "size": "",
+              "pcs": "30/600",
+              "meas": "55X21.5X43cm",
+              "kg": "25kg",
+              "notes_th": "หัวดูดวัสดุ PTFE ทนความร้อนสูง ไม่ละลาย ดูดได้หมดเกลี้ยง"
+            },
+            {
+              "code": "W3089",
+              "th": "ตะกั่วบัดกรี",
+              "en": "Soldering Tin",
+              "size": "1.0mm 17g",
+              "pcs": "125/1000",
+              "meas": "30X30X41.5cm",
+              "kg": "21kg",
+              "notes_th": "ตะกั่วผสมดีบุก 35% Flux 2% ทำบัดกรีง่าย"
+            },
+            {
+              "code": "W2803",
+              "th": "หัวแร้งบัดกรีแบบปืน",
+              "en": "Electric Soldering Iron",
+              "size": "20W-40W",
+              "pcs": "12/48",
+              "meas": "49X37X36cm",
+              "kg": "11.5kg",
+              "notes_th": "ความร้อนเพิ่มขึ้นเร็ว บัดกรีได้ใน 1 นาที · ใช้ไกเปลี่ยนระบบจาก 20W เป็น 40W"
+            },
+            {
+              "code": "W3104",
+              "th": "หัวแร้งบัดกรีแบบปืน ป้อนตะกั่วอัตโนมัติ",
+              "en": "Manual Soldering Gun",
+              "size": "60W",
+              "pcs": "12/36",
+              "meas": "62X27X45cm",
+              "kg": "13kg",
+              "notes_th": "ใส่โลหะบัดกรีเส้นผ่านศูนย์กลาง 0.8-2.3 มม. ได้"
+            },
+            {
+              "code": "W0300A",
+              "th": "หัวแร้งบัดกรี",
+              "en": "External Heating Electric Soldering Iron",
+              "size": "30W",
+              "pcs": "8/96",
+              "meas": "59X32X39.5cm",
+              "kg": "15kg",
+              "notes_th": "เปลี่ยนชุดทำความร้อนได้ง่าย · ด้ามจับ PBT ระบายความร้อนเร็วกว่าพลาสติกอื่น 3-5 เท่า"
+            },
+            {
+              "code": "W0300B",
+              "th": "หัวแร้งบัดกรี",
+              "en": "External Heating Electric Soldering Iron",
+              "size": "40W",
+              "pcs": "8/96",
+              "meas": "59X32X39.5cm",
+              "kg": "15kg"
+            },
+            {
+              "code": "W0300C",
+              "th": "หัวแร้งบัดกรี",
+              "en": "External Heating Electric Soldering Iron",
+              "size": "60W",
+              "pcs": "8/96",
+              "meas": "59X32X39.5cm",
+              "kg": "15kg"
+            }
+          ]
+        },
+        {
+          "th": "เครื่องมือวัดไฟฟ้า และอุปกรณ์ช่างไฟ",
+          "en": "Meters, Testers & Electrician's Knives",
+          "mat": "CR-V",
+          "items": [
+            {
+              "code": "WS0413",
+              "th": "ไขควงลองไฟฟ้าดิจิตอล",
+              "en": "Digital Voltage Tester",
+              "size": "",
+              "pcs": "12/240",
+              "meas": "50X42X32.5cm",
+              "kg": "12kg",
+              "mat": "CR-V",
+              "notes_th": "ใช้กับวงจรไฟฟ้าตั้งแต่ 12-250V · ได้ทั้งกระแสสลับและกระแสตรง · แสดงด้วย LED มองเห็นกลางคืนได้"
+            },
+            {
+              "code": "W0453",
+              "th": "มิเตอร์ดิจิตอล",
+              "en": "Digital Multi-Meter",
+              "size": "สูงสุด 1000V/750V",
+              "pcs": "6/72",
+              "meas": "42.5X41X40cm",
+              "kg": "19kg",
+              "notes_th": "จอ LCD 3½ หลัก แสดงค่าได้สูงสุด 1999 · ป้องกันไฟฟ้ากระแสเกิน"
+            },
+            {
+              "code": "W0452",
+              "th": "มิเตอร์ดิจิตอล",
+              "en": "Digital Multi-Meter",
+              "size": "สูงสุด 600V/600V",
+              "pcs": "6/72",
+              "meas": "42.5X41X40cm",
+              "kg": "19kg",
+              "notes_th": "จอ LCD 3½ หลัก แสดงค่าได้สูงสุด 1999"
+            },
+            {
+              "code": "W0647",
+              "th": "แคลมป์มิเตอร์ดิจิตอล",
+              "en": "Digital Clamp Multi-Meter",
+              "size": "",
+              "pcs": "6/72",
+              "meas": "42.5X41X40cm",
+              "kg": "19kg",
+              "notes_th": "คล้องสายไฟอ่านค่าได้ทันที · ใช้ถ่านกระดุมลิเธียม CR2032 3V 3 ก้อน"
+            },
+            {
+              "code": "WS90",
+              "th": "มีดพับไม้ 2 ใบมีด",
+              "en": "Two-Way Electrician's Knife",
+              "size": "200mm",
+              "pcs": "12/108",
+              "meas": "51X28X32cm",
+              "kg": "23kg",
+              "notes_th": "ใบมีดเหล็กชนิดพิเศษ คม ทนทาน ไม่เป็นสนิม · ด้ามไม้ฮอกกานี"
+            },
+            {
+              "code": "W0226",
+              "th": "ปากกาเทสวงจรรถยนต์",
+              "en": "Automotive Circuit Tester",
+              "size": "6V-12V-24V",
+              "pcs": "10/120",
+              "meas": "42X32X45cm",
+              "kg": "12kg"
+            },
+            {
+              "code": "W0226B",
+              "th": "ปากกาเทสวงจรรถยนต์อย่างดี",
+              "en": "High-Grade Automotive Circuit Tester",
+              "size": "12-24V",
+              "pcs": "6/36",
+              "meas": "34X24X34cm",
+              "kg": "",
+              "notes_th": "ไดโอดอย่างดี ไม่เกิดความร้อนตอนใช้งาน · ปลายสายเป็นตัวหนีบปากจระเข้ เปลี่ยนได้"
+            },
+            {
+              "code": "W0183",
+              "th": "ไขควงลองไฟ",
+              "en": "Tester",
+              "size": "",
+              "pcs": "24/480",
+              "meas": "40X31.5X36cm",
+              "kg": "13kg",
+              "mat": "CR-V",
+              "notes_th": "ด้ามท่อหุ้มพลาสติกจากไต้หวัน ไม่แตกหัก แสงไฟผ่านได้ · ทดลองใช้ 3 หมื่นครั้งยังคงใช้ได้ดี"
+            },
+            {
+              "code": "W0225B",
+              "th": "ไขควงลองไฟสลับ",
+              "en": "Tester",
+              "size": "H6X100mm Ø5.0-PH1",
+              "pcs": "24/240",
+              "meas": "56X42X37cm",
+              "kg": "22kg",
+              "mat": "CR-V",
+              "notes_th": "วงจรไฟฟ้า 12V-240V ทดสอบได้ทั้งกระแสสลับและตรง · ด้ามจับ ABS"
+            },
+            {
+              "code": "W0360A",
+              "th": "ลูกยางเป่าฝุ่น",
+              "en": "Rubber Dust Blower",
+              "size": "",
+              "pcs": "100",
+              "meas": "43X40.5X36.5cm",
+              "kg": "8.5kg",
+              "notes_th": "หัวพ่นเหล็กไม่กร่อน ยางนุ่มมือ · วาล์วลมเข้าจากด้านหลัง"
+            },
+            {
+              "code": "W669",
+              "th": "ชุดไขควงลองไฟสลับ (ชุดเปลี่ยนหัวได้)",
+              "en": "Spark Detecting Screwdriver Set",
+              "size": "แกน 79/99/119/139/159mm · ด้าม 105mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V",
+              "notes_th": "วงจรไฟฟ้า DC 100-250V / AC 100-350V · หัวแฉก #00, 0, 1, 2, 3 · หัวแบน 4, 4.5, 5, 6, 7 มม."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wrenches",
+      "th": "เครื่องมือประเภทประแจ",
+      "en": "Wrenches Tools Series",
+      "groups": [
+        {
+          "th": "ประแจเลื่อน",
+          "en": "Adjustable Wrenches",
+          "mat": "SK-55 / CR-V / C-ALLOY / เหล็กอัลลอย",
+          "items": [
+            {
+              "code": "WNS250G",
+              "th": "ประแจเลื่อนด้ามหุ้ม ปากสลับจับท่อได้",
+              "en": "Adjustable Wrench",
+              "size": "250mm",
+              "pcs": "6/60",
+              "meas": "54X33X22cm",
+              "kg": "29kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "ปากล่างถอดออกมาสลับด้านได้ เพื่อทำงานจับท่อ"
+            },
+            {
+              "code": "WNS300G",
+              "th": "ประแจเลื่อนด้ามหุ้ม ปากสลับจับท่อได้",
+              "en": "Adjustable Wrench",
+              "size": "300mm",
+              "pcs": "6/36",
+              "meas": "38X34X25cm",
+              "kg": "29kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W2914",
+              "th": "ประแจเลื่อนมินิด้ามหุ้ม",
+              "en": "Mini Adjustable Wrench",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "47X28X19cm",
+              "kg": "16kg",
+              "mat": "C-ALLOY"
+            },
+            {
+              "code": "WNS150F",
+              "th": "ประแจเลื่อนด้ามหุ้ม",
+              "en": "Adjustable Wrench",
+              "size": "150mm",
+              "pcs": "6/120",
+              "meas": "41.5X25.3X40.5cm",
+              "kg": "25kg",
+              "mat": "C-ALLOY"
+            },
+            {
+              "code": "WNS200F",
+              "th": "ประแจเลื่อนด้ามหุ้ม",
+              "en": "Adjustable Wrench",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "45.8X30X20cm",
+              "kg": "21kg",
+              "mat": "C-ALLOY"
+            },
+            {
+              "code": "WNS250F",
+              "th": "ประแจเลื่อนด้ามหุ้ม",
+              "en": "Adjustable Wrench",
+              "size": "250mm",
+              "pcs": "6/60",
+              "meas": "54X33X22cm",
+              "kg": "26kg",
+              "mat": "C-ALLOY"
+            },
+            {
+              "code": "WNS300F",
+              "th": "ประแจเลื่อนด้ามหุ้ม",
+              "en": "Adjustable Wrench",
+              "size": "300mm",
+              "pcs": "6/36",
+              "meas": "38X34X25cm",
+              "kg": "25kg",
+              "mat": "C-ALLOY"
+            },
+            {
+              "code": "WNS375F",
+              "th": "ประแจเลื่อนด้ามหุ้ม",
+              "en": "Adjustable Wrench",
+              "size": "375mm",
+              "pcs": "12",
+              "meas": "46X26X17.5cm",
+              "kg": "17kg",
+              "mat": "C-ALLOY"
+            },
+            {
+              "code": "WNS250E",
+              "th": "ประแจเลื่อนรมดำเงา",
+              "en": "Adjustable Wrench",
+              "size": "250mm",
+              "pcs": "6/60",
+              "meas": "54X33X22cm",
+              "kg": "26kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WNS300E",
+              "th": "ประแจเลื่อนรมดำเงา",
+              "en": "Adjustable Wrench",
+              "size": "300mm",
+              "pcs": "6/36",
+              "meas": "38X34X25cm",
+              "kg": "25kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WNS375E",
+              "th": "ประแจเลื่อนรมดำเงา",
+              "en": "Adjustable Wrench",
+              "size": "375mm",
+              "pcs": "12",
+              "meas": "46X26X17.5cm",
+              "kg": "17kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WNS150A",
+              "th": "ประแจเลื่อนรมดำ",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "150mm",
+              "pcs": "6/120",
+              "meas": "43X33X23cm",
+              "kg": "15kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS200A",
+              "th": "ประแจเลื่อนรมดำ",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "47X28X19cm",
+              "kg": "15kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS250A",
+              "th": "ประแจเลื่อนรมดำ",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "250mm",
+              "pcs": "6/60",
+              "meas": "54X33X22cm",
+              "kg": "26kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS300A",
+              "th": "ประแจเลื่อนรมดำ",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "300mm",
+              "pcs": "6/36",
+              "meas": "38X34X25cm",
+              "kg": "25kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS375A",
+              "th": "ประแจเลื่อนรมดำ",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "375mm",
+              "pcs": "12",
+              "meas": "46X26X17.5cm",
+              "kg": "18kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS450A",
+              "th": "ประแจเลื่อนรมดำ",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "450mm",
+              "pcs": "12",
+              "meas": "49X18X15.5cm",
+              "kg": "25.5kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS150B",
+              "th": "ประแจเลื่อน ชุบโครเมี่ยมขาว",
+              "en": "Adjustable Wrench",
+              "size": "150mm",
+              "pcs": "6/120",
+              "meas": "43X33X23cm",
+              "kg": "15kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS200B",
+              "th": "ประแจเลื่อน ชุบโครเมี่ยมขาว",
+              "en": "Adjustable Wrench",
+              "size": "200mm",
+              "pcs": "6/60",
+              "meas": "47X28X19cm",
+              "kg": "15kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS250B",
+              "th": "ประแจเลื่อน ชุบโครเมี่ยมขาว",
+              "en": "Adjustable Wrench",
+              "size": "250mm",
+              "pcs": "6/60",
+              "meas": "55X33X22cm",
+              "kg": "26kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS300B",
+              "th": "ประแจเลื่อน ชุบโครเมี่ยมขาว",
+              "en": "Adjustable Wrench",
+              "size": "300mm",
+              "pcs": "6/36",
+              "meas": "38X34X25cm",
+              "kg": "25kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS375B",
+              "th": "ประแจเลื่อน ชุบโครเมี่ยมขาว",
+              "en": "Adjustable Wrench",
+              "size": "375mm",
+              "pcs": "12",
+              "meas": "46X26X11.5cm",
+              "kg": "17kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS450B",
+              "th": "ประแจเลื่อน ชุบโครเมี่ยมขาว",
+              "en": "Adjustable Wrench",
+              "size": "450mm",
+              "pcs": "12",
+              "meas": "49X18X15.5cm",
+              "kg": "27kg",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WNS600B",
+              "th": "ประแจเลื่อน ชุบโครเมี่ยมขาว",
+              "en": "Adjustable Wrench",
+              "size": "600mm",
+              "pcs": "1/6",
+              "meas": "62.5X30X12.5cm",
+              "kg": "20.5kg",
+              "mat": "SK-55"
+            }
+          ]
+        },
+        {
+          "th": "ประแจเลื่อนรมดำ ตรา M.T.T.",
+          "en": "Adjustable Wrench (Phosphated) — M.T.T. brand",
+          "mat": "SK-55 เหล็กกล้าคาร์บอนสูง",
+          "notes_th": [
+            "ผ่านการรมดำ ปากประแจผ่านการเจียให้เนียน สเกลขัดเงา"
+          ],
+          "items": [
+            {
+              "code": "WM9806",
+              "th": "ประแจเลื่อนรมดำ ตรา M.T.T.",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "6\"",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WM9808",
+              "th": "ประแจเลื่อนรมดำ ตรา M.T.T.",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "8\"",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WM9810",
+              "th": "ประแจเลื่อนรมดำ ตรา M.T.T.",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "10\"",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WM9812",
+              "th": "ประแจเลื่อนรมดำ ตรา M.T.T.",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "12\"",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WM9815",
+              "th": "ประแจเลื่อนรมดำ ตรา M.T.T.",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "15\"",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WM9818",
+              "th": "ประแจเลื่อนรมดำ ตรา M.T.T.",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "18\"",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "SK-55"
+            },
+            {
+              "code": "WM9824",
+              "th": "ประแจเลื่อนรมดำ ตรา M.T.T.",
+              "en": "Adjustable Wrench (Phosphated)",
+              "size": "24\"",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "SK-55"
+            }
+          ]
+        },
+        {
+          "th": "ประแจปากตายแหวนข้าง",
+          "en": "Combination Wrench",
+          "mat": "CR-V Chromium Vanadium",
+          "notes_th": [
+            "เอน 15° เพื่อความสะดวกในการใช้งาน",
+            "ผิวกระจก ขัดผิวเงา กันสนิม"
+          ],
+          "items": [
+            {
+              "code": "W0304A",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "8mm",
+              "pcs": "12/240",
+              "meas": "34X21X16cm",
+              "kg": "12kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304C",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "10mm",
+              "pcs": "12/240",
+              "meas": "34X21X16cm",
+              "kg": "13kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304D",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "11mm",
+              "pcs": "12/240",
+              "meas": "40X21X19.5cm",
+              "kg": "15kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304E",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "12mm",
+              "pcs": "12/120",
+              "meas": "40X21X19.5cm",
+              "kg": "19kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304F",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "13mm",
+              "pcs": "12/240",
+              "meas": "40X21X19.5cm",
+              "kg": "21kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304G",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "14mm",
+              "pcs": "12/240",
+              "meas": "40X21X19.5cm",
+              "kg": "25kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304H",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "15mm",
+              "pcs": "12/180",
+              "meas": "35X23X21cm",
+              "kg": "19kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304I",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "16mm",
+              "pcs": "12/180",
+              "meas": "35X23X21cm",
+              "kg": "20.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304J",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "17mm",
+              "pcs": "12/144",
+              "meas": "40X27X20cm",
+              "kg": "23kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304L",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "19mm",
+              "pcs": "12/144",
+              "meas": "40X27X20cm",
+              "kg": "25kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304N",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "21mm",
+              "pcs": "12/96",
+              "meas": "30X29X22.5cm",
+              "kg": "24.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304O",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "22mm",
+              "pcs": "12/96",
+              "meas": "30X29X22.5cm",
+              "kg": "26kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304P",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "23mm",
+              "pcs": "6/72",
+              "meas": "34.5X27X25cm",
+              "kg": "23kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304Q",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "24mm",
+              "pcs": "6/72",
+              "meas": "34.5X27X25cm",
+              "kg": "25kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304T",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "27mm",
+              "pcs": "6/48",
+              "meas": "39.5X30.5X30.5cm",
+              "kg": "23kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304U",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "30mm",
+              "pcs": "6/36",
+              "meas": "39.5X30.5X30.5cm",
+              "kg": "22kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0304V",
+              "th": "ประแจปากตายแหวนข้าง",
+              "en": "Combination Wrench",
+              "size": "32mm",
+              "pcs": "6/36",
+              "meas": "39.5X30.5X30.5cm",
+              "kg": "26kg",
+              "mat": "CR-V"
+            }
+          ]
+        },
+        {
+          "th": "ประแจแหวนคู่",
+          "en": "Double Offset Ring Wrench",
+          "mat": "CR-V",
+          "notes_th": [
+            "แหวนทั้งสองข้างเอน 75° เพื่อความสะดวกในการใช้งาน"
+          ],
+          "items": [
+            {
+              "code": "W0306A",
+              "th": "ประแจแหวนคู่",
+              "en": "Double Offset Ring Wrench",
+              "size": "6X7mm",
+              "pcs": "12/336",
+              "meas": "43X24.5X15cm",
+              "kg": "13kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0306C",
+              "th": "ประแจแหวนคู่",
+              "en": "Double Offset Ring Wrench",
+              "size": "8X10mm",
+              "pcs": "12/336",
+              "meas": "43X24.5X17cm",
+              "kg": "18kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0306F",
+              "th": "ประแจแหวนคู่",
+              "en": "Double Offset Ring Wrench",
+              "size": "10X12mm",
+              "pcs": "12/240",
+              "meas": "43X24.5X20cm",
+              "kg": "20kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0306H",
+              "th": "ประแจแหวนคู่",
+              "en": "Double Offset Ring Wrench",
+              "size": "12X14mm",
+              "pcs": "12/216",
+              "meas": "40.5X23.5X16.5cm",
+              "kg": "27kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0306I",
+              "th": "ประแจแหวนคู่",
+              "en": "Double Offset Ring Wrench",
+              "size": "13X15mm",
+              "pcs": "12/144",
+              "meas": "45.5X26.5X13.5cm",
+              "kg": "23kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0306J",
+              "th": "ประแจแหวนคู่",
+              "en": "Double Offset Ring Wrench",
+              "size": "14X17mm",
+              "pcs": "12/144",
+              "meas": "45.5X26.5X13.5cm",
+              "kg": "23kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0306L",
+              "th": "ประแจแหวนคู่",
+              "en": "Double Offset Ring Wrench",
+              "size": "17X19mm",
+              "pcs": "6/72",
+              "meas": "31.5X30.5X16.5cm",
+              "kg": "17kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0306M",
+              "th": "ประแจแหวนคู่",
+              "en": "Double Offset Ring Wrench",
+              "size": "19X21mm",
+              "pcs": "6/72",
+              "meas": "31.5X30.5X16.5cm",
+              "kg": "20kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0306U",
+              "th": "ประแจแหวนคู่",
+              "en": "Double Offset Ring Wrench",
+              "size": "30X32mm",
+              "pcs": "12/36",
+              "meas": "47.5X31.5X15cm",
+              "kg": "28kg",
+              "mat": "CR-V"
+            }
+          ]
+        },
+        {
+          "th": "ประแจล็อก / ประแจคอพับ / ประแจแหวนผ่า",
+          "en": "Ratchet, Flexible Socket & Flare Nut Wrenches",
+          "mat": "CR-V 6140",
+          "items": [
+            {
+              "code": "WS1001",
+              "th": "ประแจล็อก 2 ข้าง 12 เหลี่ยม คอพับได้",
+              "en": "Combination Ratchet Wrench",
+              "size": "10X11mm",
+              "pcs": "12/180",
+              "meas": "35X23X21cm",
+              "kg": "19kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS1002",
+              "th": "ประแจล็อก 2 ข้าง 12 เหลี่ยม คอพับได้",
+              "en": "Combination Ratchet Wrench",
+              "size": "12X13mm",
+              "pcs": "12/144",
+              "meas": "40X27X20cm",
+              "kg": "27kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS1003",
+              "th": "ประแจล็อก 2 ข้าง 12 เหลี่ยม คอพับได้",
+              "en": "Combination Ratchet Wrench",
+              "size": "14X15mm",
+              "pcs": "12/96",
+              "meas": "30X29X22.5cm",
+              "kg": "23.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS1004",
+              "th": "ประแจล็อก 2 ข้าง 12 เหลี่ยม คอพับได้",
+              "en": "Combination Ratchet Wrench",
+              "size": "16X17mm",
+              "pcs": "12/96",
+              "meas": "30X29X22.5cm",
+              "kg": "31kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS1005",
+              "th": "ประแจล็อก 2 ข้าง 12 เหลี่ยม คอพับได้",
+              "en": "Combination Ratchet Wrench",
+              "size": "18X19mm",
+              "pcs": "6/72",
+              "meas": "34.5X27X25cm",
+              "kg": "31kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0311A",
+              "th": "ประแจปากตาย บล็อกข้าง 12 เหลี่ยม คอพับได้",
+              "en": "Flexible Combination Socket Wrench",
+              "size": "10mm",
+              "pcs": "10/200",
+              "meas": "40X21X19.5cm",
+              "kg": "16kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0311C",
+              "th": "ประแจปากตาย บล็อกข้าง 12 เหลี่ยม คอพับได้",
+              "en": "Flexible Combination Socket Wrench",
+              "size": "12mm",
+              "pcs": "10/150",
+              "meas": "35X23X21cm",
+              "kg": "15.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0311E",
+              "th": "ประแจปากตาย บล็อกข้าง 12 เหลี่ยม คอพับได้",
+              "en": "Flexible Combination Socket Wrench",
+              "size": "14mm",
+              "pcs": "10/120",
+              "meas": "34X24X20cm",
+              "kg": "23kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0311F",
+              "th": "ประแจปากตาย บล็อกข้าง 12 เหลี่ยม คอพับได้",
+              "en": "Flexible Combination Socket Wrench",
+              "size": "17mm",
+              "pcs": "10/120",
+              "meas": "40X27X20cm",
+              "kg": "30kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0286B",
+              "th": "ประแจแหวนผ่า",
+              "en": "Flare Nut Wrench",
+              "size": "8X10mm",
+              "pcs": "10/200",
+              "meas": "36X18X16cm",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0286C",
+              "th": "ประแจแหวนผ่า",
+              "en": "Flare Nut Wrench",
+              "size": "10X12mm",
+              "pcs": "10/200",
+              "meas": "40X21X19.5cm",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0286D",
+              "th": "ประแจแหวนผ่า",
+              "en": "Flare Nut Wrench",
+              "size": "12X14mm",
+              "pcs": "10/200",
+              "meas": "40X21X19.5cm",
+              "kg": "25kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0286F",
+              "th": "ประแจแหวนผ่า",
+              "en": "Flare Nut Wrench",
+              "size": "14X17mm",
+              "pcs": "10/150",
+              "meas": "35X23X21cm",
+              "kg": "20kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0286H",
+              "th": "ประแจแหวนผ่า",
+              "en": "Flare Nut Wrench",
+              "size": "17X19mm",
+              "pcs": "6/72",
+              "meas": "34X24X20cm",
+              "kg": "15kg",
+              "mat": "CR-V"
+            }
+          ]
+        },
+        {
+          "th": "ประแจบล็อกตัวแอล และประแจแหวนฟรี",
+          "en": "L-Type & Ratchet Wrenches",
+          "mat": "CR-V 6140",
+          "notes_th": [
+            "แหวนฟรี 72 เฟือง เอน 15° ถอด-ขันน็อตได้ง่ายด้วยการหมุนเพียง 5 ครั้งโดยประมาณ"
+          ],
+          "items": [
+            {
+              "code": "WS008C",
+              "th": "ประแจบล็อกตัวแอล 6 เหลี่ยมแฉก",
+              "en": "L-Type Wrench with Hole",
+              "size": "8mm",
+              "pcs": "300",
+              "meas": "30X26X15cm",
+              "kg": "20.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS008E",
+              "th": "ประแจบล็อกตัวแอล 6 เหลี่ยมแฉก",
+              "en": "L-Type Wrench with Hole",
+              "size": "10mm",
+              "pcs": "200",
+              "meas": "38X21X15cm",
+              "kg": "18.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS008G",
+              "th": "ประแจบล็อกตัวแอล 6 เหลี่ยมแฉก",
+              "en": "L-Type Wrench with Hole",
+              "size": "12mm",
+              "pcs": "200",
+              "meas": "40X20X16cm",
+              "kg": "25kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS008H",
+              "th": "ประแจบล็อกตัวแอล 6 เหลี่ยมแฉก",
+              "en": "L-Type Wrench with Hole",
+              "size": "13mm",
+              "pcs": "150",
+              "meas": "36X22X15cm",
+              "kg": "23.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS008I",
+              "th": "ประแจบล็อกตัวแอล 6 เหลี่ยมแฉก",
+              "en": "L-Type Wrench with Hole",
+              "size": "14mm",
+              "pcs": "125",
+              "meas": "28X22X18cm",
+              "kg": "23kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS008L",
+              "th": "ประแจบล็อกตัวแอล 6 เหลี่ยมแฉก",
+              "en": "L-Type Wrench with Hole",
+              "size": "17mm",
+              "pcs": "70",
+              "meas": "40X30X13cm",
+              "kg": "22kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS008N",
+              "th": "ประแจบล็อกตัวแอล 6 เหลี่ยมแฉก",
+              "en": "L-Type Wrench with Hole",
+              "size": "19mm",
+              "pcs": "80",
+              "meas": "36X33X11cm",
+              "kg": "29.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0287A",
+              "th": "ประแจแหวนฟรี-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench",
+              "size": "8mm",
+              "pcs": "10/200",
+              "meas": "34X21X16cm",
+              "kg": "11kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0287C",
+              "th": "ประแจแหวนฟรี-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench",
+              "size": "10mm",
+              "pcs": "10/200",
+              "meas": "36X18X16cm",
+              "kg": "15kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0287E",
+              "th": "ประแจแหวนฟรี-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench",
+              "size": "12mm",
+              "pcs": "10/200",
+              "meas": "40X21X19.5cm",
+              "kg": "20kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0287F",
+              "th": "ประแจแหวนฟรี-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench",
+              "size": "13mm",
+              "pcs": "10/200",
+              "meas": "40X21X19.5cm",
+              "kg": "26kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0287G",
+              "th": "ประแจแหวนฟรี-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench",
+              "size": "14mm",
+              "pcs": "10/150",
+              "meas": "35X23X21cm",
+              "kg": "19kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0287J",
+              "th": "ประแจแหวนฟรี-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench",
+              "size": "17mm",
+              "pcs": "10/120",
+              "meas": "40X27X20cm",
+              "kg": "28kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0287L",
+              "th": "ประแจแหวนฟรี-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench",
+              "size": "19mm",
+              "pcs": "10/120",
+              "meas": "40X27X20cm",
+              "kg": "28kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0287N",
+              "th": "ประแจแหวนฟรี-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench",
+              "size": "21mm",
+              "pcs": "6/72",
+              "meas": "34.5X27X25cm",
+              "kg": "24kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0427A",
+              "th": "ประแจแหวนฟรีพับได้-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench (Flexible)",
+              "size": "8mm",
+              "pcs": "10/200",
+              "meas": "34X21X16cm",
+              "kg": "13kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0427C",
+              "th": "ประแจแหวนฟรีพับได้-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench (Flexible)",
+              "size": "10mm",
+              "pcs": "10/200",
+              "meas": "40X21X19.5cm",
+              "kg": "16kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0427E",
+              "th": "ประแจแหวนฟรีพับได้-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench (Flexible)",
+              "size": "12mm",
+              "pcs": "10/200",
+              "meas": "40X21X19.5cm",
+              "kg": "26kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0427G",
+              "th": "ประแจแหวนฟรีพับได้-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench (Flexible)",
+              "size": "14mm",
+              "pcs": "10/150",
+              "meas": "35X23X21cm",
+              "kg": "16kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0427J",
+              "th": "ประแจแหวนฟรีพับได้-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench (Flexible)",
+              "size": "17mm",
+              "pcs": "10/120",
+              "meas": "40X27X20cm",
+              "kg": "30kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0427L",
+              "th": "ประแจแหวนฟรีพับได้-ปากตายข้าง",
+              "en": "Combination Ratchet Wrench (Flexible)",
+              "size": "19mm",
+              "pcs": "10/80",
+              "meas": "30X29X22.5cm",
+              "kg": "29.5kg",
+              "mat": "CR-V"
+            }
+          ]
+        },
+        {
+          "th": "ชุดประแจ (เซ็ต)",
+          "en": "Wrench Sets",
+          "mat": "CR-V",
+          "items": [
+            {
+              "code": "W0327B",
+              "th": "ชุดประแจปากตาย-แหวนข้าง 11 ชิ้น",
+              "en": "Mirror Surface Combination Wrench Set",
+              "size": "8, 9, 10, 11, 12, 13, 14, 17, 19, 22, 24mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0327D",
+              "th": "ชุดประแจปากตาย-แหวนข้าง 14 ชิ้น",
+              "en": "Mirror Surface Combination Wrench Set",
+              "size": "8, 10, 11, 12, 13, 14, 15, 17, 19, 22, 24, 27, 30, 32mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0329A",
+              "th": "ชุดประแจแหวนคู่ 8 ชิ้น",
+              "en": "Mirror Surface Offset Wrench Set",
+              "size": "8x10, 9x11, 10x12, 12x14, 14x17, 17x19, 19x21, 22x24mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0329B",
+              "th": "ชุดประแจแหวนคู่ 12 ชิ้น",
+              "en": "Mirror Surface Offset Wrench Set",
+              "size": "6x7, 8x10, 9x11, 12x14, 13x15, 14x17, 16x18, 17x19, 19x21, 22x24, 24x27, 30x32mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "ปากตาย8-24ด้าน",
+              "th": "ชุดประแจแหวนข้าง ชุบโครเมียม 14 ชิ้น",
+              "en": "Open End Wrench Set",
+              "size": "8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 21, 22, 24mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "แหวน8-27ด้าน",
+              "th": "ชุดประแจแหวนคู่ ชุบโครเมียม 9 ชิ้น",
+              "en": "Offset Wrench Set",
+              "size": "8x9, 10x11, 12x13, 14x15, 16x17, 18x19, 20x22, 21x23, 24x27mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "แหวน6-32ด้าน",
+              "th": "ชุดประแจแหวนคู่ ชุบโครเมียม 12 ชิ้น",
+              "en": "Offset Wrench Set",
+              "size": "6x7, 8x9, 10x11, 12x13, 14x15, 16x17, 18x19, 20x22, 21x23, 24x27, 25x28, 30x32mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0601",
+              "th": "ชุดประแจแหวนฟรีพับ-ปากตาย 7 ชิ้น",
+              "en": "Mirror Surface Open End Spanner Set",
+              "size": "10, 12, 13, 14, 15, 17, 19mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0599",
+              "th": "ชุดประแจแหวนฟรี-ปากตาย 7 ชิ้น",
+              "en": "Mirror Surface Open End Spanner Set",
+              "size": "8, 10, 12, 13, 14, 17, 19mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0603",
+              "th": "ชุดประแจปากตาย 6 ชิ้น",
+              "en": "Mirror Surface Open End Spanner Set",
+              "size": "6x7, 8x10, 10x12, 12x14, 14x17, 17x19mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0602",
+              "th": "ชุดประแจปากตายแหวนข้าง 6 ชิ้น",
+              "en": "Mirror Surface Combination Spanner Set",
+              "size": "8, 10, 12, 13, 14, 17mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0327AC",
+              "th": "ชุดประแจปากตายแหวนข้าง 8 ชิ้น",
+              "en": "Mirror Surface Combination Spanner Set",
+              "size": "8, 10, 11, 12, 13, 14, 17, 19mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            }
+          ]
+        },
+        {
+          "th": "ลูกบล็อก และประแจเลื่อนคอม้า",
+          "en": "Sockets & Large-Opening Wrench",
+          "mat": "CR-V 50BV30",
+          "notes_th": [
+            "ผิวพ่นทราย กันสนิมกันการกัดกร่อน",
+            "มุมภายในของส่วนโค้งเป็นพิเศษ ช่วยเพิ่มแรงหมุน 30% และลดการสึกหรอของหัวน็อต"
+          ],
+          "items": [
+            {
+              "code": "W0560U",
+              "th": "ลูกบล็อกหัวหกเหลี่ยม ครอบจักรวาล (แกน 3/8 นิ้ว)",
+              "en": "Universal Impact Socket",
+              "size": "3/8 (7–19mm)",
+              "pcs": "12/144",
+              "meas": "32.5X17.5X18.5cm",
+              "kg": "17.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0560V",
+              "th": "ลูกบล็อกหัวหกเหลี่ยม ครอบจักรวาล (แกน 1/2 นิ้ว)",
+              "en": "Universal Impact Socket",
+              "size": "1/2 (11–32mm)",
+              "pcs": "5/60",
+              "meas": "27X27.2X18cm",
+              "kg": "41.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WNS300J",
+              "th": "ประแจเลื่อนคอม้า",
+              "en": "Large Opening Multi-Purpose Adjustable Wrench",
+              "size": "300mm",
+              "pcs": "6/36",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005A",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "8mm",
+              "pcs": "12/240",
+              "meas": "27.5X14.8X19.2cm",
+              "kg": "12.3kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005C",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "10mm",
+              "pcs": "12/240",
+              "meas": "27.5X14.8X19.2cm",
+              "kg": "12.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005E",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "12mm",
+              "pcs": "12/240",
+              "meas": "27.5X14.8X19.2cm",
+              "kg": "13.6kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005F",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "13mm",
+              "pcs": "12/240",
+              "meas": "27.5X14.8X19.2cm",
+              "kg": "13.9kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005G",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "14mm",
+              "pcs": "12/240",
+              "meas": "27.5X14.8X19.2cm",
+              "kg": "13.8kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005H",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "15mm",
+              "pcs": "12/240",
+              "meas": "27.5X14.8X19.2cm",
+              "kg": "13kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005J",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "17mm",
+              "pcs": "12/240",
+              "meas": "33.5X16.5X20.5cm",
+              "kg": "16.4kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005L",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "19mm",
+              "pcs": "12/180",
+              "meas": "37X18X16cm",
+              "kg": "13.2kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005N",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "21mm",
+              "pcs": "12/180",
+              "meas": "37X18X16cm",
+              "kg": "14kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005P",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "23mm",
+              "pcs": "12/180",
+              "meas": "42X21X17cm",
+              "kg": "22.6kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS005Q",
+              "th": "ลูกบล็อกสั้น 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Socket",
+              "size": "24mm",
+              "pcs": "12/180",
+              "meas": "42X21X17cm",
+              "kg": "20.6kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS007A",
+              "th": "ลูกบล็อกยาว 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Extra Deep Socket",
+              "size": "8mm",
+              "pcs": "12/144",
+              "meas": "32X15.2X18.5cm",
+              "kg": "17kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS007C",
+              "th": "ลูกบล็อกยาว 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Extra Deep Socket",
+              "size": "10mm",
+              "pcs": "12/144",
+              "meas": "32X15.2X18.5cm",
+              "kg": "15.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS007E",
+              "th": "ลูกบล็อกยาว 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Extra Deep Socket",
+              "size": "12mm",
+              "pcs": "12/144",
+              "meas": "32X15.2X18.5cm",
+              "kg": "17kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS007F",
+              "th": "ลูกบล็อกยาว 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Extra Deep Socket",
+              "size": "13mm",
+              "pcs": "12/144",
+              "meas": "32X15.2X18.5cm",
+              "kg": "17.2kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS007G",
+              "th": "ลูกบล็อกยาว 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Extra Deep Socket",
+              "size": "14mm",
+              "pcs": "12/144",
+              "meas": "32X15.2X18.5cm",
+              "kg": "17kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS007I",
+              "th": "ลูกบล็อกยาว 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Extra Deep Socket",
+              "size": "16mm",
+              "pcs": "12/144",
+              "meas": "32X15.2X18.5cm",
+              "kg": "15.6kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS007J",
+              "th": "ลูกบล็อกยาว 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Extra Deep Socket",
+              "size": "17mm",
+              "pcs": "12/120",
+              "meas": "32.5X17.5X18.5cm",
+              "kg": "15.2kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS007L",
+              "th": "ลูกบล็อกยาว 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Extra Deep Socket",
+              "size": "19mm",
+              "pcs": "12/120",
+              "meas": "32.5X17.5X18.5cm",
+              "kg": "17.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "WS007N",
+              "th": "ลูกบล็อกยาว 6 เหลี่ยม 1/2 นิ้ว (4 หุน)",
+              "en": "1/2\" Extra Deep Socket",
+              "size": "21mm",
+              "pcs": "12/120",
+              "meas": "33.6X20.5X18.5cm",
+              "kg": "19.5kg",
+              "mat": "CR-V"
+            }
+          ]
+        },
+        {
+          "th": "ด้ามบล็อกฟรี และประแจหางหนู",
+          "en": "Ratchet Handles & Scaffold Wrenches",
+          "mat": "CR-V 6140 / CR-MO",
+          "items": [
+            {
+              "code": "W0013A",
+              "th": "ด้ามบล็อกฟรี 1/2\"",
+              "en": "Quick Release Ratchet Wrench",
+              "size": "1/2\"X20mm",
+              "pcs": "6/36",
+              "meas": "51X34X24cm",
+              "kg": "22.5kg",
+              "mat": "CR-V",
+              "notes_th": "เฟือง 24 ฟัน กะทัดรัด ทำงานในที่แคบได้ · ปรับหมุนซ้าย-ขวาได้"
+            },
+            {
+              "code": "WS0416",
+              "th": "ด้ามบล็อกฟรี 1/2\" ด้ามจับสองสี",
+              "en": "Oval Type Ratchet Wrench",
+              "size": "1/2\"X20mm",
+              "pcs": "6/36",
+              "meas": "51X34X24cm",
+              "kg": "25.5kg",
+              "mat": "CR-MO 42 Chromium Molybdenum"
+            },
+            {
+              "code": "W0367",
+              "th": "ด้ามบล็อกฟรี 1/2\" 24 เฟือง",
+              "en": "Ratchet Torque Wrench",
+              "size": "1/2\"X20kg",
+              "pcs": "4",
+              "meas": "50X17.5X15cm",
+              "kg": "7.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W2595C",
+              "th": "ด้ามบล็อกฟรี 1/2\" (ด้ามโค้ง)",
+              "en": "Ratchet with Bend Handle",
+              "size": "1/2\"",
+              "pcs": "6/36",
+              "meas": "51X34X24cm",
+              "kg": "24.5kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W0175",
+              "th": "ด้ามบล็อกฟรี 1/2\"",
+              "en": "1/2\" Oval Type Ratchet Wrench",
+              "size": "1/2\"X16mm",
+              "pcs": "6/36",
+              "meas": "51X34X24cm",
+              "kg": "21.5kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "ด้ามบล็อก18นิ้ว",
+              "th": "ด้ามบล็อกยาว 1/2\" 18 นิ้ว",
+              "en": "Ratchet Wrench",
+              "size": "4 หุน ด้ามยาว 18 นิ้ว",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V 6140",
+              "notes_th": "ปรับหัวไปทางซ้าย-ขวาได้ 180 องศา"
+            },
+            {
+              "code": "ด้ามบล็อก24นิ้ว",
+              "th": "ด้ามบล็อกยาว 1/2\" 24 นิ้ว",
+              "en": "Ratchet Wrench",
+              "size": "4 หุน ด้ามยาว 24 นิ้ว",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W2837",
+              "th": "ประแจบล็อกฟรี หางหนู 1/2\"",
+              "en": "Ratchet Wrench",
+              "size": "1/2\"/12.5mm",
+              "pcs": "10/40",
+              "meas": "38X38X29cm",
+              "kg": "23kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W2838C",
+              "th": "ประแจหางหนู",
+              "en": "Ratchet Wrench",
+              "size": "14X17mm",
+              "pcs": "2/40",
+              "meas": "36.5X30.5X20cm",
+              "kg": "11kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W2838E",
+              "th": "ประแจหางหนู",
+              "en": "Ratchet Wrench",
+              "size": "17X19mm",
+              "pcs": "2/40",
+              "meas": "40X35X23cm",
+              "kg": "20kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W2838F",
+              "th": "ประแจหางหนู",
+              "en": "Ratchet Wrench",
+              "size": "19X21mm",
+              "pcs": "2/40",
+              "meas": "40X35X23cm",
+              "kg": "20kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W2838H",
+              "th": "ประแจหางหนู",
+              "en": "Ratchet Wrench",
+              "size": "22X24mm",
+              "pcs": "2/32",
+              "meas": "39.5X33.5X27.5cm",
+              "kg": "23kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W2838I",
+              "th": "ประแจหางหนู",
+              "en": "Ratchet Wrench",
+              "size": "24X27mm",
+              "pcs": "2/32",
+              "meas": "41X38.5X29cm",
+              "kg": "32kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W2838J",
+              "th": "ประแจหางหนู",
+              "en": "Ratchet Wrench",
+              "size": "27X30mm",
+              "pcs": "2/20",
+              "meas": "44.5X40.3X18cm",
+              "kg": "21kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W2838K",
+              "th": "ประแจหางหนู",
+              "en": "Ratchet Wrench",
+              "size": "30X32mm",
+              "pcs": "2/24",
+              "meas": "44.5X40.5X18cm",
+              "kg": "21kg",
+              "mat": "CR-V 6140"
+            }
+          ]
+        },
+        {
+          "th": "ด้ามบล็อก ข้อต่อ และประแจหกเหลี่ยม",
+          "en": "Handles, Extensions, Joints & Hex Keys",
+          "mat": "CR-V 50BV30 / CR-V 6140",
+          "items": [
+            {
+              "code": "W4567",
+              "th": "ประแจบล็อคฟรี หางหนู",
+              "en": "1/2\" Rapid Ratchet Wrench",
+              "size": "1/2\"",
+              "pcs": "6/36",
+              "meas": "51X34X24cm",
+              "kg": "23kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W0293",
+              "th": "ด้ามบล็อกตัว L 1/2\"",
+              "en": "1/2\" L-Type Handle",
+              "size": "1/2\"X250mm",
+              "pcs": "12/48",
+              "meas": "33.5X23.5X10cm",
+              "kg": "21.5kg",
+              "mat": "CR-V 50BV30"
+            },
+            {
+              "code": "W0474D",
+              "th": "ข้อลดบล็อก 3/4\" ไป 1/2\"",
+              "en": "Impact Universal Joint",
+              "size": "3/4\" ลด 1/2\"",
+              "pcs": "1/100",
+              "meas": "21X21X108cm",
+              "kg": "26kg",
+              "mat": "CR-V",
+              "notes_th": "ผิวรมดำแบบ Phosphating กันการสึกกร่อน"
+            },
+            {
+              "code": "W0297",
+              "th": "ข้ออ่อนบล็อก 1/2\"",
+              "en": "1/2\" Universal Joint",
+              "size": "1/2\"",
+              "pcs": "20/120",
+              "meas": "33.5X23.5X10cm",
+              "kg": "19kg",
+              "mat": "CR-V 50BV30"
+            },
+            {
+              "code": "W0295",
+              "th": "ข้อต่อบล็อก 1/2\"",
+              "en": "1/2\" Extension Bar",
+              "size": "1/2\"X250mm",
+              "pcs": "12/72",
+              "meas": "33.2X23.2X14.5cm",
+              "kg": "30kg",
+              "mat": "CR-V 50BV30"
+            },
+            {
+              "code": "W0296",
+              "th": "ข้อต่อบล็อก 1/2\"",
+              "en": "1/2\" Extension Bar",
+              "size": "1/2\"X125mm",
+              "pcs": "24/96",
+              "meas": "33.5X23.5X10cm",
+              "kg": "20kg",
+              "mat": "CR-V 50BV30"
+            },
+            {
+              "code": "W0294",
+              "th": "ด้ามเลื่อนตัว T",
+              "en": "Sliding T-Bar",
+              "size": "1/2\"X250mm",
+              "pcs": "12/48",
+              "meas": "33.5X23.5X10cm",
+              "kg": "16kg",
+              "mat": "CR-V 50BV30"
+            },
+            {
+              "code": "W0361A",
+              "th": "ประแจตัว Y หกเหลี่ยม",
+              "en": "Y-Type Wrench",
+              "size": "8X10X12mm",
+              "pcs": "10/60",
+              "meas": "52X27X33cm",
+              "kg": "23kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W0361B",
+              "th": "ประแจตัว Y หกเหลี่ยม",
+              "en": "Y-Type Wrench",
+              "size": "10X12X14mm",
+              "pcs": "10/60",
+              "meas": "52X27X33cm",
+              "kg": "27kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W0361C",
+              "th": "ประแจตัว Y หกเหลี่ยม",
+              "en": "Y-Type Wrench",
+              "size": "12X14X17mm",
+              "pcs": "10/60",
+              "meas": "52X27X33cm",
+              "kg": "32kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W0361D",
+              "th": "ประแจตัว Y หกเหลี่ยม",
+              "en": "Y-Type Wrench",
+              "size": "14X17X19mm",
+              "pcs": "10/60",
+              "meas": "52X27X33cm",
+              "kg": "29.3kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W0173A",
+              "th": "ประแจพับหกเหลี่ยมทอร์ค 8 ตัวชุด",
+              "en": "8pcs Folding Box End Hex Wrench",
+              "size": "T9 T10 T15 T20 T25 T27 T30 T40",
+              "pcs": "12/120",
+              "meas": "56X37X47cm",
+              "kg": "31kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W0174A",
+              "th": "ประแจพับหกเหลี่ยม 8 ตัวชุด",
+              "en": "8pcs Single Folding Hex Key",
+              "size": "1.5, 2, 2.5, 3, 4, 5, 6, 8mm",
+              "pcs": "12/120",
+              "meas": "56X37X47cm",
+              "kg": "31kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W0409",
+              "th": "ประแจพับหกเหลี่ยม เล็ก 8 ตัวชุด",
+              "en": "8pcs Folding Hex Key",
+              "size": "1.27, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0mm",
+              "pcs": "15/180",
+              "meas": "53X37X42.5cm",
+              "kg": "28kg",
+              "mat": "CR-V 6140"
+            }
+          ]
+        },
+        {
+          "th": "ประแจแอลหกเหลี่ยม / ทอร์ค (ชุด)",
+          "en": "Hex & Torx Key Sets",
+          "mat": "CR-V 6150 / S-2 / SK-45",
+          "items": [
+            {
+              "code": "W0408",
+              "th": "ประแจพับหกเหลี่ยมทอร์ค เล็ก 8 ตัวชุด",
+              "en": "8pcs Folding Box End Hex Key",
+              "size": "T5 T6 T7 T8 T9 T10 T15 T20",
+              "pcs": "15/180",
+              "meas": "53X37X42.5cm",
+              "kg": "28kg",
+              "mat": "CR-V 6140"
+            },
+            {
+              "code": "W9918A",
+              "th": "ประแจแอลหกเหลี่ยมหัวบอล ยาวพิเศษ 9 ตัวชุด",
+              "en": "9pcs Extralong Ball Point Hex Key Set",
+              "size": "1.5, 2, 2.5, 3, 4, 5, 6, 8, 10mm",
+              "pcs": "6/48",
+              "meas": "51.5X32X22.5cm",
+              "kg": "24kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W0553",
+              "th": "ประแจแอลหัวทอร์ค มีรู 9 ตัวชุด",
+              "en": "Long Arm Torx Key Set",
+              "size": "T12 T15 T20 T25 T27 T30 T40 T45 T50",
+              "pcs": "10/60",
+              "meas": "35X22.5X32cm",
+              "kg": "21.5kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W0554",
+              "th": "ประแจแอลหัวทอร์ค มีรู 7 ตัวชุด",
+              "en": "Long Arm Torx Key Set",
+              "size": "T9 T10 T15 T20 T25 T27 T30",
+              "pcs": "10/60",
+              "meas": "32X18.5X26.5cm",
+              "kg": "8.5kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W9921A",
+              "th": "ประแจแอลหัวหกเหลี่ยมหัวบอล หลายสี 9 ตัวชุด",
+              "en": "9pcs Extra Long Arm Ball Point Hex Key Set",
+              "size": "1.5, 2, 2.5, 3, 4, 5, 6, 8, 10mm",
+              "pcs": "6/48",
+              "meas": "40.5X28.5X40cm",
+              "kg": "",
+              "mat": "CR-V",
+              "notes_th": "หัวบอลเอียง 25 องศา สะดวกเมื่อใช้เข้าไปในจุดที่ไขยาก · มี 9 สี"
+            },
+            {
+              "code": "W9925",
+              "th": "ประแจแอลหัวหกเหลี่ยม ด้ามสั้น 9 ตัวชุด",
+              "en": "9pcs Metric Flat End Hex Key Set",
+              "size": "1.5, 2, 2.5, 3, 4, 5, 6, 8, 10mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "SK-45",
+              "notes_th": "ชุบโครเมี่ยมกันสนิม กันกัดกร่อน"
+            },
+            {
+              "code": "W0439",
+              "th": "ประแจแอลหกเหลี่ยมหัวบอล ยาวพิเศษ 9 ตัวชุด",
+              "en": "9pcs Extralong Ball Point Hex Key Set",
+              "size": "1.5, 2, 2.5, 3, 4, 5, 6, 8, 10mm",
+              "pcs": "6/48",
+              "meas": "44X32X31.5cm",
+              "kg": "23.5kg",
+              "mat": "S-2",
+              "notes_th": "ความแข็ง HRC58-60"
+            },
+            {
+              "code": "W0199A",
+              "th": "ประแจแอลหกเหลี่ยมหัวบอล ยาวพิเศษ 9 ตัวชุด",
+              "en": "9pcs Extralong Ball Point Hex Key Set",
+              "size": "1.5, 2, 2.5, 3, 4, 5, 6, 8, 10mm",
+              "pcs": "12/48",
+              "meas": "47X31X28cm",
+              "kg": "22kg",
+              "mat": "SK-45",
+              "notes_th": "ผิวเคลือบนิกเกิล"
+            },
+            {
+              "code": "W9912A",
+              "th": "ประแจแอล หัวทอร์คมีรู 9 ตัวชุด (ยาวพิเศษ)",
+              "en": "9pcs Box End Hex Key Set",
+              "size": "T10 T15 T20 T25 T27 T30 T40 T45 T50",
+              "pcs": "10/60",
+              "meas": "35.5X29.5X33.5cm",
+              "kg": "25kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W9912B",
+              "th": "ประแจแอล หัวทอร์คมีรู 9 ตัวชุด (ยาวปกติ)",
+              "en": "9pcs Box End Hex Key Set",
+              "size": "T10 T15 T20 T25 T27 T30 T40 T45 T50",
+              "pcs": "10/60",
+              "meas": "36X23.5X33cm",
+              "kg": "23.5kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W2758B",
+              "th": "ประแจแอลหกเหลี่ยมหัวบอล ด้ามจับยาง",
+              "en": "T-Type Single Hex Key",
+              "size": "2.5mm",
+              "pcs": "12/288",
+              "meas": "37.5X33X28.5cm",
+              "kg": "8kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W2758C",
+              "th": "ประแจแอลหกเหลี่ยมหัวบอล ด้ามจับยาง",
+              "en": "T-Type Single Hex Key",
+              "size": "3mm",
+              "pcs": "12/288",
+              "meas": "37.5X33X28.5cm",
+              "kg": "9kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W2758D",
+              "th": "ประแจแอลหกเหลี่ยมหัวบอล ด้ามจับยาง",
+              "en": "T-Type Single Hex Key",
+              "size": "4mm",
+              "pcs": "12/288",
+              "meas": "37.5X33X28.5cm",
+              "kg": "10kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W2758E",
+              "th": "ประแจแอลหกเหลี่ยมหัวบอล ด้ามจับยาง",
+              "en": "T-Type Single Hex Key",
+              "size": "5mm",
+              "pcs": "12/192",
+              "meas": "47X45X24cm",
+              "kg": "14kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W2758F",
+              "th": "ประแจแอลหกเหลี่ยมหัวบอล ด้ามจับยาง",
+              "en": "T-Type Single Hex Key",
+              "size": "6mm",
+              "pcs": "12/192",
+              "meas": "47X45X24cm",
+              "kg": "15kg",
+              "mat": "CR-V 6150"
+            }
+          ]
+        },
+        {
+          "th": "ประแจตัว T ชุดบล็อก และชุดดอกไขควง",
+          "en": "T-Type Wrenches, Socket & Bit Sets",
+          "mat": "CR-V / เหล็กอัลลอย",
+          "items": [
+            {
+              "code": "WNS200J",
+              "th": "ประแจเลื่อนด้ามสั้น",
+              "en": "Sanitary Adjustable Wrench",
+              "size": "200mm (ปากอ้า 16-68 มม.)",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "",
+              "notes_th": "เหมาะกับงานอุปกรณ์ในห้องน้ำ ไม่ทำให้ผิวชิ้นงานเป็นรอย เช่น น็อตเคลือบสีทอง"
+            },
+            {
+              "code": "W0172",
+              "th": "ประแจตัว T หุ้ม หกเหลี่ยม",
+              "en": "T-Type Wrench",
+              "size": "A8mm B9mm C10mm E12mm G14mm",
+              "pcs": "10/60",
+              "meas": "44X36X27cm",
+              "kg": "22kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "T-SOHENG",
+              "th": "ตัว T หกเหลี่ยม SOHENG",
+              "en": "T-Type Wrench",
+              "size": "8, 10, 12, 14mm",
+              "pcs": "5",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0619C",
+              "th": "บล็อกยิงหลังคา (ชุดดอกไขควง 5 ตัว)",
+              "en": "5pcs Screw Driver Bits Set",
+              "size": "10mm (ยาว 65mm)",
+              "pcs": "5/500",
+              "meas": "31X20.2X48cm",
+              "kg": "20kg",
+              "mat": "เหล็กอัลลอย",
+              "notes_th": "มีแม่เหล็กติดตั้งพร้อมภายใน"
+            },
+            {
+              "code": "W0619B",
+              "th": "บล็อกยิงหลังคา (ชุดดอกไขควง 5 ตัว)",
+              "en": "5pcs Screw Driver Bits Set",
+              "size": "8mm (ยาว 65mm)",
+              "pcs": "5/500",
+              "meas": "31X16.5X48cm",
+              "kg": "18kg",
+              "mat": "เหล็กอัลลอย"
+            },
+            {
+              "code": "W3490B",
+              "th": "ชุดดอกไขควง-บล็อก สำหรับสว่าน 40 ชิ้น",
+              "en": "40pcs Bits Set",
+              "size": "ลูกบล็อก 1/2, 3/4 นิ้ว · 30L: H-4-5-6-7-8-10-12, M5-6-8-10-12, T20-25-30-40-45-50-55 · 75L: เหมือนกัน",
+              "pcs": "10",
+              "meas": "34X33.5X17.5cm",
+              "kg": "",
+              "mat": "CR-V"
+            },
+            {
+              "code": "ปากตาย8-24MTT",
+              "th": "ประแจแหวนข้าง ตรา M.T.T. 14 ชิ้น",
+              "en": "Open End Wrench Set",
+              "size": "8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 21, 22, 24mm",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "Drop-forged alloy",
+              "notes_th": "เอน 15° ผิวกระจก ชุบโครเมี่ยม กันสนิม"
+            },
+            {
+              "code": "ชุดบล็อกซ์46",
+              "th": "ชุดบ็อกซ์ 1/4\" (2 หุน) 46 ชิ้น",
+              "en": "46pcs 1/4\" Dr. Socket Wrench Set",
+              "size": "ลูกบล็อก 13 ตัว (4-14mm) · กุญแจหกเหลี่ยม 4 ตัว · ด้ามต่อ/ข้อต่อ/ด้ามฟรี/ด้ามเลื่อน · หัวใส่ด้ามบล็อก 2 หุน แฉกฟิลลิป 3 · แฉกดาว 3 · หกเหลี่ยม 6 · ทอร์ค 6 · แบน 3",
+              "pcs": "",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "screwdrivers",
+      "th": "เครื่องมือประเภทไขควง",
+      "en": "Screwdrivers Series",
+      "groups": [
+        {
+          "th": "ไขควงตอก และไขควงแม่เหล็ก",
+          "en": "Impact & Magnetic Screwdrivers",
+          "mat": "CR-V 6150 / SK-55",
+          "items": [
+            {
+              "code": "W0345A",
+              "th": "ไขควงตอก แม่เหล็ก",
+              "en": "Screw Driver",
+              "size": "6X100mm",
+              "pcs": "12/144",
+              "meas": "47X24X21.5cm",
+              "kg": "24kg",
+              "mat": "CR-V 6150",
+              "notes_th": "ปลายหัวรมดำและมีแม่เหล็ก · ด้ามโพลิเมอร์กันไขควงติดเหล็กรองรับการตอก"
+            },
+            {
+              "code": "W0345B",
+              "th": "ไขควงตอก แม่เหล็ก",
+              "en": "Screw Driver",
+              "size": "6X125mm",
+              "pcs": "12/144",
+              "meas": "47X27X21.5cm",
+              "kg": "25.5kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W0345C",
+              "th": "ไขควงตอก แม่เหล็ก",
+              "en": "Screw Driver",
+              "size": "6X150mm",
+              "pcs": "12/144",
+              "meas": "47X29X21.5cm",
+              "kg": "27kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W0345E",
+              "th": "ไขควงตอก แม่เหล็ก",
+              "en": "Screw Driver",
+              "size": "8X150mm",
+              "pcs": "12/120",
+              "meas": "34X30X24.5cm",
+              "kg": "22kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W0345F",
+              "th": "ไขควงตอก แม่เหล็ก",
+              "en": "Screw Driver",
+              "size": "8X200mm",
+              "pcs": "12/120",
+              "meas": "39X34X26cm",
+              "kg": "30kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W0345H",
+              "th": "ไขควงตอก แม่เหล็ก",
+              "en": "Screw Driver",
+              "size": "8X300mm",
+              "pcs": "12/120",
+              "meas": "45X34X24.5cm",
+              "kg": "28kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W0393A",
+              "th": "ไขควงแม่เหล็กแฉก/แบน หัว 3 มม.",
+              "en": "Screw Driver",
+              "size": "3X75mm",
+              "pcs": "30/1800",
+              "meas": "47X33X30.5cm",
+              "kg": "31kg",
+              "mat": "SK-55",
+              "notes_th": "ด้ามจับโพลิเมอร์โปร่งใส ปลายรมดำและติดแม่เหล็ก"
+            }
+          ]
+        },
+        {
+          "th": "ชุดไขควงเปลี่ยนหัว และไขควงพับพกพา",
+          "en": "Precision Tool Kits & Folding Screwdrivers",
+          "mat": "CR-V 6150",
+          "items": [
+            {
+              "code": "W2089A",
+              "th": "ชุดไขควงเปลี่ยนหัว 7 แบบ แฉก/แบน",
+              "en": "Metalive Precision Tool Kit",
+              "size": "PH0 PH1 PH2 PH3 · แบน 5.0 6.0 7.0",
+              "pcs": "12/144",
+              "meas": "48X34X39cm",
+              "kg": "30kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0352A",
+              "th": "ชุดไขควงเปลี่ยนหัว 7 แบบ",
+              "en": "Metalive Precision Tool Kit",
+              "size": "T3 T5 T6 T7 · แฉก 2.0 · แบน 1.5 · Y 3.0",
+              "pcs": "12/288",
+              "meas": "54X43X46cm",
+              "kg": "21kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0179A",
+              "th": "ชุดไขควงพับแบบพกพา หัวแฉก/แบน",
+              "en": "Metalive Precision Tool Kit",
+              "size": "แฉก PH0 PH1 PH2 PH3 · แบน 3.0 5.0 6.0 7.0",
+              "pcs": "12/120",
+              "meas": "56X37X43cm",
+              "kg": "31kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W3492",
+              "th": "ชุดไขควงแม่เหล็กเปลี่ยนหัว 12 ชิ้น",
+              "en": "Adjustable Metalive Precision Tool Kit",
+              "size": "แฉก PH0 PH1 PH3 · แบน 3.0 5.0 6.0 · T15 T20 PZ1 PZ2",
+              "pcs": "6/144",
+              "meas": "70X47X36.5cm",
+              "kg": "30.5kg",
+              "mat": "CR-V 6150",
+              "notes_th": "มีช่องเก็บหัวไขควงในด้าม ติดแม่เหล็ก"
+            },
+            {
+              "code": "W0407",
+              "th": "ชุดไขควงพับแบบพกพา เล็ก",
+              "en": "Metalive Precision Tool Kit",
+              "size": "แฉก 2.5 3.5 4.5 5.5 · แบน 2.5 3.5 4.5 5.5",
+              "pcs": "15/180",
+              "meas": "53X37X42.5cm",
+              "kg": "27kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0568",
+              "th": "ชุดไขควง/บล็อกพับแบบพกพา 12 ชิ้น",
+              "en": "12pc Socket & Screwdriver Bits Set",
+              "size": "บล็อก 1/4\" เบอร์ 6 8 9 10 มม. · แฉก PH0 PH1 PH2 PH3 · แบน 3.0 4.0 5.0",
+              "pcs": "6/24",
+              "meas": "36X23.5X34.5cm",
+              "kg": "10.5kg",
+              "mat": "CR-V 6150",
+              "notes_th": "ด้ามเก็บอลูมิเนียมอัลลอย ผ่านออกซิเดชั่น กันสนิม เหมาะสำหรับพกพา"
+            }
+          ]
+        },
+        {
+          "th": "ชุดไขควงซ่อมอิเล็กทรอนิกส์ / นาฬิกา / มือถือ",
+          "en": "Precision & Telecom Screwdriver Sets",
+          "mat": "CR-V 6150 / S2",
+          "items": [
+            {
+              "code": "W0276",
+              "th": "ชุดไขควงหัวหกเหลี่ยมดาว Torx",
+              "en": "Metalive Precision Tool Kit",
+              "size": "T3 T4 T5 T6H T7H T8H T9H T15H",
+              "pcs": "6/144",
+              "meas": "",
+              "kg": "",
+              "mat": "CR-V 6150",
+              "notes_th": "เหมาะกับอุปกรณ์อิเล็กทรอนิกส์ คอมพิวเตอร์ มือถือ ซ่อมนาฬิกา"
+            },
+            {
+              "code": "W0291B",
+              "th": "ชุดไขควงสลับหัว 7 ชิ้น",
+              "en": "7pcs Telecommunication Tools Set",
+              "size": "T4-H1.5 · T5-T8 · T6-T10 · T7-H2.0 · PH00-1.5 · PH0-3.0",
+              "pcs": "6/144",
+              "meas": "66X33.5X43.5cm",
+              "kg": "23kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W3476",
+              "th": "ชุดไขควง 45 ชิ้น ซ่อมอุปกรณ์อิเล็กทรอนิกส์",
+              "en": "45pcs Telecom Set",
+              "size": "T3-T20 · H0.9-H4.0 · PH000-PH2 · แบน 1.0-4.0 · M2.5-M5.5",
+              "pcs": "50",
+              "meas": "59.5X37.5X20.5cm",
+              "kg": "18.7kg",
+              "mat": "CR-V 6150"
+            },
+            {
+              "code": "W2580A",
+              "th": "ชุดไขควงซ่อม 14 ชิ้น",
+              "en": "14pcs Screw Drivers Set",
+              "size": "T2 T3 T4 T5 T6 · PH000 PH00 PH0 · แบน 2.0 2.3 · Y0 · M2.6",
+              "pcs": "14/96",
+              "meas": "41.5X40X41cm",
+              "kg": "12kg",
+              "mat": "CR-V 6150",
+              "notes_th": "ความแข็ง HRC54-56 · เปลี่ยนหัวได้ 12 แบบ มีที่คีบจับหัวไขควง"
+            },
+            {
+              "code": "W0582",
+              "th": "ชุดไขควง Precision 22 ชิ้น",
+              "en": "22pcs Precision Screw Drivers Set",
+              "size": "T5-T20 · แบน 1.5-4.0 · PH000 PH00 PH0 PH1 · Y3.0 · 2.6mm",
+              "pcs": "10/40",
+              "meas": "35X31X17cm",
+              "kg": "8kg",
+              "mat": "CR-V 6150",
+              "notes_th": "ด้ามจับ TPR+PP · หัวไขควง 20 แบบ"
+            },
+            {
+              "code": "W0411A",
+              "th": "ชุดไขควงกระเป๋าช่างพกพา 9 ชิ้น",
+              "en": "9pcs Screw Drivers Set",
+              "size": "PH0 PH1 PH2 PH3 · แบน 3.0 4.0 5.0 6.0",
+              "pcs": "6/72",
+              "meas": "54X38X48cm",
+              "kg": "21kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0356A",
+              "th": "ชุดไขควงซ่อมคอม ซ่อมมือถือ 34 ชิ้น",
+              "en": "34pcs Telecom Set",
+              "size": "หัวย M2.6 PZ0-H4 · H1.5-3.0 · T3-T10 · หัวจุด หัวแบนงอ หัวเข็มแหลม",
+              "pcs": "6/96",
+              "meas": "45X34X34cm",
+              "kg": "23kg",
+              "mat": "S2 เหล็กกล้าเครื่องมือ"
+            },
+            {
+              "code": "W0557",
+              "th": "ชุดไขควงซ่อม 6 ชิ้น หัวแฉก/แบน",
+              "en": "6pcs Screw Drivers Set",
+              "size": "PH0 PH1 · แบน 1.4 2.0 2.4 3.0",
+              "pcs": "24/96",
+              "meas": "36.5X30X31cm",
+              "kg": "13kg",
+              "mat": "CR-V 6150",
+              "notes_th": "ด้ามจับชุบโครเมี่ยม เหมาะกับซ่อมนาฬิกา คอม มือถือ"
+            }
+          ]
+        },
+        {
+          "th": "ดอกถอนเกลียว และหัวไขควงดอกสว่าน",
+          "en": "Screw/Pipe Extractors & Driver Bits",
+          "mat": "SK-55 / CR-V / S2",
+          "items": [
+            {
+              "code": "W3313A",
+              "th": "ถอนเกลียวซ้าย 4 หุน",
+              "en": "Pipe Extractor",
+              "size": "4 หุน = 1/2 นิ้ว",
+              "pcs": "20/200",
+              "meas": "68X19.5X34cm",
+              "kg": "36kg",
+              "mat": "SK-55",
+              "notes_th": "ใช้ถอนก๊อกน้ำที่หักคาท่อน้ำหรือเกลียวที่คาท่ออยู่"
+            },
+            {
+              "code": "W3313B",
+              "th": "ถอนเกลียวซ้าย 6 หุน",
+              "en": "Pipe Extractor",
+              "size": "6 หุน = 3/4 นิ้ว",
+              "pcs": "10/100",
+              "meas": "68X19.5X25.5cm",
+              "kg": "31kg",
+              "mat": "SK-55",
+              "notes_th": "ตัว 6 หุน ถอนท่อหักขนาด 4 หุนได้"
+            },
+            {
+              "code": "W0618",
+              "th": "หัวไขควงดอกสว่านหัวแฉก 10 ชิ้น",
+              "en": "10pcs Screw Driver Bit Set",
+              "size": "2# 65mm",
+              "pcs": "10/100",
+              "meas": "27X18X42.5cm",
+              "kg": "18kg",
+              "mat": "S2",
+              "notes_th": "ความแข็ง HRC58-62 มืออาชีพ ขันได้เร็วและง่าย"
+            },
+            {
+              "code": "W0611",
+              "th": "ถอนเกลียวซ้ายชุด 5 ตัว",
+              "en": "Screws Extractor",
+              "size": "3-6mm(1/8\"-1/4\") · 6-8mm(1/4\"-5/16\") · 8-11mm(5/16\"-7/16\") · 11-14mm(7/16\"-9/16\") · 14-18mm(9/16\"-3/4\")",
+              "pcs": "10/100",
+              "meas": "59X22.5X39.5cm",
+              "kg": "14kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W0612",
+              "th": "ถอนเกลียวซ้ายชุด 6 ตัว",
+              "en": "Screws Extractor",
+              "size": "3-6mm · 6-8mm · 8-11mm · 11-14mm · 14-18mm · 18-25mm(3/4\"-1\")",
+              "pcs": "10/100",
+              "meas": "59X22.5X39.5cm",
+              "kg": "14kg",
+              "mat": "CR-V"
+            },
+            {
+              "code": "W3314",
+              "th": "ถอนหัวสกรู หัวน็อต ตะปู",
+              "en": "Screws Extractor",
+              "size": "1# 3-5mm · 2# 4-8mm · 3# 5-10mm · 4# 6-12mm",
+              "pcs": "12/96",
+              "meas": "50.5X44X38cm",
+              "kg": "9kg",
+              "notes_th": "ใช้ถอนเกลียว ท่อ น็อตที่ขาดได้เร็ว ง่าย และสะดวก"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
