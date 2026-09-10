@@ -59,7 +59,15 @@
   font-size:.9rem;font-weight:600;color:var(--ink-2);font-family:inherit;transition:.15s}
 .fchip:hover{border-color:var(--amber)}
 .fchip.on{background:var(--navy);color:var(--amber);border-color:var(--navy)}
-.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,270px));justify-content:center;gap:16px;margin-top:8px}
+.catgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:18px}
+.catcard{display:block;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);color:var(--ink);text-decoration:none;transition:border-color .18s,box-shadow .18s,transform .18s}
+.catcard:hover{border-color:var(--amber);box-shadow:var(--shadow);transform:translateY(-2px)}
+.catcard .ic{font-size:1.7rem;display:block;margin-bottom:10px}
+.catcard h3{font-size:1.08rem;margin:0 0 8px}
+.catcard h3 small{display:block;font-family:"Anuphan";font-weight:500;font-size:.76rem;color:var(--ink-mute);letter-spacing:.04em;text-transform:uppercase;margin-top:2px}
+.catcard p{font-size:.86rem;color:var(--ink-dim);margin:0 0 14px}
+.catcard .cnt{font-family:"Kanit";font-size:.86rem;color:var(--amber-dark)}
+.sec-sub{color:var(--ink-dim);font-size:.9rem;margin:-4px 0 0;max-width:780px}
 .tool{display:flex;flex-direction:column;overflow:hidden}
 .tool .thumb{aspect-ratio:5/3;display:grid;place-items:center;background:radial-gradient(120% 120% at 50% 0%,var(--surface-2),var(--bg-soft))}
 .tool .thumb .glyph{font-size:2.9rem;filter:drop-shadow(0 8px 14px rgba(16,26,48,.18))}
@@ -75,8 +83,8 @@
 .why-grid .it b{display:block;font-family:"Kanit";font-size:1.02rem;margin-bottom:4px;color:#7fe0a9}
 .why-grid .it p{color:#c2cbde;font-size:.88rem;margin:0}
 .brand-note{margin:26px 0 0;color:var(--ink-mute);font-size:.85rem}
-@media(max-width:860px){.tgrid{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:1fr}}
-@media(max-width:480px){.tgrid{grid-template-columns:1fr}}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.catgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -86,20 +94,45 @@
   <div class="wrap">
     <span class="eyebrow" data-th="ผู้นำเข้าแต่เพียงผู้เดียวในไทย" data-en="Exclusive importer in Thailand">ผู้นำเข้าแต่เพียงผู้เดียวในไทย</span>
     <h1 data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS hand tools">เครื่องมือช่าง WYNNTOOLS</h1>
-    <p class="muted" style="margin:0;max-width:640px" data-th="คีม ประแจ อุปกรณ์งานไฟฟ้า เครื่องมือวัด งานตัด ช่างไม้ ช่างยนต์ — ของแท้จากผู้นำเข้าโดยตรง ราคาปลีก-ส่ง กดที่สินค้าเพื่อเช็คราคาทาง LINE ได้เลย" data-en="Pliers, wrenches, electrical tools, measuring, cutting, carpentry & automotive — genuine stock from the direct importer. Tap any item to ask price on LINE.">คีม ประแจ อุปกรณ์งานไฟฟ้า เครื่องมือวัด งานตัด ช่างไม้ ช่างยนต์ — ของแท้จากผู้นำเข้าโดยตรง ราคาปลีก-ส่ง กดที่สินค้าเพื่อเช็คราคาทาง LINE ได้เลย</p>
+    <p class="muted" style="margin:0;max-width:640px" data-th="คีม ประแจ ไขควง และเครื่องมือช่างไฟฟ้า WYNN'S TOOLS (วินส์ทูลส์) รวม 349 รายการ พร้อมรหัสสินค้าและสเปคครบ — ของแท้จากผู้นำเข้าโดยตรง กดที่รหัสเพื่อเช็คราคาทาง LINE" data-en="Pliers, wrenches, electrical tools, measuring, cutting, carpentry & automotive — genuine stock from the direct importer. Tap any item to ask price on LINE.">คีม ประแจ อุปกรณ์งานไฟฟ้า เครื่องมือวัด งานตัด ช่างไม้ ช่างยนต์ — ของแท้จากผู้นำเข้าโดยตรง ราคาปลีก-ส่ง กดที่สินค้าเพื่อเช็คราคาทาง LINE ได้เลย</p>
     <div class="trust">
       <span class="badge" data-th="✔ ของแท้ 100%" data-en="✔ 100% genuine">✔ ของแท้ 100%</span>
       <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail & wholesale">🏷️ ราคาปลีก-ส่ง</span>
       <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Ships nationwide">🚚 ส่งทั่วไทย</span>
     </div>
-    <div class="filters" id="filters"></div>
   </div>
 </section>
 
 <section style="padding-top:20px">
   <div class="wrap">
-    <h2 class="vh" data-th="รายการเครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS tool list">รายการเครื่องมือช่าง WYNNTOOLS</h2>
-    <div class="tgrid" id="tgrid"></div>
+    <h2 data-th="เลือกหมวดเครื่องมือ" data-en="Browse by category">เลือกหมวดเครื่องมือ</h2>
+    <p class="sec-sub" data-th="ข้อมูลทั้งหมดถอดมาจากแคตตาล็อก WYNN'S TOOLS ฉบับภาษาไทย ทุกรายการมีรหัสสินค้า ขนาด จำนวนต่อลัง และเกรดเหล็กระบุไว้ — กดที่รหัสในหน้าหมวดเพื่อถามราคาทาง LINE ได้ทันที" data-en="Everything here is taken from the Thai WYNN'S TOOLS catalogue — item numbers, sizes, carton quantities and steel grades. Tap any item number to ask its price on LINE.">ข้อมูลทั้งหมดถอดมาจากแคตตาล็อก WYNN'S TOOLS ฉบับภาษาไทย ทุกรายการมีรหัสสินค้า ขนาด จำนวนต่อลัง และเกรดเหล็กระบุไว้ — กดที่รหัสในหน้าหมวดเพื่อถามราคาทาง LINE ได้ทันที</p>
+    <div class="catgrid">
+      <a class="card catcard" href="tools-holding.html">
+        <span class="ic">🔧</span>
+        <h3>เครื่องมือประเภทจับยึด<small>Holding Tools Series</small></h3>
+        <p data-th="คีมมินิ คีมปากรวม คีมปากแหลม คีมตัด คีมล็อค คีมหนีบ-ถ่างแหวน ประแจจับท่อ ซีแคลมป์ และปากกาจับชิ้นงาน" data-en="Pliers of every kind, pipe wrenches, clamps and bench vises">คีมมินิ คีมปากรวม คีมปากแหลม คีมตัด คีมล็อค คีมหนีบ-ถ่างแหวน ประแจจับท่อ ซีแคลมป์ และปากกาจับชิ้นงาน</p>
+        <span class="cnt">97 <span data-th="รายการ" data-en="items">รายการ</span> →</span>
+      </a>
+      <a class="card catcard" href="tools-electrical.html">
+        <span class="ic">⚡</span>
+        <h3>เครื่องมือกลุ่มช่างไฟฟ้า<small>Electrical Tools Series</small></h3>
+        <p data-th="คีมตัด-ปอก-ย้ำสายไฟ คีมย้ำหางปลา คีมเข้าสายแลน มิเตอร์ดิจิตอล หัวแร้งบัดกรี และปืนเป่าลมร้อน" data-en="Strippers, crimpers, multimeters, soldering irons and heat guns">คีมตัด-ปอก-ย้ำสายไฟ คีมย้ำหางปลา คีมเข้าสายแลน มิเตอร์ดิจิตอล หัวแร้งบัดกรี และปืนเป่าลมร้อน</p>
+        <span class="cnt">46 <span data-th="รายการ" data-en="items">รายการ</span> →</span>
+      </a>
+      <a class="card catcard" href="tools-wrenches.html">
+        <span class="ic">🔩</span>
+        <h3>เครื่องมือประเภทประแจ<small>Wrenches Tools Series</small></h3>
+        <p data-th="ประแจเลื่อน ปากตายแหวนข้าง แหวนคู่ แหวนฟรี 72 เฟือง ลูกบล็อก ด้ามบล็อก ประแจหางหนู และประแจหกเหลี่ยม" data-en="Adjustable, combination, ratchet and socket wrenches, plus hex keys">ประแจเลื่อน ปากตายแหวนข้าง แหวนคู่ แหวนฟรี 72 เฟือง ลูกบล็อก ด้ามบล็อก ประแจหางหนู และประแจหกเหลี่ยม</p>
+        <span class="cnt">179 <span data-th="รายการ" data-en="items">รายการ</span> →</span>
+      </a>
+      <a class="card catcard" href="tools-screwdrivers.html">
+        <span class="ic">🪛</span>
+        <h3>เครื่องมือประเภทไขควง<small>Screwdrivers Series</small></h3>
+        <p data-th="ไขควงตอกแม่เหล็ก ชุดไขควงเปลี่ยนหัว ชุดซ่อมคอม-มือถือ-นาฬิกา และดอกถอนเกลียวซ้าย" data-en="Impact drivers, bit sets, precision repair kits and screw extractors">ไขควงตอกแม่เหล็ก ชุดไขควงเปลี่ยนหัว ชุดซ่อมคอม-มือถือ-นาฬิกา และดอกถอนเกลียวซ้าย</p>
+        <span class="cnt">27 <span data-th="รายการ" data-en="items">รายการ</span> →</span>
+      </a>
+    </div>
 
     <div class="why-band">
       <h2 data-th="ทำไมต้องซื้อ WYNNTOOLS กับ ม ทวีภัณฑ์" data-en="Why buy WYNNTOOLS from M.T.T.">ทำไมต้องซื้อ WYNNTOOLS กับ ม ทวีภัณฑ์</h2>
@@ -124,90 +157,7 @@
 <script src="../assets/js/catalog.js?v=2"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
-/* ---------- แคตตาล็อกเครื่องมือ WYNNTOOLS (อ้างอิงหมวดจาก wynnstoolsthailand.com)
-   ยังไม่ผูกตะกร้า/ราคา — ทุกชิ้นกด "เช็คราคา" แล้ว prefill ข้อความทัก LINE ---------- */
-const TCATS = [
-  { key: "pliers",  th: "คีม",              en: "Pliers" },
-  { key: "wrench",  th: "ประแจ",            en: "Wrenches" },
-  { key: "electric",th: "งานไฟฟ้า",         en: "Electrical" },
-  { key: "measure", th: "เครื่องมือวัด",     en: "Measuring" },
-  { key: "cutting", th: "งานตัด",           en: "Cutting" },
-  { key: "wood",    th: "ช่างไม้",           en: "Carpentry" },
-  { key: "auto",    th: "ช่างยนต์",          en: "Automotive" },
-];
-const TOOLS = [
-  { cat:"pliers",  glyph:"🔧", th:"คีมปอกสายไฟ WYNN'S 0.6–2.6 ตร.มม.", en:"Wire stripping pliers 0.6–2.6 mm²",
-    dth:"ปอกสายไฟได้ 7 ขนาดในตัวเดียว ใบมีดคม ด้ามจับถนัดมือ", den:"Strips 7 wire gauges, sharp blades, comfy grip" },
-  { cat:"pliers",  glyph:"🦜", th:"คีมปากนกแก้ว", en:"End cutting pliers",
-    dth:"ตัดลวด ถอนตะปู ปากชุบแข็งพิเศษ", den:"Cuts wire, pulls nails, hardened jaws" },
-  { cat:"pliers",  glyph:"🗜️", th:"คีมถ่าง–คีมหนีบแหวนล็อก", en:"Snap ring pliers",
-    dth:"ใส่/ถอดแหวนล็อกทั้งถ่างและหนีบ", den:"Internal & external circlip work" },
-  { cat:"pliers",  glyph:"🔌", th:"คีมย้ำหางปลา–ย้ำสายไฟ", en:"Terminal crimping pliers",
-    dth:"ย้ำแน่น ไม่หลวง งานไฟนิ่งกว่า", den:"Tight, reliable crimps every time" },
-  { cat:"wrench",  glyph:"🔩", th:"ชุดประแจหกเหลี่ยม (ประแจแอล)", en:"Hex key set (Allen keys)",
-    dth:"ครบไซซ์ยอดนิยม เหล็กชุบแข็ง หัวไม่เยิน", den:"Full metric sizes, hardened steel" },
-  { cat:"wrench",  glyph:"🛠️", th:"ประแจแหวนข้าง–ปากตาย", en:"Combination wrenches",
-    dth:"ขนาดมาตรฐาน มม. จับแน่นไม่รูดมุม", den:"Metric sizes, no rounded bolts" },
-  { cat:"electric",glyph:"⚡", th:"แคลมป์มิเตอร์ดิจิตอล", en:"Digital clamp meter",
-    dth:"วัดกระแส/แรงดันไฟ จอชัด พร้อมถ่านในกล่อง", den:"Current & voltage, batteries included" },
-  { cat:"electric",glyph:"🪛", th:"ไขควงเช็คไฟ", en:"Voltage tester screwdriver",
-    dth:"เช็คไฟรั่ว-ไฟมา ก่อนจับทุกครั้ง ปลอดภัยกว่า", den:"Check live wires before you touch" },
-  { cat:"electric",glyph:"🔥", th:"หัวแร้งบัดกรี", en:"Soldering iron",
-    dth:"ร้อนไว บัดกรีเนียน งานอิเล็กทรอนิกส์-งานสายไฟ", den:"Fast heat-up, clean joints" },
-  { cat:"measure", glyph:"📏", th:"ตลับเมตร", en:"Tape measure",
-    dth:"เทปเหนียว ตัวเลขชัด ล็อกแน่น", den:"Tough tape, clear markings, solid lock" },
-  { cat:"measure", glyph:"📐", th:"ระดับน้ำ", en:"Spirit level",
-    dth:"หลอดชัด เช็คระดับ-ดิ่งแม่นยำ", den:"Accurate level & plumb vials" },
-  { cat:"cutting", glyph:"🪚", th:"โครงเลื่อยตัดเหล็ก 12 นิ้ว", en:"Hacksaw frame 12″",
-    dth:"ใช้กับใบเลื่อย 12 นิ้ว/300 มม. โครงแน่น ขึงใบตึง", den:"Fits 12″/300 mm blades, rigid frame" },
-  { cat:"cutting", glyph:"✂️", th:"กรรไกรตัดสังกะสี", en:"Tin snips",
-    dth:"ตัดแผ่นโลหะบาง คมทน ออกแรงน้อย", den:"Cuts sheet metal with less effort" },
-  { cat:"wood",    glyph:"🔨", th:"ค้อนหงอน", en:"Claw hammer",
-    dth:"หัวชุบแข็ง ด้ามกันลื่น ตอก-ถอนจบในตัวเดียว", den:"Hardened head, anti-slip grip" },
-  { cat:"wood",    glyph:"🪵", th:"สิ่วไม้", en:"Wood chisels",
-    dth:"คมตรง ลับง่าย งานเข้าไม้เนี้ยบ", den:"Keen edge, easy to sharpen" },
-  { cat:"auto",    glyph:"🧰", th:"ชุดบล็อก + ด้ามฟรี", en:"Socket set & ratchet",
-    dth:"ลูกบล็อกครบไซซ์ ด้ามฟรีหมุนคล่อง งานยนต์จบ", den:"Full socket range with smooth ratchet" },
-  { cat:"auto",    glyph:"🔧", th:"ประแจเลื่อน", en:"Adjustable wrench",
-    dth:"ปรับขนาดได้ ปากขยับแน่นไม่คลอน", den:"Wide jaw range, no wobble" },
-];
-
-function L(){ return (window.MTT && window.MTT.getLang()) || "th"; }
-let activeCat = "all";
-
-function catName(key){
-  const th=L()==="th";
-  if(key==="all") return th?"ทั้งหมด":"All";
-  const c=TCATS.find(x=>x.key===key);
-  return c ? (th?c.th:c.en) : key;
-}
-function renderFilters(){
-  const cats=["all", ...TCATS.map(c=>c.key)];
-  document.getElementById("filters").innerHTML=cats.map(k=>
-    `<button type="button" class="fchip ${k===activeCat?"on":""}" aria-pressed="${k===activeCat}" onclick="setCat('${k}')">${catName(k)}</button>`
-  ).join("");
-}
-function setCat(k){ activeCat=k; renderFilters(); renderGrid(); }
-
-function renderGrid(){
-  const th=L()==="th";
-  const list=TOOLS.filter(t=>activeCat==="all"||t.cat===activeCat);
-  const el=document.getElementById("tgrid");
-  if(!list.length){ el.innerHTML=`<div class="empty">${th?"ยังไม่มีสินค้าในหมวดนี้ — เร็ว ๆ นี้":"No items yet — coming soon"}</div>`; return; }
-  el.innerHTML=list.map(t=>{
-    const name=th?t.th:t.en;
-    const ask=CATALOG.lineAsk((th?"สอบถามราคา ":"Price for ")+ (th?t.th:t.en) +" (WYNNTOOLS)");
-    return `<a class="card tool" href="${ask}" target="_blank" rel="noopener">
-      <div class="thumb"><span class="glyph">${t.glyph}</span></div>
-      <div class="body"><h3>${name}</h3>
-      <p class="desc">${th?t.dth:t.den}</p>
-      <div class="row"><span class="ask">${th?"ปลีก-ส่ง ทักถามได้":"Retail & bulk"}</span><span class="btn btn-primary btn-sm">${th?"เช็คราคา":"Ask price"}</span></div></div>
-    </a>`;
-  }).join("");
-}
-function renderAll(){ renderFilters(); renderGrid(); }
-document.addEventListener("langchange", renderAll);
-renderAll();
+document.querySelectorAll("[data-line-ask]").forEach(function(a){ a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask")); });
 </script>
 <script src="../assets/js/layout.js?v=2"></script>
 <script src="/_vercel/insights/script.js" defer></script>
