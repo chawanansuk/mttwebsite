@@ -48,7 +48,6 @@
   "duration": "PT12S"
 }
 </script>
-<script src="../assets/js/vendor/qrcode.min.js"></script>
 <style>
 .breadcrumb{background:var(--surface);border-bottom:1px solid var(--line);font-size:.86rem}
 .breadcrumb .wrap{display:flex;align-items:center;gap:8px;padding:12px 22px;color:var(--ink-mute)}
@@ -190,11 +189,9 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
 .pay{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center;position:sticky;top:80px;box-shadow:var(--shadow-sm)}
 .pay h3{margin-bottom:4px;font-size:1.15rem}
 .pay p.sub{color:var(--ink-mute);font-size:.85rem;margin:0 0 16px}
-#qrcode{display:inline-block;padding:14px;background:#fff;border:1px solid var(--line);border-radius:14px;min-height:180px;min-width:180px}
-#qrcode img,#qrcode canvas{display:block}
-.pay .qr-amt{font-family:"Kanit";font-weight:700;font-size:1.5rem;margin:14px 0 2px}
-.pay .promptpay-id{font-size:.82rem;color:var(--ink-mute)}
-.pay .qr-hint{font-size:.8rem;color:var(--ink-dim);margin-top:10px;line-height:1.5}
+.pay .paysteps{margin:14px 0 0;padding-left:20px;font-size:.88rem;color:var(--ink-2);text-align:left}
+.pay .paysteps li{padding:5px 0}
+.pay .pay-hint{font-size:.8rem;color:var(--ink-dim);margin-top:10px;line-height:1.5}
 .pay .noqr{color:var(--ink-mute);font-size:.9rem;padding:40px 10px}
 .faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
 .readnext{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
@@ -449,16 +446,18 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
       </div>
 
       <div class="pay">
-        <h3 data-th="โอนผ่าน PromptPay" data-en="Pay via PromptPay">โอนผ่าน PromptPay</h3>
-        <p class="sub" data-th="สแกน QR ด้วยแอปธนาคาร ยอดจะตรงอัตโนมัติ" data-en="Scan with your banking app — amount is prefilled.">สแกน QR ด้วยแอปธนาคาร ยอดจะตรงอัตโนมัติ</p>
-        <div id="qrcode"><div class="noqr" data-th="เพิ่มสินค้าเพื่อสร้าง QR" data-en="Add items to generate QR">เพิ่มสินค้าเพื่อสร้าง QR</div></div>
-        <div class="qr-amt" id="qrAmt" style="display:none">฿0</div>
-        <div class="promptpay-id" id="ppId"></div>
+        <h3 data-th="สั่งซื้อและชำระเงิน" data-en="Ordering &amp; payment">สั่งซื้อและชำระเงิน</h3>
+        <p class="sub" data-th="กดปุ่มด้านซ้ายเพื่อคัดลอกออเดอร์แล้วส่งทาง LINE ทีมงานยืนยันสต็อกและค่าส่งก่อน แล้วค่อยชำระเงิน" data-en="Copy your order with the button on the left and send it on LINE. We confirm stock and shipping first, then you pay.">กดปุ่มด้านซ้ายเพื่อคัดลอกออเดอร์แล้วส่งทาง LINE ทีมงานยืนยันสต็อกและค่าส่งก่อน แล้วค่อยชำระเงิน</p>
+        <ol class="paysteps">
+          <li data-th="ส่งออเดอร์ทาง LINE — แจ้งรุ่น สี จำนวน และที่อยู่จัดส่ง" data-en="Send the order on LINE — model, colour, quantity and delivery address">ส่งออเดอร์ทาง LINE — แจ้งรุ่น สี จำนวน และที่อยู่จัดส่ง</li>
+          <li data-th="รับยอดรวมพร้อมค่าส่งตามปลายทาง และวิธีชำระเงินที่สะดวก" data-en="Get the total with shipping to your address, and the payment options">รับยอดรวมพร้อมค่าส่งตามปลายทาง และวิธีชำระเงินที่สะดวก</li>
+          <li data-th="ชำระเงินแล้วส่งสลิปกลับทาง LINE หรือเลือกเก็บเงินปลายทาง" data-en="Pay and send the slip back on LINE, or choose cash on delivery">ชำระเงินแล้วส่งสลิปกลับทาง LINE หรือเลือกเก็บเงินปลายทาง</li>
+        </ol>
         <div class="pay-alt" id="payAlt" style="display:none">
-          <div class="lbl" data-th="หรือโอนเข้าบัญชีธนาคาร" data-en="Or transfer to bank account">หรือโอนเข้าบัญชีธนาคาร</div>
+          <div class="lbl" data-th="โอนเข้าบัญชีธนาคาร" data-en="Bank transfer">โอนเข้าบัญชีธนาคาร</div>
           <div class="acct"><b data-shop="bank">—</b><button class="copy-btn" onclick="copyBank()" data-th="คัดลอก" data-en="Copy">คัดลอก</button></div>
         </div>
-        <p class="qr-hint" data-th="โอนแล้วส่งสลิปยืนยันทาง LINE เพื่อแจ้งจัดส่งได้เลย" data-en="After paying, send the slip on LINE to confirm shipping.">โอนแล้วส่งสลิปยืนยันทาง LINE เพื่อแจ้งจัดส่งได้เลย</p>
+        <p class="pay-hint" data-th="ยืนยันยอดกับทีมงานก่อนโอนทุกครั้ง เพื่อให้เราจับคู่การโอนกับออเดอร์ของคุณได้ถูกต้อง" data-en="Always confirm the amount with us before transferring, so we can match your payment to your order.">ยืนยันยอดกับทีมงานก่อนโอนทุกครั้ง เพื่อให้เราจับคู่การโอนกับออเดอร์ของคุณได้ถูกต้อง</p>
       </div>
     </div>
   </div>
@@ -480,7 +479,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
       <details class="faq-card">
         <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
         <h3 data-th="การชำระเงิน" data-en="Payment">การชำระเงิน</h3></summary>
-        <p data-th="โอนผ่าน PromptPay / โอนธนาคาร หรือเก็บเงินปลายทาง เลือกได้ตามสะดวก" data-en="PromptPay / bank transfer, or cash on delivery. Your choice.">โอนผ่าน PromptPay / โอนธนาคาร หรือเก็บเงินปลายทาง เลือกได้ตามสะดวก</p>
+        <p data-th="ส่งออเดอร์ทาง LINE ทีมงานแจ้งยอดรวมและค่าส่งก่อน แล้วเลือกโอนธนาคารหรือเก็บเงินปลายทางก็ได้" data-en="Send the order on LINE — we quote the total with shipping, then you pay by transfer or cash on delivery.">ส่งออเดอร์ทาง LINE ทีมงานแจ้งยอดรวมและค่าส่งก่อน แล้วเลือกโอนธนาคารหรือเก็บเงินปลายทางก็ได้</p>
       </details>
       <details class="faq-card">
         <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
@@ -534,7 +533,7 @@ const COLOR_KEYS = new Set(PRODUCT.variants.flatMap(v=>v.colors.map(c=>v.key+":"
 Cart.colors().forEach(k=>{ if(!COLOR_KEYS.has(k)) Cart.toggleColor(k); });
 function colorOf(key){ const [vk,ck]=key.split(":"); const v=PRODUCT.variants.find(x=>x.key===vk); const c=v&&v.colors.find(x=>x.key===ck); return c?{v,c}:null; }
 function variantsInCart(){ return PRODUCT.variants.filter(v=>v.options.some(o=>Cart.qty(o.id)>0)); }
-const CONFIG = { PROMPTPAY_ID: SHOP.PROMPTPAY_ID, LINE_URL: SHOP.LINE_URL };
+const CONFIG = { LINE_URL: SHOP.LINE_URL };
 
 /* จุดเด่นสินค้า (marketing copy เฉพาะหน้านี้) */
 const FEATURES = [
@@ -667,7 +666,6 @@ function renderCart(){
   document.getElementById("mcAmt").textContent="฿"+total.toLocaleString();
   document.getElementById("mobileCta").classList.toggle("show", total>0);
   document.body.classList.toggle("mcta-on", total>0);
-  updateQR(total);
 }
 function cartTotal(){ let s=0; Cart.ids().forEach(id=>{const o=optById(id); if(o)s+=o.price*Cart.qty(id);}); return s; }
 
@@ -679,46 +677,6 @@ function pickSwatch(k){
   activeSwatch=k;
   const hit=colorOf(k); if(hit) document.documentElement.style.setProperty("--accent",hit.c.hex);
   renderSwatches();
-}
-
-/* ---------- PromptPay QR ---------- */
-function ppField(id,val){return id+String(val.length).padStart(2,"0")+val;}
-function crc16(str){
-  let crc=0xFFFF;
-  for(let i=0;i<str.length;i++){ crc^=str.charCodeAt(i)<<8;
-    for(let j=0;j<8;j++){ crc=(crc&0x8000)?((crc<<1)^0x1021):(crc<<1); crc&=0xFFFF; } }
-  return crc.toString(16).toUpperCase().padStart(4,"0");
-}
-function promptPayPayload(target,amount){
-  const s=(target||"").replace(/[^0-9]/g,"");
-  let acc;
-  if(s.length===13||s.length===15){ acc=ppField(s.length===13?"02":"03",s); }
-  else { let ph=s.replace(/^0/,"66").padStart(13,"0"); acc=ppField("01",ph); }
-  const merchant=ppField("29", ppField("00","A000000677010111")+acc);
-  let payload=ppField("00","01")+ppField("01","12")+merchant+ppField("53","764");
-  if(amount>0) payload+=ppField("54", Number(amount).toFixed(2));
-  payload+=ppField("58","TH");
-  payload+="6304";
-  return payload+crc16(payload);
-}
-function updateQR(total){
-  const th=L()==="th";
-  const box=document.getElementById("qrcode");
-  const amtEl=document.getElementById("qrAmt");
-  const alt=document.getElementById("payAlt");
-  if(total<=0){
-    box.innerHTML=`<div class="noqr">${th?"เพิ่มสินค้าเพื่อสร้าง QR":"Add items to generate QR"}</div>`;
-    amtEl.style.display="none"; if(alt) alt.style.display="none"; return;
-  }
-  amtEl.style.display="block"; amtEl.textContent="฿"+total.toLocaleString();
-  if(alt && SHOP.BANK_ACCOUNT) alt.style.display="block";
-  if(typeof QRCode==="undefined"){
-    box.innerHTML=`<div class="noqr">${th?("ระบบ QR ไม่พร้อม — โอนที่ "+CONFIG.PROMPTPAY_ID+" หรือสั่งผ่าน LINE"):("QR unavailable — transfer to "+CONFIG.PROMPTPAY_ID+" or order via LINE.")}</div>`;
-    return;
-  }
-  const payload=promptPayPayload(CONFIG.PROMPTPAY_ID,total);
-  box.innerHTML="";
-  new QRCode(box,{text:payload,width:190,height:190,correctLevel:QRCode.CorrectLevel.M});
 }
 
 /* ---------- order summary ---------- */
@@ -801,7 +759,6 @@ function applyPlaceholders(){
 function renderProduct(){
   renderHeroFrom(); renderFeatures(); renderSwatches(); renderPricing(); renderWholesale(); renderCart(); applyPlaceholders();
 }
-document.getElementById("ppId").textContent="PromptPay: "+CONFIG.PROMPTPAY_ID;
 document.addEventListener("langchange", renderProduct);
 document.addEventListener("cartchange", function(){ renderCart(); renderSwatches(); });
 pickSwatch("green");
@@ -823,7 +780,7 @@ renderProduct();
   const faq={
     "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":"จัดส่งอย่างไร","acceptedAnswer":{"@type":"Answer","text":"สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้"}},
-      {"@type":"Question","name":"ชำระเงินอย่างไร","acceptedAnswer":{"@type":"Answer","text":"โอนผ่าน PromptPay / โอนธนาคาร หรือเก็บเงินปลายทาง"}},
+      {"@type":"Question","name":"ชำระเงินอย่างไร","acceptedAnswer":{"@type":"Answer","text":"ส่งออเดอร์ทาง LINE ทีมงานแจ้งยอดรวมและค่าส่งก่อน แล้วเลือกชำระด้วยการโอนธนาคารหรือเก็บเงินปลายทาง"}},
       {"@type":"Question","name":"ได้มาตรฐานไหม","acceptedAnswer":{"@type":"Answer","text":"ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553 เติมแก๊สบิวเทนได้ ใช้งานซ้ำ"}},
       {"@type":"Question","name":"ต่างจากไฟฟู่ยี่ห้อ MOTO ยังไง","acceptedAnswer":{"@type":"Answer","text":"เป็นไฟแช็กหัวพ่นเจ็ทเหมือนกัน ต่างที่ซื้อตรงจากผู้นำเข้า ราคาต่อชิ้นประกาศไว้ชัด ยกกล่องเฉลี่ย 24 บาทต่อชิ้น และถามสต็อกกับหน้าร้านสำเพ็งได้โดยตรง หมายเหตุ MOTO เป็นเครื่องหมายการค้าของเจ้าของแบรนด์ ม.ทวีภัณฑ์ ไม่ได้ขายสินค้ายี่ห้อดังกล่าว"}},
       {"@type":"Question","name":"ใช้แทนรุ่น MT-013 หรือ MT-019 ได้ไหม","acceptedAnswer":{"@type":"Answer","text":"ใช้งานทดแทนกันได้ในงานทั่วไป แต่ขนาดตัวเครื่องไม่เท่ากันเป๊ะ รุ่นใหญ่ MTTFF01 สูง 11 ซม. รุ่นเล็ก MTTFF02 สูง 8 ซม. ถ้าอยากได้ขนาดใกล้ของเดิม ถ่ายรูปเทียบไม้บรรทัดส่งมาทาง LINE ได้"}},

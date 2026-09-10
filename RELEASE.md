@@ -4,7 +4,6 @@
 
 ## 1) ข้อมูลร้าน (บล็อกการเปิดจริง)
 - [ ] แก้ `assets/js/shop-config.js` ให้เป็นข้อมูลจริงทุกช่อง
-  - [ ] `PROMPTPAY_ID` — **ทดสอบสแกน QR โอนจริง 1 บาท** แล้วเช็คว่าเงินเข้าบัญชีถูกต้อง
   - [ ] `LINE_URL` + `LINE_ID` (ถ้ายังไม่มี LINE OA ให้สมัครก่อน)
   - [ ] `PHONE`, `PHONE_TEL`, `EMAIL`, `ADDRESS_TH`, `HOURS_TH`, `BANK_ACCOUNT`
   - [ ] `MAPS_EMBED_URL` — คัดลอกจาก Google Maps › แชร์ › ฝังแผนที่ › ค่าใน `src="..."`

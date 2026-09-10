@@ -1,5 +1,5 @@
 /* ============================================================
-   Smoke test — โหลดทุกหน้า ตรวจ JS error, ตะกร้า, QR, สลับภาษา,
+   Smoke test — โหลดทุกหน้า ตรวจ JS error, ตะกร้า, สลับภาษา,
    จำค่า, overflow แนวนอน (มือถือ), ขนาดไอคอน, toast/CTA
    รันด้วย: npm test
    ============================================================ */
@@ -172,7 +172,7 @@ console.log("\n[ products/index.html ]");
   await page.close();
 }
 
-/* ---- หน้าไฟฟู่: ตะกร้า + QR + จำค่า + toast ---- */
+/* ---- หน้าไฟฟู่: ตะกร้า + ขั้นตอนชำระเงิน + จำค่า + toast ---- */
 console.log("\n[ products/jet-lighter.html ]");
 {
   const page = await newPage({ width: 1280, height: 900 });
@@ -184,7 +184,7 @@ console.log("\n[ products/jet-lighter.html ]");
   await page.click(".add");
   await page.waitForTimeout(180);
   assert((await page.$eval("#cartAmt", (e) => e.textContent)) === "฿59", "เพิ่มลงตะกร้า ยอด ฿59");
-  assert(!!(await page.$("#qrcode canvas, #qrcode img")), "สร้าง QR สำเร็จ");
+  assert((await page.$$eval(".pay .paysteps li", (e) => e.length)) === 3, "มีขั้นตอนสั่งซื้อ/ชำระเงิน 3 ขั้น");
   assert((await page.$eval("#cartBadge", (e) => e.textContent)) === "1", "badge ตะกร้า = 1");
   assert(await page.$eval("#orderForm", (e) => getComputedStyle(e).display !== "none"), "ฟอร์มที่อยู่แสดงเมื่อมีของ");
   await page.reload({ waitUntil: "domcontentloaded" });

@@ -141,7 +141,6 @@
     fill("[data-shop=address]", S.ADDRESS_TH || "");
     fill("[data-shop=hours]", S.HOURS_TH || "");
     fill("[data-shop=bank]", S.BANK_ACCOUNT || "");
-    fill("[data-shop=promptpay]", S.PROMPTPAY_ID || "");
     // ค่าไหนว่าง → ซ่อนแถวนั้นทั้งแถว (กันโชว์ช่องเปล่า/ข้อมูลปลอม)
     [["email", S.EMAIL], ["phone-more", S.PHONE_MORE], ["bank", S.BANK_ACCOUNT]].forEach(function (pair) {
       if (!pair[1]) document.querySelectorAll("[data-shop=" + pair[0] + "]").forEach(function (el) {

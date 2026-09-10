@@ -10,13 +10,10 @@ window.SHOP = {
   tagline_th: "ศูนย์รวมเครื่องมือช่าง & ฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย",
   tagline_en: "Professional tools & hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand",
 
-  // ⚠️ ค่านี้ยังเป็น "ตัวอย่าง" — ต้องใส่ของจริงก่อนรับเงินโอน
-  PROMPTPAY_ID: "0812345678",                       // ⬅️ เบอร์พร้อมเพย์จริงของร้าน (QR จะพาเงินไปเบอร์นี้!)
-
   // ✅ LINE OA จริงของร้าน
   LINE_URL: "https://line.me/R/ti/p/@wynnstools",
   LINE_ID: "@wynnstools",
-  BANK_ACCOUNT: "",                                  // บัญชีธนาคารสำรอง (เว้นว่าง = ไม่แสดง)
+  BANK_ACCOUNT: "",                                  // บัญชีธนาคาร (เว้นว่าง = ไม่แสดง) — ร้านรับออเดอร์และแจ้งวิธีชำระทาง LINE
 
   // ✅ ข้อมูลจริง (จาก Thailand YellowPages — โปรไฟล์ร้าน ม ทวีภัณฑ์ สำเพ็ง)
   PHONE: "0-2221-7712",
