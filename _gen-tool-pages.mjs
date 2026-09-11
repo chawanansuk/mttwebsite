@@ -61,11 +61,14 @@ const META = {
 
 const NAV = Object.entries(META).map(([id, m]) => ({ id, file: m.file, th: DATA.categories.find((c) => c.id === id)?.th || id }));
 
-function rows(items) {
+function rows(items, withPics) {
   return items.map((x) => {
     const ask = `สอบถามราคา ${x.code} ${x.th}${x.size ? " (" + x.size + ")" : ""}`;
     const note = x.notes_th ? `<div class="note">${esc(x.notes_th)}</div>` : "";
-    return `          <tr>
+    const pic = !withPics ? "" : (x.img
+      ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(x.th)} ${esc(x.code)} WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>`
+      : `\n            <td class="pic"></td>`);
+    return `          <tr>${pic}
             <td class="code"><a data-line-ask="${esc(ask)}" href="#" target="_blank" rel="noopener">${esc(x.code)}</a></td>
             <td><b>${esc(x.th)}</b><small>${esc(x.en)}</small>${note}</td>
             <td>${esc(x.size)}</td>
@@ -75,22 +78,22 @@ function rows(items) {
   }).join("\n");
 }
 
-function groupHTML(g, i) {
+function groupHTML(g, i, withPics) {
   const notes = (g.notes_th || []).map((n) => `<li>${esc(n)}</li>`).join("");
   return `    <h3 class="grp-h" id="g${i}">${esc(g.th)} <span>${esc(g.en)}</span> <em>${g.items.length} รายการ</em></h3>
 ${g.mat ? `    <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: ${esc(g.mat)}</p>` : ""}
 ${notes ? `    <ul class="grp-notes">${notes}</ul>` : ""}
     <div class="tblwrap">
-      <table class="tools">
+      <table class="tools${withPics ? " haspic" : ""}">
         <thead><tr>
-          <th data-th="รหัส" data-en="Item no.">รหัส</th>
+${withPics ? `          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>\n` : ""}          <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
           <th data-th="จำนวน/ลัง" data-en="Per carton">จำนวน/ลัง</th>
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-${rows(g.items)}
+${rows(g.items, withPics)}
         </tbody>
       </table>
     </div>`;
@@ -99,6 +102,8 @@ ${rows(g.items)}
 function page(cat) {
   const m = META[cat.id];
   const total = cat.groups.reduce((n, g) => n + g.items.length, 0);
+  const nPics = cat.groups.reduce((n, g) => n + g.items.filter((x) => x.img).length, 0);
+  const withPics = nPics > 0;
   const other = NAV.filter((n) => n.id !== cat.id);
   const url = `${SITE}/products/${m.file}`;
 
@@ -175,9 +180,14 @@ ${JSON.stringify(itemList, null, 2)}
 .grp-notes li{padding:2px 0}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:660px}
+table.tools.haspic{min-width:740px}
 table.tools th{font-family:"Kanit";font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap;position:sticky;top:0}
 table.tools td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
 table.tools tr:nth-child(even) td{background:var(--bg-soft)}
+table.tools th.pic{width:88px}
+table.tools td.pic{width:88px;padding:8px 10px}
+table.tools td.pic img{width:72px;height:54px;object-fit:contain;display:block;background:#fff;border:1px solid var(--line);border-radius:8px}
+table.tools td.pic a:hover img{border-color:var(--amber)}
 table.tools td.code a{font-family:"Kanit";font-weight:600;color:var(--amber-dark);white-space:nowrap;text-decoration:none;border-bottom:1px dashed var(--amber)}
 table.tools td.code a:hover{background:var(--amber-soft)}
 table.tools td b{font-family:"Kanit";font-weight:500;display:block}
@@ -200,6 +210,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="muted" data-th="${esc(m.lead_th)}" data-en="${esc(m.lead_en)}">${esc(m.lead_th)}</p>
     <div class="trust">
       <span class="badge">📋 ${total} <span data-th="รายการ" data-en="items">รายการ</span></span>
+${withPics ? `      <span class="badge">📷 ` + nPics + ` <span data-th="รายการมีรูปสินค้า" data-en="with product photos">รายการมีรูปสินค้า</span></span>\n` : ""}
       <span class="badge" data-th="✔ ผู้นำเข้าโดยตรง" data-en="✔ Direct importer">✔ ผู้นำเข้าโดยตรง</span>
       <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
       <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Nationwide">🚚 ส่งทั่วไทย</span>
@@ -221,7 +232,7 @@ ${other.map((n) => `      <a href="${n.file}">${esc(n.th)}</a>`).join("\n")}
     </div>
 
     <h2 class="vh">${esc(cat.th)} — ${total} รายการ</h2>
-${cat.groups.map(groupHTML).join("\n\n")}
+${cat.groups.map((g, i) => groupHTML(g, i, withPics)).join("\n\n")}
 
     <div class="cta-band">
       <div>

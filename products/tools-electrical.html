@@ -113,9 +113,14 @@
 .grp-notes li{padding:2px 0}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:660px}
+table.tools.haspic{min-width:740px}
 table.tools th{font-family:"Kanit";font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap;position:sticky;top:0}
 table.tools td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
 table.tools tr:nth-child(even) td{background:var(--bg-soft)}
+table.tools th.pic{width:88px}
+table.tools td.pic{width:88px;padding:8px 10px}
+table.tools td.pic img{width:72px;height:54px;object-fit:contain;display:block;background:#fff;border:1px solid var(--line);border-radius:8px}
+table.tools td.pic a:hover img{border-color:var(--amber)}
 table.tools td.code a{font-family:"Kanit";font-weight:600;color:var(--amber-dark);white-space:nowrap;text-decoration:none;border-bottom:1px dashed var(--amber)}
 table.tools td.code a:hover{background:var(--amber-soft)}
 table.tools td b{font-family:"Kanit";font-weight:500;display:block}
@@ -138,6 +143,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="muted" data-th="ครบตั้งแต่คีมปอกสายไฟอัตโนมัติ คีมย้ำหางปลาทุกขนาด 0.5–38 ตร.มม. คีมเข้าสายแลน RJ-45 ไปจนถึงมิเตอร์ดิจิตอล แคลมป์มิเตอร์ หัวแร้งบัดกรี และปืนเป่าลมร้อน" data-en="Automatic wire strippers, crimping pliers for every size from 0.5 to 38 mm², RJ-45 crimpers, digital multimeters, clamp meters, soldering irons and heat guns.">ครบตั้งแต่คีมปอกสายไฟอัตโนมัติ คีมย้ำหางปลาทุกขนาด 0.5–38 ตร.มม. คีมเข้าสายแลน RJ-45 ไปจนถึงมิเตอร์ดิจิตอล แคลมป์มิเตอร์ หัวแร้งบัดกรี และปืนเป่าลมร้อน</p>
     <div class="trust">
       <span class="badge">📋 46 <span data-th="รายการ" data-en="items">รายการ</span></span>
+
       <span class="badge" data-th="✔ ผู้นำเข้าโดยตรง" data-en="✔ Direct importer">✔ ผู้นำเข้าโดยตรง</span>
       <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
       <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Nationwide">🚚 ส่งทั่วไทย</span>
