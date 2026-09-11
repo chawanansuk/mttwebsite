@@ -131,9 +131,14 @@
 .grp-notes li{padding:2px 0}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:660px}
+table.tools.haspic{min-width:740px}
 table.tools th{font-family:"Kanit";font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap;position:sticky;top:0}
 table.tools td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
 table.tools tr:nth-child(even) td{background:var(--bg-soft)}
+table.tools th.pic{width:88px}
+table.tools td.pic{width:88px;padding:8px 10px}
+table.tools td.pic img{width:72px;height:54px;object-fit:contain;display:block;background:#fff;border:1px solid var(--line);border-radius:8px}
+table.tools td.pic a:hover img{border-color:var(--amber)}
 table.tools td.code a{font-family:"Kanit";font-weight:600;color:var(--amber-dark);white-space:nowrap;text-decoration:none;border-bottom:1px dashed var(--amber)}
 table.tools td.code a:hover{background:var(--amber-soft)}
 table.tools td b{font-family:"Kanit";font-weight:500;display:block}
@@ -156,6 +161,8 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="muted" data-th="คีมและอุปกรณ์จับยึดทุกแบบที่ช่างใช้จริง ตั้งแต่คีมมินิ 5 นิ้วสำหรับงานละเอียด ไปจนถึงประแจจับท่อ 900 มม. และปากกาจับชิ้นงาน 8 นิ้ว ทุกตัวมีรหัสสินค้า ขนาด จำนวนต่อลัง และเกรดเหล็กระบุชัด" data-en="Every holding tool a workshop actually uses — from 5-inch mini pliers for fine work to 900 mm pipe wrenches and 8-inch bench vises. Item numbers, sizes, carton quantities and steel grades all listed.">คีมและอุปกรณ์จับยึดทุกแบบที่ช่างใช้จริง ตั้งแต่คีมมินิ 5 นิ้วสำหรับงานละเอียด ไปจนถึงประแจจับท่อ 900 มม. และปากกาจับชิ้นงาน 8 นิ้ว ทุกตัวมีรหัสสินค้า ขนาด จำนวนต่อลัง และเกรดเหล็กระบุชัด</p>
     <div class="trust">
       <span class="badge">📋 97 <span data-th="รายการ" data-en="items">รายการ</span></span>
+      <span class="badge">📷 46 <span data-th="รายการมีรูปสินค้า" data-en="with product photos">รายการมีรูปสินค้า</span></span>
+
       <span class="badge" data-th="✔ ผู้นำเข้าโดยตรง" data-en="✔ Direct importer">✔ ผู้นำเข้าโดยตรง</span>
       <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
       <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Nationwide">🚚 ส่งทั่วไทย</span>
@@ -184,8 +191,9 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>หลอมด้วยเหล็กกล้าคาร์บอนสูงคุณภาพเยี่ยม ทำให้คีมแข็งแรงและทนทาน</li><li>คมตัดชุบร้อนพิเศษ ทำให้คมและทนสูง</li><li>หัวคีมได้รับการขัดเงาให้เนียนสะอาด</li></ul>
     <div class="tblwrap">
-      <table class="tools">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -194,6 +202,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
         </tr></thead>
         <tbody>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS105C คีมมินิปากจิ้งจก (125mm)" href="#" target="_blank" rel="noopener">WNS105C</a></td>
             <td><b>คีมมินิปากจิ้งจก</b><small>Mini Pliers</small></td>
             <td>125mm</td>
@@ -201,6 +210,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS105A คีมตัดปากเฉียงมินิ (125mm)" href="#" target="_blank" rel="noopener">WNS105A</a></td>
             <td><b>คีมตัดปากเฉียงมินิ</b><small>Mini Diagonal Cutting Pliers</small></td>
             <td>125mm</td>
@@ -208,6 +218,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS105F คีมมินิปากแบน (125mm)" href="#" target="_blank" rel="noopener">WNS105F</a></td>
             <td><b>คีมมินิปากแบน</b><small>Flat-Nose Pliers</small></td>
             <td>125mm</td>
@@ -215,6 +226,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS105B คีมมินิปากแหลมไม่มีฟัน (125mm)" href="#" target="_blank" rel="noopener">WNS105B</a></td>
             <td><b>คีมมินิปากแหลมไม่มีฟัน</b><small>Pointed-Nose Pliers Without Tooth</small></td>
             <td>125mm</td>
@@ -222,6 +234,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS105N คีมมินิปากแหลมมีฟัน (125mm)" href="#" target="_blank" rel="noopener">WNS105N</a></td>
             <td><b>คีมมินิปากแหลมมีฟัน</b><small>Mini Long Nose Pliers</small></td>
             <td>125mm</td>
@@ -229,6 +242,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS105M คีมมินิปากเข็ม (125mm)" href="#" target="_blank" rel="noopener">WNS105M</a></td>
             <td><b>คีมมินิปากเข็ม</b><small>Mini Needle Nose Pliers</small></td>
             <td>125mm</td>
@@ -236,6 +250,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS105G คีมมินิปากแหลมปลายงอ (125mm)" href="#" target="_blank" rel="noopener">WNS105G</a></td>
             <td><b>คีมมินิปากแหลมปลายงอ</b><small>Mini Bent-Nose Pliers</small></td>
             <td>125mm</td>
@@ -243,6 +258,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS105K คีมมินิปากนกแก้ว (125mm)" href="#" target="_blank" rel="noopener">WNS105K</a></td>
             <td><b>คีมมินิปากนกแก้ว</b><small>Mini End Cutting Pliers</small></td>
             <td>125mm</td>
@@ -257,8 +273,9 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: C-ALLOY เหล็กผสมชุบนิกเกิล-เหล็ก</p>
     <ul class="grp-notes"><li>หลอมด้วยเหล็กผสมพิเศษคุณภาพเยี่ยม ทำให้คีมมีความทนทานสูงมาก</li><li>หัวคีมชุบนิกเกิล ป้องกันสนิม การกัดกร่อน การตกกระแทก และทำให้หัวคีมเงาและสวยงาม</li></ul>
     <div class="tblwrap">
-      <table class="tools">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -267,6 +284,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
         </tr></thead>
         <tbody>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา S105A คีมมินิปากแหลมด้ามหุ้ม (125mm)" href="#" target="_blank" rel="noopener">S105A</a></td>
             <td><b>คีมมินิปากแหลมด้ามหุ้ม</b><small>Mini Long Nose Pliers</small></td>
             <td>125mm</td>
@@ -274,6 +292,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา S105B คีมตัดปากเฉียงมินิด้ามหุ้ม (125mm)" href="#" target="_blank" rel="noopener">S105B</a></td>
             <td><b>คีมตัดปากเฉียงมินิด้ามหุ้ม</b><small>Mini Diagonal Cutting Pliers</small></td>
             <td>125mm</td>
@@ -281,6 +300,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา S105C คีมมินิปากแบนด้ามหุ้ม (125mm)" href="#" target="_blank" rel="noopener">S105C</a></td>
             <td><b>คีมมินิปากแบนด้ามหุ้ม</b><small>Mini Flat Nose Pliers</small></td>
             <td>125mm</td>
@@ -288,6 +308,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา S105F คีมปากจิ้งจกด้ามหุ้ม (ปากรวม) (125mm)" href="#" target="_blank" rel="noopener">S105F</a></td>
             <td><b>คีมปากจิ้งจกด้ามหุ้ม (ปากรวม)</b><small>Mini Pliers</small></td>
             <td>125mm</td>
@@ -295,6 +316,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา S105G คีมมินิปากนกแก้วด้ามหุ้ม (125mm)" href="#" target="_blank" rel="noopener">S105G</a></td>
             <td><b>คีมมินิปากนกแก้วด้ามหุ้ม</b><small>Mini End Cutting Pliers</small></td>
             <td>125mm</td>
@@ -302,6 +324,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา S105H คีมมินิปากเข็มด้ามหุ้ม (125mm)" href="#" target="_blank" rel="noopener">S105H</a></td>
             <td><b>คีมมินิปากเข็มด้ามหุ้ม</b><small>Mini Needle Nose Pliers</small></td>
             <td>125mm</td>
@@ -309,6 +332,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td></td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา S105N คีมมินิปากแหลม แกนกลม (125mm)" href="#" target="_blank" rel="noopener">S105N</a></td>
             <td><b>คีมมินิปากแหลม แกนกลม</b><small>Mini Round Nose Pliers</small></td>
             <td>125mm</td>
@@ -323,8 +347,9 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: CR-V Chromium-Vanadium / SK-55</p>
 
     <div class="tblwrap">
-      <table class="tools">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -333,6 +358,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
         </tr></thead>
         <tbody>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3455 คีมจับปากรวม ตัด ปอกและย้ำสายไฟ (250mm)" href="#" target="_blank" rel="noopener">W3455</a></td>
             <td><b>คีมจับปากรวม ตัด ปอกและย้ำสายไฟ</b><small>Multi-Functional Combination Pliers</small><div class="note">ปากตัดความแข็งระดับ HRC58-63 · ตัดลวดสลิง 3 มม. · ตัดสายไฟ 0.5 มม. · ย้ำสายไฟด้วยขนาดเล็กได้</div></td>
             <td>250mm</td>
@@ -340,6 +366,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3144 คีมปากรวม (200mm)" href="#" target="_blank" rel="noopener">W3144</a></td>
             <td><b>คีมปากรวม</b><small>Multi-Functional Combination Pliers</small></td>
             <td>200mm</td>
@@ -347,6 +374,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา AC208 คีมปากรวม ทรงยุโรป (200mm)" href="#" target="_blank" rel="noopener">AC208</a></td>
             <td><b>คีมปากรวม ทรงยุโรป</b><small>European Type Combination Pliers</small></td>
             <td>200mm</td>
@@ -354,6 +382,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา AC406 คีมปากรวม ทรงยุโรป (150mm)" href="#" target="_blank" rel="noopener">AC406</a></td>
             <td><b>คีมปากรวม ทรงยุโรป</b><small>European Type Combination Pliers</small></td>
             <td>150mm</td>
@@ -361,6 +390,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WN218N คีมตัดปากเฉียง ปอกสายไฟได้ (150mm)" href="#" target="_blank" rel="noopener">WN218N</a></td>
             <td><b>คีมตัดปากเฉียง ปอกสายไฟได้</b><small>Japan E-Type Diagonal Cutting Pliers</small></td>
             <td>150mm</td>
@@ -368,6 +398,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W00100 คีมปากรวม ด้ามจับ 3 สี (150mm)" href="#" target="_blank" rel="noopener">W00100</a></td>
             <td><b>คีมปากรวม ด้ามจับ 3 สี</b><small>Combination Pliers with Tri-Color Handle</small></td>
             <td>150mm</td>
@@ -375,6 +406,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W00200 คีมปากยาว ด้ามจับ 3 สี (150mm)" href="#" target="_blank" rel="noopener">W00200</a></td>
             <td><b>คีมปากยาว ด้ามจับ 3 สี</b><small>Long Nose Pliers with Tri-Color Handle</small></td>
             <td>150mm</td>
@@ -382,6 +414,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W00300 คีมปากตัด ด้ามจับ 3 สี (150mm)" href="#" target="_blank" rel="noopener">W00300</a></td>
             <td><b>คีมปากตัด ด้ามจับ 3 สี</b><small>Diagonal Cutting Pliers with Tri-Color Handle</small></td>
             <td>150mm</td>
@@ -396,8 +429,9 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: CR-V / SK-55</p>
 
     <div class="tblwrap">
-      <table class="tools">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -406,6 +440,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
         </tr></thead>
         <tbody>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3456 คีมปากแหลม จับ ตัด ปอกและย้ำสายไฟ (230mm)" href="#" target="_blank" rel="noopener">W3456</a></td>
             <td><b>คีมปากแหลม จับ ตัด ปอกและย้ำสายไฟ</b><small>Multi Function Long Nose Pliers</small><div class="note">ปากตัดแข็งระดับ HRC59-63 ตัดสายทองแดงได้ · ผ่อนแรงกว่าคีมปกติ 30%</div></td>
             <td>230mm</td>
@@ -413,6 +448,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W508P คีมปากแหลม มีปากตัด (200mm)" href="#" target="_blank" rel="noopener">W508P</a></td>
             <td><b>คีมปากแหลม มีปากตัด</b><small>American Type Long Nose Pliers</small></td>
             <td>200mm</td>
@@ -420,6 +456,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W106P คีมปากแหลม มีปากตัด (150mm)" href="#" target="_blank" rel="noopener">W106P</a></td>
             <td><b>คีมปากแหลม มีปากตัด</b><small>American Type Long Nose Pliers</small></td>
             <td>150mm</td>
@@ -427,6 +464,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W208P คีมปากจระเข้ (200mm)" href="#" target="_blank" rel="noopener">W208P</a></td>
             <td><b>คีมปากจระเข้</b><small>American Type Combination Pliers</small></td>
             <td>200mm</td>
@@ -434,6 +472,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W406P คีมปากจระเข้ (150mm)" href="#" target="_blank" rel="noopener">W406P</a></td>
             <td><b>คีมปากจระเข้</b><small>American Type Combination Pliers</small></td>
             <td>150mm</td>
@@ -441,6 +480,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W106 คีมปากแบน แบบไม่มีฟัน (150mm)" href="#" target="_blank" rel="noopener">W106</a></td>
             <td><b>คีมปากแบน แบบไม่มีฟัน</b><small>Flat Nose Pliers</small></td>
             <td>150mm</td>
@@ -448,6 +488,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W608P คีมตัดปากเฉียง (200mm)" href="#" target="_blank" rel="noopener">W608P</a></td>
             <td><b>คีมตัดปากเฉียง</b><small>American Type Diagonal Cutting Pliers</small></td>
             <td>200mm</td>
@@ -455,6 +496,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W306P คีมตัดปากเฉียง (150mm)" href="#" target="_blank" rel="noopener">W306P</a></td>
             <td><b>คีมตัดปากเฉียง</b><small>American Type Diagonal Cutting Pliers</small></td>
             <td>150mm</td>
@@ -462,6 +504,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS105D คีมตัดปากเฉียงสไตล์อเมริกัน (125mm)" href="#" target="_blank" rel="noopener">WNS105D</a></td>
             <td><b>คีมตัดปากเฉียงสไตล์อเมริกัน</b><small>American Type Side Cutting Pliers</small><div class="note">ความแข็ง HRC52-58 ตัดลวด 0.8–1 มม. เหมาะงานไฟฟ้า ปอกสายไฟ ตัดเส้นลวด ตัดพลาสติก</div></td>
             <td>125mm</td>
@@ -469,6 +512,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS106D คีมตัดปากเฉียงสไตล์อเมริกัน (150mm)" href="#" target="_blank" rel="noopener">WNS106D</a></td>
             <td><b>คีมตัดปากเฉียงสไตล์อเมริกัน</b><small>American Type Side Cutting Pliers</small></td>
             <td>150mm</td>
@@ -476,6 +520,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS175B คีมตัดปากเฉียงสไตล์อเมริกัน (175mm)" href="#" target="_blank" rel="noopener">WS175B</a></td>
             <td><b>คีมตัดปากเฉียงสไตล์อเมริกัน</b><small>American Type Side Cutting Pliers</small></td>
             <td>175mm</td>
@@ -483,6 +528,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WB208 คีมปากจระเข้ จับ ตัด ปอกและย้ำสายไฟ (200mm)" href="#" target="_blank" rel="noopener">WB208</a></td>
             <td><b>คีมปากจระเข้ จับ ตัด ปอกและย้ำสายไฟ</b><small>Multi-Purpose Combination Pliers</small><div class="note">มีปากย้ำสายไฟ 2 ขนาด ปอกสายไฟได้หลายขนาด</div></td>
             <td>200mm</td>
@@ -497,8 +543,9 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 / CR-V / เหล็กอัลลอย</p>
 
     <div class="tblwrap">
-      <table class="tools">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -507,6 +554,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
         </tr></thead>
         <tbody>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W208K คีมปากจระเข้พาวเวอร์สปริง (200mm)" href="#" target="_blank" rel="noopener">W208K</a></td>
             <td><b>คีมปากจระเข้พาวเวอร์สปริง</b><small>Energy Saving Combination Pliers</small></td>
             <td>200mm</td>
@@ -514,6 +562,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WHS175B คีมหนีบแหวนปากตรง (175mm)" href="#" target="_blank" rel="noopener">WHS175B</a></td>
             <td><b>คีมหนีบแหวนปากตรง</b><small>Internal Circlip Pliers Straight</small></td>
             <td>175mm</td>
@@ -521,6 +570,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WHS330B คีมหนีบแหวนปากตรง (330mm)" href="#" target="_blank" rel="noopener">WHS330B</a></td>
             <td><b>คีมหนีบแหวนปากตรง</b><small>Internal Circlip Pliers Straight</small></td>
             <td>330mm</td>
@@ -528,6 +578,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WHB175B คีมหนีบแหวนปากงอ (175mm)" href="#" target="_blank" rel="noopener">WHB175B</a></td>
             <td><b>คีมหนีบแหวนปากงอ</b><small>Internal Circlip Plier Bent Nose</small></td>
             <td>175mm</td>
@@ -535,6 +586,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WHB330B คีมหนีบแหวนปากงอ (330mm)" href="#" target="_blank" rel="noopener">WHB330B</a></td>
             <td><b>คีมหนีบแหวนปากงอ</b><small>Internal Circlip Plier Bent Nose</small></td>
             <td>330mm</td>
@@ -542,6 +594,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WSS175B คีมถ่างแหวนปากตรง (175mm)" href="#" target="_blank" rel="noopener">WSS175B</a></td>
             <td><b>คีมถ่างแหวนปากตรง</b><small>External Circlip Pliers Straight</small></td>
             <td>175mm</td>
@@ -549,6 +602,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WSS330B คีมถ่างแหวนปากตรง (330mm)" href="#" target="_blank" rel="noopener">WSS330B</a></td>
             <td><b>คีมถ่างแหวนปากตรง</b><small>External Circlip Pliers Straight</small></td>
             <td>330mm</td>
@@ -556,6 +610,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WSB175B คีมถ่างแหวนปากงอ (175mm)" href="#" target="_blank" rel="noopener">WSB175B</a></td>
             <td><b>คีมถ่างแหวนปากงอ</b><small>External Circlip Pliers Bent Nose</small></td>
             <td>175mm</td>
@@ -563,6 +618,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WSB330B คีมถ่างแหวนปากงอ (330mm)" href="#" target="_blank" rel="noopener">WSB330B</a></td>
             <td><b>คีมถ่างแหวนปากงอ</b><small>External Circlip Pliers Bent Nose</small></td>
             <td>330mm</td>
@@ -570,6 +626,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS01 คีมถ่างและหนีบแหวนชุด 4in1 (175mm)" href="#" target="_blank" rel="noopener">WNS01</a></td>
             <td><b>คีมถ่างและหนีบแหวนชุด 4in1</b><small>4-in-1 Circlip Pliers</small><div class="note">มีปาก 4 แบบให้เลือกใช้ 45° / 90° / 180°</div></td>
             <td>175mm</td>
@@ -577,6 +634,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3272 ชุดคีมเจาะตาไก่ ย้ำตาไก่ ปรับขนาดได้ (7mm, 8mm, 12mm)" href="#" target="_blank" rel="noopener">W3272</a></td>
             <td><b>ชุดคีมเจาะตาไก่ ย้ำตาไก่ ปรับขนาดได้</b><small>Multi-Function Grommet Setting Pliers</small><div class="note">เปลี่ยนหัวย้ำได้ 3 ขนาด ในชุดมีแถมตาไก่ขนาดละ 10 ชิ้น ใช้กับหนัง ยาง กระดาษ พลาสติก</div></td>
             <td>7mm, 8mm, 12mm</td>
@@ -591,8 +649,9 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: เหล็กอัลลอย / #65MN / CR-V</p>
 
     <div class="tblwrap">
-      <table class="tools">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -601,6 +660,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
         </tr></thead>
         <tbody>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0378 คีมเจาะรู (2.5, 3.0, 3.5, 4.0, 4.5, 5.0mm)" href="#" target="_blank" rel="noopener">W0378</a></td>
             <td><b>คีมเจาะรู</b><small>Drilling Pliers</small><div class="note">เจาะรูหนัง เข็มขัด กระดาษ การ์ดบอร์ด พีวีซี</div></td>
             <td>2.5, 3.0, 3.5, 4.0, 4.5, 5.0mm</td>
@@ -608,6 +668,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0555 ชุดคีมเจาะรูหนัง กดกระดุม คีมย้ำตาไก่ (2.5, 3, 3.5, 4, 4.5, 5mm)" href="#" target="_blank" rel="noopener">W0555</a></td>
             <td><b>ชุดคีมเจาะรูหนัง กดกระดุม คีมย้ำตาไก่</b><small>Belt Puncher and Button Pressure Tool Kits</small></td>
             <td>2.5, 3, 3.5, 4, 4.5, 5mm</td>
@@ -615,6 +676,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>#65MN เหล็กแมงกานีส</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0089A คีมปากนกแก้วผูกลวด (200mm)" href="#" target="_blank" rel="noopener">W0089A</a></td>
             <td><b>คีมปากนกแก้วผูกลวด</b><small>Towers Pincers</small><div class="note">เหมาะสำหรับงานก่อสร้างและงานตกแต่ง</div></td>
             <td>200mm</td>
@@ -622,6 +684,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0087A คีมถอนตะปู (200mm)" href="#" target="_blank" rel="noopener">W0087A</a></td>
             <td><b>คีมถอนตะปู</b><small>Carpenters Pincers</small><div class="note">ด้ามจับหุ้มสองชั้น เหมาะงานไม้ งานทำรองเท้า</div></td>
             <td>200mm</td>
@@ -629,6 +692,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0088A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0088A"><img src="../assets/img/tools/W0088A-sm.webp" alt="คีมถอนตะปู ด้ามยางนุ่ม W0088A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0088A คีมถอนตะปู ด้ามยางนุ่ม (200mm)" href="#" target="_blank" rel="noopener">W0088A</a></td>
             <td><b>คีมถอนตะปู ด้ามยางนุ่ม</b><small>Carpenters Pincers</small></td>
             <td>200mm</td>
@@ -636,6 +700,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>CR-V</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0144.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0144"><img src="../assets/img/tools/W0144-sm.webp" alt="คีมตัดเหล็ก ตัดหัวตะปู W0144 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0144 คีมตัดเหล็ก ตัดหัวตะปู (150mm)" href="#" target="_blank" rel="noopener">W0144</a></td>
             <td><b>คีมตัดเหล็ก ตัดหัวตะปู</b><small>German Type End Cutting Pliers</small><div class="note">ปากตัดชุบแข็ง คงทน ไม่บิ่นหรือกร่อน คีมรมดำป้องกันสนิม</div></td>
             <td>150mm</td>
@@ -650,8 +715,9 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 / HT-250</p>
 
     <div class="tblwrap">
-      <table class="tools">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -660,6 +726,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
         </tr></thead>
         <tbody>
           <tr>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W450C ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว (450mm)" href="#" target="_blank" rel="noopener">W450C</a></td>
             <td><b>ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว</b><small>Heavy Duty Pipe Wrench</small></td>
             <td>450mm</td>
@@ -667,6 +734,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W600C.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W600C"><img src="../assets/img/tools/W600C-sm.webp" alt="ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว W600C WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W600C ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว (600mm)" href="#" target="_blank" rel="noopener">W600C</a></td>
             <td><b>ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว</b><small>Heavy Duty Pipe Wrench</small></td>
             <td>600mm</td>
@@ -674,6 +742,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W900C.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W900C"><img src="../assets/img/tools/W900C-sm.webp" alt="ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว W900C WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W900C ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว (900mm)" href="#" target="_blank" rel="noopener">W900C</a></td>
             <td><b>ประแจจับท่อขาเดียว รุ่นงานหนัก สีเขียว</b><small>Heavy Duty Pipe Wrench</small></td>
             <td>900mm</td>
@@ -681,6 +750,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W450B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W450B"><img src="../assets/img/tools/W450B-sm.webp" alt="ประแจจับท่อขาเดียว รุ่นงานหนัก สีแดง W450B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W450B ประแจจับท่อขาเดียว รุ่นงานหนัก สีแดง (450mm)" href="#" target="_blank" rel="noopener">W450B</a></td>
             <td><b>ประแจจับท่อขาเดียว รุ่นงานหนัก สีแดง</b><small>Heavy Duty Pipe Wrench</small></td>
             <td>450mm</td>
@@ -688,6 +758,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W600B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W600B"><img src="../assets/img/tools/W600B-sm.webp" alt="ประแจจับท่อขาเดียว รุ่นงานหนัก สีแดง W600B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W600B ประแจจับท่อขาเดียว รุ่นงานหนัก สีแดง (600mm)" href="#" target="_blank" rel="noopener">W600B</a></td>
             <td><b>ประแจจับท่อขาเดียว รุ่นงานหนัก สีแดง</b><small>Heavy Duty Pipe Wrench</small></td>
             <td>600mm</td>
@@ -695,6 +766,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0133.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0133"><img src="../assets/img/tools/W0133-sm.webp" alt="ประแจจับท่อ ขาคู่ W0133 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0133 ประแจจับท่อ ขาคู่ (1&quot;)" href="#" target="_blank" rel="noopener">W0133</a></td>
             <td><b>ประแจจับท่อ ขาคู่</b><small>Bent Nose Pipe Wrench 90°</small></td>
             <td>1&quot;</td>
@@ -702,6 +774,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0134.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0134"><img src="../assets/img/tools/W0134-sm.webp" alt="ประแจจับท่อ ขาคู่ W0134 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0134 ประแจจับท่อ ขาคู่ (1.5&quot;)" href="#" target="_blank" rel="noopener">W0134</a></td>
             <td><b>ประแจจับท่อ ขาคู่</b><small>Bent Nose Pipe Wrench 90°</small></td>
             <td>1.5&quot;</td>
@@ -709,6 +782,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0135.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0135"><img src="../assets/img/tools/W0135-sm.webp" alt="ประแจจับท่อ ขาคู่ W0135 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0135 ประแจจับท่อ ขาคู่ (2&quot;)" href="#" target="_blank" rel="noopener">W0135</a></td>
             <td><b>ประแจจับท่อ ขาคู่</b><small>Bent Nose Pipe Wrench 90°</small></td>
             <td>2&quot;</td>
@@ -716,6 +790,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0136.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0136"><img src="../assets/img/tools/W0136-sm.webp" alt="ประแจจับท่อ ขาคู่ W0136 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0136 ประแจจับท่อ ขาคู่ (3&quot;)" href="#" target="_blank" rel="noopener">W0136</a></td>
             <td><b>ประแจจับท่อ ขาคู่</b><small>Bent Nose Pipe Wrench 90°</small></td>
             <td>3&quot;</td>
@@ -723,6 +798,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0137.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0137"><img src="../assets/img/tools/W0137-sm.webp" alt="ประแจจับท่อ ขาคู่ W0137 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0137 ประแจจับท่อ ขาคู่ (4&quot;)" href="#" target="_blank" rel="noopener">W0137</a></td>
             <td><b>ประแจจับท่อ ขาคู่</b><small>Bent Nose Pipe Wrench 90°</small></td>
             <td>4&quot;</td>
@@ -730,6 +806,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0559.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0559"><img src="../assets/img/tools/W0559-sm.webp" alt="แคลมป์แบบคีมสปริงคู่ (2 ชิ้น) W0559 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0559 แคลมป์แบบคีมสปริงคู่ (2 ชิ้น) (อ้าได้ 50mm / 70mm)" href="#" target="_blank" rel="noopener">W0559</a></td>
             <td><b>แคลมป์แบบคีมสปริงคู่ (2 ชิ้น)</b><small>2pcs Ratchet Type Clamps</small><div class="note">เหมาะงานเชื่อมต่อ เชื่อมโลหะ และการประกอบ</div></td>
             <td>อ้าได้ 50mm / 70mm</td>
@@ -737,6 +814,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0473A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0473A"><img src="../assets/img/tools/W0473A-sm.webp" alt="ซีแคลมป์ W0473A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0473A ซีแคลมป์ (1&quot;)" href="#" target="_blank" rel="noopener">W0473A</a></td>
             <td><b>ซีแคลมป์</b><small>Heavy G-Shape Clamp</small></td>
             <td>1&quot;</td>
@@ -744,6 +822,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0473B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0473B"><img src="../assets/img/tools/W0473B-sm.webp" alt="ซีแคลมป์ W0473B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0473B ซีแคลมป์ (2&quot;)" href="#" target="_blank" rel="noopener">W0473B</a></td>
             <td><b>ซีแคลมป์</b><small>Heavy G-Shape Clamp</small></td>
             <td>2&quot;</td>
@@ -751,6 +830,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0473C.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0473C"><img src="../assets/img/tools/W0473C-sm.webp" alt="ซีแคลมป์ W0473C WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0473C ซีแคลมป์ (3&quot;)" href="#" target="_blank" rel="noopener">W0473C</a></td>
             <td><b>ซีแคลมป์</b><small>Heavy G-Shape Clamp</small></td>
             <td>3&quot;</td>
@@ -758,6 +838,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0473D.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0473D"><img src="../assets/img/tools/W0473D-sm.webp" alt="ซีแคลมป์ W0473D WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0473D ซีแคลมป์ (4&quot;)" href="#" target="_blank" rel="noopener">W0473D</a></td>
             <td><b>ซีแคลมป์</b><small>Heavy G-Shape Clamp</small></td>
             <td>4&quot;</td>
@@ -765,6 +846,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0473E.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0473E"><img src="../assets/img/tools/W0473E-sm.webp" alt="ซีแคลมป์ W0473E WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0473E ซีแคลมป์ (5&quot;)" href="#" target="_blank" rel="noopener">W0473E</a></td>
             <td><b>ซีแคลมป์</b><small>Heavy G-Shape Clamp</small></td>
             <td>5&quot;</td>
@@ -772,6 +854,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0473F.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0473F"><img src="../assets/img/tools/W0473F-sm.webp" alt="ซีแคลมป์ W0473F WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0473F ซีแคลมป์ (6&quot;)" href="#" target="_blank" rel="noopener">W0473F</a></td>
             <td><b>ซีแคลมป์</b><small>Heavy G-Shape Clamp</small></td>
             <td>6&quot;</td>
@@ -779,6 +862,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0473G.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0473G"><img src="../assets/img/tools/W0473G-sm.webp" alt="ซีแคลมป์ W0473G WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0473G ซีแคลมป์ (8&quot;)" href="#" target="_blank" rel="noopener">W0473G</a></td>
             <td><b>ซีแคลมป์</b><small>Heavy G-Shape Clamp</small></td>
             <td>8&quot;</td>
@@ -786,6 +870,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0473H.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0473H"><img src="../assets/img/tools/W0473H-sm.webp" alt="ซีแคลมป์ W0473H WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0473H ซีแคลมป์ (10&quot;)" href="#" target="_blank" rel="noopener">W0473H</a></td>
             <td><b>ซีแคลมป์</b><small>Heavy G-Shape Clamp</small></td>
             <td>10&quot;</td>
@@ -793,6 +878,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0473I.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0473I"><img src="../assets/img/tools/W0473I-sm.webp" alt="ซีแคลมป์ W0473I WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0473I ซีแคลมป์ (12&quot;)" href="#" target="_blank" rel="noopener">W0473I</a></td>
             <td><b>ซีแคลมป์</b><small>Heavy G-Shape Clamp</small></td>
             <td>12&quot;</td>
@@ -800,6 +886,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W2488.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2488"><img src="../assets/img/tools/W2488-sm.webp" alt="ปากกาจับชิ้นงาน แบบยึดติดโต๊ะ W2488 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2488 ปากกาจับชิ้นงาน แบบยึดติดโต๊ะ (50mm)" href="#" target="_blank" rel="noopener">W2488</a></td>
             <td><b>ปากกาจับชิ้นงาน แบบยึดติดโต๊ะ</b><small>Dovetail Type Parallel Bench Vise</small></td>
             <td>50mm</td>
@@ -807,6 +894,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>HT-250</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W2484.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2484"><img src="../assets/img/tools/W2484-sm.webp" alt="ปากกาจับชิ้นงาน รุ่นงานหนัก W2484 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2484 ปากกาจับชิ้นงาน รุ่นงานหนัก (4&quot; (ปาก 100mm · อ้า 75mm · คอลึก 56mm · ทั่ง 65X65mm))" href="#" target="_blank" rel="noopener">W2484</a></td>
             <td><b>ปากกาจับชิ้นงาน รุ่นงานหนัก</b><small>Heavy Duty M Type Precision Hinged Pipe Vise</small><div class="note">ฐานหมุนได้ 360° จับวัสดุทรงกลม Ø13.5-36</div></td>
             <td>4&quot; (ปาก 100mm · อ้า 75mm · คอลึก 56mm · ทั่ง 65X65mm)</td>
@@ -814,6 +902,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>HT-250</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W2486.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2486"><img src="../assets/img/tools/W2486-sm.webp" alt="ปากกาจับชิ้นงาน รุ่นงานหนัก W2486 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2486 ปากกาจับชิ้นงาน รุ่นงานหนัก (6&quot; (ปาก 150mm · อ้า 125mm · คอลึก 75mm · ทั่ง 115X115mm))" href="#" target="_blank" rel="noopener">W2486</a></td>
             <td><b>ปากกาจับชิ้นงาน รุ่นงานหนัก</b><small>Heavy Duty M Type Precision Hinged Pipe Vise</small><div class="note">จับวัสดุทรงกลม Ø13.5-56</div></td>
             <td>6&quot; (ปาก 150mm · อ้า 125mm · คอลึก 75mm · ทั่ง 115X115mm)</td>
@@ -821,6 +910,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>HT-250</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W2487.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2487"><img src="../assets/img/tools/W2487-sm.webp" alt="ปากกาจับชิ้นงาน รุ่นงานหนัก W2487 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2487 ปากกาจับชิ้นงาน รุ่นงานหนัก (8&quot; (ปาก 200mm · อ้า 150mm · คอลึก 86mm · ทั่ง 140X140mm))" href="#" target="_blank" rel="noopener">W2487</a></td>
             <td><b>ปากกาจับชิ้นงาน รุ่นงานหนัก</b><small>Heavy Duty M Type Precision Hinged Pipe Vise</small><div class="note">จับวัสดุทรงกลม Ø13.5-68</div></td>
             <td>8&quot; (ปาก 200mm · อ้า 150mm · คอลึก 86mm · ทั่ง 140X140mm)</td>
@@ -828,6 +918,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>HT-250</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/WNS508A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WNS508A"><img src="../assets/img/tools/WNS508A-sm.webp" alt="คีมคอม้า ชุบนิกเกิล WNS508A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS508A คีมคอม้า ชุบนิกเกิล (200mm)" href="#" target="_blank" rel="noopener">WNS508A</a></td>
             <td><b>คีมคอม้า ชุบนิกเกิล</b><small>Water Pump Pliers Nickel Alloy Plated</small></td>
             <td>200mm</td>
@@ -835,6 +926,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/WNS5010A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WNS5010A"><img src="../assets/img/tools/WNS5010A-sm.webp" alt="คีมคอม้า ชุบนิกเกิล WNS5010A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS5010A คีมคอม้า ชุบนิกเกิล (250mm)" href="#" target="_blank" rel="noopener">WNS5010A</a></td>
             <td><b>คีมคอม้า ชุบนิกเกิล</b><small>Water Pump Pliers Nickel Alloy Plated</small></td>
             <td>250mm</td>
@@ -842,6 +934,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/WNS5012A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WNS5012A"><img src="../assets/img/tools/WNS5012A-sm.webp" alt="คีมคอม้า ชุบนิกเกิล WNS5012A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS5012A คีมคอม้า ชุบนิกเกิล (300mm)" href="#" target="_blank" rel="noopener">WNS5012A</a></td>
             <td><b>คีมคอม้า ชุบนิกเกิล</b><small>Water Pump Pliers Nickel Alloy Plated</small></td>
             <td>300mm</td>
@@ -856,8 +949,9 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 / C-ALLOY / เหล็กอัลลอย / CR-V</p>
 
     <div class="tblwrap">
-      <table class="tools">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -866,6 +960,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
         </tr></thead>
         <tbody>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0475A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0475A"><img src="../assets/img/tools/W0475A-sm.webp" alt="คีมจับท่อ ด้ามหุ้มหนา W0475A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0475A คีมจับท่อ ด้ามหุ้มหนา (250mm)" href="#" target="_blank" rel="noopener">W0475A</a></td>
             <td><b>คีมจับท่อ ด้ามหุ้มหนา</b><small>Water Pump Pliers</small></td>
             <td>250mm</td>
@@ -873,6 +968,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/WNS506E.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WNS506E"><img src="../assets/img/tools/WNS506E-sm.webp" alt="คีมปากขยาย WNS506E WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS506E คีมปากขยาย (150mm)" href="#" target="_blank" rel="noopener">WNS506E</a></td>
             <td><b>คีมปากขยาย</b><small>Slip Joint Pliers</small></td>
             <td>150mm</td>
@@ -880,6 +976,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/WNS508E.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WNS508E"><img src="../assets/img/tools/WNS508E-sm.webp" alt="คีมปากขยาย WNS508E WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS508E คีมปากขยาย (200mm)" href="#" target="_blank" rel="noopener">WNS508E</a></td>
             <td><b>คีมปากขยาย</b><small>Slip Joint Pliers</small></td>
             <td>200mm</td>
@@ -887,6 +984,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>SK-55</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/WNS508D.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WNS508D"><img src="../assets/img/tools/WNS508D-sm.webp" alt="คีมปากขยาย ชุบนิกเกิล WNS508D WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WNS508D คีมปากขยาย ชุบนิกเกิล (200mm)" href="#" target="_blank" rel="noopener">WNS508D</a></td>
             <td><b>คีมปากขยาย ชุบนิกเกิล</b><small>Slip Joint Pliers Nickel Alloy Plated</small></td>
             <td>200mm</td>
@@ -894,6 +992,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>C-ALLOY</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0039.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0039"><img src="../assets/img/tools/W0039-sm.webp" alt="คีมล็อคแผ่นโลหะ (คีมล็อคปากเป็ด) W0039 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0039 คีมล็อคแผ่นโลหะ (คีมล็อคปากเป็ด) (SM250mm)" href="#" target="_blank" rel="noopener">W0039</a></td>
             <td><b>คีมล็อคแผ่นโลหะ (คีมล็อคปากเป็ด)</b><small>Lock-Grip Pliers</small></td>
             <td>SM250mm</td>
@@ -901,6 +1000,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0028.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0028"><img src="../assets/img/tools/W0028-sm.webp" alt="คีมล็อคตัวซี (มีแผ่นรองหน้าสัมผัส) W0028 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0028 คีมล็อคตัวซี (มีแผ่นรองหน้าสัมผัส) (C450mm)" href="#" target="_blank" rel="noopener">W0028</a></td>
             <td><b>คีมล็อคตัวซี (มีแผ่นรองหน้าสัมผัส)</b><small>C-Clamp Locking Pliers</small></td>
             <td>C450mm</td>
@@ -908,6 +1008,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0029.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0029"><img src="../assets/img/tools/W0029-sm.webp" alt="คีมล็อคตัวซี (มีแผ่นรองหน้าสัมผัส) W0029 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0029 คีมล็อคตัวซี (มีแผ่นรองหน้าสัมผัส) (C275mm)" href="#" target="_blank" rel="noopener">W0029</a></td>
             <td><b>คีมล็อคตัวซี (มีแผ่นรองหน้าสัมผัส)</b><small>C-Clamp Locking Pliers</small></td>
             <td>C275mm</td>
@@ -915,6 +1016,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0033.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0033"><img src="../assets/img/tools/W0033-sm.webp" alt="คีมล็อคตัวซี W0033 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0033 คีมล็อคตัวซี (C275mm)" href="#" target="_blank" rel="noopener">W0033</a></td>
             <td><b>คีมล็อคตัวซี</b><small>C-Clamp Locking Pliers</small></td>
             <td>C275mm</td>
@@ -922,6 +1024,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0042.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0042"><img src="../assets/img/tools/W0042-sm.webp" alt="คีมล็อคปากแหลม W0042 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0042 คีมล็อคปากแหลม (CD225mm)" href="#" target="_blank" rel="noopener">W0042</a></td>
             <td><b>คีมล็อคปากแหลม</b><small>Lock-Grip Pliers</small></td>
             <td>CD225mm</td>
@@ -929,6 +1032,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0043.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0043"><img src="../assets/img/tools/W0043-sm.webp" alt="คีมล็อคปากแหลม W0043 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0043 คีมล็อคปากแหลม (CD160mm)" href="#" target="_blank" rel="noopener">W0043</a></td>
             <td><b>คีมล็อคปากแหลม</b><small>Lock-Grip Pliers</small></td>
             <td>CD160mm</td>
@@ -936,6 +1040,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0041.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0041"><img src="../assets/img/tools/W0041-sm.webp" alt="คีมล็อคงานเชื่อม W0041 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0041 คีมล็อคงานเชื่อม (W250mm)" href="#" target="_blank" rel="noopener">W0041</a></td>
             <td><b>คีมล็อคงานเชื่อม</b><small>Lock-Grip Pliers</small></td>
             <td>W250mm</td>
@@ -943,6 +1048,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/WSB10.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WSB10"><img src="../assets/img/tools/WSB10-sm.webp" alt="คีมล็อคปากโค้ง WSB10 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WSB10 คีมล็อคปากโค้ง (CR250mm)" href="#" target="_blank" rel="noopener">WSB10</a></td>
             <td><b>คีมล็อคปากโค้ง</b><small>Lock-Grip Pliers</small></td>
             <td>CR250mm</td>
@@ -950,6 +1056,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/WSB607.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WSB607"><img src="../assets/img/tools/WSB607-sm.webp" alt="คีมล็อคปากโค้ง WSB607 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WSB607 คีมล็อคปากโค้ง (CR175mm)" href="#" target="_blank" rel="noopener">WSB607</a></td>
             <td><b>คีมล็อคปากโค้ง</b><small>Lock-Grip Pliers</small></td>
             <td>CR175mm</td>
@@ -957,6 +1064,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0125.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0125"><img src="../assets/img/tools/W0125-sm.webp" alt="คีมล็อคปากโค้ง ด้ามหุ้มยาง W0125 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0125 คีมล็อคปากโค้ง ด้ามหุ้มยาง (CR250mm)" href="#" target="_blank" rel="noopener">W0125</a></td>
             <td><b>คีมล็อคปากโค้ง ด้ามหุ้มยาง</b><small>Lock-Grip Pliers</small></td>
             <td>CR250mm</td>
@@ -964,6 +1072,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0127.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0127"><img src="../assets/img/tools/W0127-sm.webp" alt="คีมล็อคโซ่ W0127 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0127 คีมล็อคโซ่ (L450mm)" href="#" target="_blank" rel="noopener">W0127</a></td>
             <td><b>คีมล็อคโซ่</b><small>Chain Lock Pliers</small></td>
             <td>L450mm</td>
@@ -971,6 +1080,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>โซ่เหล็ก Manganese #45</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0130.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0130"><img src="../assets/img/tools/W0130-sm.webp" alt="คีมล็อคคู่มินิ 5 นิ้ว W0130 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0130 คีมล็อคคู่มินิ 5 นิ้ว (WR125mm / CD125mm)" href="#" target="_blank" rel="noopener">W0130</a></td>
             <td><b>คีมล็อคคู่มินิ 5 นิ้ว</b><small>Lock-Grip Pliers</small></td>
             <td>WR125mm / CD125mm</td>
@@ -978,6 +1088,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอย</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/W0037.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0037"><img src="../assets/img/tools/W0037-sm.webp" alt="คีมล็อคปากตรง W0037 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0037 คีมล็อคปากตรง (R250mm)" href="#" target="_blank" rel="noopener">W0037</a></td>
             <td><b>คีมล็อคปากตรง</b><small>Lock-Grip Pliers</small></td>
             <td>R250mm</td>
@@ -985,6 +1096,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
             <td>เหล็กอัลลอยชนิดพิเศษ</td>
           </tr>
           <tr>
+            <td class="pic"><a href="../assets/img/tools/88-10.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ 88-10"><img src="../assets/img/tools/88-10-sm.webp" alt="คีมล็อคปากตรงอย่างดี (บรรจุแบบแผง) 88-10 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา 88-10 คีมล็อคปากตรงอย่างดี (บรรจุแบบแผง) (10 นิ้ว)" href="#" target="_blank" rel="noopener">88-10</a></td>
             <td><b>คีมล็อคปากตรงอย่างดี (บรรจุแบบแผง)</b><small>Lock-Grip Pliers</small><div class="note">ปากคีม Chromium Vanadium HRC50 · ตัวคีมเหล็กคาร์บอน A3 HRC40</div></td>
             <td>10 นิ้ว</td>
