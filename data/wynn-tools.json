@@ -33,7 +33,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "21kg"
+              "kg": "21kg",
+              "img": "assets/img/tools/WNS105A.webp"
             },
             {
               "code": "WNS105F",
@@ -42,7 +43,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "21kg"
+              "kg": "21kg",
+              "img": "assets/img/tools/WNS105F.webp"
             },
             {
               "code": "WNS105B",
@@ -51,7 +53,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "21kg"
+              "kg": "21kg",
+              "img": "assets/img/tools/WNS105B.webp"
             },
             {
               "code": "WNS105N",
@@ -60,7 +63,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "21kg"
+              "kg": "21kg",
+              "img": "assets/img/tools/WNS105N.webp"
             },
             {
               "code": "WNS105M",
@@ -69,7 +73,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "21kg"
+              "kg": "21kg",
+              "img": "assets/img/tools/WNS105M.webp"
             },
             {
               "code": "WNS105G",
@@ -78,7 +83,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "21kg"
+              "kg": "21kg",
+              "img": "assets/img/tools/WNS105G.webp"
             },
             {
               "code": "WNS105K",
@@ -87,7 +93,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "21kg"
+              "kg": "21kg",
+              "img": "assets/img/tools/WNS105K.webp"
             }
           ]
         },
@@ -107,7 +114,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "17kg"
+              "kg": "17kg",
+              "img": "assets/img/tools/S105A.webp"
             },
             {
               "code": "S105B",
@@ -116,7 +124,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "17kg"
+              "kg": "17kg",
+              "img": "assets/img/tools/S105B.webp"
             },
             {
               "code": "S105C",
@@ -125,7 +134,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "17kg"
+              "kg": "17kg",
+              "img": "assets/img/tools/S105C.webp"
             },
             {
               "code": "S105F",
@@ -134,7 +144,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "17kg"
+              "kg": "17kg",
+              "img": "assets/img/tools/S105F.webp"
             },
             {
               "code": "S105G",
@@ -143,7 +154,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "17kg"
+              "kg": "17kg",
+              "img": "assets/img/tools/S105G.webp"
             },
             {
               "code": "S105H",
@@ -152,7 +164,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "17kg"
+              "kg": "17kg",
+              "img": "assets/img/tools/S105H.webp"
             },
             {
               "code": "S105N",
@@ -161,7 +174,8 @@
               "size": "125mm",
               "pcs": "12/240",
               "meas": "43X40.5X36.5cm",
-              "kg": "17kg"
+              "kg": "17kg",
+              "img": "assets/img/tools/S105N.webp"
             }
           ]
         },
@@ -179,7 +193,8 @@
               "meas": "55X33X22.5cm",
               "kg": "33kg",
               "mat": "CR-V",
-              "notes_th": "ปากตัดความแข็งระดับ HRC58-63 · ตัดลวดสลิง 3 มม. · ตัดสายไฟ 0.5 มม. · ย้ำสายไฟด้วยขนาดเล็กได้"
+              "notes_th": "ปากตัดความแข็งระดับ HRC58-63 · ตัดลวดสลิง 3 มม. · ตัดสายไฟ 0.5 มม. · ย้ำสายไฟด้วยขนาดเล็กได้",
+              "img": "assets/img/tools/W3455.webp"
             },
             {
               "code": "W3144",
@@ -189,7 +204,8 @@
               "pcs": "6/60",
               "meas": "43.5X27X28.8cm",
               "kg": "25kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W3144.webp"
             },
             {
               "code": "AC208",
@@ -199,7 +215,8 @@
               "pcs": "6/60",
               "meas": "43.5X27X26cm",
               "kg": "25kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/AC208.webp"
             },
             {
               "code": "AC406",
@@ -209,7 +226,8 @@
               "pcs": "6/60",
               "meas": "45X23.5X23.5cm",
               "kg": "22kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/AC406.webp"
             },
             {
               "code": "WN218N",
@@ -219,7 +237,8 @@
               "pcs": "6/120",
               "meas": "58.5X24.3X36cm",
               "kg": "24kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WN218N.webp"
             },
             {
               "code": "W00100",
@@ -229,7 +248,8 @@
               "pcs": "12/96",
               "meas": "48X38X25.5cm",
               "kg": "25kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W00100.webp"
             },
             {
               "code": "W00200",
@@ -239,7 +259,8 @@
               "pcs": "12/96",
               "meas": "48X38X25.5cm",
               "kg": "20kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W00200.webp"
             },
             {
               "code": "W00300",
@@ -249,7 +270,8 @@
               "pcs": "12/96",
               "meas": "48X38X25.5cm",
               "kg": "24kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W00300.webp"
             }
           ]
         },
@@ -267,7 +289,8 @@
               "meas": "55X33X22.5cm",
               "kg": "33kg",
               "mat": "CR-V",
-              "notes_th": "ปากตัดแข็งระดับ HRC59-63 ตัดสายทองแดงได้ · ผ่อนแรงกว่าคีมปกติ 30%"
+              "notes_th": "ปากตัดแข็งระดับ HRC59-63 ตัดสายทองแดงได้ · ผ่อนแรงกว่าคีมปกติ 30%",
+              "img": "assets/img/tools/W3456.webp"
             },
             {
               "code": "W508P",
@@ -277,7 +300,8 @@
               "pcs": "6/60",
               "meas": "49X28X32cm",
               "kg": "21kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/W508P.webp"
             },
             {
               "code": "W106P",
@@ -287,7 +311,8 @@
               "pcs": "6/60",
               "meas": "49.5X25X34cm",
               "kg": "14kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/W106P.webp"
             },
             {
               "code": "W208P",
@@ -297,7 +322,8 @@
               "pcs": "6/60",
               "meas": "49X28X32cm",
               "kg": "26kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/W208P.webp"
             },
             {
               "code": "W406P",
@@ -307,7 +333,8 @@
               "pcs": "6/60",
               "meas": "49.5X25X34cm",
               "kg": "18kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/W406P.webp"
             },
             {
               "code": "W106",
@@ -317,7 +344,8 @@
               "pcs": "6/120",
               "meas": "58.5X24.3X36cm",
               "kg": "",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/W106.webp"
             },
             {
               "code": "W608P",
@@ -327,7 +355,8 @@
               "pcs": "6/60",
               "meas": "49X28X32cm",
               "kg": "24kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/W608P.webp"
             },
             {
               "code": "W306P",
@@ -337,7 +366,8 @@
               "pcs": "6/60",
               "meas": "49.5X25X34cm",
               "kg": "16kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/W306P.webp"
             },
             {
               "code": "WNS105D",
@@ -348,7 +378,8 @@
               "meas": "43X40.5X36.5cm",
               "kg": "28kg",
               "mat": "SK-55",
-              "notes_th": "ความแข็ง HRC52-58 ตัดลวด 0.8–1 มม. เหมาะงานไฟฟ้า ปอกสายไฟ ตัดเส้นลวด ตัดพลาสติก"
+              "notes_th": "ความแข็ง HRC52-58 ตัดลวด 0.8–1 มม. เหมาะงานไฟฟ้า ปอกสายไฟ ตัดเส้นลวด ตัดพลาสติก",
+              "img": "assets/img/tools/WNS105D.webp"
             },
             {
               "code": "WNS106D",
@@ -358,7 +389,8 @@
               "pcs": "20/160",
               "meas": "48X38X25.5cm",
               "kg": "23kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WNS106D.webp"
             },
             {
               "code": "WS175B",
@@ -368,7 +400,8 @@
               "pcs": "12/72",
               "meas": "51X28X22cm",
               "kg": "20kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WS175B.webp"
             },
             {
               "code": "WB208",
@@ -379,7 +412,8 @@
               "meas": "43.5X27X26cm",
               "kg": "22kg",
               "mat": "SK-55",
-              "notes_th": "มีปากย้ำสายไฟ 2 ขนาด ปอกสายไฟได้หลายขนาด"
+              "notes_th": "มีปากย้ำสายไฟ 2 ขนาด ปอกสายไฟได้หลายขนาด",
+              "img": "assets/img/tools/WB208.webp"
             }
           ]
         },
@@ -396,7 +430,8 @@
               "pcs": "6/60",
               "meas": "45.5X28.5X28.8cm",
               "kg": "21kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W208K.webp"
             },
             {
               "code": "WHS175B",
@@ -406,7 +441,8 @@
               "pcs": "6/120",
               "meas": "58X24X34.5cm",
               "kg": "19kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WHS175B.webp"
             },
             {
               "code": "WHS330B",
@@ -416,7 +452,8 @@
               "pcs": "6/36",
               "meas": "50X39X20cm",
               "kg": "20kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WHS330B.webp"
             },
             {
               "code": "WHB175B",
@@ -426,7 +463,8 @@
               "pcs": "6/120",
               "meas": "58X24X34.5cm",
               "kg": "19kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WHB175B.webp"
             },
             {
               "code": "WHB330B",
@@ -436,7 +474,8 @@
               "pcs": "6/36",
               "meas": "50X39X20cm",
               "kg": "20kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WHB330B.webp"
             },
             {
               "code": "WSS175B",
@@ -446,7 +485,8 @@
               "pcs": "6/120",
               "meas": "58X24X34.5cm",
               "kg": "19kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WSS175B.webp"
             },
             {
               "code": "WSS330B",
@@ -456,7 +496,8 @@
               "pcs": "6/36",
               "meas": "39X37X21cm",
               "kg": "19.5kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WSS330B.webp"
             },
             {
               "code": "WSB175B",
@@ -466,7 +507,8 @@
               "pcs": "6/120",
               "meas": "58X24X34.5cm",
               "kg": "19kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WSB175B.webp"
             },
             {
               "code": "WSB330B",
@@ -476,10 +518,11 @@
               "pcs": "6/36",
               "meas": "39X37X21cm",
               "kg": "19.5kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WSB330B.webp"
             },
             {
-              "code": "WNS01",
+              "code": "WNS001",
               "th": "คีมถ่างและหนีบแหวนชุด 4in1",
               "en": "4-in-1 Circlip Pliers",
               "size": "175mm",
@@ -487,7 +530,8 @@
               "meas": "60X28X38cm",
               "kg": "14kg",
               "mat": "SK-55",
-              "notes_th": "มีปาก 4 แบบให้เลือกใช้ 45° / 90° / 180°"
+              "notes_th": "มีปาก 4 แบบให้เลือกใช้ 45° / 90° / 180° (แคตตาล็อกพิมพ์รหัสเป็น WNS01 — ไฟล์รูปทางการใช้ WNS001)",
+              "img": "assets/img/tools/WNS001.webp"
             },
             {
               "code": "W3272",
@@ -498,7 +542,8 @@
               "meas": "36.5X31X39.5cm",
               "kg": "10kg",
               "mat": "เหล็กอัลลอย",
-              "notes_th": "เปลี่ยนหัวย้ำได้ 3 ขนาด ในชุดมีแถมตาไก่ขนาดละ 10 ชิ้น ใช้กับหนัง ยาง กระดาษ พลาสติก"
+              "notes_th": "เปลี่ยนหัวย้ำได้ 3 ขนาด ในชุดมีแถมตาไก่ขนาดละ 10 ชิ้น ใช้กับหนัง ยาง กระดาษ พลาสติก",
+              "img": "assets/img/tools/W3272.webp"
             }
           ]
         },
@@ -516,7 +561,8 @@
               "meas": "34X27X33cm",
               "kg": "12.5kg",
               "mat": "เหล็กอัลลอย",
-              "notes_th": "เจาะรูหนัง เข็มขัด กระดาษ การ์ดบอร์ด พีวีซี"
+              "notes_th": "เจาะรูหนัง เข็มขัด กระดาษ การ์ดบอร์ด พีวีซี",
+              "img": "assets/img/tools/W0378.webp"
             },
             {
               "code": "W0555",
@@ -526,7 +572,8 @@
               "pcs": "10/20",
               "meas": "51.5X32.5X34cm",
               "kg": "12kg",
-              "mat": "#65MN เหล็กแมงกานีส"
+              "mat": "#65MN เหล็กแมงกานีส",
+              "img": "assets/img/tools/W0555.webp"
             },
             {
               "code": "W0089A",
@@ -537,7 +584,8 @@
               "meas": "51X28X22cm",
               "kg": "16kg",
               "mat": "CR-V",
-              "notes_th": "เหมาะสำหรับงานก่อสร้างและงานตกแต่ง"
+              "notes_th": "เหมาะสำหรับงานก่อสร้างและงานตกแต่ง",
+              "img": "assets/img/tools/W0089A.webp"
             },
             {
               "code": "W0087A",
@@ -548,7 +596,8 @@
               "meas": "51X28X22cm",
               "kg": "17kg",
               "mat": "CR-V",
-              "notes_th": "ด้ามจับหุ้มสองชั้น เหมาะงานไม้ งานทำรองเท้า"
+              "notes_th": "ด้ามจับหุ้มสองชั้น เหมาะงานไม้ งานทำรองเท้า",
+              "img": "assets/img/tools/W0087A.webp"
             },
             {
               "code": "W0088A",
@@ -588,7 +637,8 @@
               "pcs": "4/12",
               "meas": "45X33X15cm",
               "kg": "27kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/W450C.webp"
             },
             {
               "code": "W600C",
