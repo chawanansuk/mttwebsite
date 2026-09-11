@@ -149,14 +149,22 @@ const META = {
   },
 };
 
+/* บางหมวดไม่ใช่สินค้า WYNN'S — กุญแจและของมีคมเป็นตรา M.T.T. ของร้านและแบรนด์อื่น
+   จึงห้ามพาดหัวว่า WYNN'S TOOLS เพราะจะเป็นการอ้างยี่ห้อผิด */
+const BRAND = {
+  padlock: { th: "ตรา M.T.T.", en: "M.T.T. brand", eyebrow_th: "ตรา M.T.T. และแบรนด์อื่น", eyebrow_en: "M.T.T. & other brands" },
+  blades:  { th: "ตรา M.T.T.", en: "M.T.T. brand", eyebrow_th: "ตรา M.T.T.", eyebrow_en: "M.T.T. brand" },
+};
+const brandOf = (id) => BRAND[id] || { th: "WYNN'S TOOLS", en: "WYNN'S TOOLS", eyebrow_th: "WYNN'S TOOLS (วินส์ทูลส์)", eyebrow_en: "WYNN'S TOOLS" };
+
 const NAV = Object.entries(META).map(([id, m]) => ({ id, file: m.file, th: DATA.categories.find((c) => c.id === id)?.th || id }));
 
-function rows(items, withPics) {
+function rows(items, withPics, brandTh) {
   return items.map((x) => {
     const ask = `สอบถามราคา ${x.code} ${x.th}${x.size ? " (" + x.size + ")" : ""}`;
     const note = x.notes_th ? `<div class="note">${esc(x.notes_th)}</div>` : "";
     const pic = !withPics ? "" : (x.img
-      ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(x.th)} ${esc(x.code)} WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>`
+      ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(x.th)} ${esc(x.code)} ${esc(brandTh)}" width="320" height="240" loading="lazy"></a></td>`
       : `\n            <td class="pic"></td>`);
     return `          <tr>${pic}
             <td class="code"><a data-line-ask="${esc(ask)}" href="#" target="_blank" rel="noopener">${esc(x.code)}</a></td>
@@ -168,7 +176,7 @@ function rows(items, withPics) {
   }).join("\n");
 }
 
-function groupHTML(g, i, withPics) {
+function groupHTML(g, i, withPics, brandTh) {
   const notes = (g.notes_th || []).map((n) => `<li>${esc(n)}</li>`).join("");
   return `    <h3 class="grp-h" id="g${i}">${esc(g.th)} <span>${esc(g.en)}</span> <em>${g.items.length} รายการ</em></h3>
 ${g.mat ? `    <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: ${esc(g.mat)}</p>` : ""}
@@ -183,7 +191,7 @@ ${withPics ? `          <th class="pic" data-th="รูป" data-en="Photo">ร�
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-${rows(g.items, withPics)}
+${rows(g.items, withPics, brandTh)}
         </tbody>
       </table>
     </div>`;
@@ -199,7 +207,7 @@ function page(cat) {
 
   const itemList = {
     "@context": "https://schema.org", "@type": "ItemList",
-    name: `${cat.th} WYNN'S TOOLS`,
+    name: `${cat.th} ${brandOf(cat.id).th}`,
     description: m.desc,
     numberOfItems: total,
     itemListElement: cat.groups.map((g, i) => ({
@@ -226,7 +234,7 @@ function page(cat) {
 <meta name="description" content="${esc(m.desc)}">
 <meta name="keywords" content="${esc(m.kw)}">
 <link rel="canonical" href="${url}">
-<meta property="og:title" content="${esc(cat.th)} WYNN'S TOOLS — ${total} รายการ พร้อมรหัสและสเปค">
+<meta property="og:title" content="${esc(cat.th)} ${esc(brandOf(cat.id).th)} — ${total} รายการ พร้อมรหัสและสเปค">
 <meta property="og:description" content="${esc(m.desc.slice(0, 110))}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="th_TH">
@@ -295,8 +303,8 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
 <section class="t-hero">
   <div class="wrap">
     <nav class="crumbs" aria-label="breadcrumb"><a href="../index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="tools.html" data-th="เครื่องมือช่าง" data-en="Hand tools">เครื่องมือช่าง</a> › <span>${esc(cat.th)}</span></nav>
-    <span class="eyebrow" data-th="${esc(m.eyebrow_th)} · WYNN'S TOOLS (วินส์ทูลส์)" data-en="${esc(m.eyebrow_en)} · WYNN'S TOOLS">${esc(m.eyebrow_th)} · WYNN'S TOOLS (วินส์ทูลส์)</span>
-    <h1>${esc(cat.th)} WYNN'S TOOLS</h1>
+    <span class="eyebrow" data-th="${esc(m.eyebrow_th)} · ${esc(brandOf(cat.id).eyebrow_th)}" data-en="${esc(m.eyebrow_en)} · ${esc(brandOf(cat.id).eyebrow_en)}">${esc(m.eyebrow_th)} · ${esc(brandOf(cat.id).eyebrow_th)}</span>
+    <h1>${esc(cat.th)} ${esc(brandOf(cat.id).th)}</h1>
     <p class="muted" data-th="${esc(m.lead_th)}" data-en="${esc(m.lead_en)}">${esc(m.lead_th)}</p>
     <div class="trust">
       <span class="badge">📋 ${total} <span data-th="รายการ" data-en="items">รายการ</span></span>
@@ -322,14 +330,14 @@ ${other.map((n) => `      <a href="${n.file}">${esc(n.th)}</a>`).join("\n")}
     </div>
 
     <h2 class="vh">${esc(cat.th)} — ${total} รายการ</h2>
-${cat.groups.map((g, i) => groupHTML(g, i, withPics)).join("\n\n")}
+${cat.groups.map((g, i) => groupHTML(g, i, withPics, brandOf(cat.id).th)).join("\n\n")}
 
     <div class="cta-band">
       <div>
         <h2 data-th="เจอรหัสที่ต้องการแล้ว? กดที่รหัสเพื่อถามราคา" data-en="Found your item number? Tap it to ask price">เจอรหัสที่ต้องการแล้ว? กดที่รหัสเพื่อถามราคา</h2>
         <p data-th="กดที่รหัสสินค้าในตาราง ระบบจะเปิด LINE พร้อมข้อความให้แล้ว หรือทักมาบอกรายการที่ต้องการก็ได้ ทีมงานเช็คสต็อกและแจ้งราคาส่งให้" data-en="Tap any item number and LINE opens with the message ready — or just tell us what you need and we'll check stock and quote.">กดที่รหัสสินค้าในตาราง ระบบจะเปิด LINE พร้อมข้อความให้แล้ว หรือทักมาบอกรายการที่ต้องการก็ได้ ทีมงานเช็คสต็อกและแจ้งราคาส่งให้</p>
       </div>
-      <a class="btn btn-primary" data-line-ask="สอบถามราคาเครื่องมือ WYNN'S TOOLS หมวด${esc(cat.th)}" href="#" target="_blank" rel="noopener" data-th="ทัก LINE ถามราคา" data-en="Ask on LINE">ทัก LINE ถามราคา</a>
+      <a class="btn btn-primary" data-line-ask="สอบถามราคา${esc(brandOf(cat.id).th === "WYNN'S TOOLS" ? "เครื่องมือ WYNN'S TOOLS หมวด" : "")}${esc(cat.th)}" href="#" target="_blank" rel="noopener" data-th="ทัก LINE ถามราคา" data-en="Ask on LINE">ทัก LINE ถามราคา</a>
     </div>
   </div>
 </section>
