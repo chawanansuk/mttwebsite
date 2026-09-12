@@ -56,7 +56,7 @@
         '<p data-th="ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย" data-en="Tools & hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand. Retail & wholesale, nationwide.">ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย</p></div>' +
       '<div class="foot-col"><h2 data-th="สินค้า" data-en="Products">สินค้า</h2><ul>' +
         '<li><a href="' + BASE + 'products/jet-lighter.html" data-th="ไฟฟู่ / ไฟแช็ก" data-en="Jet lighters">ไฟฟู่ / ไฟแช็ก</a></li>' +
-        '<li><a href="' + BASE + 'products/tools.html" data-th="เครื่องมือช่าง WYNN\'S TOOLS" data-en="WYNN\'S TOOLS">เครื่องมือช่าง WYNN\'S TOOLS</a></li>' +
+        '<li><a href="' + BASE + 'products/tools.html" data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS">เครื่องมือช่าง WYNNTOOLS</a></li>' +
         '<li><a href="' + BASE + 'products/tools-wrenches.html" data-th="ประแจ ลูกบล็อก" data-en="Wrenches & sockets">ประแจ ลูกบล็อก</a></li>' +
         '<li><a href="' + BASE + 'products/tools-holding.html" data-th="คีม แคลมป์ ปากกาจับ" data-en="Pliers & clamps">คีม แคลมป์ ปากกาจับ</a></li>' +
         '<li><a href="' + BASE + 'products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a></li>' +
