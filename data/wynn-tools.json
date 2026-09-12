@@ -1915,7 +1915,8 @@
               "pcs": "6/120",
               "meas": "43X33X23cm",
               "kg": "15kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WNS150B.webp"
             },
             {
               "code": "WNS200B",
@@ -1925,7 +1926,8 @@
               "pcs": "6/60",
               "meas": "47X28X19cm",
               "kg": "15kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WNS200B.webp"
             },
             {
               "code": "WNS250B",
@@ -1935,7 +1937,8 @@
               "pcs": "6/60",
               "meas": "55X33X22cm",
               "kg": "26kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WNS250B.webp"
             },
             {
               "code": "WNS300B",
@@ -1945,7 +1948,8 @@
               "pcs": "6/36",
               "meas": "38X34X25cm",
               "kg": "25kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WNS300B.webp"
             },
             {
               "code": "WNS375B",
@@ -1955,7 +1959,8 @@
               "pcs": "12",
               "meas": "46X26X11.5cm",
               "kg": "17kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WNS375B.webp"
             },
             {
               "code": "WNS450B",
@@ -1965,7 +1970,8 @@
               "pcs": "12",
               "meas": "49X18X15.5cm",
               "kg": "27kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WNS450B.webp"
             },
             {
               "code": "WNS600B",
@@ -1975,7 +1981,8 @@
               "pcs": "1/6",
               "meas": "62.5X30X12.5cm",
               "kg": "20.5kg",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WNS600B.webp"
             }
           ]
         },
@@ -2017,7 +2024,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WM9810.webp"
             },
             {
               "code": "WM9812",
@@ -2027,7 +2035,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WM9812.webp"
             },
             {
               "code": "WM9815",
@@ -2037,7 +2046,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WM9815.webp"
             },
             {
               "code": "WM9818",
@@ -2047,7 +2057,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WM9818.webp"
             },
             {
               "code": "WM9824",
@@ -2057,9 +2068,11 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "SK-55"
+              "mat": "SK-55",
+              "img": "assets/img/tools/WM9824.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/WM9806.webp"
         },
         {
           "th": "ประแจปากตายแหวนข้าง",
@@ -2078,7 +2091,8 @@
               "pcs": "12/240",
               "meas": "34X21X16cm",
               "kg": "12kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304A.webp"
             },
             {
               "code": "W0304C",
@@ -2088,7 +2102,8 @@
               "pcs": "12/240",
               "meas": "34X21X16cm",
               "kg": "13kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304C.webp"
             },
             {
               "code": "W0304D",
@@ -2098,7 +2113,8 @@
               "pcs": "12/240",
               "meas": "40X21X19.5cm",
               "kg": "15kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304D.webp"
             },
             {
               "code": "W0304E",
@@ -2108,7 +2124,8 @@
               "pcs": "12/120",
               "meas": "40X21X19.5cm",
               "kg": "19kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304E.webp"
             },
             {
               "code": "W0304F",
@@ -2118,7 +2135,8 @@
               "pcs": "12/240",
               "meas": "40X21X19.5cm",
               "kg": "21kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304F.webp"
             },
             {
               "code": "W0304G",
@@ -2128,7 +2146,8 @@
               "pcs": "12/240",
               "meas": "40X21X19.5cm",
               "kg": "25kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304G.webp"
             },
             {
               "code": "W0304H",
@@ -2138,7 +2157,8 @@
               "pcs": "12/180",
               "meas": "35X23X21cm",
               "kg": "19kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304H.webp"
             },
             {
               "code": "W0304I",
@@ -2148,7 +2168,8 @@
               "pcs": "12/180",
               "meas": "35X23X21cm",
               "kg": "20.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304I.webp"
             },
             {
               "code": "W0304J",
@@ -2158,7 +2179,8 @@
               "pcs": "12/144",
               "meas": "40X27X20cm",
               "kg": "23kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304J.webp"
             },
             {
               "code": "W0304L",
@@ -2168,7 +2190,8 @@
               "pcs": "12/144",
               "meas": "40X27X20cm",
               "kg": "25kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304L.webp"
             },
             {
               "code": "W0304N",
@@ -2178,7 +2201,8 @@
               "pcs": "12/96",
               "meas": "30X29X22.5cm",
               "kg": "24.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304N.webp"
             },
             {
               "code": "W0304O",
@@ -2188,7 +2212,8 @@
               "pcs": "12/96",
               "meas": "30X29X22.5cm",
               "kg": "26kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304O.webp"
             },
             {
               "code": "W0304P",
@@ -2198,7 +2223,8 @@
               "pcs": "6/72",
               "meas": "34.5X27X25cm",
               "kg": "23kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304P.webp"
             },
             {
               "code": "W0304Q",
@@ -2208,7 +2234,8 @@
               "pcs": "6/72",
               "meas": "34.5X27X25cm",
               "kg": "25kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304Q.webp"
             },
             {
               "code": "W0304T",
@@ -2218,7 +2245,8 @@
               "pcs": "6/48",
               "meas": "39.5X30.5X30.5cm",
               "kg": "23kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304T.webp"
             },
             {
               "code": "W0304U",
@@ -2228,7 +2256,8 @@
               "pcs": "6/36",
               "meas": "39.5X30.5X30.5cm",
               "kg": "22kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304U.webp"
             },
             {
               "code": "W0304V",
@@ -2238,9 +2267,11 @@
               "pcs": "6/36",
               "meas": "39.5X30.5X30.5cm",
               "kg": "26kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0304V.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/W0304A.webp"
         },
         {
           "th": "ประแจแหวนคู่",
@@ -2258,7 +2289,8 @@
               "pcs": "12/336",
               "meas": "43X24.5X15cm",
               "kg": "13kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0306A.webp"
             },
             {
               "code": "W0306C",
@@ -2268,7 +2300,8 @@
               "pcs": "12/336",
               "meas": "43X24.5X17cm",
               "kg": "18kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0306C.webp"
             },
             {
               "code": "W0306F",
@@ -2278,7 +2311,8 @@
               "pcs": "12/240",
               "meas": "43X24.5X20cm",
               "kg": "20kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0306F.webp"
             },
             {
               "code": "W0306H",
@@ -2288,7 +2322,8 @@
               "pcs": "12/216",
               "meas": "40.5X23.5X16.5cm",
               "kg": "27kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0306H.webp"
             },
             {
               "code": "W0306I",
@@ -2298,7 +2333,8 @@
               "pcs": "12/144",
               "meas": "45.5X26.5X13.5cm",
               "kg": "23kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0306I.webp"
             },
             {
               "code": "W0306J",
@@ -2308,7 +2344,8 @@
               "pcs": "12/144",
               "meas": "45.5X26.5X13.5cm",
               "kg": "23kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0306J.webp"
             },
             {
               "code": "W0306L",
@@ -2318,7 +2355,8 @@
               "pcs": "6/72",
               "meas": "31.5X30.5X16.5cm",
               "kg": "17kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0306L.webp"
             },
             {
               "code": "W0306M",
@@ -2328,7 +2366,8 @@
               "pcs": "6/72",
               "meas": "31.5X30.5X16.5cm",
               "kg": "20kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0306M.webp"
             },
             {
               "code": "W0306U",
@@ -2338,9 +2377,11 @@
               "pcs": "12/36",
               "meas": "47.5X31.5X15cm",
               "kg": "28kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0306U.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/W0306A.webp"
         },
         {
           "th": "ประแจล็อก / ประแจคอพับ / ประแจแหวนผ่า",
@@ -2355,7 +2396,8 @@
               "pcs": "12/180",
               "meas": "35X23X21cm",
               "kg": "19kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS1001.webp"
             },
             {
               "code": "WS1002",
@@ -2365,7 +2407,8 @@
               "pcs": "12/144",
               "meas": "40X27X20cm",
               "kg": "27kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS1002.webp"
             },
             {
               "code": "WS1003",
@@ -2375,7 +2418,8 @@
               "pcs": "12/96",
               "meas": "30X29X22.5cm",
               "kg": "23.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS1003.webp"
             },
             {
               "code": "WS1004",
@@ -2385,7 +2429,8 @@
               "pcs": "12/96",
               "meas": "30X29X22.5cm",
               "kg": "31kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS1004.webp"
             },
             {
               "code": "WS1005",
@@ -2395,7 +2440,8 @@
               "pcs": "6/72",
               "meas": "34.5X27X25cm",
               "kg": "31kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS1005.webp"
             },
             {
               "code": "W0311A",
@@ -2405,7 +2451,8 @@
               "pcs": "10/200",
               "meas": "40X21X19.5cm",
               "kg": "16kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0311A.webp"
             },
             {
               "code": "W0311C",
@@ -2415,7 +2462,8 @@
               "pcs": "10/150",
               "meas": "35X23X21cm",
               "kg": "15.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0311C.webp"
             },
             {
               "code": "W0311E",
@@ -2425,7 +2473,8 @@
               "pcs": "10/120",
               "meas": "34X24X20cm",
               "kg": "23kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0311E.webp"
             },
             {
               "code": "W0311F",
@@ -2435,7 +2484,8 @@
               "pcs": "10/120",
               "meas": "40X27X20cm",
               "kg": "30kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0311F.webp"
             },
             {
               "code": "W0286B",
@@ -2445,7 +2495,8 @@
               "pcs": "10/200",
               "meas": "36X18X16cm",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0286B.webp"
             },
             {
               "code": "W0286C",
@@ -2455,7 +2506,8 @@
               "pcs": "10/200",
               "meas": "40X21X19.5cm",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0286C.webp"
             },
             {
               "code": "W0286D",
@@ -2465,7 +2517,8 @@
               "pcs": "10/200",
               "meas": "40X21X19.5cm",
               "kg": "25kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0286D.webp"
             },
             {
               "code": "W0286F",
@@ -2475,7 +2528,8 @@
               "pcs": "10/150",
               "meas": "35X23X21cm",
               "kg": "20kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0286F.webp"
             },
             {
               "code": "W0286H",
@@ -2485,7 +2539,8 @@
               "pcs": "6/72",
               "meas": "34X24X20cm",
               "kg": "15kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0286H.webp"
             }
           ]
         },
@@ -2505,7 +2560,8 @@
               "pcs": "300",
               "meas": "30X26X15cm",
               "kg": "20.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS008C.webp"
             },
             {
               "code": "WS008E",
@@ -2515,7 +2571,8 @@
               "pcs": "200",
               "meas": "38X21X15cm",
               "kg": "18.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS008E.webp"
             },
             {
               "code": "WS008G",
@@ -2525,7 +2582,8 @@
               "pcs": "200",
               "meas": "40X20X16cm",
               "kg": "25kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS008G.webp"
             },
             {
               "code": "WS008H",
@@ -2535,7 +2593,8 @@
               "pcs": "150",
               "meas": "36X22X15cm",
               "kg": "23.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS008H.webp"
             },
             {
               "code": "WS008I",
@@ -2545,7 +2604,8 @@
               "pcs": "125",
               "meas": "28X22X18cm",
               "kg": "23kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS008I.webp"
             },
             {
               "code": "WS008L",
@@ -2555,7 +2615,8 @@
               "pcs": "70",
               "meas": "40X30X13cm",
               "kg": "22kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS008L.webp"
             },
             {
               "code": "WS008N",
@@ -2565,7 +2626,8 @@
               "pcs": "80",
               "meas": "36X33X11cm",
               "kg": "29.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS008N.webp"
             },
             {
               "code": "W0287A",
@@ -2575,7 +2637,8 @@
               "pcs": "10/200",
               "meas": "34X21X16cm",
               "kg": "11kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0287A.webp"
             },
             {
               "code": "W0287C",
@@ -2585,7 +2648,8 @@
               "pcs": "10/200",
               "meas": "36X18X16cm",
               "kg": "15kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0287C.webp"
             },
             {
               "code": "W0287E",
@@ -2595,7 +2659,8 @@
               "pcs": "10/200",
               "meas": "40X21X19.5cm",
               "kg": "20kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0287E.webp"
             },
             {
               "code": "W0287F",
@@ -2605,7 +2670,8 @@
               "pcs": "10/200",
               "meas": "40X21X19.5cm",
               "kg": "26kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0287F.webp"
             },
             {
               "code": "W0287G",
@@ -2615,7 +2681,8 @@
               "pcs": "10/150",
               "meas": "35X23X21cm",
               "kg": "19kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0287G.webp"
             },
             {
               "code": "W0287J",
@@ -2625,7 +2692,8 @@
               "pcs": "10/120",
               "meas": "40X27X20cm",
               "kg": "28kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0287J.webp"
             },
             {
               "code": "W0287L",
@@ -2635,7 +2703,8 @@
               "pcs": "10/120",
               "meas": "40X27X20cm",
               "kg": "28kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0287L.webp"
             },
             {
               "code": "W0287N",
@@ -2645,7 +2714,8 @@
               "pcs": "6/72",
               "meas": "34.5X27X25cm",
               "kg": "24kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0287N.webp"
             },
             {
               "code": "W0427A",
@@ -2655,7 +2725,8 @@
               "pcs": "10/200",
               "meas": "34X21X16cm",
               "kg": "13kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0427A.webp"
             },
             {
               "code": "W0427C",
@@ -2665,7 +2736,8 @@
               "pcs": "10/200",
               "meas": "40X21X19.5cm",
               "kg": "16kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0427C.webp"
             },
             {
               "code": "W0427E",
@@ -2675,7 +2747,8 @@
               "pcs": "10/200",
               "meas": "40X21X19.5cm",
               "kg": "26kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0427E.webp"
             },
             {
               "code": "W0427G",
@@ -2685,7 +2758,8 @@
               "pcs": "10/150",
               "meas": "35X23X21cm",
               "kg": "16kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0427G.webp"
             },
             {
               "code": "W0427J",
@@ -2695,7 +2769,8 @@
               "pcs": "10/120",
               "meas": "40X27X20cm",
               "kg": "30kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0427J.webp"
             },
             {
               "code": "W0427L",
@@ -2705,9 +2780,11 @@
               "pcs": "10/80",
               "meas": "30X29X22.5cm",
               "kg": "29.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0427L.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/WS008C.webp"
         },
         {
           "th": "ชุดประแจ (เซ็ต)",
@@ -2722,7 +2799,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0327B.webp"
             },
             {
               "code": "W0327D",
@@ -2732,7 +2810,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0327D.webp"
             },
             {
               "code": "W0329A",
@@ -2742,7 +2821,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0329A.webp"
             },
             {
               "code": "W0329B",
@@ -2752,7 +2832,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0329B.webp"
             },
             {
               "code": "ปากตาย8-24ด้าน",
@@ -2792,7 +2873,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0601.webp"
             },
             {
               "code": "W0599",
@@ -2802,7 +2884,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0599.webp"
             },
             {
               "code": "W0603",
@@ -2812,7 +2895,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0603.webp"
             },
             {
               "code": "W0602",
@@ -2822,7 +2906,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0602.webp"
             },
             {
               "code": "W0327AC",
@@ -2832,7 +2917,8 @@
               "pcs": "",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0327AC.webp"
             }
           ]
         },
@@ -2853,7 +2939,8 @@
               "pcs": "12/144",
               "meas": "32.5X17.5X18.5cm",
               "kg": "17.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0560U.webp"
             },
             {
               "code": "W0560V",
@@ -2863,7 +2950,8 @@
               "pcs": "5/60",
               "meas": "27X27.2X18cm",
               "kg": "41.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/W0560V.webp"
             },
             {
               "code": "WNS300J",
@@ -2873,7 +2961,8 @@
               "pcs": "6/36",
               "meas": "",
               "kg": "",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WNS300J.webp"
             },
             {
               "code": "WS005A",
@@ -2883,7 +2972,8 @@
               "pcs": "12/240",
               "meas": "27.5X14.8X19.2cm",
               "kg": "12.3kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005A.webp"
             },
             {
               "code": "WS005C",
@@ -2893,7 +2983,8 @@
               "pcs": "12/240",
               "meas": "27.5X14.8X19.2cm",
               "kg": "12.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005C.webp"
             },
             {
               "code": "WS005E",
@@ -2903,7 +2994,8 @@
               "pcs": "12/240",
               "meas": "27.5X14.8X19.2cm",
               "kg": "13.6kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005E.webp"
             },
             {
               "code": "WS005F",
@@ -2913,7 +3005,8 @@
               "pcs": "12/240",
               "meas": "27.5X14.8X19.2cm",
               "kg": "13.9kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005F.webp"
             },
             {
               "code": "WS005G",
@@ -2923,7 +3016,8 @@
               "pcs": "12/240",
               "meas": "27.5X14.8X19.2cm",
               "kg": "13.8kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005G.webp"
             },
             {
               "code": "WS005H",
@@ -2933,7 +3027,8 @@
               "pcs": "12/240",
               "meas": "27.5X14.8X19.2cm",
               "kg": "13kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005H.webp"
             },
             {
               "code": "WS005J",
@@ -2943,7 +3038,8 @@
               "pcs": "12/240",
               "meas": "33.5X16.5X20.5cm",
               "kg": "16.4kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005J.webp"
             },
             {
               "code": "WS005L",
@@ -2953,7 +3049,8 @@
               "pcs": "12/180",
               "meas": "37X18X16cm",
               "kg": "13.2kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005L.webp"
             },
             {
               "code": "WS005N",
@@ -2963,7 +3060,8 @@
               "pcs": "12/180",
               "meas": "37X18X16cm",
               "kg": "14kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005N.webp"
             },
             {
               "code": "WS005P",
@@ -2973,7 +3071,8 @@
               "pcs": "12/180",
               "meas": "42X21X17cm",
               "kg": "22.6kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005P.webp"
             },
             {
               "code": "WS005Q",
@@ -2983,7 +3082,8 @@
               "pcs": "12/180",
               "meas": "42X21X17cm",
               "kg": "20.6kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS005Q.webp"
             },
             {
               "code": "WS007A",
@@ -2993,7 +3093,8 @@
               "pcs": "12/144",
               "meas": "32X15.2X18.5cm",
               "kg": "17kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS007A.webp"
             },
             {
               "code": "WS007C",
@@ -3003,7 +3104,8 @@
               "pcs": "12/144",
               "meas": "32X15.2X18.5cm",
               "kg": "15.5kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS007C.webp"
             },
             {
               "code": "WS007E",
@@ -3013,7 +3115,8 @@
               "pcs": "12/144",
               "meas": "32X15.2X18.5cm",
               "kg": "17kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS007E.webp"
             },
             {
               "code": "WS007F",
@@ -3023,7 +3126,8 @@
               "pcs": "12/144",
               "meas": "32X15.2X18.5cm",
               "kg": "17.2kg",
-              "mat": "CR-V"
+              "mat": "CR-V",
+              "img": "assets/img/tools/WS007F.webp"
             },
             {
               "code": "WS007G",
@@ -4687,7 +4791,8 @@
               "notes_th": "สามารถตัดเหล็กเส้นผ่านศูนย์กลาง: คาร์บอนต่ำ Φ19mm / คาร์บอนสูง Φ14mm",
               "img": "assets/img/tools/W0122A.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/W0118A.webp"
         },
         {
           "th": "กรรไกรตัดเหล็กเส้น รุ่นเล็ก",
@@ -4792,7 +4897,8 @@
               "notes_th": "ตัดลวดเหล็กที่มีพื้นผิว 500mm²",
               "img": "assets/img/tools/W0425F.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/W0425A.webp"
         },
         {
           "th": "คีมตัดลวดสลิง",
@@ -4859,7 +4965,8 @@
               "mat": "CR-V",
               "img": "assets/img/tools/WS7010B.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/WS706B.webp"
         },
         {
           "th": "คีมตัดสายเคเบิล",
@@ -4950,7 +5057,8 @@
               "mat": "CR-V",
               "img": "assets/img/tools/W1110C.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/W1110A.webp"
         },
         {
           "th": "กรรไกรตัดแผ่นเหล็ก",
@@ -5006,7 +5114,8 @@
               "mat": "CR-V",
               "img": "assets/img/tools/W6014C.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/W608C.webp"
         },
         {
           "th": "คีมตัดเคเบิลแบบล้อเฟือง",
@@ -5223,7 +5332,8 @@
               "mat": "เหล็กอัลลอย",
               "img": "assets/img/tools/W2922.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/W2921.webp"
         },
         {
           "th": "กรรไกรหัวโต",
@@ -5294,7 +5404,8 @@
               "notes_th": "ตารางมีเฉพาะคอลัมน์ รหัส และ ขนาด; ระบุการบรรจุ \"1 โหล/แผง\" คร่อมทั้งสองรหัส",
               "img": "assets/img/tools/WM3202-ใหญ่.webp"
             }
-          ]
+          ],
+          "img_shared": "assets/img/tools/WM3202-เล็ก.webp"
         }
       ]
     },

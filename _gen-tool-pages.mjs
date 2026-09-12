@@ -178,20 +178,29 @@ function rows(items, withPics, brandTh) {
 
 function groupHTML(g, i, withPics, brandTh) {
   const notes = (g.notes_th || []).map((n) => `<li>${esc(n)}</li>`).join("");
+  /* โรงงานถ่ายรูปเดียวใช้ทั้งกลุ่ม เช่น ประแจปากตายแหวนข้าง 17 เบอร์ใช้รูปที่ปั๊ม 19 รูปเดียว
+     ถ้าเอาไปวางทีละแถวจะกลายเป็นว่าแถว 8 มม. โชว์รูปประแจ 19 มม. จึงแสดงเป็นรูปตัวแทนของกลุ่มแทน */
+  const shared = g.img_shared;
+  const rowPics = withPics && !shared;
+  const sharedPic = !shared ? "" : `    <figure class="grp-pic">
+      <a href="../${shared}" target="_blank" rel="noopener"><img src="../${shared.replace(".webp", "-sm.webp")}" alt="${esc(g.th)} ${esc(brandTh)}" width="320" height="240" loading="lazy"></a>
+      <figcaption data-th="รูปตัวอย่างของสินค้ากลุ่มนี้ — ทุกเบอร์หน้าตาเหมือนกัน ต่างที่ขนาด ดูขนาดจริงที่คอลัมน์ขนาด" data-en="One representative photo for this group — all sizes look alike; see the size column for the actual size.">รูปตัวอย่างของสินค้ากลุ่มนี้ — ทุกเบอร์หน้าตาเหมือนกัน ต่างที่ขนาด ดูขนาดจริงที่คอลัมน์ขนาด</figcaption>
+    </figure>`;
   return `    <h3 class="grp-h" id="g${i}">${esc(g.th)} <span>${esc(g.en)}</span> <em>${g.items.length} รายการ</em></h3>
 ${g.mat ? `    <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: ${esc(g.mat)}</p>` : ""}
 ${notes ? `    <ul class="grp-notes">${notes}</ul>` : ""}
+${sharedPic}
     <div class="tblwrap">
-      <table class="tools${withPics ? " haspic" : ""}">
+      <table class="tools${rowPics ? " haspic" : ""}">
         <thead><tr>
-${withPics ? `          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>\n` : ""}          <th data-th="รหัส" data-en="Item no.">รหัส</th>
+${rowPics ? `          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>\n` : ""}          <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
           <th data-th="จำนวน/ลัง" data-en="Per carton">จำนวน/ลัง</th>
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-${rows(g.items, withPics, brandTh)}
+${rows(g.items, rowPics, brandTh)}
         </tbody>
       </table>
     </div>`;
@@ -275,7 +284,7 @@ ${JSON.stringify(itemList, null, 2)}
 .grp-h em{font-style:normal;font-family:"Anuphan";font-size:.78rem;color:var(--amber-dark);background:var(--amber-soft);border-radius:999px;padding:2px 10px;vertical-align:middle}
 .grp-mat{font-size:.85rem;color:var(--ink-dim);margin:0 0 6px}
 .grp-notes{margin:0 0 12px;padding-left:20px;font-size:.85rem;color:var(--ink-dim)}
-.grp-notes li{padding:2px 0}
+.grp-notes li{padding:2px 0}\n.grp-pic{margin:0 0 14px;max-width:340px}\n.grp-pic img{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);}\n.grp-pic a:hover img{border-color:var(--amber)}\n.grp-pic figcaption{font-size:.78rem;color:var(--ink-dim);margin-top:6px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:660px}
 table.tools.haspic{min-width:740px}
