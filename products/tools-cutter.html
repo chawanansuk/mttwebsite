@@ -369,6 +369,9 @@
 .grp-mat{font-size:.85rem;color:var(--ink-dim);margin:0 0 6px}
 .grp-notes{margin:0 0 12px;padding-left:20px;font-size:.85rem;color:var(--ink-dim)}
 .grp-notes li{padding:2px 0}
+table.tools tr.fam-lead td{border-top:2px solid var(--line-strong)}
+table.tools tr.fam-lead:first-child td{border-top:0}
+table.tools td.nm .famnote{font-size:.78rem;color:var(--amber-dark);margin-top:4px;max-width:320px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:660px}
 table.tools.haspic{min-width:740px}
@@ -401,6 +404,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="muted" data-th="หมวดใหญ่ที่รวมงานตัด เจาะ และแต่งผิวไว้ด้วยกัน มีคัตเตอร์อเนกประสงค์ คีมและกรรไกรตัดท่อ PVC ตัวตอกเลข-ตอกรหัส ตะไบทุกหน้าตัด โครงเลื่อยเหล็ก ชุดโฮลซอว์ ดอกสว่านไฮสปีด และดอกเจาะปูนสำหรับสว่านโรตารี่" data-en="Cutting, drilling and finishing in one section: utility knives, PVC pipe cutters, number and letter punches, files in every profile, hacksaw frames and blades, hole saw kits, HSS twist drills and SDS masonry chisels.">หมวดใหญ่ที่รวมงานตัด เจาะ และแต่งผิวไว้ด้วยกัน มีคัตเตอร์อเนกประสงค์ คีมและกรรไกรตัดท่อ PVC ตัวตอกเลข-ตอกรหัส ตะไบทุกหน้าตัด โครงเลื่อยเหล็ก ชุดโฮลซอว์ ดอกสว่านไฮสปีด และดอกเจาะปูนสำหรับสว่านโรตารี่</p>
     <div class="trust">
       <span class="badge">📋 93 <span data-th="รายการ" data-en="items">รายการ</span></span>
+      <span class="badge">📷 92 <span data-th="รายการมีรูปสินค้า" data-en="with product photos">รายการมีรูปสินค้า</span></span>
 
       <span class="badge" data-th="✔ ผู้นำเข้าโดยตรง" data-en="✔ Direct importer">✔ ผู้นำเข้าโดยตรง</span>
       <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
@@ -439,9 +443,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g0">คัตเตอร์อเนกประสงค์ <span>UTILITY KNIFE</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-5 / A-ALLOY ใบมีดเหล็กกล้าคาร์บอนสูง ด้ามจับเหล็กอัลลอย</p>
     <ul class="grp-notes"><li>ด้ามจับเหล็กอลูมิเนียมอัลลอย อย่างดี</li><li>มีปุ่มล็อคอัตโนมัติ</li><li>พร้อมใบมีด 4 ใบเหล็กกล้าคาร์บอนสูง ทั้งคมและทน</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw0">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -449,9 +454,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="คัตเตอร์อเนกประสงค์" data-nen="Utility Knife">
+            <td class="pic"><a href="../assets/img/tools/W604.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W604"><img src="../assets/img/tools/W604-sm.webp" alt="คัตเตอร์อเนกประสงค์ W604 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W604 คัตเตอร์อเนกประสงค์ (18mm)" href="#" target="_blank" rel="noopener">W604</a></td>
-            <td><b>คัตเตอร์อเนกประสงค์</b><small>Utility Knife</small><div class="note">หน้า 43 ของแคตตาล็อก</div></td>
+            <td class="nm"><span class="nmtxt"><b>คัตเตอร์อเนกประสงค์</b><small>Utility Knife</small></span><div class="note">หน้า 43 ของแคตตาล็อก</div></td>
             <td>18mm</td>
             <td>10/120</td>
             <td>SK-5 / A-ALLOY</td>
@@ -463,9 +469,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g1">คัตเตอร์ <span>UTILITY KNIFE</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-5 / STANLESS ใบมีดเหล็กกล้าคาร์บอนสูง ช่องรองใบมีดสแตนเลส</p>
     <ul class="grp-notes"><li>ด้ามใช้วัสดุ TPR และ ABS จับใช้สบายมือ</li><li>ช่องรับใบมีดสแตนเลส ทนทาน</li><li>มีใบมีดทั้งหมด 3 ใบ ทำจากเหล็กกล้าคาร์บอนสูง คมและทน</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw1">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -473,9 +480,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="คัตเตอร์" data-nen="Utility Knife">
+            <td class="pic"><a href="../assets/img/tools/W700RP.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W700RP"><img src="../assets/img/tools/W700RP-sm.webp" alt="คัตเตอร์ W700RP WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W700RP คัตเตอร์ (A型)" href="#" target="_blank" rel="noopener">W700RP</a></td>
-            <td><b>คัตเตอร์</b><small>Utility Knife</small><div class="note">ช่องขนาด/SIZE พิมพ์เป็นอักษรจีน-ญี่ปุ่นว่า A型 (แบบ A)</div></td>
+            <td class="nm"><span class="nmtxt"><b>คัตเตอร์</b><small>Utility Knife</small></span><div class="note">ช่องขนาด/SIZE พิมพ์เป็นอักษรจีน-ญี่ปุ่นว่า A型 (แบบ A)</div></td>
             <td>A型</td>
             <td>15/120</td>
             <td>SK-5 / STANLESS</td>
@@ -487,9 +495,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g2">คัตเตอร์ตัดท่อทองแดง <span>PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY เหล็กอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ทำจากเหล็กอลูมิเนียมอัลลอย ผ่านการชุบโลหะด้วยไฟฟ้า ใช้ทน ใช้ได้นาน</li><li>ล้อตัดทำจากเหล็กอัลลอย ตัดได้คม และเนียน</li><li>ตัดท่อทองแดง อลูมิเนียม หรือท่อบาง เส้นผ่าศูนย์กลาง 3-32มม.ได้</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw2">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -497,9 +506,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="คัตเตอร์ตัดท่อทองแดง" data-nen="Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/W0095.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0095"><img src="../assets/img/tools/W0095-sm.webp" alt="คัตเตอร์ตัดท่อทองแดง W0095 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0095 คัตเตอร์ตัดท่อทองแดง (ตัดท่อ ø 3-32mm)" href="#" target="_blank" rel="noopener">W0095</a></td>
-            <td><b>คัตเตอร์ตัดท่อทองแดง</b><small>Pipe Cutter</small></td>
+            <td class="nm"><span class="nmtxt"><b>คัตเตอร์ตัดท่อทองแดง</b><small>Pipe Cutter</small></span></td>
             <td>ตัดท่อ ø 3-32mm</td>
             <td>9/72</td>
             <td>A-ALLOY</td>
@@ -511,9 +521,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g3">คัตเตอร์ตัดท่อทองแดง <span>PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY เหล็กอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ทำจากเหล็กอลูมิเนียมอัลลอย ใช้ทนและนาน</li><li>ล้อตัดทำจากเหล็กอัลลอย ตัดได้คม และเนียน</li><li>ตัดท่อทองแดง อลูมิเนียม หรือท่อบาง เส้นผ่าศูนย์กลาง 3-30มม.ได้</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw3">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -521,9 +532,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="คัตเตอร์ตัดท่อทองแดง" data-nen="Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/W0096.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0096"><img src="../assets/img/tools/W0096-sm.webp" alt="คัตเตอร์ตัดท่อทองแดง W0096 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0096 คัตเตอร์ตัดท่อทองแดง (ตัดท่อ ø 3-30mm)" href="#" target="_blank" rel="noopener">W0096</a></td>
-            <td><b>คัตเตอร์ตัดท่อทองแดง</b><small>Pipe Cutter</small></td>
+            <td class="nm"><span class="nmtxt"><b>คัตเตอร์ตัดท่อทองแดง</b><small>Pipe Cutter</small></span></td>
             <td>ตัดท่อ ø 3-30mm</td>
             <td>9/72</td>
             <td>A-ALLOY</td>
@@ -535,9 +547,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g4">คัตเตอร์ตัดอะคริลิค หัวตะขอ <span>UTILITY KNIFE</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-5 / STANLESS ใบมีดเหล็กสปริง ช่องรองใบมีดสแตนเลส</p>
     <ul class="grp-notes"><li>ด้ามใช้วัสดุ ABS จับใช้สบายมือ</li><li>ช่องรับใบมีดสแตนเลส ทนทาน</li><li>มีใบมีดทั้งหมด 4 ใบ ทำจากเหล็กสปริง คมและทน</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw4">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -545,9 +558,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="คัตเตอร์ตัดอะคริลิค หัวตะขอ" data-nen="Utility Knife">
+            <td class="pic"><a href="../assets/img/tools/W0258.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0258"><img src="../assets/img/tools/W0258-sm.webp" alt="คัตเตอร์ตัดอะคริลิค หัวตะขอ W0258 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0258 คัตเตอร์ตัดอะคริลิค หัวตะขอ" href="#" target="_blank" rel="noopener">W0258</a></td>
-            <td><b>คัตเตอร์ตัดอะคริลิค หัวตะขอ</b><small>Utility Knife</small><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
+            <td class="nm"><span class="nmtxt"><b>คัตเตอร์ตัดอะคริลิค หัวตะขอ</b><small>Utility Knife</small></span><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
             <td></td>
             <td>20/160</td>
             <td>SK-5 / STANLESS</td>
@@ -559,9 +573,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g5">คัตเตอร์พับอเนกประสงค์ <span>FOLDING UTILITY KNIFE</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY / SK-5 ใบมีดเหล็กสปริง ด้ามเหล็กอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ทำจากวัสดุเป็นโลหะทั้งชิ้น</li><li>ใบมีดเหล็กกล้าคาร์บอนสูงชนิดเหล็กสปริง ตัดได้คม ใช้ง่าย และทน</li><li>มีใบมีดทั้งหมด 5 ใบ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw5">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -569,9 +584,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="คัตเตอร์พับอเนกประสงค์" data-nen="Folding Utility Knife">
+            <td class="pic"><a href="../assets/img/tools/W06500.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W06500"><img src="../assets/img/tools/W06500-sm.webp" alt="คัตเตอร์พับอเนกประสงค์ W06500 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W06500 คัตเตอร์พับอเนกประสงค์" href="#" target="_blank" rel="noopener">W06500</a></td>
-            <td><b>คัตเตอร์พับอเนกประสงค์</b><small>Folding Utility Knife</small><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
+            <td class="nm"><span class="nmtxt"><b>คัตเตอร์พับอเนกประสงค์</b><small>Folding Utility Knife</small></span><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
             <td></td>
             <td>12/72</td>
             <td>A-ALLOY / SK-5</td>
@@ -583,9 +599,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g6">ใบมีดคัตเตอร์อย่างดี <span>CUTTER BLADE</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-5 ใบมีดเหล็กกล้าคาร์บอนสูง ชนิดเหล็กสปริง</p>
     <ul class="grp-notes"><li>ใบมีดเหล็กกล้าคาร์บอนสูง ชนิดเหล็กสปริง ตัดได้คม ใช้ง่าย และทน</li><li>บรรจุใบมีด 10 ใบ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw6">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -593,9 +610,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ใบมีดคัตเตอร์อย่างดี" data-nen="Cutter Blade">
+            <td class="pic"><a href="../assets/img/tools/W06500A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W06500A"><img src="../assets/img/tools/W06500A-sm.webp" alt="ใบมีดคัตเตอร์อย่างดี W06500A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W06500A ใบมีดคัตเตอร์อย่างดี (61X18.9X0.6mm)" href="#" target="_blank" rel="noopener">W06500A</a></td>
-            <td><b>ใบมีดคัตเตอร์อย่างดี</b><small>Cutter Blade</small></td>
+            <td class="nm"><span class="nmtxt"><b>ใบมีดคัตเตอร์อย่างดี</b><small>Cutter Blade</small></span></td>
             <td>61X18.9X0.6mm</td>
             <td>200/6000</td>
             <td>SK-5</td>
@@ -607,9 +625,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g7">ชุดบานท่อ ตัดท่อทองแดง <span>TUBE EXPANDER (METRIC AND IMPERIAL STANDARD)</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-45 / Z-ALLOY เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ทำจากเหล็กกล้าคาร์บอนสูง และซิงค์อัลลอย</li><li>เหมาะกับท่อทองแดง สำหรับเครื่องทำความเย็น</li><li>ใช้ได้หลายขนาด ใช้งานง่าย ทำได้เร็ว</li><li>ใช้กับท่อ 3/8&quot; 1/4&quot; 5/8&quot; 1/2&quot; หน่วยเมตริก 19มม. 3มม. 5มม. 16มม. 10มม. 6มม. 8มม. 12มม.</li><li>มีคัตเตอร์ตัดท่อทองแดง 3-30มม.</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw7">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -617,9 +636,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดบานท่อ ตัดท่อทองแดง" data-nen="Tube Expander">
+            <td class="pic"><a href="../assets/img/tools/W0099.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0099"><img src="../assets/img/tools/W0099-sm.webp" alt="ชุดบานท่อ ตัดท่อทองแดง W0099 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0099 ชุดบานท่อ ตัดท่อทองแดง" href="#" target="_blank" rel="noopener">W0099</a></td>
-            <td><b>ชุดบานท่อ ตัดท่อทองแดง</b><small>Tube Expander</small><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดบานท่อ ตัดท่อทองแดง</b><small>Tube Expander</small></span><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
             <td></td>
             <td>1/12</td>
             <td>SK-45 / Z-ALLOY</td>
@@ -631,9 +651,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g8">คีมตัดท่อ PVC <span>PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-5 ใบมีดเหล็กกล้าคาร์บอนสูง ชนิดเหล็กสปริง</p>
     <ul class="grp-notes"><li>ด้ามจับทำจากเหล็กอัลลอย มีความทนทาน ใบมีด SK-5</li><li>ตัดท่อเส้นผ่าศูนย์ 36มม. ได้ เหมาะกับท่อ PVC PP PU PE และท่ออื่นๆ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw8">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -641,9 +662,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="คีมตัดท่อ PVC" data-nen="Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/W0810.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0810"><img src="../assets/img/tools/W0810-sm.webp" alt="คีมตัดท่อ PVC W0810 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0810 คีมตัดท่อ PVC (ตัดท่อ ø 36mm)" href="#" target="_blank" rel="noopener">W0810</a></td>
-            <td><b>คีมตัดท่อ PVC</b><small>Pipe Cutter</small></td>
+            <td class="nm"><span class="nmtxt"><b>คีมตัดท่อ PVC</b><small>Pipe Cutter</small></span></td>
             <td>ตัดท่อ ø 36mm</td>
             <td>15/90</td>
             <td>SK-5</td>
@@ -655,9 +677,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g9">กรรไกรตัดท่อ PVC ออโต้ <span>PVC PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-5 ใบมีดเหล็กสปริง ด้ามจับอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ใบมีดเหล็กกล้าคาร์บอนสูง ชนิดเหล็กสปริงอย่างดี</li><li>ตัดท่อเส้นผ่าศูนย์มากที่สุด 42มม. เหมาะกับท่อ PVC PP PU PE และอื่นๆ</li><li>ใบมีดชักกลับด้วยระบบเฟือง ทำให้สะดวกในการใช้งาน และประหยัดแรง</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw9">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -665,9 +688,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="กรรไกรตัดท่อ PVC ออโต้" data-nen="PVC Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/W0197.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0197"><img src="../assets/img/tools/W0197-sm.webp" alt="กรรไกรตัดท่อ PVC ออโต้ W0197 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0197 กรรไกรตัดท่อ PVC ออโต้ (ตัดท่อ ø 42mm)" href="#" target="_blank" rel="noopener">W0197</a></td>
-            <td><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></td>
+            <td class="nm"><span class="nmtxt"><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></span></td>
             <td>ตัดท่อ ø 42mm</td>
             <td>6/36</td>
             <td>SK-5</td>
@@ -679,9 +703,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g10">กรรไกรตัดท่อ PVC ออโต้ <span>AUTO PVC PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY ใบมีดเหล็กสปริง ด้ามจับอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ใบมีดเหล็กกล้าคาร์บอนสูง ชนิดเหล็กสปริงอย่างดี</li><li>ตัดท่อเส้นผ่าศูนย์มากที่สุด 42มม. เหมาะกับท่อ PVC PP PU PE และอื่นๆ</li><li>ระบบเฟืองชักใบมีดกลับได้ ประหยัดแรงและสะดวก</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw10">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -689,9 +714,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="กรรไกรตัดท่อ PVC ออโต้" data-nen="Auto PVC Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/W201C.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W201C"><img src="../assets/img/tools/W201C-sm.webp" alt="กรรไกรตัดท่อ PVC ออโต้ W201C WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W201C กรรไกรตัดท่อ PVC ออโต้ (ตัดท่อ ø 42mm)" href="#" target="_blank" rel="noopener">W201C</a></td>
-            <td><b>กรรไกรตัดท่อ PVC ออโต้</b><small>Auto PVC Pipe Cutter</small></td>
+            <td class="nm"><span class="nmtxt"><b>กรรไกรตัดท่อ PVC ออโต้</b><small>Auto PVC Pipe Cutter</small></span></td>
             <td>ตัดท่อ ø 42mm</td>
             <td>12/60</td>
             <td>A-ALLOY</td>
@@ -703,9 +729,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g11">กรรไกรตัดท่อ PVC ออโต้ <span>PVC PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-5 ใบมีดเหล็กสปริง ด้ามจับอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ใบมีดเหล็กกล้าคาร์บอนสูง ชนิดเหล็กสปริงอย่างดี</li><li>ตัดท่อเส้นผ่าศูนย์มากที่สุด 63มม. เหมาะกับท่อ PVC PP PU PE และอื่นๆ</li><li>ใบมีดชักกลับด้วยระบบเฟือง ทำให้สะดวกในการใช้งาน และประหยัดแรง</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw11">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -713,9 +740,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="กรรไกรตัดท่อ PVC ออโต้" data-nen="PVC Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/W0200.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0200"><img src="../assets/img/tools/W0200-sm.webp" alt="กรรไกรตัดท่อ PVC ออโต้ W0200 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0200 กรรไกรตัดท่อ PVC ออโต้ (ตัดท่อ ø 63mm)" href="#" target="_blank" rel="noopener">W0200</a></td>
-            <td><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></td>
+            <td class="nm"><span class="nmtxt"><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></span></td>
             <td>ตัดท่อ ø 63mm</td>
             <td>12</td>
             <td>SK-5</td>
@@ -727,9 +755,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g12">กรรไกรตัดท่อ PVC ออโต้ <span>PVC PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY ใบมีดเหล็กสปริง ด้ามจับอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ใบมีดเหล็กกล้าคาร์บอนสูง ชนิดเหล็กสปริงอย่างดี</li><li>ตัดท่อเส้นผ่าศูนย์มากที่สุด 42มม. เหมาะกับท่อ PVC PP PU PE และอื่นๆ</li><li>ใบมีดชักกลับด้วยระบบเฟือง ทำให้สะดวกในการใช้งาน และประหยัดแรง</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw12">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -737,9 +766,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="กรรไกรตัดท่อ PVC ออโต้" data-nen="PVC Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/W201A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W201A"><img src="../assets/img/tools/W201A-sm.webp" alt="กรรไกรตัดท่อ PVC ออโต้ W201A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W201A กรรไกรตัดท่อ PVC ออโต้ (ตัดท่อ ø 42mm)" href="#" target="_blank" rel="noopener">W201A</a></td>
-            <td><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></td>
+            <td class="nm"><span class="nmtxt"><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></span></td>
             <td>ตัดท่อ ø 42mm</td>
             <td>12/60</td>
             <td>A-ALLOY</td>
@@ -751,9 +781,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g13">กรรไกรตัดท่อ PVC ออโต้ <span>PVC PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-5 ใบมีดเหล็กสปริง ด้ามจับอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>มีปุ่มชักใบมีดกลับอย่างเร็ว ใช้งานง่าย</li><li>ตัดท่อเส้นผ่าศูนย์มากที่สุด 42มม. เหมาะกับท่อ PVC PP PU PE และอื่นๆ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw13">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -761,9 +792,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="กรรไกรตัดท่อ PVC ออโต้" data-nen="PVC Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/W302.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W302"><img src="../assets/img/tools/W302-sm.webp" alt="กรรไกรตัดท่อ PVC ออโต้ W302 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W302 กรรไกรตัดท่อ PVC ออโต้ (ตัดท่อ ø 42mm)" href="#" target="_blank" rel="noopener">W302</a></td>
-            <td><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></td>
+            <td class="nm"><span class="nmtxt"><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></span></td>
             <td>ตัดท่อ ø 42mm</td>
             <td>6/36</td>
             <td>SK-5</td>
@@ -775,9 +807,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g14">กรรไกรตัดท่อ PVC ออโต้ <span>PVC PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY ใบมีดเหล็กสปริง ด้ามจับอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ใบมีดเหล็กสปริง ชักใบมีดกลับได้อย่างเร็ว ใช้งานง่าย</li><li>ตัดท่อเส้นผ่าศูนย์มากที่สุด 64มม. เหมาะกับท่อ PVC PP PU PE และอื่นๆ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw14">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -785,9 +818,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="กรรไกรตัดท่อ PVC ออโต้" data-nen="PVC Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/W0203.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0203"><img src="../assets/img/tools/W0203-sm.webp" alt="กรรไกรตัดท่อ PVC ออโต้ W0203 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0203 กรรไกรตัดท่อ PVC ออโต้ (ตัดท่อ ø 64mm)" href="#" target="_blank" rel="noopener">W0203</a></td>
-            <td><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></td>
+            <td class="nm"><span class="nmtxt"><b>กรรไกรตัดท่อ PVC ออโต้</b><small>PVC Pipe Cutter</small></span></td>
             <td>ตัดท่อ ø 64mm</td>
             <td>24</td>
             <td>A-ALLOY</td>
@@ -799,9 +833,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g15">กรรไกรตัดท่อ PVC ออโต้ ตราMTT <span>AUTO PVC PIPE CUTTER</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-5 ใบมีดเหล็กสปริง ด้ามจับอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ใบมีดเหล็กกล้าคาร์บอนสูง ชนิดเหล็กสปริงอย่างดี</li><li>ตัดท่อเส้นผ่าศูนย์มากที่สุด 42มม. เหมาะกับท่อ PVC PP PU PE และอื่นๆ</li><li>ระบบเฟืองชักใบมีดกลับได้เมื่อกางด้ามออก ประหยัดแรงและสะดวก</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw15">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -809,9 +844,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="กรรไกรตัดท่อ PVC ออโต้ ตราMTT" data-nen="Auto PVC Pipe Cutter">
+            <td class="pic"><a href="../assets/img/tools/WM201A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WM201A"><img src="../assets/img/tools/WM201A-sm.webp" alt="กรรไกรตัดท่อ PVC ออโต้ ตราMTT WM201A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WM201A กรรไกรตัดท่อ PVC ออโต้ ตราMTT (ตัดท่อ ø 42mm)" href="#" target="_blank" rel="noopener">WM201A</a></td>
-            <td><b>กรรไกรตัดท่อ PVC ออโต้ ตราMTT</b><small>Auto PVC Pipe Cutter</small><div class="note">สินค้าตรา M.T.T. (MTT) ไม่ใช่ตรา WYNN'S — ตารางมีเฉพาะคอลัมน์รหัสและขนาด ไม่มีช่องจำนวน/ขนาดลัง/น้ำหนัก</div></td>
+            <td class="nm"><span class="nmtxt"><b>กรรไกรตัดท่อ PVC ออโต้ ตราMTT</b><small>Auto PVC Pipe Cutter</small></span><div class="note">สินค้าตรา M.T.T. (MTT) ไม่ใช่ตรา WYNN'S — ตารางมีเฉพาะคอลัมน์รหัสและขนาด ไม่มีช่องจำนวน/ขนาดลัง/น้ำหนัก</div></td>
             <td>ตัดท่อ ø 42mm</td>
             <td></td>
             <td>SK-5</td>
@@ -823,9 +859,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g16">ตัวตอกเลข 0-9 <span>9PCS NUMBER PUNCH</span> <em>5 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: GCR-15 โลหะแบริ่ง</p>
     <ul class="grp-notes"><li>ใช้โลหะแบริ่ง ผ่านการชุบแข็ง ความแข็งระดับ HRC60 ผิวเป่าทราย</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw16">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -833,37 +870,42 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ตัวตอกเลข 0-9" data-nen="9PCS Number Punch">
+            <td class="pic"><a href="../assets/img/tools/W2606A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2606A"><img src="../assets/img/tools/W2606A-sm.webp" alt="ตัวตอกเลข 0-9 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2606A ตัวตอกเลข 0-9 (3mm)" href="#" target="_blank" rel="noopener">W2606A</a></td>
-            <td><b>ตัวตอกเลข 0-9</b><small>9PCS Number Punch</small></td>
+            <td class="nm"><span class="nmtxt"><b>ตัวตอกเลข 0-9</b><small>9PCS Number Punch</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>3mm</td>
             <td>25/100</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตัวตอกเลข 0-9" data-nen="9PCS Number Punch">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2606B ตัวตอกเลข 0-9 (4mm)" href="#" target="_blank" rel="noopener">W2606B</a></td>
-            <td><b>ตัวตอกเลข 0-9</b><small>9PCS Number Punch</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4mm</td>
             <td>25/100</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตัวตอกเลข 0-9" data-nen="9PCS Number Punch">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2606C ตัวตอกเลข 0-9 (5mm)" href="#" target="_blank" rel="noopener">W2606C</a></td>
-            <td><b>ตัวตอกเลข 0-9</b><small>9PCS Number Punch</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>5mm</td>
             <td>25/50</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตัวตอกเลข 0-9" data-nen="9PCS Number Punch">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2606D ตัวตอกเลข 0-9 (6mm)" href="#" target="_blank" rel="noopener">W2606D</a></td>
-            <td><b>ตัวตอกเลข 0-9</b><small>9PCS Number Punch</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>6mm</td>
             <td>25/50</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตัวตอกเลข 0-9" data-nen="9PCS Number Punch">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2606E ตัวตอกเลข 0-9 (8mm)" href="#" target="_blank" rel="noopener">W2606E</a></td>
-            <td><b>ตัวตอกเลข 0-9</b><small>9PCS Number Punch</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>8mm</td>
             <td>25/50</td>
             <td>GCR-15</td>
@@ -875,9 +917,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g17">เหล็กตอกเจาะรู <span>STRAP BLUNT</span> <em>2 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ผลิตจากเหล็กกล้าคาร์บอนสูง ผ่านการชุบแข็ง บรรจุในกระเป๋าซิบกันน้ำ</li><li>12 ตัว W2605A 3、4、5、6、8、9、10、11、12、14、16、19mm</li><li>15 ตัว W2605B 3、4、5、6、7、8、9、10、11、12、14、16、19、22、25mm</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw17">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -885,16 +928,18 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="เหล็กตอกเจาะรู" data-nen="Strap Blunt">
+            <td class="pic"><a href="../assets/img/tools/W2605A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2605A"><img src="../assets/img/tools/W2605A-sm.webp" alt="เหล็กตอกเจาะรู WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2605A เหล็กตอกเจาะรู (3-19mm)" href="#" target="_blank" rel="noopener">W2605A</a></td>
-            <td><b>เหล็กตอกเจาะรู</b><small>Strap Blunt</small><div class="note">ชุด 12 ตัว ขนาด 3、4、5、6、8、9、10、11、12、14、16、19mm</div></td>
+            <td class="nm"><span class="nmtxt"><b>เหล็กตอกเจาะรู</b><small>Strap Blunt</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div><div class="note">ชุด 12 ตัว ขนาด 3、4、5、6、8、9、10、11、12、14、16、19mm</div></td>
             <td>3-19mm</td>
             <td>5/20</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="เหล็กตอกเจาะรู" data-nen="Strap Blunt">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2605B เหล็กตอกเจาะรู (3-25mm)" href="#" target="_blank" rel="noopener">W2605B</a></td>
-            <td><b>เหล็กตอกเจาะรู</b><small>Strap Blunt</small><div class="note">ชุด 15 ตัว ขนาด 3、4、5、6、7、8、9、10、11、12、14、16、19、22、25mm</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">ชุด 15 ตัว ขนาด 3、4、5、6、7、8、9、10、11、12、14、16、19、22、25mm</div></td>
             <td>3-25mm</td>
             <td>5/20</td>
             <td>SK-55</td>
@@ -906,9 +951,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g18">มีดพับอเนกประสงค์ 11in1 <span>MULTI-FUNCTION FLEXIBLE KNIFE</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ประกอบด้วย : มีด เลื่อยไม้ ที่ขูดหนังปลา กรรไกร ที่เปิดกระป๋อง ไขควงหัวแฉก ตะไบเล็บ ที่ร้อยด้ายเข้าเข็ม ที่ตัดหนัง ที่เปิดขวด ที่เปิดไวน์</li><li>เพียงหยิบด้ามที่ต้องการใช้ออกมา เมื่อต้องการใช้ ใช้งานง่าย และสะดวก</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw18">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -916,9 +962,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="มีดพับอเนกประสงค์ 11in1" data-nen="Multi-Function Flexible Knife">
+            <td class="pic"><a href="../assets/img/tools/W3078.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W3078"><img src="../assets/img/tools/W3078-sm.webp" alt="มีดพับอเนกประสงค์ 11in1 W3078 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3078 มีดพับอเนกประสงค์ 11in1" href="#" target="_blank" rel="noopener">W3078</a></td>
-            <td><b>มีดพับอเนกประสงค์ 11in1</b><small>Multi-Function Flexible Knife</small><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
+            <td class="nm"><span class="nmtxt"><b>มีดพับอเนกประสงค์ 11in1</b><small>Multi-Function Flexible Knife</small></span><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
             <td></td>
             <td>20/160</td>
             <td>SK-55</td>
@@ -930,9 +977,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g19">ชุดตะไบ 8 นิ้ว <span>4PCS FILE SET</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ชุดประกอบด้วย ตะไบท้องปลิง ตะไบแบน ตะไบโค้งกลม ตะไบสามเหลี่ยม</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw19">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -940,9 +988,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดตะไบ 8 นิ้ว" data-nen="4PCS File Set">
+            <td class="pic"><a href="../assets/img/tools/W0086F.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0086F"><img src="../assets/img/tools/W0086F-sm.webp" alt="ชุดตะไบ 8 นิ้ว W0086F WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0086F ชุดตะไบ 8 นิ้ว (8 นิ้ว)" href="#" target="_blank" rel="noopener">W0086F</a></td>
-            <td><b>ชุดตะไบ 8 นิ้ว</b><small>4PCS File Set</small></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดตะไบ 8 นิ้ว</b><small>4PCS File Set</small></span></td>
             <td>8 นิ้ว</td>
             <td>30</td>
             <td>เหล็กกล้าคาร์บอนสูง</td>
@@ -954,9 +1003,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g20">ตัวตอกรหัส อังกฤษ <span>27PCS LETTER PUNCH</span> <em>5 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: GCR-15 โลหะแบริ่ง</p>
     <ul class="grp-notes"><li>ใช้โลหะแบริ่ง ผ่านการชุบแข็ง ความแข็งระดับ HRC60 ผิวเป่าทราย</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw20">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -964,37 +1014,42 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ตัวตอกรหัส อังกฤษ" data-nen="27PCS Letter Punch">
+            <td class="pic"><a href="../assets/img/tools/W2607A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2607A"><img src="../assets/img/tools/W2607A-sm.webp" alt="ตัวตอกรหัส อังกฤษ WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2607A ตัวตอกรหัส อังกฤษ (3mm)" href="#" target="_blank" rel="noopener">W2607A</a></td>
-            <td><b>ตัวตอกรหัส อังกฤษ</b><small>27PCS Letter Punch</small></td>
+            <td class="nm"><span class="nmtxt"><b>ตัวตอกรหัส อังกฤษ</b><small>27PCS Letter Punch</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>3mm</td>
             <td>10/30</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตัวตอกรหัส อังกฤษ" data-nen="27PCS Letter Punch">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2607B ตัวตอกรหัส อังกฤษ (4mm)" href="#" target="_blank" rel="noopener">W2607B</a></td>
-            <td><b>ตัวตอกรหัส อังกฤษ</b><small>27PCS Letter Punch</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4mm</td>
             <td>10/30</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตัวตอกรหัส อังกฤษ" data-nen="27PCS Letter Punch">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2607C ตัวตอกรหัส อังกฤษ (5mm)" href="#" target="_blank" rel="noopener">W2607C</a></td>
-            <td><b>ตัวตอกรหัส อังกฤษ</b><small>27PCS Letter Punch</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>5mm</td>
             <td>10/20</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตัวตอกรหัส อังกฤษ" data-nen="27PCS Letter Punch">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2607D ตัวตอกรหัส อังกฤษ (6mm)" href="#" target="_blank" rel="noopener">W2607D</a></td>
-            <td><b>ตัวตอกรหัส อังกฤษ</b><small>27PCS Letter Punch</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>6mm</td>
             <td>10/20</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตัวตอกรหัส อังกฤษ" data-nen="27PCS Letter Punch">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2607E ตัวตอกรหัส อังกฤษ (8mm)" href="#" target="_blank" rel="noopener">W2607E</a></td>
-            <td><b>ตัวตอกรหัส อังกฤษ</b><small>27PCS Letter Punch</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>8mm</td>
             <td>5/10</td>
             <td>GCR-15</td>
@@ -1006,9 +1061,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g21">ตะไบเหล็กชุด 6 ชิ้น <span>6PCS NEEDLE FILE SET</span> <em>2 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: GCR-15 โลหะแบริ่ง</p>
     <ul class="grp-notes"><li>ทำจากโลหะแบริ่ง #GCR-15 ผ่านการชุบแข็งแล้ว</li><li>แบบสามเหลี่ยม แบบกลม แบบสี่เหลี่ยมแหลม/ตรง ตะไบแบน ตะไบมิล</li><li>ตะไบมีความสม่ำเสมอตลอด การันตีว่าตะไบวัตถุได้เนียน เรียบ เสมอ</li><li>รูปแบบตะไบในชุด: เหลี่ยมหัวแหลม, ท้องปลิง, กลม, เหลี่ยมปลายตรง, สามเหลี่ยม, สี่เหลี่ยม</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw21">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1016,16 +1072,18 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ตะไบเหล็กชุด 6 ชิ้น" data-nen="6PCS Needle File Set">
+            <td class="pic"><a href="../assets/img/tools/W0289A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0289A"><img src="../assets/img/tools/W0289A-sm.webp" alt="ตะไบเหล็กชุด 6 ชิ้น WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0289A ตะไบเหล็กชุด 6 ชิ้น (3X140mm)" href="#" target="_blank" rel="noopener">W0289A</a></td>
-            <td><b>ตะไบเหล็กชุด 6 ชิ้น</b><small>6PCS Needle File Set</small></td>
+            <td class="nm"><span class="nmtxt"><b>ตะไบเหล็กชุด 6 ชิ้น</b><small>6PCS Needle File Set</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>3X140mm</td>
             <td>10/120</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตะไบเหล็กชุด 6 ชิ้น" data-nen="6PCS Needle File Set">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0289B ตะไบเหล็กชุด 6 ชิ้น (4X160mm)" href="#" target="_blank" rel="noopener">W0289B</a></td>
-            <td><b>ตะไบเหล็กชุด 6 ชิ้น</b><small>6PCS Needle File Set</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4X160mm</td>
             <td>10/120</td>
             <td>GCR-15</td>
@@ -1037,9 +1095,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g22">ตะไบแบน <span>FILE (FLAT)</span> <em>3 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ใช้เหล็กกล้าคาร์บอนสูง เกรดT12 ผ่านการชุบแข็งเพื่อความทน</li><li>ตะไบมีความสม่ำเสมอตลอด การันตีว่าตะไบวัตถุได้เนียน เรียบ เสมอ</li><li>ด้ามจับสองสีหุ้ม ใช้งานนานๆได้ สบายมือ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw22">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1047,23 +1106,26 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ตะไบแบน" data-nen="File (Flat)">
+            <td class="pic"><a href="../assets/img/tools/W0086AB.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0086AB"><img src="../assets/img/tools/W0086AB-sm.webp" alt="ตะไบแบน WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0086AB ตะไบแบน (8&quot;(200mm))" href="#" target="_blank" rel="noopener">W0086AB</a></td>
-            <td><b>ตะไบแบน</b><small>File (Flat)</small></td>
+            <td class="nm"><span class="nmtxt"><b>ตะไบแบน</b><small>File (Flat)</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>8&quot;(200mm)</td>
             <td>12/120</td>
             <td>เหล็กกล้าคาร์บอนสูง เกรดT12</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตะไบแบน" data-nen="File (Flat)">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0086AC ตะไบแบน (10&quot;(250mm))" href="#" target="_blank" rel="noopener">W0086AC</a></td>
-            <td><b>ตะไบแบน</b><small>File (Flat)</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>10&quot;(250mm)</td>
             <td>12/72</td>
             <td>เหล็กกล้าคาร์บอนสูง เกรดT12</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตะไบแบน" data-nen="File (Flat)">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0086AD ตะไบแบน (12&quot;(300mm))" href="#" target="_blank" rel="noopener">W0086AD</a></td>
-            <td><b>ตะไบแบน</b><small>File (Flat)</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>12&quot;(300mm)</td>
             <td>12/72</td>
             <td>เหล็กกล้าคาร์บอนสูง เกรดT12</td>
@@ -1075,9 +1137,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g23">ตะไบสามเหลี่ยม <span>FILE (TRIANGLE)</span> <em>2 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ใช้เหล็กกล้าคาร์บอนสูง เกรดT12 ผ่านการชุบแข็งเพื่อความทน</li><li>ด้ามจับสองสีหุ้ม ใช้งานนานๆได้ สบายมือ</li><li>ตะไบมีความสม่ำเสมอตลอด การันตีว่าตะไบวัตถุได้เนียน เรียบ เสมอ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw23">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1085,16 +1148,18 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ตะไบสามเหลี่ยม" data-nen="File (Triangle)">
+            <td class="pic"><a href="../assets/img/tools/W0086CB.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0086CB"><img src="../assets/img/tools/W0086CB-sm.webp" alt="ตะไบสามเหลี่ยม WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0086CB ตะไบสามเหลี่ยม (8&quot;(200mm))" href="#" target="_blank" rel="noopener">W0086CB</a></td>
-            <td><b>ตะไบสามเหลี่ยม</b><small>File (Triangle)</small></td>
+            <td class="nm"><span class="nmtxt"><b>ตะไบสามเหลี่ยม</b><small>File (Triangle)</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>8&quot;(200mm)</td>
             <td>12/120</td>
             <td>เหล็กกล้าคาร์บอนสูง เกรดT12</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตะไบสามเหลี่ยม" data-nen="File (Triangle)">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0086CC ตะไบสามเหลี่ยม (10&quot;(250mm))" href="#" target="_blank" rel="noopener">W0086CC</a></td>
-            <td><b>ตะไบสามเหลี่ยม</b><small>File (Triangle)</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>10&quot;(250mm)</td>
             <td>12/72</td>
             <td>เหล็กกล้าคาร์บอนสูง เกรดT12</td>
@@ -1106,9 +1171,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g24">ตะไบกลม <span>FILE (ROUND)</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ใช้เหล็กกล้าคาร์บอนสูง เกรดT12 ผ่านการชุบแข็งเพื่อความทน</li><li>ด้ามจับสองสีหุ้ม ใช้งานนานๆได้ สบายมือ</li><li>ตะไบมีความสม่ำเสมอตลอด การันตีว่าตะไบวัตถุได้เนียน เรียบ เสมอ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw24">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1116,9 +1182,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ตะไบกลม" data-nen="File (Round)">
+            <td class="pic"><a href="../assets/img/tools/W0086DB.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0086DB"><img src="../assets/img/tools/W0086DB-sm.webp" alt="ตะไบกลม W0086DB WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0086DB ตะไบกลม (8&quot;(200mm))" href="#" target="_blank" rel="noopener">W0086DB</a></td>
-            <td><b>ตะไบกลม</b><small>File (Round)</small></td>
+            <td class="nm"><span class="nmtxt"><b>ตะไบกลม</b><small>File (Round)</small></span></td>
             <td>8&quot;(200mm)</td>
             <td>12/120</td>
             <td>เหล็กกล้าคาร์บอนสูง เกรดT12</td>
@@ -1130,9 +1197,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g25">ตะไบท้องปลิง <span>FILE (SEMI-CIRCLE)</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ใช้เหล็กกล้าคาร์บอนสูง เกรดT12 ผ่านการชุบแข็งเพื่อความทน</li><li>ด้ามจับสองสีหุ้ม ใช้งานนานๆได้ สบายมือ</li><li>ตะไบมีความสม่ำเสมอตลอด การันตีว่าตะไบวัตถุได้เนียน เรียบ เสมอ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw25">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1140,9 +1208,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ตะไบท้องปลิง" data-nen="File (Semi-Circle)">
+            <td class="pic"><a href="../assets/img/tools/W0086BB.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0086BB"><img src="../assets/img/tools/W0086BB-sm.webp" alt="ตะไบท้องปลิง W0086BB WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0086BB ตะไบท้องปลิง (8&quot;(200mm))" href="#" target="_blank" rel="noopener">W0086BB</a></td>
-            <td><b>ตะไบท้องปลิง</b><small>File (Semi-Circle)</small></td>
+            <td class="nm"><span class="nmtxt"><b>ตะไบท้องปลิง</b><small>File (Semi-Circle)</small></span></td>
             <td>8&quot;(200mm)</td>
             <td>12/120</td>
             <td>เหล็กกล้าคาร์บอนสูง เกรดT12</td>
@@ -1154,9 +1223,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g26">ใบเลื่อยตัดเหล็ก <span>HACKSAW BLADE</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: BI-METAL วัสดุ Bi-Metal</p>
     <ul class="grp-notes"><li>ทำจากโลหะ Bi-Metal ด้วยการเชื่อมจากลำแสงอิเล็กตรอน</li><li>มีอายุการใช้งานยาวนานกว่าใบเลื่อยทั่วไป 30 เท่า</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw26">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1164,9 +1234,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ใบเลื่อยตัดเหล็ก" data-nen="Hacksaw Blade">
+            <td class="pic"><a href="../assets/img/tools/W0496A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0496A"><img src="../assets/img/tools/W0496A-sm.webp" alt="ใบเลื่อยตัดเหล็ก W0496A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0496A ใบเลื่อยตัดเหล็ก (18T 18ฟัน)" href="#" target="_blank" rel="noopener">W0496A</a></td>
-            <td><b>ใบเลื่อยตัดเหล็ก</b><small>Hacksaw Blade</small></td>
+            <td class="nm"><span class="nmtxt"><b>ใบเลื่อยตัดเหล็ก</b><small>Hacksaw Blade</small></span></td>
             <td>18T 18ฟัน</td>
             <td>100/1000</td>
             <td>BI-METAL</td>
@@ -1178,9 +1249,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g27">เลื่อยเหล็ก โครงอลูมิเนียม 12นิ้ว <span>ALUMINIUM HACKSAW FRAME</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY อลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ทำจากเหล็กอลูมิเนียมอัลลอยคุณภาพดี</li><li>โครงสร้างและด้ามจับ ช่วยประหยัดแรง</li><li>โครงแข็งแรง ล็อคใบเลื่อยได้แน่น มีความปลอดภัยในการใช้งาน</li><li>เหมาะสำหรับใบเลื่อยยึดหยุ่นแบบสองด้าน</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw27">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1188,9 +1260,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="เลื่อยเหล็ก โครงอลูมิเนียม 12นิ้ว" data-nen="Aluminium Hacksaw Frame">
+            <td class="pic"><a href="../assets/img/tools/WS10B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS10B"><img src="../assets/img/tools/WS10B-sm.webp" alt="เลื่อยเหล็ก โครงอลูมิเนียม 12นิ้ว WS10B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS10B เลื่อยเหล็ก โครงอลูมิเนียม 12นิ้ว (300mm)" href="#" target="_blank" rel="noopener">WS10B</a></td>
-            <td><b>เลื่อยเหล็ก โครงอลูมิเนียม 12นิ้ว</b><small>Aluminium Hacksaw Frame</small></td>
+            <td class="nm"><span class="nmtxt"><b>เลื่อยเหล็ก โครงอลูมิเนียม 12นิ้ว</b><small>Aluminium Hacksaw Frame</small></span></td>
             <td>300mm</td>
             <td>6/36</td>
             <td>A-ALLOY</td>
@@ -1202,9 +1275,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g28">เลื่อยเหล็กมินิโค้ง <span>MINI HACKSAW FRAME</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY เหล็กอลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ใช้เหล็กอลูมิเนียมอัลลอยและท่อเหล็ก ทนและแข็งแรง</li><li>สามารถใช้กับใบเลื่อย 55° และ 90° ได้</li><li>ล็อคใบเลื่อยได้แน่น ปลอดภัย บรรจุพร้อมใบเลื่อย 1 ใบ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw28">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1212,9 +1286,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="เลื่อยเหล็กมินิโค้ง" data-nen="Mini Hacksaw Frame">
+            <td class="pic"><a href="../assets/img/tools/WS12B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS12B"><img src="../assets/img/tools/WS12B-sm.webp" alt="เลื่อยเหล็กมินิโค้ง WS12B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS12B เลื่อยเหล็กมินิโค้ง (150mm)" href="#" target="_blank" rel="noopener">WS12B</a></td>
-            <td><b>เลื่อยเหล็กมินิโค้ง</b><small>Mini Hacksaw Frame</small></td>
+            <td class="nm"><span class="nmtxt"><b>เลื่อยเหล็กมินิโค้ง</b><small>Mini Hacksaw Frame</small></span></td>
             <td>150mm</td>
             <td>10/120</td>
             <td>A-ALLOY</td>
@@ -1226,9 +1301,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g29">ตะไบเพชรชุด 6 ชิ้น <span>6PCS NEEDLE FILE SET</span> <em>2 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: GCR-15 โลหะแบริ่ง</p>
     <ul class="grp-notes"><li>ทำจากโลหะแบริ่ง #GCR-15 ผ่านการชุบแข็งแล้ว</li><li>แบบสามเหลี่ยม แบบกลม แบบสี่เหลี่ยมแหลม/ตรง ตะไบแบน ตะไบมิล</li><li>ตะไบมีความสม่ำเสมอตลอด การันตีว่าตะไบวัตถุได้เนียน เรียบ เสมอ</li><li>รูปแบบตะไบในชุด: เหลี่ยมหัวแหลม, ครึ่งวงกลม, กลม, เหลี่ยมปลายตรง, สามเหลี่ยม, สี่เหลี่ยม</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw29">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1236,16 +1312,18 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ตะไบเพชรชุด 6 ชิ้น" data-nen="6PCS Needle File Set">
+            <td class="pic"><a href="../assets/img/tools/W0490A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0490A"><img src="../assets/img/tools/W0490A-sm.webp" alt="ตะไบเพชรชุด 6 ชิ้น WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0490A ตะไบเพชรชุด 6 ชิ้น (3X140mm)" href="#" target="_blank" rel="noopener">W0490A</a></td>
-            <td><b>ตะไบเพชรชุด 6 ชิ้น</b><small>6PCS Needle File Set</small><div class="note">หัวข้อภาษาไทยเป็น &quot;ตะไบเพชรชุด 6 ชิ้น&quot; แต่ชื่ออังกฤษพิมพ์ว่า 6PCS NEEDLE FILE SET เหมือนชุด W0289 ในหน้า 45</div></td>
+            <td class="nm"><span class="nmtxt"><b>ตะไบเพชรชุด 6 ชิ้น</b><small>6PCS Needle File Set</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div><div class="note">หัวข้อภาษาไทยเป็น &quot;ตะไบเพชรชุด 6 ชิ้น&quot; แต่ชื่ออังกฤษพิมพ์ว่า 6PCS NEEDLE FILE SET เหมือนชุด W0289 ในหน้า 45</div></td>
             <td>3X140mm</td>
             <td>10/120</td>
             <td>GCR-15</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ตะไบเพชรชุด 6 ชิ้น" data-nen="6PCS Needle File Set">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0490B ตะไบเพชรชุด 6 ชิ้น (4X160mm)" href="#" target="_blank" rel="noopener">W0490B</a></td>
-            <td><b>ตะไบเพชรชุด 6 ชิ้น</b><small>6PCS Needle File Set</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4X160mm</td>
             <td>10/120</td>
             <td>GCR-15</td>
@@ -1257,9 +1335,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g30">ใบเลื่อยตัดเหล็ก <span>HACKSAW BLADE</span> <em>2 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: HSS วัสดุเหล็กไฮสปีด</p>
     <ul class="grp-notes"><li>ทำจากเหล็กสปริงและเหล็กไฮสปีด เชื่อมด้วยลำแสงอิเล็กตรอน</li><li>มีอายุการใช้งานยาวนานกว่าใบเลื่อยทั่วไป 20 เท่า</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw30">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1267,16 +1346,18 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ใบเลื่อยตัดเหล็ก" data-nen="Hacksaw Blade">
+            <td class="pic"><a href="../assets/img/tools/W0497AA.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0497AA"><img src="../assets/img/tools/W0497AA-sm.webp" alt="ใบเลื่อยตัดเหล็ก WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0497AA ใบเลื่อยตัดเหล็ก (18T 18ฟัน)" href="#" target="_blank" rel="noopener">W0497AA</a></td>
-            <td><b>ใบเลื่อยตัดเหล็ก</b><small>Hacksaw Blade</small></td>
+            <td class="nm"><span class="nmtxt"><b>ใบเลื่อยตัดเหล็ก</b><small>Hacksaw Blade</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>18T 18ฟัน</td>
             <td>100/1000</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ใบเลื่อยตัดเหล็ก" data-nen="Hacksaw Blade">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0497BB ใบเลื่อยตัดเหล็ก (24T 24ฟัน)" href="#" target="_blank" rel="noopener">W0497BB</a></td>
-            <td><b>ใบเลื่อยตัดเหล็ก</b><small>Hacksaw Blade</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>24T 24ฟัน</td>
             <td>100/1000</td>
             <td>HSS</td>
@@ -1288,9 +1369,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g31">เลื่อยเหล็ก โครงอลูมิเนียม อย่างดี <span>HIGH-CLASS ALUMINIUM HACKSAW FRAME</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY อลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ทำจากเหล็กอลูมิเนียมอัลลอยคุณภาพดี ผิวพ่นสี</li><li>ด้ามจับหุ้ม ส่วนหมุนเกลียวชุบสังกะสี แถมใบเลื่อย12&quot; HCS</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw31">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1298,9 +1380,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="เลื่อยเหล็ก โครงอลูมิเนียม อย่างดี" data-nen="High-Class Aluminium Hacksaw Frame">
+            <td class="pic"><a href="../assets/img/tools/WS05B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS05B"><img src="../assets/img/tools/WS05B-sm.webp" alt="เลื่อยเหล็ก โครงอลูมิเนียม อย่างดี WS05B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS05B เลื่อยเหล็ก โครงอลูมิเนียม อย่างดี (300mm)" href="#" target="_blank" rel="noopener">WS05B</a></td>
-            <td><b>เลื่อยเหล็ก โครงอลูมิเนียม อย่างดี</b><small>High-Class Aluminium Hacksaw Frame</small></td>
+            <td class="nm"><span class="nmtxt"><b>เลื่อยเหล็ก โครงอลูมิเนียม อย่างดี</b><small>High-Class Aluminium Hacksaw Frame</small></span></td>
             <td>300mm</td>
             <td>6/24</td>
             <td>A-ALLOY</td>
@@ -1312,9 +1395,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g32">เลื่อยเหล็ก โครงอลูมิเนียม <span>HACKSAW FRAME, STEELALLOY CONSTRUCTION</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY อลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>ทำจากท่อเหล็กอลูมิเนียมอัลลอย แข็งแรงและทน</li><li>ออกแบบมาช่วยผ่อนแรง ด้ามจับหุ้ม จับได้สบาย</li><li>ล็อคใบเลื่อยแน่น ปลอดภัย มาพร้อมใบเลื่อย 1 ใบ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw32">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1322,9 +1406,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="เลื่อยเหล็ก โครงอลูมิเนียม" data-nen="Hacksaw Frame, Steelalloy Construction">
+            <td class="pic"><a href="../assets/img/tools/WS09B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS09B"><img src="../assets/img/tools/WS09B-sm.webp" alt="เลื่อยเหล็ก โครงอลูมิเนียม WS09B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS09B เลื่อยเหล็ก โครงอลูมิเนียม (300mm)" href="#" target="_blank" rel="noopener">WS09B</a></td>
-            <td><b>เลื่อยเหล็ก โครงอลูมิเนียม</b><small>Hacksaw Frame, Steelalloy Construction</small></td>
+            <td class="nm"><span class="nmtxt"><b>เลื่อยเหล็ก โครงอลูมิเนียม</b><small>Hacksaw Frame, Steelalloy Construction</small></span></td>
             <td>300mm</td>
             <td>6/36</td>
             <td>A-ALLOY</td>
@@ -1336,9 +1421,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g33">เลื่อยเหล็กมินิ <span>MINI HACKSAW FRAME</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY อลูมิเนียมอัลลอย</p>
     <ul class="grp-notes"><li>โครงใช้เหล็กอลูมิเนียมอัลลอย ด้ามจับ ABS และ TPR จับสบายมือ</li><li>มีขนาดเล็ก พกพาง่าย แถมใบเลื่อย 1 ใบ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw33">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1346,9 +1432,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="เลื่อยเหล็กมินิ" data-nen="Mini Hacksaw Frame">
+            <td class="pic"><a href="../assets/img/tools/W4297.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W4297"><img src="../assets/img/tools/W4297-sm.webp" alt="เลื่อยเหล็กมินิ W4297 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4297 เลื่อยเหล็กมินิ (250mm)" href="#" target="_blank" rel="noopener">W4297</a></td>
-            <td><b>เลื่อยเหล็กมินิ</b><small>Mini Hacksaw Frame</small></td>
+            <td class="nm"><span class="nmtxt"><b>เลื่อยเหล็กมินิ</b><small>Mini Hacksaw Frame</small></span></td>
             <td>250mm</td>
             <td>12/96</td>
             <td>A-ALLOY</td>
@@ -1360,9 +1447,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g34">ต๊าปเกลียวชุด 20ชิ้น <span>20PCS THREAD TAPS SET</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: HSS เหล็กไฮสปีด</p>
     <ul class="grp-notes"><li>หลอมจากเหล็กไฮสปีด</li><li>ต๊าปเกลียวได้เร็ว ขนาดเที่ยงตรง ใช้นาน</li><li>20 ชิ้น ประกอบด้วย ต๊าปเกลียวแท่ง 9 ชิ้น M3X0.5, M4X0.7, M5X0.8, M6X1.0, M7X1.0, M8X1.25, M9X1.25, M10X1.5, M12X1.75</li><li>ลูกต๊าปกลม 9 ชิ้น M3X0.5, M4X0.7, M5X0.8, M6X1.0, M7X1.0, M8X1.25, M9X1.25, M10X1.5, M12X1.75</li><li>Tap Wrench ด้ามต๊าปตัวผู้ 1/2&quot; (M3-M12)</li><li>Dies Hand ด้ามต๊าปตัวเมีย 1&quot; (M25)</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw34">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1370,9 +1458,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ต๊าปเกลียวชุด 20ชิ้น" data-nen="20PCS Thread Taps Set">
+            <td class="pic"><a href="../assets/img/tools/W0441.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0441"><img src="../assets/img/tools/W0441-sm.webp" alt="ต๊าปเกลียวชุด 20ชิ้น W0441 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0441 ต๊าปเกลียวชุด 20ชิ้น" href="#" target="_blank" rel="noopener">W0441</a></td>
-            <td><b>ต๊าปเกลียวชุด 20ชิ้น</b><small>20PCS Thread Taps Set</small><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
+            <td class="nm"><span class="nmtxt"><b>ต๊าปเกลียวชุด 20ชิ้น</b><small>20PCS Thread Taps Set</small></span><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
             <td></td>
             <td>24</td>
             <td>HSS</td>
@@ -1384,9 +1473,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g35">ต๊าปเกลียวชุด 40ชิ้น <span>40PCS THREAD TAPS SET</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: HSS เหล็กไฮสปีด</p>
     <ul class="grp-notes"><li>หลอมจากเหล็กไฮสปีด</li><li>ต๊าปเกลียวได้เร็ว ขนาดเที่ยงตรง ใช้นาน</li><li>40 ชิ้น ประกอบด้วย : ต๊าปเกลียวแท่ง 16 ชิ้น M3X0.5, M4X0.7, M5X0.8, M6X0.75, M7X0.75, M8X1.0, M10X1.25, M12X1.5, M3X0.6, M4X0.75, M5X0.9, M6X1.0, M7X1.0, M8X1.25, M10X1.5, M12X1.75</li><li>ลูกต๊าปกลม 16 ชิ้น M3X0.5, M4X0.7, M5X0.8, M6X0.75, M7X0.75, M8X1.0, M10X1.25, M12X1.5, M3X0.6, M4X0.75, M5X0.9, M6X1.0, M7X1.0, M8X1.25, M10X1.5, M12X1.75</li><li>Dies Hand ด้ามต๊าปตัวเมีย 1&quot;(M25) 1 ชิ้น</li><li>Tap Wrench ด้ามต๊าปตัวผู้ 1/2&quot; (M3-M12) 1 ชิ้น</li><li>ดอกต๊าปกลมNPT 1/8-27 1ชิ้น  ดอกต๊าปแท่งNPT 1/8-27 1ชิ้น</li><li>ด้ามต๊าปตัว T 1/4&quot; 1 ชิ้น  ไขควง 1 ชิ้น  หวีวัดเกลียว 1 ชิ้น</li><li>ด้ามต๊าปตัวเมีย 1&quot;(M25) 1 ชิ้น</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw35">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1394,9 +1484,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ต๊าปเกลียวชุด 40ชิ้น" data-nen="40PCS Thread Taps Set">
+            <td class="pic"><a href="../assets/img/tools/W0442.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0442"><img src="../assets/img/tools/W0442-sm.webp" alt="ต๊าปเกลียวชุด 40ชิ้น W0442 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0442 ต๊าปเกลียวชุด 40ชิ้น" href="#" target="_blank" rel="noopener">W0442</a></td>
-            <td><b>ต๊าปเกลียวชุด 40ชิ้น</b><small>40PCS Thread Taps Set</small><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง; รายการย่อยระบุ &quot;ด้ามต๊าปตัวเมีย 1\&quot;(M25)&quot; ซ้ำสองบรรทัด (Dies Hand และบรรทัดสุดท้าย) ตามต้นฉบับ</div></td>
+            <td class="nm"><span class="nmtxt"><b>ต๊าปเกลียวชุด 40ชิ้น</b><small>40PCS Thread Taps Set</small></span><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง; รายการย่อยระบุ &quot;ด้ามต๊าปตัวเมีย 1\&quot;(M25)&quot; ซ้ำสองบรรทัด (Dies Hand และบรรทัดสุดท้าย) ตามต้นฉบับ</div></td>
             <td></td>
             <td>12</td>
             <td>HSS</td>
@@ -1408,9 +1499,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g36">เลื่อยเหล็ก <span>FIXED STEEL SAW FRAME</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>เหล็กกล้าคาร์บอนสูงทั้งชิ้น แข็งแรงและทนทาน</li><li>ล็อคใบเลื่อยได้แน่น ปลอดภัย บรรจุพร้อมใบเลื่อย 1 ใบ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw36">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1418,9 +1510,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="เลื่อยเหล็ก" data-nen="Fixed Steel Saw Frame">
+            <td class="pic"><a href="../assets/img/tools/WS08B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS08B"><img src="../assets/img/tools/WS08B-sm.webp" alt="เลื่อยเหล็ก WS08B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS08B เลื่อยเหล็ก (300mm)" href="#" target="_blank" rel="noopener">WS08B</a></td>
-            <td><b>เลื่อยเหล็ก</b><small>Fixed Steel Saw Frame</small></td>
+            <td class="nm"><span class="nmtxt"><b>เลื่อยเหล็ก</b><small>Fixed Steel Saw Frame</small></span></td>
             <td>300mm</td>
             <td>10/40</td>
             <td>SK-55</td>
@@ -1432,9 +1525,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g37">ชุดโฮลซอว์ 3ชิ้น <span>3PCS HOLE SAW SET</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ทำจากเหล็กกล้าคาร์บอนสูง #55 ผ่านการชุบแข็ง ฟันแข็ง HRC47-50</li><li>เจาะได้ลึก 25มม. สามารถเจาะเนื้อไม้ และแผ่นเหล็กบางๆได้</li><li>ขนาดในภาพ: 54มม. (2⅛&quot;), 22มม. (⅞&quot;), 9.5มม. (⅜&quot;), 6มม. (15/64&quot;)</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw37">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1442,9 +1536,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดโฮลซอว์ 3ชิ้น" data-nen="3PCS Hole Saw Set">
+            <td class="pic"><a href="../assets/img/tools/W0607.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0607"><img src="../assets/img/tools/W0607-sm.webp" alt="ชุดโฮลซอว์ 3ชิ้น W0607 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0607 ชุดโฮลซอว์ 3ชิ้น" href="#" target="_blank" rel="noopener">W0607</a></td>
-            <td><b>ชุดโฮลซอว์ 3ชิ้น</b><small>3PCS Hole Saw Set</small><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง แต่ภาพระบุ 54มม. (2⅛&quot;), 22มม. (⅞&quot;), 9.5มม. (⅜&quot;), 6มม. (15/64&quot;)</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดโฮลซอว์ 3ชิ้น</b><small>3PCS Hole Saw Set</small></span><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง แต่ภาพระบุ 54มม. (2⅛&quot;), 22มม. (⅞&quot;), 9.5มม. (⅜&quot;), 6มม. (15/64&quot;)</div></td>
             <td></td>
             <td>10/60</td>
             <td>SK-55</td>
@@ -1456,9 +1551,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g38">ชุดโฮลซอว์ 11ชิ้น <span>11PCS HOLE SAW SET</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ทำจากเหล็กกล้าคาร์บอนสูง #55 ผ่านการชุบแข็ง ฟันแข็ง HRC47-50</li><li>เจาะได้ลึก 25มม. สามารถเจาะเนื้อไม้ และแผ่นเหล็กบางๆได้</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw38">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1466,9 +1562,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดโฮลซอว์ 11ชิ้น" data-nen="11PCS Hole Saw Set">
+            <td class="pic"><a href="../assets/img/tools/W0609.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0609"><img src="../assets/img/tools/W0609-sm.webp" alt="ชุดโฮลซอว์ 11ชิ้น W0609 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0609 ชุดโฮลซอว์ 11ชิ้น (19, 22, 29, 32, 38, 44, 51, 64 มม.)" href="#" target="_blank" rel="noopener">W0609</a></td>
-            <td><b>ชุดโฮลซอว์ 11ชิ้น</b><small>11PCS Hole Saw Set</small><div class="note">ชื่อชุดระบุ 11 ชิ้น แต่ช่องขนาดแสดงเส้นผ่าศูนย์กลางใบเลื่อยเพียง 8 ขนาด</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดโฮลซอว์ 11ชิ้น</b><small>11PCS Hole Saw Set</small></span><div class="note">ชื่อชุดระบุ 11 ชิ้น แต่ช่องขนาดแสดงเส้นผ่าศูนย์กลางใบเลื่อยเพียง 8 ขนาด</div></td>
             <td>19, 22, 29, 32, 38, 44, 51, 64 มม.</td>
             <td>20</td>
             <td>SK-55</td>
@@ -1480,9 +1577,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g39">โฮลซอว์หัวเพชรเจาะหิน กระเบื้อง หินอ่อน <span>DIAMOND HOLE SAW</span> <em>2 รายการ</em></h3>
 
     <ul class="grp-notes"><li>พันใช้วัสดุประเภทเพชร ความแข็งสูง 15กิโล ฟันคม กันสึกกร่อน ใช้ได้นาน</li><li>สามารถเจาะหินอ่อนหนา 2.5ซม.ได้</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw39">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1490,16 +1588,18 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="โฮลซอว์หัวเพชรเจาะหิน กระเบื้อง หินอ่อน" data-nen="Diamond Hole Saw">
+            <td class="pic"><a href="../assets/img/tools/W3723-6.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W3723-6"><img src="../assets/img/tools/W3723-6-sm.webp" alt="โฮลซอว์หัวเพชรเจาะหิน กระเบื้อง หินอ่อน WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3723-6 โฮลซอว์หัวเพชรเจาะหิน กระเบื้อง หินอ่อน (6mm)" href="#" target="_blank" rel="noopener">W3723-6</a></td>
-            <td><b>โฮลซอว์หัวเพชรเจาะหิน กระเบื้อง หินอ่อน</b><small>Diamond Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"><b>โฮลซอว์หัวเพชรเจาะหิน กระเบื้อง หินอ่อน</b><small>Diamond Hole Saw</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>6mm</td>
             <td>350/3500</td>
             <td></td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์หัวเพชรเจาะหิน กระเบื้อง หินอ่อน" data-nen="Diamond Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3723-8 โฮลซอว์หัวเพชรเจาะหิน กระเบื้อง หินอ่อน (8mm)" href="#" target="_blank" rel="noopener">W3723-8</a></td>
-            <td><b>โฮลซอว์หัวเพชรเจาะหิน กระเบื้อง หินอ่อน</b><small>Diamond Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>8mm</td>
             <td>200/2000</td>
             <td></td>
@@ -1511,9 +1611,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g40">ชุดโฮลซอว์ 16ชิ้น <span>16PCS HOLE SAW KIT</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ทำจากเหล็กกล้าคาร์บอนสูง #55 ผ่านการชุบแข็ง ฟันแข็ง HRC47-50</li><li>เจาะได้ลึก 25มม. สามารถเจาะเนื้อไม้ และแผ่นเหล็กบางๆได้</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw40">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1521,9 +1622,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดโฮลซอว์ 16ชิ้น" data-nen="16PCS Hole Saw Kit">
+            <td class="pic"><a href="../assets/img/tools/W0610.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0610"><img src="../assets/img/tools/W0610-sm.webp" alt="ชุดโฮลซอว์ 16ชิ้น W0610 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0610 ชุดโฮลซอว์ 16ชิ้น (19, 22, 29, 32, 38, 44, 51, 64, 76, 89, 102, 127 มม.)" href="#" target="_blank" rel="noopener">W0610</a></td>
-            <td><b>ชุดโฮลซอว์ 16ชิ้น</b><small>16PCS Hole Saw Kit</small><div class="note">ชื่อชุดระบุ 16 ชิ้น แต่ช่องขนาดแสดงเส้นผ่าศูนย์กลางใบเลื่อย 12 ขนาด</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดโฮลซอว์ 16ชิ้น</b><small>16PCS Hole Saw Kit</small></span><div class="note">ชื่อชุดระบุ 16 ชิ้น แต่ช่องขนาดแสดงเส้นผ่าศูนย์กลางใบเลื่อย 12 ขนาด</div></td>
             <td>19, 22, 29, 32, 38, 44, 51, 64, 76, 89, 102, 127 มม.</td>
             <td>20</td>
             <td>SK-55</td>
@@ -1535,9 +1637,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g41">ดอกสกัด <span>HAMMER DRILL</span> <em>4 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 เหล็กกล้าคาร์บอนสูง</p>
     <ul class="grp-notes"><li>ผลิตจากเหล็กกล้าคาร์บอนสูง มีให้เลือกทั้งแหลมและแบน</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw41">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1545,30 +1648,34 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ดอกสกัด" data-nen="Hammer Drill">
+            <td class="pic"><a href="../assets/img/tools/W4358A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W4358A"><img src="../assets/img/tools/W4358A-sm.webp" alt="ดอกสกัด WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4358A ดอกสกัด (14X250mm)" href="#" target="_blank" rel="noopener">W4358A</a></td>
-            <td><b>ดอกสกัด</b><small>Hammer Drill</small></td>
+            <td class="nm"><span class="nmtxt"><b>ดอกสกัด</b><small>Hammer Drill</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>14X250mm</td>
             <td>10/100</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสกัด" data-nen="Hammer Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4359A ดอกสกัด (14X250mm)" href="#" target="_blank" rel="noopener">W4359A</a></td>
-            <td><b>ดอกสกัด</b><small>Hammer Drill</small><div class="note">ขนาด จำนวน ขนาดลัง และน้ำหนักเท่ากับ W4358A ทุกช่อง ต่างกันเฉพาะรูปทรงปลาย (แหลม/แบน) ซึ่งไม่ได้ระบุเป็นข้อความในตาราง</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">ขนาด จำนวน ขนาดลัง และน้ำหนักเท่ากับ W4358A ทุกช่อง ต่างกันเฉพาะรูปทรงปลาย (แหลม/แบน) ซึ่งไม่ได้ระบุเป็นข้อความในตาราง</div></td>
             <td>14X250mm</td>
             <td>10/100</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสกัด" data-nen="Hammer Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4360 ดอกสกัด (17X260mm)" href="#" target="_blank" rel="noopener">W4360</a></td>
-            <td><b>ดอกสกัด</b><small>Hammer Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>17X260mm</td>
             <td>10/60</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสกัด" data-nen="Hammer Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4361 ดอกสกัด (17X260mm)" href="#" target="_blank" rel="noopener">W4361</a></td>
-            <td><b>ดอกสกัด</b><small>Hammer Drill</small><div class="note">ขนาดและจำนวนเท่ากับ W4360 ต่างกันเฉพาะรูปทรงปลาย (แหลม/แบน) และน้ำหนัก</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">ขนาดและจำนวนเท่ากับ W4360 ต่างกันเฉพาะรูปทรงปลาย (แหลม/แบน) และน้ำหนัก</div></td>
             <td>17X260mm</td>
             <td>10/60</td>
             <td>SK-55</td>
@@ -1580,9 +1687,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g42">ดอกสว่านโรตารี่ <span>ELECTRIC HAMMER DRILLING BIT</span> <em>1 รายการ</em></h3>
 
     <ul class="grp-notes"><li>ก้านทำจากเหล็กอัลลอยคาร์บอนคุณภาพดี หัวเกลียวสว่านทำจากเหล็ก YG8 ทังสเตน ความแข็งสูง ไม่สึกกร่อน คุณภาพอย่างดี</li><li>เหมาะกับการใช้ในการก่อสร้าง และการติดตั้ง ใช้เจาะพื้นผิวที่แข็ง</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw42">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1590,9 +1698,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ดอกสว่านโรตารี่" data-nen="Electric Hammer Drilling Bit">
+            <td class="pic"><a href="../assets/img/tools/WA0106A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WA0106A"><img src="../assets/img/tools/WA0106A-sm.webp" alt="ดอกสว่านโรตารี่ WA0106A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WA0106A ดอกสว่านโรตารี่ (6X110mm)" href="#" target="_blank" rel="noopener">WA0106A</a></td>
-            <td><b>ดอกสว่านโรตารี่</b><small>Electric Hammer Drilling Bit</small></td>
+            <td class="nm"><span class="nmtxt"><b>ดอกสว่านโรตารี่</b><small>Electric Hammer Drilling Bit</small></span></td>
             <td>6X110mm</td>
             <td>10/400</td>
             <td>หัวเกลียว YG8 ทังสเตน</td>
@@ -1604,9 +1713,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g43">กระดาษทรายซ้อน 4 นิ้ว <span>4&quot;FLAP WHEEL</span> <em>3 รายการ</em></h3>
 
     <ul class="grp-notes"><li>สามารถเจียร ขัดตามซอกมุม พื้นผิวโค้ง บริเวณพื้นที่เล็กๆ</li><li>รองรับความเร็วสูง 13,000 R.P.M.</li><li>ทรายซ้อน ยึดติดแน่นด้วยกาวชนิดพิเศษ จึงไม่เกิดปัญหา</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw43">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1614,23 +1724,26 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="กระดาษทรายซ้อน 4 นิ้ว" data-nen="4&quot; Flap Wheel">
+            <td class="pic"><a href="../assets/img/tools/W2776A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2776A"><img src="../assets/img/tools/W2776A-sm.webp" alt="กระดาษทรายซ้อน 4 นิ้ว WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2776A กระดาษทรายซ้อน 4 นิ้ว (100X16mm 60#)" href="#" target="_blank" rel="noopener">W2776A</a></td>
-            <td><b>กระดาษทรายซ้อน 4 นิ้ว</b><small>4&quot; Flap Wheel</small><div class="note">ตารางมีเฉพาะคอลัมน์รหัสและขนาด ไม่มีช่องจำนวน/ขนาดลัง/น้ำหนัก; เบอร์ทราย 60#</div></td>
+            <td class="nm"><span class="nmtxt"><b>กระดาษทรายซ้อน 4 นิ้ว</b><small>4&quot; Flap Wheel</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div><div class="note">ตารางมีเฉพาะคอลัมน์รหัสและขนาด ไม่มีช่องจำนวน/ขนาดลัง/น้ำหนัก; เบอร์ทราย 60#</div></td>
             <td>100X16mm 60#</td>
             <td></td>
             <td></td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="กระดาษทรายซ้อน 4 นิ้ว" data-nen="4&quot; Flap Wheel">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2776B กระดาษทรายซ้อน 4 นิ้ว (100X16mm 80#)" href="#" target="_blank" rel="noopener">W2776B</a></td>
-            <td><b>กระดาษทรายซ้อน 4 นิ้ว</b><small>4&quot; Flap Wheel</small><div class="note">เบอร์ทราย 80#</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">เบอร์ทราย 80#</div></td>
             <td>100X16mm 80#</td>
             <td></td>
             <td></td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="กระดาษทรายซ้อน 4 นิ้ว" data-nen="4&quot; Flap Wheel">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2776C กระดาษทรายซ้อน 4 นิ้ว (100X16mm 120#)" href="#" target="_blank" rel="noopener">W2776C</a></td>
-            <td><b>กระดาษทรายซ้อน 4 นิ้ว</b><small>4&quot; Flap Wheel</small><div class="note">เบอร์ทราย 120#</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">เบอร์ทราย 120#</div></td>
             <td>100X16mm 120#</td>
             <td></td>
             <td></td>
@@ -1642,9 +1755,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g44">ดอกสว่านไฮสปีดเจาะเหล็ก <span>HIGH SPEED STEEL TWIST DRILL</span> <em>16 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: HSS เหล็กไฮสปีด M2</p>
     <ul class="grp-notes"><li>ทำจากเหล็กไฮสปีด (M2) คุณภาพดี</li><li>สามารถใช้เจาะทองแดง เหล็กเหลือง เหล็กคาร์บอน เหล็กสแตนเลส ฯลฯ</li><li>รมดำกันสนิม กันกัดกร่อน เจาะแม่น แรงต้านทานต่ำ</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw44">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1652,114 +1766,130 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"><a href="../assets/img/tools/W2673B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2673B"><img src="../assets/img/tools/W2673B-sm.webp" alt="ดอกสว่านไฮสปีดเจาะเหล็ก WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673B ดอกสว่านไฮสปีดเจาะเหล็ก (1.5mm)" href="#" target="_blank" rel="noopener">W2673B</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>1.5mm</td>
             <td>100/8000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673C ดอกสว่านไฮสปีดเจาะเหล็ก (2.0mm)" href="#" target="_blank" rel="noopener">W2673C</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>2.0mm</td>
             <td>100/8000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673D ดอกสว่านไฮสปีดเจาะเหล็ก (2.5mm)" href="#" target="_blank" rel="noopener">W2673D</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>2.5mm</td>
             <td>100/8000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673E ดอกสว่านไฮสปีดเจาะเหล็ก (2.8mm)" href="#" target="_blank" rel="noopener">W2673E</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>2.8mm</td>
             <td>100/5000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673F ดอกสว่านไฮสปีดเจาะเหล็ก (3.0mm)" href="#" target="_blank" rel="noopener">W2673F</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>3.0mm</td>
             <td>100/5000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673G ดอกสว่านไฮสปีดเจาะเหล็ก (3.2mm)" href="#" target="_blank" rel="noopener">W2673G</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>3.2mm</td>
             <td>100/5000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673H ดอกสว่านไฮสปีดเจาะเหล็ก (3.5mm)" href="#" target="_blank" rel="noopener">W2673H</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>3.5mm</td>
             <td>100/5000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673I ดอกสว่านไฮสปีดเจาะเหล็ก (4.0mm)" href="#" target="_blank" rel="noopener">W2673I</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4.0mm</td>
             <td>100/3000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673J ดอกสว่านไฮสปีดเจาะเหล็ก (4.2mm)" href="#" target="_blank" rel="noopener">W2673J</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4.2mm</td>
             <td>100/3000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673K ดอกสว่านไฮสปีดเจาะเหล็ก (4.5mm)" href="#" target="_blank" rel="noopener">W2673K</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4.5mm</td>
             <td>100/3000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673L ดอกสว่านไฮสปีดเจาะเหล็ก (4.8mm)" href="#" target="_blank" rel="noopener">W2673L</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4.8mm</td>
             <td>100/2000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673M ดอกสว่านไฮสปีดเจาะเหล็ก (5.0mm)" href="#" target="_blank" rel="noopener">W2673M</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>5.0mm</td>
             <td>100/2000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673N ดอกสว่านไฮสปีดเจาะเหล็ก (5.2mm)" href="#" target="_blank" rel="noopener">W2673N</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>5.2mm</td>
             <td>100/2000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673O ดอกสว่านไฮสปีดเจาะเหล็ก (5.3mm)" href="#" target="_blank" rel="noopener">W2673O</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>5.3mm</td>
             <td>100/2000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673P ดอกสว่านไฮสปีดเจาะเหล็ก (5.5mm)" href="#" target="_blank" rel="noopener">W2673P</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>5.5mm</td>
             <td>100/2000</td>
             <td>HSS M2</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ดอกสว่านไฮสปีดเจาะเหล็ก" data-nen="High Speed Steel Twist Drill">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2673Q ดอกสว่านไฮสปีดเจาะเหล็ก (6.0mm)" href="#" target="_blank" rel="noopener">W2673Q</a></td>
-            <td><b>ดอกสว่านไฮสปีดเจาะเหล็ก</b><small>High Speed Steel Twist Drill</small><div class="note">ตารางเริ่มที่รหัส W2673B ไม่มีแถว W2673A</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">ตารางเริ่มที่รหัส W2673B ไม่มีแถว W2673A</div></td>
             <td>6.0mm</td>
             <td>100/1000</td>
             <td>HSS M2</td>
@@ -1771,9 +1901,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g45">โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด <span>HIGH SPEED STEEL HOLE SAW</span> <em>10 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: HSS เหล็กไฮสปีด</p>
     <ul class="grp-notes"><li>ผลิตด้วยเหล็กไฮสปีดคุณภาพดี เจาะรูได้เกลี้ยง และแม่นยำ</li><li>สามารถใช้กับสว่าน หรือ อุปกรณ์อื่นๆได้</li><li>ใช้เจาะเปิดรูแผ่นเหล็ก หรืออลูมิเนียมอัลลอย</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw45">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1781,72 +1912,82 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"><a href="../assets/img/tools/W2674A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2674A"><img src="../assets/img/tools/W2674A-sm.webp" alt="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674A โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (16mm)" href="#" target="_blank" rel="noopener">W2674A</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>16mm</td>
             <td>10/360</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674B โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (18mm)" href="#" target="_blank" rel="noopener">W2674B</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>18mm</td>
             <td>10/360</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674C โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (19mm)" href="#" target="_blank" rel="noopener">W2674C</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>19mm</td>
             <td>10/360</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674D โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (20mm)" href="#" target="_blank" rel="noopener">W2674D</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>20mm</td>
             <td>10/360</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674E โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (22mm)" href="#" target="_blank" rel="noopener">W2674E</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>22mm</td>
             <td>10/360</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674F โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (25mm)" href="#" target="_blank" rel="noopener">W2674F</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>25mm</td>
             <td>10/360</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674G โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (26mm)" href="#" target="_blank" rel="noopener">W2674G</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>26mm</td>
             <td>10/360</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674H โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (28mm)" href="#" target="_blank" rel="noopener">W2674H</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>28mm</td>
             <td>10/160</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674I โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (30mm)" href="#" target="_blank" rel="noopener">W2674I</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>30mm</td>
             <td>10/160</td>
             <td>HSS</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด" data-nen="High Speed Steel Hole Saw">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2674J โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด (32mm)" href="#" target="_blank" rel="noopener">W2674J</a></td>
-            <td><b>โฮลซอว์เจาะเหล็ก เหล็กไฮสปีด</b><small>High Speed Steel Hole Saw</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>32mm</td>
             <td>10/160</td>
             <td>HSS</td>
@@ -1858,9 +1999,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g46">ชุดดอกสว่านเจดีย์ เจาะสเต็ป <span>3 PIECE HSS STEP DRILL SET</span> <em>1 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: HSS เหล็กไฮสปีด</p>
     <ul class="grp-notes"><li>เหล็กไฮสปีด ชุบไทเทเนียม เพื่อความทน และใช้งานได้ยาวนานมากขึ้น</li><li>เจาะแผ่นเหล็กได้โดยไม่ทำลายผิวรอบข้าง งานเนียน</li><li>มีบรรจุภัณฑ์ 3 แบบ: แบบกล่อง-ด้านนอก, แบบกล่อง-ด้านใน, แบบแผง</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw46">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1868,9 +2010,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดดอกสว่านเจดีย์ เจาะสเต็ป" data-nen="3 Piece HSS Step Drill Set">
+            <td class="pic"><a href="../assets/img/tools/WM789.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WM789"><img src="../assets/img/tools/WM789-sm.webp" alt="ชุดดอกสว่านเจดีย์ เจาะสเต็ป WM789 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WM789 ชุดดอกสว่านเจดีย์ เจาะสเต็ป (4-32/ 4-20 / 4-12มม.)" href="#" target="_blank" rel="noopener">WM789</a></td>
-            <td><b>ชุดดอกสว่านเจดีย์ เจาะสเต็ป</b><small>3 Piece HSS Step Drill Set</small><div class="note">ตารางมีเฉพาะคอลัมน์รหัสและขนาด ไม่มีช่องจำนวน/ขนาดลัง/น้ำหนัก</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดดอกสว่านเจดีย์ เจาะสเต็ป</b><small>3 Piece HSS Step Drill Set</small></span><div class="note">ตารางมีเฉพาะคอลัมน์รหัสและขนาด ไม่มีช่องจำนวน/ขนาดลัง/น้ำหนัก</div></td>
             <td>4-32/ 4-20 / 4-12มม.</td>
             <td></td>
             <td>HSS</td>
@@ -1882,9 +2025,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g47">คัตเตอร์ตัดกระจก กระเบื้อง <span>GLASS CUTTER WITH METAL HANDLE (GREEN)</span> <em>1 รายการ</em></h3>
 
     <ul class="grp-notes"><li>ผ่านการชุบโครเมียม ใช้เหล็กอัลลอยคาร์ไบด์ทังสเตน YG6X เป็นล้อตัด</li><li>ตัดกระจกหนา 3-6มม.ได้</li></ul>
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw47">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -1892,9 +2036,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="คัตเตอร์ตัดกระจก กระเบื้อง" data-nen="Glass Cutter with Metal Handle (Green)">
+            <td class="pic"><a href="../assets/img/tools/W3074B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W3074B"><img src="../assets/img/tools/W3074B-sm.webp" alt="คัตเตอร์ตัดกระจก กระเบื้อง W3074B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3074B คัตเตอร์ตัดกระจก กระเบื้อง" href="#" target="_blank" rel="noopener">W3074B</a></td>
-            <td><b>คัตเตอร์ตัดกระจก กระเบื้อง</b><small>Glass Cutter with Metal Handle (Green)</small><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
+            <td class="nm"><span class="nmtxt"><b>คัตเตอร์ตัดกระจก กระเบื้อง</b><small>Glass Cutter with Metal Handle (Green)</small></span><div class="note">ช่องขนาด/SIZE ในตารางเว้นว่าง</div></td>
             <td></td>
             <td>6/120</td>
             <td>ล้อตัด YG6X ทังสเตนคาร์ไบด์</td>
@@ -1941,7 +2086,7 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
     blocks.forEach(function(b){
       var shown=0;
       b.rows.forEach(function(r){
-        var ok = !q || r.textContent.toLowerCase().indexOf(q) >= 0;
+        var ok = !q || (r.textContent + " " + (r.dataset.nth || "") + " " + (r.dataset.nen || "")).toLowerCase().indexOf(q) >= 0;
         r.hidden = !ok; if(ok) shown++;
       });
       n += shown;
@@ -1950,8 +2095,26 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
       if(b.head) b.head.hidden = off;
       b.extras.forEach(function(e){ e.hidden = off; });
     });
+    relead();
     if(q){ hit.hidden=false; hit.textContent = n ? ("พบ " + n + " รายการ") : "ไม่พบรายการที่ค้นหา — ลองพิมพ์รหัสหรือชื่อสั้นลง"; }
     else { hit.hidden=true; }
+  }
+  /* ชื่อสินค้าพิมพ์แค่แถวแรกของตระกูล ถ้าค้นหาแล้วแถวแรกโดนซ่อน ต้องยกชื่อมาให้แถวแรกที่ยังโชว์อยู่ */
+  function relead(){
+    var seen={};
+    blocks.forEach(function(b){
+      b.rows.forEach(function(r){
+        var t=r.querySelector(".nmtxt"); if(!t || r.hidden) return;
+        var f=b.wrap.id + "|" + r.dataset.fam;
+        if(seen[f]){ t.textContent=""; return; }
+        seen[f]=true;
+        if(t.querySelector("b")) return;
+        t.textContent="";
+        var bEl=document.createElement("b"); bEl.textContent=r.dataset.nth||"";
+        var sEl=document.createElement("small"); sEl.textContent=r.dataset.nen||"";
+        t.appendChild(bEl); t.appendChild(sEl);
+      });
+    });
   }
   inp.addEventListener("input", apply);
 })();

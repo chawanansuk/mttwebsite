@@ -160,20 +160,41 @@ const brandOf = (id) => BRAND[id] || { th: "WYNN'S TOOLS", en: "WYNN'S TOOLS", e
 const NAV = Object.entries(META).map(([id, m]) => ({ id, file: m.file, th: DATA.categories.find((c) => c.id === id)?.th || id }));
 
 function rows(items, withPics, brandTh) {
-  return items.map((x) => {
-    const ask = `สอบถามราคา ${x.code} ${x.th}${x.size ? " (" + x.size + ")" : ""}`;
-    const note = x.notes_th ? `<div class="note">${esc(x.notes_th)}</div>` : "";
-    const pic = !withPics ? "" : (x.img
-      ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(x.th)} ${esc(x.code)} ${esc(brandTh)}" width="320" height="240" loading="lazy"></a></td>`
-      : `\n            <td class="pic"></td>`);
-    return `          <tr>${pic}
+  /* ตระกูลสินค้า = รายการที่ชื่อไทย+อังกฤษเดียวกันและเรียงติดกัน เช่น ลูกบล็อกสั้น 1/2" 11 เบอร์
+     พิมพ์ชื่อแค่แถวแรกของตระกูล แถวที่เหลือเว้นว่าง ลดการซ้ำ 43% ของทั้งเว็บ
+     ไม่ใช้ rowspan เพราะช่องค้นหาซ่อนแถวได้ แล้วตารางจะเพี้ยน */
+  const fams = [];
+  for (const x of items) {
+    const last = fams[fams.length - 1];
+    if (last && last.th === x.th && last.en === x.en) last.items.push(x);
+    else fams.push({ th: x.th, en: x.en, items: [x] });
+  }
+  let out = [];
+  fams.forEach((f, fi) => {
+    const samePic = f.items.length > 1 && f.items.some((x) => x.pic_same);
+    f.items.forEach((x, xi) => {
+      const lead = xi === 0;
+      const ask = `สอบถามราคา ${x.code} ${x.th}${x.size ? " (" + x.size + ")" : ""}`;
+      const note = x.notes_th ? `<div class="note">${esc(x.notes_th)}</div>` : "";
+      /* รูปตัวแทน: โรงงานถ่ายรูปเดียวใช้ทั้งตระกูล เอาไปวางทุกแถวจะกลายเป็นแถว 8 มม. โชว์รูปประแจ 19 มม. */
+      const showPic = samePic ? lead : true;
+      const pic = !withPics ? "" : ((showPic && x.img)
+        ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(x.th)}${samePic ? "" : " " + esc(x.code)} ${esc(brandTh)}" width="320" height="240" loading="lazy"></a></td>`
+        : `\n            <td class="pic"></td>`);
+      const famnote = (lead && samePic)
+        ? `<div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div>`
+        : "";
+      const nameHTML = lead ? `<b>${esc(x.th)}</b><small>${esc(x.en)}</small>` : "";
+      out.push(`          <tr${lead ? ' class="fam-lead"' : ""} data-fam="${fi}" data-nth="${esc(x.th)}" data-nen="${esc(x.en)}">${pic}
             <td class="code"><a data-line-ask="${esc(ask)}" href="#" target="_blank" rel="noopener">${esc(x.code)}</a></td>
-            <td><b>${esc(x.th)}</b><small>${esc(x.en)}</small>${note}</td>
+            <td class="nm"><span class="nmtxt">${nameHTML}</span>${famnote}${note}</td>
             <td>${esc(x.size)}</td>
             <td>${esc(x.pcs)}</td>
             <td>${esc(x.mat || "")}</td>
-          </tr>`;
-  }).join("\n");
+          </tr>`);
+    });
+  });
+  return out.join("\n");
 }
 
 function groupHTML(g, i, withPics, brandTh) {
@@ -181,7 +202,7 @@ function groupHTML(g, i, withPics, brandTh) {
   return `    <h3 class="grp-h" id="g${i}">${esc(g.th)} <span>${esc(g.en)}</span> <em>${g.items.length} รายการ</em></h3>
 ${g.mat ? `    <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: ${esc(g.mat)}</p>` : ""}
 ${notes ? `    <ul class="grp-notes">${notes}</ul>` : ""}
-    <div class="tblwrap">
+    <div class="tblwrap" id="tw${i}">
       <table class="tools${withPics ? " haspic" : ""}">
         <thead><tr>
 ${withPics ? `          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>\n` : ""}          <th data-th="รหัส" data-en="Item no.">รหัส</th>
@@ -275,7 +296,7 @@ ${JSON.stringify(itemList, null, 2)}
 .grp-h em{font-style:normal;font-family:"Anuphan";font-size:.78rem;color:var(--amber-dark);background:var(--amber-soft);border-radius:999px;padding:2px 10px;vertical-align:middle}
 .grp-mat{font-size:.85rem;color:var(--ink-dim);margin:0 0 6px}
 .grp-notes{margin:0 0 12px;padding-left:20px;font-size:.85rem;color:var(--ink-dim)}
-.grp-notes li{padding:2px 0}
+.grp-notes li{padding:2px 0}\ntable.tools tr.fam-lead td{border-top:2px solid var(--line-strong)}\ntable.tools tr.fam-lead:first-child td{border-top:0}\ntable.tools td.nm .famnote{font-size:.78rem;color:var(--amber-dark);margin-top:4px;max-width:320px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:660px}
 table.tools.haspic{min-width:740px}
@@ -370,7 +391,7 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
     blocks.forEach(function(b){
       var shown=0;
       b.rows.forEach(function(r){
-        var ok = !q || r.textContent.toLowerCase().indexOf(q) >= 0;
+        var ok = !q || (r.textContent + " " + (r.dataset.nth || "") + " " + (r.dataset.nen || "")).toLowerCase().indexOf(q) >= 0;
         r.hidden = !ok; if(ok) shown++;
       });
       n += shown;
@@ -379,8 +400,26 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
       if(b.head) b.head.hidden = off;
       b.extras.forEach(function(e){ e.hidden = off; });
     });
+    relead();
     if(q){ hit.hidden=false; hit.textContent = n ? ("พบ " + n + " รายการ") : "ไม่พบรายการที่ค้นหา — ลองพิมพ์รหัสหรือชื่อสั้นลง"; }
     else { hit.hidden=true; }
+  }
+  /* ชื่อสินค้าพิมพ์แค่แถวแรกของตระกูล ถ้าค้นหาแล้วแถวแรกโดนซ่อน ต้องยกชื่อมาให้แถวแรกที่ยังโชว์อยู่ */
+  function relead(){
+    var seen={};
+    blocks.forEach(function(b){
+      b.rows.forEach(function(r){
+        var t=r.querySelector(".nmtxt"); if(!t || r.hidden) return;
+        var f=b.wrap.id + "|" + r.dataset.fam;
+        if(seen[f]){ t.textContent=""; return; }
+        seen[f]=true;
+        if(t.querySelector("b")) return;
+        t.textContent="";
+        var bEl=document.createElement("b"); bEl.textContent=r.dataset.nth||"";
+        var sEl=document.createElement("small"); sEl.textContent=r.dataset.nen||"";
+        t.appendChild(bEl); t.appendChild(sEl);
+      });
+    });
   }
   inp.addEventListener("input", apply);
 })();

@@ -129,6 +129,9 @@
 .grp-mat{font-size:.85rem;color:var(--ink-dim);margin:0 0 6px}
 .grp-notes{margin:0 0 12px;padding-left:20px;font-size:.85rem;color:var(--ink-dim)}
 .grp-notes li{padding:2px 0}
+table.tools tr.fam-lead td{border-top:2px solid var(--line-strong)}
+table.tools tr.fam-lead:first-child td{border-top:0}
+table.tools td.nm .famnote{font-size:.78rem;color:var(--amber-dark);margin-top:4px;max-width:320px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:660px}
 table.tools.haspic{min-width:740px}
@@ -161,6 +164,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="muted" data-th="เครื่องมือเฉพาะทางสำหรับอู่และช่างยนต์ ตั้งแต่เหล็กดูด 3 ขา 3–16 นิ้ว ชุดถ้วยถอดกรองน้ำมัน 14 ชิ้น ตัวถอดสปริงโช๊ค ประแจกากบาทถอดล้อ ไปจนถึงกระบอกอัดจารบี ปืนฉีดลม เกจวัดลมยาง และโคมไฟ LED ซ่อมรถ" data-en="Specialist tools for workshops: 3-jaw pullers from 3 to 16 inches, 14-cup oil filter sets, coil spring compressors, cross rim wrenches, grease guns, air blow guns, tyre gauges and LED work lamps.">เครื่องมือเฉพาะทางสำหรับอู่และช่างยนต์ ตั้งแต่เหล็กดูด 3 ขา 3–16 นิ้ว ชุดถ้วยถอดกรองน้ำมัน 14 ชิ้น ตัวถอดสปริงโช๊ค ประแจกากบาทถอดล้อ ไปจนถึงกระบอกอัดจารบี ปืนฉีดลม เกจวัดลมยาง และโคมไฟ LED ซ่อมรถ</p>
     <div class="trust">
       <span class="badge">📋 57 <span data-th="รายการ" data-en="items">รายการ</span></span>
+      <span class="badge">📷 57 <span data-th="รายการมีรูปสินค้า" data-en="with product photos">รายการมีรูปสินค้า</span></span>
 
       <span class="badge" data-th="✔ ผู้นำเข้าโดยตรง" data-en="✔ Direct importer">✔ ผู้นำเข้าโดยตรง</span>
       <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
@@ -199,9 +203,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g0">เครื่องมือซ่อมเครื่องยนต์ <span>Engine Service Tools</span> <em>6 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: CR-V</p>
 
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw0">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -209,44 +214,50 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ไขควงงัดกิ๊ป" data-nen="Plastic Buckle Screwdriver">
+            <td class="pic"><a href="../assets/img/tools/W4584.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W4584"><img src="../assets/img/tools/W4584-sm.webp" alt="ไขควงงัดกิ๊ป W4584 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4584 ไขควงงัดกิ๊ป (8&quot;)" href="#" target="_blank" rel="noopener">W4584</a></td>
-            <td><b>ไขควงงัดกิ๊ป</b><small>Plastic Buckle Screwdriver</small><div class="note">งัดกิ๊ปได้โดยไม่ทำให้ผิวรถถลอก</div></td>
+            <td class="nm"><span class="nmtxt"><b>ไขควงงัดกิ๊ป</b><small>Plastic Buckle Screwdriver</small></span><div class="note">งัดกิ๊ปได้โดยไม่ทำให้ผิวรถถลอก</div></td>
             <td>8&quot;</td>
             <td>25/100</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="1" data-nth="ชุดถ้วยถอดกรองน้ำมันเครื่อง 14 ชิ้น" data-nen="Oil Filter Wrench Set">
+            <td class="pic"><a href="../assets/img/tools/W0456A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0456A"><img src="../assets/img/tools/W0456A-sm.webp" alt="ชุดถ้วยถอดกรองน้ำมันเครื่อง 14 ชิ้น W0456A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0456A ชุดถ้วยถอดกรองน้ำมันเครื่อง 14 ชิ้น (14 ชิ้น (65-101mm))" href="#" target="_blank" rel="noopener">W0456A</a></td>
-            <td><b>ชุดถ้วยถอดกรองน้ำมันเครื่อง 14 ชิ้น</b><small>Oil Filter Wrench Set</small></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดถ้วยถอดกรองน้ำมันเครื่อง 14 ชิ้น</b><small>Oil Filter Wrench Set</small></span></td>
             <td>14 ชิ้น (65-101mm)</td>
             <td>5</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="2" data-nth="ลานรัดแหวนลูกสูบ" data-nen="Piston Ring Compressor">
+            <td class="pic"><a href="../assets/img/tools/W0458A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0458A"><img src="../assets/img/tools/W0458A-sm.webp" alt="ลานรัดแหวนลูกสูบ WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0458A ลานรัดแหวนลูกสูบ (3# (53-175mm))" href="#" target="_blank" rel="noopener">W0458A</a></td>
-            <td><b>ลานรัดแหวนลูกสูบ</b><small>Piston Ring Compressor</small><div class="note">แผ่นเหล็กรัดหลอมจากเหล็กสปริง ยืดหยุ่นสูง ประกอบเข้ากับเฟืองหมุนพร้อมตัวล็อค</div></td>
+            <td class="nm"><span class="nmtxt"><b>ลานรัดแหวนลูกสูบ</b><small>Piston Ring Compressor</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div><div class="note">แผ่นเหล็กรัดหลอมจากเหล็กสปริง ยืดหยุ่นสูง ประกอบเข้ากับเฟืองหมุนพร้อมตัวล็อค</div></td>
             <td>3# (53-175mm)</td>
             <td>1/48</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr data-fam="2" data-nth="ลานรัดแหวนลูกสูบ" data-nen="Piston Ring Compressor">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0458B ลานรัดแหวนลูกสูบ (4# (60-175mm))" href="#" target="_blank" rel="noopener">W0458B</a></td>
-            <td><b>ลานรัดแหวนลูกสูบ</b><small>Piston Ring Compressor</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4# (60-175mm)</td>
             <td>1/48</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="3" data-nth="ตัวถอดสปริงโช๊ค" data-nen="Drop Forged Coil Spring Compressor">
+            <td class="pic"><a href="../assets/img/tools/W2916B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2916B"><img src="../assets/img/tools/W2916B-sm.webp" alt="ตัวถอดสปริงโช๊ค W2916B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2916B ตัวถอดสปริงโช๊ค (15 นิ้ว / 380mm)" href="#" target="_blank" rel="noopener">W2916B</a></td>
-            <td><b>ตัวถอดสปริงโช๊ค</b><small>Drop Forged Coil Spring Compressor</small><div class="note">ใช้กับด้ามขัน 1/2&quot; DR. หรือด้ามบล็อกขนาด 21 มม. ได้</div></td>
+            <td class="nm"><span class="nmtxt"><b>ตัวถอดสปริงโช๊ค</b><small>Drop Forged Coil Spring Compressor</small></span><div class="note">ใช้กับด้ามขัน 1/2&quot; DR. หรือด้ามบล็อกขนาด 21 มม. ได้</div></td>
             <td>15 นิ้ว / 380mm</td>
             <td>12</td>
             <td>CR-V40</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="4" data-nth="บล็อกถอดหัวเทียน" data-nen="Spark Plug Wrench">
+            <td class="pic"><a href="../assets/img/tools/W0196.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0196"><img src="../assets/img/tools/W0196-sm.webp" alt="บล็อกถอดหัวเทียน W0196 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0196 บล็อกถอดหัวเทียน (16mm, 21mm)" href="#" target="_blank" rel="noopener">W0196</a></td>
-            <td><b>บล็อกถอดหัวเทียน</b><small>Spark Plug Wrench</small><div class="note">ผิวเคลือบโครเมียมมันวาว เปลี่ยนบล็อกได้หลายประเภท</div></td>
+            <td class="nm"><span class="nmtxt"><b>บล็อกถอดหัวเทียน</b><small>Spark Plug Wrench</small></span><div class="note">ผิวเคลือบโครเมียมมันวาว เปลี่ยนบล็อกได้หลายประเภท</div></td>
             <td>16mm, 21mm</td>
             <td>8/48</td>
             <td>CR-V</td>
@@ -258,9 +269,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g1">ชุดบล็อกและไขควงสำหรับช่างยนต์ <span>Auto-Use Socket &amp; Screwdriver Sets</span> <em>3 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: CR-V</p>
 
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw1">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -268,23 +280,26 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดบล็อกด้ามฟรี และไขควง 26 ชิ้น" data-nen="26pcs Socket Screwdrivers Set">
+            <td class="pic"><a href="../assets/img/tools/W3480.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W3480"><img src="../assets/img/tools/W3480-sm.webp" alt="ชุดบล็อกด้ามฟรี และไขควง 26 ชิ้น W3480 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3480 ชุดบล็อกด้ามฟรี และไขควง 26 ชิ้น (ลูกบล็อก 1/4&quot; 4-13mm 10 ชิ้น · แฉก PH0 PH1 PH1 PH2 PH2 PH3 · แบน 3,4,5,5,6,7mm)" href="#" target="_blank" rel="noopener">W3480</a></td>
-            <td><b>ชุดบล็อกด้ามฟรี และไขควง 26 ชิ้น</b><small>26pcs Socket Screwdrivers Set</small><div class="note">มาพร้อมกล่องเก็บ · ด้ามฟรี ไขควงปรับองศา ข้อต่อบล็อก</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดบล็อกด้ามฟรี และไขควง 26 ชิ้น</b><small>26pcs Socket Screwdrivers Set</small></span><div class="note">มาพร้อมกล่องเก็บ · ด้ามฟรี ไขควงปรับองศา ข้อต่อบล็อก</div></td>
             <td>ลูกบล็อก 1/4&quot; 4-13mm 10 ชิ้น · แฉก PH0 PH1 PH1 PH2 PH2 PH3 · แบน 3,4,5,5,6,7mm</td>
             <td>20</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="1" data-nth="ชุดซ่อมรถยนต์ บล็อกและไขควง 21 ชิ้น" data-nen="21pcs Auto-Use Repair Set">
+            <td class="pic"><a href="../assets/img/tools/W0584.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0584"><img src="../assets/img/tools/W0584-sm.webp" alt="ชุดซ่อมรถยนต์ บล็อกและไขควง 21 ชิ้น W0584 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0584 ชุดซ่อมรถยนต์ บล็อกและไขควง 21 ชิ้น (แฉก PH1 PH2 · แบน 4,5mm · ทอร์ค T15 T20 · หกเหลี่ยม 4,5,6mm · Pozidriv Pz1 Pz2 · ลูกบล็อก 5-13mm)" href="#" target="_blank" rel="noopener">W0584</a></td>
-            <td><b>ชุดซ่อมรถยนต์ บล็อกและไขควง 21 ชิ้น</b><small>21pcs Auto-Use Repair Set</small><div class="note">หัวไขควงมีแม่เหล็ก ช่วยให้ถอดน็อตได้ง่ายขึ้น</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดซ่อมรถยนต์ บล็อกและไขควง 21 ชิ้น</b><small>21pcs Auto-Use Repair Set</small></span><div class="note">หัวไขควงมีแม่เหล็ก ช่วยให้ถอดน็อตได้ง่ายขึ้น</div></td>
             <td>แฉก PH1 PH2 · แบน 4,5mm · ทอร์ค T15 T20 · หกเหลี่ยม 4,5,6mm · Pozidriv Pz1 Pz2 · ลูกบล็อก 5-13mm</td>
             <td>6/24</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="2" data-nth="ชุดซ่อมรถยนต์ บล็อกและไขควง 29 ชิ้น" data-nen="29pcs Auto-Use Repair Set">
+            <td class="pic"><a href="../assets/img/tools/W3223.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W3223"><img src="../assets/img/tools/W3223-sm.webp" alt="ชุดซ่อมรถยนต์ บล็อกและไขควง 29 ชิ้น W3223 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3223 ชุดซ่อมรถยนต์ บล็อกและไขควง 29 ชิ้น (ลูกบล็อก 1/4&quot; เบอร์ 4-12mm · ด้ามขันตัว T · ข้อแปลงบล็อก 50mm · ข้อแปลง 25mm · แฉก PH0 PH1 PH2 PH3 · แบน 4,5,6mm · ทอร์ค T10 T15 T20 T25 T30 · Pozidriv Pz0 Pz1 Pz2 Pz3)" href="#" target="_blank" rel="noopener">W3223</a></td>
-            <td><b>ชุดซ่อมรถยนต์ บล็อกและไขควง 29 ชิ้น</b><small>29pcs Auto-Use Repair Set</small><div class="note">ปลายด้ามไขควงติดแม่เหล็ก เปลี่ยนหัวไขควงได้ง่าย</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดซ่อมรถยนต์ บล็อกและไขควง 29 ชิ้น</b><small>29pcs Auto-Use Repair Set</small></span><div class="note">ปลายด้ามไขควงติดแม่เหล็ก เปลี่ยนหัวไขควงได้ง่าย</div></td>
             <td>ลูกบล็อก 1/4&quot; เบอร์ 4-12mm · ด้ามขันตัว T · ข้อแปลงบล็อก 50mm · ข้อแปลง 25mm · แฉก PH0 PH1 PH2 PH3 · แบน 4,5,6mm · ทอร์ค T10 T15 T20 T25 T30 · Pozidriv Pz0 Pz1 Pz2 Pz3</td>
             <td>6/36</td>
             <td>CR-V</td>
@@ -296,9 +311,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g2">เหล็กดูด และเครื่องมือถอดกรอง <span>Pullers &amp; Oil Filter Wrenches</span> <em>14 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55 / CR-V</p>
 
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw2">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -306,100 +322,114 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="เหล็กดูด 3 ขา" data-nen="3-Jaw Gear Puller">
+            <td class="pic"><a href="../assets/img/tools/W0153A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0153A"><img src="../assets/img/tools/W0153A-sm.webp" alt="เหล็กดูด 3 ขา WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0153A เหล็กดูด 3 ขา (3&quot;/75mm)" href="#" target="_blank" rel="noopener">W0153A</a></td>
-            <td><b>เหล็กดูด 3 ขา</b><small>3-Jaw Gear Puller</small><div class="note">ใช้กับการดูดเกียร์ ดูดแบริ่ง</div></td>
+            <td class="nm"><span class="nmtxt"><b>เหล็กดูด 3 ขา</b><small>3-Jaw Gear Puller</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div><div class="note">ใช้กับการดูดเกียร์ ดูดแบริ่ง</div></td>
             <td>3&quot;/75mm</td>
             <td>60</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="เหล็กดูด 3 ขา" data-nen="3-Jaw Gear Puller">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0153B เหล็กดูด 3 ขา (4&quot;/100mm)" href="#" target="_blank" rel="noopener">W0153B</a></td>
-            <td><b>เหล็กดูด 3 ขา</b><small>3-Jaw Gear Puller</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>4&quot;/100mm</td>
             <td>40</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="เหล็กดูด 3 ขา" data-nen="3-Jaw Gear Puller">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0153C เหล็กดูด 3 ขา (6&quot;/150mm)" href="#" target="_blank" rel="noopener">W0153C</a></td>
-            <td><b>เหล็กดูด 3 ขา</b><small>3-Jaw Gear Puller</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>6&quot;/150mm</td>
             <td>20</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="เหล็กดูด 3 ขา" data-nen="3-Jaw Gear Puller">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0153D เหล็กดูด 3 ขา (8&quot;/200mm)" href="#" target="_blank" rel="noopener">W0153D</a></td>
-            <td><b>เหล็กดูด 3 ขา</b><small>3-Jaw Gear Puller</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>8&quot;/200mm</td>
             <td>10</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="เหล็กดูด 3 ขา" data-nen="3-Jaw Gear Puller">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0153E เหล็กดูด 3 ขา (10&quot;/250mm)" href="#" target="_blank" rel="noopener">W0153E</a></td>
-            <td><b>เหล็กดูด 3 ขา</b><small>3-Jaw Gear Puller</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>10&quot;/250mm</td>
             <td>6</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="เหล็กดูด 3 ขา" data-nen="3-Jaw Gear Puller">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0153F เหล็กดูด 3 ขา (12&quot;/300mm)" href="#" target="_blank" rel="noopener">W0153F</a></td>
-            <td><b>เหล็กดูด 3 ขา</b><small>3-Jaw Gear Puller</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>12&quot;/300mm</td>
             <td>4</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="เหล็กดูด 3 ขา" data-nen="3-Jaw Gear Puller">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0153G เหล็กดูด 3 ขา (14&quot;/350mm)" href="#" target="_blank" rel="noopener">W0153G</a></td>
-            <td><b>เหล็กดูด 3 ขา</b><small>3-Jaw Gear Puller</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>14&quot;/350mm</td>
             <td>3</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="เหล็กดูด 3 ขา" data-nen="3-Jaw Gear Puller">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0153H เหล็กดูด 3 ขา (16&quot;/400mm)" href="#" target="_blank" rel="noopener">W0153H</a></td>
-            <td><b>เหล็กดูด 3 ขา</b><small>3-Jaw Gear Puller</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>16&quot;/400mm</td>
             <td>2</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="1" data-nth="เหล็กดูดแบริ่ง" data-nen="Armature Bearing Puller">
+            <td class="pic"><a href="../assets/img/tools/W0459A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0459A"><img src="../assets/img/tools/W0459A-sm.webp" alt="เหล็กดูดแบริ่ง WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0459A เหล็กดูดแบริ่ง (1# 19-35mm)" href="#" target="_blank" rel="noopener">W0459A</a></td>
-            <td><b>เหล็กดูดแบริ่ง</b><small>Armature Bearing Puller</small><div class="note">ใช้ดูดแบริ่ง ดูดลูกปืน</div></td>
+            <td class="nm"><span class="nmtxt"><b>เหล็กดูดแบริ่ง</b><small>Armature Bearing Puller</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div><div class="note">ใช้ดูดแบริ่ง ดูดลูกปืน</div></td>
             <td>1# 19-35mm</td>
             <td>10/60</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr data-fam="1" data-nth="เหล็กดูดแบริ่ง" data-nen="Armature Bearing Puller">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0459B เหล็กดูดแบริ่ง (2# 24-55mm)" href="#" target="_blank" rel="noopener">W0459B</a></td>
-            <td><b>เหล็กดูดแบริ่ง</b><small>Armature Bearing Puller</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>2# 24-55mm</td>
             <td>10/30</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr data-fam="1" data-nth="เหล็กดูดแบริ่ง" data-nen="Armature Bearing Puller">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0459C เหล็กดูดแบริ่ง (3# 27-76mm)" href="#" target="_blank" rel="noopener">W0459C</a></td>
-            <td><b>เหล็กดูดแบริ่ง</b><small>Armature Bearing Puller</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>3# 27-76mm</td>
             <td>8/16</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="2" data-nth="ไขควงตอกกระแทก พร้อมดอกไขควง" data-nen="Impact-Driver Set">
+            <td class="pic"><a href="../assets/img/tools/WS01.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS01"><img src="../assets/img/tools/WS01-sm.webp" alt="ไขควงตอกกระแทก พร้อมดอกไขควง WS01 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS01 ไขควงตอกกระแทก พร้อมดอกไขควง" href="#" target="_blank" rel="noopener">WS01</a></td>
-            <td><b>ไขควงตอกกระแทก พร้อมดอกไขควง</b><small>Impact-Driver Set</small></td>
+            <td class="nm"><span class="nmtxt"><b>ไขควงตอกกระแทก พร้อมดอกไขควง</b><small>Impact-Driver Set</small></span></td>
             <td></td>
             <td>20</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="3" data-nth="ถอดกรองน้ำมัน ขากลม" data-nen="2-Way Oil Filter Wrench">
+            <td class="pic"><a href="../assets/img/tools/W0454B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0454B"><img src="../assets/img/tools/W0454B-sm.webp" alt="ถอดกรองน้ำมัน ขากลม W0454B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0454B ถอดกรองน้ำมัน ขากลม (ก้ามหนีบ 3 ขา · แกน 3/8&quot; และ 1/2&quot;)" href="#" target="_blank" rel="noopener">W0454B</a></td>
-            <td><b>ถอดกรองน้ำมัน ขากลม</b><small>2-Way Oil Filter Wrench</small><div class="note">ใช้กับตัวกรองที่มีเส้นผ่านศูนย์กลางไม่เกิน 102 มม. · ด้ามขัน DR 1/2&quot; หรือที่จับหมุน 13/16&quot;</div></td>
+            <td class="nm"><span class="nmtxt"><b>ถอดกรองน้ำมัน ขากลม</b><small>2-Way Oil Filter Wrench</small></span><div class="note">ใช้กับตัวกรองที่มีเส้นผ่านศูนย์กลางไม่เกิน 102 มม. · ด้ามขัน DR 1/2&quot; หรือที่จับหมุน 13/16&quot;</div></td>
             <td>ก้ามหนีบ 3 ขา · แกน 3/8&quot; และ 1/2&quot;</td>
             <td>36</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="4" data-nth="ถอดกรองน้ำมัน ขาแบน" data-nen="2-Way Oil Filter Wrench">
+            <td class="pic"><a href="../assets/img/tools/W0454A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0454A"><img src="../assets/img/tools/W0454A-sm.webp" alt="ถอดกรองน้ำมัน ขาแบน W0454A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0454A ถอดกรองน้ำมัน ขาแบน (สามขา หมุนได้สองทาง)" href="#" target="_blank" rel="noopener">W0454A</a></td>
-            <td><b>ถอดกรองน้ำมัน ขาแบน</b><small>2-Way Oil Filter Wrench</small><div class="note">ใช้กับตัวกรองที่มีเส้นผ่านศูนย์กลางไม่เกิน 102 มม.</div></td>
+            <td class="nm"><span class="nmtxt"><b>ถอดกรองน้ำมัน ขาแบน</b><small>2-Way Oil Filter Wrench</small></span><div class="note">ใช้กับตัวกรองที่มีเส้นผ่านศูนย์กลางไม่เกิน 102 มม.</div></td>
             <td>สามขา หมุนได้สองทาง</td>
             <td>48</td>
             <td>CR-V</td>
@@ -411,9 +441,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g3">โคมไฟและอุปกรณ์ประจำรถ <span>Work Lamps &amp; Emergency Tools</span> <em>3 รายการ</em></h3>
 
 
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw3">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -421,23 +452,26 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="โคมไฟแขวน ซ่อมรถ" data-nen="Working Lamp">
+            <td class="pic"><a href="../assets/img/tools/W0389B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0389B"><img src="../assets/img/tools/W0389B-sm.webp" alt="โคมไฟแขวน ซ่อมรถ W0389B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0389B โคมไฟแขวน ซ่อมรถ (250V (2A 250V MAX 60W))" href="#" target="_blank" rel="noopener">W0389B</a></td>
-            <td><b>โคมไฟแขวน ซ่อมรถ</b><small>Working Lamp</small><div class="note">ส่วนทองแดงเคลือบนิกเกิล นำไฟฟ้าได้ดี · โคมเซรามิก ปลอดภัย ทนความร้อนได้สูง</div></td>
+            <td class="nm"><span class="nmtxt"><b>โคมไฟแขวน ซ่อมรถ</b><small>Working Lamp</small></span><div class="note">ส่วนทองแดงเคลือบนิกเกิล นำไฟฟ้าได้ดี · โคมเซรามิก ปลอดภัย ทนความร้อนได้สูง</div></td>
             <td>250V (2A 250V MAX 60W)</td>
             <td>12/24</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="1" data-nth="โคมไฟแขวน ซ่อมรถยนต์ ไฟ LED 25 ดวง มีแม่เหล็ก" data-nen="LED Working Torch with Strong Magnetic">
+            <td class="pic"><a href="../assets/img/tools/W4610.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W4610"><img src="../assets/img/tools/W4610-sm.webp" alt="โคมไฟแขวน ซ่อมรถยนต์ ไฟ LED 25 ดวง มีแม่เหล็ก W4610 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4610 โคมไฟแขวน ซ่อมรถยนต์ ไฟ LED 25 ดวง มีแม่เหล็ก (12.5W (900-1000LM))" href="#" target="_blank" rel="noopener">W4610</a></td>
-            <td><b>โคมไฟแขวน ซ่อมรถยนต์ ไฟ LED 25 ดวง มีแม่เหล็ก</b><small>LED Working Torch with Strong Magnetic</small><div class="note">LED นำเข้าจากอเมริกา · สายยาว 8.5 ม. x 0.25 ตร.มม. · ตะขอหมุนได้ 360° · แม่เหล็กแปะติดได้</div></td>
+            <td class="nm"><span class="nmtxt"><b>โคมไฟแขวน ซ่อมรถยนต์ ไฟ LED 25 ดวง มีแม่เหล็ก</b><small>LED Working Torch with Strong Magnetic</small></span><div class="note">LED นำเข้าจากอเมริกา · สายยาว 8.5 ม. x 0.25 ตร.มม. · ตะขอหมุนได้ 360° · แม่เหล็กแปะติดได้</div></td>
             <td>12.5W (900-1000LM)</td>
             <td>1/24</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="2" data-nth="ไฟฉายฉุกเฉิน ทุบกระจก ตัดเข็มขัดได้" data-nen="Multi-Function Installation Hammer">
+            <td class="pic"><a href="../assets/img/tools/W4139.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W4139"><img src="../assets/img/tools/W4139-sm.webp" alt="ไฟฉายฉุกเฉิน ทุบกระจก ตัดเข็มขัดได้ W4139 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4139 ไฟฉายฉุกเฉิน ทุบกระจก ตัดเข็มขัดได้ (ใช้ถ่าน AA 2 ก้อน)" href="#" target="_blank" rel="noopener">W4139</a></td>
-            <td><b>ไฟฉายฉุกเฉิน ทุบกระจก ตัดเข็มขัดได้</b><small>Multi-Function Installation Hammer</small><div class="note">ฉายไฟ LED · ไฟ Neon ฉุกเฉิน · ที่ตัดสายเข็มขัด · ค้อนทุบกระจก · แท่นแม่เหล็ก</div></td>
+            <td class="nm"><span class="nmtxt"><b>ไฟฉายฉุกเฉิน ทุบกระจก ตัดเข็มขัดได้</b><small>Multi-Function Installation Hammer</small></span><div class="note">ฉายไฟ LED · ไฟ Neon ฉุกเฉิน · ที่ตัดสายเข็มขัด · ค้อนทุบกระจก · แท่นแม่เหล็ก</div></td>
             <td>ใช้ถ่าน AA 2 ก้อน</td>
             <td>25/100</td>
             <td></td>
@@ -449,9 +483,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g4">ประแจกากบาท เหล็กงัดยาง และประแจโซ่ <span>Cross Rim Wrenches, Tyre Levers &amp; Chain Wrenches</span> <em>10 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: CR-V / SK-45</p>
 
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw4">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -459,72 +494,82 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ประแจกากบาทหกเหลี่ยม (ผิวกระจก)" data-nen="Cross Rim Wrench (Fully Polished)">
+            <td class="pic"><a href="../assets/img/tools/WS4.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS4"><img src="../assets/img/tools/WS4-sm.webp" alt="ประแจกากบาทหกเหลี่ยม (ผิวกระจก) WS4 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS4 ประแจกากบาทหกเหลี่ยม (ผิวกระจก) (17-19-21-23mm · หนา 16mm ยาว 406mm)" href="#" target="_blank" rel="noopener">WS4</a></td>
-            <td><b>ประแจกากบาทหกเหลี่ยม (ผิวกระจก)</b><small>Cross Rim Wrench (Fully Polished)</small></td>
+            <td class="nm"><span class="nmtxt"><b>ประแจกากบาทหกเหลี่ยม (ผิวกระจก)</b><small>Cross Rim Wrench (Fully Polished)</small></span></td>
             <td>17-19-21-23mm · หนา 16mm ยาว 406mm</td>
             <td>20</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="1" data-nth="ประแจกากบาทมีหัวข้อต่อ 1/2&quot;" data-nen="Cross Rim Wrench (Chrome Plated)">
+            <td class="pic"><a href="../assets/img/tools/WS2.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS2"><img src="../assets/img/tools/WS2-sm.webp" alt="ประแจกากบาทมีหัวข้อต่อ 1/2&quot; WS2 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS2 ประแจกากบาทมีหัวข้อต่อ 1/2&quot; (17-19-21mm + หัวข้อต่อ 1/2&quot; · หนา 14mm ยาว 406mm)" href="#" target="_blank" rel="noopener">WS2</a></td>
-            <td><b>ประแจกากบาทมีหัวข้อต่อ 1/2&quot;</b><small>Cross Rim Wrench (Chrome Plated)</small></td>
+            <td class="nm"><span class="nmtxt"><b>ประแจกากบาทมีหัวข้อต่อ 1/2&quot;</b><small>Cross Rim Wrench (Chrome Plated)</small></span></td>
             <td>17-19-21mm + หัวข้อต่อ 1/2&quot; · หนา 14mm ยาว 406mm</td>
             <td>20</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="2" data-nth="ประแจกากบาทหกเหลี่ยมชุบ (ผิวเคลือบกันสนิม)" data-nen="Cross Rim Wrench">
+            <td class="pic"><a href="../assets/img/tools/กากบาททอง.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ กากบาททอง"><img src="../assets/img/tools/กากบาททอง-sm.webp" alt="ประแจกากบาทหกเหลี่ยมชุบ (ผิวเคลือบกันสนิม) กากบาททอง WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา กากบาททอง ประแจกากบาทหกเหลี่ยมชุบ (ผิวเคลือบกันสนิม) (17-19-21-23mm)" href="#" target="_blank" rel="noopener">กากบาททอง</a></td>
-            <td><b>ประแจกากบาทหกเหลี่ยมชุบ (ผิวเคลือบกันสนิม)</b><small>Cross Rim Wrench</small></td>
+            <td class="nm"><span class="nmtxt"><b>ประแจกากบาทหกเหลี่ยมชุบ (ผิวเคลือบกันสนิม)</b><small>Cross Rim Wrench</small></span></td>
             <td>17-19-21-23mm</td>
             <td>20</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="3" data-nth="ประแจกากบาทหกเหลี่ยมพับได้" data-nen="Cross Rim Wrench (Fully Polished)">
+            <td class="pic"><a href="../assets/img/tools/กากบาทพับ.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ กากบาทพับ"><img src="../assets/img/tools/กากบาทพับ-sm.webp" alt="ประแจกากบาทหกเหลี่ยมพับได้ กากบาทพับ WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา กากบาทพับ ประแจกากบาทหกเหลี่ยมพับได้ (17-19-21-23mm)" href="#" target="_blank" rel="noopener">กากบาทพับ</a></td>
-            <td><b>ประแจกากบาทหกเหลี่ยมพับได้</b><small>Cross Rim Wrench (Fully Polished)</small><div class="note">พับเก็บได้</div></td>
+            <td class="nm"><span class="nmtxt"><b>ประแจกากบาทหกเหลี่ยมพับได้</b><small>Cross Rim Wrench (Fully Polished)</small></span><div class="note">พับเก็บได้</div></td>
             <td>17-19-21-23mm</td>
             <td></td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="4" data-nth="ประแจกากบาทหกเหลี่ยม (ชุบโครเมี่ยม)" data-nen="Cross Rim Wrench">
+            <td class="pic"><a href="../assets/img/tools/WS01-กากบาท.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS01-กากบาท"><img src="../assets/img/tools/WS01-กากบาท-sm.webp" alt="ประแจกากบาทหกเหลี่ยม (ชุบโครเมี่ยม) WS01-กากบาท WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS01-กากบาท ประแจกากบาทหกเหลี่ยม (ชุบโครเมี่ยม) (17-19-21-23mm)" href="#" target="_blank" rel="noopener">WS01-กากบาท</a></td>
-            <td><b>ประแจกากบาทหกเหลี่ยม (ชุบโครเมี่ยม)</b><small>Cross Rim Wrench</small><div class="note">หมายเหตุ: แคตตาล็อกพิมพ์รหัสเป็น WS01 ซ้ำกับไขควงตอกกระแทก</div></td>
+            <td class="nm"><span class="nmtxt"><b>ประแจกากบาทหกเหลี่ยม (ชุบโครเมี่ยม)</b><small>Cross Rim Wrench</small></span><div class="note">หมายเหตุ: แคตตาล็อกพิมพ์รหัสเป็น WS01 ซ้ำกับไขควงตอกกระแทก</div></td>
             <td>17-19-21-23mm</td>
             <td></td>
             <td>CR-V</td>
           </tr>
-          <tr>
-            <td class="code"><a data-line-ask="สอบถามราคา จัดยางMTT เหล็กงัดยาง ตรา M.T.T. (12, 16, 20, 24 นิ้ว)" href="#" target="_blank" rel="noopener">จัดยางMTT</a></td>
-            <td><b>เหล็กงัดยาง ตรา M.T.T.</b><small>Tyre Lever</small></td>
+          <tr class="fam-lead" data-fam="5" data-nth="เหล็กงัดยาง ตรา M.T.T." data-nen="Tyre Lever">
+            <td class="pic"><a href="../assets/img/tools/งัดยางMTT.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ งัดยางMTT"><img src="../assets/img/tools/งัดยางMTT-sm.webp" alt="เหล็กงัดยาง ตรา M.T.T. งัดยางMTT WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
+            <td class="code"><a data-line-ask="สอบถามราคา งัดยางMTT เหล็กงัดยาง ตรา M.T.T. (12, 16, 20, 24 นิ้ว)" href="#" target="_blank" rel="noopener">งัดยางMTT</a></td>
+            <td class="nm"><span class="nmtxt"><b>เหล็กงัดยาง ตรา M.T.T.</b><small>Tyre Lever</small></span><div class="note"> (ถอดรหัสผิดเป็น จัดยางMTT ตอนแรก — แคตตาล็อกหน้า 35 พิมพ์ งัดยางMTT)</div></td>
             <td>12, 16, 20, 24 นิ้ว</td>
             <td></td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="6" data-nth="เหล็กงัดยาง" data-nen="Tyre Lever">
+            <td class="pic"><a href="../assets/img/tools/W0014C.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0014C"><img src="../assets/img/tools/W0014C-sm.webp" alt="เหล็กงัดยาง WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0014C เหล็กงัดยาง (20&quot;/500mm)" href="#" target="_blank" rel="noopener">W0014C</a></td>
-            <td><b>เหล็กงัดยาง</b><small>Tyre Lever</small></td>
+            <td class="nm"><span class="nmtxt"><b>เหล็กงัดยาง</b><small>Tyre Lever</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>20&quot;/500mm</td>
             <td>36</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr data-fam="6" data-nth="เหล็กงัดยาง" data-nen="Tyre Lever">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0014D เหล็กงัดยาง (24&quot;/600mm)" href="#" target="_blank" rel="noopener">W0014D</a></td>
-            <td><b>เหล็กงัดยาง</b><small>Tyre Lever</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>24&quot;/600mm</td>
             <td>24</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="7" data-nth="ประแจโซ่ถอดกรองน้ำมัน" data-nen="Chain Wrench">
+            <td class="pic"><a href="../assets/img/tools/W0021B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0021B"><img src="../assets/img/tools/W0021B-sm.webp" alt="ประแจโซ่ถอดกรองน้ำมัน WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0021B ประแจโซ่ถอดกรองน้ำมัน (9&quot;/225mm)" href="#" target="_blank" rel="noopener">W0021B</a></td>
-            <td><b>ประแจโซ่ถอดกรองน้ำมัน</b><small>Chain Wrench</small><div class="note">ขอบเขตการปรับโซ่ 60-180 มม.</div></td>
+            <td class="nm"><span class="nmtxt"><b>ประแจโซ่ถอดกรองน้ำมัน</b><small>Chain Wrench</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div><div class="note">ขอบเขตการปรับโซ่ 60-180 มม.</div></td>
             <td>9&quot;/225mm</td>
             <td>6/60</td>
             <td>SK-45</td>
           </tr>
-          <tr>
+          <tr data-fam="7" data-nth="ประแจโซ่ถอดกรองน้ำมัน" data-nen="Chain Wrench">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0021C ประแจโซ่ถอดกรองน้ำมัน (12&quot;/300mm)" href="#" target="_blank" rel="noopener">W0021C</a></td>
-            <td><b>ประแจโซ่ถอดกรองน้ำมัน</b><small>Chain Wrench</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>12&quot;/300mm</td>
             <td>6/36</td>
             <td>SK-45</td>
@@ -536,9 +581,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g5">กระบอกอัดจารบี กาพ่นสี และเกจวัดลมยาง <span>Grease Guns, Spray Guns &amp; Tyre Gauges</span> <em>8 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: A-ALLOY / SK-55</p>
 
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw5">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -546,58 +592,66 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="กระบอกอัดจารบีแบบใช้ลม 400cc" data-nen="Air Grease Gun">
+            <td class="pic"><a href="../assets/img/tools/W0479.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0479"><img src="../assets/img/tools/W0479-sm.webp" alt="กระบอกอัดจารบีแบบใช้ลม 400cc W0479 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0479 กระบอกอัดจารบีแบบใช้ลม 400cc (400CC)" href="#" target="_blank" rel="noopener">W0479</a></td>
-            <td><b>กระบอกอัดจารบีแบบใช้ลม 400cc</b><small>Air Grease Gun</small><div class="note">หัวต่อปืนลม 1/4&quot; · ใช้ความดันลม 30-150 PSI จ่ายความดัน 1200-6000 PSI</div></td>
+            <td class="nm"><span class="nmtxt"><b>กระบอกอัดจารบีแบบใช้ลม 400cc</b><small>Air Grease Gun</small></span><div class="note">หัวต่อปืนลม 1/4&quot; · ใช้ความดันลม 30-150 PSI จ่ายความดัน 1200-6000 PSI</div></td>
             <td>400CC</td>
             <td>10</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="1" data-nth="กระบอกอัดจารบี 500cc" data-nen="Grease Gun">
+            <td class="pic"><a href="../assets/img/tools/W2757.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2757"><img src="../assets/img/tools/W2757-sm.webp" alt="กระบอกอัดจารบี 500cc W2757 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2757 กระบอกอัดจารบี 500cc (500CC)" href="#" target="_blank" rel="noopener">W2757</a></td>
-            <td><b>กระบอกอัดจารบี 500cc</b><small>Grease Gun</small><div class="note">ด้ามจับ Plastic cement จับได้กระชับมือ · มีท่อแข็งและท่ออ่อน</div></td>
+            <td class="nm"><span class="nmtxt"><b>กระบอกอัดจารบี 500cc</b><small>Grease Gun</small></span><div class="note">ด้ามจับ Plastic cement จับได้กระชับมือ · มีท่อแข็งและท่ออ่อน</div></td>
             <td>500CC</td>
             <td>20</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="2" data-nth="กระบอกอัดจารบีอย่างดี 600cc เกรดงานอุตสาหกรรม" data-nen="High-Class Industrial Grease Gun">
+            <td class="pic"><a href="../assets/img/tools/W0586.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0586"><img src="../assets/img/tools/W0586-sm.webp" alt="กระบอกอัดจารบีอย่างดี 600cc เกรดงานอุตสาหกรรม W0586 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0586 กระบอกอัดจารบีอย่างดี 600cc เกรดงานอุตสาหกรรม (600CC)" href="#" target="_blank" rel="noopener">W0586</a></td>
-            <td><b>กระบอกอัดจารบีอย่างดี 600cc เกรดงานอุตสาหกรรม</b><small>High-Class Industrial Grease Gun</small><div class="note">มีปุ่มกดไล่ลมออก · หัวจ่ายเพิ่มลูกปืนเม็ดกลมโลหะป้องกันการไหลย้อนกลับ</div></td>
+            <td class="nm"><span class="nmtxt"><b>กระบอกอัดจารบีอย่างดี 600cc เกรดงานอุตสาหกรรม</b><small>High-Class Industrial Grease Gun</small></span><div class="note">มีปุ่มกดไล่ลมออก · หัวจ่ายเพิ่มลูกปืนเม็ดกลมโลหะป้องกันการไหลย้อนกลับ</div></td>
             <td>600CC</td>
             <td>10</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="3" data-nth="เกจวัดลมยาง แบบเข็ม ขนาดเล็ก" data-nen="Tire Gauge">
+            <td class="pic"><a href="../assets/img/tools/W4355.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W4355"><img src="../assets/img/tools/W4355-sm.webp" alt="เกจวัดลมยาง แบบเข็ม ขนาดเล็ก W4355 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4355 เกจวัดลมยาง แบบเข็ม ขนาดเล็ก (0-100psi หรือ 0.5-7kg/cm²)" href="#" target="_blank" rel="noopener">W4355</a></td>
-            <td><b>เกจวัดลมยาง แบบเข็ม ขนาดเล็ก</b><small>Tire Gauge</small><div class="note">แกนวัดคุณภาพสูง การวัดค่าแม่นยำ</div></td>
+            <td class="nm"><span class="nmtxt"><b>เกจวัดลมยาง แบบเข็ม ขนาดเล็ก</b><small>Tire Gauge</small></span><div class="note">แกนวัดคุณภาพสูง การวัดค่าแม่นยำ</div></td>
             <td>0-100psi หรือ 0.5-7kg/cm²</td>
             <td>10/100</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="4" data-nth="เกจวัดลมยางดิจิตอล พร้อมหัวเติม" data-nen="Digital Tire Gauge">
+            <td class="pic"><a href="../assets/img/tools/W4618.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W4618"><img src="../assets/img/tools/W4618-sm.webp" alt="เกจวัดลมยางดิจิตอล พร้อมหัวเติม W4618 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4618 เกจวัดลมยางดิจิตอล พร้อมหัวเติม (สูงสุด 0.8 mpa (ปกติ 0.2-0.4 mpa))" href="#" target="_blank" rel="noopener">W4618</a></td>
-            <td><b>เกจวัดลมยางดิจิตอล พร้อมหัวเติม</b><small>Digital Tire Gauge</small><div class="note">สายเติมลม 80 มม. · ใช้ถ่าน AAA (มีแถมในชุด) · วาล์วปรับความแน่นกับจุกต่อยางล้อได้</div></td>
+            <td class="nm"><span class="nmtxt"><b>เกจวัดลมยางดิจิตอล พร้อมหัวเติม</b><small>Digital Tire Gauge</small></span><div class="note">สายเติมลม 80 มม. · ใช้ถ่าน AAA (มีแถมในชุด) · วาล์วปรับความแน่นกับจุกต่อยางล้อได้</div></td>
             <td>สูงสุด 0.8 mpa (ปกติ 0.2-0.4 mpa)</td>
             <td>6/24</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="5" data-nth="เกจวัดลมยาง พร้อมหัวเติม" data-nen="Tyre Inflator with Gauge">
+            <td class="pic"><a href="../assets/img/tools/WTD-1.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WTD-1"><img src="../assets/img/tools/WTD-1-sm.webp" alt="เกจวัดลมยาง พร้อมหัวเติม WTD-1 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WTD-1 เกจวัดลมยาง พร้อมหัวเติม" href="#" target="_blank" rel="noopener">WTD-1</a></td>
-            <td><b>เกจวัดลมยาง พร้อมหัวเติม</b><small>Tyre Inflator with Gauge</small><div class="note">โครงสร้างโลหะ แข็งแรงทนทานเป็นพิเศษ พกพาและใช้งานง่าย</div></td>
+            <td class="nm"><span class="nmtxt"><b>เกจวัดลมยาง พร้อมหัวเติม</b><small>Tyre Inflator with Gauge</small></span><div class="note">โครงสร้างโลหะ แข็งแรงทนทานเป็นพิเศษ พกพาและใช้งานง่าย</div></td>
             <td></td>
             <td>6/60</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="6" data-nth="กาพ่นสี กาล่าง 750cc" data-nen="Spray Gun">
+            <td class="pic"><a href="../assets/img/tools/WF-75S.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WF-75S"><img src="../assets/img/tools/WF-75S-sm.webp" alt="กาพ่นสี กาล่าง 750cc WF-75S WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WF-75S กาพ่นสี กาล่าง 750cc (750CC)" href="#" target="_blank" rel="noopener">WF-75S</a></td>
-            <td><b>กาพ่นสี กาล่าง 750cc</b><small>Spray Gun</small><div class="note">พ่นเคลือบได้อย่างสม่ำเสมอ น้ำหนักเบา ประหยัดการใช้สี</div></td>
+            <td class="nm"><span class="nmtxt"><b>กาพ่นสี กาล่าง 750cc</b><small>Spray Gun</small></span><div class="note">พ่นเคลือบได้อย่างสม่ำเสมอ น้ำหนักเบา ประหยัดการใช้สี</div></td>
             <td>750CC</td>
             <td>20</td>
             <td>A-ALLOY เหล็กอลูมิเนียมอัลลอย</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="7" data-nth="กาพ่นสี กาบน 400cc" data-nen="Spray Gun">
+            <td class="pic"><a href="../assets/img/tools/WF-75G.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WF-75G"><img src="../assets/img/tools/WF-75G-sm.webp" alt="กาพ่นสี กาบน 400cc WF-75G WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WF-75G กาพ่นสี กาบน 400cc (400CC)" href="#" target="_blank" rel="noopener">WF-75G</a></td>
-            <td><b>กาพ่นสี กาบน 400cc</b><small>Spray Gun</small></td>
+            <td class="nm"><span class="nmtxt"><b>กาพ่นสี กาบน 400cc</b><small>Spray Gun</small></span></td>
             <td>400CC</td>
             <td>20</td>
             <td>A-ALLOY เหล็กอลูมิเนียมอัลลอย</td>
@@ -609,9 +663,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g6">ปืนฉีดลม สูบลม และกาหยอดน้ำมัน <span>Air Blow Guns, Inflators &amp; Oilers</span> <em>8 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: SK-55</p>
 
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw6">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -619,58 +674,66 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="คีมถอดไส้กรอง" data-nen="Oil Filter Wrench">
+            <td class="pic"><a href="../assets/img/tools/W0169A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0169A"><img src="../assets/img/tools/W0169A-sm.webp" alt="คีมถอดไส้กรอง W0169A WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0169A คีมถอดไส้กรอง (250mm)" href="#" target="_blank" rel="noopener">W0169A</a></td>
-            <td><b>คีมถอดไส้กรอง</b><small>Oil Filter Wrench</small><div class="note">คีมจับช่วยเพิ่มแรงบีบ เพื่อถอดไส้กรองที่ถอดได้ยาก</div></td>
+            <td class="nm"><span class="nmtxt"><b>คีมถอดไส้กรอง</b><small>Oil Filter Wrench</small></span><div class="note">คีมจับช่วยเพิ่มแรงบีบ เพื่อถอดไส้กรองที่ถอดได้ยาก</div></td>
             <td>250mm</td>
             <td>6/60</td>
             <td>SK-55</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="1" data-nth="ปืนฉีดลม มีแกน" data-nen="Blowing Dust Gun">
+            <td class="pic"><a href="../assets/img/tools/WB-101.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WB-101"><img src="../assets/img/tools/WB-101-sm.webp" alt="ปืนฉีดลม มีแกน WB-101 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WB-101 ปืนฉีดลม มีแกน (21X20.5X15cm)" href="#" target="_blank" rel="noopener">WB-101</a></td>
-            <td><b>ปืนฉีดลม มีแกน</b><small>Blowing Dust Gun</small><div class="note">โครงสร้างทองแดง ไม่รั่วไหล แรงดันสูง เหมาะสำหรับทำความสะอาด เป่าฝุ่นเครื่องจักร</div></td>
+            <td class="nm"><span class="nmtxt"><b>ปืนฉีดลม มีแกน</b><small>Blowing Dust Gun</small></span><div class="note">โครงสร้างทองแดง ไม่รั่วไหล แรงดันสูง เหมาะสำหรับทำความสะอาด เป่าฝุ่นเครื่องจักร</div></td>
             <td>21X20.5X15cm</td>
             <td>10/120</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="2" data-nth="ปืนฉีดลม ปรับหัวได้ มีแกน" data-nen="Blowing Dust Gun">
+            <td class="pic"><a href="../assets/img/tools/WB-102.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WB-102"><img src="../assets/img/tools/WB-102-sm.webp" alt="ปืนฉีดลม ปรับหัวได้ มีแกน WB-102 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WB-102 ปืนฉีดลม ปรับหัวได้ มีแกน (ปากแกนฉีดเส้นผ่านศูนย์กลาง 4 มม.)" href="#" target="_blank" rel="noopener">WB-102</a></td>
-            <td><b>ปืนฉีดลม ปรับหัวได้ มีแกน</b><small>Blowing Dust Gun</small><div class="note">วัสดุอลูมิเนียม ผิวขัดเงา น้ำหนักเบา ปรับขนาดรูหัวได้</div></td>
+            <td class="nm"><span class="nmtxt"><b>ปืนฉีดลม ปรับหัวได้ มีแกน</b><small>Blowing Dust Gun</small></span><div class="note">วัสดุอลูมิเนียม ผิวขัดเงา น้ำหนักเบา ปรับขนาดรูหัวได้</div></td>
             <td>ปากแกนฉีดเส้นผ่านศูนย์กลาง 4 มม.</td>
             <td>120</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="3" data-nth="ปืนฉีดลม หัวฉีด 100 มม." data-nen="Blowing Dust Gun">
+            <td class="pic"><a href="../assets/img/tools/WB-103.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WB-103"><img src="../assets/img/tools/WB-103-sm.webp" alt="ปืนฉีดลม หัวฉีด 100 มม. WB-103 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WB-103 ปืนฉีดลม หัวฉีด 100 มม. (หัวฉีด 100mm)" href="#" target="_blank" rel="noopener">WB-103</a></td>
-            <td><b>ปืนฉีดลม หัวฉีด 100 มม.</b><small>Blowing Dust Gun</small><div class="note">แรงดัน 13 Bar ใช้ข้อต่อ Copper 20PM · ไกปืนทดสอบเหนี่ยวได้มากกว่า 650,000 ครั้ง</div></td>
+            <td class="nm"><span class="nmtxt"><b>ปืนฉีดลม หัวฉีด 100 มม.</b><small>Blowing Dust Gun</small></span><div class="note">แรงดัน 13 Bar ใช้ข้อต่อ Copper 20PM · ไกปืนทดสอบเหนี่ยวได้มากกว่า 650,000 ครั้ง</div></td>
             <td>หัวฉีด 100mm</td>
             <td>25/100</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="4" data-nth="ปืนฉีดลม หัวฉีดยาว 170 มม." data-nen="Plastic Blowing Dust Gun with Copper Nozzle">
+            <td class="pic"><a href="../assets/img/tools/WB-104.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WB-104"><img src="../assets/img/tools/WB-104-sm.webp" alt="ปืนฉีดลม หัวฉีดยาว 170 มม. WB-104 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WB-104 ปืนฉีดลม หัวฉีดยาว 170 มม. (หัวฉีด 170mm)" href="#" target="_blank" rel="noopener">WB-104</a></td>
-            <td><b>ปืนฉีดลม หัวฉีดยาว 170 มม.</b><small>Plastic Blowing Dust Gun with Copper Nozzle</small><div class="note">แรงดัน 13 Bar · ข้อต่อทองแดง หัวฉีดอลูมิเนียม ด้ามจับพีวีซี</div></td>
+            <td class="nm"><span class="nmtxt"><b>ปืนฉีดลม หัวฉีดยาว 170 มม.</b><small>Plastic Blowing Dust Gun with Copper Nozzle</small></span><div class="note">แรงดัน 13 Bar · ข้อต่อทองแดง หัวฉีดอลูมิเนียม ด้ามจับพีวีซี</div></td>
             <td>หัวฉีด 170mm</td>
             <td>20/100</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="5" data-nth="สูบลมแบบเหยียบ" data-nen="Pedal High Pressure Inflator">
+            <td class="pic"><a href="../assets/img/tools/W3245.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W3245"><img src="../assets/img/tools/W3245-sm.webp" alt="สูบลมแบบเหยียบ W3245 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3245 สูบลมแบบเหยียบ" href="#" target="_blank" rel="noopener">W3245</a></td>
-            <td><b>สูบลมแบบเหยียบ</b><small>Pedal High Pressure Inflator</small><div class="note">มีหน้าปัดบอกแรงดัน · ท่อสูบอัลลอย โครงเหล็กแข็งแรง · ที่เหยียบและฐานรองกันลื่น</div></td>
+            <td class="nm"><span class="nmtxt"><b>สูบลมแบบเหยียบ</b><small>Pedal High Pressure Inflator</small></span><div class="note">มีหน้าปัดบอกแรงดัน · ท่อสูบอัลลอย โครงเหล็กแข็งแรง · ที่เหยียบและฐานรองกันลื่น</div></td>
             <td></td>
             <td>1/15</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="6" data-nth="กาหยอดน้ำมัน" data-nen="Pump Oiler">
+            <td class="pic"><a href="../assets/img/tools/W0474.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0474"><img src="../assets/img/tools/W0474-sm.webp" alt="กาหยอดน้ำมัน W0474 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0474 กาหยอดน้ำมัน (250g)" href="#" target="_blank" rel="noopener">W0474</a></td>
-            <td><b>กาหยอดน้ำมัน</b><small>Pump Oiler</small><div class="note">กระบอก ABS โปร่งใส สายอ่อนบิดงอได้</div></td>
+            <td class="nm"><span class="nmtxt"><b>กาหยอดน้ำมัน</b><small>Pump Oiler</small></span><div class="note">กระบอก ABS โปร่งใส สายอ่อนบิดงอได้</div></td>
             <td>250g</td>
             <td>12/120</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="7" data-nth="กาเหล็กหยอดน้ำมัน สายอ่อน 250 มล." data-nen="Pump Oiler">
+            <td class="pic"><a href="../assets/img/tools/W0229B.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0229B"><img src="../assets/img/tools/W0229B-sm.webp" alt="กาเหล็กหยอดน้ำมัน สายอ่อน 250 มล. W0229B WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0229B กาเหล็กหยอดน้ำมัน สายอ่อน 250 มล. (250g)" href="#" target="_blank" rel="noopener">W0229B</a></td>
-            <td><b>กาเหล็กหยอดน้ำมัน สายอ่อน 250 มล.</b><small>Pump Oiler</small><div class="note">กระบอกเหล็กอลูมิเนียมอัลลอย แข็งและทนทาน สายอ่อนบิดงอได้</div></td>
+            <td class="nm"><span class="nmtxt"><b>กาเหล็กหยอดน้ำมัน สายอ่อน 250 มล.</b><small>Pump Oiler</small></span><div class="note">กระบอกเหล็กอลูมิเนียมอัลลอย แข็งและทนทาน สายอ่อนบิดงอได้</div></td>
             <td>250g</td>
             <td>10/120</td>
             <td></td>
@@ -682,9 +745,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g7">อุปกรณ์เสริมช่างยนต์ <span>Wheel, Filter &amp; Workshop Accessories</span> <em>5 รายการ</em></h3>
     <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: CR-V / สแตนเลส / Z-ALLOY</p>
 
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw7">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -692,37 +756,42 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="บล็อกถอดล้อตัว L" data-nen="L-Tyre Tension Rod with Bend Handle">
+            <td class="pic"><a href="../assets/img/tools/W0027.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W0027"><img src="../assets/img/tools/W0027-sm.webp" alt="บล็อกถอดล้อตัว L W0027 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W0027 บล็อกถอดล้อตัว L (17, 19, 21, 23mm)" href="#" target="_blank" rel="noopener">W0027</a></td>
-            <td><b>บล็อกถอดล้อตัว L</b><small>L-Tyre Tension Rod with Bend Handle</small><div class="note">ด้ามบล็อกเหล็กกล้าคาร์บอนสูง ป้องกันการกัดกร่อน</div></td>
+            <td class="nm"><span class="nmtxt"><b>บล็อกถอดล้อตัว L</b><small>L-Tyre Tension Rod with Bend Handle</small></span><div class="note">ด้ามบล็อกเหล็กกล้าคาร์บอนสูง ป้องกันการกัดกร่อน</div></td>
             <td>17, 19, 21, 23mm</td>
             <td>12</td>
             <td>CR-V</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="1" data-nth="ถาดสแตนเลส แม่เหล็กดูด" data-nen="Stainless Steel Sucker">
+            <td class="pic"><a href="../assets/img/tools/W2602.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2602"><img src="../assets/img/tools/W2602-sm.webp" alt="ถาดสแตนเลส แม่เหล็กดูด W2602 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2602 ถาดสแตนเลส แม่เหล็กดูด (150mm X 35mm)" href="#" target="_blank" rel="noopener">W2602</a></td>
-            <td><b>ถาดสแตนเลส แม่เหล็กดูด</b><small>Stainless Steel Sucker</small><div class="note">ถาดมีแผ่นแม่เหล็ก มีฝาปิดยาง PVC · ใช้วางสกรู น็อต ตะปู</div></td>
+            <td class="nm"><span class="nmtxt"><b>ถาดสแตนเลส แม่เหล็กดูด</b><small>Stainless Steel Sucker</small></span><div class="note">ถาดมีแผ่นแม่เหล็ก มีฝาปิดยาง PVC · ใช้วางสกรู น็อต ตะปู</div></td>
             <td>150mm X 35mm</td>
             <td>10/40</td>
             <td>สแตนเลส 430</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="2" data-nth="กุญแจตู้ควบคุมกากบาท" data-nen="Multifunctional Cross Key">
+            <td class="pic"><a href="../assets/img/tools/W4653.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W4653"><img src="../assets/img/tools/W4653-sm.webp" alt="กุญแจตู้ควบคุมกากบาท W4653 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W4653 กุญแจตู้ควบคุมกากบาท" href="#" target="_blank" rel="noopener">W4653</a></td>
-            <td><b>กุญแจตู้ควบคุมกากบาท</b><small>Multifunctional Cross Key</small><div class="note">ใช้ไขเปิดตู้ควบคุม สถานีรถไฟฟ้า รถไฟใต้ดิน ลิฟต์ ตู้ควบคุมในอาคาร และวาล์วปิด-เปิด</div></td>
+            <td class="nm"><span class="nmtxt"><b>กุญแจตู้ควบคุมกากบาท</b><small>Multifunctional Cross Key</small></span><div class="note">ใช้ไขเปิดตู้ควบคุม สถานีรถไฟฟ้า รถไฟใต้ดิน ลิฟต์ ตู้ควบคุมในอาคาร และวาล์วปิด-เปิด</div></td>
             <td></td>
             <td>50/200</td>
             <td>Z-ALLOY</td>
           </tr>
-          <tr>
+          <tr class="fam-lead" data-fam="3" data-nth="ประแจถอดไส้หม้อกรอง" data-nen="Shackle Style Oil Filter Wrench">
+            <td class="pic"><a href="../assets/img/tools/W3099A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W3099A"><img src="../assets/img/tools/W3099A-sm.webp" alt="ประแจถอดไส้หม้อกรอง WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3099A ประแจถอดไส้หม้อกรอง (55-75mm)" href="#" target="_blank" rel="noopener">W3099A</a></td>
-            <td><b>ประแจถอดไส้หม้อกรอง</b><small>Shackle Style Oil Filter Wrench</small><div class="note">ผิวขัดเงา อายุการใช้งานยาวนาน</div></td>
+            <td class="nm"><span class="nmtxt"><b>ประแจถอดไส้หม้อกรอง</b><small>Shackle Style Oil Filter Wrench</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div><div class="note">ผิวขัดเงา อายุการใช้งานยาวนาน</div></td>
             <td>55-75mm</td>
             <td>6/60</td>
             <td>สแตนเลส 304</td>
           </tr>
-          <tr>
+          <tr data-fam="3" data-nth="ประแจถอดไส้หม้อกรอง" data-nen="Shackle Style Oil Filter Wrench">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W3099B ประแจถอดไส้หม้อกรอง (75-85mm)" href="#" target="_blank" rel="noopener">W3099B</a></td>
-            <td><b>ประแจถอดไส้หม้อกรอง</b><small>Shackle Style Oil Filter Wrench</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>75-85mm</td>
             <td>6/60</td>
             <td>สแตนเลส 304</td>
@@ -769,7 +838,7 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
     blocks.forEach(function(b){
       var shown=0;
       b.rows.forEach(function(r){
-        var ok = !q || r.textContent.toLowerCase().indexOf(q) >= 0;
+        var ok = !q || (r.textContent + " " + (r.dataset.nth || "") + " " + (r.dataset.nen || "")).toLowerCase().indexOf(q) >= 0;
         r.hidden = !ok; if(ok) shown++;
       });
       n += shown;
@@ -778,8 +847,26 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
       if(b.head) b.head.hidden = off;
       b.extras.forEach(function(e){ e.hidden = off; });
     });
+    relead();
     if(q){ hit.hidden=false; hit.textContent = n ? ("พบ " + n + " รายการ") : "ไม่พบรายการที่ค้นหา — ลองพิมพ์รหัสหรือชื่อสั้นลง"; }
     else { hit.hidden=true; }
+  }
+  /* ชื่อสินค้าพิมพ์แค่แถวแรกของตระกูล ถ้าค้นหาแล้วแถวแรกโดนซ่อน ต้องยกชื่อมาให้แถวแรกที่ยังโชว์อยู่ */
+  function relead(){
+    var seen={};
+    blocks.forEach(function(b){
+      b.rows.forEach(function(r){
+        var t=r.querySelector(".nmtxt"); if(!t || r.hidden) return;
+        var f=b.wrap.id + "|" + r.dataset.fam;
+        if(seen[f]){ t.textContent=""; return; }
+        seen[f]=true;
+        if(t.querySelector("b")) return;
+        t.textContent="";
+        var bEl=document.createElement("b"); bEl.textContent=r.dataset.nth||"";
+        var sEl=document.createElement("small"); sEl.textContent=r.dataset.nen||"";
+        t.appendChild(bEl); t.appendChild(sEl);
+      });
+    });
   }
   inp.addEventListener("input", apply);
 })();
