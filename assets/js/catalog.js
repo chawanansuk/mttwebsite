@@ -75,7 +75,7 @@ window.CATALOG = (function () {
     /* live:false + url = มีหน้ารวมของตัวเองแล้ว (โชว์ "สอบถามราคา" ลิงก์ไปหน้านั้น ไม่ใช่ทัก LINE) */
     { id: "wynn-tools", category: "tools", glyph: "🧰", live: false,
       url: "products/tools.html",
-      image: "assets/img/products/wynn-tools.svg",
+      image: "assets/img/products/wynn-tools.webp",
       name_th: "เครื่องมือช่าง WYNNTOOLS", name_en: "WYNNTOOLS hand tools",
       tagline_th: "คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย",
       tagline_en: "Pliers, wrenches, electrical, measuring — exclusive Thai importer" },
@@ -85,6 +85,12 @@ window.CATALOG = (function () {
       name_th: "เข็มกลัดซ่อนปลาย เบอร์ 000–7", name_en: "Safety pins size 000–7",
       tagline_th: "ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง",
       tagline_en: "Every size in one place — box, gross, or dozen, counted not weighed" },
+    { id: "mtt-brand", category: "mtt", glyph: "🦁", live: false,
+      url: "products/mtt-brand.html",
+      image: "assets/img/products/mtt-brand.webp",
+      name_th: "สินค้าตรา M.T.T. (ตราสิงโต)", name_en: "M.T.T. lion-brand products",
+      tagline_th: "แบรนด์ของร้านเอง — กุญแจสิงห์เงิน-สิงห์ทอง คีย์อะไลค์ เข็มกลัด ประแจเลื่อน มีดครัว",
+      tagline_en: "Our own brand — lion padlocks, keyed-alike sets, safety pins, wrenches, kitchen knives" },
   ];
 
   /* ---------- หมวดหมู่ (ใช้บนหน้าแรก + หน้ารวมสินค้า) ---------- */
@@ -98,6 +104,9 @@ window.CATALOG = (function () {
     { key: "pins", icon: '<path d="M5 19a3.5 3.5 0 0 0 5 0l9-9a3.5 3.5 0 0 0-5-5l-8 8"/><path d="m14 5 5 5"/>', th: "เข็มกลัดซ่อนปลาย", en: "Safety pins",
       dth: "ครบทุกเบอร์ 000–7 ขายส่งยกกล่อง แบ่งขายได้", den: "All sizes 000–7, wholesale by the box",
       url: "products/safety-pins.html", live: true, accent: "amber" },
+    { key: "mtt", icon: '<path d="M12 3 4 6v6c0 4.4 3.4 8.2 8 9 4.6-.8 8-4.6 8-9V6l-8-3Z"/><path d="M9 12h6M12 9v6"/>', th: "สินค้าตรา M.T.T.", en: "M.T.T. brand",
+      dth: "แบรนด์ของร้านเอง — กุญแจตราสิงโต เข็มกลัด ประแจเลื่อน มีดครัว", den: "Our own brand — lion padlocks, safety pins, wrenches, knives",
+      url: "products/mtt-brand.html", live: true, accent: "amber" },
     { key: "hardware", icon: '<circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/>', th: "ฮาร์ดแวร์ &amp; อื่น ๆ", en: "Hardware &amp; more",
       dth: "หน้าร้านสำเพ็งมีอีกเพียบ — ทักถามได้เลย", den: "Much more in-store at Sampheng — just ask",
       url: "products/index.html", live: false, accent: "amber" },
