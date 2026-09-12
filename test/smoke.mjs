@@ -242,6 +242,39 @@ console.log("\n[ toast ไม่ทับ CTA มือถือ ]");
   await page.close();
 }
 
+/* ตารางเครื่องมือ: ชื่อสินค้าพิมพ์ครั้งเดียวต่อตระกูล แต่ช่องค้นหาต้องยังหาเจอทุกแถว
+   และถ้าแถวหัวตระกูลโดนซ่อน ชื่อต้องถูกยกมาให้แถวแรกที่ยังโชว์ ไม่งั้นตารางจะไร้ชื่อ */
+console.log("\n[ ตารางแบบจัดตระกูล + ช่องค้นหา ]");
+{
+  const page = await browser.newPage();
+  await page.goto(base + "/products/tools-wrenches.html", { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(500);
+  const visible = () => page.$$eval("table.tools tbody tr", (rs) => rs.filter((r) => !r.hidden).length);
+  const leadNamed = () => page.$$eval("table.tools tbody tr", (rs) => { const v = rs.filter((r) => !r.hidden); return v.length ? !!v[0].querySelector(".nmtxt b") : false; });
+
+  const all = await visible();
+  assert(all === 179, "โชว์ครบทุกแถวตอนยังไม่ค้นหา");
+  const named = await page.$$eval("table.tools tbody tr", (rs) => rs.filter((r) => r.querySelector(".nmtxt b")).length);
+  assert(named < all, "ชื่อสินค้าไม่ได้พิมพ์ซ้ำทุกแถว (" + named + " จาก " + all + ")");
+  assert((await page.$$eval("table.tools tbody tr", (rs) => rs.filter((r) => r.dataset.nth).length)) === all, "ทุกแถวมี data-nth ไว้ให้ค้นหา");
+
+  await page.fill("#findInput", "ลูกบล็อกสั้น");
+  await page.waitForTimeout(300);
+  assert((await visible()) >= 11, "ค้นชื่อตระกูลแล้วเจอแถวลูกที่ไม่ได้พิมพ์ชื่อด้วย");
+  assert(await leadNamed(), "แถวแรกที่โชว์มีชื่อกำกับ");
+
+  await page.fill("#findInput", "WS005L");
+  await page.waitForTimeout(300);
+  assert((await visible()) === 1, "ค้นรหัสเจาะจงเจอแถวเดียว");
+  assert(await leadNamed(), "แถวลูกที่ถูกค้นเจอได้ชื่อตระกูลคืนมา");
+
+  await page.fill("#findInput", "");
+  await page.waitForTimeout(300);
+  assert((await visible()) === all, "ล้างคำค้นแล้วกลับมาครบ");
+  assert((await page.$$eval("table.tools tbody tr", (rs) => rs.filter((r) => r.querySelector(".nmtxt b")).length)) === named, "ล้างคำค้นแล้วชื่อกลับไปพิมพ์ครั้งเดียวเท่าเดิม");
+  await page.close();
+}
+
 await browser.close();
 server.close();
 

@@ -105,10 +105,9 @@
 .grp-mat{font-size:.85rem;color:var(--ink-dim);margin:0 0 6px}
 .grp-notes{margin:0 0 12px;padding-left:20px;font-size:.85rem;color:var(--ink-dim)}
 .grp-notes li{padding:2px 0}
-.grp-pic{margin:0 0 14px;max-width:340px}
-.grp-pic img{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);}
-.grp-pic a:hover img{border-color:var(--amber)}
-.grp-pic figcaption{font-size:.78rem;color:var(--ink-dim);margin-top:6px}
+table.tools tr.fam-lead td{border-top:2px solid var(--line-strong)}
+table.tools tr.fam-lead:first-child td{border-top:0}
+table.tools td.nm .famnote{font-size:.78rem;color:var(--amber-dark);margin-top:4px;max-width:320px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:660px}
 table.tools.haspic{min-width:740px}
@@ -141,6 +140,7 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <p class="muted" data-th="เครื่องมือไฮดรอลิคสำหรับงานหนัก ชุดคีมย้ำหางปลาไฮดรอลิคแรงกด 8 ตันพร้อมดายหลายขนาด ชุดเครื่องดูดลูกปืนและมูเล่ย์แบบไฮดรอลิค และขาตั้งรถยนต์รับน้ำหนัก" data-en="Hydraulic tools for heavy work: 8-tonne hydraulic crimping sets with a range of dies, hydraulic bearing and pulley pullers, and axle stands.">เครื่องมือไฮดรอลิคสำหรับงานหนัก ชุดคีมย้ำหางปลาไฮดรอลิคแรงกด 8 ตันพร้อมดายหลายขนาด ชุดเครื่องดูดลูกปืนและมูเล่ย์แบบไฮดรอลิค และขาตั้งรถยนต์รับน้ำหนัก</p>
     <div class="trust">
       <span class="badge">📋 8 <span data-th="รายการ" data-en="items">รายการ</span></span>
+      <span class="badge">📷 8 <span data-th="รายการมีรูปสินค้า" data-en="with product photos">รายการมีรูปสินค้า</span></span>
 
       <span class="badge" data-th="✔ ผู้นำเข้าโดยตรง" data-en="✔ Direct importer">✔ ผู้นำเข้าโดยตรง</span>
       <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
@@ -179,10 +179,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g0">ชุดคีมย้ำหางปลาไฮดรอลิค 8ตัน <span>HYDRAULIC CRIMPING PLIERS</span> <em>1 รายการ</em></h3>
 
     <ul class="grp-notes"><li>หัวหกเหลี่ยม แรงย้ำ 8ตัน</li><li>มีหัวให้เลือกเปลี่ยนตั้งแต่ 4-70 ตร.มม.</li><li>หัวย้ำใช้เหล็กชนิดพิเศษอย่างดีหล่อขึ้นรูป ชุบโครเมี่ยมเพื่อกันสนิม</li></ul>
-
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw0">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -190,9 +190,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดคีมย้ำหางปลาไฮดรอลิค 8ตัน" data-nen="HYDRAULIC CRIMPING PLIERS">
+            <td class="pic"><a href="../assets/img/tools/WS-YQK70.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS-YQK70"><img src="../assets/img/tools/WS-YQK70-sm.webp" alt="ชุดคีมย้ำหางปลาไฮดรอลิค 8ตัน WS-YQK70 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS-YQK70 ชุดคีมย้ำหางปลาไฮดรอลิค 8ตัน" href="#" target="_blank" rel="noopener">WS-YQK70</a></td>
-            <td><b>ชุดคีมย้ำหางปลาไฮดรอลิค 8ตัน</b><small>HYDRAULIC CRIMPING PLIERS</small><div class="note">ช่อง ขนาด/SIZE ในตารางเว้นว่างไว้ แรงย้ำ 8 ตัน ระบุไว้ที่หัวข้อและ bullet</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดคีมย้ำหางปลาไฮดรอลิค 8ตัน</b><small>HYDRAULIC CRIMPING PLIERS</small></span><div class="note">ช่อง ขนาด/SIZE ในตารางเว้นว่างไว้ แรงย้ำ 8 ตัน ระบุไว้ที่หัวข้อและ bullet</div></td>
             <td></td>
             <td>5</td>
             <td></td>
@@ -204,10 +205,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g1">ชุดคีมย้ำไฮดรอลิค 16ตัน <span>HYDRAULIC CRIMPING PLIERS</span> <em>1 รายการ</em></h3>
 
     <ul class="grp-notes"><li>หัวหกเหลี่ยม แรงย้ำ16ตัน</li><li>มีหัวให้เลือกเปลี่ยนตั้งแต่ 16-300 ตร.มม.</li><li>หัวย้ำใช้เหล็กชนิดพิเศษอย่างดีหล่อขึ้นรูป ชุบโครเมี่ยมเพื่อกันสนิม</li></ul>
-
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw1">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -215,9 +216,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดคีมย้ำไฮดรอลิค 16ตัน" data-nen="HYDRAULIC CRIMPING PLIERS">
+            <td class="pic"><a href="../assets/img/tools/WS-YQK300.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS-YQK300"><img src="../assets/img/tools/WS-YQK300-sm.webp" alt="ชุดคีมย้ำไฮดรอลิค 16ตัน WS-YQK300 WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS-YQK300 ชุดคีมย้ำไฮดรอลิค 16ตัน" href="#" target="_blank" rel="noopener">WS-YQK300</a></td>
-            <td><b>ชุดคีมย้ำไฮดรอลิค 16ตัน</b><small>HYDRAULIC CRIMPING PLIERS</small><div class="note">ช่อง ขนาด/SIZE ในตารางเว้นว่างไว้ แรงย้ำ 16 ตัน ระบุไว้ที่หัวข้อและ bullet</div></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดคีมย้ำไฮดรอลิค 16ตัน</b><small>HYDRAULIC CRIMPING PLIERS</small></span><div class="note">ช่อง ขนาด/SIZE ในตารางเว้นว่างไว้ แรงย้ำ 16 ตัน ระบุไว้ที่หัวข้อและ bullet</div></td>
             <td></td>
             <td>4</td>
             <td></td>
@@ -229,10 +231,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g2">ชุดเครื่องดูดลูกปืน มูเล่ย์ ไฮดรอลิก <span>MULTI-FUNCTIONAL HYDRAULIC GEAR PULLER</span> <em>2 รายการ</em></h3>
 
     <ul class="grp-notes"><li>แท่นดูดผ่านการอบ-ชุบด้วยความร้อนพิเศษ เพื่อความทนทาน</li><li>สามารถประกอบและปรับขาได้ตามต้องการ</li><li>สามารถใช้ได้กับทั้งตัวดูด 3 ขา และ 2 ขา แล้วแต่จะประกอบขึ้น</li><li>หมายเหตุ: หัวข้อกลุ่มนี้สะกดว่า &quot;ไฮดรอลิก&quot; (ก สะกด) ต่างจากกลุ่มคีมย้ำในหน้าเดียวกันที่สะกดว่า &quot;ไฮดรอลิค&quot;</li></ul>
-
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw2">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -240,16 +242,18 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ชุดเครื่องดูดลูกปืน มูเล่ย์ ไฮดรอลิก" data-nen="MULTI-FUNCTIONAL HYDRAULIC GEAR PULLER">
+            <td class="pic"><a href="../assets/img/tools/WS-5T.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WS-5T"><img src="../assets/img/tools/WS-5T-sm.webp" alt="ชุดเครื่องดูดลูกปืน มูเล่ย์ ไฮดรอลิก WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS-5T ชุดเครื่องดูดลูกปืน มูเล่ย์ ไฮดรอลิก (5T)" href="#" target="_blank" rel="noopener">WS-5T</a></td>
-            <td><b>ชุดเครื่องดูดลูกปืน มูเล่ย์ ไฮดรอลิก</b><small>MULTI-FUNCTIONAL HYDRAULIC GEAR PULLER</small></td>
+            <td class="nm"><span class="nmtxt"><b>ชุดเครื่องดูดลูกปืน มูเล่ย์ ไฮดรอลิก</b><small>MULTI-FUNCTIONAL HYDRAULIC GEAR PULLER</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div></td>
             <td>5T</td>
             <td>2</td>
             <td></td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ชุดเครื่องดูดลูกปืน มูเล่ย์ ไฮดรอลิก" data-nen="MULTI-FUNCTIONAL HYDRAULIC GEAR PULLER">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา WS-10T ชุดเครื่องดูดลูกปืน มูเล่ย์ ไฮดรอลิก (10T)" href="#" target="_blank" rel="noopener">WS-10T</a></td>
-            <td><b>ชุดเครื่องดูดลูกปืน มูเล่ย์ ไฮดรอลิก</b><small>MULTI-FUNCTIONAL HYDRAULIC GEAR PULLER</small></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td>10T</td>
             <td>2</td>
             <td></td>
@@ -261,10 +265,10 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
     <h3 class="grp-h" id="g3">ขาตั้งรถยนต์ 2 ชิ้น <span>SAFETY STAND</span> <em>4 รายการ</em></h3>
 
     <ul class="grp-notes"><li>สินค้าพรีออเดอร์ ต้องสั่งล่วงหน้า</li><li>1 เซ็ต มี 2 ตัว</li><li>เป็นตัวช่วยแม่แรงให้ยกรถสูงขึ้นอีก</li><li>ช่วยให้แม่แรงไม่ถูกกดลงหลังจากยกรถแล้ว</li><li>ใช้ยกรถยนต์ เคลื่อนย้ายได้ง่ายสะดวก</li><li>เป็นอุปกรณ์ที่ใช้คู่กับแม่แรง</li><li>หมายเหตุ: กลุ่มนี้พิมพ์อยู่ในหน้าเดียวกันใต้แบนเนอร์หมวดเครื่องมือไฮดรอลิค แม้จะไม่ใช่เครื่องมือไฮดรอลิคโดยตรง</li></ul>
-
-    <div class="tblwrap">
-      <table class="tools">
+    <div class="tblwrap" id="tw3">
+      <table class="tools haspic">
         <thead><tr>
+          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>
           <th data-th="รหัส" data-en="Item no.">รหัส</th>
           <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
           <th data-th="ขนาด" data-en="Size">ขนาด</th>
@@ -272,30 +276,34 @@ table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-wi
           <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
         </tr></thead>
         <tbody>
-          <tr>
+          <tr class="fam-lead" data-fam="0" data-nth="ขาตั้งรถยนต์ 2 ชิ้น" data-nen="SAFETY STAND">
+            <td class="pic"><a href="../assets/img/tools/W2604A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W2604A"><img src="../assets/img/tools/W2604A-sm.webp" alt="ขาตั้งรถยนต์ 2 ชิ้น WYNN'S TOOLS" width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2604A ขาตั้งรถยนต์ 2 ชิ้น (2T)" href="#" target="_blank" rel="noopener">W2604A</a></td>
-            <td><b>ขาตั้งรถยนต์ 2 ชิ้น</b><small>SAFETY STAND</small><div class="note">ยกต่ำสุด (MIN HEIGHT) 280mm / ยกสูงสุด (MAX HEIGHT) 425mm</div></td>
+            <td class="nm"><span class="nmtxt"><b>ขาตั้งรถยนต์ 2 ชิ้น</b><small>SAFETY STAND</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div><div class="note">ยกต่ำสุด (MIN HEIGHT) 280mm / ยกสูงสุด (MAX HEIGHT) 425mm</div></td>
             <td>2T</td>
             <td>2</td>
             <td></td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ขาตั้งรถยนต์ 2 ชิ้น" data-nen="SAFETY STAND">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2604B ขาตั้งรถยนต์ 2 ชิ้น (3T)" href="#" target="_blank" rel="noopener">W2604B</a></td>
-            <td><b>ขาตั้งรถยนต์ 2 ชิ้น</b><small>SAFETY STAND</small><div class="note">ยกต่ำสุด (MIN HEIGHT) 285mm / ยกสูงสุด (MAX HEIGHT) 425mm</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">ยกต่ำสุด (MIN HEIGHT) 285mm / ยกสูงสุด (MAX HEIGHT) 425mm</div></td>
             <td>3T</td>
             <td>2</td>
             <td></td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ขาตั้งรถยนต์ 2 ชิ้น" data-nen="SAFETY STAND">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2604C ขาตั้งรถยนต์ 2 ชิ้น (6T)" href="#" target="_blank" rel="noopener">W2604C</a></td>
-            <td><b>ขาตั้งรถยนต์ 2 ชิ้น</b><small>SAFETY STAND</small><div class="note">ยกต่ำสุด (MIN HEIGHT) 395mm / ยกสูงสุด (MAX HEIGHT) 605mm</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">ยกต่ำสุด (MIN HEIGHT) 395mm / ยกสูงสุด (MAX HEIGHT) 605mm</div></td>
             <td>6T</td>
             <td>2</td>
             <td></td>
           </tr>
-          <tr>
+          <tr data-fam="0" data-nth="ขาตั้งรถยนต์ 2 ชิ้น" data-nen="SAFETY STAND">
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา W2604D ขาตั้งรถยนต์ 2 ชิ้น (12T)" href="#" target="_blank" rel="noopener">W2604D</a></td>
-            <td><b>ขาตั้งรถยนต์ 2 ชิ้น</b><small>SAFETY STAND</small><div class="note">ยกต่ำสุด (MIN HEIGHT) 487mm / ยกสูงสุด (MAX HEIGHT) 748mm</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">ยกต่ำสุด (MIN HEIGHT) 487mm / ยกสูงสุด (MAX HEIGHT) 748mm</div></td>
             <td>12T</td>
             <td>2</td>
             <td></td>
@@ -342,7 +350,7 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
     blocks.forEach(function(b){
       var shown=0;
       b.rows.forEach(function(r){
-        var ok = !q || r.textContent.toLowerCase().indexOf(q) >= 0;
+        var ok = !q || (r.textContent + " " + (r.dataset.nth || "") + " " + (r.dataset.nen || "")).toLowerCase().indexOf(q) >= 0;
         r.hidden = !ok; if(ok) shown++;
       });
       n += shown;
@@ -351,8 +359,26 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
       if(b.head) b.head.hidden = off;
       b.extras.forEach(function(e){ e.hidden = off; });
     });
+    relead();
     if(q){ hit.hidden=false; hit.textContent = n ? ("พบ " + n + " รายการ") : "ไม่พบรายการที่ค้นหา — ลองพิมพ์รหัสหรือชื่อสั้นลง"; }
     else { hit.hidden=true; }
+  }
+  /* ชื่อสินค้าพิมพ์แค่แถวแรกของตระกูล ถ้าค้นหาแล้วแถวแรกโดนซ่อน ต้องยกชื่อมาให้แถวแรกที่ยังโชว์อยู่ */
+  function relead(){
+    var seen={};
+    blocks.forEach(function(b){
+      b.rows.forEach(function(r){
+        var t=r.querySelector(".nmtxt"); if(!t || r.hidden) return;
+        var f=b.wrap.id + "|" + r.dataset.fam;
+        if(seen[f]){ t.textContent=""; return; }
+        seen[f]=true;
+        if(t.querySelector("b")) return;
+        t.textContent="";
+        var bEl=document.createElement("b"); bEl.textContent=r.dataset.nth||"";
+        var sEl=document.createElement("small"); sEl.textContent=r.dataset.nen||"";
+        t.appendChild(bEl); t.appendChild(sEl);
+      });
+    });
   }
   inp.addEventListener("input", apply);
 })();
