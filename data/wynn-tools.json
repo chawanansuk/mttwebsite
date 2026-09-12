@@ -6870,7 +6870,8 @@
               "pcs": "350/3500",
               "meas": "53X20X29cm",
               "kg": "16kg",
-              "img": "assets/img/tools/W3723-6.webp"
+              "img": "assets/img/tools/W3723-6.webp",
+              "pic_same": true
             },
             {
               "code": "W3723-8",
@@ -6880,7 +6881,8 @@
               "pcs": "200/2000",
               "meas": "53X20X29cm",
               "kg": "15kg",
-              "img": "assets/img/tools/W3723-8.webp"
+              "img": "assets/img/tools/W3723-8.webp",
+              "pic_same": true
             }
           ]
         },
@@ -6924,7 +6926,8 @@
               "meas": "28.5X25X27cm",
               "kg": "24.5kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W4358A.webp"
+              "img": "assets/img/tools/W4358A.webp",
+              "pic_same": true
             },
             {
               "code": "W4359A",
@@ -6936,7 +6939,8 @@
               "kg": "24.5kg",
               "mat": "SK-55",
               "notes_th": "ขนาด จำนวน ขนาดลัง และน้ำหนักเท่ากับ W4358A ทุกช่อง ต่างกันเฉพาะรูปทรงปลาย (แหลม/แบน) ซึ่งไม่ได้ระบุเป็นข้อความในตาราง",
-              "img": "assets/img/tools/W4359A.webp"
+              "img": "assets/img/tools/W4359A.webp",
+              "pic_same": true
             },
             {
               "code": "W4360",
@@ -6947,7 +6951,8 @@
               "meas": "28.5X25X27cm",
               "kg": "26kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W4360.webp"
+              "img": "assets/img/tools/W4360.webp",
+              "pic_same": true
             },
             {
               "code": "W4361",
@@ -6959,7 +6964,8 @@
               "kg": "27.5kg",
               "mat": "SK-55",
               "notes_th": "ขนาดและจำนวนเท่ากับ W4360 ต่างกันเฉพาะรูปทรงปลาย (แหลม/แบน) และน้ำหนัก",
-              "img": "assets/img/tools/W4361.webp"
+              "img": "assets/img/tools/W4361.webp",
+              "pic_same": true
             }
           ]
         },
@@ -6999,7 +7005,8 @@
               "en": "4\" Flap Wheel",
               "size": "100X16mm 60#",
               "notes_th": "ตารางมีเฉพาะคอลัมน์รหัสและขนาด ไม่มีช่องจำนวน/ขนาดลัง/น้ำหนัก; เบอร์ทราย 60#",
-              "img": "assets/img/tools/W2776A.webp"
+              "img": "assets/img/tools/W2776A.webp",
+              "pic_same": true
             },
             {
               "code": "W2776B",
@@ -7007,7 +7014,8 @@
               "en": "4\" Flap Wheel",
               "size": "100X16mm 80#",
               "notes_th": "เบอร์ทราย 80#",
-              "img": "assets/img/tools/W2776B.webp"
+              "img": "assets/img/tools/W2776B.webp",
+              "pic_same": true
             },
             {
               "code": "W2776C",
@@ -7015,7 +7023,8 @@
               "en": "4\" Flap Wheel",
               "size": "100X16mm 120#",
               "notes_th": "เบอร์ทราย 120#",
-              "img": "assets/img/tools/W2776C.webp"
+              "img": "assets/img/tools/W2776C.webp",
+              "pic_same": true
             }
           ]
         },
@@ -7038,7 +7047,8 @@
               "meas": "36X32X24cm",
               "kg": "15kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673B.webp"
+              "img": "assets/img/tools/W2673B.webp",
+              "pic_same": true
             },
             {
               "code": "W2673C",
@@ -7049,7 +7059,8 @@
               "meas": "36X32X24cm",
               "kg": "18.6kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673C.webp"
+              "img": "assets/img/tools/W2673C.webp",
+              "pic_same": true
             },
             {
               "code": "W2673D",
@@ -7060,7 +7071,8 @@
               "meas": "36X32X24cm",
               "kg": "24.5kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673D.webp"
+              "img": "assets/img/tools/W2673D.webp",
+              "pic_same": true
             },
             {
               "code": "W2673E",
@@ -7071,7 +7083,8 @@
               "meas": "36X32X27cm",
               "kg": "33.4kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673E.webp"
+              "img": "assets/img/tools/W2673E.webp",
+              "pic_same": true
             },
             {
               "code": "W2673F",
@@ -7082,7 +7095,8 @@
               "meas": "36X32X27cm",
               "kg": "23kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673F.webp"
+              "img": "assets/img/tools/W2673F.webp",
+              "pic_same": true
             },
             {
               "code": "W2673G",
@@ -7093,7 +7107,8 @@
               "meas": "36X32X27cm",
               "kg": "24.5kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673G.webp"
+              "img": "assets/img/tools/W2673G.webp",
+              "pic_same": true
             },
             {
               "code": "W2673H",
@@ -7104,7 +7119,8 @@
               "meas": "36X32X27cm",
               "kg": "29kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673H.webp"
+              "img": "assets/img/tools/W2673H.webp",
+              "pic_same": true
             },
             {
               "code": "W2673I",
@@ -7115,7 +7131,8 @@
               "meas": "36X32X24cm",
               "kg": "23.7kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673I.webp"
+              "img": "assets/img/tools/W2673I.webp",
+              "pic_same": true
             },
             {
               "code": "W2673J",
@@ -7126,7 +7143,8 @@
               "meas": "36X32X24cm",
               "kg": "25kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673J.webp"
+              "img": "assets/img/tools/W2673J.webp",
+              "pic_same": true
             },
             {
               "code": "W2673K",
@@ -7137,7 +7155,8 @@
               "meas": "36X32X24cm",
               "kg": "27.6kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673K.webp"
+              "img": "assets/img/tools/W2673K.webp",
+              "pic_same": true
             },
             {
               "code": "W2673L",
@@ -7148,7 +7167,8 @@
               "meas": "42X26X27cm",
               "kg": "25.7kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673L.webp"
+              "img": "assets/img/tools/W2673L.webp",
+              "pic_same": true
             },
             {
               "code": "W2673M",
@@ -7159,7 +7179,8 @@
               "meas": "42X26X27cm",
               "kg": "27.5kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673M.webp"
+              "img": "assets/img/tools/W2673M.webp",
+              "pic_same": true
             },
             {
               "code": "W2673N",
@@ -7170,7 +7191,8 @@
               "meas": "42X26X27cm",
               "kg": "28kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673N.webp"
+              "img": "assets/img/tools/W2673N.webp",
+              "pic_same": true
             },
             {
               "code": "W2673O",
@@ -7181,7 +7203,8 @@
               "meas": "42X26X27cm",
               "kg": "29kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673O.webp"
+              "img": "assets/img/tools/W2673O.webp",
+              "pic_same": true
             },
             {
               "code": "W2673P",
@@ -7192,7 +7215,8 @@
               "meas": "42X26X27cm",
               "kg": "31kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673P.webp"
+              "img": "assets/img/tools/W2673P.webp",
+              "pic_same": true
             },
             {
               "code": "W2673Q",
@@ -7204,7 +7228,8 @@
               "kg": "19kg",
               "mat": "HSS M2",
               "notes_th": "ตารางเริ่มที่รหัส W2673B ไม่มีแถว W2673A",
-              "img": "assets/img/tools/W2673Q.webp"
+              "img": "assets/img/tools/W2673Q.webp",
+              "pic_same": true
             }
           ]
         },
@@ -7227,7 +7252,8 @@
               "meas": "46X35.5X34cm",
               "kg": "27kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674A.webp"
+              "img": "assets/img/tools/W2674A.webp",
+              "pic_same": true
             },
             {
               "code": "W2674B",
@@ -7237,7 +7263,8 @@
               "pcs": "10/360",
               "meas": "46X35.5X34cm",
               "kg": "28kg",
-              "mat": "HSS"
+              "mat": "HSS",
+              "pic_same": true
             },
             {
               "code": "W2674C",
@@ -7248,7 +7275,8 @@
               "meas": "46X35.5X34cm",
               "kg": "29kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674C.webp"
+              "img": "assets/img/tools/W2674C.webp",
+              "pic_same": true
             },
             {
               "code": "W2674D",
@@ -7259,7 +7287,8 @@
               "meas": "46X35.5X34cm",
               "kg": "30kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674D.webp"
+              "img": "assets/img/tools/W2674D.webp",
+              "pic_same": true
             },
             {
               "code": "W2674E",
@@ -7270,7 +7299,8 @@
               "meas": "46X35.5X34cm",
               "kg": "32kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674E.webp"
+              "img": "assets/img/tools/W2674E.webp",
+              "pic_same": true
             },
             {
               "code": "W2674F",
@@ -7281,7 +7311,8 @@
               "meas": "46X35.5X34cm",
               "kg": "36kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674F.webp"
+              "img": "assets/img/tools/W2674F.webp",
+              "pic_same": true
             },
             {
               "code": "W2674G",
@@ -7292,7 +7323,8 @@
               "meas": "46X35.5X34cm",
               "kg": "37kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674G.webp"
+              "img": "assets/img/tools/W2674G.webp",
+              "pic_same": true
             },
             {
               "code": "W2674H",
@@ -7303,7 +7335,8 @@
               "meas": "46X37X23cm",
               "kg": "27kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674H.webp"
+              "img": "assets/img/tools/W2674H.webp",
+              "pic_same": true
             },
             {
               "code": "W2674I",
@@ -7314,7 +7347,8 @@
               "meas": "46X37X23cm",
               "kg": "29kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674I.webp"
+              "img": "assets/img/tools/W2674I.webp",
+              "pic_same": true
             },
             {
               "code": "W2674J",
@@ -7325,7 +7359,8 @@
               "meas": "46X37X23cm",
               "kg": "30kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674J.webp"
+              "img": "assets/img/tools/W2674J.webp",
+              "pic_same": true
             }
           ]
         },
@@ -7648,7 +7683,8 @@
               "meas": "56.5X38X29cm",
               "kg": "20kg",
               "mat": "เหล็กแมงกานีส #65",
-              "img": "assets/img/tools/WS0339D.webp"
+              "img": "assets/img/tools/WS0339D.webp",
+              "pic_same": true
             },
             {
               "code": "WS0339E",
@@ -7659,7 +7695,8 @@
               "meas": "61.5X38X29cm",
               "kg": "21kg",
               "mat": "เหล็กแมงกานีส #65",
-              "img": "assets/img/tools/WS0339E.webp"
+              "img": "assets/img/tools/WS0339E.webp",
+              "pic_same": true
             },
             {
               "code": "WS0339F",
@@ -7671,7 +7708,8 @@
               "kg": "26kg",
               "mat": "เหล็กแมงกานีส #65",
               "notes_th": "ขนาดลังพิมพ์เป็น 71.5X38X24cm ซึ่งมิติสุดท้ายต่างจากอีกสองรุ่นที่เป็น 29cm (ตรวจซ้ำแล้วอ่านได้ 24cm จริง)",
-              "img": "assets/img/tools/WS0339F.webp"
+              "img": "assets/img/tools/WS0339F.webp",
+              "pic_same": true
             }
           ]
         },
@@ -8030,7 +8068,8 @@
               "pcs": "12",
               "mat": "อลูมิเนียม",
               "notes_th": "ช่องรหัส/ITEM NO พิมพ์เป็นข้อความไทยว่า \"ด้ามยืด4.5ม.\" ไม่ใช่รหัสสินค้า",
-              "img": "assets/img/tools/ด้ามยืด4.5ม..webp"
+              "img": "assets/img/tools/ด้ามยืด4.5ม..webp",
+              "pic_same": true
             },
             {
               "code": "ด้ามยืด3ม.",
@@ -8040,7 +8079,8 @@
               "pcs": "12",
               "mat": "อลูมิเนียม",
               "notes_th": "ช่องรหัส/ITEM NO พิมพ์เป็นข้อความไทยว่า \"ด้ามยืด3ม.\" ไม่ใช่รหัสสินค้า",
-              "img": "assets/img/tools/ด้ามยืด3ม..webp"
+              "img": "assets/img/tools/ด้ามยืด3ม..webp",
+              "pic_same": true
             }
           ]
         },
@@ -8094,7 +8134,8 @@
               "pcs": "36/432",
               "meas": "40X33X22.4cm",
               "kg": "11kg",
-              "img": "assets/img/tools/W3001A.webp"
+              "img": "assets/img/tools/W3001A.webp",
+              "pic_same": true
             },
             {
               "code": "W3001B",
@@ -8104,7 +8145,8 @@
               "pcs": "36/216",
               "meas": "55.2X20.6X26.4cm",
               "kg": "8.5kg",
-              "img": "assets/img/tools/W3001B.webp"
+              "img": "assets/img/tools/W3001B.webp",
+              "pic_same": true
             },
             {
               "code": "W3001C",
@@ -8114,7 +8156,8 @@
               "pcs": "36/216",
               "meas": "50.1X40X25.4cm",
               "kg": "21kg",
-              "img": "assets/img/tools/W3001C.webp"
+              "img": "assets/img/tools/W3001C.webp",
+              "pic_same": true
             }
           ]
         },
@@ -8251,7 +8294,8 @@
               "meas": "40.3X22.8X28cm",
               "kg": "14kg",
               "mat": "เหล็กกล้าคาร์บอนสูง",
-              "img": "assets/img/tools/W0625B.webp"
+              "img": "assets/img/tools/W0625B.webp",
+              "pic_same": true
             },
             {
               "code": "W0625C",
@@ -8262,7 +8306,8 @@
               "meas": "40.3X22.8X28cm",
               "kg": "12kg",
               "mat": "เหล็กกล้าคาร์บอนสูง",
-              "img": "assets/img/tools/W0625C.webp"
+              "img": "assets/img/tools/W0625C.webp",
+              "pic_same": true
             },
             {
               "code": "W0625D",
@@ -8273,7 +8318,8 @@
               "meas": "43X22.8X28cm",
               "kg": "15.5kg",
               "mat": "เหล็กกล้าคาร์บอนสูง",
-              "img": "assets/img/tools/W0625D.webp"
+              "img": "assets/img/tools/W0625D.webp",
+              "pic_same": true
             },
             {
               "code": "W0625E",
@@ -8284,7 +8330,8 @@
               "meas": "48.3X22.8X28cm",
               "kg": "15.5kg",
               "mat": "เหล็กกล้าคาร์บอนสูง",
-              "img": "assets/img/tools/W0625E.webp"
+              "img": "assets/img/tools/W0625E.webp",
+              "pic_same": true
             },
             {
               "code": "W0625F",
@@ -8296,7 +8343,8 @@
               "kg": "19.5kg",
               "mat": "เหล็กกล้าคาร์บอนสูง",
               "notes_th": "ลังกว้าง 49cm ต่างจากรุ่นอื่นในกลุ่มที่เป็น 28cm (พิมพ์ไว้เช่นนี้ในตาราง)",
-              "img": "assets/img/tools/W0625F.webp"
+              "img": "assets/img/tools/W0625F.webp",
+              "pic_same": true
             }
           ]
         },
@@ -8319,7 +8367,8 @@
               "meas": "51X28X32cm",
               "kg": "11.5kg",
               "mat": "65#",
-              "img": "assets/img/tools/W0072C.webp"
+              "img": "assets/img/tools/W0072C.webp",
+              "pic_same": true
             },
             {
               "code": "W0072D",
@@ -8330,7 +8379,8 @@
               "meas": "51X28X32cm",
               "kg": "12kg",
               "mat": "65#",
-              "img": "assets/img/tools/W0072D.webp"
+              "img": "assets/img/tools/W0072D.webp",
+              "pic_same": true
             },
             {
               "code": "W0072E",
@@ -8341,7 +8391,8 @@
               "meas": "51X28X32cm",
               "kg": "12kg",
               "mat": "65#",
-              "img": "assets/img/tools/W0072E.webp"
+              "img": "assets/img/tools/W0072E.webp",
+              "pic_same": true
             }
           ]
         },
@@ -8429,7 +8480,8 @@
               "pcs": "72",
               "meas": "35X32X30cm",
               "kg": "22kg",
-              "img": "assets/img/tools/W0165A.webp"
+              "img": "assets/img/tools/W0165A.webp",
+              "pic_same": true
             },
             {
               "code": "W0165B",
@@ -8439,7 +8491,8 @@
               "pcs": "48",
               "meas": "38X37X31cm",
               "kg": "25kg",
-              "img": "assets/img/tools/W0165B.webp"
+              "img": "assets/img/tools/W0165B.webp",
+              "pic_same": true
             }
           ]
         },
@@ -8567,7 +8620,8 @@
               "size": "หัวค้อนเส้นผ่านศูนย์กลาง 27 มม.",
               "mat": "SK-55",
               "notes_th": "ช่อง ITEM NO พิมพ์เป็นข้อความไทย ไม่ใช่รหัส W... ; สินค้าตรา 'สิงห์' ไม่ใช่ WYNN'S ; ช่อง PCS/MEAS/W เว้นว่าง ; หัวตารางเรียงเป็น SIZE ขนาด (สลับที่จากหน้าอื่น)",
-              "img": "assets/img/tools/ค้อนสิงห์-27.webp"
+              "img": "assets/img/tools/ค้อนสิงห์-27.webp",
+              "pic_same": true
             },
             {
               "code": "ค้อนสิงห์-29",
@@ -8576,7 +8630,8 @@
               "size": "หัวค้อนเส้นผ่านศูนย์กลาง 29 มม.",
               "mat": "SK-55",
               "notes_th": "ช่อง ITEM NO พิมพ์เป็นข้อความไทย ไม่ใช่รหัส W... ; สินค้าตรา 'สิงห์' ไม่ใช่ WYNN'S ; ช่อง PCS/MEAS/W เว้นว่าง",
-              "img": "assets/img/tools/ค้อนสิงห์-29.webp"
+              "img": "assets/img/tools/ค้อนสิงห์-29.webp",
+              "pic_same": true
             }
           ]
         },
@@ -8638,7 +8693,8 @@
               "meas": "55X33X22.5cm",
               "kg": "13.5kg",
               "mat": "65#",
-              "img": "assets/img/tools/W3495A.webp"
+              "img": "assets/img/tools/W3495A.webp",
+              "pic_same": true
             },
             {
               "code": "W3495B",
@@ -8649,7 +8705,8 @@
               "meas": "55X33X22.5cm",
               "kg": "13.5kg",
               "mat": "65#",
-              "img": "assets/img/tools/W3495B.webp"
+              "img": "assets/img/tools/W3495B.webp",
+              "pic_same": true
             },
             {
               "code": "W3495C",
@@ -8660,7 +8717,8 @@
               "meas": "55X33X22.5cm",
               "kg": "16kg",
               "mat": "65#",
-              "img": "assets/img/tools/W3495C.webp"
+              "img": "assets/img/tools/W3495C.webp",
+              "pic_same": true
             }
           ]
         },
@@ -8734,7 +8792,8 @@
               "kg": "24kg",
               "mat": "65#",
               "notes_th": "ชื่ออังกฤษ CHISEL WITH CRYSTAL HANDLE ซ้ำกับกลุ่ม 'สิ่วสั้น' ในหน้า 56",
-              "img": "assets/img/tools/W0151B.webp"
+              "img": "assets/img/tools/W0151B.webp",
+              "pic_same": true
             },
             {
               "code": "W0151D",
@@ -8746,7 +8805,8 @@
               "kg": "24.5kg",
               "mat": "65#",
               "notes_th": "ตารางข้ามรหัส W0151C ไป (มีเฉพาะ B, D, E)",
-              "img": "assets/img/tools/W0151D.webp"
+              "img": "assets/img/tools/W0151D.webp",
+              "pic_same": true
             },
             {
               "code": "W0151E",
@@ -8757,7 +8817,8 @@
               "meas": "38X34X25cm",
               "kg": "25kg",
               "mat": "65#",
-              "img": "assets/img/tools/W0151E.webp"
+              "img": "assets/img/tools/W0151E.webp",
+              "pic_same": true
             }
           ]
         }
@@ -8973,7 +9034,8 @@
               "meas": "38.5X28X38.5cm",
               "kg": "18.5kg",
               "notes_th": "ชื่ออังกฤษ HIGH CLASS PLUMB BOB ซ้ำกับกลุ่ม 'ลูกดิ่งวัดระดับ' (W0476B/C/D) ในหน้าเดียวกัน",
-              "img": "assets/img/tools/W0235.webp"
+              "img": "assets/img/tools/W0235.webp",
+              "pic_same": true
             },
             {
               "code": "W0236",
@@ -8983,7 +9045,8 @@
               "pcs": "6/36",
               "meas": "46X29.5X38.5cm",
               "kg": "22.5kg",
-              "img": "assets/img/tools/W0236.webp"
+              "img": "assets/img/tools/W0236.webp",
+              "pic_same": true
             }
           ]
         },
@@ -9007,7 +9070,8 @@
               "kg": "11kg",
               "mat": "STANLESS",
               "notes_th": "ตราสัญลักษณ์วัสดุพิมพ์ว่า 'STANLESS' ขณะที่บรรทัดชื่ออังกฤษพิมพ์ว่า 'STAINLESS'",
-              "img": "assets/img/tools/W3070.webp"
+              "img": "assets/img/tools/W3070.webp",
+              "pic_same": true
             },
             {
               "code": "W3071",
@@ -9018,7 +9082,8 @@
               "meas": "44X41X23cm",
               "kg": "24kg",
               "mat": "STANLESS",
-              "img": "assets/img/tools/W3071.webp"
+              "img": "assets/img/tools/W3071.webp",
+              "pic_same": true
             }
           ]
         },
@@ -9040,7 +9105,8 @@
               "meas": "37X29X33cm",
               "kg": "23kg",
               "notes_th": "ชื่ออังกฤษ HIGH CLASS PLUMB BOB ซ้ำกับกลุ่ม 'ลูกดิ่ง พร้อมตลับแม่เหล็ก ล็อคอัตโนมัติ' (W0235/W0236) ในหน้าเดียวกัน",
-              "img": "assets/img/tools/W0476B.webp"
+              "img": "assets/img/tools/W0476B.webp",
+              "pic_same": true
             },
             {
               "code": "W0476C",
@@ -9050,7 +9116,8 @@
               "pcs": "10/60",
               "meas": "37X29X33cm",
               "kg": "25kg",
-              "img": "assets/img/tools/W0476C.webp"
+              "img": "assets/img/tools/W0476C.webp",
+              "pic_same": true
             },
             {
               "code": "W0476D",
@@ -9060,7 +9127,8 @@
               "pcs": "10/60",
               "meas": "37X29X33cm",
               "kg": "31kg",
-              "img": "assets/img/tools/W0476D.webp"
+              "img": "assets/img/tools/W0476D.webp",
+              "pic_same": true
             }
           ]
         }
@@ -9329,7 +9397,8 @@
               "en": "HOT MELT MTT GLUE GUN",
               "size": "ใช้กับกาวขนาดเส้นผ่าศูนย์กลางสูงสุด 7มม. กำลังไฟสูงสุด 20 W",
               "notes_th": "หน้า 67. สินค้าตรา M.T.T. (MTT) ไม่ใช่ยี่ห้อ WYNN'S. ตารางมีเพียง 2 คอลัมน์ (รหัส และ SIZE/ขนาด) ไม่มีช่องจำนวน ขนาดลัง น้ำหนัก",
-              "img": "assets/img/tools/QYT-3.webp"
+              "img": "assets/img/tools/QYT-3.webp",
+              "pic_same": true
             },
             {
               "code": "QYT-5",
@@ -9337,7 +9406,8 @@
               "en": "HOT MELT MTT GLUE GUN",
               "size": "ใช้กับกาวขนาดเส้นผ่าศูนย์กลางสูงสุด 11 มม. กำลังไฟสูงสุด 60 W",
               "notes_th": "หน้า 67. สินค้าตรา M.T.T. (MTT) ไม่ใช่ยี่ห้อ WYNN'S. ตารางมีเพียง 2 คอลัมน์ (รหัส และ SIZE/ขนาด)",
-              "img": "assets/img/tools/QYT-5.webp"
+              "img": "assets/img/tools/QYT-5.webp",
+              "pic_same": true
             }
           ]
         },
@@ -9380,7 +9450,8 @@
               "size": "#000 = 1.9 ซม.",
               "pcs": "72 พวง /6480 พวง",
               "notes_th": "หน้า 67. สินค้าตรา M.T.T. (MTT) ไม่ใช่ยี่ห้อ WYNN'S. ช่องรหัสในตารางพิมพ์ข้อความไทยว่า \"เข็มกลัดMTT\" เพียงครั้งเดียวที่แถวแรก และใช้ร่วมกันทั้ง 8 แถว (แยกกันด้วยเบอร์/ขนาด) ตารางมี 3 คอลัมน์ (รหัส/ขนาด/จำนวน)",
-              "img": "assets/img/tools/เข็มกลัดMTT-000.webp"
+              "img": "assets/img/tools/เข็มกลัดMTT-000.webp",
+              "pic_same": true
             },
             {
               "code": "เข็มกลัดMTT-00",
@@ -9389,7 +9460,8 @@
               "size": "#00 = 2.25 ซม.",
               "pcs": "72 พวง /2880 พวง",
               "notes_th": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #00 ต่อท้ายเพื่อแยกรายการ",
-              "img": "assets/img/tools/เข็มกลัดMTT-00.webp"
+              "img": "assets/img/tools/เข็มกลัดMTT-00.webp",
+              "pic_same": true
             },
             {
               "code": "เข็มกลัดMTT-0",
@@ -9398,7 +9470,8 @@
               "size": "#0 = 2.8 ซม.",
               "pcs": "72 พวง /2880 พวง",
               "notes_th": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #0 ต่อท้ายเพื่อแยกรายการ",
-              "img": "assets/img/tools/เข็มกลัดMTT-0.webp"
+              "img": "assets/img/tools/เข็มกลัดMTT-0.webp",
+              "pic_same": true
             },
             {
               "code": "เข็มกลัดMTT-1",
@@ -9407,7 +9480,8 @@
               "size": "#1 = 3.3 ซม.",
               "pcs": "72 พวง /2880 พวง",
               "notes_th": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #1 ต่อท้ายเพื่อแยกรายการ",
-              "img": "assets/img/tools/เข็มกลัดMTT-1.webp"
+              "img": "assets/img/tools/เข็มกลัดMTT-1.webp",
+              "pic_same": true
             },
             {
               "code": "เข็มกลัดMTT-2",
@@ -9416,7 +9490,8 @@
               "size": "#2 = 3.8 ซม.",
               "pcs": "72 พวง /2880 พวง",
               "notes_th": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #2 ต่อท้ายเพื่อแยกรายการ",
-              "img": "assets/img/tools/เข็มกลัดMTT-2.webp"
+              "img": "assets/img/tools/เข็มกลัดMTT-2.webp",
+              "pic_same": true
             },
             {
               "code": "เข็มกลัดMTT-3",
@@ -9425,7 +9500,8 @@
               "size": "#3 = 4.6 ซม.",
               "pcs": "36 พวง /1440 พวง",
               "notes_th": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #3 ต่อท้ายเพื่อแยกรายการ",
-              "img": "assets/img/tools/เข็มกลัดMTT-3.webp"
+              "img": "assets/img/tools/เข็มกลัดMTT-3.webp",
+              "pic_same": true
             },
             {
               "code": "เข็มกลัดMTT-4",
@@ -9434,7 +9510,8 @@
               "size": "#4 = 5.7 ซม.",
               "pcs": "36 พวง /1440 พวง",
               "notes_th": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #4 ต่อท้ายเพื่อแยกรายการ",
-              "img": "assets/img/tools/เข็มกลัดMTT-4.webp"
+              "img": "assets/img/tools/เข็มกลัดMTT-4.webp",
+              "pic_same": true
             },
             {
               "code": "เข็มกลัดMTT-5",
@@ -9443,7 +9520,8 @@
               "size": "#5 = 6.6 ซม.",
               "pcs": "18 พวง /720 พวง",
               "notes_th": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #5 ต่อท้ายเพื่อแยกรายการ",
-              "img": "assets/img/tools/เข็มกลัดMTT-5.webp"
+              "img": "assets/img/tools/เข็มกลัดMTT-5.webp",
+              "pic_same": true
             }
           ]
         },
@@ -9680,7 +9758,8 @@
               "meas": "90.5X37.5X36.5cm",
               "kg": "13kg",
               "notes_th": "หน้า 69",
-              "img": "assets/img/tools/W380.webp"
+              "img": "assets/img/tools/W380.webp",
+              "pic_same": true
             },
             {
               "code": "W430",
@@ -9691,7 +9770,8 @@
               "meas": "85.5X42X40.5cm",
               "kg": "14kg",
               "notes_th": "หน้า 69",
-              "img": "assets/img/tools/W430.webp"
+              "img": "assets/img/tools/W430.webp",
+              "pic_same": true
             },
             {
               "code": "W450",
@@ -9702,7 +9782,8 @@
               "meas": "47.5X47.5X63.5cm",
               "kg": "12.5kg",
               "notes_th": "หน้า 69. ข้อมูลขัดแย้งกันเอง: กล่องรุ่นนี้ใหญ่ที่สุด แต่น้ำหนักต่อลัง 12.5kg กลับน้อยกว่ารุ่น W380 (13kg) และ W430 (14kg) อาจเพราะบรรจุลังละ 6 ใบเท่านั้น บันทึกไว้ตามที่พิมพ์",
-              "img": "assets/img/tools/W450.webp"
+              "img": "assets/img/tools/W450.webp",
+              "pic_same": true
             }
           ]
         },
@@ -9961,7 +10042,8 @@
               "size": "30มม. คอสั้น",
               "pcs": "12/144",
               "notes_th": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-30S.webp"
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-30S.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์เงิน-30L",
@@ -9970,7 +10052,8 @@
               "size": "30มม. คอยาว",
               "pcs": "12/144",
               "notes_th": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-30L.webp"
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-30L.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์เงิน-40S",
@@ -9979,7 +10062,8 @@
               "size": "40มม. คอสั้น",
               "pcs": "12/96",
               "notes_th": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-40S.webp"
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-40S.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์เงิน-40L",
@@ -9988,7 +10072,8 @@
               "size": "40มม. คอยาว",
               "pcs": "12/96",
               "notes_th": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-40L.webp"
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-40L.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์เงิน-50S",
@@ -9997,7 +10082,8 @@
               "size": "50มม. คอสั้น",
               "pcs": "12/72",
               "notes_th": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-50S.webp"
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-50S.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์เงิน-50L",
@@ -10006,7 +10092,8 @@
               "size": "50มม. คอยาว",
               "pcs": "12/72",
               "notes_th": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-50L.webp"
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-50L.webp",
+              "pic_same": true
             }
           ]
         },
@@ -10029,7 +10116,8 @@
               "size": "40มม. คอสั้น 2 ตัว และ คอยาว 1 ตัว",
               "pcs": "10",
               "notes_th": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S — รหัสในตารางพิมพ์ว่า \"สิงห์เงิน-40/3\" ไม่มีคำว่า กุญแจ นำหน้าเหมือนกลุ่มอื่น",
-              "img": "assets/img/tools/สิงห์เงิน-40-3.webp"
+              "img": "assets/img/tools/สิงห์เงิน-40-3.webp",
+              "pic_same": true
             },
             {
               "code": "สิงห์เงิน-40/5",
@@ -10038,7 +10126,8 @@
               "size": "40มม. คอสั้น 4 ตัว และ คอยาว 1 ตัว",
               "pcs": "10",
               "notes_th": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
-              "img": "assets/img/tools/สิงห์เงิน-40-5.webp"
+              "img": "assets/img/tools/สิงห์เงิน-40-5.webp",
+              "pic_same": true
             },
             {
               "code": "สิงห์เงิน-50/3",
@@ -10047,7 +10136,8 @@
               "size": "50มม. คอสั้น 2 ตัว และ คอยาว 1 ตัว",
               "pcs": "10",
               "notes_th": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
-              "img": "assets/img/tools/สิงห์เงิน-50-3.webp"
+              "img": "assets/img/tools/สิงห์เงิน-50-3.webp",
+              "pic_same": true
             },
             {
               "code": "สิงห์เงิน-50/5",
@@ -10056,7 +10146,8 @@
               "size": "50มม. คอสั้น 4 ตัว และ คอยาว 1 ตัว",
               "pcs": "10",
               "notes_th": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
-              "img": "assets/img/tools/สิงห์เงิน-50-5.webp"
+              "img": "assets/img/tools/สิงห์เงิน-50-5.webp",
+              "pic_same": true
             }
           ]
         },
@@ -10081,7 +10172,8 @@
               "pcs": "12/144",
               "mat": "ไส้ทองเหลืองแท้",
               "notes_th": "แบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มรูปสิงห์และ M.T.T. แผงพิมพ์ MTT INTERNATIONAL CO.,LTD.",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-30S.webp"
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-30S.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์ทอง-30L",
@@ -10091,7 +10183,8 @@
               "pcs": "12/144",
               "mat": "ไส้ทองเหลืองแท้",
               "notes_th": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-30L.webp"
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-30L.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์ทอง-40S",
@@ -10101,7 +10194,8 @@
               "pcs": "12/96",
               "mat": "ไส้ทองเหลืองแท้",
               "notes_th": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-40S.webp"
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-40S.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์ทอง-40L",
@@ -10111,7 +10205,8 @@
               "pcs": "12/96",
               "mat": "ไส้ทองเหลืองแท้",
               "notes_th": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-40L.webp"
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-40L.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์ทอง-50S",
@@ -10121,7 +10216,8 @@
               "pcs": "12/72",
               "mat": "ไส้ทองเหลืองแท้",
               "notes_th": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-50S.webp"
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-50S.webp",
+              "pic_same": true
             },
             {
               "code": "กุญแจสิงห์ทอง-50L",
@@ -10131,7 +10227,8 @@
               "pcs": "12/72",
               "mat": "ไส้ทองเหลืองแท้",
               "notes_th": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S — แถวนี้พิมพ์รหัสว่า \"กุญแจสิงหทอง-50L\" ตกทัณฑฆาต ต่างจากแถวอื่นที่พิมพ์ \"กุญแจสิงห์ทอง-\" แก้ให้สะกดเหมือนอีก 5 แถวแล้ว เพราะแถวเดียวสะกดต่างทำให้ค้นหาไม่เจอ",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-50L.webp"
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-50L.webp",
+              "pic_same": true
             }
           ]
         },
@@ -10153,7 +10250,8 @@
               "size": "20มม. คอสั้น",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-20.webp"
+              "img": "assets/img/tools/84-20.webp",
+              "pic_same": true
             },
             {
               "code": "84-25",
@@ -10162,7 +10260,8 @@
               "size": "25มม. คอสั้น",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-25.webp"
+              "img": "assets/img/tools/84-25.webp",
+              "pic_same": true
             },
             {
               "code": "84-32",
@@ -10171,7 +10270,8 @@
               "size": "32มม. คอสั้น",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-32.webp"
+              "img": "assets/img/tools/84-32.webp",
+              "pic_same": true
             },
             {
               "code": "84-32L",
@@ -10180,7 +10280,8 @@
               "size": "32มม. คอยาว",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-32L.webp"
+              "img": "assets/img/tools/84-32L.webp",
+              "pic_same": true
             },
             {
               "code": "84-38",
@@ -10189,7 +10290,8 @@
               "size": "38มม. คอสั้น",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-38.webp"
+              "img": "assets/img/tools/84-38.webp",
+              "pic_same": true
             },
             {
               "code": "84-38L",
@@ -10198,7 +10300,8 @@
               "size": "38มม. คอยาว",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-38L.webp"
+              "img": "assets/img/tools/84-38L.webp",
+              "pic_same": true
             },
             {
               "code": "84-50",
@@ -10207,7 +10310,8 @@
               "size": "50มม. คอสั้น",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-50.webp"
+              "img": "assets/img/tools/84-50.webp",
+              "pic_same": true
             },
             {
               "code": "84-50L",
@@ -10216,7 +10320,8 @@
               "size": "50มม. คอยาว",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-50L.webp"
+              "img": "assets/img/tools/84-50L.webp",
+              "pic_same": true
             }
           ]
         },
@@ -10238,7 +10343,8 @@
               "size": "25มม. คอสั้น",
               "pcs": "6/360",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-262.webp"
+              "img": "assets/img/tools/LUCKY-262.webp",
+              "pic_same": true
             },
             {
               "code": "LUCKY-363",
@@ -10247,7 +10353,8 @@
               "size": "32มม. คอสั้น",
               "pcs": "6/180",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-363.webp"
+              "img": "assets/img/tools/LUCKY-363.webp",
+              "pic_same": true
             },
             {
               "code": "LUCKY-363L",
@@ -10256,7 +10363,8 @@
               "size": "32มม. คอยาว",
               "pcs": "6/180",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-363L.webp"
+              "img": "assets/img/tools/LUCKY-363L.webp",
+              "pic_same": true
             },
             {
               "code": "LUCKY-364",
@@ -10265,7 +10373,8 @@
               "size": "38มม. คอสั้น",
               "pcs": "6/120",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-364.webp"
+              "img": "assets/img/tools/LUCKY-364.webp",
+              "pic_same": true
             },
             {
               "code": "LUCKY-364L",
@@ -10274,7 +10383,8 @@
               "size": "38มม. คอยาว",
               "pcs": "6/120",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-364L.webp"
+              "img": "assets/img/tools/LUCKY-364L.webp",
+              "pic_same": true
             },
             {
               "code": "LUCKY-365",
@@ -10283,7 +10393,8 @@
               "size": "50มม. คอสั้น",
               "pcs": "6/60",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-365.webp"
+              "img": "assets/img/tools/LUCKY-365.webp",
+              "pic_same": true
             },
             {
               "code": "LUCKY-365L",
@@ -10292,7 +10403,8 @@
               "size": "50มม. คอยาว",
               "pcs": "6/60",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-365L.webp"
+              "img": "assets/img/tools/LUCKY-365L.webp",
+              "pic_same": true
             }
           ]
         },
@@ -10318,7 +10430,8 @@
               "size": "40มม. คอสั้น",
               "pcs": "12",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/SOHENG-40S.webp"
+              "img": "assets/img/tools/SOHENG-40S.webp",
+              "pic_same": true
             },
             {
               "code": "SOHENG-40L",
@@ -10327,7 +10440,8 @@
               "size": "40มม. คอยาว",
               "pcs": "12",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/SOHENG-40L.webp"
+              "img": "assets/img/tools/SOHENG-40L.webp",
+              "pic_same": true
             },
             {
               "code": "SOHENG-50S",
@@ -10336,7 +10450,8 @@
               "size": "50มม. คอสั้น",
               "pcs": "12",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/SOHENG-50S.webp"
+              "img": "assets/img/tools/SOHENG-50S.webp",
+              "pic_same": true
             },
             {
               "code": "SOHENG-50L",
@@ -10345,7 +10460,8 @@
               "size": "50มม. คอยาว",
               "pcs": "12",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/SOHENG-50L.webp"
+              "img": "assets/img/tools/SOHENG-50L.webp",
+              "pic_same": true
             }
           ]
         },
@@ -10369,7 +10485,8 @@
               "size": "20มม. คอสั้น",
               "pcs": "12/600",
               "mat": "เหล็กสีดำ ระบบสปริง",
-              "img": "assets/img/tools/361.webp"
+              "img": "assets/img/tools/361.webp",
+              "pic_same": true
             },
             {
               "code": "362",
@@ -10378,7 +10495,8 @@
               "size": "25มม. คอสั้น",
               "pcs": "6/360",
               "mat": "เหล็กสีดำ ระบบสปริง",
-              "img": "assets/img/tools/362.webp"
+              "img": "assets/img/tools/362.webp",
+              "pic_same": true
             },
             {
               "code": "363",
@@ -10386,7 +10504,8 @@
               "en": "BRASS PADLOCKS",
               "size": "32มม. คอสั้น",
               "pcs": "6/180",
-              "mat": "เหล็กสีดำ ระบบสปริง"
+              "mat": "เหล็กสีดำ ระบบสปริง",
+              "pic_same": true
             },
             {
               "code": "363L",
@@ -10394,7 +10513,8 @@
               "en": "BRASS PADLOCKS",
               "size": "32มม. คอยาว",
               "pcs": "6/180",
-              "mat": "เหล็กสีดำ ระบบสปริง"
+              "mat": "เหล็กสีดำ ระบบสปริง",
+              "pic_same": true
             },
             {
               "code": "364",
@@ -10402,7 +10522,8 @@
               "en": "BRASS PADLOCKS",
               "size": "38มม. คอสั้น",
               "pcs": "6/120",
-              "mat": "เหล็กสีดำ ระบบสปริง"
+              "mat": "เหล็กสีดำ ระบบสปริง",
+              "pic_same": true
             },
             {
               "code": "364L",
@@ -10410,7 +10531,8 @@
               "en": "BRASS PADLOCKS",
               "size": "38มม. คอยาว",
               "pcs": "6/120",
-              "mat": "เหล็กสีดำ ระบบสปริง"
+              "mat": "เหล็กสีดำ ระบบสปริง",
+              "pic_same": true
             },
             {
               "code": "365",
@@ -10418,7 +10540,8 @@
               "en": "BRASS PADLOCKS",
               "size": "50มม. คอสั้น",
               "pcs": "6/60",
-              "mat": "เหล็กสีดำ ระบบสปริง"
+              "mat": "เหล็กสีดำ ระบบสปริง",
+              "pic_same": true
             },
             {
               "code": "365L",
@@ -10426,7 +10549,8 @@
               "en": "BRASS PADLOCKS",
               "size": "50มม. คอยาว",
               "pcs": "6/60",
-              "mat": "เหล็กสีดำ ระบบสปริง"
+              "mat": "เหล็กสีดำ ระบบสปริง",
+              "pic_same": true
             }
           ]
         },
