@@ -159,8 +159,25 @@
   .cta-band .acts{justify-content:flex-start}
   .contact-grid{grid-template-columns:1fr}
 }
+@media(max-width:520px){
+  /* จอแคบ การ์ด hero ซ้อนกันจนใบหลังโผล่ข้อความโดนตัดกลางคำ — เหลือใบเดียววางกลาง */
+  .hero-vis{height:auto;display:grid;place-items:center;padding:4px 0 0}
+  .hv-2{display:none}
+  .hv-card{position:static;transform:none}
+  .hv-1{width:min(300px,88vw)}
+}
 @media(max-width:480px){
-  .cat-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr;gap:10px}
+  /* การ์ดหมวดแบบวางซ้อนแนวตั้งสูงเกือบ 1/3 จอต่อใบ — จอเล็กจัดเป็นแถวแนวนอนให้แน่นและกวาดตาได้ */
+  .cat{padding:13px 15px;display:grid;grid-template-columns:auto 1fr auto;
+    grid-template-areas:"ic ttl arr" "ic desc arr";column-gap:13px;row-gap:2px;align-items:center;gap:0}
+  .cat .ic{grid-area:ic;width:46px;height:46px;border-radius:13px;margin:0}
+  .cat .ic svg{width:24px;height:24px}
+  .cat h3{grid-area:ttl;font-size:1.02rem;margin:0;align-self:end;line-height:1.3}
+  .cat p{grid-area:desc;font-size:.83rem;margin:0;align-self:start;line-height:1.45}
+  .cat .go{grid-area:arr;margin:0;font-size:0;align-self:center;color:var(--ink-mute)}
+  .cat .go svg{width:18px;height:18px}
+  .cat .soon{top:9px;right:34px}
   .feat-grid{grid-template-columns:1fr}
   .why-grid{grid-template-columns:1fr}
   .trust .wrap{grid-template-columns:1fr}
