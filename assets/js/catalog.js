@@ -109,7 +109,7 @@ window.CATALOG = (function () {
       url: "products/mtt-brand.html", live: true, accent: "amber" },
     { key: "hardware", icon: '<circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/>', th: "ฮาร์ดแวร์ &amp; อื่น ๆ", en: "Hardware &amp; more",
       dth: "หน้าร้านสำเพ็งมีอีกเพียบ — ทักถามได้เลย", den: "Much more in-store at Sampheng — just ask",
-      url: "products/index.html", live: false, accent: "amber" },
+      url: "/products", live: false, accent: "amber" },
   ];
 
   /* ---------- helpers ---------- */
