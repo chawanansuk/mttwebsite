@@ -3,3 +3,4 @@ npm-debug.log*
 .DS_Store
 .vercel
 _shot*.mjs
+_*.tmp.mjs

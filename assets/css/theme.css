@@ -39,6 +39,10 @@
   --shadow-lg:0 18px 50px rgba(16,26,48,.18);
   --maxw:1180px;
   --ring:0 0 0 3px rgba(18,161,80,.32);
+  /* ฟอนต์: ต้องมี generic fallback เสมอ — เดิมเขียน font-family:"Kanit" เดี่ยวๆ 200 กว่าจุด
+     ระหว่างรอ Google Fonts (display=swap) หรือโหลดไม่ได้ เบราว์เซอร์จะตกไปเป็น serif */
+  --font-head:"Kanit","Anuphan",system-ui,-apple-system,sans-serif;
+  --font-body:"Anuphan",system-ui,-apple-system,sans-serif;
   /* app chrome (มือถือ): ความสูงแถบเมนูล่าง — ทุก sticky/padding อ้างค่าเดียวกัน */
   --tabbar-h:58px;
 }

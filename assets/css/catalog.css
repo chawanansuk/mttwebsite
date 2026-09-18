@@ -1,0 +1,119 @@
+/* ============================================================
+   catalog.css — หน้าแคตตาล็อก (products/tools-*.html, products/mtt-brand.html)
+   สร้างโดย _gen-tool-pages.mjs / _gen-mtt-page.mjs ใช้ร่วมกัน
+   เดิมฝังเป็น <style> ซ้ำกัน 16 หน้า — ย้ายมาไฟล์เดียวเพื่อแก้ที่เดียวและให้เบราว์เซอร์ cache
+   ============================================================ */
+
+/* ---------- ส่วนหัวหมวด ---------- */
+.t-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.16),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:46px 0 24px}
+.t-hero.mtt{background:radial-gradient(900px 420px at 82% -20%,rgba(214,158,46,.20),transparent 60%),linear-gradient(180deg,#fff,var(--bg))}
+.crumbs{font-size:.82rem;color:var(--ink-mute);margin-bottom:14px}
+.crumbs a{color:var(--ink-mute);display:inline-block;padding:4px 0}
+.t-hero h1{font-size:clamp(1.6rem,3.4vw,2.4rem);margin:6px 0 8px}
+.t-hero .muted{max-width:740px;margin:0}
+.trust{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 0}
+.trust .badge{font-size:.83rem;padding:7px 14px}
+.trust .badge.lion{background:#fff4d6;color:#8a5a00}
+.brand-link{margin:12px 0 0;font-size:.9rem}
+.brand-link a{color:var(--amber-dark);font-weight:600}
+
+/* ชิปหมวด (ทุกหมวดในแคตตาล็อก) และชิปกลุ่ม (สารบัญในหน้า) */
+.catnav,.grpnav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.catnav a,.grpnav a{font-size:.85rem;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink-2);text-decoration:none;white-space:nowrap}
+.catnav a:hover,.grpnav a:hover{border-color:var(--amber);color:var(--amber-dark)}
+.catnav a.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.grpnav{margin:14px 0 0}
+.grpnav a small{color:var(--ink-mute);font-size:.78em;margin-left:3px}
+
+/* ช่องค้นหา: ติดใต้ header (header สูง 64px z-index 60 — เดิม top:0 เลยมุดใต้ header) */
+.findbar{position:sticky;top:64px;z-index:50;background:var(--bg);padding:14px 0 10px;border-bottom:1px solid var(--line)}
+.findbar input{width:100%;max-width:460px;padding:12px 16px;border:1px solid var(--line-strong);border-radius:var(--radius-sm);font:inherit;font-size:.95rem;background:var(--surface)}
+.findbar input:focus{outline:2px solid var(--amber);border-color:transparent}
+.findbar .hit{font-size:.83rem;color:var(--ink-mute);margin-top:8px}
+
+/* ---------- กลุ่มสินค้า ---------- */
+.grp-h{font-size:clamp(1.05rem,2.1vw,1.3rem);margin:34px 0 6px;scroll-margin-top:140px}
+.grp-h .ge{font-family:var(--font-body);font-weight:500;font-size:.8rem;color:var(--ink-mute);display:block}
+.grp-h em{font-style:normal;font-family:var(--font-body);font-size:.78rem;color:var(--amber-dark);background:var(--amber-soft);border-radius:999px;padding:2px 10px;vertical-align:middle;white-space:nowrap}
+.grp-mat{font-size:.85rem;color:var(--ink-dim);margin:0 0 6px}
+.grp-notes{margin:0 0 12px;padding-left:20px;font-size:.85rem;color:var(--ink-dim)}
+.grp-notes li{padding:2px 0}
+.srcline{font-size:.84rem;margin:8px 0 0}
+.srcline a{color:var(--amber-dark)}
+
+/* ---------- ตารางสเปก (เดสก์ท็อป) ---------- */
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:600px}
+table.tools.haspic{min-width:680px}
+table.tools th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
+table.tools td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
+table.tools tr:nth-child(even) td{background:var(--bg-soft)}
+table.tools tr.fam-lead td{border-top:2px solid var(--line-strong)}
+table.tools tr.fam-lead:first-child td{border-top:0}
+table.tools th.pic{width:88px}
+table.tools td.pic{width:88px;padding:8px 10px}
+table.tools td.pic img{width:72px;height:54px;object-fit:contain;display:block;background:#fff;border:1px solid var(--line);border-radius:8px}
+table.tools td.pic a:hover img{border-color:var(--amber)}
+/* ลิงก์รหัส = ปุ่มถามราคาหลักของหน้า — ขยายพื้นที่กดให้ถึง 44px โดยไม่ขยับข้อความ */
+table.tools td.code a{font-family:var(--font-head);font-weight:600;color:var(--amber-dark);white-space:nowrap;text-decoration:none;border-bottom:1px dashed var(--amber);display:inline-block;padding:10px 8px;margin:-10px -8px;line-height:1.5}
+table.tools td.code a:hover{background:var(--amber-soft);border-radius:6px}
+table.tools td b{font-family:var(--font-head);font-weight:500;display:block}
+table.tools td small{color:var(--ink-mute);font-size:.78rem}
+table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-width:320px}
+table.tools td .famnote{font-size:.78rem;color:var(--amber-dark);margin-top:4px;max-width:320px}
+table.tools td .nmlink{display:inline-block;font-size:.78rem;color:var(--amber-dark);margin-top:4px;font-weight:600}
+table.tools td.sz,table.tools td.pcs,table.tools td.mat{white-space:nowrap}
+table.tools td.mat{white-space:normal;max-width:240px}
+
+/* ---------- แถบ CTA ท้ายหน้า ---------- */
+.cta-band{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:28px;margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.cta-band h2{color:#fff;font-size:1.25rem;margin:0 0 4px}
+.cta-band p{color:#c2cbde;margin:0;font-size:.9rem}
+
+/* ---------- มือถือ ---------- */
+@media(max-width:600px){
+  /* ชิป 16 หมวดพับ 9 แถวกินครึ่งจอก่อนถึงสินค้า → แถบเลื่อนแนวนอนบรรทัดเดียว */
+  .catnav,.grpnav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:-22px;margin-right:-22px;padding:0 22px 6px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+  .catnav::-webkit-scrollbar,.grpnav::-webkit-scrollbar{display:none}
+  .catnav a,.grpnav a{flex:none;scroll-snap-align:start}
+  .findbar{padding:10px 0 8px}
+  .grp-h{scroll-margin-top:130px}
+
+  /* ตารางสเปก → การ์ดต่อแถว
+     ตาราง 6 คอลัมน์กว้าง 680px บนจอ 390px เห็นแค่ 3 คอลัมน์ ชื่อสินค้าโดนตัดกลางคำ
+     และคอลัมน์ "ขนาด" ที่เป็นข้อมูลสำคัญสุดหลุดจอไปทางขวา */
+  .tblwrap{overflow:visible;border:0;background:transparent;border-radius:0}
+  table.tools,table.tools.haspic,table.tools tbody{display:block;min-width:0;width:100%}
+  table.tools thead,table.tools caption{display:none}
+  table.tools tr{display:flex;flex-wrap:wrap;align-items:center;column-gap:10px;row-gap:6px;padding:10px 12px;background:var(--surface);border:1px solid var(--line);border-top:0}
+  table.tools tr[hidden]{display:none}
+  table.tools tr:nth-child(even) td{background:transparent}
+  table.tools tr.fam-lead{border-top:1px solid var(--line);border-radius:12px 12px 0 0;margin-top:10px}
+  table.tools tr:has(+ tr.fam-lead),table.tools tr:last-child{border-radius:0 0 12px 12px}
+  table.tools tr.fam-lead:has(+ tr.fam-lead),table.tools tr.fam-lead:last-child{border-radius:12px}
+  table.tools td,table.tools tr.fam-lead td{display:block;padding:0;border:0;background:transparent}
+  table.tools td.pic{flex:0 0 72px;order:0;align-self:flex-start;width:auto}
+  table.tools td.pic:empty{display:none}
+  table.tools td.nm{flex:1 1 calc(100% - 82px);min-width:0;order:1}
+  table.tools tr:not(:has(td.pic img)) td.nm{flex-basis:100%}   /* ไม่มีรูป: ชื่อกินเต็มบรรทัด รหัสลงบรรทัดถัดไป */
+  table.tools td.nm .nmtxt:empty{display:none}
+  table.tools td .famnote{display:none}      /* การ์ดซ้อนกันบอกความเป็นตระกูลอยู่แล้ว */
+  table.tools td .note{margin-top:2px;max-width:none}
+  table.tools td.code{order:2;font-size:.9rem}
+  table.tools td.code a{padding:8px 6px;margin:-8px -6px}
+  table.tools td.sz,table.tools td.pcs,table.tools td.mat{order:3;font-size:.82rem;color:var(--ink-2);white-space:normal;max-width:none}
+  table.tools td.sz:empty,table.tools td.pcs:empty,table.tools td.mat:empty{display:none}
+  table.tools td.sz::before{content:"ขนาด ";color:var(--ink-mute)}
+  table.tools td.pcs::before{content:"ลัง ";color:var(--ink-mute)}
+  table.tools td.mat::before{content:"วัสดุ ";color:var(--ink-mute)}
+  html[lang="en"] table.tools td.sz::before{content:"Size "}
+  html[lang="en"] table.tools td.pcs::before{content:"Carton "}
+  html[lang="en"] table.tools td.mat::before{content:"Steel "}
+  /* แถวเบอร์ย่อยที่ใช้รูปตัวแทน: เยื้องเข้าใต้ชื่อ ไม่ซ้ำวัสดุ (ตระกูลเดียวกันวัสดุเดียวกันเสมอ) */
+  table.tools.haspic tr:not(.fam-lead):has(td.pic:empty){padding-left:84px;background:var(--surface-2)}
+  table.tools tr:not(.fam-lead) td.mat{display:none}
+  /* แถวย่อย: ช่องชื่อว่าง ไม่ให้กินบรรทัดแรกจนรหัสถูกดันไปขวา */
+  table.tools tr:not(.fam-lead) td.nm{display:contents}
+  table.tools tr:not(.fam-lead) td.nm .note,table.tools tr:not(.fam-lead) td.nm .nmlink{flex:0 0 100%;order:4;margin:0}
+}

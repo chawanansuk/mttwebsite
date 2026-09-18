@@ -5,7 +5,8 @@
   "description": "เว็บไซต์ร้าน ม ทวีภัณฑ์ (static site)",
   "scripts": {
     "test": "node test/smoke.mjs",
-    "linkcheck": "node _links.mjs"
+    "linkcheck": "node _links.mjs",
+    "gen": "node _gen-tool-pages.mjs && node _gen-mtt-page.mjs && node _gen-pin-pages.mjs"
   },
   "devDependencies": {
     "playwright": "^1.48.0"

@@ -2,7 +2,7 @@ import pw from "playwright"; const { chromium } = pw;
 import http from 'http'; import { readFileSync, existsSync, statSync } from 'fs'; import { extname, join, resolve } from 'path';
 const root=resolve(process.argv[2] || process.cwd()); // รับ root จาก argv หรือ cwd — รันใน CI/เครื่องไหนก็ได้ (เลิก hardcode path)
 const mime={'.html':'text/html','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.xml':'application/xml','.txt':'text/plain','.json':'application/json'};
-const server=http.createServer((req,res)=>{let p=decodeURIComponent(req.url.split('?')[0]);if(p.endsWith('/'))p+='index.html';let f=join(root,p);if(existsSync(f)&&statSync(f).isFile()){res.writeHead(200,{'Content-Type':mime[extname(f)]||'text/plain'});res.end(readFileSync(f));}else{res.writeHead(404);res.end('nf');}});
+const server=http.createServer((req,res)=>{let p=decodeURIComponent(req.url.split('?')[0]);if(p.endsWith('/'))p+='index.html';let f=join(root,p);if(existsSync(f)&&statSync(f).isDirectory())f=join(f,'index.html');if(existsSync(f)&&statSync(f).isFile()){res.writeHead(200,{'Content-Type':mime[extname(f)]||'text/plain'});res.end(readFileSync(f));}else{res.writeHead(404);res.end('nf');}});
 await new Promise(r=>server.listen(0,r));const port=server.address().port;const base='http://localhost:'+port;
 // ตั้ง CHROMIUM_PATH ได้ ถ้าเครื่องมี Chromium อยู่แล้วแต่เวอร์ชันไม่ตรงกับที่ Playwright ดาวน์โหลด
 const b=await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
