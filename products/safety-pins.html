@@ -183,7 +183,7 @@ table.size td b{font-family:var(--font-head)}
 .wirefig img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
 .wirefig figcaption{font-size:.82rem;color:var(--ink-mute);margin-top:10px;text-align:center;line-height:1.6}
 @media(max-width:860px){.pin-grid{grid-template-columns:1fr 1fr}.unit-grid{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr;gap:18px}.hero-wide{display:none}.hero-tall{display:block;width:100%;max-width:420px;height:auto;margin:0 auto;border-radius:var(--radius-sm)}}
-@media(max-width:480px){.pin-grid{grid-template-columns:1fr 1fr;gap:10px}.pin-card{padding:14px 12px 12px}.pin-card .use,.pin-card .tagm{display:none}.pin-card .num{font-size:1.15rem}}
+@media(max-width:480px){.pin-grid{grid-template-columns:1fr 1fr;gap:10px}.pin-grid>*{min-width:0}.pin-card{padding:14px 12px 12px}.pin-card .head{flex-wrap:wrap;gap:2px 8px}.pin-card .len{white-space:normal}.pin-card .use,.pin-card .tagm{display:none}.pin-card .num{font-size:1.15rem}} /* grid item min-width:auto + ความยาว nowrap ทำให้ล้น 7px ที่ 360px */
 </style>
 </head>
 <body>
