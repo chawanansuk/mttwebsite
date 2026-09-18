@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=2">
+<link rel="stylesheet" href="../assets/css/theme.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -68,27 +68,27 @@
 .sec-sub{color:var(--ink-dim);font-size:.9rem;margin:-6px 0 14px;max-width:760px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.box{width:100%;border-collapse:collapse;font-size:.9rem;min-width:620px}
-table.box th{font-family:"Kanit";font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:11px 14px;white-space:nowrap}
+table.box th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:11px 14px;white-space:nowrap}
 table.box td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}
 table.box tr:nth-child(even) td{background:var(--bg-soft)}
-table.box td b{font-family:"Kanit"}
+table.box td b{font-family:var(--font-head)}
 table.box td a{color:var(--amber-dark);font-weight:600}
 .step-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .step{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
-.step .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--amber-soft);color:var(--amber-dark);font-family:"Kanit";font-weight:700;margin-bottom:8px}
-.step b{display:block;font-family:"Kanit";font-size:1rem;margin-bottom:3px}
+.step .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--amber-soft);color:var(--amber-dark);font-family:var(--font-head);font-weight:700;margin-bottom:8px}
+.step b{display:block;font-family:var(--font-head);font-size:1rem;margin-bottom:3px}
 .step p{color:var(--ink-dim);font-size:.86rem;margin:0}
 .who-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .who{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
-.who b{display:block;font-family:"Kanit";font-size:1rem;margin-bottom:4px}
+.who b{display:block;font-family:var(--font-head);font-size:1rem;margin-bottom:4px}
 .who p{color:var(--ink-dim);font-size:.86rem;margin:0}
 .unitbox{background:var(--amber-soft);border:1px solid rgba(18,161,80,.25);border-radius:var(--radius-lg);padding:20px 24px;margin-top:8px}
-.unitbox b{font-family:"Kanit";color:var(--amber-dark)}
+.unitbox b{font-family:var(--font-head);color:var(--amber-dark)}
 .unitbox ul{margin:10px 0 0;padding-left:20px;font-size:.9rem;color:var(--ink-2)}
 .unitbox li{padding:3px 0}
 .faq{margin-top:6px;display:grid;gap:10px}
 .faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
-.faq summary{cursor:pointer;font-family:"Kanit";font-weight:600;font-size:.95rem;padding:13px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:.95rem;padding:13px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";font-size:1.2rem;color:var(--amber);flex:none}
 .faq details[open] summary::after{content:"–"}
@@ -101,6 +101,7 @@ table.box td a{color:var(--amber-dark);font-weight:600}
 </head>
 <body>
 <div id="site-header"></div>
+<main id="main">
 
 <section class="wh-hero">
   <div class="wrap">
@@ -181,7 +182,7 @@ table.box td a{color:var(--amber-dark);font-weight:600}
       <div class="who"><b data-th="โรงงานเสื้อผ้า / งาน OEM" data-en="Garment factories and OEM">โรงงานเสื้อผ้า / งาน OEM</b>
         <p data-th="ใช้เบอร์ 000–00 ติดแท็กแบรนด์ก่อนส่งมอบ นับจำนวนจริงทำให้คิดต้นทุนต่อชิ้นได้แม่น ออกใบกำกับภาษีเข้าระบบบัญชีได้" data-en="Sizes 000–00 for brand tags. Counted boxes make per-unit costing exact, and the tax invoice goes straight into the books.">ใช้เบอร์ 000–00 ติดแท็กแบรนด์ก่อนส่งมอบ นับจำนวนจริงทำให้คิดต้นทุนต่อชิ้นได้แม่น ออกใบกำกับภาษีเข้าระบบบัญชีได้</p></div>
       <div class="who"><b data-th="ผู้จัดงานวิ่ง / งานอีเวนต์" data-en="Race and event organizers">ผู้จัดงานวิ่ง / งานอีเวนต์</b>
-        <p data-th="เบอร์ 2 ใช้ 4 ตัวต่อนักวิ่ง 1 คน งาน 1,000 คนใช้ราว 4,000 ตัว — ดูวิธีคำนวณและสั่งได้ที่หน้างานวิ่ง" data-en="Size 2, four per runner: a 1,000-runner race needs about 4,000. See the race page for the maths.">เบอร์ 2 ใช้ 4 ตัวต่อนักวิ่ง 1 คน งาน 1,000 คนใช้ราว 4,000 ตัว — ดูวิธีคำนวณและสั่งได้ที่<a href="safety-pins-running.html">หน้างานวิ่ง</a></p></div>
+        <p data-th="เบอร์ 2 ใช้ 4 ตัวต่อนักวิ่ง 1 คน งาน 1,000 คนใช้ราว 4,000 ตัว — ดูวิธีคำนวณและสั่งได้ที่&lt;a href=&quot;safety-pins-running.html&quot;&gt;หน้างานวิ่ง&lt;/a&gt;" data-en="Size 2, four per runner: a 1,000-runner race needs about 4,000. See the &lt;a href=&quot;safety-pins-running.html&quot;&gt;race page&lt;/a&gt; for the maths.">เบอร์ 2 ใช้ 4 ตัวต่อนักวิ่ง 1 คน งาน 1,000 คนใช้ราว 4,000 ตัว — ดูวิธีคำนวณและสั่งได้ที่<a href="safety-pins-running.html">หน้างานวิ่ง</a></p></div>
       <div class="who"><b data-th="โรงพยาบาล / โรงแรม / ร้านซักรีด" data-en="Hospitals, hotels, laundries">โรงพยาบาล / โรงแรม / ร้านซักรีด</b>
         <p data-th="ใช้เบอร์ 0 และ 4 เป็นของใช้ประจำ สั่งรอบละหลายกล่องเก็บสต็อกไว้ ไม่ต้องสั่งบ่อย" data-en="Sizes 0 and 4 as standing stock — order several boxes at a time and reorder less often.">ใช้เบอร์ 0 และ 4 เป็นของใช้ประจำ สั่งรอบละหลายกล่องเก็บสต็อกไว้ ไม่ต้องสั่งบ่อย</p></div>
     </div>
@@ -212,18 +213,19 @@ table.box td a{color:var(--amber-dark);font-weight:600}
   </div>
 </section>
 
+</main>
 <div id="site-footer"></div>
 
 <script>window.MTT_BASE="../";window.MTT_PAGE="pins";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=2"></script>
+<script src="../assets/js/catalog.js?v=3"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
 document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 </script>
-<script src="../assets/js/layout.js?v=2"></script>
+<script src="../assets/js/layout.js?v=3"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

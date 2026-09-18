@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=2">
+<link rel="stylesheet" href="../assets/css/theme.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,9 +52,11 @@
   "@type": "Article",
   "headline": "เข็มกลัดเบอร์ไหนใช้ทำอะไร? คู่มือเลือกขนาดเข็มกลัด 000–7",
   "description": "คู่มือเลือกเบอร์เข็มกลัดซ่อนปลายจากงานที่จะใช้ พร้อมตารางเทียบครบทุกเบอร์",
-  "image": "https://mtthardware.com/assets/img/og-image.png?v=2",
-  "author": { "@type": "Organization", "name": "ม ทวีภัณฑ์ (M.T.T. Hardware)" },
-  "publisher": { "@type": "Organization", "name": "ม ทวีภัณฑ์ (M.T.T. Hardware)",
+  "image": "https://mtthardware.com/assets/img/products/safety-pins-og.png",
+  "datePublished": "2026-08-21",
+  "dateModified": "2026-09-18",
+  "author": { "@type": "Organization", "name": "ม.ทวีภัณฑ์ (M.T.T. Hardware)" },
+  "publisher": { "@type": "Organization", "name": "ม.ทวีภัณฑ์ (M.T.T. Hardware)",
     "logo": { "@type": "ImageObject", "url": "https://mtthardware.com/assets/img/apple-touch-icon.png?v=2" } },
   "mainEntityOfPage": "https://mtthardware.com/articles/which-safety-pin-size.html"
 }
@@ -80,15 +82,15 @@
 .sec-h{font-size:clamp(1.2rem,2.4vw,1.5rem);margin:36px 0 12px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.job{width:100%;border-collapse:collapse;font-size:.9rem;min-width:560px}
-table.job th{font-family:"Kanit";font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
+table.job th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
 table.job td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
 table.job tr:nth-child(even) td{background:var(--bg-soft)}
-table.job td b{font-family:"Kanit"}
+table.job td b{font-family:var(--font-head)}
 .rule-band{background:var(--amber-soft);border:1px solid rgba(18,161,80,.25);border-radius:var(--radius-lg);padding:18px 22px;margin:16px 0}
-.rule-band b{font-family:"Kanit";color:var(--amber-dark)}
+.rule-band b{font-family:var(--font-head);color:var(--amber-dark)}
 .size-run{display:grid;gap:10px;margin-top:6px}
 .size-run .row{display:flex;align-items:center;gap:14px;padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
-.size-run .no{font-family:"Kanit";font-weight:700;min-width:74px}
+.size-run .no{font-family:var(--font-head);font-weight:700;min-width:74px}
 .size-run .no a{color:inherit}
 .size-run .bar{flex:0 0 130px;display:flex;align-items:center}
 .size-run .bar img{display:block;height:auto}
@@ -104,6 +106,7 @@ table.job td b{font-family:"Kanit"}
 </head>
 <body>
 <div id="site-header"></div>
+<main id="main">
 
 <section class="art-hero">
   <div class="wrap">
@@ -124,7 +127,7 @@ table.job td b{font-family:"Kanit"}
 
     <figure class="chart">
       <picture>
-        <source media="(max-width:700px)" srcset="../assets/img/products/safety-pin-sizes-sm.webp" width="768" height="512">
+        <source media="(max-width:700px)" srcset="../assets/img/products/safety-pin-sizes-tall-sm.webp 640w, ../assets/img/products/safety-pin-sizes-tall.webp 1024w" sizes="92vw" width="640" height="960">
         <img src="../assets/img/products/safety-pin-sizes.webp" alt="ตารางขนาดเข็มกลัดซ่อนปลาย เบอร์ 000 ถึง 7 พร้อมขนาดลวดและความยาวเป็นมิลลิเมตร" width="1535" height="1024" loading="lazy">
       </picture>
       <figcaption data-th="ตารางขนาดครบทั้ง 10 เบอร์ — ตัวเลขคือ ขนาดลวด × ความยาว (มม.) ภาพประกอบเพื่อเทียบรูปทรง ขนาดจริงดูจากตัวเลข" data-en="All ten sizes — figures are wire diameter × length in mm. The drawing shows shape; rely on the numbers for exact size.">ตารางขนาดครบทั้ง 10 เบอร์ — ตัวเลขคือ ขนาดลวด × ความยาว (มม.) ภาพประกอบเพื่อเทียบรูปทรง ขนาดจริงดูจากตัวเลข</figcaption>
@@ -139,16 +142,16 @@ table.job td b{font-family:"Kanit"}
           <th data-th="เหตุผล" data-en="Why">เหตุผล</th>
         </tr></thead>
         <tbody>
-          <tr><td data-th="ติดป้ายราคา / แท็กเครื่องประดับ" data-en="Price tags / jewellery tags">ติดป้ายราคา / แท็กเครื่องประดับ</td><td><b><a href="../products/safety-pins-000.html">000</a></b></td><td data-th="เล็กสุด เนียนไปกับสินค้า ลวดบาง 0.65 มม." data-en="Tiniest, discreet, 0.65 mm wire">เล็กสุด เนียนไปกับสินค้า ลวดบาง 0.65 มม. — <a href="../products/safety-pins-tags.html">คู่มืองานแท็ก</a></td></tr>
+          <tr><td data-th="ติดป้ายราคา / แท็กเครื่องประดับ" data-en="Price tags / jewellery tags">ติดป้ายราคา / แท็กเครื่องประดับ</td><td><b><a href="../products/safety-pins-000.html">000</a></b></td><td data-th="เล็กสุด เนียนไปกับสินค้า ลวดบาง 0.65 มม. — &lt;a href=&quot;../products/safety-pins-tags.html&quot;&gt;คู่มืองานแท็ก&lt;/a&gt;" data-en="Tiniest, discreet, 0.65 mm wire — &lt;a href=&quot;../products/safety-pins-tags.html&quot;&gt;Tag-pin guide&lt;/a&gt;">เล็กสุด เนียนไปกับสินค้า ลวดบาง 0.65 มม. — <a href="../products/safety-pins-tags.html">คู่มืองานแท็ก</a></td></tr>
           <tr><td data-th="ติดป้ายเสื้อผ้า / งาน OEM โรงงาน" data-en="Garment tags / OEM">ติดป้ายเสื้อผ้า / งาน OEM โรงงาน</td><td><b><a href="../products/safety-pins-00.html">00</a></b></td><td data-th="มาตรฐานวงการเสื้อผ้า แข็งแรงกว่า 000" data-en="The garment-trade default, stronger than 000">มาตรฐานวงการเสื้อผ้า แข็งแรงกว่า 000</td></tr>
           <tr><td data-th="ซักรีด / โรงแรม / ใช้ทั่วไปในบ้าน" data-en="Laundry / hotels / household">ซักรีด / โรงแรม / ใช้ทั่วไปในบ้าน</td><td><b><a href="../products/safety-pins-0.html">0</a></b>–<b><a href="../products/safety-pins-1.html">1</a></b></td><td data-th="ขนาดกลาง กลัดผ้าแน่นแต่ไม่ทำลายเนื้อผ้า" data-en="Mid sizes hold firm without marking fabric">ขนาดกลาง กลัดผ้าแน่นแต่ไม่ทำลายเนื้อผ้า</td></tr>
           <tr><td data-th="ร้อยยางยืดขอบกางเกง" data-en="Threading waistband elastic">ร้อยยางยืดขอบกางเกง</td><td><b><a href="../products/safety-pins-1.html">1</a></b> / <b><a href="../products/safety-pins-3.html">3</a></b></td><td data-th="เบอร์ 1 สำหรับยางเส้นเล็ก เบอร์ 3 สำหรับยางหน้ากว้าง" data-en="1 for narrow elastic, 3 for wide">เบอร์ 1 สำหรับยางเส้นเล็ก เบอร์ 3 สำหรับยางหน้ากว้าง</td></tr>
-          <tr><td data-th="กลัดเบอร์วิ่ง (BIB) / ชุดนักเรียน / ป้ายชื่อ" data-en="Race bibs / uniforms / name tags">กลัดเบอร์วิ่ง (BIB) / ชุดนักเรียน / ป้ายชื่อ</td><td><b><a href="../products/safety-pins-2.html">2</a></b></td><td data-th="มาตรฐานงานวิ่ง ใช้ 4 ตัว/คน" data-en="Race standard — 4 per runner">มาตรฐานงานวิ่ง ใช้ 4 ตัว/คน — <a href="../products/safety-pins-running.html">คู่มือผู้จัดงานวิ่ง</a></td></tr>
+          <tr><td data-th="กลัดเบอร์วิ่ง (BIB) / ชุดนักเรียน / ป้ายชื่อ" data-en="Race bibs / uniforms / name tags">กลัดเบอร์วิ่ง (BIB) / ชุดนักเรียน / ป้ายชื่อ</td><td><b><a href="../products/safety-pins-2.html">2</a></b></td><td data-th="มาตรฐานงานวิ่ง ใช้ 4 ตัว/คน — &lt;a href=&quot;../products/safety-pins-running.html&quot;&gt;คู่มือผู้จัดงานวิ่ง&lt;/a&gt;" data-en="Race standard — 4 per runner — &lt;a href=&quot;../products/safety-pins-running.html&quot;&gt;Race-organizer guide&lt;/a&gt;">มาตรฐานงานวิ่ง ใช้ 4 ตัว/คน — <a href="../products/safety-pins-running.html">คู่มือผู้จัดงานวิ่ง</a></td></tr>
           <tr><td data-th="ควิลท์ / ผ้านวม / ยีนส์" data-en="Quilting / duvets / denim">ควิลท์ / ผ้านวม / ยีนส์</td><td><b><a href="../products/safety-pins-3.html">3</a></b></td><td data-th="ยาวพอทะลุผ้าหลายชั้น" data-en="Reaches through layered fabric">ยาวพอทะลุผ้าหลายชั้น</td></tr>
-          <tr><td data-th="ผ้าอ้อมเด็ก / ผ้าห่ม / ผ้าขนหนู" data-en="Diapers / blankets / towels">ผ้าอ้อมเด็ก / ผ้าห่ม / ผ้าขนหนู</td><td><b><a href="../products/safety-pins-4.html">4</a></b></td><td data-th="เข็มกลัดผ้าอ้อมมาตรฐาน (blanket pin)" data-en="The standard blanket/diaper pin">เข็มกลัดผ้าอ้อมมาตรฐาน (blanket pin) — <a href="../products/safety-pins-diaper.html">คู่มือผ้าอ้อม</a></td></tr>
+          <tr><td data-th="ผ้าอ้อมเด็ก / ผ้าห่ม / ผ้าขนหนู" data-en="Diapers / blankets / towels">ผ้าอ้อมเด็ก / ผ้าห่ม / ผ้าขนหนู</td><td><b><a href="../products/safety-pins-4.html">4</a></b></td><td data-th="เข็มกลัดผ้าอ้อมมาตรฐาน (blanket pin) — &lt;a href=&quot;../products/safety-pins-diaper.html&quot;&gt;คู่มือผ้าอ้อม&lt;/a&gt;" data-en="The standard blanket/diaper pin — &lt;a href=&quot;../products/safety-pins-diaper.html&quot;&gt;Diaper-pin guide&lt;/a&gt;">เข็มกลัดผ้าอ้อมมาตรฐาน (blanket pin) — <a href="../products/safety-pins-diaper.html">คู่มือผ้าอ้อม</a></td></tr>
           <tr><td data-th="งานเวที / ผ้าม่าน / คอสเพลย์" data-en="Stage / drapes / cosplay">งานเวที / ผ้าม่าน / คอสเพลย์</td><td><b><a href="../products/safety-pins-5.html">5</a></b></td><td data-th="กลัดผ้าหลายทบอยู่ ถอดไวหลังจบงาน" data-en="Holds folded drapes, quick to strike">กลัดผ้าหลายทบอยู่ ถอดไวหลังจบงาน</td></tr>
-          <tr><td data-th="ผ้าใบกันแดด / ตาข่าย / กระสอบ" data-en="Tarps / netting / sacks">ผ้าใบกันแดด / ตาข่าย / กระสอบ</td><td><b><a href="../products/safety-pins-6.html">6</a></b>–<b><a href="../products/safety-pins-7.html">7</a></b></td><td data-th="เข็มใหญ่รับแรงดึงงานกลางแจ้ง" data-en="Big pins take outdoor tension">เข็มใหญ่รับแรงดึงงานกลางแจ้ง</td></tr>
-          <tr><td data-th="พวงกุญแจ / งานคราฟต์ / ตกแต่งร้าน" data-en="Keychains / crafts / shop décor">พวงกุญแจ / งานคราฟต์ / ตกแต่งร้าน</td><td><b><a href="../products/safety-pins-7.html">7</a></b></td><td data-th="เข็มกลัดยักษ์ 8.5 ซม. ลวดหนา 1.35 มม. เห็นชัด จับถนัด" data-en="8.5 cm jumbo, 1.35 mm wire, easy to see and handle">เข็มกลัดยักษ์ 8.5 ซม. ลวดหนา 1.35 มม. เห็นชัด จับถนัด</td> <a href="../products/safety-pins-canvas.html">คู่มืองานผ้าใบ</a></td></tr>
+          <tr><td data-th="ผ้าใบกันแดด / ตาข่าย / กระสอบ" data-en="Tarps / netting / sacks">ผ้าใบกันแดด / ตาข่าย / กระสอบ</td><td><b><a href="../products/safety-pins-6.html">6</a></b>–<b><a href="../products/safety-pins-7.html">7</a></b></td><td data-th="เข็มใหญ่รับแรงดึงงานกลางแจ้ง — &lt;a href=&quot;../products/safety-pins-canvas.html&quot;&gt;คู่มืองานผ้าใบ&lt;/a&gt;" data-en="Big pins take outdoor tension — &lt;a href=&quot;../products/safety-pins-canvas.html&quot;&gt;Canvas &amp; tent guide&lt;/a&gt;">เข็มใหญ่รับแรงดึงงานกลางแจ้ง — <a href="../products/safety-pins-canvas.html">คู่มืองานผ้าใบ</a></td></tr>
+          <tr><td data-th="พวงกุญแจ / งานคราฟต์ / ตกแต่งร้าน" data-en="Keychains / crafts / shop décor">พวงกุญแจ / งานคราฟต์ / ตกแต่งร้าน</td><td><b><a href="../products/safety-pins-7.html">7</a></b></td><td data-th="เข็มกลัดยักษ์ 8.5 ซม. ลวดหนา 1.35 มม. เห็นชัด จับถนัด" data-en="8.5 cm jumbo, 1.35 mm wire, easy to see and handle">เข็มกลัดยักษ์ 8.5 ซม. ลวดหนา 1.35 มม. เห็นชัด จับถนัด</td></tr>
         </tbody>
       </table>
     </div>
@@ -169,7 +172,7 @@ table.job td b{font-family:"Kanit"}
 
     <h2 class="sec-h" data-th="วิธีวัดขนาดเข็มกลัดที่ถูกต้อง" data-en="Measuring a pin correctly">วิธีวัดขนาดเข็มกลัดที่ถูกต้อง</h2>
     <p data-th="วัดความยาวรวมจากปลายหัวฝาถึงปลายขดสปริง (ไม่ใช่เฉพาะตัวเข็ม) ตัวเลขของผู้ผลิตแต่ละเจ้าอาจต่างกัน ±2–3 มม. — ถ้าเคยใช้ของเดิมอยู่แล้วและต้องการขนาดเท่าเดิมเป๊ะ ถ่ายรูปเทียบไม้บรรทัดส่งมาทาง LINE ให้ทีมงานเทียบเบอร์ให้ได้เลย" data-en="Measure the overall length from cap tip to coil end (not just the needle). Makers vary by ±2–3 mm — if you need an exact match to pins you already use, send a photo against a ruler on LINE and we'll match the size.">วัดความยาวรวมจากปลายหัวฝาถึงปลายขดสปริง (ไม่ใช่เฉพาะตัวเข็ม) ตัวเลขของผู้ผลิตแต่ละเจ้าอาจต่างกัน ±2–3 มม. — ถ้าเคยใช้ของเดิมอยู่แล้วและต้องการขนาดเท่าเดิมเป๊ะ ถ่ายรูปเทียบไม้บรรทัดส่งมาทาง LINE ให้ทีมงานเทียบเบอร์ให้ได้เลย</p>
-    <p data-th="เกร็ดชื่อเรียก: เบอร์ 2/0 คือเบอร์ 00 และ 3/0 คือเบอร์ 000 (ชื่อเรียกต่างกันแต่ตัวเดียวกัน) ส่วนหน่วยค้าส่ง 1 พวง = 12 ตัว, 1 กุรุส = 144 ตัว" data-en="Naming trivia: 2/0 = size 00 and 3/0 = size 000. Wholesale units: a bunch is 12 pins, a gross is 144.">เกร็ดชื่อเรียก: เบอร์ 2/0 คือเบอร์ 00 และ 3/0 คือเบอร์ 000 (ชื่อเรียกต่างกันแต่ตัวเดียวกัน) ส่วนหน่วยค้าส่ง 1 พวง = 12 ตัว, 1 กุรุส = 144 ตัว — <a href="../products/safety-pins.html#size-table" data-th="ดูตารางขนาดฉบับเต็ม" data-en="full size chart">ดูตารางขนาดฉบับเต็ม</a></p>
+    <p data-th="เกร็ดชื่อเรียก: เบอร์ 2/0 คือเบอร์ 00 และ 3/0 คือเบอร์ 000 (ชื่อเรียกต่างกันแต่ตัวเดียวกัน) ส่วนหน่วยค้าส่ง 1 พวง = 12 ตัว, 1 กุรุส = 144 ตัว — &lt;a href=&quot;../products/safety-pins.html#size-table&quot;&gt;ดูตารางขนาดฉบับเต็ม&lt;/a&gt;" data-en="Naming trivia: 2/0 = size 00 and 3/0 = size 000. Wholesale units: a bunch is 12 pins, a gross is 144 — &lt;a href=&quot;../products/safety-pins.html#size-table&quot;&gt;full size chart&lt;/a&gt;.">เกร็ดชื่อเรียก: เบอร์ 2/0 คือเบอร์ 00 และ 3/0 คือเบอร์ 000 (ชื่อเรียกต่างกันแต่ตัวเดียวกัน) ส่วนหน่วยค้าส่ง 1 พวง = 12 ตัว, 1 กุรุส = 144 ตัว — <a href="../products/safety-pins.html#size-table" data-th="ดูตารางขนาดฉบับเต็ม" data-en="full size chart">ดูตารางขนาดฉบับเต็ม</a></p>
 
     <p style="font-size:.88rem;color:var(--ink-dim);margin:26px 0 0">
       <span data-th="เลือกเบอร์ได้แล้ว? " data-en="Picked a size? ">เลือกเบอร์ได้แล้ว? </span><a href="../products/safety-pins-wholesale.html" data-th="ดูจำนวนต่อกล่องและราคาส่งทุกเบอร์ →" data-en="See per-box counts and wholesale pricing →">ดูจำนวนต่อกล่องและราคาส่งทุกเบอร์ →</a>
@@ -185,18 +188,19 @@ table.job td b{font-family:"Kanit"}
   </div>
 </section>
 
+</main>
 <div id="site-footer"></div>
 
 <script>window.MTT_BASE="../";window.MTT_PAGE="pins";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=2"></script>
+<script src="../assets/js/catalog.js?v=3"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
 document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 </script>
-<script src="../assets/js/layout.js?v=2"></script>
+<script src="../assets/js/layout.js?v=3"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

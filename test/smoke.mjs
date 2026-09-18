@@ -19,6 +19,7 @@ const server = http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split("?")[0]);
   if (p.endsWith("/")) p += "index.html";
   let f = join(ROOT, p);
+  if (existsSync(f) && statSync(f).isDirectory()) f = join(f, "index.html"); // /products → products/index.html เหมือน Vercel
   if (existsSync(f) && statSync(f).isFile()) {
     res.writeHead(200, { "Content-Type": MIME[extname(f)] || "text/plain" });
     res.end(readFileSync(f));

@@ -21,13 +21,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=2">
+<link rel="stylesheet" href="../assets/css/theme.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"ร้านนี้ขายไฟฟู่ยี่ห้อ MOTO หรือเปล่า","acceptedAnswer":{"@type":"Answer","text":"ไม่ได้ขาย ม.ทวีภัณฑ์ จำหน่ายไฟฟู่ตราสิงโต M.T.T. ของเราเอง หน้านี้ทำไว้สำหรับคนที่กำลังหาไฟแช็คหัวพ่นไฟยกกล่องและอยากเทียบทางเลือก MOTO เป็นเครื่องหมายการค้าของเจ้าของแบรนด์"}},
+    {"@type":"Question","name":"ร้านนี้ขายไฟฟู่ยี่ห้อ MOTO หรือเปล่า","acceptedAnswer":{"@type":"Answer","text":"ไม่ได้ขาย ม.ทวีภัณฑ์ จำหน่ายไฟฟู่ตราสิงโต M.T.T. ของเราเอง หน้านี้ทำไว้สำหรับคนที่กำลังหาไฟแช็กหัวพ่นไฟยกกล่องและอยากเทียบทางเลือก MOTO เป็นเครื่องหมายการค้าของเจ้าของแบรนด์"}},
     {"@type":"Question","name":"ไฟฟู่ตราสิงโตราคาเท่าไหร่","acceptedAnswer":{"@type":"Answer","text":"รุ่นเล็ก MTTFF02 ปลีก 45 บาท ยกกล่อง 20 ชิ้น 480 บาท เฉลี่ย 24 บาทต่อชิ้น รุ่นใหญ่ MTTFF01 ปลีก 59 บาท ยกกล่อง 15 ชิ้น 450 บาท เฉลี่ย 30 บาทต่อชิ้น"}},
     {"@type":"Question","name":"เติมแก๊สได้ไหม ใช้แก๊สอะไร","acceptedAnswer":{"@type":"Answer","text":"เติมได้ทุกรุ่น ใช้แก๊สบิวเทนกระป๋องเติมไฟแช็กทั่วไป วาล์วเติมอยู่ใต้ฐาน เติมแล้วใช้ซ้ำได้เรื่อย ๆ"}},
     {"@type":"Question","name":"ส่งต่างจังหวัดได้ไหม","acceptedAnswer":{"@type":"Answer","text":"ส่งทั่วไทย สินค้าบรรจุแก๊สจึงส่งทางรถขนส่งที่รองรับสินค้าไวไฟ เก็บเงินปลายทางได้"}}
@@ -53,7 +53,7 @@
 .alt-hero .sub{font-size:1rem;color:var(--ink-2);max-width:640px;margin-bottom:18px}
 .pricechips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
 .pricechips .pc{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:.86rem;box-shadow:var(--shadow-sm)}
-.pricechips .pc b{font-family:"Kanit";color:var(--amber-dark)}
+.pricechips .pc b{font-family:var(--font-head);color:var(--amber-dark)}
 .hero-acts{display:flex;flex-wrap:wrap;gap:10px}
 .disc{font-size:.8rem;color:var(--ink-mute);margin-top:18px;max-width:700px;line-height:1.6}
 .why4{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
@@ -71,7 +71,7 @@
 .mcard ul{list-style:none;padding:0;margin:0 0 14px;font-size:.87rem;color:var(--ink-2)}
 .mcard ul li{padding:5px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px}
 .mcard ul li:first-child{border-top:0}
-.mcard ul li b{font-family:"Kanit";color:var(--amber-dark);white-space:nowrap}
+.mcard ul li b{font-family:var(--font-head);color:var(--amber-dark);white-space:nowrap}
 .vidwrap{border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--line);background:#000;max-width:720px;margin:0 auto}
 .vidwrap video{width:100%;height:auto;display:block}
 .cmp-teaser{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:26px 28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
@@ -83,13 +83,14 @@
 </head>
 <body>
 <div id="site-header"></div>
+<main id="main">
 
 <section class="alt-hero">
   <div class="wrap">
     <nav class="crumbs" aria-label="breadcrumb"><a href="../index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="jet-lighter.html" data-th="ไฟฟู่ / ไฟแช็ก" data-en="Jet lighters">ไฟฟู่ / ไฟแช็ก</a> › <span data-th="ทางเลือกแทน MOTO" data-en="MOTO alternative">ทางเลือกแทน MOTO</span></nav>
     <span class="eyebrow" data-th="สำหรับคนที่กำลังหาไฟฟู่ยกกล่อง" data-en="For buyers shopping jet lighters by the box">สำหรับคนที่กำลังหาไฟฟู่ยกกล่อง</span>
     <h1 data-th="หาไฟฟู่ MOTO (โมโต) อยู่? ลองไฟฟู่ตราสิงโต จากร้านสำเพ็งโดยตรง" data-en="Shopping for MOTO jet lighters? Try M.T.T. Lion brand, direct from Sampheng">หาไฟฟู่ MOTO (โมโต) อยู่? ลองไฟฟู่ตราสิงโต จากร้านสำเพ็งโดยตรง</h1>
-    <p class="sub" data-th="ไฟแช็คหัวพ่นไฟแบบเดียวกัน — เปลวเจ็ทแรงดันสูง เจอลมไม่ดับ เติมแก๊สบิวเทนใช้ซ้ำได้ ต่างกันตรงที่คุณซื้อตรงจากผู้นำเข้า ราคาต่อชิ้นประกาศชัด ไม่ต้องต่อรอง" data-en="Same kind of tool — a high-pressure jet flame that stays lit in wind and refills with butane. The difference: you buy straight from the importer, at a published per-piece price.">ไฟแช็คหัวพ่นไฟแบบเดียวกัน — เปลวเจ็ทแรงดันสูง เจอลมไม่ดับ เติมแก๊สบิวเทนใช้ซ้ำได้ ต่างกันตรงที่คุณซื้อตรงจากผู้นำเข้า ราคาต่อชิ้นประกาศชัด ไม่ต้องต่อรอง</p>
+    <p class="sub" data-th="ไฟแช็กหัวพ่นไฟแบบเดียวกัน — เปลวเจ็ทแรงดันสูง เจอลมไม่ดับ เติมแก๊สบิวเทนใช้ซ้ำได้ ต่างกันตรงที่คุณซื้อตรงจากผู้นำเข้า ราคาต่อชิ้นประกาศชัด ไม่ต้องต่อรอง" data-en="Same kind of tool — a high-pressure jet flame that stays lit in wind and refills with butane. The difference: you buy straight from the importer, at a published per-piece price.">ไฟแช็กหัวพ่นไฟแบบเดียวกัน — เปลวเจ็ทแรงดันสูง เจอลมไม่ดับ เติมแก๊สบิวเทนใช้ซ้ำได้ ต่างกันตรงที่คุณซื้อตรงจากผู้นำเข้า ราคาต่อชิ้นประกาศชัด ไม่ต้องต่อรอง</p>
     <div class="pricechips">
       <span class="pc"><span data-th="ยกกล่องเริ่ม" data-en="From">ยกกล่องเริ่ม</span> <b>฿24</b>/<span data-th="ชิ้น" data-en="pc">ชิ้น</span></span>
       <span class="pc"><span data-th="ปลีกเริ่ม" data-en="Retail from">ปลีกเริ่ม</span> <b>฿45</b></span>
@@ -143,9 +144,9 @@
       <h2 data-th="ไฟฟู่ 2 รุ่น อย่างละ 5 สี" data-en="Two models, five colours each">ไฟฟู่ 2 รุ่น อย่างละ 5 สี</h2>
     </div>
     <div class="vidwrap">
-      <video muted playsinline loop autoplay preload="metadata" poster="../assets/img/products/jet-lighter-models-poster.webp" aria-label="คลิปไฟฟู่ ตราสิงโต รุ่นเล็กและรุ่นใหญ่ ครบ 5 สี">
-        <source src="../assets/video/jet-lighter-models.webm" type="video/webm">
+      <video muted playsinline loop preload="metadata" id="modelsVideo" poster="../assets/img/products/jet-lighter-models-poster.webp" aria-label="คลิปไฟฟู่ ตราสิงโต รุ่นเล็กและรุ่นใหญ่ ครบ 5 สี">
         <source src="../assets/video/jet-lighter-models.mp4" type="video/mp4">
+        <source src="../assets/video/jet-lighter-models.webm" type="video/webm">
       </video>
     </div>
 
@@ -164,7 +165,7 @@
         </div>
       </div>
       <div class="mcard">
-        <img src="../assets/img/products/jet-large-colors.webp" alt="ไฟฟู่ตราสิงโต รุ่นใหญ่ MTTFF01 ครบ 5 สี ไฟแช็คหัวพ่นไฟ กันลม" loading="lazy">
+        <img src="../assets/img/products/jet-large-colors.webp" alt="ไฟฟู่ตราสิงโต รุ่นใหญ่ MTTFF01 ครบ 5 สี ไฟแช็กหัวพ่นไฟ กันลม" loading="lazy">
         <div class="b">
           <h3 data-th="รุ่นใหญ่ · สูง 11 ซม." data-en="Large · 11 cm">รุ่นใหญ่ · สูง 11 ซม.</h3>
           <div class="code">MTTFF01</div>
@@ -200,7 +201,7 @@
     </div>
     <div class="qa">
       <h3 data-th="ร้านนี้ขายไฟฟู่ยี่ห้อ MOTO หรือเปล่า?" data-en="Do you carry MOTO?">ร้านนี้ขายไฟฟู่ยี่ห้อ MOTO หรือเปล่า?</h3>
-      <p data-th="ไม่ได้ขาย เราจำหน่ายไฟฟู่ตราสิงโต M.T.T. ของเราเอง หน้านี้ทำไว้ให้คนที่กำลังหาไฟแช็คหัวพ่นไฟยกกล่องได้เทียบทางเลือก" data-en="No. We sell our own M.T.T. Lion-brand lighters; this page is for buyers comparing options.">ไม่ได้ขาย เราจำหน่ายไฟฟู่ตราสิงโต M.T.T. ของเราเอง หน้านี้ทำไว้ให้คนที่กำลังหาไฟแช็คหัวพ่นไฟยกกล่องได้เทียบทางเลือก</p>
+      <p data-th="ไม่ได้ขาย เราจำหน่ายไฟฟู่ตราสิงโต M.T.T. ของเราเอง หน้านี้ทำไว้ให้คนที่กำลังหาไฟแช็กหัวพ่นไฟยกกล่องได้เทียบทางเลือก" data-en="No. We sell our own M.T.T. Lion-brand lighters; this page is for buyers comparing options.">ไม่ได้ขาย เราจำหน่ายไฟฟู่ตราสิงโต M.T.T. ของเราเอง หน้านี้ทำไว้ให้คนที่กำลังหาไฟแช็กหัวพ่นไฟยกกล่องได้เทียบทางเลือก</p>
 
       <h3 data-th="เติมแก๊สได้ไหม ใช้แก๊สอะไร?" data-en="Is it refillable, and with what?">เติมแก๊สได้ไหม ใช้แก๊สอะไร?</h3>
       <p data-th="เติมได้ทุกรุ่น ใช้แก๊สบิวเทนกระป๋องเติมไฟแช็กทั่วไป วาล์วเติมอยู่ใต้ฐาน เติมแล้วใช้ซ้ำได้เรื่อย ๆ ไม่ใช่แบบใช้แล้วทิ้ง" data-en="All models refill with ordinary butane; the valve is on the base. Reusable, not disposable.">เติมได้ทุกรุ่น ใช้แก๊สบิวเทนกระป๋องเติมไฟแช็กทั่วไป วาล์วเติมอยู่ใต้ฐาน เติมแล้วใช้ซ้ำได้เรื่อย ๆ ไม่ใช่แบบใช้แล้วทิ้ง</p>
@@ -214,18 +215,37 @@
   </div>
 </section>
 
+<section style="padding-top:0"><div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2 data-th="พร้อมสั่งยกกล่อง? เลือกแพ็กเกจได้เลย" data-en="Ready to order by the box? Pick a pack">พร้อมสั่งยกกล่อง? เลือกแพ็กเกจได้เลย</h2>
+        <p data-th="บอกรุ่นและจำนวนกล่อง ทีมงานเช็คสต็อกสีและแจ้งยอดรวมพร้อมค่าส่งให้ก่อนโอน" data-en="Tell us the model and how many boxes — we check colour stock and confirm the total with shipping before you pay.">บอกรุ่นและจำนวนกล่อง ทีมงานเช็คสต็อกสีและแจ้งยอดรวมพร้อมค่าส่งให้ก่อนโอน</p>
+      </div>
+      <a class="btn btn-primary" href="jet-lighter.html#order" data-th="เลือกแพ็กเกจและสั่งซื้อ" data-en="Choose a pack and order">เลือกแพ็กเกจและสั่งซื้อ</a>
+    </div>
+</div></section>
+</main>
 <div id="site-footer"></div>
 
 <script>window.MTT_BASE="../";window.MTT_PAGE="products";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=2"></script>
+<script src="../assets/js/catalog.js?v=3"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
 document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 </script>
-<script src="../assets/js/layout.js?v=2"></script>
+<script>
+/* คลิป 2 รุ่น: เล่นเมื่อเลื่อนมาถึงเท่านั้น (เดิม autoplay ทั้งที่อยู่ใต้จอ 1,900px โหลด 1MB ทิ้ง) + เคารพ reduced-motion */
+(function(){
+  var v=document.getElementById('modelsVideo'); if(!v) return;
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if(!('IntersectionObserver' in window)){ v.play().catch(function(){}); return; }
+  new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ v.play().catch(function(){}); } else { v.pause(); } }); },{threshold:.35}).observe(v);
+})();
+</script>
+<script src="../assets/js/layout.js?v=3"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

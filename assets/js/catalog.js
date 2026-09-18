@@ -1,5 +1,5 @@
 /* ============================================================
-   ม ทวีภัณฑ์ — catalog.js
+   ม.ทวีภัณฑ์ — catalog.js
    แหล่งข้อมูลสินค้า/หมวดหมู่/ราคา "ที่เดียว" (single source of truth)
    ทุกหน้าดึงจากไฟล์นี้ — แก้ราคาที่นี่ที่เดียว มีผลทั้งเว็บ
    ค่าติดต่อ/LINE อยู่ที่ shop-config.js
@@ -164,9 +164,10 @@ window.CATALOG = (function () {
     return S.LINE_URL || "#";
   }
   // C-2: รูปสินค้า — ถ้ามี p.image ใช้รูปจริง (loading=lazy) ถ้าไม่มี fallback เป็น emoji
-  function productThumb(p, base) {
+  function productThumb(p, base, eager) {
     base = base || "";
-    if (p.image) return '<img src="' + base + p.image + '" alt="' + (p.name_th || "") + '" loading="lazy">';
+    // eager = การ์ดใบแรกที่อยู่ในจอตอนเปิดหน้า (LCP) — ห้าม lazy ไม่งั้นรอ 1.6 วิบน 4G
+    if (p.image) return '<img src="' + base + p.image + '" alt="' + (p.name_th || "") + '" width="1200" height="900"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + '>';
     return '<span class="glyph">' + (p.glyph || "📦") + '</span>';
   }
 

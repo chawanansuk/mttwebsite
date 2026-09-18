@@ -21,18 +21,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=2">
+<link rel="stylesheet" href="../assets/css/theme.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "ไฟฟู่ โมโต (MOTO) เทียบกับ ไฟฟู่ตราสิงโต M.T.T. เลือกยี่ห้อไหนดี",
-  "description": "ตารางเปรียบเทียบไฟแช็คหัวพ่นไฟ (ไฟฟู่) ยี่ห้อ MOTO กับ ตราสิงโต M.T.T. ในมุมของร้านค้าที่ซื้อไปขายต่อ",
+  "description": "ตารางเปรียบเทียบไฟแช็กหัวพ่นไฟ (ไฟฟู่) ยี่ห้อ MOTO กับ ตราสิงโต M.T.T. ในมุมของร้านค้าที่ซื้อไปขายต่อ",
   "image": "https://mtthardware.com/assets/img/products/jet-lighter-flame.webp",
   "datePublished": "2026-09-09",
   "dateModified": "2026-09-09",
-  "author": { "@type": "Organization", "name": "ม ทวีภัณฑ์ (M.T.T. Hardware)" },
-  "publisher": { "@type": "Organization", "name": "ม ทวีภัณฑ์ (M.T.T. Hardware)",
+  "author": { "@type": "Organization", "name": "ม.ทวีภัณฑ์ (M.T.T. Hardware)" },
+  "publisher": { "@type": "Organization", "name": "ม.ทวีภัณฑ์ (M.T.T. Hardware)",
     "logo": { "@type": "ImageObject", "url": "https://mtthardware.com/assets/img/apple-touch-icon.png?v=2" } },
   "mainEntityOfPage": "https://mtthardware.com/articles/moto-vs-lion-jet-lighter.html"
 }
@@ -69,22 +69,23 @@
 .art-body p.lead{font-size:1.02rem;color:var(--ink-2)}
 .sec-h{font-size:clamp(1.2rem,2.4vw,1.5rem);margin:36px 0 12px}
 .note-band{background:var(--surface);border:1px solid var(--line-strong);border-left:4px solid var(--ink-mute);border-radius:var(--radius-sm);padding:14px 18px;margin:18px 0;font-size:.86rem;color:var(--ink-dim)}
-.note-band b{font-family:"Kanit";color:var(--ink-2)}
+.note-band b{font-family:var(--font-head);color:var(--ink-2)}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+@media(max-width:600px){table.cmp td:first-child,table.cmp th:first-child{position:sticky;left:0;background:var(--surface);z-index:1;box-shadow:2px 0 6px rgba(16,26,48,.08)}}
 table.cmp{width:100%;border-collapse:collapse;font-size:.89rem;min-width:600px}
-table.cmp th{font-family:"Kanit";font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:11px 14px;vertical-align:bottom}
+table.cmp th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:11px 14px;vertical-align:bottom}
 table.cmp th.ours{background:var(--amber-dark)}
-table.cmp th small{display:block;font-family:"Anuphan";font-weight:400;font-size:.72rem;color:#c2cbde;margin-top:2px}
+table.cmp th small{display:block;font-family:var(--font-body);font-weight:400;font-size:.72rem;color:#c2cbde;margin-top:2px}
 table.cmp th.ours small{color:#d5f2e2}
 table.cmp td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}
-table.cmp td:first-child{font-family:"Kanit";font-weight:500;white-space:nowrap}
+table.cmp td:first-child{font-family:var(--font-head);font-weight:500;white-space:nowrap}
 table.cmp td.ours{background:var(--amber-soft)}
 table.cmp tr:nth-child(even) td{background:var(--bg-soft)}
 table.cmp tr:nth-child(even) td.ours{background:#d5eede}
 .math{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:8px}
 .math .m{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
-.math .m b{font-family:"Kanit";display:block;margin-bottom:6px}
-.math .m .big{font-family:"Kanit";font-size:1.6rem;color:var(--amber-dark);line-height:1.2}
+.math .m b{font-family:var(--font-head);display:block;margin-bottom:6px}
+.math .m .big{font-family:var(--font-head);font-size:1.6rem;color:var(--amber-dark);line-height:1.2}
 .math .m p{font-size:.84rem;color:var(--ink-dim);margin:6px 0 0}
 .qa{margin-top:8px}
 .qa h3{font-size:1rem;margin:18px 0 4px}
@@ -95,12 +96,13 @@ table.cmp tr:nth-child(even) td.ours{background:#d5eede}
 .nextlinks{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:18px}
 .nextlinks a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;color:var(--ink);text-decoration:none}
 .nextlinks a:hover{border-color:var(--amber);box-shadow:var(--shadow-sm)}
-.nextlinks a b{font-family:"Kanit";display:block;font-size:.95rem}
+.nextlinks a b{font-family:var(--font-head);display:block;font-size:.95rem}
 .nextlinks a span{font-size:.82rem;color:var(--ink-dim)}
 </style>
 </head>
 <body>
 <div id="site-header"></div>
+<main id="main">
 
 <section class="art-hero">
   <div class="wrap">
@@ -112,7 +114,7 @@ table.cmp tr:nth-child(even) td.ours{background:#d5eede}
 
 <section style="padding-top:6px">
   <div class="wrap art-body">
-    <p class="lead" data-th="ร้านค้าที่หาไฟแช็คหัวพ่นไฟ (ไฟฟู่) ไปขายต่อ มักเจอสองทางเลือก: ยี่ห้อที่คุ้นชื่ออย่าง MOTO (โมโต / โมโต้) ที่ขายผ่านคนกลางหลายทอด กับซื้อตรงจากร้านสำเพ็งอย่างไฟฟู่ตราสิงโต M.T.T. หน้านี้เทียบให้ครบทุกช่องที่มีผลกับต้นทุนจริง" data-en="Shops reselling jet lighters usually weigh two options: a familiar name like MOTO, sold through several middlemen, or buying direct from a Sampheng importer like M.T.T. Lion brand. Here is the side-by-side that actually affects your cost.">ร้านค้าที่หาไฟแช็คหัวพ่นไฟ (ไฟฟู่) ไปขายต่อ มักเจอสองทางเลือก: ยี่ห้อที่คุ้นชื่ออย่าง MOTO (โมโต / โมโต้) ที่ขายผ่านคนกลางหลายทอด กับซื้อตรงจากร้านสำเพ็งอย่างไฟฟู่ตราสิงโต M.T.T. หน้านี้เทียบให้ครบทุกช่องที่มีผลกับต้นทุนจริง</p>
+    <p class="lead" data-th="ร้านค้าที่หาไฟแช็กหัวพ่นไฟ (ไฟฟู่) ไปขายต่อ มักเจอสองทางเลือก: ยี่ห้อที่คุ้นชื่ออย่าง MOTO (โมโต / โมโต้) ที่ขายผ่านคนกลางหลายทอด กับซื้อตรงจากร้านสำเพ็งอย่างไฟฟู่ตราสิงโต M.T.T. หน้านี้เทียบให้ครบทุกช่องที่มีผลกับต้นทุนจริง" data-en="Shops reselling jet lighters usually weigh two options: a familiar name like MOTO, sold through several middlemen, or buying direct from a Sampheng importer like M.T.T. Lion brand. Here is the side-by-side that actually affects your cost.">ร้านค้าที่หาไฟแช็กหัวพ่นไฟ (ไฟฟู่) ไปขายต่อ มักเจอสองทางเลือก: ยี่ห้อที่คุ้นชื่ออย่าง MOTO (โมโต / โมโต้) ที่ขายผ่านคนกลางหลายทอด กับซื้อตรงจากร้านสำเพ็งอย่างไฟฟู่ตราสิงโต M.T.T. หน้านี้เทียบให้ครบทุกช่องที่มีผลกับต้นทุนจริง</p>
 
     <div class="note-band">
       <b data-th="แจ้งให้ทราบ" data-en="Disclosure">แจ้งให้ทราบ</b>
@@ -124,59 +126,59 @@ table.cmp tr:nth-child(even) td.ours{background:#d5eede}
       <table class="cmp">
         <thead><tr>
           <th data-th="หัวข้อ" data-en="Criteria">หัวข้อ</th>
-          <th>ไฟฟู่ MOTO (โมโต)<small data-th="จากประกาศขายสาธารณะ" data-en="from public listings">จากประกาศขายสาธารณะ</small></th>
           <th class="ours">ไฟฟู่ ตราสิงโต M.T.T.<small data-th="ข้อมูลจากหน้าร้านเราเอง" data-en="our own shop data">ข้อมูลจากหน้าร้านเราเอง</small></th>
+          <th>ไฟฟู่ MOTO (โมโต)<small data-th="จากประกาศขายสาธารณะ" data-en="from public listings">จากประกาศขายสาธารณะ</small></th>
         </tr></thead>
         <tbody>
           <tr>
             <td data-th="รุ่นที่พบบ่อย" data-en="Common models">รุ่นที่พบบ่อย</td>
-            <td data-th="MT-013, MT-019" data-en="MT-013, MT-019">MT-013, MT-019</td>
-            <td class="ours" data-th="MTTFF01 (ใหญ่ 11 ซม.), MTTFF02 (เล็ก 8 ซม.)" data-en="MTTFF01 (11 cm), MTTFF02 (8 cm)">MTTFF01 (ใหญ่ 11 ซม.), MTTFF02 (เล็ก 8 ซม.)</td>
+          <td class="ours" data-th="MTTFF01 (ใหญ่ 11 ซม.), MTTFF02 (เล็ก 8 ซม.)" data-en="MTTFF01 (11 cm), MTTFF02 (8 cm)">MTTFF01 (ใหญ่ 11 ซม.), MTTFF02 (เล็ก 8 ซม.)</td>
+          <td data-th="MT-013, MT-019" data-en="MT-013, MT-019">MT-013, MT-019</td>
           </tr>
           <tr>
             <td data-th="บรรจุต่อกล่อง" data-en="Pieces per box">บรรจุต่อกล่อง</td>
-            <td data-th="ส่วนใหญ่ประกาศ 25 ชิ้น/กล่อง (บางเจ้าต่างออกไป)" data-en="Mostly listed at 25 pcs/box (varies by seller)">ส่วนใหญ่ประกาศ 25 ชิ้น/กล่อง (บางเจ้าต่างออกไป)</td>
-            <td class="ours" data-th="รุ่นใหญ่ 15 ชิ้น · รุ่นเล็ก 20 ชิ้น" data-en="Large 15 pcs · Compact 20 pcs">รุ่นใหญ่ 15 ชิ้น · รุ่นเล็ก 20 ชิ้น</td>
+          <td class="ours" data-th="รุ่นใหญ่ 15 ชิ้น · รุ่นเล็ก 20 ชิ้น" data-en="Large 15 pcs · Compact 20 pcs">รุ่นใหญ่ 15 ชิ้น · รุ่นเล็ก 20 ชิ้น</td>
+          <td data-th="ส่วนใหญ่ประกาศ 25 ชิ้น/กล่อง (บางเจ้าต่างออกไป)" data-en="Mostly listed at 25 pcs/box (varies by seller)">ส่วนใหญ่ประกาศ 25 ชิ้น/กล่อง (บางเจ้าต่างออกไป)</td>
           </tr>
           <tr>
             <td data-th="ราคาต่อชิ้น (ยกกล่อง)" data-en="Per-piece (by the box)">ราคาต่อชิ้น (ยกกล่อง)</td>
-            <td data-th="ไม่ประกาศเป็นมาตรฐาน ต่างกันไปตามผู้ขายและล็อต ต้องสอบถามทีละเจ้า" data-en="No standard published price — differs per seller and batch, ask each one">ไม่ประกาศเป็นมาตรฐาน ต่างกันไปตามผู้ขายและล็อต ต้องสอบถามทีละเจ้า</td>
-            <td class="ours"><b>฿24</b> <span data-th="(รุ่นเล็ก) · " data-en="(compact) · ">(รุ่นเล็ก) · </span><b>฿30</b> <span data-th="(รุ่นใหญ่) ประกาศไว้ตรงหน้าเว็บ" data-en="(large) — published on this site">(รุ่นใหญ่) ประกาศไว้ตรงหน้าเว็บ</span></td>
+          <td class="ours"><b>฿24</b> <span data-th="(รุ่นเล็ก) · " data-en="(compact) · ">(รุ่นเล็ก) · </span><b>฿30</b> <span data-th="(รุ่นใหญ่) ประกาศไว้ตรงหน้าเว็บ" data-en="(large) — published on this site">(รุ่นใหญ่) ประกาศไว้ตรงหน้าเว็บ</span></td>
+          <td data-th="ไม่ประกาศเป็นมาตรฐาน ต่างกันไปตามผู้ขายและล็อต ต้องสอบถามทีละเจ้า" data-en="No standard published price — differs per seller and batch, ask each one">ไม่ประกาศเป็นมาตรฐาน ต่างกันไปตามผู้ขายและล็อต ต้องสอบถามทีละเจ้า</td>
           </tr>
           <tr>
             <td data-th="ราคาปลีก 1 ชิ้น" data-en="Single-piece retail">ราคาปลีก 1 ชิ้น</td>
-            <td data-th="แล้วแต่ผู้ขายปลายทาง" data-en="Set by the end seller">แล้วแต่ผู้ขายปลายทาง</td>
-            <td class="ours" data-th="฿45 (เล็ก) / ฿59 (ใหญ่) — ซื้อ 3 ชิ้น ฿100" data-en="฿45 (compact) / ฿59 (large) — 3 for ฿100">฿45 (เล็ก) / ฿59 (ใหญ่) — ซื้อ 3 ชิ้น ฿100</td>
+          <td class="ours" data-th="฿45 (เล็ก) / ฿59 (ใหญ่) — ซื้อ 3 ชิ้น ฿100" data-en="฿45 (compact) / ฿59 (large) — 3 for ฿100">฿45 (เล็ก) / ฿59 (ใหญ่) — ซื้อ 3 ชิ้น ฿100</td>
+          <td data-th="แล้วแต่ผู้ขายปลายทาง" data-en="Set by the end seller">แล้วแต่ผู้ขายปลายทาง</td>
           </tr>
           <tr>
             <td data-th="ชนิดเปลวไฟ" data-en="Flame type">ชนิดเปลวไฟ</td>
-            <td data-th="หัวพ่นเจ็ท กันลม" data-en="Jet torch, windproof">หัวพ่นเจ็ท กันลม</td>
-            <td class="ours" data-th="หัวพ่นเจ็ทแรงดันสูง เจอลมไม่ดับ" data-en="High-pressure jet, stays lit in wind">หัวพ่นเจ็ทแรงดันสูง เจอลมไม่ดับ</td>
+          <td class="ours" data-th="หัวพ่นเจ็ทแรงดันสูง เจอลมไม่ดับ" data-en="High-pressure jet, stays lit in wind">หัวพ่นเจ็ทแรงดันสูง เจอลมไม่ดับ</td>
+          <td data-th="หัวพ่นเจ็ท กันลม" data-en="Jet torch, windproof">หัวพ่นเจ็ท กันลม</td>
           </tr>
           <tr>
             <td data-th="เติมแก๊สใช้ซ้ำ" data-en="Refillable">เติมแก๊สใช้ซ้ำ</td>
-            <td data-th="แล้วแต่รุ่น — สอบถามผู้ขาย" data-en="Depends on model — ask the seller">แล้วแต่รุ่น — สอบถามผู้ขาย</td>
-            <td class="ours" data-th="เติมบิวเทนได้ทุกรุ่น มีวาล์วเติมใต้ฐาน" data-en="Every model refills with butane, valve on the base">เติมบิวเทนได้ทุกรุ่น มีวาล์วเติมใต้ฐาน</td>
+          <td class="ours" data-th="เติมบิวเทนได้ทุกรุ่น มีวาล์วเติมใต้ฐาน" data-en="Every model refills with butane, valve on the base">เติมบิวเทนได้ทุกรุ่น มีวาล์วเติมใต้ฐาน</td>
+          <td data-th="แล้วแต่รุ่น — สอบถามผู้ขาย" data-en="Depends on model — ask the seller">แล้วแต่รุ่น — สอบถามผู้ขาย</td>
           </tr>
           <tr>
             <td data-th="สีในกล่อง" data-en="Colours per box">สีในกล่อง</td>
-            <td data-th="แล้วแต่ล็อตที่เข้ามา" data-en="Whatever the batch carries">แล้วแต่ล็อตที่เข้ามา</td>
-            <td class="ours" data-th="5 สีทั้งสองรุ่น เลือกจำนวนแต่ละสีได้ตอนสั่ง" data-en="5 colours in both models — pick the mix when ordering">5 สีทั้งสองรุ่น เลือกจำนวนแต่ละสีได้ตอนสั่ง</td>
+          <td class="ours" data-th="5 สีทั้งสองรุ่น เลือกจำนวนแต่ละสีได้ตอนสั่ง" data-en="5 colours in both models — pick the mix when ordering">5 สีทั้งสองรุ่น เลือกจำนวนแต่ละสีได้ตอนสั่ง</td>
+          <td data-th="แล้วแต่ล็อตที่เข้ามา" data-en="Whatever the batch carries">แล้วแต่ล็อตที่เข้ามา</td>
           </tr>
           <tr>
             <td data-th="มาตรฐาน" data-en="Standard">มาตรฐาน</td>
-            <td data-th="สอบถามผู้ขาย" data-en="Ask the seller">สอบถามผู้ขาย</td>
-            <td class="ours" data-th="ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553" data-en="Gas lighter per TIS 879-2553">ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553</td>
+          <td class="ours" data-th="ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553" data-en="Gas lighter per TIS 879-2553">ไฟแช็กแก๊สตามมาตรฐาน มอก. 879-2553</td>
+          <td data-th="สอบถามผู้ขาย" data-en="Ask the seller">สอบถามผู้ขาย</td>
           </tr>
           <tr>
             <td data-th="ซื้อจากใคร" data-en="Who you buy from">ซื้อจากใคร</td>
-            <td data-th="ร้านค้าส่งและมาร์เก็ตเพลสหลายเจ้า ผ่านคนกลาง" data-en="Various wholesalers and marketplaces, via middlemen">ร้านค้าส่งและมาร์เก็ตเพลสหลายเจ้า ผ่านคนกลาง</td>
-            <td class="ours" data-th="ซื้อตรงจากหน้าร้านสำเพ็ง ไม่ผ่านคนกลาง" data-en="Direct from the Sampheng shop, no middleman">ซื้อตรงจากหน้าร้านสำเพ็ง ไม่ผ่านคนกลาง</td>
+          <td class="ours" data-th="ซื้อตรงจากหน้าร้านสำเพ็ง ไม่ผ่านคนกลาง" data-en="Direct from the Sampheng shop, no middleman">ซื้อตรงจากหน้าร้านสำเพ็ง ไม่ผ่านคนกลาง</td>
+          <td data-th="ร้านค้าส่งและมาร์เก็ตเพลสหลายเจ้า ผ่านคนกลาง" data-en="Various wholesalers and marketplaces, via middlemen">ร้านค้าส่งและมาร์เก็ตเพลสหลายเจ้า ผ่านคนกลาง</td>
           </tr>
           <tr>
             <td data-th="ถามสต็อกได้ที่ไหน" data-en="Checking stock">ถามสต็อกได้ที่ไหน</td>
-            <td data-th="แล้วแต่ช่องทางที่สั่ง" data-en="Depends on the channel">แล้วแต่ช่องทางที่สั่ง</td>
-            <td class="ours" data-th="ทัก LINE ถามหน้าร้านโดยตรง แจ้งของจริงที่มี" data-en="Message the shop on LINE — real stock, real answer">ทัก LINE ถามหน้าร้านโดยตรง แจ้งของจริงที่มี</td>
+          <td class="ours" data-th="ทัก LINE ถามหน้าร้านโดยตรง แจ้งของจริงที่มี" data-en="Message the shop on LINE — real stock, real answer">ทัก LINE ถามหน้าร้านโดยตรง แจ้งของจริงที่มี</td>
+          <td data-th="แล้วแต่ช่องทางที่สั่ง" data-en="Depends on the channel">แล้วแต่ช่องทางที่สั่ง</td>
           </tr>
         </tbody>
       </table>
@@ -203,7 +205,7 @@ table.cmp tr:nth-child(even) td.ours{background:#d5eede}
     </div>
 
     <h2 class="sec-h" data-th="แล้วควรเลือกอันไหน" data-en="So which one?">แล้วควรเลือกอันไหน</h2>
-    <p data-th="ถ้าลูกค้าหน้าร้านของคุณเจาะจงยี่ห้อ MOTO มาแล้ว การหาของยี่ห้อนั้นย่อมตรงความต้องการที่สุด แต่ถ้าลูกค้าถามหาแค่ ไฟฟู่ ไฟแช็คหัวพ่นไฟ ที่จุดติดกลางลมและเติมแก๊สได้ สิ่งที่ตัดสินคือ ราคาต่อชิ้นที่แน่นอน ของมีจริงในสต็อก และคนขายที่ตามเรื่องได้ — สามข้อนี้คือจุดที่การซื้อตรงจากร้านสำเพ็งได้เปรียบ" data-en="If your customers ask for MOTO by name, get MOTO. But if they just want a windproof, refillable jet lighter, what decides is a firm per-piece price, stock that actually exists, and a seller you can reach — that's where buying direct from Sampheng wins.">ถ้าลูกค้าหน้าร้านของคุณเจาะจงยี่ห้อ MOTO มาแล้ว การหาของยี่ห้อนั้นย่อมตรงความต้องการที่สุด แต่ถ้าลูกค้าถามหาแค่ "ไฟฟู่ ไฟแช็คหัวพ่นไฟ" ที่จุดติดกลางลมและเติมแก๊สได้ สิ่งที่ตัดสินคือ ราคาต่อชิ้นที่แน่นอน ของมีจริงในสต็อก และคนขายที่ตามเรื่องได้ — สามข้อนี้คือจุดที่การซื้อตรงจากร้านสำเพ็งได้เปรียบ</p>
+    <p data-th="ถ้าลูกค้าหน้าร้านของคุณเจาะจงยี่ห้อ MOTO มาแล้ว การหาของยี่ห้อนั้นย่อมตรงความต้องการที่สุด แต่ถ้าลูกค้าถามหาแค่ ไฟฟู่ ไฟแช็กหัวพ่นไฟ ที่จุดติดกลางลมและเติมแก๊สได้ สิ่งที่ตัดสินคือ ราคาต่อชิ้นที่แน่นอน ของมีจริงในสต็อก และคนขายที่ตามเรื่องได้ — สามข้อนี้คือจุดที่การซื้อตรงจากร้านสำเพ็งได้เปรียบ" data-en="If your customers ask for MOTO by name, get MOTO. But if they just want a windproof, refillable jet lighter, what decides is a firm per-piece price, stock that actually exists, and a seller you can reach — that's where buying direct from Sampheng wins.">ถ้าลูกค้าหน้าร้านของคุณเจาะจงยี่ห้อ MOTO มาแล้ว การหาของยี่ห้อนั้นย่อมตรงความต้องการที่สุด แต่ถ้าลูกค้าถามหาแค่ "ไฟฟู่ ไฟแช็กหัวพ่นไฟ" ที่จุดติดกลางลมและเติมแก๊สได้ สิ่งที่ตัดสินคือ ราคาต่อชิ้นที่แน่นอน ของมีจริงในสต็อก และคนขายที่ตามเรื่องได้ — สามข้อนี้คือจุดที่การซื้อตรงจากร้านสำเพ็งได้เปรียบ</p>
 
     <h2 class="sec-h" data-th="คำถามที่ถามกันบ่อย" data-en="Frequently asked">คำถามที่ถามกันบ่อย</h2>
     <div class="qa">
@@ -237,18 +239,19 @@ table.cmp tr:nth-child(even) td.ours{background:#d5eede}
   </div>
 </section>
 
+</main>
 <div id="site-footer"></div>
 
 <script>window.MTT_BASE="../";window.MTT_PAGE="products";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=2"></script>
+<script src="../assets/js/catalog.js?v=3"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
 document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 </script>
-<script src="../assets/js/layout.js?v=2"></script>
+<script src="../assets/js/layout.js?v=3"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

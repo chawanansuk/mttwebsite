@@ -1,16 +1,11 @@
 /* ============================================================
-   สร้างหน้าหมวดเครื่องมือ WYNNTOOLS จาก data/wynn-tools.json
-   รันด้วย: node _gen-tool-pages.mjs
+   สร้างหน้าหมวดเครื่องมือ WYNNTOOLS / ตรา M.T.T. จาก data/wynn-tools.json
+   รันด้วย: node _gen-tool-pages.mjs   (หรือ npm run gen)
+   โค้ดตาราง/หัว/สคริปต์ที่ใช้ร่วมกับ mtt-brand.html อยู่ใน _gen-lib.mjs
    ============================================================ */
-import { readFileSync, writeFileSync } from "fs";
+import { writeFileSync } from "fs";
+import { SITE, DATA, esc, bi, mergeGroups, groupHTML, grpNavHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML } from "./_gen-lib.mjs";
 
-const SITE = "https://mtthardware.com";
-const DATA = JSON.parse(readFileSync("data/wynn-tools.json", "utf8"));
-
-const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-const jstr = (s) => JSON.stringify(s);
-
-/* meta ต่อหมวด — title ≤62, description ≤155 (เกณฑ์เดียวกับ smoke test) */
 const META = {
   holding: {
     file: "tools-holding.html",
@@ -157,82 +152,26 @@ const BRAND = {
 };
 const brandOf = (id) => BRAND[id] || { th: "WYNNTOOLS", en: "WYNNTOOLS", eyebrow_th: "WYNNTOOLS (วินส์ทูลส์)", eyebrow_en: "WYNNTOOLS" };
 
-const NAV = Object.entries(META).map(([id, m]) => ({ id, file: m.file, th: DATA.categories.find((c) => c.id === id)?.th || id }));
-
-function rows(items, withPics, brandTh) {
-  /* ตระกูลสินค้า = รายการที่ชื่อไทย+อังกฤษเดียวกันและเรียงติดกัน เช่น ลูกบล็อกสั้น 1/2" 11 เบอร์
-     พิมพ์ชื่อแค่แถวแรกของตระกูล แถวที่เหลือเว้นว่าง ลดการซ้ำ 43% ของทั้งเว็บ
-     ไม่ใช้ rowspan เพราะช่องค้นหาซ่อนแถวได้ แล้วตารางจะเพี้ยน */
-  const fams = [];
-  for (const x of items) {
-    const last = fams[fams.length - 1];
-    if (last && last.th === x.th && last.en === x.en) last.items.push(x);
-    else fams.push({ th: x.th, en: x.en, items: [x] });
-  }
-  let out = [];
-  fams.forEach((f, fi) => {
-    const samePic = f.items.length > 1 && f.items.some((x) => x.pic_same);
-    f.items.forEach((x, xi) => {
-      const lead = xi === 0;
-      const ask = `สอบถามราคา ${x.code} ${x.th}${x.size ? " (" + x.size + ")" : ""}`;
-      const note = x.notes_th ? `<div class="note">${esc(x.notes_th)}</div>` : "";
-      /* รูปตัวแทน: โรงงานถ่ายรูปเดียวใช้ทั้งตระกูล เอาไปวางทุกแถวจะกลายเป็นแถว 8 มม. โชว์รูปประแจ 19 มม. */
-      const showPic = samePic ? lead : true;
-      const pic = !withPics ? "" : ((showPic && x.img)
-        ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(x.th)}${samePic ? "" : " " + esc(x.code)} ${esc(brandTh)}" width="320" height="240" loading="lazy"></a></td>`
-        : `\n            <td class="pic"></td>`);
-      const famnote = (lead && samePic)
-        ? `<div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด" data-en="Every size in this family looks alike; see the size column for the actual size.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด — ดูขนาดจริงที่คอลัมน์ขนาด</div>`
-        : "";
-      const nameHTML = lead ? `<b>${esc(x.th)}</b><small>${esc(x.en)}</small>` : "";
-      out.push(`          <tr${lead ? ' class="fam-lead"' : ""} data-fam="${fi}" data-nth="${esc(x.th)}" data-nen="${esc(x.en)}">${pic}
-            <td class="code"><a data-line-ask="${esc(ask)}" href="#" target="_blank" rel="noopener">${esc(x.code)}</a></td>
-            <td class="nm"><span class="nmtxt">${nameHTML}</span>${famnote}${note}</td>
-            <td>${esc(x.size)}</td>
-            <td>${esc(x.pcs)}</td>
-            <td>${esc(x.mat || "")}</td>
-          </tr>`);
-    });
-  });
-  return out.join("\n");
-}
-
-function groupHTML(g, i, withPics, brandTh) {
-  const notes = (g.notes_th || []).map((n) => `<li>${esc(n)}</li>`).join("");
-  return `    <h3 class="grp-h" id="g${i}">${esc(g.th)} <span>${esc(g.en)}</span> <em>${g.items.length} รายการ</em></h3>
-${g.mat ? `    <p class="grp-mat"><span data-th="วัสดุ" data-en="Material">วัสดุ</span>: ${esc(g.mat)}</p>` : ""}
-${notes ? `    <ul class="grp-notes">${notes}</ul>` : ""}
-    <div class="tblwrap" id="tw${i}">
-      <table class="tools${withPics ? " haspic" : ""}">
-        <thead><tr>
-${withPics ? `          <th class="pic" data-th="รูป" data-en="Photo">รูป</th>\n` : ""}          <th data-th="รหัส" data-en="Item no.">รหัส</th>
-          <th data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</th>
-          <th data-th="ขนาด" data-en="Size">ขนาด</th>
-          <th data-th="จำนวน/ลัง" data-en="Per carton">จำนวน/ลัง</th>
-          <th data-th="วัสดุ" data-en="Steel">วัสดุ</th>
-        </tr></thead>
-        <tbody>
-${rows(g.items, withPics, brandTh)}
-        </tbody>
-      </table>
-    </div>`;
-}
+const NAV = Object.entries(META).map(([id, m]) => { const c = DATA.categories.find((c) => c.id === id); return { id, file: m.file, th: c?.th || id, en: c?.en || "" }; });
 
 function page(cat) {
   const m = META[cat.id];
-  const total = cat.groups.reduce((n, g) => n + g.items.length, 0);
-  const nPics = cat.groups.reduce((n, g) => n + g.items.filter((x) => x.img).length, 0);
-  const withPics = nPics > 0;
+  const b = brandOf(cat.id);
+  const isMTT = !!BRAND[cat.id];
+  const groups = mergeGroups(cat.groups);
+  const total = groups.reduce((n, g) => n + g.items.length, 0);
   const other = NAV.filter((n) => n.id !== cat.id);
   const url = `${SITE}/products/${m.file}`;
 
   const itemList = {
     "@context": "https://schema.org", "@type": "ItemList",
-    name: `${cat.th} ${brandOf(cat.id).th}`,
+    name: `${cat.th} ${b.th}`,
     description: m.desc,
     numberOfItems: total,
-    itemListElement: cat.groups.map((g, i) => ({
-      "@type": "ListItem", position: i + 1, name: `${g.th} (${g.en})`,
+    itemListElement: groups.map((g, i) => ({
+      "@type": "ListItem", position: i + 1,
+      name: g.en ? `${g.th} (${g.en})` : g.th,          /* กลุ่มที่ไม่มีชื่ออังกฤษเคยออกมาเป็น "(undefined)" */
+      url: `${url}#g${i}`,
       description: `${g.items.length} รายการ${g.mat ? " · วัสดุ " + g.mat : ""}`,
     })),
   };
@@ -240,104 +179,41 @@ function page(cat) {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "หน้าแรก", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "เครื่องมือช่าง WYNNTOOLS", item: `${SITE}/products/tools.html` },
+      { "@type": "ListItem", position: 2, name: "เครื่องมือช่าง", item: `${SITE}/products/tools.html` },
       { "@type": "ListItem", position: 3, name: cat.th, item: url },
     ],
   };
 
-  return `<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
-<title>${esc(m.title)}</title>
-<meta name="description" content="${esc(m.desc)}">
-<meta name="keywords" content="${esc(m.kw)}">
-<link rel="canonical" href="${url}">
-<meta property="og:title" content="${esc(cat.th)} ${esc(brandOf(cat.id).th)} — ${total} รายการ พร้อมรหัสและสเปค">
-<meta property="og:description" content="${esc(m.desc.slice(0, 110))}">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="th_TH">
-<meta property="og:url" content="${url}">
-<meta property="og:image" content="${SITE}/assets/img/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="../assets/img/favicon.svg?v=2" type="image/svg+xml">
-<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=2">
-<meta name="theme-color" content="#101a30">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=2">
-<script type="application/ld+json">
-${JSON.stringify(crumbs, null, 2)}
-</script>
-<script type="application/ld+json">
-${JSON.stringify(itemList, null, 2)}
-</script>
-<style>
-.t-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.16),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:46px 0 24px}
-.crumbs{font-size:.82rem;color:var(--ink-mute);margin-bottom:14px}
-.crumbs a{color:var(--ink-mute)}
-.t-hero h1{font-size:clamp(1.6rem,3.4vw,2.4rem);margin:6px 0 8px}
-.t-hero .muted{max-width:740px;margin:0}
-.trust{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 0}
-.trust .badge{font-size:.83rem;padding:7px 14px}
-.catnav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
-.catnav a{font-size:.85rem;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink-2);text-decoration:none}
-.catnav a:hover{border-color:var(--amber);color:var(--amber-dark)}
-.catnav a.on{background:var(--navy);border-color:var(--navy);color:#fff}
-.findbar{position:sticky;top:0;z-index:5;background:var(--bg);padding:14px 0 10px;border-bottom:1px solid var(--line)}
-.findbar input{width:100%;max-width:460px;padding:12px 16px;border:1px solid var(--line-strong);border-radius:var(--radius-sm);font:inherit;font-size:.95rem;background:var(--surface)}
-.findbar input:focus{outline:2px solid var(--amber);border-color:transparent}
-.findbar .hit{font-size:.83rem;color:var(--ink-mute);margin-top:8px}
-.grp-h{font-size:clamp(1.05rem,2.1vw,1.3rem);margin:34px 0 6px;scroll-margin-top:80px}
-.grp-h span{font-family:"Anuphan";font-weight:500;font-size:.8rem;color:var(--ink-mute);display:block}
-.grp-h em{font-style:normal;font-family:"Anuphan";font-size:.78rem;color:var(--amber-dark);background:var(--amber-soft);border-radius:999px;padding:2px 10px;vertical-align:middle}
-.grp-mat{font-size:.85rem;color:var(--ink-dim);margin:0 0 6px}
-.grp-notes{margin:0 0 12px;padding-left:20px;font-size:.85rem;color:var(--ink-dim)}
-.grp-notes li{padding:2px 0}\ntable.tools tr.fam-lead td{border-top:2px solid var(--line-strong)}\ntable.tools tr.fam-lead:first-child td{border-top:0}\ntable.tools td.nm .famnote{font-size:.78rem;color:var(--amber-dark);margin-top:4px;max-width:320px}
-.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
-table.tools{width:100%;border-collapse:collapse;font-size:.88rem;min-width:660px}
-table.tools.haspic{min-width:740px}
-table.tools th{font-family:"Kanit";font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap;position:sticky;top:0}
-table.tools td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
-table.tools tr:nth-child(even) td{background:var(--bg-soft)}
-table.tools th.pic{width:88px}
-table.tools td.pic{width:88px;padding:8px 10px}
-table.tools td.pic img{width:72px;height:54px;object-fit:contain;display:block;background:#fff;border:1px solid var(--line);border-radius:8px}
-table.tools td.pic a:hover img{border-color:var(--amber)}
-table.tools td.code a{font-family:"Kanit";font-weight:600;color:var(--amber-dark);white-space:nowrap;text-decoration:none;border-bottom:1px dashed var(--amber)}
-table.tools td.code a:hover{background:var(--amber-soft)}
-table.tools td b{font-family:"Kanit";font-weight:500;display:block}
-table.tools td small{color:var(--ink-mute);font-size:.78rem}
-table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-width:320px}
-.cta-band{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:28px;margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
-.cta-band h2{color:#fff;font-size:1.25rem;margin:0 0 4px}
-.cta-band p{color:#c2cbde;margin:0;font-size:.9rem}
-@media(max-width:600px){.findbar{position:static}table.tools td .note{max-width:none}}
-</style>
-</head>
+  const head = headHTML({
+    title: m.title, desc: m.desc, kw: m.kw, url,
+    ogTitle: `${cat.th} ${b.th} — ${total} รายการ พร้อมรหัสและสเปค`,
+    ogDesc: m.desc.slice(0, 110),
+    ogImage: `${SITE}/assets/img/og-image.png`,
+    ld: [crumbs, itemList],
+  });
+
+  return `${head}
 <body>
 <div id="site-header"></div>
-
-<section class="t-hero">
+<main id="main">
+<section class="t-hero${isMTT ? " mtt" : ""}">
   <div class="wrap">
-    <nav class="crumbs" aria-label="breadcrumb"><a href="../index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="tools.html" data-th="เครื่องมือช่าง" data-en="Hand tools">เครื่องมือช่าง</a> › <span>${esc(cat.th)}</span></nav>
-    <span class="eyebrow" data-th="${esc(m.eyebrow_th)} · ${esc(brandOf(cat.id).eyebrow_th)}" data-en="${esc(m.eyebrow_en)} · ${esc(brandOf(cat.id).eyebrow_en)}">${esc(m.eyebrow_th)} · ${esc(brandOf(cat.id).eyebrow_th)}</span>
-    <h1>${esc(cat.th)} ${esc(brandOf(cat.id).th)}</h1>
+${crumbsHTML(`<a href="tools.html" data-th="เครื่องมือช่าง" data-en="Hand tools">เครื่องมือช่าง</a>`, cat.th)}
+    <span class="eyebrow" data-th="${esc(m.eyebrow_th)} · ${esc(b.eyebrow_th)}" data-en="${esc(m.eyebrow_en)} · ${esc(b.eyebrow_en)}">${esc(m.eyebrow_th)} · ${esc(b.eyebrow_th)}</span>
+    <h1>${bi(cat.th, cat.en)} ${bi(b.th, b.en)}</h1>
     <p class="muted" data-th="${esc(m.lead_th)}" data-en="${esc(m.lead_en)}">${esc(m.lead_th)}</p>
     <div class="trust">
-      <span class="badge">📋 ${total} <span data-th="รายการ" data-en="items">รายการ</span></span>
-${withPics ? `      <span class="badge">📷 ` + nPics + ` <span data-th="รายการมีรูปสินค้า" data-en="with product photos">รายการมีรูปสินค้า</span></span>\n` : ""}
-      <span class="badge" data-th="✔ ผู้นำเข้าโดยตรง" data-en="✔ Direct importer">✔ ผู้นำเข้าโดยตรง</span>
+      <span class="badge">📋 ${total} ${bi("รายการ", "items")}</span>
+${isMTT
+    ? `      <span class="badge lion" data-th="🦁 สินค้าตรา M.T.T. ของร้าน" data-en="🦁 Our own M.T.T. brand">🦁 สินค้าตรา M.T.T. ของร้าน</span>`
+    : `      <span class="badge" data-th="✔ ผู้นำเข้าโดยตรง" data-en="✔ Direct importer">✔ ผู้นำเข้าโดยตรง</span>`}
       <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
       <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Nationwide">🚚 ส่งทั่วไทย</span>
     </div>
-    <nav class="catnav" aria-label="หมวดเครื่องมือ">
+${isMTT ? `    <p class="brand-link"><a href="mtt-brand.html" data-th="ดูสินค้าตรา M.T.T. ทั้งหมด →" data-en="All M.T.T. brand products →">ดูสินค้าตรา M.T.T. ทั้งหมด →</a></p>\n` : ""}    <nav class="catnav" aria-label="หมวดเครื่องมือ">
       <a href="tools.html" data-th="ทุกหมวด" data-en="All categories">ทุกหมวด</a>
-      <a class="on" aria-current="page" href="${m.file}">${esc(cat.th)}</a>
-${other.map((n) => `      <a href="${n.file}">${esc(n.th)}</a>`).join("\n")}
+      <a class="on" aria-current="page" href="${m.file}" data-th="${esc(cat.th)}" data-en="${esc(cat.en || cat.th)}">${esc(cat.th)}</a>
+${other.map((n) => `      <a href="${n.file}" data-th="${esc(n.th)}" data-en="${esc(n.en || n.th)}">${esc(n.th)}</a>`).join("\n")}
     </nav>
   </div>
 </section>
@@ -346,86 +222,22 @@ ${other.map((n) => `      <a href="${n.file}">${esc(n.th)}</a>`).join("\n")}
   <div class="wrap">
     <div class="findbar">
       <label class="vh" for="findInput" data-th="ค้นหาในหมวดนี้" data-en="Search this category">ค้นหาในหมวดนี้</label>
-      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น ${esc(cat.groups[0].items[0].code)} หรือ ${esc(cat.groups[0].items[0].th.slice(0, 12))}">
+      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น ${esc(groups[0].items[0].code)} หรือ ${esc(groups[0].items[0].th.slice(0, 12))}">
       <div class="hit" id="findHit" hidden></div>
     </div>
+${grpNavHTML(groups)}
 
     <h2 class="vh">${esc(cat.th)} — ${total} รายการ</h2>
-${cat.groups.map((g, i) => groupHTML(g, i, withPics, brandOf(cat.id).th)).join("\n\n")}
+${groups.map((g, i) => groupHTML(g, i, b.th)).join("\n\n")}
 
-    <div class="cta-band">
-      <div>
-        <h2 data-th="เจอรหัสที่ต้องการแล้ว? กดที่รหัสเพื่อถามราคา" data-en="Found your item number? Tap it to ask price">เจอรหัสที่ต้องการแล้ว? กดที่รหัสเพื่อถามราคา</h2>
-        <p data-th="กดที่รหัสสินค้าในตาราง ระบบจะเปิด LINE พร้อมข้อความให้แล้ว หรือทักมาบอกรายการที่ต้องการก็ได้ ทีมงานเช็คสต็อกและแจ้งราคาส่งให้" data-en="Tap any item number and LINE opens with the message ready — or just tell us what you need and we'll check stock and quote.">กดที่รหัสสินค้าในตาราง ระบบจะเปิด LINE พร้อมข้อความให้แล้ว หรือทักมาบอกรายการที่ต้องการก็ได้ ทีมงานเช็คสต็อกและแจ้งราคาส่งให้</p>
-      </div>
-      <a class="btn btn-primary" data-line-ask="สอบถามราคา${esc(brandOf(cat.id).th === "WYNNTOOLS" ? "เครื่องมือ WYNNTOOLS หมวด" : "")}${esc(cat.th)}" href="#" target="_blank" rel="noopener" data-th="ทัก LINE ถามราคา" data-en="Ask on LINE">ทัก LINE ถามราคา</a>
-    </div>
+${ctaBandHTML("เจอรหัสที่ต้องการแล้ว? กดที่รหัสเพื่อถามราคา", "Found your item number? Tap it to ask price", `สอบถามราคา${b.th === "WYNNTOOLS" ? "เครื่องมือ WYNNTOOLS หมวด" : ""}${cat.th}`)}
   </div>
 </section>
+</main>
 
 <div id="site-footer"></div>
 
-<script>window.MTT_BASE="../";window.MTT_PAGE="tools";</script>
-<script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=2"></script>
-<script src="../assets/js/cart.js?v=2"></script>
-<script>
-document.querySelectorAll("[data-line-ask]").forEach(function(a){
-  a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
-});
-/* ค้นหาในหน้า: กรองแถวตามรหัส/ชื่อ แล้วซ่อนกลุ่มที่ไม่เหลือแถว */
-(function(){
-  var inp=document.getElementById("findInput"), hit=document.getElementById("findHit");
-  if(!inp) return;
-  var wraps=[].slice.call(document.querySelectorAll(".tblwrap"));
-  var blocks=wraps.map(function(w){
-    var head=w.previousElementSibling;
-    while(head && !/^H3$/.test(head.tagName)) head=head.previousElementSibling;
-    var extras=[];
-    for(var e=w.previousElementSibling; e && e!==head; e=e.previousElementSibling) extras.push(e);
-    return { wrap:w, head:head, extras:extras, rows:[].slice.call(w.querySelectorAll("tbody tr")) };
-  });
-  function apply(){
-    var q=inp.value.trim().toLowerCase();
-    var n=0;
-    blocks.forEach(function(b){
-      var shown=0;
-      b.rows.forEach(function(r){
-        var ok = !q || (r.textContent + " " + (r.dataset.nth || "") + " " + (r.dataset.nen || "")).toLowerCase().indexOf(q) >= 0;
-        r.hidden = !ok; if(ok) shown++;
-      });
-      n += shown;
-      var off = q && shown===0;
-      b.wrap.hidden = off;
-      if(b.head) b.head.hidden = off;
-      b.extras.forEach(function(e){ e.hidden = off; });
-    });
-    relead();
-    if(q){ hit.hidden=false; hit.textContent = n ? ("พบ " + n + " รายการ") : "ไม่พบรายการที่ค้นหา — ลองพิมพ์รหัสหรือชื่อสั้นลง"; }
-    else { hit.hidden=true; }
-  }
-  /* ชื่อสินค้าพิมพ์แค่แถวแรกของตระกูล ถ้าค้นหาแล้วแถวแรกโดนซ่อน ต้องยกชื่อมาให้แถวแรกที่ยังโชว์อยู่ */
-  function relead(){
-    var seen={};
-    blocks.forEach(function(b){
-      b.rows.forEach(function(r){
-        var t=r.querySelector(".nmtxt"); if(!t || r.hidden) return;
-        var f=b.wrap.id + "|" + r.dataset.fam;
-        if(seen[f]){ t.textContent=""; return; }
-        seen[f]=true;
-        if(t.querySelector("b")) return;
-        t.textContent="";
-        var bEl=document.createElement("b"); bEl.textContent=r.dataset.nth||"";
-        var sEl=document.createElement("small"); sEl.textContent=r.dataset.nen||"";
-        t.appendChild(bEl); t.appendChild(sEl);
-      });
-    });
-  }
-  inp.addEventListener("input", apply);
-})();
-</script>
-<script src="../assets/js/layout.js?v=2"></script>
-<script src="/_vercel/insights/script.js" defer></script>
+${scriptsHTML("tools")}
 </body>
 </html>
 `;
@@ -435,9 +247,8 @@ const made = [];
 for (const cat of DATA.categories) {
   const m = META[cat.id];
   if (!m) continue;
-  if (m.title.length > 62) throw new Error(`title ยาวเกิน (${m.title.length}) — ${cat.id}`);
-  if (m.desc.length > 155) throw new Error(`description ยาวเกิน (${m.desc.length}) — ${cat.id}`);
   writeFileSync("products/" + m.file, page(cat));
-  made.push(`  products/${m.file}  ${cat.groups.reduce((n, g) => n + g.items.length, 0)} รายการ  (title ${m.title.length} · desc ${m.desc.length})`);
+  const groups = mergeGroups(cat.groups);
+  made.push(`  products/${m.file}  ${cat.groups.reduce((n, g) => n + g.items.length, 0)} รายการ  ${cat.groups.length}→${groups.length} กลุ่ม  (title ${m.title.length} · desc ${m.desc.length})`);
 }
 console.log("สร้างแล้ว " + made.length + " หน้า:\n" + made.join("\n"));

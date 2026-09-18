@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
-<title>เข็มกลัดซ่อนปลาย ขายส่ง ครบทุกเบอร์ 000–7 | ม ทวีภัณฑ์</title>
+<title>เข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7 | ม.ทวีภัณฑ์</title>
 <meta name="description" content="เข็มกลัดซ่อนปลาย เบอร์ 000–7 เหล็กชุบนิกเกิล ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริงไม่ชั่ง เหมาะติดเบอร์วิ่ง ป้ายราคา ผ้าอ้อม ส่งทั่วไทย">
 <link rel="canonical" href="https://mtthardware.com/products/safety-pins.html">
-<meta property="og:title" content="เข็มกลัดซ่อนปลาย ขายส่ง ครบทุกเบอร์ 000–7 | ม ทวีภัณฑ์">
+<meta property="og:title" content="เข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7 | ม.ทวีภัณฑ์">
 <meta property="og:url" content="https://mtthardware.com/products/safety-pins.html">
 <meta property="og:description" content="เข็มกลัดซ่อนปลายครบทุกเบอร์ 000–7 ที่เดียว — ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง ส่งทั่วไทย">
 <meta property="og:type" content="website">
@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=2">
+<link rel="stylesheet" href="../assets/css/theme.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -35,7 +35,7 @@
     "https://mtthardware.com/assets/img/products/safety-pin-wire.webp"
   ],
   "url": "https://mtthardware.com/products/safety-pins.html",
-  "brand": { "@type": "Brand", "name": "ตราสิงโต M.T.T. (ม ทวีภัณฑ์)" },
+  "brand": { "@type": "Brand", "name": "ตราสิงโต M.T.T. (ม.ทวีภัณฑ์)" },
   "category": "เข็มกลัดซ่อนปลาย / Safety pins",
   "material": "เหล็กสปริงชุบนิกเกิล",
   "additionalProperty": [
@@ -130,9 +130,13 @@
 .fchip:hover{border-color:var(--amber);color:var(--amber-dark)}
 /* ---- การ์ดรายเบอร์ ---- */
 .pin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,285px));justify-content:center;gap:16px;margin-top:14px}
+@media(min-width:1000px){.pin-grid{grid-template-columns:repeat(5,1fr)}} /* 10 เบอร์ = 2 แถวพอดี ไม่มีใบเดี่ยวตกแถว */
+.pin-card .num a{color:inherit}
+.pin-card .num a:hover{color:var(--amber-dark)}
+.pin-card .flagrow{margin:4px 0 0}
 .pin-card{display:flex;flex-direction:column;padding:18px 18px 16px}
 .pin-card .head{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
-.pin-card .num{font-family:"Kanit";font-weight:700;font-size:1.35rem}
+.pin-card .num{font-family:var(--font-head);font-weight:700;font-size:1.35rem}
 .pin-card .len{font-size:.82rem;color:var(--ink-mute);font-weight:600;white-space:nowrap}
 .sizebar{height:12px;margin:12px 0 12px;position:relative}
 .sizebar i{position:absolute;left:0;top:2px;height:8px;border-radius:99px;
@@ -146,14 +150,15 @@
 /* ---- ตารางขนาด ---- */
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table.size{width:100%;border-collapse:collapse;font-size:.88rem;min-width:560px}
-table.size th{font-family:"Kanit";font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
+table.size th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
 table.size td{padding:9px 14px;border-top:1px solid var(--line)}
+table.size td:nth-child(4),table.size td:nth-child(5){white-space:nowrap}
 table.size tr:nth-child(even) td{background:var(--bg-soft)}
-table.size td b{font-family:"Kanit"}
+table.size td b{font-family:var(--font-head)}
 /* ---- หน่วยขาย ---- */
 .unit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
 .unit{padding:18px;text-align:center}
-.unit b{display:block;font-family:"Kanit";font-size:1.15rem;margin-bottom:2px}
+.unit b{display:block;font-family:var(--font-head);font-size:1.15rem;margin-bottom:2px}
 .unit span{color:var(--ink-dim);font-size:.85rem}
 /* ---- เครื่องคิดงานวิ่ง ---- */
 .calc{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:26px 26px 24px;margin-top:16px}
@@ -163,11 +168,11 @@ table.size td b{font-family:"Kanit"}
 .calc input{width:130px;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.25);
   background:rgba(255,255,255,.08);color:#fff;font:inherit;font-size:1rem}
 .calc input:focus{outline:2px solid var(--amber)}
-.calc .res{font-family:"Kanit";font-size:1.05rem;color:#7fe0a9}
+.calc .res{font-family:var(--font-head);font-size:1.05rem;color:#7fe0a9}
 /* ---- FAQ ---- */
 .faq{margin-top:14px;display:grid;gap:10px}
 .faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
-.faq summary{cursor:pointer;font-family:"Kanit";font-weight:600;font-size:.98rem;padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:.98rem;padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";font-size:1.2rem;color:var(--amber);flex:none}
 .faq details[open] summary::after{content:"–"}
@@ -178,11 +183,12 @@ table.size td b{font-family:"Kanit"}
 .wirefig img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
 .wirefig figcaption{font-size:.82rem;color:var(--ink-mute);margin-top:10px;text-align:center;line-height:1.6}
 @media(max-width:860px){.pin-grid{grid-template-columns:1fr 1fr}.unit-grid{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr;gap:18px}.hero-wide{display:none}.hero-tall{display:block;width:100%;max-width:420px;height:auto;margin:0 auto;border-radius:var(--radius-sm)}}
-@media(max-width:480px){.pin-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.pin-grid{grid-template-columns:1fr 1fr;gap:10px}.pin-grid>*{min-width:0}.pin-card{padding:14px 12px 12px}.pin-card .head{flex-wrap:wrap;gap:2px 8px}.pin-card .len{white-space:normal}.pin-card .use,.pin-card .tagm{display:none}.pin-card .num{font-size:1.15rem}} /* grid item min-width:auto + ความยาว nowrap ทำให้ล้น 7px ที่ 360px */
 </style>
 </head>
 <body>
 <div id="site-header"></div>
+<main id="main">
 
 <section class="pin-hero">
   <div class="wrap hero-grid">
@@ -202,16 +208,16 @@ table.size td b{font-family:"Kanit"}
       <a class="btn btn-ghost" href="safety-pins-canvas.html" data-th="งานผ้าใบ เต็นท์" data-en="Canvas &amp; tents">งานผ้าใบ เต็นท์</a>
     </div>
     </div>
-    <video class="hero-pins hero-wide" id="sizeVideo" muted playsinline loop autoplay preload="metadata"
+    <video class="hero-pins hero-wide" id="sizeVideo" muted playsinline loop preload="none"
            poster="../assets/img/products/safety-pin-sizes.webp" width="1535" height="1024"
            aria-label="ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7 ตั้งแต่ 19 มม. ถึง 85 มม. พร้อมขนาดลวด">
-      <source src="../assets/video/safety-pin-sizes.webm" type="video/webm">
       <source src="../assets/video/safety-pin-sizes.mp4" type="video/mp4">
+      <source src="../assets/video/safety-pin-sizes.webm" type="video/webm">
       <img src="../assets/img/products/safety-pin-sizes.webp" alt="ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต ครบ 10 เบอร์ 000–7 ตั้งแต่ 19 มม. ถึง 85 มม. พร้อมขนาดลวด" width="1535" height="1024">
     </video>
     <img class="hero-tall" src="../assets/img/products/safety-pin-sizes-tall.webp"
          srcset="../assets/img/products/safety-pin-sizes-tall-sm.webp 640w, ../assets/img/products/safety-pin-sizes-tall.webp 1024w"
-         sizes="(max-width:860px) 92vw, 420px" loading="lazy"
+         sizes="(max-width:860px) 92vw, 420px" fetchpriority="high"
          alt="ตารางขนาดเข็มกลัดซ่อนปลาย ตราสิงโต 10 เบอร์ เรียง 2 แถว พร้อมความยาวและขนาดลวดแต่ละเบอร์" width="1024" height="1536">
   </div>
 </section>
@@ -221,6 +227,14 @@ table.size td b{font-family:"Kanit"}
 
     <h2 class="sec-h" data-th="เลือกเบอร์ที่ต้องการ" data-en="Pick your size">เลือกเบอร์ที่ต้องการ</h2>
     <p class="sec-sub" data-th="รูปเข็มในการ์ด = ความยาวจริงเทียบกันทุกเบอร์ (โดยประมาณ ±2–3 มม.)" data-en="Pin drawings are to scale across sizes (approx. ±2–3 mm)">รูปเข็มในการ์ด = ความยาวจริงเทียบกันทุกเบอร์ (โดยประมาณ ±2–3 มม.)</p>
+    <p class="sec-sub" style="margin-top:0" data-th="เจาะลึกรายเบอร์ (ขนาด การใช้งาน คำถามที่พบบ่อย):" data-en="Deep-dive by size (specs, uses, FAQ):">เจาะลึกรายเบอร์ (ขนาด การใช้งาน คำถามที่พบบ่อย):</p>
+    <div class="filters" style="margin:0 0 16px">
+      <a class="fchip" href="safety-pins-000.html">เบอร์ 000</a><a class="fchip" href="safety-pins-00.html">เบอร์ 00</a><a class="fchip" href="safety-pins-0.html">เบอร์ 0</a><a class="fchip" href="safety-pins-1.html">เบอร์ 1</a><a class="fchip" href="safety-pins-2.html">เบอร์ 2</a><a class="fchip" href="safety-pins-3.html">เบอร์ 3</a><a class="fchip" href="safety-pins-4.html">เบอร์ 4</a><a class="fchip" href="safety-pins-5.html">เบอร์ 5</a><a class="fchip" href="safety-pins-6.html">เบอร์ 6</a><a class="fchip" href="safety-pins-7.html">เบอร์ 7</a>
+      <a class="fchip" href="safety-pins-running.html" data-th="🏃 เข็มกลัดงานวิ่ง" data-en="🏃 Race pins">🏃 เข็มกลัดงานวิ่ง</a>
+      <a class="fchip" href="safety-pins-tags.html" data-th="🏷️ เข็มกลัดติดป้ายราคา" data-en="🏷️ Tag pins">🏷️ เข็มกลัดติดป้ายราคา</a>
+      <a class="fchip" href="safety-pins-diaper.html" data-th="👶 เข็มกลัดผ้าอ้อม" data-en="👶 Diaper pins">👶 เข็มกลัดผ้าอ้อม</a>
+      <a class="fchip" href="../articles/which-safety-pin-size.html" data-th="📖 เบอร์ไหนใช้ทำอะไร" data-en="📖 Size-choosing guide">📖 เบอร์ไหนใช้ทำอะไร</a>
+    </div>
     <div class="pin-grid" id="pinGrid"></div>
 
     <h2 class="sec-h" id="size-table" data-th="ตารางเทียบขนาดเข็มกลัดทุกเบอร์" data-en="Safety pin size chart">ตารางเทียบขนาดเข็มกลัดทุกเบอร์</h2>
@@ -237,12 +251,12 @@ table.size td b{font-family:"Kanit"}
         </tr></thead>
         <tbody>
           <tr><td><a href="safety-pins-000.html"><b>000</b></a></td><td>19</td><td>1.9</td><td>3/4"</td><td>720–1,500</td><td data-th="เบอร์จิ๋ว, 3/0" data-en="Tiny, 3/0">เบอร์จิ๋ว, 3/0</td></tr>
-          <tr><td><a href="safety-pins-00.html"><b>00</b></a></td><td>22–23</td><td>2.3</td><td>7/8"</td><td>864–1,440</td><td>2/0</td></tr>
+          <tr><td><a href="safety-pins-00.html"><b>00</b></a></td><td>23</td><td>2.3</td><td>7/8"</td><td>864–1,440</td><td>2/0</td></tr>
           <tr><td><a href="safety-pins-0.html"><b>0</b></a></td><td>28</td><td>2.8</td><td>1-1/16"</td><td>864–1,728</td><td>—</td></tr>
           <tr><td><a href="safety-pins-1.html"><b>1</b></a></td><td>32</td><td>3.2</td><td>1-1/4"</td><td>864</td><td>—</td></tr>
           <tr><td><a href="safety-pins-2.html"><b>2</b></a></td><td>38</td><td>3.8</td><td>1-1/2"</td><td>864</td><td data-th="เบอร์งานวิ่ง" data-en="Race-bib size">เบอร์งานวิ่ง</td></tr>
-          <tr><td><a href="safety-pins-3.html"><b>3</b></a></td><td>46</td><td>4.6</td><td>1-7/8"</td><td>408–432</td><td>—</td></tr>
-          <tr><td><a href="safety-pins-4.html"><b>4</b></a></td><td>55–56</td><td>5.6</td><td>2-1/4"</td><td>432</td><td data-th="เข็มกลัดผ้าห่ม (blanket pin)" data-en="Blanket / diaper pin">เข็มกลัดผ้าห่ม (blanket pin)</td></tr>
+          <tr><td><a href="safety-pins-3.html"><b>3</b></a></td><td>46</td><td>4.6</td><td>1-13/16"</td><td>408–432</td><td>—</td></tr>
+          <tr><td><a href="safety-pins-4.html"><b>4</b></a></td><td>56</td><td>5.6</td><td>2-1/4"</td><td>432</td><td data-th="เข็มกลัดผ้าห่ม (blanket pin)" data-en="Blanket / diaper pin">เข็มกลัดผ้าห่ม (blanket pin)</td></tr>
           <tr><td><a href="safety-pins-5.html"><b>5</b></a></td><td>65</td><td>6.5</td><td>2-1/2"</td><td>216</td><td>—</td></tr>
           <tr><td><a href="safety-pins-6.html"><b>6</b></a></td><td>75</td><td>7.5</td><td>3"</td><td>144</td><td>—</td></tr>
           <tr><td><a href="safety-pins-7.html"><b>7</b></a></td><td>85</td><td>8.5</td><td>3-1/4"</td><td>144</td><td data-th="เข็มกลัดยักษ์" data-en="Jumbo pin">เข็มกลัดยักษ์</td></tr>
@@ -250,20 +264,12 @@ table.size td b{font-family:"Kanit"}
       </table>
     </div>
 
-    <p class="sec-sub" style="margin-top:12px" data-th="เจาะลึกรายเบอร์ (ขนาด การใช้งาน คำถามที่พบบ่อย):" data-en="Deep-dive by size (specs, uses, FAQ):">เจาะลึกรายเบอร์ (ขนาด การใช้งาน คำถามที่พบบ่อย):</p>
-    <div class="filters" style="margin-top:0">
-      <a class="fchip" href="safety-pins-000.html">เบอร์ 000</a><a class="fchip" href="safety-pins-00.html">เบอร์ 00</a><a class="fchip" href="safety-pins-0.html">เบอร์ 0</a><a class="fchip" href="safety-pins-1.html">เบอร์ 1</a><a class="fchip" href="safety-pins-2.html">เบอร์ 2</a><a class="fchip" href="safety-pins-3.html">เบอร์ 3</a><a class="fchip" href="safety-pins-4.html">เบอร์ 4</a><a class="fchip" href="safety-pins-5.html">เบอร์ 5</a><a class="fchip" href="safety-pins-6.html">เบอร์ 6</a><a class="fchip" href="safety-pins-7.html">เบอร์ 7</a>
-      <a class="fchip" href="safety-pins-running.html" data-th="🏃 เข็มกลัดงานวิ่ง" data-en="🏃 Race pins">🏃 เข็มกลัดงานวิ่ง</a>
-      <a class="fchip" href="safety-pins-tags.html" data-th="🏷️ เข็มกลัดติดป้ายราคา" data-en="🏷️ Tag pins">🏷️ เข็มกลัดติดป้ายราคา</a>
-      <a class="fchip" href="safety-pins-diaper.html" data-th="👶 เข็มกลัดผ้าอ้อม" data-en="👶 Diaper pins">👶 เข็มกลัดผ้าอ้อม</a>
-      <a class="fchip" href="../articles/which-safety-pin-size.html" data-th="📖 เบอร์ไหนใช้ทำอะไร" data-en="📖 Size-choosing guide">📖 เบอร์ไหนใช้ทำอะไร</a>
-    </div>
 
     <h2 class="sec-h" data-th="หน่วยขายแบบค้าส่ง" data-en="Wholesale units">หน่วยขายแบบค้าส่ง</h2>
     <div class="unit-grid">
       <div class="card unit"><b data-th="1 พวง = 1 โหล" data-en="1 bunch = 1 dozen">1 พวง = 1 โหล</b><span data-th="12 ตัว ร้อยเป็นพวง — เหมาะขายปลีกหน้าร้าน" data-en="12 pins strung together — retail-friendly">12 ตัว ร้อยเป็นพวง — เหมาะขายปลีกหน้าร้าน</span></div>
       <div class="card unit"><b data-th="1 กุรุส (Gross)" data-en="1 gross">1 กุรุส (Gross)</b><span data-th="144 ตัว = 12 พวง — ขั้นกลางยอดนิยม" data-en="144 pins = 12 dozen — popular middle unit">144 ตัว = 12 พวง — ขั้นกลางยอดนิยม</span></div>
-      <div class="card unit"><b data-th="ยกกล่องใหญ่" data-en="Full box">ยกกล่องใหญ่</b><span data-th="6–10 กุรุส/กล่อง (864–1,440 ตัว) — ราคาส่งสุด" data-en="6–10 gross per box (864–1,440 pins) — best price">6–10 กุรุส/กล่อง (864–1,440 ตัว) — ราคาส่งสุด</span></div>
+      <div class="card unit"><b data-th="ยกกล่องใหญ่" data-en="Full box">ยกกล่องใหญ่</b><span data-th="1–12 กุรุส/กล่อง แล้วแต่เบอร์ (144–1,728 ตัว) — ราคาส่งสุด" data-en="6–10 gross per box (864–1,440 pins) — best price">6–10 กุรุส/กล่อง (864–1,440 ตัว) — ราคาส่งสุด</span></div>
     </div>
 
     <div class="calc">
@@ -279,7 +285,7 @@ table.size td b{font-family:"Kanit"}
 
     <h2 class="sec-h" data-th="สเปคสินค้า" data-en="Specifications">สเปคสินค้า</h2>
     <div class="unit-grid">
-      <div class="card unit"><b data-th="วัสดุ" data-en="Material">วัสดุ</b><span data-th="เหล็กสปริง (carbon steel) ชุบนิกเกิลสีเงิน สีเดียวทุกเบอร์ — แหลม คม แข็ง ไร้สนิม" data-en="Spring carbon steel, nickel plated — silver only, every size. Sharp, hard, rust-free.">เหล็กสปริง (carbon steel) ชุบนิกเกิลสีเงิน สีเดียวทุกเบอร์ — แหลม คม แข็ง ไร้สนิม</span></div>
+      <div class="card unit"><b data-th="วัสดุ" data-en="Material">วัสดุ</b><span data-th="เหล็กสปริง (carbon steel) ชุบนิกเกิลสีเงิน สีเดียวทุกเบอร์ — แหลม คม แข็ง ชุบนิกเกิลกันสนิม" data-en="Spring carbon steel, nickel plated — silver only, every size. Sharp, hard, rust-resistant.">เหล็กสปริง (carbon steel) ชุบนิกเกิลสีเงิน สีเดียวทุกเบอร์ — แหลม คม แข็ง ชุบนิกเกิลกันสนิม</span></div>
       <div class="card unit"><b data-th="ปลายเข็ม" data-en="Point">ปลายเข็ม</b><span data-th="แหลมคม กลัดผ้าลื่น ปลายซ่อนในฝาครอบ ไม่ทิ่มมือ ไม่ทำลายเนื้อผ้า" data-en="Sharp, fabric-friendly, safely hidden in the cap">แหลมคม กลัดผ้าลื่น ปลายซ่อนในฝาครอบ ไม่ทิ่มมือ ไม่ทำลายเนื้อผ้า</span></div>
       <div class="card unit"><b data-th="สปริง" data-en="Spring">สปริง</b><span data-th="ขดลวด coil แน่น สปริงไม่ล้า กลัดแล้วล็อกอยู่ ไม่หลุดง่าย" data-en="Tight coil spring that keeps its snap — stays locked">ขดลวด coil แน่น สปริงไม่ล้า กลัดแล้วล็อกอยู่ ไม่หลุดง่าย</span></div>
     </div>
@@ -316,17 +322,23 @@ table.size td b{font-family:"Kanit"}
   </div>
 </section>
 
+</main>
 <div id="site-footer"></div>
 
 <script>
 /* เคารพ prefers-reduced-motion: หยุดคลิป โชว์ poster (มีข้อมูลครบเหมือนกัน) */
-(function(){var v=document.getElementById("sizeVideo");
- if(v&&window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches){v.autoplay=false;v.removeAttribute("autoplay");try{v.pause();}catch(e){}}
+/* คลิปตารางขนาดแสดงเฉพาะจอกว้าง (มือถือใช้รูปแนวตั้งแทน) — เล่นเฉพาะตอนแสดงจริง
+   เดิม autoplay ทำให้มือถือดาวน์โหลดคลิป 660KB ที่ display:none ทิ้ง */
+(function(){var v=document.getElementById("sizeVideo"); if(!v||!window.matchMedia) return;
+ if(matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+ var mq=matchMedia("(min-width:861px)");
+ function sync(){ if(mq.matches){ v.preload="auto"; v.play().catch(function(){}); } else { v.pause(); } }
+ sync(); if(mq.addEventListener) mq.addEventListener("change",sync);
 })();
 </script>
 <script>window.MTT_BASE="../";window.MTT_PAGE="pins";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=2"></script>
+<script src="../assets/js/catalog.js?v=3"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
 /* ---------- การ์ดรายเบอร์ — ข้อมูลขนาด/การใช้งานมาตรฐานตลาดไทย ----------
@@ -355,13 +367,14 @@ function renderPins(){
       ? ("สอบถามราคา เข็มกลัดซ่อนปลาย เบอร์ "+p.no+" ("+p.mm+" มม.) ยกกล่อง/แบ่งขาย")
       : ("Price for safety pins size "+p.no+" ("+p.mm+" mm), box or partial"));
     const flag = p.flag_th ? `<span class="badge green flag">${th?p.flag_th:p.flag_en}</span>` : "";
-    return `<a class="card pin-card" href="${ask}" target="_blank" rel="noopener" aria-label="${name}">
-      <div class="head"><span class="num">${th?"เบอร์ ":"#"}${p.no}${flag}</span><span class="len">${p.cm} ${th?"ซม.":"cm"} · ${p.mm} ${th?"มม.":"mm"}</span></div>
+    /* การ์ดมี 2 ทาง: ชื่อเบอร์ → หน้ารายเบอร์ (สเปค/FAQ), ปุ่ม → ถามราคาทาง LINE (เดิมทั้งใบไป LINE ไม่มีทางเข้าหน้ารายเบอร์) */
+    return `<div class="card pin-card" id="pin-${p.no}">
+      <div class="head"><span class="num"><a href="safety-pins-${p.no}.html" aria-label="${name}">${th?"เบอร์ ":"#"}${p.no}</a></span><span class="len">${p.cm} ${th?"ซม.":"cm"} · ${p.mm} ${th?"มม.":"mm"}</span></div>${flag?`<div class="flagrow">${flag}</div>`:""}
       <div class="pinvis" aria-hidden="true"><img src="../assets/img/products/safety-pin.svg" alt="" loading="lazy" style="width:${Math.round(p.mm/maxMM*maxW)}%"></div>
       <p class="use">${th?p.uth:p.uen}</p>
       <p class="pack">${th?"บรรจุ ~":"~"}${p.pack} ${th?"ตัว/กล่อง":"pcs/box"}</p>
-      <div class="row"><span class="tagm">${th?"ปลีก-ส่ง ทักถามได้":"Retail & bulk"}</span><span class="btn btn-primary btn-sm">${th?"เช็คราคา":"Ask price"}</span></div>
-    </a>`;
+      <div class="row"><span class="tagm">${th?"ปลีก-ส่ง ทักถามได้":"Retail & bulk"}</span><a class="btn btn-primary btn-sm" href="${ask}" target="_blank" rel="noopener">${th?"เช็คราคา":"Ask price"}</a></div>
+    </div>`;
   }).join("");
 }
 
@@ -383,7 +396,7 @@ function renderAll(){ renderPins(); renderCalc(); }
 document.addEventListener("langchange", renderAll);
 renderAll();
 </script>
-<script src="../assets/js/layout.js?v=2"></script>
+<script src="../assets/js/layout.js?v=3"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>
