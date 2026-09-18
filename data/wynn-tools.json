@@ -228,7 +228,7 @@
               "meas": "45X23.5X23.5cm",
               "kg": "22kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/AC406.webp",
+              "img": "assets/img/tools/AC208.webp",
               "pic_same": true
             },
             {
@@ -315,7 +315,7 @@
               "meas": "49.5X25X34cm",
               "kg": "14kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W106P.webp",
+              "img": "assets/img/tools/W508P.webp",
               "pic_same": true
             },
             {
@@ -339,7 +339,7 @@
               "meas": "49.5X25X34cm",
               "kg": "18kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W406P.webp",
+              "img": "assets/img/tools/W208P.webp",
               "pic_same": true
             },
             {
@@ -374,7 +374,7 @@
               "meas": "49.5X25X34cm",
               "kg": "16kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W306P.webp",
+              "img": "assets/img/tools/W608P.webp",
               "pic_same": true
             },
             {
@@ -399,7 +399,7 @@
               "meas": "48X38X25.5cm",
               "kg": "23kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS106D.webp",
+              "img": "assets/img/tools/WNS105D.webp",
               "pic_same": true
             },
             {
@@ -411,7 +411,7 @@
               "meas": "51X28X22cm",
               "kg": "20kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WS175B.webp",
+              "img": "assets/img/tools/WNS105D.webp",
               "pic_same": true
             },
             {
@@ -465,7 +465,7 @@
               "meas": "50X39X20cm",
               "kg": "20kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WHS330B.webp",
+              "img": "assets/img/tools/WHS175B.webp",
               "pic_same": true
             },
             {
@@ -489,7 +489,7 @@
               "meas": "50X39X20cm",
               "kg": "20kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WHB330B.webp",
+              "img": "assets/img/tools/WHB175B.webp",
               "pic_same": true
             },
             {
@@ -513,7 +513,7 @@
               "meas": "39X37X21cm",
               "kg": "19.5kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WSS330B.webp",
+              "img": "assets/img/tools/WSS175B.webp",
               "pic_same": true
             },
             {
@@ -537,7 +537,7 @@
               "meas": "39X37X21cm",
               "kg": "19.5kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WSB330B.webp",
+              "img": "assets/img/tools/WSB175B.webp",
               "pic_same": true
             },
             {
@@ -670,7 +670,7 @@
               "meas": "56X38X13cm",
               "kg": "38kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W600C.webp",
+              "img": "assets/img/tools/W450C.webp",
               "pic_same": true
             },
             {
@@ -682,7 +682,7 @@
               "meas": "79X20X9cm",
               "kg": "27kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W900C.webp",
+              "img": "assets/img/tools/W450C.webp",
               "pic_same": true
             },
             {
@@ -706,7 +706,7 @@
               "meas": "56X38X13cm",
               "kg": "38kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W600B.webp",
+              "img": "assets/img/tools/W450B.webp",
               "pic_same": true
             },
             {
@@ -730,7 +730,7 @@
               "meas": "44X25X24cm",
               "kg": "28kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0134.webp",
+              "img": "assets/img/tools/W0133.webp",
               "pic_same": true
             },
             {
@@ -742,7 +742,7 @@
               "meas": "59X28X14cm",
               "kg": "25kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0135.webp",
+              "img": "assets/img/tools/W0133.webp",
               "pic_same": true
             },
             {
@@ -754,7 +754,7 @@
               "meas": "68X20.5X12cm",
               "kg": "19kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0136.webp",
+              "img": "assets/img/tools/W0133.webp",
               "pic_same": true
             },
             {
@@ -766,7 +766,7 @@
               "meas": "77X25X15cm",
               "kg": "25kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0137.webp",
+              "img": "assets/img/tools/W0133.webp",
               "pic_same": true
             },
             {
@@ -802,7 +802,7 @@
               "meas": "40X18X14cm",
               "kg": "15kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0473B.webp",
+              "img": "assets/img/tools/W0473A.webp",
               "pic_same": true
             },
             {
@@ -814,7 +814,7 @@
               "meas": "36X19X20cm",
               "kg": "19kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0473C.webp",
+              "img": "assets/img/tools/W0473A.webp",
               "pic_same": true
             },
             {
@@ -826,7 +826,7 @@
               "meas": "37X21X23cm",
               "kg": "26kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0473D.webp",
+              "img": "assets/img/tools/W0473A.webp",
               "pic_same": true
             },
             {
@@ -838,7 +838,7 @@
               "meas": "69X25X14cm",
               "kg": "28kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0473E.webp",
+              "img": "assets/img/tools/W0473A.webp",
               "pic_same": true
             },
             {
@@ -850,7 +850,7 @@
               "meas": "31X29X28cm",
               "kg": "32kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0473F.webp",
+              "img": "assets/img/tools/W0473A.webp",
               "pic_same": true
             },
             {
@@ -862,7 +862,7 @@
               "meas": "36X28X17cm",
               "kg": "20kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0473G.webp",
+              "img": "assets/img/tools/W0473A.webp",
               "pic_same": true
             },
             {
@@ -874,7 +874,7 @@
               "meas": "38X26X17cm",
               "kg": "20kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0473H.webp",
+              "img": "assets/img/tools/W0473A.webp",
               "pic_same": true
             },
             {
@@ -886,7 +886,7 @@
               "meas": "47X31X18cm",
               "kg": "29kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0473I.webp",
+              "img": "assets/img/tools/W0473A.webp",
               "pic_same": true
             },
             {
@@ -923,7 +923,7 @@
               "kg": "15kg",
               "mat": "HT-250",
               "notes_th": "จับวัสดุทรงกลม Ø13.5-56",
-              "img": "assets/img/tools/W2486.webp",
+              "img": "assets/img/tools/W2484.webp",
               "pic_same": true
             },
             {
@@ -936,7 +936,7 @@
               "kg": "22kg",
               "mat": "HT-250",
               "notes_th": "จับวัสดุทรงกลม Ø13.5-68",
-              "img": "assets/img/tools/W2487.webp",
+              "img": "assets/img/tools/W2484.webp",
               "pic_same": true
             },
             {
@@ -960,7 +960,7 @@
               "meas": "55X33X22.5cm",
               "kg": "26kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS5010A.webp",
+              "img": "assets/img/tools/WNS508A.webp",
               "pic_same": true
             },
             {
@@ -972,7 +972,7 @@
               "meas": "38X34X25cm",
               "kg": "22kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS5012A.webp",
+              "img": "assets/img/tools/WNS508A.webp",
               "pic_same": true
             }
           ]
@@ -1014,7 +1014,7 @@
               "meas": "51X28X22cm",
               "kg": "19kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS508E.webp",
+              "img": "assets/img/tools/WNS506E.webp",
               "pic_same": true
             },
             {
@@ -1060,7 +1060,7 @@
               "meas": "52X36X30cm",
               "kg": "30kg",
               "mat": "เหล็กอัลลอย",
-              "img": "assets/img/tools/W0029.webp",
+              "img": "assets/img/tools/W0028.webp",
               "pic_same": true
             },
             {
@@ -1095,7 +1095,7 @@
               "meas": "51X28X22cm",
               "kg": "20kg",
               "mat": "เหล็กอัลลอย",
-              "img": "assets/img/tools/W0043.webp",
+              "img": "assets/img/tools/W0042.webp",
               "pic_same": true
             },
             {
@@ -1130,7 +1130,7 @@
               "meas": "51X28X22cm",
               "kg": "20kg",
               "mat": "เหล็กอัลลอย",
-              "img": "assets/img/tools/WSB607.webp",
+              "img": "assets/img/tools/WSB10.webp",
               "pic_same": true
             },
             {
@@ -1462,7 +1462,7 @@
               "kg": "19kg",
               "mat": "SK-55",
               "notes_th": "เหมาะสำหรับ 1.25-1.5/2.0-5.5/6-8 ตร.มม.",
-              "img": "assets/img/tools/HD-8L.webp"
+              "img": "assets/img/tools/HD-6L.webp"
             },
             {
               "code": "HD-16L",
@@ -1498,7 +1498,7 @@
               "kg": "18kg",
               "mat": "SK-55",
               "notes_th": "ย้ำ 5.5-6/8-10/14-16/22-25 ตร.มม.",
-              "img": "assets/img/tools/HD-25LB.webp"
+              "img": "assets/img/tools/HD-25LA.webp"
             },
             {
               "code": "HD-38L",
@@ -1616,7 +1616,7 @@
               "pcs": "8/96",
               "meas": "59X32X39.5cm",
               "kg": "15kg",
-              "img": "assets/img/tools/W0300B.webp",
+              "img": "assets/img/tools/W0300A.webp",
               "pic_same": true
             },
             {
@@ -1627,7 +1627,7 @@
               "pcs": "8/96",
               "meas": "59X32X39.5cm",
               "kg": "15kg",
-              "img": "assets/img/tools/W0300C.webp",
+              "img": "assets/img/tools/W0300A.webp",
               "pic_same": true
             }
           ]
@@ -1797,7 +1797,7 @@
               "meas": "38X34X25cm",
               "kg": "29kg",
               "mat": "เหล็กอัลลอย",
-              "img": "assets/img/tools/WNS300G.webp",
+              "img": "assets/img/tools/WNS250G.webp",
               "pic_same": true
             },
             {
@@ -1832,7 +1832,7 @@
               "meas": "45.8X30X20cm",
               "kg": "21kg",
               "mat": "C-ALLOY",
-              "img": "assets/img/tools/WNS200F.webp",
+              "img": "assets/img/tools/WNS150F.webp",
               "pic_same": true
             },
             {
@@ -1844,7 +1844,7 @@
               "meas": "54X33X22cm",
               "kg": "26kg",
               "mat": "C-ALLOY",
-              "img": "assets/img/tools/WNS250F.webp",
+              "img": "assets/img/tools/WNS150F.webp",
               "pic_same": true
             },
             {
@@ -1856,7 +1856,7 @@
               "meas": "38X34X25cm",
               "kg": "25kg",
               "mat": "C-ALLOY",
-              "img": "assets/img/tools/WNS300F.webp",
+              "img": "assets/img/tools/WNS150F.webp",
               "pic_same": true
             },
             {
@@ -1868,7 +1868,7 @@
               "meas": "46X26X17.5cm",
               "kg": "17kg",
               "mat": "C-ALLOY",
-              "img": "assets/img/tools/WNS375F.webp",
+              "img": "assets/img/tools/WNS150F.webp",
               "pic_same": true
             },
             {
@@ -1892,7 +1892,7 @@
               "meas": "38X34X25cm",
               "kg": "25kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WNS300E.webp",
+              "img": "assets/img/tools/WNS250E.webp",
               "pic_same": true
             },
             {
@@ -1904,7 +1904,7 @@
               "meas": "46X26X17.5cm",
               "kg": "17kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WNS375E.webp",
+              "img": "assets/img/tools/WNS250E.webp",
               "pic_same": true
             },
             {
@@ -1928,7 +1928,7 @@
               "meas": "47X28X19cm",
               "kg": "15kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS200A.webp",
+              "img": "assets/img/tools/WNS150A.webp",
               "pic_same": true
             },
             {
@@ -1940,7 +1940,7 @@
               "meas": "54X33X22cm",
               "kg": "26kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS250A.webp",
+              "img": "assets/img/tools/WNS150A.webp",
               "pic_same": true
             },
             {
@@ -1952,7 +1952,7 @@
               "meas": "38X34X25cm",
               "kg": "25kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS300A.webp",
+              "img": "assets/img/tools/WNS150A.webp",
               "pic_same": true
             },
             {
@@ -1964,7 +1964,7 @@
               "meas": "46X26X17.5cm",
               "kg": "18kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS375A.webp",
+              "img": "assets/img/tools/WNS150A.webp",
               "pic_same": true
             },
             {
@@ -1976,7 +1976,7 @@
               "meas": "49X18X15.5cm",
               "kg": "25.5kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS450A.webp",
+              "img": "assets/img/tools/WNS150A.webp",
               "pic_same": true
             },
             {
@@ -2000,7 +2000,7 @@
               "meas": "47X28X19cm",
               "kg": "15kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS200B.webp",
+              "img": "assets/img/tools/WNS150B.webp",
               "pic_same": true
             },
             {
@@ -2012,7 +2012,7 @@
               "meas": "55X33X22cm",
               "kg": "26kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS250B.webp",
+              "img": "assets/img/tools/WNS150B.webp",
               "pic_same": true
             },
             {
@@ -2024,7 +2024,7 @@
               "meas": "38X34X25cm",
               "kg": "25kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS300B.webp",
+              "img": "assets/img/tools/WNS150B.webp",
               "pic_same": true
             },
             {
@@ -2036,7 +2036,7 @@
               "meas": "46X26X11.5cm",
               "kg": "17kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS375B.webp",
+              "img": "assets/img/tools/WNS150B.webp",
               "pic_same": true
             },
             {
@@ -2048,7 +2048,7 @@
               "meas": "49X18X15.5cm",
               "kg": "27kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS450B.webp",
+              "img": "assets/img/tools/WNS150B.webp",
               "pic_same": true
             },
             {
@@ -2060,7 +2060,7 @@
               "meas": "62.5X30X12.5cm",
               "kg": "20.5kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/WNS600B.webp",
+              "img": "assets/img/tools/WNS150B.webp",
               "pic_same": true
             }
           ]
@@ -2096,7 +2096,7 @@
               "meas": "",
               "kg": "",
               "mat": "SK-55",
-              "img": "assets/img/tools/WM9808.webp",
+              "img": "assets/img/tools/WM9806.webp",
               "brand": "MTT",
               "brand_fam": "wrench",
               "pic_same": true
@@ -2124,7 +2124,7 @@
               "meas": "",
               "kg": "",
               "mat": "SK-55",
-              "img": "assets/img/tools/WM9812.webp",
+              "img": "assets/img/tools/WM9810.webp",
               "brand": "MTT",
               "brand_fam": "wrench",
               "pic_same": true
@@ -2138,7 +2138,7 @@
               "meas": "",
               "kg": "",
               "mat": "SK-55",
-              "img": "assets/img/tools/WM9815.webp",
+              "img": "assets/img/tools/WM9810.webp",
               "brand": "MTT",
               "brand_fam": "wrench",
               "pic_same": true
@@ -2152,7 +2152,7 @@
               "meas": "",
               "kg": "",
               "mat": "SK-55",
-              "img": "assets/img/tools/WM9818.webp",
+              "img": "assets/img/tools/WM9810.webp",
               "brand": "MTT",
               "brand_fam": "wrench",
               "pic_same": true
@@ -2166,7 +2166,7 @@
               "meas": "",
               "kg": "",
               "mat": "SK-55",
-              "img": "assets/img/tools/WM9824.webp",
+              "img": "assets/img/tools/WM9810.webp",
               "brand": "MTT",
               "brand_fam": "wrench",
               "pic_same": true
@@ -2203,7 +2203,7 @@
               "meas": "34X21X16cm",
               "kg": "13kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304C.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2215,7 +2215,7 @@
               "meas": "40X21X19.5cm",
               "kg": "15kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304D.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2227,7 +2227,7 @@
               "meas": "40X21X19.5cm",
               "kg": "19kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304E.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2239,7 +2239,7 @@
               "meas": "40X21X19.5cm",
               "kg": "21kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304F.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2251,7 +2251,7 @@
               "meas": "40X21X19.5cm",
               "kg": "25kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304G.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2263,7 +2263,7 @@
               "meas": "35X23X21cm",
               "kg": "19kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304H.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2275,7 +2275,7 @@
               "meas": "35X23X21cm",
               "kg": "20.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304I.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2287,7 +2287,7 @@
               "meas": "40X27X20cm",
               "kg": "23kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304J.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2299,7 +2299,7 @@
               "meas": "40X27X20cm",
               "kg": "25kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304L.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2311,7 +2311,7 @@
               "meas": "30X29X22.5cm",
               "kg": "24.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304N.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2323,7 +2323,7 @@
               "meas": "30X29X22.5cm",
               "kg": "26kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304O.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2335,7 +2335,7 @@
               "meas": "34.5X27X25cm",
               "kg": "23kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304P.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2347,7 +2347,7 @@
               "meas": "34.5X27X25cm",
               "kg": "25kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304Q.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2359,7 +2359,7 @@
               "meas": "39.5X30.5X30.5cm",
               "kg": "23kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304T.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2371,7 +2371,7 @@
               "meas": "39.5X30.5X30.5cm",
               "kg": "22kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304U.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             },
             {
@@ -2383,7 +2383,7 @@
               "meas": "39.5X30.5X30.5cm",
               "kg": "26kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0304V.webp",
+              "img": "assets/img/tools/W0304A.webp",
               "pic_same": true
             }
           ]
@@ -2417,7 +2417,7 @@
               "meas": "43X24.5X17cm",
               "kg": "18kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0306C.webp",
+              "img": "assets/img/tools/W0306A.webp",
               "pic_same": true
             },
             {
@@ -2429,7 +2429,7 @@
               "meas": "43X24.5X20cm",
               "kg": "20kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0306F.webp",
+              "img": "assets/img/tools/W0306A.webp",
               "pic_same": true
             },
             {
@@ -2441,7 +2441,7 @@
               "meas": "40.5X23.5X16.5cm",
               "kg": "27kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0306H.webp",
+              "img": "assets/img/tools/W0306A.webp",
               "pic_same": true
             },
             {
@@ -2453,7 +2453,7 @@
               "meas": "45.5X26.5X13.5cm",
               "kg": "23kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0306I.webp",
+              "img": "assets/img/tools/W0306A.webp",
               "pic_same": true
             },
             {
@@ -2465,7 +2465,7 @@
               "meas": "45.5X26.5X13.5cm",
               "kg": "23kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0306J.webp",
+              "img": "assets/img/tools/W0306A.webp",
               "pic_same": true
             },
             {
@@ -2477,7 +2477,7 @@
               "meas": "31.5X30.5X16.5cm",
               "kg": "17kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0306L.webp",
+              "img": "assets/img/tools/W0306A.webp",
               "pic_same": true
             },
             {
@@ -2489,7 +2489,7 @@
               "meas": "31.5X30.5X16.5cm",
               "kg": "20kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0306M.webp",
+              "img": "assets/img/tools/W0306A.webp",
               "pic_same": true
             },
             {
@@ -2501,7 +2501,7 @@
               "meas": "47.5X31.5X15cm",
               "kg": "28kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0306U.webp",
+              "img": "assets/img/tools/W0306A.webp",
               "pic_same": true
             }
           ]
@@ -2532,7 +2532,7 @@
               "meas": "40X27X20cm",
               "kg": "27kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS1002.webp",
+              "img": "assets/img/tools/WS1001.webp",
               "pic_same": true
             },
             {
@@ -2544,7 +2544,7 @@
               "meas": "30X29X22.5cm",
               "kg": "23.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS1003.webp",
+              "img": "assets/img/tools/WS1001.webp",
               "pic_same": true
             },
             {
@@ -2556,7 +2556,7 @@
               "meas": "30X29X22.5cm",
               "kg": "31kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS1004.webp",
+              "img": "assets/img/tools/WS1001.webp",
               "pic_same": true
             },
             {
@@ -2568,7 +2568,7 @@
               "meas": "34.5X27X25cm",
               "kg": "31kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS1005.webp",
+              "img": "assets/img/tools/WS1001.webp",
               "pic_same": true
             },
             {
@@ -2592,7 +2592,7 @@
               "meas": "35X23X21cm",
               "kg": "15.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0311C.webp",
+              "img": "assets/img/tools/W0311A.webp",
               "pic_same": true
             },
             {
@@ -2604,7 +2604,7 @@
               "meas": "34X24X20cm",
               "kg": "23kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0311E.webp",
+              "img": "assets/img/tools/W0311A.webp",
               "pic_same": true
             },
             {
@@ -2616,7 +2616,7 @@
               "meas": "40X27X20cm",
               "kg": "30kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0311F.webp",
+              "img": "assets/img/tools/W0311A.webp",
               "pic_same": true
             },
             {
@@ -2640,7 +2640,7 @@
               "meas": "40X21X19.5cm",
               "kg": "",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0286C.webp",
+              "img": "assets/img/tools/W0286B.webp",
               "pic_same": true
             },
             {
@@ -2652,7 +2652,7 @@
               "meas": "40X21X19.5cm",
               "kg": "25kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0286D.webp",
+              "img": "assets/img/tools/W0286B.webp",
               "pic_same": true
             },
             {
@@ -2664,7 +2664,7 @@
               "meas": "35X23X21cm",
               "kg": "20kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0286F.webp",
+              "img": "assets/img/tools/W0286B.webp",
               "pic_same": true
             },
             {
@@ -2676,7 +2676,7 @@
               "meas": "34X24X20cm",
               "kg": "15kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0286H.webp",
+              "img": "assets/img/tools/W0286B.webp",
               "pic_same": true
             }
           ]
@@ -2710,7 +2710,7 @@
               "meas": "38X21X15cm",
               "kg": "18.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS008E.webp",
+              "img": "assets/img/tools/WS008C.webp",
               "pic_same": true
             },
             {
@@ -2722,7 +2722,7 @@
               "meas": "40X20X16cm",
               "kg": "25kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS008G.webp",
+              "img": "assets/img/tools/WS008C.webp",
               "pic_same": true
             },
             {
@@ -2734,7 +2734,7 @@
               "meas": "36X22X15cm",
               "kg": "23.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS008H.webp",
+              "img": "assets/img/tools/WS008C.webp",
               "pic_same": true
             },
             {
@@ -2746,7 +2746,7 @@
               "meas": "28X22X18cm",
               "kg": "23kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS008I.webp",
+              "img": "assets/img/tools/WS008C.webp",
               "pic_same": true
             },
             {
@@ -2758,7 +2758,7 @@
               "meas": "40X30X13cm",
               "kg": "22kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS008L.webp",
+              "img": "assets/img/tools/WS008C.webp",
               "pic_same": true
             },
             {
@@ -2770,7 +2770,7 @@
               "meas": "36X33X11cm",
               "kg": "29.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS008N.webp",
+              "img": "assets/img/tools/WS008C.webp",
               "pic_same": true
             },
             {
@@ -2794,7 +2794,7 @@
               "meas": "36X18X16cm",
               "kg": "15kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0287C.webp",
+              "img": "assets/img/tools/W0287A.webp",
               "pic_same": true
             },
             {
@@ -2806,7 +2806,7 @@
               "meas": "40X21X19.5cm",
               "kg": "20kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0287E.webp",
+              "img": "assets/img/tools/W0287A.webp",
               "pic_same": true
             },
             {
@@ -2818,7 +2818,7 @@
               "meas": "40X21X19.5cm",
               "kg": "26kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0287F.webp",
+              "img": "assets/img/tools/W0287A.webp",
               "pic_same": true
             },
             {
@@ -2830,7 +2830,7 @@
               "meas": "35X23X21cm",
               "kg": "19kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0287G.webp",
+              "img": "assets/img/tools/W0287A.webp",
               "pic_same": true
             },
             {
@@ -2842,7 +2842,7 @@
               "meas": "40X27X20cm",
               "kg": "28kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0287J.webp",
+              "img": "assets/img/tools/W0287A.webp",
               "pic_same": true
             },
             {
@@ -2854,7 +2854,7 @@
               "meas": "40X27X20cm",
               "kg": "28kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0287L.webp",
+              "img": "assets/img/tools/W0287A.webp",
               "pic_same": true
             },
             {
@@ -2866,7 +2866,7 @@
               "meas": "34.5X27X25cm",
               "kg": "24kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0287N.webp",
+              "img": "assets/img/tools/W0287A.webp",
               "pic_same": true
             },
             {
@@ -2890,7 +2890,7 @@
               "meas": "40X21X19.5cm",
               "kg": "16kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0427C.webp",
+              "img": "assets/img/tools/W0427A.webp",
               "pic_same": true
             },
             {
@@ -2902,7 +2902,7 @@
               "meas": "40X21X19.5cm",
               "kg": "26kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0427E.webp",
+              "img": "assets/img/tools/W0427A.webp",
               "pic_same": true
             },
             {
@@ -2914,7 +2914,7 @@
               "meas": "35X23X21cm",
               "kg": "16kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0427G.webp",
+              "img": "assets/img/tools/W0427A.webp",
               "pic_same": true
             },
             {
@@ -2926,7 +2926,7 @@
               "meas": "40X27X20cm",
               "kg": "30kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0427J.webp",
+              "img": "assets/img/tools/W0427A.webp",
               "pic_same": true
             },
             {
@@ -2938,7 +2938,7 @@
               "meas": "30X29X22.5cm",
               "kg": "29.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0427L.webp",
+              "img": "assets/img/tools/W0427A.webp",
               "pic_same": true
             }
           ]
@@ -2968,7 +2968,7 @@
               "meas": "",
               "kg": "",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0327D.webp"
+              "img": "assets/img/tools/W0327B.webp"
             },
             {
               "code": "W0329A",
@@ -2990,7 +2990,7 @@
               "meas": "",
               "kg": "",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0329B.webp"
+              "img": "assets/img/tools/W0329A.webp"
             },
             {
               "code": "ปากตาย8-24ด้าน",
@@ -3142,7 +3142,7 @@
               "meas": "27.5X14.8X19.2cm",
               "kg": "12.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005C.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3154,7 +3154,7 @@
               "meas": "27.5X14.8X19.2cm",
               "kg": "13.6kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005E.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3166,7 +3166,7 @@
               "meas": "27.5X14.8X19.2cm",
               "kg": "13.9kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005F.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3178,7 +3178,7 @@
               "meas": "27.5X14.8X19.2cm",
               "kg": "13.8kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005G.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3190,7 +3190,7 @@
               "meas": "27.5X14.8X19.2cm",
               "kg": "13kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005H.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3202,7 +3202,7 @@
               "meas": "33.5X16.5X20.5cm",
               "kg": "16.4kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005J.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3214,7 +3214,7 @@
               "meas": "37X18X16cm",
               "kg": "13.2kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005L.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3226,7 +3226,7 @@
               "meas": "37X18X16cm",
               "kg": "14kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005N.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3238,7 +3238,7 @@
               "meas": "42X21X17cm",
               "kg": "22.6kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005P.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3250,7 +3250,7 @@
               "meas": "42X21X17cm",
               "kg": "20.6kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS005Q.webp",
+              "img": "assets/img/tools/WS005A.webp",
               "pic_same": true
             },
             {
@@ -3273,7 +3273,7 @@
               "meas": "32X15.2X18.5cm",
               "kg": "15.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS007C.webp"
+              "img": "assets/img/tools/WS007A.webp"
             },
             {
               "code": "WS007E",
@@ -3284,7 +3284,7 @@
               "meas": "32X15.2X18.5cm",
               "kg": "17kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS007E.webp"
+              "img": "assets/img/tools/WS007A.webp"
             },
             {
               "code": "WS007F",
@@ -3295,7 +3295,7 @@
               "meas": "32X15.2X18.5cm",
               "kg": "17.2kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS007F.webp"
+              "img": "assets/img/tools/WS007A.webp"
             },
             {
               "code": "WS007G",
@@ -3317,7 +3317,7 @@
               "meas": "32X15.2X18.5cm",
               "kg": "15.6kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS007I.webp"
+              "img": "assets/img/tools/WS007G.webp"
             },
             {
               "code": "WS007J",
@@ -3328,7 +3328,7 @@
               "meas": "32.5X17.5X18.5cm",
               "kg": "15.2kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS007J.webp"
+              "img": "assets/img/tools/WS007G.webp"
             },
             {
               "code": "WS007L",
@@ -3339,7 +3339,7 @@
               "meas": "32.5X17.5X18.5cm",
               "kg": "17.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS007L.webp"
+              "img": "assets/img/tools/WS007G.webp"
             },
             {
               "code": "WS007N",
@@ -3350,7 +3350,7 @@
               "meas": "33.6X20.5X18.5cm",
               "kg": "19.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS007N.webp"
+              "img": "assets/img/tools/WS007G.webp"
             }
           ]
         },
@@ -3468,7 +3468,7 @@
               "meas": "40X35X23cm",
               "kg": "20kg",
               "mat": "CR-V 6140",
-              "img": "assets/img/tools/W2838E.webp",
+              "img": "assets/img/tools/W2838C.webp",
               "pic_same": true
             },
             {
@@ -3480,7 +3480,7 @@
               "meas": "40X35X23cm",
               "kg": "20kg",
               "mat": "CR-V 6140",
-              "img": "assets/img/tools/W2838F.webp",
+              "img": "assets/img/tools/W2838C.webp",
               "pic_same": true
             },
             {
@@ -3492,7 +3492,7 @@
               "meas": "39.5X33.5X27.5cm",
               "kg": "23kg",
               "mat": "CR-V 6140",
-              "img": "assets/img/tools/W2838H.webp",
+              "img": "assets/img/tools/W2838C.webp",
               "pic_same": true
             },
             {
@@ -3504,7 +3504,7 @@
               "meas": "41X38.5X29cm",
               "kg": "32kg",
               "mat": "CR-V 6140",
-              "img": "assets/img/tools/W2838I.webp",
+              "img": "assets/img/tools/W2838C.webp",
               "pic_same": true
             },
             {
@@ -3516,7 +3516,7 @@
               "meas": "44.5X40.3X18cm",
               "kg": "21kg",
               "mat": "CR-V 6140",
-              "img": "assets/img/tools/W2838J.webp",
+              "img": "assets/img/tools/W2838C.webp",
               "pic_same": true
             },
             {
@@ -3528,7 +3528,7 @@
               "meas": "44.5X40.5X18cm",
               "kg": "21kg",
               "mat": "CR-V 6140",
-              "img": "assets/img/tools/W2838K.webp",
+              "img": "assets/img/tools/W2838C.webp",
               "pic_same": true
             }
           ]
@@ -3604,7 +3604,7 @@
               "meas": "33.5X23.5X10cm",
               "kg": "20kg",
               "mat": "CR-V 50BV30",
-              "img": "assets/img/tools/W0296.webp",
+              "img": "assets/img/tools/W0295.webp",
               "pic_same": true
             },
             {
@@ -3639,7 +3639,7 @@
               "meas": "52X27X33cm",
               "kg": "27kg",
               "mat": "CR-V 6140",
-              "img": "assets/img/tools/W0361B.webp",
+              "img": "assets/img/tools/W0361A.webp",
               "pic_same": true
             },
             {
@@ -3651,7 +3651,7 @@
               "meas": "52X27X33cm",
               "kg": "32kg",
               "mat": "CR-V 6140",
-              "img": "assets/img/tools/W0361C.webp",
+              "img": "assets/img/tools/W0361A.webp",
               "pic_same": true
             },
             {
@@ -3663,7 +3663,7 @@
               "meas": "52X27X33cm",
               "kg": "29.3kg",
               "mat": "CR-V 6140",
-              "img": "assets/img/tools/W0361D.webp",
+              "img": "assets/img/tools/W0361A.webp",
               "pic_same": true
             },
             {
@@ -3748,7 +3748,7 @@
               "meas": "32X18.5X26.5cm",
               "kg": "8.5kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W0554.webp"
+              "img": "assets/img/tools/W0553.webp"
             },
             {
               "code": "W9921A",
@@ -3818,7 +3818,7 @@
               "meas": "36X23.5X33cm",
               "kg": "23.5kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W9912B.webp"
+              "img": "assets/img/tools/W9912A.webp"
             },
             {
               "code": "W2758B",
@@ -3841,7 +3841,7 @@
               "meas": "37.5X33X28.5cm",
               "kg": "9kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W2758C.webp",
+              "img": "assets/img/tools/W2758B.webp",
               "pic_same": true
             },
             {
@@ -3853,7 +3853,7 @@
               "meas": "37.5X33X28.5cm",
               "kg": "10kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W2758D.webp",
+              "img": "assets/img/tools/W2758B.webp",
               "pic_same": true
             },
             {
@@ -3865,7 +3865,7 @@
               "meas": "47X45X24cm",
               "kg": "14kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W2758E.webp",
+              "img": "assets/img/tools/W2758B.webp",
               "pic_same": true
             },
             {
@@ -3877,7 +3877,7 @@
               "meas": "47X45X24cm",
               "kg": "15kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W2758F.webp",
+              "img": "assets/img/tools/W2758B.webp",
               "pic_same": true
             }
           ]
@@ -3943,7 +3943,7 @@
               "meas": "31X16.5X48cm",
               "kg": "18kg",
               "mat": "เหล็กอัลลอย",
-              "img": "assets/img/tools/W0619B.webp",
+              "img": "assets/img/tools/W0619C.webp",
               "pic_same": true
             },
             {
@@ -4016,7 +4016,7 @@
               "meas": "47X27X21.5cm",
               "kg": "25.5kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W0345B.webp",
+              "img": "assets/img/tools/W0345A.webp",
               "pic_same": true
             },
             {
@@ -4028,7 +4028,7 @@
               "meas": "47X29X21.5cm",
               "kg": "27kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W0345C.webp",
+              "img": "assets/img/tools/W0345A.webp",
               "pic_same": true
             },
             {
@@ -4040,7 +4040,7 @@
               "meas": "34X30X24.5cm",
               "kg": "22kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W0345E.webp",
+              "img": "assets/img/tools/W0345A.webp",
               "pic_same": true
             },
             {
@@ -4052,7 +4052,7 @@
               "meas": "39X34X26cm",
               "kg": "30kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W0345F.webp",
+              "img": "assets/img/tools/W0345A.webp",
               "pic_same": true
             },
             {
@@ -4064,7 +4064,7 @@
               "meas": "45X34X24.5cm",
               "kg": "28kg",
               "mat": "CR-V 6150",
-              "img": "assets/img/tools/W0345H.webp",
+              "img": "assets/img/tools/W0345A.webp",
               "pic_same": true
             },
             {
@@ -4282,7 +4282,7 @@
               "kg": "31kg",
               "mat": "SK-55",
               "notes_th": "ตัว 6 หุน ถอนท่อหักขนาด 4 หุนได้",
-              "img": "assets/img/tools/W3313B.webp"
+              "img": "assets/img/tools/W3313A.webp"
             },
             {
               "code": "W0618",
@@ -4316,7 +4316,7 @@
               "meas": "59X22.5X39.5cm",
               "kg": "14kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0612.webp"
+              "img": "assets/img/tools/W0611.webp"
             },
             {
               "code": "W3314",
@@ -4388,7 +4388,7 @@
               "meas": "55X33X22.5cm",
               "kg": "15kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0458B.webp",
+              "img": "assets/img/tools/W0458A.webp",
               "pic_same": true
             },
             {
@@ -4487,7 +4487,7 @@
               "meas": "26.5X18X29cm",
               "kg": "31kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0153B.webp",
+              "img": "assets/img/tools/W0153A.webp",
               "pic_same": true
             },
             {
@@ -4499,7 +4499,7 @@
               "meas": "39X18X22cm",
               "kg": "31kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0153C.webp",
+              "img": "assets/img/tools/W0153A.webp",
               "pic_same": true
             },
             {
@@ -4511,7 +4511,7 @@
               "meas": "26X23X25cm",
               "kg": "31kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0153D.webp",
+              "img": "assets/img/tools/W0153A.webp",
               "pic_same": true
             },
             {
@@ -4523,7 +4523,7 @@
               "meas": "32X26X19cm",
               "kg": "31kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0153E.webp",
+              "img": "assets/img/tools/W0153A.webp",
               "pic_same": true
             },
             {
@@ -4535,7 +4535,7 @@
               "meas": "37.5X26.5X16.5cm",
               "kg": "30kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0153F.webp",
+              "img": "assets/img/tools/W0153A.webp",
               "pic_same": true
             },
             {
@@ -4547,7 +4547,7 @@
               "meas": "41.5X15X27cm",
               "kg": "25kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0153G.webp",
+              "img": "assets/img/tools/W0153A.webp",
               "pic_same": true
             },
             {
@@ -4559,7 +4559,7 @@
               "meas": "46.5X20.5X20.5cm",
               "kg": "29kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W0153H.webp",
+              "img": "assets/img/tools/W0153A.webp",
               "pic_same": true
             },
             {
@@ -4584,7 +4584,7 @@
               "meas": "37X24X43.5cm",
               "kg": "23kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0459B.webp",
+              "img": "assets/img/tools/W0459A.webp",
               "pic_same": true
             },
             {
@@ -4596,7 +4596,7 @@
               "meas": "39.5X33X37.5cm",
               "kg": "27kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0459C.webp",
+              "img": "assets/img/tools/W0459A.webp",
               "pic_same": true
             },
             {
@@ -4776,7 +4776,7 @@
               "meas": "63X14X8cm",
               "kg": "24kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W0014D.webp",
+              "img": "assets/img/tools/W0014C.webp",
               "pic_same": true
             },
             {
@@ -4801,7 +4801,7 @@
               "meas": "38X34X25cm",
               "kg": "32kg",
               "mat": "SK-45",
-              "img": "assets/img/tools/W0021C.webp",
+              "img": "assets/img/tools/W0021B.webp",
               "pic_same": true
             }
           ]
@@ -5062,7 +5062,7 @@
               "meas": "46X34X26cm",
               "kg": "19kg",
               "mat": "สแตนเลส 304",
-              "img": "assets/img/tools/W3099B.webp",
+              "img": "assets/img/tools/W3099A.webp",
               "pic_same": true
             }
           ]
@@ -5109,7 +5109,7 @@
               "kg": "27kg",
               "mat": "CR-V",
               "notes_th": "สามารถตัดเหล็กเส้นผ่านศูนย์กลาง: คาร์บอนต่ำ Φ10mm / คาร์บอนสูง Φ8mm",
-              "img": "assets/img/tools/W0119A.webp",
+              "img": "assets/img/tools/W0118A.webp",
               "pic_same": true
             },
             {
@@ -5122,7 +5122,7 @@
               "kg": "22kg",
               "mat": "CR-V",
               "notes_th": "สามารถตัดเหล็กเส้นผ่านศูนย์กลาง: คาร์บอนต่ำ Φ13mm / คาร์บอนสูง Φ10mm",
-              "img": "assets/img/tools/W0120A.webp",
+              "img": "assets/img/tools/W0118A.webp",
               "pic_same": true
             },
             {
@@ -5135,7 +5135,7 @@
               "kg": "29kg",
               "mat": "CR-V",
               "notes_th": "สามารถตัดเหล็กเส้นผ่านศูนย์กลาง: คาร์บอนต่ำ Φ16mm / คาร์บอนสูง Φ12mm",
-              "img": "assets/img/tools/W0121A.webp",
+              "img": "assets/img/tools/W0118A.webp",
               "pic_same": true
             },
             {
@@ -5207,7 +5207,7 @@
               "kg": "20kg",
               "mat": "65#",
               "notes_th": "ตัดลวดเหล็กที่มีพื้นผิว 150mm²",
-              "img": "assets/img/tools/W0425B.webp",
+              "img": "assets/img/tools/W0425A.webp",
               "pic_same": true
             },
             {
@@ -5220,7 +5220,7 @@
               "kg": "20kg",
               "mat": "65#",
               "notes_th": "ตัดลวดเหล็กที่มีพื้นผิว 240mm²",
-              "img": "assets/img/tools/W0425C.webp",
+              "img": "assets/img/tools/W0425A.webp",
               "pic_same": true
             },
             {
@@ -5233,7 +5233,7 @@
               "kg": "23kg",
               "mat": "65#",
               "notes_th": "ตัดลวดเหล็กที่มีพื้นผิว 400mm²",
-              "img": "assets/img/tools/W0425D.webp",
+              "img": "assets/img/tools/W0425A.webp",
               "pic_same": true
             },
             {
@@ -5246,7 +5246,7 @@
               "kg": "27kg",
               "mat": "65#",
               "notes_th": "ตัดลวดเหล็กที่มีพื้นผิว 450mm²",
-              "img": "assets/img/tools/W0425E.webp",
+              "img": "assets/img/tools/W0425A.webp",
               "pic_same": true
             },
             {
@@ -5259,7 +5259,7 @@
               "kg": "30kg",
               "mat": "65#",
               "notes_th": "ตัดลวดเหล็กที่มีพื้นผิว 500mm²",
-              "img": "assets/img/tools/W0425F.webp",
+              "img": "assets/img/tools/W0425A.webp",
               "pic_same": true
             }
           ]
@@ -5317,7 +5317,7 @@
               "meas": "51X28X22cm",
               "kg": "25.5kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS708B.webp",
+              "img": "assets/img/tools/WS706B.webp",
               "pic_same": true
             },
             {
@@ -5329,7 +5329,7 @@
               "meas": "51X28X22cm",
               "kg": "27kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/WS7010B.webp",
+              "img": "assets/img/tools/WS706B.webp",
               "pic_same": true
             }
           ]
@@ -5411,7 +5411,7 @@
               "meas": "46X31.3X18.6cm",
               "kg": "18kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W1110B.webp",
+              "img": "assets/img/tools/W1110A.webp",
               "pic_same": true
             },
             {
@@ -5423,7 +5423,7 @@
               "meas": "46X31.3X18.6cm",
               "kg": "18kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W1110C.webp",
+              "img": "assets/img/tools/W1110A.webp",
               "pic_same": true
             }
           ]
@@ -5459,7 +5459,7 @@
               "meas": "55.5X33X16.5cm",
               "kg": "25kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W6010C.webp",
+              "img": "assets/img/tools/W608C.webp",
               "pic_same": true
             },
             {
@@ -5471,7 +5471,7 @@
               "meas": "41.5X38.5X19cm",
               "kg": "26kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W6012C.webp",
+              "img": "assets/img/tools/W608C.webp",
               "pic_same": true
             },
             {
@@ -5483,7 +5483,7 @@
               "meas": "45X28.5X20.3cm",
               "kg": "25kg",
               "mat": "CR-V",
-              "img": "assets/img/tools/W6014C.webp",
+              "img": "assets/img/tools/W608C.webp",
               "pic_same": true
             }
           ]
@@ -5702,7 +5702,7 @@
               "meas": "39X28X25cm",
               "kg": "26kg",
               "mat": "เหล็กอัลลอย",
-              "img": "assets/img/tools/W2922.webp",
+              "img": "assets/img/tools/W2921.webp",
               "pic_same": true
             }
           ]
@@ -5776,7 +5776,7 @@
               "en": "THREAD CUTTER SET",
               "size": "5\"",
               "notes_th": "บรรจุ 1 โหล/แผง",
-              "img": "assets/img/tools/WM3202-ใหญ่.webp",
+              "img": "assets/img/tools/WM3202-เล็ก.webp",
               "pic_same": true,
               "notes_src": "ตารางมีเฉพาะคอลัมน์ รหัส และ ขนาด; ระบุการบรรจุ \"1 โหล/แผง\" คร่อมทั้งสองรหัส"
             }
@@ -6186,7 +6186,7 @@
               "meas": "34X17X16cm",
               "kg": "23kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W2606B.webp",
+              "img": "assets/img/tools/W2606A.webp",
               "pic_same": true
             },
             {
@@ -6198,7 +6198,7 @@
               "meas": "19X19X16cm",
               "kg": "18kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W2606C.webp",
+              "img": "assets/img/tools/W2606A.webp",
               "pic_same": true
             },
             {
@@ -6210,7 +6210,7 @@
               "meas": "20.5X20.5X17cm",
               "kg": "18kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W2606D.webp",
+              "img": "assets/img/tools/W2606A.webp",
               "pic_same": true
             },
             {
@@ -6222,7 +6222,7 @@
               "meas": "23X23X17cm",
               "kg": "24kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W2606E.webp",
+              "img": "assets/img/tools/W2606A.webp",
               "pic_same": true
             }
           ]
@@ -6260,7 +6260,7 @@
               "kg": "20kg",
               "mat": "SK-55",
               "notes_th": "ชุด 15 ตัว ขนาด 3、4、5、6、7、8、9、10、11、12、14、16、19、22、25mm",
-              "img": "assets/img/tools/W2605B.webp",
+              "img": "assets/img/tools/W2605A.webp",
               "pic_same": true
             }
           ]
@@ -6337,7 +6337,7 @@
               "meas": "33X25.5X8cm",
               "kg": "19kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W2607B.webp",
+              "img": "assets/img/tools/W2607A.webp",
               "pic_same": true
             },
             {
@@ -6349,7 +6349,7 @@
               "meas": "19X18.5X16cm",
               "kg": "15kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W2607C.webp",
+              "img": "assets/img/tools/W2607A.webp",
               "pic_same": true
             },
             {
@@ -6361,7 +6361,7 @@
               "meas": "20.5X20X16cm",
               "kg": "21kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W2607D.webp",
+              "img": "assets/img/tools/W2607A.webp",
               "pic_same": true
             },
             {
@@ -6373,7 +6373,7 @@
               "meas": "23X22X8.5cm",
               "kg": "14.5kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W2607E.webp",
+              "img": "assets/img/tools/W2607A.webp",
               "pic_same": true
             }
           ]
@@ -6410,7 +6410,7 @@
               "meas": "47X29X35cm",
               "kg": "21kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W0289B.webp",
+              "img": "assets/img/tools/W0289A.webp",
               "pic_same": true
             }
           ]
@@ -6446,7 +6446,7 @@
               "meas": "44X33X26cm",
               "kg": "25kg",
               "mat": "เหล็กกล้าคาร์บอนสูง เกรดT12",
-              "img": "assets/img/tools/W0086AC.webp",
+              "img": "assets/img/tools/W0086AB.webp",
               "pic_same": true
             },
             {
@@ -6458,7 +6458,7 @@
               "meas": "49X33X26cm",
               "kg": "25kg",
               "mat": "เหล็กกล้าคาร์บอนสูง เกรดT12",
-              "img": "assets/img/tools/W0086AD.webp",
+              "img": "assets/img/tools/W0086AB.webp",
               "pic_same": true
             }
           ]
@@ -6494,7 +6494,7 @@
               "meas": "44X33X26cm",
               "kg": "22kg",
               "mat": "เหล็กกล้าคาร์บอนสูง เกรดT12",
-              "img": "assets/img/tools/W0086CC.webp",
+              "img": "assets/img/tools/W0086CB.webp",
               "pic_same": true
             }
           ]
@@ -6647,7 +6647,7 @@
               "meas": "47X29X35cm",
               "kg": "21kg",
               "mat": "GCR-15",
-              "img": "assets/img/tools/W0490B.webp",
+              "img": "assets/img/tools/W0490A.webp",
               "pic_same": true
             }
           ]
@@ -6682,7 +6682,7 @@
               "meas": "37X18X16cm",
               "kg": "18kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W0497BB.webp",
+              "img": "assets/img/tools/W0497AA.webp",
               "pic_same": true
             }
           ]
@@ -6962,7 +6962,7 @@
               "meas": "28.5X25X27cm",
               "kg": "24.5kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W4359A.webp",
+              "img": "assets/img/tools/W4358A.webp",
               "pic_same": true,
               "notes_src": "ขนาด จำนวน ขนาดลัง และน้ำหนักเท่ากับ W4358A ทุกช่อง ต่างกันเฉพาะรูปทรงปลาย (แหลม/แบน) ซึ่งไม่ได้ระบุเป็นข้อความในตาราง"
             },
@@ -6975,7 +6975,7 @@
               "meas": "28.5X25X27cm",
               "kg": "26kg",
               "mat": "SK-55",
-              "img": "assets/img/tools/W4360.webp",
+              "img": "assets/img/tools/W4358A.webp",
               "pic_same": true
             },
             {
@@ -6988,7 +6988,7 @@
               "kg": "27.5kg",
               "mat": "SK-55",
               "notes_th": "ขนาดและจำนวนเท่ากับ W4360 ต่างกันเฉพาะรูปทรงปลาย (แหลม/แบน) และน้ำหนัก",
-              "img": "assets/img/tools/W4361.webp",
+              "img": "assets/img/tools/W4358A.webp",
               "pic_same": true
             }
           ]
@@ -7039,7 +7039,7 @@
               "en": "4\" Flap Wheel",
               "size": "100X16mm 80#",
               "notes_th": "เบอร์ทราย 80#",
-              "img": "assets/img/tools/W2776B.webp",
+              "img": "assets/img/tools/W2776A.webp",
               "pic_same": true
             },
             {
@@ -7048,7 +7048,7 @@
               "en": "4\" Flap Wheel",
               "size": "100X16mm 120#",
               "notes_th": "เบอร์ทราย 120#",
-              "img": "assets/img/tools/W2776C.webp",
+              "img": "assets/img/tools/W2776A.webp",
               "pic_same": true
             }
           ]
@@ -7084,7 +7084,7 @@
               "meas": "36X32X24cm",
               "kg": "18.6kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673C.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7096,7 +7096,7 @@
               "meas": "36X32X24cm",
               "kg": "24.5kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673D.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7108,7 +7108,7 @@
               "meas": "36X32X27cm",
               "kg": "33.4kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673E.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7120,7 +7120,7 @@
               "meas": "36X32X27cm",
               "kg": "23kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673F.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7132,7 +7132,7 @@
               "meas": "36X32X27cm",
               "kg": "24.5kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673G.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7144,7 +7144,7 @@
               "meas": "36X32X27cm",
               "kg": "29kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673H.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7156,7 +7156,7 @@
               "meas": "36X32X24cm",
               "kg": "23.7kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673I.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7168,7 +7168,7 @@
               "meas": "36X32X24cm",
               "kg": "25kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673J.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7180,7 +7180,7 @@
               "meas": "36X32X24cm",
               "kg": "27.6kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673K.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7192,7 +7192,7 @@
               "meas": "42X26X27cm",
               "kg": "25.7kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673L.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7204,7 +7204,7 @@
               "meas": "42X26X27cm",
               "kg": "27.5kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673M.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7216,7 +7216,7 @@
               "meas": "42X26X27cm",
               "kg": "28kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673N.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7228,7 +7228,7 @@
               "meas": "42X26X27cm",
               "kg": "29kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673O.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7240,7 +7240,7 @@
               "meas": "42X26X27cm",
               "kg": "31kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673P.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true
             },
             {
@@ -7252,7 +7252,7 @@
               "meas": "29X27X24cm",
               "kg": "19kg",
               "mat": "HSS M2",
-              "img": "assets/img/tools/W2673Q.webp",
+              "img": "assets/img/tools/W2673B.webp",
               "pic_same": true,
               "notes_src": "ตารางเริ่มที่รหัส W2673B ไม่มีแถว W2673A"
             }
@@ -7300,7 +7300,7 @@
               "meas": "46X35.5X34cm",
               "kg": "29kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674C.webp",
+              "img": "assets/img/tools/W2674A.webp",
               "pic_same": true
             },
             {
@@ -7312,7 +7312,7 @@
               "meas": "46X35.5X34cm",
               "kg": "30kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674D.webp",
+              "img": "assets/img/tools/W2674A.webp",
               "pic_same": true
             },
             {
@@ -7324,7 +7324,7 @@
               "meas": "46X35.5X34cm",
               "kg": "32kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674E.webp",
+              "img": "assets/img/tools/W2674A.webp",
               "pic_same": true
             },
             {
@@ -7336,7 +7336,7 @@
               "meas": "46X35.5X34cm",
               "kg": "36kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674F.webp",
+              "img": "assets/img/tools/W2674A.webp",
               "pic_same": true
             },
             {
@@ -7348,7 +7348,7 @@
               "meas": "46X35.5X34cm",
               "kg": "37kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674G.webp",
+              "img": "assets/img/tools/W2674A.webp",
               "pic_same": true
             },
             {
@@ -7360,7 +7360,7 @@
               "meas": "46X37X23cm",
               "kg": "27kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674H.webp",
+              "img": "assets/img/tools/W2674A.webp",
               "pic_same": true
             },
             {
@@ -7372,7 +7372,7 @@
               "meas": "46X37X23cm",
               "kg": "29kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674I.webp",
+              "img": "assets/img/tools/W2674A.webp",
               "pic_same": true
             },
             {
@@ -7384,7 +7384,7 @@
               "meas": "46X37X23cm",
               "kg": "30kg",
               "mat": "HSS",
-              "img": "assets/img/tools/W2674J.webp",
+              "img": "assets/img/tools/W2674A.webp",
               "pic_same": true
             }
           ]
@@ -7724,7 +7724,7 @@
               "meas": "61.5X38X29cm",
               "kg": "21kg",
               "mat": "เหล็กแมงกานีส #65",
-              "img": "assets/img/tools/WS0339E.webp",
+              "img": "assets/img/tools/WS0339D.webp",
               "pic_same": true
             },
             {
@@ -7736,7 +7736,7 @@
               "meas": "71.5X38X24cm",
               "kg": "26kg",
               "mat": "เหล็กแมงกานีส #65",
-              "img": "assets/img/tools/WS0339F.webp",
+              "img": "assets/img/tools/WS0339D.webp",
               "pic_same": true,
               "notes_src": "ขนาดลังพิมพ์เป็น 71.5X38X24cm ซึ่งมิติสุดท้ายต่างจากอีกสองรุ่นที่เป็น 29cm (ตรวจซ้ำแล้วอ่านได้ 24cm จริง)"
             }
@@ -8115,7 +8115,7 @@
               "size": "ยืดได้ยาว 3 เมตร",
               "pcs": "12",
               "mat": "อลูมิเนียม",
-              "img": "assets/img/tools/ด้ามยืด3ม..webp",
+              "img": "assets/img/tools/ด้ามยืด4.5ม..webp",
               "notes_src": "ช่องรหัส/ITEM NO พิมพ์เป็นข้อความไทยว่า \"ด้ามยืด3ม.\" ไม่ใช่รหัสสินค้า",
               "pic_same": true
             }
@@ -8188,7 +8188,7 @@
               "pcs": "36/216",
               "meas": "55.2X20.6X26.4cm",
               "kg": "8.5kg",
-              "img": "assets/img/tools/W3001B.webp",
+              "img": "assets/img/tools/W3001A.webp",
               "pic_same": true
             },
             {
@@ -8199,7 +8199,7 @@
               "pcs": "36/216",
               "meas": "50.1X40X25.4cm",
               "kg": "21kg",
-              "img": "assets/img/tools/W3001C.webp",
+              "img": "assets/img/tools/W3001A.webp",
               "pic_same": true
             }
           ]
@@ -8349,7 +8349,7 @@
               "meas": "40.3X22.8X28cm",
               "kg": "12kg",
               "mat": "เหล็กกล้าคาร์บอนสูง",
-              "img": "assets/img/tools/W0625C.webp",
+              "img": "assets/img/tools/W0625B.webp",
               "pic_same": true
             },
             {
@@ -8361,7 +8361,7 @@
               "meas": "43X22.8X28cm",
               "kg": "15.5kg",
               "mat": "เหล็กกล้าคาร์บอนสูง",
-              "img": "assets/img/tools/W0625D.webp",
+              "img": "assets/img/tools/W0625B.webp",
               "pic_same": true
             },
             {
@@ -8373,7 +8373,7 @@
               "meas": "48.3X22.8X28cm",
               "kg": "15.5kg",
               "mat": "เหล็กกล้าคาร์บอนสูง",
-              "img": "assets/img/tools/W0625E.webp",
+              "img": "assets/img/tools/W0625B.webp",
               "pic_same": true
             },
             {
@@ -8385,7 +8385,7 @@
               "meas": "51.5X22.8X49cm",
               "kg": "19.5kg",
               "mat": "เหล็กกล้าคาร์บอนสูง",
-              "img": "assets/img/tools/W0625F.webp",
+              "img": "assets/img/tools/W0625B.webp",
               "pic_same": true,
               "notes_src": "ลังกว้าง 49cm ต่างจากรุ่นอื่นในกลุ่มที่เป็น 28cm (พิมพ์ไว้เช่นนี้ในตาราง)"
             }
@@ -8422,7 +8422,7 @@
               "meas": "51X28X32cm",
               "kg": "12kg",
               "mat": "65#",
-              "img": "assets/img/tools/W0072D.webp",
+              "img": "assets/img/tools/W0072C.webp",
               "pic_same": true
             },
             {
@@ -8434,7 +8434,7 @@
               "meas": "51X28X32cm",
               "kg": "12kg",
               "mat": "65#",
-              "img": "assets/img/tools/W0072E.webp",
+              "img": "assets/img/tools/W0072C.webp",
               "pic_same": true
             }
           ]
@@ -8534,7 +8534,7 @@
               "pcs": "48",
               "meas": "38X37X31cm",
               "kg": "25kg",
-              "img": "assets/img/tools/W0165B.webp",
+              "img": "assets/img/tools/W0165A.webp",
               "pic_same": true
             }
           ]
@@ -8672,7 +8672,7 @@
               "en": "CLAW HAMMER",
               "size": "หัวค้อนเส้นผ่านศูนย์กลาง 29 มม.",
               "mat": "SK-55",
-              "img": "assets/img/tools/ค้อนสิงห์-29.webp",
+              "img": "assets/img/tools/ค้อนสิงห์-27.webp",
               "notes_src": "ช่อง ITEM NO พิมพ์เป็นข้อความไทย ไม่ใช่รหัส W... ; สินค้าตรา 'สิงห์' ไม่ใช่ WYNN'S ; ช่อง PCS/MEAS/W เว้นว่าง ; ช่อง PCS/MEAS/W เว้นว่าง",
               "pic_same": true
             }
@@ -8750,7 +8750,7 @@
               "meas": "55X33X22.5cm",
               "kg": "13.5kg",
               "mat": "65#",
-              "img": "assets/img/tools/W3495B.webp",
+              "img": "assets/img/tools/W3495A.webp",
               "pic_same": true
             },
             {
@@ -8762,7 +8762,7 @@
               "meas": "55X33X22.5cm",
               "kg": "16kg",
               "mat": "65#",
-              "img": "assets/img/tools/W3495C.webp",
+              "img": "assets/img/tools/W3495A.webp",
               "pic_same": true
             }
           ],
@@ -8850,7 +8850,7 @@
               "meas": "38X34X25cm",
               "kg": "24.5kg",
               "mat": "65#",
-              "img": "assets/img/tools/W0151D.webp",
+              "img": "assets/img/tools/W0151B.webp",
               "pic_same": true,
               "notes_src": "ตารางข้ามรหัส W0151C ไป (มีเฉพาะ B, D, E)"
             },
@@ -8863,7 +8863,7 @@
               "meas": "38X34X25cm",
               "kg": "25kg",
               "mat": "65#",
-              "img": "assets/img/tools/W0151E.webp",
+              "img": "assets/img/tools/W0151B.webp",
               "pic_same": true
             }
           ]
@@ -9091,7 +9091,7 @@
               "pcs": "6/36",
               "meas": "46X29.5X38.5cm",
               "kg": "22.5kg",
-              "img": "assets/img/tools/W0236.webp",
+              "img": "assets/img/tools/W0235.webp",
               "pic_same": true
             }
           ]
@@ -9128,7 +9128,7 @@
               "meas": "44X41X23cm",
               "kg": "24kg",
               "mat": "STAINLESS",
-              "img": "assets/img/tools/W3071.webp",
+              "img": "assets/img/tools/W3070.webp",
               "pic_same": true
             }
           ]
@@ -9162,7 +9162,7 @@
               "pcs": "10/60",
               "meas": "37X29X33cm",
               "kg": "25kg",
-              "img": "assets/img/tools/W0476C.webp",
+              "img": "assets/img/tools/W0476B.webp",
               "pic_same": true
             },
             {
@@ -9173,7 +9173,7 @@
               "pcs": "10/60",
               "meas": "37X29X33cm",
               "kg": "31kg",
-              "img": "assets/img/tools/W0476D.webp",
+              "img": "assets/img/tools/W0476B.webp",
               "pic_same": true
             }
           ]
@@ -9458,7 +9458,7 @@
               "th": "ปืนยิงกาว MTT",
               "en": "HOT MELT MTT GLUE GUN",
               "size": "ใช้กับกาวขนาดเส้นผ่าศูนย์กลางสูงสุด 11 มม. กำลังไฟสูงสุด 60 W",
-              "img": "assets/img/tools/QYT-5.webp",
+              "img": "assets/img/tools/QYT-3.webp",
               "brand": "MTT",
               "brand_fam": "other",
               "notes_src": "หน้า 67. สินค้าตรา M.T.T. (MTT) ไม่ใช่ยี่ห้อ WYNN'S. ตารางมีเพียง 2 คอลัมน์ (รหัส และ SIZE/ขนาด)",
@@ -9516,7 +9516,7 @@
               "en": "MTT SAFETY PIN",
               "size": "#00 = 2.3 ซม.",
               "pcs": "72 พวง /2880 พวง",
-              "img": "assets/img/tools/เข็มกลัดMTT-00.webp",
+              "img": "assets/img/tools/เข็มกลัดMTT-000.webp",
               "brand": "MTT",
               "brand_fam": "pin",
               "notes_src": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #00 ต่อท้ายเพื่อแยกรายการ ขนาดยึดตามตารางสเปคโรงงาน ซึ่งเป็นชุดเดียวกับที่หน้าเข็มกลัดทั้ง 10 หน้าใช้ (แคตตาล็อกหน้า 67 พิมพ์ 2.25 ซม. ต่างออกไป)",
@@ -9528,7 +9528,7 @@
               "en": "MTT SAFETY PIN",
               "size": "#0 = 2.8 ซม.",
               "pcs": "72 พวง /2880 พวง",
-              "img": "assets/img/tools/เข็มกลัดMTT-0.webp",
+              "img": "assets/img/tools/เข็มกลัดMTT-000.webp",
               "brand": "MTT",
               "brand_fam": "pin",
               "notes_src": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #0 ต่อท้ายเพื่อแยกรายการ",
@@ -9540,7 +9540,7 @@
               "en": "MTT SAFETY PIN",
               "size": "#1 = 3.2 ซม.",
               "pcs": "72 พวง /2880 พวง",
-              "img": "assets/img/tools/เข็มกลัดMTT-1.webp",
+              "img": "assets/img/tools/เข็มกลัดMTT-000.webp",
               "brand": "MTT",
               "brand_fam": "pin",
               "notes_src": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #1 ต่อท้ายเพื่อแยกรายการ ขนาดยึดตามตารางสเปคโรงงาน ซึ่งเป็นชุดเดียวกับที่หน้าเข็มกลัดทั้ง 10 หน้าใช้ (แคตตาล็อกหน้า 67 พิมพ์ 3.3 ซม. ต่างออกไป)",
@@ -9552,7 +9552,7 @@
               "en": "MTT SAFETY PIN",
               "size": "#2 = 3.8 ซม.",
               "pcs": "72 พวง /2880 พวง",
-              "img": "assets/img/tools/เข็มกลัดMTT-2.webp",
+              "img": "assets/img/tools/เข็มกลัดMTT-000.webp",
               "brand": "MTT",
               "brand_fam": "pin",
               "notes_src": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #2 ต่อท้ายเพื่อแยกรายการ",
@@ -9564,7 +9564,7 @@
               "en": "MTT SAFETY PIN",
               "size": "#3 = 4.6 ซม.",
               "pcs": "36 พวง /1440 พวง",
-              "img": "assets/img/tools/เข็มกลัดMTT-3.webp",
+              "img": "assets/img/tools/เข็มกลัดMTT-000.webp",
               "brand": "MTT",
               "brand_fam": "pin",
               "notes_src": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #3 ต่อท้ายเพื่อแยกรายการ",
@@ -9576,7 +9576,7 @@
               "en": "MTT SAFETY PIN",
               "size": "#4 = 5.6 ซม.",
               "pcs": "36 พวง /1440 พวง",
-              "img": "assets/img/tools/เข็มกลัดMTT-4.webp",
+              "img": "assets/img/tools/เข็มกลัดMTT-000.webp",
               "brand": "MTT",
               "brand_fam": "pin",
               "notes_src": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #4 ต่อท้ายเพื่อแยกรายการ ขนาดยึดตามตารางสเปคโรงงาน ซึ่งเป็นชุดเดียวกับที่หน้าเข็มกลัดทั้ง 10 หน้าใช้ (แคตตาล็อกหน้า 67 พิมพ์ 5.7 ซม. ต่างออกไป)",
@@ -9588,7 +9588,7 @@
               "en": "MTT SAFETY PIN",
               "size": "#5 = 6.5 ซม.",
               "pcs": "18 พวง /720 พวง",
-              "img": "assets/img/tools/เข็มกลัดMTT-5.webp",
+              "img": "assets/img/tools/เข็มกลัดMTT-000.webp",
               "brand": "MTT",
               "brand_fam": "pin",
               "notes_src": "หน้า 67. ต้นฉบับพิมพ์รหัส \"เข็มกลัดMTT\" ไว้ที่แถวแรกแถวเดียว จึงเติมเบอร์ #5 ต่อท้ายเพื่อแยกรายการ ขนาดยึดตามตารางสเปคโรงงาน ซึ่งเป็นชุดเดียวกับที่หน้าเข็มกลัดทั้ง 10 หน้าใช้ (แคตตาล็อกหน้า 67 พิมพ์ 6.6 ซม. ต่างออกไป)",
@@ -9842,7 +9842,7 @@
               "pcs": "8",
               "meas": "85.5X42X40.5cm",
               "kg": "14kg",
-              "img": "assets/img/tools/W430.webp",
+              "img": "assets/img/tools/W380.webp",
               "notes_src": "หน้า 69",
               "pic_same": true
             },
@@ -9854,7 +9854,7 @@
               "pcs": "6",
               "meas": "47.5X47.5X63.5cm",
               "kg": "12.5kg",
-              "img": "assets/img/tools/W450.webp",
+              "img": "assets/img/tools/W380.webp",
               "notes_src": "หน้า 69. ข้อมูลขัดแย้งกันเอง: กล่องรุ่นนี้ใหญ่ที่สุด แต่น้ำหนักต่อลัง 12.5kg กลับน้อยกว่ารุ่น W380 (13kg) และ W430 (14kg) อาจเพราะบรรจุลังละ 6 ใบเท่านั้น บันทึกไว้ตามที่พิมพ์",
               "pic_same": true
             }
@@ -10020,7 +10020,7 @@
               "pcs": "2",
               "meas": "48X36X25cm",
               "kg": "46.5kg",
-              "img": "assets/img/tools/WS-10T.webp",
+              "img": "assets/img/tools/WS-5T.webp",
               "pic_same": true
             }
           ],
@@ -10059,7 +10059,7 @@
               "meas": "20.5X18.5X32.5cm",
               "kg": "5.5kg",
               "notes_th": "ยกต่ำสุด (MIN HEIGHT) 285mm / ยกสูงสุด (MAX HEIGHT) 425mm",
-              "img": "assets/img/tools/W2604B.webp",
+              "img": "assets/img/tools/W2604A.webp",
               "pic_same": true
             },
             {
@@ -10071,7 +10071,7 @@
               "meas": "27.5X24.5X42.5cm",
               "kg": "10kg",
               "notes_th": "ยกต่ำสุด (MIN HEIGHT) 395mm / ยกสูงสุด (MAX HEIGHT) 605mm",
-              "img": "assets/img/tools/W2604C.webp",
+              "img": "assets/img/tools/W2604A.webp",
               "pic_same": true
             },
             {
@@ -10083,7 +10083,7 @@
               "meas": "34X30.5X59cm",
               "kg": "26kg",
               "notes_th": "ยกต่ำสุด (MIN HEIGHT) 487mm / ยกสูงสุด (MAX HEIGHT) 748mm",
-              "img": "assets/img/tools/W2604D.webp",
+              "img": "assets/img/tools/W2604A.webp",
               "pic_same": true
             }
           ],
@@ -10127,7 +10127,7 @@
               "size": "30มม. คอยาว",
               "pcs": "12/144",
               "notes_th": "ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-30L.webp",
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
@@ -10140,7 +10140,7 @@
               "size": "40มม. คอสั้น",
               "pcs": "12/96",
               "notes_th": "ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-40S.webp",
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
@@ -10153,7 +10153,7 @@
               "size": "40มม. คอยาว",
               "pcs": "12/96",
               "notes_th": "ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-40L.webp",
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
@@ -10166,7 +10166,7 @@
               "size": "50มม. คอสั้น",
               "pcs": "12/72",
               "notes_th": "ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-50S.webp",
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
@@ -10179,7 +10179,7 @@
               "size": "50มม. คอยาว",
               "pcs": "12/72",
               "notes_th": "ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
-              "img": "assets/img/tools/กุญแจสิงห์เงิน-50L.webp",
+              "img": "assets/img/tools/กุญแจสิงห์เงิน-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "สินค้าแบรนด์ของร้านเอง ไม่ใช่ WYNN'S — ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.",
@@ -10224,7 +10224,7 @@
               "en": "DOUBLE BALL LOCKING KEYED ALIKE PADLOCK",
               "size": "40มม. คอสั้น 4 ตัว และ คอยาว 1 ตัว",
               "pcs": "10",
-              "img": "assets/img/tools/สิงห์เงิน-40-5.webp",
+              "img": "assets/img/tools/สิงห์เงิน-40-3.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
@@ -10236,7 +10236,7 @@
               "en": "DOUBLE BALL LOCKING KEYED ALIKE PADLOCK",
               "size": "50มม. คอสั้น 2 ตัว และ คอยาว 1 ตัว",
               "pcs": "10",
-              "img": "assets/img/tools/สิงห์เงิน-50-3.webp",
+              "img": "assets/img/tools/สิงห์เงิน-40-3.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
@@ -10248,7 +10248,7 @@
               "en": "DOUBLE BALL LOCKING KEYED ALIKE PADLOCK",
               "size": "50มม. คอสั้น 4 ตัว และ คอยาว 1 ตัว",
               "pcs": "10",
-              "img": "assets/img/tools/สิงห์เงิน-50-5.webp",
+              "img": "assets/img/tools/สิงห์เงิน-40-3.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
@@ -10297,7 +10297,7 @@
               "size": "30มม. คอยาว",
               "pcs": "12/144",
               "mat": "ไส้ทองเหลืองแท้",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-30L.webp",
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
@@ -10310,7 +10310,7 @@
               "size": "40มม. คอสั้น",
               "pcs": "12/96",
               "mat": "ไส้ทองเหลืองแท้",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-40S.webp",
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
@@ -10323,7 +10323,7 @@
               "size": "40มม. คอยาว",
               "pcs": "12/96",
               "mat": "ไส้ทองเหลืองแท้",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-40L.webp",
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
@@ -10336,7 +10336,7 @@
               "size": "50มม. คอสั้น",
               "pcs": "12/72",
               "mat": "ไส้ทองเหลืองแท้",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-50S.webp",
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S",
@@ -10349,7 +10349,7 @@
               "size": "50มม. คอยาว",
               "pcs": "12/72",
               "mat": "ไส้ทองเหลืองแท้",
-              "img": "assets/img/tools/กุญแจสิงห์ทอง-50L.webp",
+              "img": "assets/img/tools/กุญแจสิงห์ทอง-30S.webp",
               "brand": "MTT",
               "brand_fam": "padlock",
               "notes_src": "แบรนด์ MTT ของร้านเอง ไม่ใช่ WYNN'S — แถวนี้พิมพ์รหัสว่า \"กุญแจสิงหทอง-50L\" ตกทัณฑฆาต ต่างจากแถวอื่นที่พิมพ์ \"กุญแจสิงห์ทอง-\" แก้ให้สะกดเหมือนอีก 5 แถวแล้ว เพราะแถวเดียวสะกดต่างทำให้ค้นหาไม่เจอ",
@@ -10392,7 +10392,7 @@
               "size": "25มม. คอสั้น",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-25.webp",
+              "img": "assets/img/tools/84-20.webp",
               "pic_same": true
             },
             {
@@ -10402,7 +10402,7 @@
               "size": "32มม. คอสั้น",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-32.webp",
+              "img": "assets/img/tools/84-20.webp",
               "pic_same": true
             },
             {
@@ -10412,7 +10412,7 @@
               "size": "32มม. คอยาว",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-32L.webp",
+              "img": "assets/img/tools/84-20.webp",
               "pic_same": true
             },
             {
@@ -10422,7 +10422,7 @@
               "size": "38มม. คอสั้น",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-38.webp",
+              "img": "assets/img/tools/84-20.webp",
               "pic_same": true
             },
             {
@@ -10432,7 +10432,7 @@
               "size": "38มม. คอยาว",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-38L.webp",
+              "img": "assets/img/tools/84-20.webp",
               "pic_same": true
             },
             {
@@ -10442,7 +10442,7 @@
               "size": "50มม. คอสั้น",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-50.webp",
+              "img": "assets/img/tools/84-20.webp",
               "pic_same": true
             },
             {
@@ -10452,7 +10452,7 @@
               "size": "50มม. คอยาว",
               "pcs": "6",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/84-50L.webp",
+              "img": "assets/img/tools/84-20.webp",
               "pic_same": true
             }
           ],
@@ -10490,7 +10490,7 @@
               "size": "32มม. คอสั้น",
               "pcs": "6/180",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-363.webp",
+              "img": "assets/img/tools/LUCKY-262.webp",
               "pic_same": true
             },
             {
@@ -10500,7 +10500,7 @@
               "size": "32มม. คอยาว",
               "pcs": "6/180",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-363L.webp",
+              "img": "assets/img/tools/LUCKY-262.webp",
               "pic_same": true
             },
             {
@@ -10510,7 +10510,7 @@
               "size": "38มม. คอสั้น",
               "pcs": "6/120",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-364.webp",
+              "img": "assets/img/tools/LUCKY-262.webp",
               "pic_same": true
             },
             {
@@ -10520,7 +10520,7 @@
               "size": "38มม. คอยาว",
               "pcs": "6/120",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-364L.webp",
+              "img": "assets/img/tools/LUCKY-262.webp",
               "pic_same": true
             },
             {
@@ -10530,7 +10530,7 @@
               "size": "50มม. คอสั้น",
               "pcs": "6/60",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-365.webp",
+              "img": "assets/img/tools/LUCKY-262.webp",
               "pic_same": true
             },
             {
@@ -10540,7 +10540,7 @@
               "size": "50มม. คอยาว",
               "pcs": "6/60",
               "mat": "เหล็กชุบทองเหลือง",
-              "img": "assets/img/tools/LUCKY-365L.webp",
+              "img": "assets/img/tools/LUCKY-262.webp",
               "pic_same": true
             }
           ],
@@ -10581,7 +10581,7 @@
               "size": "40มม. คอยาว",
               "pcs": "12",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/SOHENG-40L.webp",
+              "img": "assets/img/tools/SOHENG-40S.webp",
               "pic_same": true
             },
             {
@@ -10591,7 +10591,7 @@
               "size": "50มม. คอสั้น",
               "pcs": "12",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/SOHENG-50S.webp",
+              "img": "assets/img/tools/SOHENG-40S.webp",
               "pic_same": true
             },
             {
@@ -10601,7 +10601,7 @@
               "size": "50มม. คอยาว",
               "pcs": "12",
               "mat": "ทองเหลืองแท้",
-              "img": "assets/img/tools/SOHENG-50L.webp",
+              "img": "assets/img/tools/SOHENG-40S.webp",
               "pic_same": true
             }
           ],
@@ -10643,7 +10643,7 @@
               "size": "25มม. คอสั้น",
               "pcs": "6/360",
               "mat": "เหล็กสีดำ ระบบสปริง",
-              "img": "assets/img/tools/362.webp",
+              "img": "assets/img/tools/361.webp",
               "pic_same": true
             },
             {

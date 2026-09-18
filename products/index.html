@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
-<title>สินค้าทั้งหมด | ม ทวีภัณฑ์ — เครื่องมือช่าง &amp; ฮาร์ดแวร์</title>
-<meta name="description" content="รวมสินค้าทั้งหมดของ ม ทวีภัณฑ์ — ไฟฟู่ เครื่องมือช่าง WYNNTOOLS ฮาร์ดแวร์ ราคาปลีก-ส่ง ส่งทั่วไทย">
+<title>สินค้าทั้งหมด เครื่องมือช่าง ไฟฟู่ เข็มกลัด | ม.ทวีภัณฑ์</title>
+<meta name="description" content="รวมสินค้าทั้งหมดของ ม.ทวีภัณฑ์ — ไฟฟู่ เครื่องมือช่าง WYNNTOOLS ฮาร์ดแวร์ ราคาปลีก-ส่ง ส่งทั่วไทย">
 <link rel="canonical" href="https://mtthardware.com/products">
-<meta property="og:title" content="สินค้าทั้งหมด | ม ทวีภัณฑ์">
+<meta property="og:title" content="สินค้าทั้งหมด | ม.ทวีภัณฑ์">
 <meta property="og:url" content="https://mtthardware.com/products">
 <meta property="og:description" content="ไฟฟู่ เครื่องมือช่าง WYNNTOOLS ฮาร์ดแวร์ ปลีก-ส่ง">
 <meta property="og:type" content="website">
@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=2">
+<link rel="stylesheet" href="../assets/css/theme.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -35,7 +35,7 @@
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "สินค้าทั้งหมด | ม ทวีภัณฑ์",
+  "name": "สินค้าทั้งหมด | ม.ทวีภัณฑ์",
   "url": "https://mtthardware.com/products",
   "inLanguage": "th-TH",
   "mainEntity": {
@@ -64,7 +64,7 @@
 .prod .body h3{font-size:1.06rem;margin-bottom:3px}
 .prod .body .desc{color:var(--ink-dim);font-size:.85rem;margin:0 0 12px;flex:1}
 .prod .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.prod .price{font-family:"Kanit";font-weight:700;font-size:1.28rem}
+.prod .price{font-family:var(--font-head);font-weight:700;font-size:1.28rem}
 .prod .price.soon{font-size:.95rem;color:var(--ink-mute)}
 .empty{grid-column:1/-1;text-align:center;color:var(--ink-mute);padding:40px 0}
 @media(max-width:860px){.pgrid{grid-template-columns:1fr 1fr}}
@@ -73,6 +73,7 @@
 </head>
 <body>
 <div id="site-header"></div>
+<main id="main">
 
 <section class="plist-hero">
   <div class="wrap">
@@ -86,15 +87,44 @@
 <section style="padding-top:20px">
   <div class="wrap">
     <h2 class="vh" data-th="รายการสินค้าทั้งหมด" data-en="All products">รายการสินค้าทั้งหมด</h2>
-    <div class="pgrid" id="pgrid"></div>
+    <div class="pgrid" id="pgrid"><a class="card prod" href="jet-lighter.html">
+      <div class="thumb"><img src="../assets/img/products/jet-lighter.webp" alt="ไฟฟู่ M.T.T." width="1200" height="900" fetchpriority="high"><span class="flag"><span class="badge">ขายดี</span></span></div>
+      <div class="body">
+        <h3>ไฟฟู่ M.T.T.</h3>
+        <p class="desc">หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี</p>
+        <div class="row"><div class="price">฿45–59</div><span class="btn btn-primary btn-sm">สั่งซื้อ</span></div>
+      </div>
+    </a><a class="card prod soon" href="tools.html">
+      <div class="thumb"><img src="../assets/img/products/wynn-tools.webp" alt="เครื่องมือช่าง WYNNTOOLS" width="1200" height="900" loading="lazy"></div>
+      <div class="body">
+        <h3>เครื่องมือช่าง WYNNTOOLS</h3>
+        <p class="desc">คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย</p>
+        <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
+      </div>
+    </a><a class="card prod soon" href="safety-pins.html">
+      <div class="thumb"><img src="../assets/img/products/safety-pins-hero.webp" alt="เข็มกลัดซ่อนปลาย เบอร์ 000–7" width="1200" height="900" loading="lazy"></div>
+      <div class="body">
+        <h3>เข็มกลัดซ่อนปลาย เบอร์ 000–7</h3>
+        <p class="desc">ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง</p>
+        <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
+      </div>
+    </a><a class="card prod soon" href="mtt-brand.html">
+      <div class="thumb"><img src="../assets/img/products/mtt-brand.webp" alt="สินค้าตรา M.T.T. (ตราสิงโต)" width="1200" height="900" loading="lazy"></div>
+      <div class="body">
+        <h3>สินค้าตรา M.T.T. (ตราสิงโต)</h3>
+        <p class="desc">แบรนด์ของร้านเอง — กุญแจสิงห์เงิน-สิงห์ทอง คีย์อะไลค์ เข็มกลัด ประแจเลื่อน มีดครัว</p>
+        <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
+      </div>
+    </a></div>
   </div>
 </section>
 
+</main>
 <div id="site-footer"></div>
 
 <script>window.MTT_BASE="../";window.MTT_PAGE="products";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=2"></script>
+<script src="../assets/js/catalog.js?v=3"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
 function L(){ return (window.MTT && window.MTT.getLang()) || "th"; }
@@ -129,7 +159,7 @@ function renderGrid(){
     const ctaLabel=p.live?(th?"สั่งซื้อ":"Order"):(linked?(th?"ดูสินค้า":"View"):(th?"ถามของ":"Ask"));
     const ctaCls=p.live?"btn btn-primary btn-sm":"btn btn-ghost btn-sm";
     return `<a class="card prod${p.live?"":" soon"}" href="${href}"${ext}>
-      <div class="thumb">${CATALOG.productThumb(p,"../")}${flag}</div>
+      <div class="thumb">${CATALOG.productThumb(p,"../",false)}${flag}</div>
       <div class="body"><h3>${th?p.name_th:p.name_en}</h3>
       <p class="desc">${th?p.tagline_th:p.tagline_en}</p>
       <div class="row">${price}<span class="${ctaCls}">${ctaLabel}</span></div></div>
@@ -140,7 +170,7 @@ function renderAll(){ renderFilters(); renderGrid(); }
 document.addEventListener("langchange", renderAll);
 renderAll();
 </script>
-<script src="../assets/js/layout.js?v=2"></script>
+<script src="../assets/js/layout.js?v=3"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>
