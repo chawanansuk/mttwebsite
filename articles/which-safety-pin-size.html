@@ -81,6 +81,7 @@
 .art-body p.lead{font-size:1.02rem;color:var(--ink-2)}
 .sec-h{font-size:clamp(1.2rem,2.4vw,1.5rem);margin:36px 0 12px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
 table.job{width:100%;border-collapse:collapse;font-size:.9rem;min-width:560px}
 table.job th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
 table.job td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
@@ -110,7 +111,7 @@ table.job td b{font-family:var(--font-head)}
 
 <section class="art-hero">
   <div class="wrap">
-    <nav class="crumbs" aria-label="breadcrumb"><a href="../index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="../products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a> › <span data-th="บทความ" data-en="Guide">บทความ</span></nav>
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="../products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a> › <span data-th="บทความ" data-en="Guide">บทความ</span></nav>
     <span class="eyebrow" data-th="คู่มือฉบับร้านค้าส่งสำเพ็ง" data-en="The Sampheng wholesaler's guide">คู่มือฉบับร้านค้าส่งสำเพ็ง</span>
     <h1 data-th="เข็มกลัดเบอร์ไหนใช้ทำอะไร? คู่มือเลือกขนาด 000–7" data-en="Which safety-pin size for which job? The 000–7 guide">เข็มกลัดเบอร์ไหนใช้ทำอะไร? คู่มือเลือกขนาด 000–7</h1>
   </div>
@@ -134,7 +135,7 @@ table.job td b{font-family:var(--font-head)}
     </figure>
 
     <h2 class="sec-h" data-th="เลือกจากงานที่จะใช้" data-en="Pick by the job">เลือกจากงานที่จะใช้</h2>
-    <div class="tblwrap">
+    <div class="tblwrap" tabindex="0" role="region" aria-label="เลือกจากงานที่จะใช้">
       <table class="job">
         <thead><tr>
           <th data-th="งานที่จะใช้" data-en="The job">งานที่จะใช้</th>

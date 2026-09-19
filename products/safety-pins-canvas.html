@@ -70,6 +70,7 @@
 .pick p{font-size:.87rem;color:var(--ink-2);margin:0 0 14px;flex:1}
 .pick .row{display:flex;flex-wrap:wrap;gap:8px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
 table.job{width:100%;border-collapse:collapse;font-size:.9rem;min-width:540px}
 table.job th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
 table.job td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
@@ -101,7 +102,7 @@ table.job td a{color:var(--amber-dark);font-weight:600}
 
 <section class="cv-hero">
   <div class="wrap">
-    <nav class="crumbs" aria-label="breadcrumb"><a href="../index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a> › <span data-th="งานผ้าใบ เต็นท์" data-en="Canvas & tents">งานผ้าใบ เต็นท์</span></nav>
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a> › <span data-th="งานผ้าใบ เต็นท์" data-en="Canvas & tents">งานผ้าใบ เต็นท์</span></nav>
     <span class="eyebrow" data-th="สำหรับงานกลางแจ้ง ผ้าหนา และงานรับแรงดึง" data-en="For outdoor, heavy fabric and high-tension work">สำหรับงานกลางแจ้ง ผ้าหนา และงานรับแรงดึง</span>
     <h1 data-th="เข็มกลัดผ้าใบ เต็นท์ และงานหนัก — เบอร์ 5, 6, 7" data-en="Safety pins for canvas, tents and heavy work — sizes 5, 6, 7">เข็มกลัดผ้าใบ เต็นท์ และงานหนัก — เบอร์ 5, 6, 7</h1>
     <p class="muted" style="margin:0" data-th="เบอร์ใหญ่ที่สุดสามเบอร์ ยาว 65–85 มม. ลวดหนา 1.10–1.35 มม. กลัดทะลุผ้าใบ ผ้าเต็นท์ ผ้าคลุม และผ้าซ้อนหลายชั้นได้โดยเข็มไม่งอ ขายส่งยกกล่อง กล่องละ 144–216 ตัว จากหน้าร้านสำเพ็ง" data-en="The three largest sizes: 65–85 mm long on 1.10–1.35 mm wire, stiff enough to pass through canvas, tent fabric, covers and layered material without bending. Wholesale boxes of 144–216, from the Sampheng counter.">เบอร์ใหญ่ที่สุดสามเบอร์ ยาว 65–85 มม. ลวดหนา 1.10–1.35 มม. กลัดทะลุผ้าใบ ผ้าเต็นท์ ผ้าคลุม และผ้าซ้อนหลายชั้นได้โดยเข็มไม่งอ ขายส่งยกกล่อง กล่องละ 144–216 ตัว จากหน้าร้านสำเพ็ง</p>
@@ -145,7 +146,7 @@ table.job td a{color:var(--amber-dark);font-weight:600}
     </div>
 
     <h2 class="sec-h" data-th="งานที่ลูกค้าใช้เบอร์ใหญ่บ่อย" data-en="What people use the big sizes for">งานที่ลูกค้าใช้เบอร์ใหญ่บ่อย</h2>
-    <div class="tblwrap">
+    <div class="tblwrap" tabindex="0" role="region" aria-label="งานที่ลูกค้าใช้เบอร์ใหญ่บ่อย">
       <table class="job">
         <thead><tr>
           <th data-th="งาน" data-en="Job">งาน</th>

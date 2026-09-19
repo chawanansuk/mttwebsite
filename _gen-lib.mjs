@@ -48,7 +48,7 @@ export function mergeGroups(groups) {
         return y;
       });
     });
-    return { ...srcs[0], en: ens.length === 1 ? ens[0] : (ens[0] || ""), mat: mats.length === 1 ? mats[0] : "", notes_th: common, items };
+    return { ...srcs[0], en: ens.join(" / "), mat: mats.length === 1 ? mats[0] : "", notes_th: common, items };
   });
 }
 
@@ -92,27 +92,35 @@ export function columns(items) {
 }
 
 /* brandTh: ชื่อตราสำหรับ alt รูป — รายการที่ติด brand:"MTT" ใช้ตรา M.T.T. แม้จะอยู่ในหมวด WYNNTOOLS */
-export function rows(items, cols, brandTh = "WYNNTOOLS") {
+export function rows(items, cols, brandTh = "WYNNTOOLS", groupTh = null) {
   const out = [];
   families(items).forEach((f, fi) => {
-    const samePic = f.items.length > 1 && f.items.some((x) => x.pic_same);
     const sizes = new Set(f.items.map((x) => x.size || ""));
+    /* "ใช้รูปเดียวทั้งตระกูล" คือทุกแถวชี้ไฟล์เดียวกันจริง ไม่ใช่แค่ติดธง pic_same
+       ตระกูลที่โรงงานให้มาหลายรูป (เช่น ประแจเลื่อน 6" กับ 10") ไม่เข้าเงื่อนไขนี้ */
+    const imgs = new Set(f.items.map((x) => x.img || ""));
+    const oneSharedPic = f.items.length > 1 && imgs.size === 1 && !!f.items[0].img;
+    const shownImgs = new Set();
     /* โน้ตเดียวกันทุกเบอร์ในตระกูล (เช่น "ตัวกุญแจปั๊มนูนรูปสิงห์") พิมพ์ครั้งเดียวที่แถวหัว */
     const sharedNote = f.items.length > 1 && f.items.every((x) => x.notes_th && x.notes_th === f.items[0].notes_th);
     f.items.forEach((x, xi) => {
       const lead = xi === 0;
       const brand = x.brand === "MTT" ? "ตรา M.T.T." : brandTh;
       const ask = `สอบถามราคา ${x.code} ${x.th}${x.size ? " (" + x.size + ")" : ""}`;
-      /* รูปตัวแทน: โรงงานถ่ายรูปเดียวใช้ทั้งตระกูล เอาไปวางทุกแถวจะกลายเป็นแถว 8 มม. โชว์รูปประแจ 19 มม. */
-      const showPic = samePic ? lead : true;
-      const pic = !cols.pic ? "" : ((showPic && x.img)
-        ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(x.th)}${samePic ? "" : " " + esc(x.code)} ${esc(brand)}" width="320" height="240" loading="lazy"></a></td>`
+      /* แสดงรูปที่ "แถวแรกที่ใช้ไฟล์นั้น" — โรงงานถ่ายรูปเดียวใช้หลายเบอร์ ถ้าวางทุกแถวจะกลายเป็น
+         แถว 8 มม. โชว์รูปประแจ 19 มม. แต่ถ้าให้เฉพาะแถวหัวก็จะซ่อนรูปของแถวอื่นที่มีรูปของตัวเองทิ้ง */
+      const showPic = !!x.img && !shownImgs.has(x.img);
+      if (x.img) shownImgs.add(x.img);
+      const pic = !cols.pic ? "" : (showPic
+        ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(x.th)}${oneSharedPic ? "" : " " + esc(x.code)} ${esc(brand)}" width="320" height="240" loading="lazy"></a></td>`
         : `\n            <td class="pic"></td>`);
-      const famnote = (lead && samePic && sizes.size > 1) ? `<div class="famnote" data-th="${FAMNOTE_TH}" data-en="${FAMNOTE_EN}">${FAMNOTE_TH}</div>` : "";
+      const famnote = (lead && oneSharedPic && sizes.size > 1) ? `<div class="famnote" data-th="${FAMNOTE_TH}" data-en="${FAMNOTE_EN}">${FAMNOTE_TH}</div>` : "";
       const note = (x.notes_th && (!sharedNote || lead)) ? `<div class="note">${esc(x.notes_th)}</div>` : "";
       const pin = pinPage(x);
       const pinlink = pin ? `<a class="nmlink" href="${pin}" data-th="ดูหน้าเบอร์ ${esc(x.code.split("-")[1])} พร้อมราคา →" data-en="Size ${esc(x.code.split("-")[1])} page with prices →">ดูหน้าเบอร์ ${esc(x.code.split("-")[1])} พร้อมราคา →</a>` : "";
-      const nameHTML = lead ? `<b data-th="${esc(x.th)}" data-en="${esc(x.en || x.th)}">${esc(x.th)}</b><small data-th="${esc(x.en || "")}" data-en="${esc(x.en ? x.th : "")}">${esc(x.en || "")}</small>` : "";
+      /* กลุ่มรายการเดียวที่ชื่อสินค้าตรงกับหัวกลุ่มอยู่แล้ว ไม่ต้องพิมพ์ซ้ำในแถว (เปลืองสองบรรทัดต่อสินค้า) */
+      const dupOfGroup = items.length === 1 && groupTh && x.th === groupTh;
+      const nameHTML = (lead && !dupOfGroup) ? `<b data-th="${esc(x.th)}" data-en="${esc(x.en || x.th)}">${esc(x.th)}</b><small data-th="${esc(x.en || "")}" data-en="${esc(x.en ? x.th : "")}">${esc(x.en || "")}</small>` : "";
       out.push(`          <tr${lead ? ' class="fam-lead"' : ""} data-fam="${fi}" data-nth="${esc(x.th)}" data-nen="${esc(x.en || "")}">${pic}
             <td class="code"><a data-line-ask="${esc(ask)}" href="#" target="_blank" rel="noopener">${esc(x.code)}</a></td>
             <td class="nm"><span class="nmtxt">${nameHTML}</span>${famnote}${note}${pinlink}</td>${cols.size ? `
@@ -137,9 +145,9 @@ ${g.mat ? `    <p class="grp-mat">${bi("วัสดุ", "Material")}: ${esc(g.
         <thead><tr>
 ${cols.pic ? `          <th scope="col" class="pic">${bi("รูป", "Photo")}</th>\n` : ""}          <th scope="col">${bi("รหัส", "Item no.")}</th>
           <th scope="col">${bi("ชื่อสินค้า", "Product")}</th>
-${cols.size ? `          <th scope="col">${bi("ขนาด", "Size")}</th>\n` : ""}${cols.pcs ? `          <th scope="col">${bi("จำนวน/ลัง", "Per carton")}</th>\n` : ""}${cols.mat ? `          <th scope="col">${bi("วัสดุ", "Steel")}</th>\n` : ""}        </tr></thead>
+${cols.size ? `          <th scope="col">${bi("ขนาด", "Size")}</th>\n` : ""}${cols.pcs ? `          <th scope="col">${bi("จำนวน/ลัง", "Per carton")}</th>\n` : ""}${cols.mat ? `          <th scope="col">${bi("วัสดุ", "Material")}</th>\n` : ""}        </tr></thead>
         <tbody>
-${rows(g.items, cols, brandTh)}
+${rows(g.items, cols, brandTh, g.th)}
         </tbody>
       </table>
     </div>${after}`;

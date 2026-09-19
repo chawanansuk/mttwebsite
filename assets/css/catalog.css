@@ -24,6 +24,10 @@
 .catnav a.on{background:var(--navy);border-color:var(--navy);color:#fff}
 .grpnav{margin:14px 0 0}
 .grpnav a small{color:var(--ink-mute);font-size:.78em;margin-left:3px}
+/* สารบัญยาวเกิน 4 แถว: พับไว้ก่อน (ปุ่มกางออกใส่ให้โดย catalog-find.js) */
+.grpnav.clamped{max-height:176px;overflow:hidden}
+.grpnav-more{margin:8px 0 0;font:inherit;font-size:.83rem;background:none;border:0;padding:6px 0;color:var(--amber-dark);font-weight:600;cursor:pointer;text-decoration:underline}
+@media(max-width:600px){.grpnav.clamped{max-height:none;overflow-x:auto}.grpnav-more{display:none}}
 
 /* ช่องค้นหา: ติดใต้ header (header สูง 64px z-index 60 — เดิม top:0 เลยมุดใต้ header) */
 .findbar{position:sticky;top:64px;z-index:50;background:var(--bg);padding:14px 0 10px;border-bottom:1px solid var(--line)}
@@ -56,8 +60,9 @@ table.tools td.pic{width:88px;padding:8px 10px}
 table.tools td.pic img{width:72px;height:54px;object-fit:contain;display:block;background:#fff;border:1px solid var(--line);border-radius:8px}
 table.tools td.pic a:hover img{border-color:var(--amber)}
 /* ลิงก์รหัส = ปุ่มถามราคาหลักของหน้า — ขยายพื้นที่กดให้ถึง 44px โดยไม่ขยับข้อความ */
-table.tools td.code a{font-family:var(--font-head);font-weight:600;color:var(--amber-dark);white-space:nowrap;text-decoration:none;border-bottom:1px dashed var(--amber);display:inline-block;padding:10px 8px;margin:-10px -8px;line-height:1.5}
+table.tools td.code a{font-family:var(--font-head);font-weight:600;color:var(--amber-dark);white-space:nowrap;text-decoration:none;text-decoration:underline dashed var(--amber);text-underline-offset:3px;text-decoration-thickness:1px;display:inline-flex;align-items:center;min-height:44px;padding:10px 8px;margin:-10px -8px;line-height:1.5}
 table.tools td.code a:hover{background:var(--amber-soft);border-radius:6px}
+table.tools td.code a:visited{color:var(--amber-dark)}
 table.tools td b{font-family:var(--font-head);font-weight:500;display:block}
 table.tools td small{color:var(--ink-mute);font-size:.78rem}
 table.tools td .note{font-size:.78rem;color:var(--ink-dim);margin-top:4px;max-width:320px}
@@ -77,6 +82,7 @@ table.tools td.mat{white-space:normal;max-width:240px}
   .catnav,.grpnav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:-22px;margin-right:-22px;padding:0 22px 6px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
   .catnav::-webkit-scrollbar,.grpnav::-webkit-scrollbar{display:none}
   .catnav a,.grpnav a{flex:none;scroll-snap-align:start}
+  .catnav,.grpnav{-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}
   .findbar{padding:10px 0 8px}
   .grp-h{scroll-margin-top:130px}
 
@@ -101,17 +107,19 @@ table.tools td.mat{white-space:normal;max-width:240px}
   table.tools td .famnote{display:none}      /* การ์ดซ้อนกันบอกความเป็นตระกูลอยู่แล้ว */
   table.tools td .note{margin-top:2px;max-width:none}
   table.tools td.code{order:2;font-size:.9rem}
-  table.tools td.code a{padding:8px 6px;margin:-8px -6px}
+  table.tools td.code a{padding:10px 6px;margin:-10px -6px}
   table.tools td.sz,table.tools td.pcs,table.tools td.mat{order:3;font-size:.82rem;color:var(--ink-2);white-space:normal;max-width:none}
   table.tools td.sz:empty,table.tools td.pcs:empty,table.tools td.mat:empty{display:none}
   table.tools td.sz::before{content:"ขนาด ";color:var(--ink-mute)}
-  table.tools td.pcs::before{content:"ลัง ";color:var(--ink-mute)}
+  table.tools td.pcs::before{content:"บรรจุ ";color:var(--ink-mute)}
   table.tools td.mat::before{content:"วัสดุ ";color:var(--ink-mute)}
   html[lang="en"] table.tools td.sz::before{content:"Size "}
-  html[lang="en"] table.tools td.pcs::before{content:"Carton "}
-  html[lang="en"] table.tools td.mat::before{content:"Steel "}
+  html[lang="en"] table.tools td.pcs::before{content:"Per carton "}
+  html[lang="en"] table.tools td.mat::before{content:"Material "}
   /* แถวเบอร์ย่อยที่ใช้รูปตัวแทน: เยื้องเข้าใต้ชื่อ ไม่ซ้ำวัสดุ (ตระกูลเดียวกันวัสดุเดียวกันเสมอ) */
-  table.tools.haspic tr:not(.fam-lead):has(td.pic:empty){padding-left:84px;background:var(--surface-2)}
+  /* แถวลูกของตระกูล: เยื้อง+พื้นเทาให้เห็นว่าเป็นเบอร์ย่อย — ตารางที่ไม่มีคอลัมน์รูปก็ต้องเยื้องด้วย */
+  table.tools tr:not(.fam-lead){padding-left:28px;background:var(--bg-soft)}
+  table.tools.haspic tr:not(.fam-lead):has(td.pic:empty){padding-left:84px}
   table.tools tr:not(.fam-lead) td.mat{display:none}
   /* แถวย่อย: ช่องชื่อว่าง ไม่ให้กินบรรทัดแรกจนรหัสถูกดันไปขวา */
   table.tools tr:not(.fam-lead) td.nm{display:contents}

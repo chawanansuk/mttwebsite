@@ -130,10 +130,14 @@
 .fchip:hover{border-color:var(--amber);color:var(--amber-dark)}
 /* ---- การ์ดรายเบอร์ ---- */
 .pin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,285px));justify-content:center;gap:16px;margin-top:14px}
-@media(min-width:1000px){.pin-grid{grid-template-columns:repeat(5,1fr)}} /* 10 เบอร์ = 2 แถวพอดี ไม่มีใบเดี่ยวตกแถว */
-.pin-card .num a{color:inherit}
+@media(min-width:1000px){.pin-grid{grid-template-columns:repeat(5,1fr)}
+  /* 5 คอลัมน์ทำให้การ์ดเหลือ ~210px ถ้า head เป็น flex คำว่า "เบอร์ 000" จะตกบรรทัด */
+  .pin-card .head{display:block}
+  .pin-card .num{display:block;white-space:nowrap}
+  .pin-card .len{display:block;white-space:normal;margin-top:2px}} /* 10 เบอร์ = 2 แถวพอดี ไม่มีใบเดี่ยวตกแถว */
+.pin-card .num a{color:inherit;text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:4px}
 .pin-card .num a:hover{color:var(--amber-dark)}
-.pin-card .flagrow{margin:4px 0 0}
+.pin-card .flagrow{margin:4px 0 0;min-height:24px}
 .pin-card{display:flex;flex-direction:column;padding:18px 18px 16px}
 .pin-card .head{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
 .pin-card .num{font-family:var(--font-head);font-weight:700;font-size:1.35rem}
@@ -145,10 +149,11 @@
 .pin-card .use{font-size:.85rem;color:var(--ink-2);margin:0 0 4px;min-height:2.6em}
 .pin-card .pack{font-size:.78rem;color:var(--ink-mute);margin:0 0 12px}
 .pin-card .row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
-.pin-card .tagm{font-size:.8rem;font-weight:600;color:var(--ink-mute)}
+.pin-card .tagm{font-size:.8rem;font-weight:600;color:var(--amber-dark)}
 .pin-card .flag{margin-left:6px}
 /* ---- ตารางขนาด ---- */
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
 table.size{width:100%;border-collapse:collapse;font-size:.88rem;min-width:560px}
 table.size th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
 table.size td{padding:9px 14px;border-top:1px solid var(--line)}
@@ -183,7 +188,7 @@ table.size td b{font-family:var(--font-head)}
 .wirefig img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
 .wirefig figcaption{font-size:.82rem;color:var(--ink-mute);margin-top:10px;text-align:center;line-height:1.6}
 @media(max-width:860px){.pin-grid{grid-template-columns:1fr 1fr}.unit-grid{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr;gap:18px}.hero-wide{display:none}.hero-tall{display:block;width:100%;max-width:420px;height:auto;margin:0 auto;border-radius:var(--radius-sm)}}
-@media(max-width:480px){.pin-grid{grid-template-columns:1fr 1fr;gap:10px}.pin-grid>*{min-width:0}.pin-card{padding:14px 12px 12px}.pin-card .head{flex-wrap:wrap;gap:2px 8px}.pin-card .len{white-space:normal}.pin-card .use,.pin-card .tagm{display:none}.pin-card .num{font-size:1.15rem}} /* grid item min-width:auto + ความยาว nowrap ทำให้ล้น 7px ที่ 360px */
+@media(max-width:480px){.pin-grid{grid-template-columns:1fr 1fr;gap:10px}.pin-grid>*{min-width:0}.pin-card{padding:14px 12px 12px}.pin-card .head{flex-wrap:wrap;gap:2px 8px}.pin-card .len{white-space:normal}.pin-card .use{display:none}.pin-card .num{font-size:1.15rem}} /* grid item min-width:auto + ความยาว nowrap ทำให้ล้น 7px ที่ 360px */
 </style>
 </head>
 <body>
@@ -239,7 +244,7 @@ table.size td b{font-family:var(--font-head)}
 
     <h2 class="sec-h" id="size-table" data-th="ตารางเทียบขนาดเข็มกลัดทุกเบอร์" data-en="Safety pin size chart">ตารางเทียบขนาดเข็มกลัดทุกเบอร์</h2>
     <p class="sec-sub" data-th="ความยาววัดจากหัวฝาถึงปลายขดสปริง — สินค้าตลาดไทย/จีนใช้มาตรฐานนี้ (ต่างจากมาตรฐานสหรัฐฯ เล็กน้อย)" data-en="Length measured cap-to-coil — Thai/Chinese market standard (slightly different from US sizing)">ความยาววัดจากหัวฝาถึงปลายขดสปริง — สินค้าตลาดไทย/จีนใช้มาตรฐานนี้ (ต่างจากมาตรฐานสหรัฐฯ เล็กน้อย)</p>
-    <div class="tblwrap">
+    <div class="tblwrap" tabindex="0" role="region" aria-label="ตารางเทียบขนาดเข็มกลัดทุกเบอร์">
       <table class="size">
         <thead><tr>
           <th data-th="เบอร์" data-en="Size">เบอร์</th>
@@ -369,11 +374,11 @@ function renderPins(){
     const flag = p.flag_th ? `<span class="badge green flag">${th?p.flag_th:p.flag_en}</span>` : "";
     /* การ์ดมี 2 ทาง: ชื่อเบอร์ → หน้ารายเบอร์ (สเปค/FAQ), ปุ่ม → ถามราคาทาง LINE (เดิมทั้งใบไป LINE ไม่มีทางเข้าหน้ารายเบอร์) */
     return `<div class="card pin-card" id="pin-${p.no}">
-      <div class="head"><span class="num"><a href="safety-pins-${p.no}.html" aria-label="${name}">${th?"เบอร์ ":"#"}${p.no}</a></span><span class="len">${p.cm} ${th?"ซม.":"cm"} · ${p.mm} ${th?"มม.":"mm"}</span></div>${flag?`<div class="flagrow">${flag}</div>`:""}
+      <div class="head"><span class="num"><a href="safety-pins-${p.no}.html" aria-label="${name}">${th?"เบอร์ ":"#"}${p.no}</a></span><span class="len">${p.cm} ${th?"ซม.":"cm"} · ${p.mm} ${th?"มม.":"mm"}</span></div><div class="flagrow">${flag||""}</div>
       <div class="pinvis" aria-hidden="true"><img src="../assets/img/products/safety-pin.svg" alt="" loading="lazy" style="width:${Math.round(p.mm/maxMM*maxW)}%"></div>
       <p class="use">${th?p.uth:p.uen}</p>
       <p class="pack">${th?"บรรจุ ~":"~"}${p.pack} ${th?"ตัว/กล่อง":"pcs/box"}</p>
-      <div class="row"><span class="tagm">${th?"ปลีก-ส่ง ทักถามได้":"Retail & bulk"}</span><a class="btn btn-primary btn-sm" href="${ask}" target="_blank" rel="noopener">${th?"เช็คราคา":"Ask price"}</a></div>
+      <div class="row"><a class="tagm" href="safety-pins-${p.no}.html">${th?"ดูสเปคเบอร์ "+p.no+" →":"Size "+p.no+" specs →"}</a><a class="btn btn-primary btn-sm" href="${ask}" target="_blank" rel="noopener">${th?"เช็คราคา":"Ask price"}</a></div>
     </div>`;
   }).join("");
 }

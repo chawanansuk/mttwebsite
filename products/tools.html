@@ -68,12 +68,12 @@
 .fchip:hover{border-color:var(--amber)}
 .fchip.on{background:var(--navy);color:var(--amber);border-color:var(--navy)}
 .catgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:18px}
-.catcard{display:block;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);color:var(--ink);text-decoration:none;transition:border-color .18s,box-shadow .18s,transform .18s}
+.catcard{display:flex;flex-direction:column;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);color:var(--ink);text-decoration:none;transition:border-color .18s,box-shadow .18s,transform .18s}
 .catcard:hover{border-color:var(--amber);box-shadow:var(--shadow);transform:translateY(-2px)}
 .catcard .ic{font-size:1.7rem;display:block;margin-bottom:10px}
 .catcard h3{font-size:1.08rem;margin:0 0 8px}
 .catcard h3 small{display:block;font-family:var(--font-body);font-weight:500;font-size:.76rem;color:var(--ink-mute);letter-spacing:.04em;text-transform:uppercase;margin-top:2px}
-.catcard p{font-size:.86rem;color:var(--ink-dim);margin:0 0 14px}
+.catcard p{font-size:.86rem;color:var(--ink-dim);margin:0 0 14px;flex:1 0 auto}
 .catcard .cnt{font-family:var(--font-head);font-size:.86rem;color:var(--amber-dark)}
 .sec-sub{color:var(--ink-dim);font-size:.9rem;margin:-4px 0 0;max-width:780px}
 .tool{display:flex;flex-direction:column;overflow:hidden}

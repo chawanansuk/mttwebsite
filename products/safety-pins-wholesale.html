@@ -67,6 +67,7 @@
 .sec-h{font-size:clamp(1.2rem,2.4vw,1.55rem);margin:38px 0 12px}
 .sec-sub{color:var(--ink-dim);font-size:.9rem;margin:-6px 0 14px;max-width:760px}
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
 table.box{width:100%;border-collapse:collapse;font-size:.9rem;min-width:620px}
 table.box th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:11px 14px;white-space:nowrap}
 table.box td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}
@@ -105,7 +106,7 @@ table.box td a{color:var(--amber-dark);font-weight:600}
 
 <section class="wh-hero">
   <div class="wrap">
-    <nav class="crumbs" aria-label="breadcrumb"><a href="../index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a> › <span data-th="ขายส่ง ยกกล่อง" data-en="Wholesale">ขายส่ง ยกกล่อง</span></nav>
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a> › <span data-th="ขายส่ง ยกกล่อง" data-en="Wholesale">ขายส่ง ยกกล่อง</span></nav>
     <span class="eyebrow" data-th="สำหรับร้านค้า โรงงาน และผู้จัดงาน" data-en="For shops, factories and event organizers">สำหรับร้านค้า โรงงาน และผู้จัดงาน</span>
     <h1 data-th="เข็มกลัดซ่อนปลาย ขายส่ง ยกกล่อง ราคาส่งตรงจากสำเพ็ง" data-en="Safety pins wholesale — by the box, direct from Sampheng">เข็มกลัดซ่อนปลาย ขายส่ง ยกกล่อง ราคาส่งตรงจากสำเพ็ง</h1>
     <p class="muted" style="margin:0" data-th="ครบทั้ง 10 เบอร์ ตั้งแต่เบอร์จิ๋ว 000 (19 มม.) ถึงเบอร์ยักษ์ 7 (85 มม.) ซื้อตรงจากผู้นำเข้าหน้าร้านสำเพ็ง ไม่ผ่านคนกลาง นับจำนวนจริงทุกกล่อง ออกใบกำกับภาษีได้ ส่งทั่วไทย" data-en="All ten sizes, from tiny 000 (19 mm) to jumbo 7 (85 mm). Straight from the importer's Sampheng counter — no middleman, every box counted, tax invoice available, nationwide delivery.">ครบทั้ง 10 เบอร์ ตั้งแต่เบอร์จิ๋ว 000 (19 มม.) ถึงเบอร์ยักษ์ 7 (85 มม.) ซื้อตรงจากผู้นำเข้าหน้าร้านสำเพ็ง ไม่ผ่านคนกลาง นับจำนวนจริงทุกกล่อง ออกใบกำกับภาษีได้ ส่งทั่วไทย</p>
@@ -128,7 +129,7 @@ table.box td a{color:var(--amber-dark);font-weight:600}
 
     <h2 class="sec-h" data-th="จำนวนต่อกล่องของแต่ละเบอร์" data-en="Pieces per box, by size">จำนวนต่อกล่องของแต่ละเบอร์</h2>
     <p class="sec-sub" data-th="เบอร์เล็กลวดบาง บรรจุได้เยอะกว่าในกล่องเท่ากัน เบอร์ใหญ่ลวดหนาและกินที่ จำนวนต่อกล่องจึงน้อยลง ตัวเลขนี้เป็นจำนวนมาตรฐานของแต่ละล็อต อาจต่างกันเล็กน้อยตามรอบผลิต" data-en="Small sizes use thin wire and pack more per box; big sizes take up more room, so counts drop. These are standard per-lot figures and vary slightly between production runs.">เบอร์เล็กลวดบาง บรรจุได้เยอะกว่าในกล่องเท่ากัน เบอร์ใหญ่ลวดหนาและกินที่ จำนวนต่อกล่องจึงน้อยลง ตัวเลขนี้เป็นจำนวนมาตรฐานของแต่ละล็อต อาจต่างกันเล็กน้อยตามรอบผลิต</p>
-    <div class="tblwrap">
+    <div class="tblwrap" tabindex="0" role="region" aria-label="จำนวนต่อกล่องของแต่ละเบอร์">
       <table class="box">
         <thead><tr>
           <th data-th="เบอร์" data-en="Size">เบอร์</th>

@@ -222,7 +222,7 @@ ${other.map((n) => `      <a href="${n.file}" data-th="${esc(n.th)}" data-en="${
   <div class="wrap">
     <div class="findbar">
       <label class="vh" for="findInput" data-th="ค้นหาในหมวดนี้" data-en="Search this category">ค้นหาในหมวดนี้</label>
-      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น ${esc(groups[0].items[0].code)} หรือ ${esc(groups[0].items[0].th.slice(0, 12))}">
+      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น ${esc(groups[0].items[0].code)} หรือ ${esc(groups[0].items[0].th.split(/[\s(]/)[0])}" data-th-placeholder="ค้นรหัสหรือชื่อสินค้า เช่น ${esc(groups[0].items[0].code)} หรือ ${esc(groups[0].items[0].th.split(/[\s(]/)[0])}" data-en-placeholder="Search code or name, e.g. ${esc(groups[0].items[0].code)}">
       <div class="hit" id="findHit" hidden></div>
     </div>
 ${grpNavHTML(groups)}

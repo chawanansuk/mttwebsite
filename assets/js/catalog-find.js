@@ -63,5 +63,30 @@
       });
     });
   }
+  /* หมวดที่มีกลุ่มเยอะ (คัตเตอร์ 41 กลุ่ม) สารบัญพับ 7 แถวสูง 314px ดันสินค้าตกจอ
+     — พับเหลือ 4 แถวแล้วมีปุ่มกางออก ถ้าไม่มี JS ก็ยังเห็นครบเหมือนเดิม */
+  if (grpnav && !matchMedia("(max-width:600px)").matches) {
+    var CAP = 176;
+    if (grpnav.scrollHeight > CAP + 24) {
+      var btn = document.createElement("button");
+      btn.type = "button"; btn.className = "grpnav-more"; btn.setAttribute("aria-expanded", "false");
+      btn.setAttribute("aria-controls", grpnav.id || (grpnav.id = "grpnav"));
+      var n = grpnav.querySelectorAll("a").length;
+      btn.setAttribute("data-th", "ดูทั้งหมด " + n + " กลุ่ม ▾");
+      btn.setAttribute("data-en", "Show all " + n + " groups ▾");
+      btn.textContent = document.documentElement.lang === "en" ? "Show all " + n + " groups ▾" : "ดูทั้งหมด " + n + " กลุ่ม ▾";
+      grpnav.classList.add("clamped");
+      grpnav.parentNode.insertBefore(btn, grpnav.nextSibling);
+      btn.addEventListener("click", function () {
+        var open = grpnav.classList.toggle("clamped") === false;
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+        var th = open ? "ย่อสารบัญ ▴" : "ดูทั้งหมด " + n + " กลุ่ม ▾";
+        var en = open ? "Collapse ▴" : "Show all " + n + " groups ▾";
+        btn.setAttribute("data-th", th); btn.setAttribute("data-en", en);
+        btn.textContent = document.documentElement.lang === "en" ? en : th;
+      });
+    }
+  }
+
   inp.addEventListener("input", apply);
 })();
