@@ -56,6 +56,7 @@
 .fchip:hover{border-color:var(--amber)}
 .fchip.on{background:var(--navy);color:var(--amber);border-color:var(--navy)}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,300px));justify-content:center;gap:18px;margin-top:8px}
+@media(min-width:1100px){.pgrid{grid-template-columns:repeat(4,1fr)}} /* การ์ดชุดเดียวกับหน้าแรก ต้องเรียงเหมือนกัน */
 .prod{overflow:hidden;display:flex;flex-direction:column}
 .prod .thumb{aspect-ratio:4/3;display:grid;place-items:center;position:relative;background:radial-gradient(120% 120% at 50% 0%,var(--surface-2),var(--bg-soft))}
 .prod .thumb .glyph{font-size:3.4rem;filter:drop-shadow(0 8px 14px rgba(16,26,48,.18))}
@@ -87,28 +88,28 @@
 <section style="padding-top:20px">
   <div class="wrap">
     <h2 class="vh" data-th="รายการสินค้าทั้งหมด" data-en="All products">รายการสินค้าทั้งหมด</h2>
-    <div class="pgrid" id="pgrid"><a class="card prod" href="jet-lighter.html">
+    <div class="pgrid" id="pgrid"><a class="card prod" href="/products/jet-lighter.html">
       <div class="thumb"><img src="../assets/img/products/jet-lighter.webp" alt="ไฟฟู่ M.T.T." width="1200" height="900" fetchpriority="high"><span class="flag"><span class="badge">ขายดี</span></span></div>
       <div class="body">
         <h3>ไฟฟู่ M.T.T.</h3>
         <p class="desc">หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี</p>
         <div class="row"><div class="price">฿45–59</div><span class="btn btn-primary btn-sm">สั่งซื้อ</span></div>
       </div>
-    </a><a class="card prod soon" href="tools.html">
+    </a><a class="card prod soon" href="/products/tools.html">
       <div class="thumb"><img src="../assets/img/products/wynn-tools.webp" alt="เครื่องมือช่าง WYNNTOOLS" width="1200" height="900" loading="lazy"></div>
       <div class="body">
         <h3>เครื่องมือช่าง WYNNTOOLS</h3>
         <p class="desc">คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย</p>
         <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
       </div>
-    </a><a class="card prod soon" href="safety-pins.html">
+    </a><a class="card prod soon" href="/products/safety-pins.html">
       <div class="thumb"><img src="../assets/img/products/safety-pins-hero.webp" alt="เข็มกลัดซ่อนปลาย เบอร์ 000–7" width="1200" height="900" loading="lazy"></div>
       <div class="body">
         <h3>เข็มกลัดซ่อนปลาย เบอร์ 000–7</h3>
         <p class="desc">ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง</p>
         <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
       </div>
-    </a><a class="card prod soon" href="mtt-brand.html">
+    </a><a class="card prod soon" href="/products/mtt-brand.html">
       <div class="thumb"><img src="../assets/img/products/mtt-brand.webp" alt="สินค้าตรา M.T.T. (ตราสิงโต)" width="1200" height="900" loading="lazy"></div>
       <div class="body">
         <h3>สินค้าตรา M.T.T. (ตราสิงโต)</h3>
@@ -149,17 +150,19 @@ function renderGrid(){
   const list=CATALOG.products.filter(p=>activeCat==="all"||p.category===activeCat);
   const el=document.getElementById("pgrid");
   if(!list.length){ el.innerHTML=`<div class="empty">${th?"ยังไม่มีสินค้าในหมวดนี้ — เร็ว ๆ นี้":"No items yet — coming soon"}</div>`; return; }
-  el.innerHTML=list.map(p=>{
+  el.innerHTML=list.map((p,i)=>{
     const flagTxt=p.live?(th?p.flag_th:p.flag_en):"";
     const flag=flagTxt?`<span class="flag"><span class="badge">${flagTxt}</span></span>`:"";
     const linked=p.live||!!p.url;
     const price=p.live?`<div class="price">${CATALOG.priceLabel(p,L())}</div>`:`<div class="price soon">${linked?(th?"สอบถามราคา":"Ask price"):(th?"เร็ว ๆ นี้":"Coming soon")}</div>`;
-    const href=linked?p.url.replace(/^products\//,''):CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
+    // หน้านี้เสิร์ฟที่ /products (ไม่มีสแลชท้าย) base ของ relative link จึงเป็นราก ไม่ใช่ /products/
+    // ลิงก์ต้องเป็น absolute ไม่งั้น jet-lighter.html จะกลายเป็น /jet-lighter.html แล้ว 404
+    const href=linked?("/"+p.url):CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
     const ext=linked?"":' target="_blank" rel="noopener"';
     const ctaLabel=p.live?(th?"สั่งซื้อ":"Order"):(linked?(th?"ดูสินค้า":"View"):(th?"ถามของ":"Ask"));
     const ctaCls=p.live?"btn btn-primary btn-sm":"btn btn-ghost btn-sm";
     return `<a class="card prod${p.live?"":" soon"}" href="${href}"${ext}>
-      <div class="thumb">${CATALOG.productThumb(p,"../",false)}${flag}</div>
+      <div class="thumb">${CATALOG.productThumb(p,"../",i===0)}${flag}</div>
       <div class="body"><h3>${th?p.name_th:p.name_en}</h3>
       <p class="desc">${th?p.tagline_th:p.tagline_en}</p>
       <div class="row">${price}<span class="${ctaCls}">${ctaLabel}</span></div></div>

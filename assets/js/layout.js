@@ -118,6 +118,8 @@
   inject("site-header", headerHTML(), "start");
   // ลิงก์ข้ามไปเนื้อหาสำหรับคีย์บอร์ด/screen reader (ทุกหน้ามี <main id="main">)
   document.body.insertAdjacentHTML("afterbegin", '<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>');
+  var mainEl = document.getElementById("main");
+  if (mainEl && !mainEl.hasAttribute("tabindex")) mainEl.setAttribute("tabindex", "-1");
   inject("site-footer", footerHTML(), "end");
   document.body.insertAdjacentHTML("beforeend", fabHTML());
   document.body.insertAdjacentHTML("beforeend", tabbarHTML());
@@ -190,6 +192,13 @@
     document.querySelectorAll("[data-th]").forEach(function (el) {
       var v = el.getAttribute("data-" + l);
       if (v != null) el.innerHTML = v;
+    });
+    /* แอตทริบิวต์ที่ผู้ใช้เห็น (placeholder/aria-label) สลับภาษาแยกจาก innerHTML */
+    ["placeholder", "aria-label", "title"].forEach(function (at) {
+      document.querySelectorAll("[data-th-" + at + "]").forEach(function (el) {
+        var v = el.getAttribute("data-" + l + "-" + at);
+        if (v != null) el.setAttribute(at, v);
+      });
     });
     document.querySelectorAll(".lang button").forEach(function (b) {
       var on = b.getAttribute("data-lang") === l;

@@ -116,9 +116,6 @@
 @media(max-width:820px){.hero-grid{grid-template-columns:1fr}}
 .t-hero .muted{max-width:640px}
 .hero-pic img{width:100%;height:auto;display:block;border-radius:var(--radius-lg);border:1px solid var(--line);background:#fff}
-.secnav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
-.secnav a{font-size:.85rem;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink-2);text-decoration:none;white-space:nowrap}
-.secnav a:hover{border-color:var(--amber);color:var(--amber-dark)}
 .why{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 6px}
 @media(max-width:720px){.why{grid-template-columns:1fr}}
 .why .card{padding:18px}
@@ -128,7 +125,6 @@
 .sec-h .ic{font-size:1.2em;vertical-align:-2px;margin-right:4px}
 .sec-h small{display:block;font-family:var(--font-body);font-weight:500;font-size:.82rem;color:var(--ink-mute);margin-top:2px}
 .sec-lead{color:var(--ink-dim);max-width:760px;margin:0 0 6px;font-size:.92rem}
-@media(max-width:600px){.secnav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:-22px;margin-right:-22px;padding:0 22px 6px}.secnav::-webkit-scrollbar{display:none}.secnav a{flex:none}}
 </style>
 </head>
 <body>
@@ -147,7 +143,7 @@
           <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
           <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Nationwide">🚚 ส่งทั่วไทย</span>
         </div>
-        <nav class="secnav" aria-label="หมวดสินค้าตรา M.T.T.">
+        <nav class="grpnav" aria-label="หมวดสินค้าตรา M.T.T.">
           <a href="#padlock">🔐 <span data-th="กุญแจตราสิงโต" data-en="Lion-brand padlocks">กุญแจตราสิงโต</span></a>
           <a href="#pin">🧷 <span data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</span></a>
           <a href="#wrench">🔧 <span data-th="ประแจ" data-en="Wrenches">ประแจ</span></a>
@@ -171,7 +167,7 @@
   <div class="wrap">
     <div class="findbar">
       <label class="vh" for="findInput" data-th="ค้นหาสินค้าตรา M.T.T." data-en="Search M.T.T. products">ค้นหาสินค้าตรา M.T.T.</label>
-      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น กุญแจสิงห์ทอง-40L หรือ เข็มกลัด">
+      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น กุญแจสิงห์ทอง-40L หรือ เข็มกลัด" data-th-placeholder="ค้นรหัสหรือชื่อสินค้า เช่น กุญแจสิงห์ทอง-40L หรือ เข็มกลัด" data-en-placeholder="Search code or name, e.g. safety pin">
       <div class="hit" id="findHit" hidden></div>
     </div>
 
@@ -191,14 +187,14 @@
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="กุญแจสิงห์เงินระบบลูกปืน" data-nen="DOUBLE BALL LOCKING PADLOCK">
-            <td class="pic"><a href="../assets/img/tools/กุญแจสิงห์เงิน-30S.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ กุญแจสิงห์เงิน-30S"><img src="../assets/img/tools/กุญแจสิงห์เงิน-30S-sm.webp" alt="กุญแจสิงห์เงินระบบลูกปืน ตรา M.T.T." width="320" height="240" loading="lazy"></a></td>
+            <td class="pic"></td>
             <td class="code"><a data-line-ask="สอบถามราคา กุญแจสิงห์เงิน-30S กุญแจสิงห์เงินระบบลูกปืน (30มม. คอสั้น)" href="#" target="_blank" rel="noopener">กุญแจสิงห์เงิน-30S</a></td>
-            <td class="nm"><span class="nmtxt"><b data-th="กุญแจสิงห์เงินระบบลูกปืน" data-en="DOUBLE BALL LOCKING PADLOCK">กุญแจสิงห์เงินระบบลูกปืน</b><small data-th="DOUBLE BALL LOCKING PADLOCK" data-en="กุญแจสิงห์เงินระบบลูกปืน">DOUBLE BALL LOCKING PADLOCK</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด" data-en="Every size in this family looks alike; only the size differs.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด</div><div class="note">ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.</div></td>
+            <td class="nm"><span class="nmtxt"><b data-th="กุญแจสิงห์เงินระบบลูกปืน" data-en="DOUBLE BALL LOCKING PADLOCK">กุญแจสิงห์เงินระบบลูกปืน</b><small data-th="DOUBLE BALL LOCKING PADLOCK" data-en="กุญแจสิงห์เงินระบบลูกปืน">DOUBLE BALL LOCKING PADLOCK</small></span><div class="note">ตัวกุญแจปั๊มนูนรูปสิงห์และตัวอักษร M.T.T.</div></td>
             <td class="sz">30มม. คอสั้น</td>
             <td class="pcs">12/144</td>
           </tr>
           <tr data-fam="0" data-nth="กุญแจสิงห์เงินระบบลูกปืน" data-nen="DOUBLE BALL LOCKING PADLOCK">
-            <td class="pic"></td>
+            <td class="pic"><a href="../assets/img/tools/กุญแจสิงห์เงิน-30S.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ กุญแจสิงห์เงิน-30L"><img src="../assets/img/tools/กุญแจสิงห์เงิน-30S-sm.webp" alt="กุญแจสิงห์เงินระบบลูกปืน กุญแจสิงห์เงิน-30L ตรา M.T.T." width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา กุญแจสิงห์เงิน-30L กุญแจสิงห์เงินระบบลูกปืน (30มม. คอยาว)" href="#" target="_blank" rel="noopener">กุญแจสิงห์เงิน-30L</a></td>
             <td class="nm"><span class="nmtxt"></span></td>
             <td class="sz">30มม. คอยาว</td>
@@ -295,7 +291,7 @@
           <th scope="col"><span data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</span></th>
           <th scope="col"><span data-th="ขนาด" data-en="Size">ขนาด</span></th>
           <th scope="col"><span data-th="จำนวน/ลัง" data-en="Per carton">จำนวน/ลัง</span></th>
-          <th scope="col"><span data-th="วัสดุ" data-en="Steel">วัสดุ</span></th>
+          <th scope="col"><span data-th="วัสดุ" data-en="Material">วัสดุ</span></th>
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="กุญแจสิงห์ทองระบบลูกปืน ไส้ทองเหลืองแท้" data-nen="DOUBLE BALL LOCKING PADLOCK">
@@ -440,13 +436,13 @@
           <th scope="col"><span data-th="รหัส" data-en="Item no.">รหัส</span></th>
           <th scope="col"><span data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</span></th>
           <th scope="col"><span data-th="ขนาด" data-en="Size">ขนาด</span></th>
-          <th scope="col"><span data-th="วัสดุ" data-en="Steel">วัสดุ</span></th>
+          <th scope="col"><span data-th="วัสดุ" data-en="Material">วัสดุ</span></th>
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="ประแจเลื่อนรมดำ ตรา M.T.T." data-nen="Adjustable Wrench (Phosphated)">
-            <td class="pic"><a href="../assets/img/tools/WM9806.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WM9806"><img src="../assets/img/tools/WM9806-sm.webp" alt="ประแจเลื่อนรมดำ ตรา M.T.T. ตรา M.T.T." width="320" height="240" loading="lazy"></a></td>
+            <td class="pic"><a href="../assets/img/tools/WM9806.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WM9806"><img src="../assets/img/tools/WM9806-sm.webp" alt="ประแจเลื่อนรมดำ ตรา M.T.T. WM9806 ตรา M.T.T." width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WM9806 ประแจเลื่อนรมดำ ตรา M.T.T. (6&quot;)" href="#" target="_blank" rel="noopener">WM9806</a></td>
-            <td class="nm"><span class="nmtxt"><b data-th="ประแจเลื่อนรมดำ ตรา M.T.T." data-en="Adjustable Wrench (Phosphated)">ประแจเลื่อนรมดำ ตรา M.T.T.</b><small data-th="Adjustable Wrench (Phosphated)" data-en="ประแจเลื่อนรมดำ ตรา M.T.T.">Adjustable Wrench (Phosphated)</small></span><div class="famnote" data-th="ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด" data-en="Every size in this family looks alike; only the size differs.">ทุกเบอร์ในตระกูลนี้หน้าตาเหมือนกัน ต่างที่ขนาด</div></td>
+            <td class="nm"><span class="nmtxt"><b data-th="ประแจเลื่อนรมดำ ตรา M.T.T." data-en="Adjustable Wrench (Phosphated)">ประแจเลื่อนรมดำ ตรา M.T.T.</b><small data-th="Adjustable Wrench (Phosphated)" data-en="ประแจเลื่อนรมดำ ตรา M.T.T.">Adjustable Wrench (Phosphated)</small></span></td>
             <td class="sz">6&quot;</td>
             <td class="mat">SK-55</td>
           </tr>
@@ -458,7 +454,7 @@
             <td class="mat">SK-55</td>
           </tr>
           <tr data-fam="0" data-nth="ประแจเลื่อนรมดำ ตรา M.T.T." data-nen="Adjustable Wrench (Phosphated)">
-            <td class="pic"></td>
+            <td class="pic"><a href="../assets/img/tools/WM9810.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WM9810"><img src="../assets/img/tools/WM9810-sm.webp" alt="ประแจเลื่อนรมดำ ตรา M.T.T. WM9810 ตรา M.T.T." width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WM9810 ประแจเลื่อนรมดำ ตรา M.T.T. (10&quot;)" href="#" target="_blank" rel="noopener">WM9810</a></td>
             <td class="nm"><span class="nmtxt"></span></td>
             <td class="sz">10&quot;</td>
@@ -506,7 +502,7 @@
           <th scope="col"><span data-th="รหัส" data-en="Item no.">รหัส</span></th>
           <th scope="col"><span data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</span></th>
           <th scope="col"><span data-th="ขนาด" data-en="Size">ขนาด</span></th>
-          <th scope="col"><span data-th="วัสดุ" data-en="Steel">วัสดุ</span></th>
+          <th scope="col"><span data-th="วัสดุ" data-en="Material">วัสดุ</span></th>
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="ประแจแหวนข้าง ตรา M.T.T. 14 ชิ้น" data-nen="Open End Wrench Set">
@@ -533,12 +529,12 @@
           <th scope="col"><span data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</span></th>
           <th scope="col"><span data-th="ขนาด" data-en="Size">ขนาด</span></th>
           <th scope="col"><span data-th="จำนวน/ลัง" data-en="Per carton">จำนวน/ลัง</span></th>
-          <th scope="col"><span data-th="วัสดุ" data-en="Steel">วัสดุ</span></th>
+          <th scope="col"><span data-th="วัสดุ" data-en="Material">วัสดุ</span></th>
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="ชุดมีดโกนพร้อมใบมีด" data-nen="Double-Edge Stainless Blade Razor">
             <td class="code"><a data-line-ask="สอบถามราคา SPORTS M.T.T. ชุดมีดโกนพร้อมใบมีด (ยาวที่สุด ด้ามจับพลาสติกหนา แน่น ทน อย่างดี)" href="#" target="_blank" rel="noopener">SPORTS M.T.T.</a></td>
-            <td class="nm"><span class="nmtxt"><b data-th="ชุดมีดโกนพร้อมใบมีด" data-en="Double-Edge Stainless Blade Razor">ชุดมีดโกนพร้อมใบมีด</b><small data-th="Double-Edge Stainless Blade Razor" data-en="ชุดมีดโกนพร้อมใบมีด">Double-Edge Stainless Blade Razor</small></span><div class="note">แผงสีแดงพิมพ์ SPORTS / SUPER SPORTS และมีอักษร M.T.T. กำกับ</div></td>
+            <td class="nm"><span class="nmtxt"></span><div class="note">แผงสีแดงพิมพ์ SPORTS / SUPER SPORTS และมีอักษร M.T.T. กำกับ</div></td>
             <td class="sz">ยาวที่สุด ด้ามจับพลาสติกหนา แน่น ทน อย่างดี</td>
             <td class="pcs">12/240</td>
             <td class="mat">เหล็กสแตนเลส</td>
@@ -559,7 +555,7 @@
           <th scope="col"><span data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</span></th>
           <th scope="col"><span data-th="ขนาด" data-en="Size">ขนาด</span></th>
           <th scope="col"><span data-th="จำนวน/ลัง" data-en="Per carton">จำนวน/ลัง</span></th>
-          <th scope="col"><span data-th="วัสดุ" data-en="Steel">วัสดุ</span></th>
+          <th scope="col"><span data-th="วัสดุ" data-en="Material">วัสดุ</span></th>
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="มีดสแตนเลส ด้ามพลาสติก ตราสิงห์คู่ M.T.T." data-nen="KITCHEN KNIFE">
@@ -592,7 +588,7 @@
           <th scope="col"><span data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</span></th>
           <th scope="col"><span data-th="ขนาด" data-en="Size">ขนาด</span></th>
           <th scope="col"><span data-th="จำนวน/ลัง" data-en="Per carton">จำนวน/ลัง</span></th>
-          <th scope="col"><span data-th="วัสดุ" data-en="Steel">วัสดุ</span></th>
+          <th scope="col"><span data-th="วัสดุ" data-en="Material">วัสดุ</span></th>
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="มีดสแตนเลส ด้ามไม้ ตราสิงห์คู่ M.T.T." data-nen="KITCHEN KNIFE">
@@ -626,7 +622,7 @@
           <th scope="col"><span data-th="รหัส" data-en="Item no.">รหัส</span></th>
           <th scope="col"><span data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</span></th>
           <th scope="col"><span data-th="ขนาด" data-en="Size">ขนาด</span></th>
-          <th scope="col"><span data-th="วัสดุ" data-en="Steel">วัสดุ</span></th>
+          <th scope="col"><span data-th="วัสดุ" data-en="Material">วัสดุ</span></th>
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="เหล็กงัดยาง ตรา M.T.T." data-nen="Tyre Lever">
@@ -652,13 +648,13 @@
           <th scope="col"><span data-th="รหัส" data-en="Item no.">รหัส</span></th>
           <th scope="col"><span data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</span></th>
           <th scope="col"><span data-th="ขนาด" data-en="Size">ขนาด</span></th>
-          <th scope="col"><span data-th="วัสดุ" data-en="Steel">วัสดุ</span></th>
+          <th scope="col"><span data-th="วัสดุ" data-en="Material">วัสดุ</span></th>
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="กรรไกรตัดท่อ PVC ออโต้ ตราMTT" data-nen="Auto PVC Pipe Cutter">
             <td class="pic"><a href="../assets/img/tools/WM201A.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ WM201A"><img src="../assets/img/tools/WM201A-sm.webp" alt="กรรไกรตัดท่อ PVC ออโต้ ตราMTT WM201A ตรา M.T.T." width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา WM201A กรรไกรตัดท่อ PVC ออโต้ ตราMTT (ตัดท่อ ø 42mm)" href="#" target="_blank" rel="noopener">WM201A</a></td>
-            <td class="nm"><span class="nmtxt"><b data-th="กรรไกรตัดท่อ PVC ออโต้ ตราMTT" data-en="Auto PVC Pipe Cutter">กรรไกรตัดท่อ PVC ออโต้ ตราMTT</b><small data-th="Auto PVC Pipe Cutter" data-en="กรรไกรตัดท่อ PVC ออโต้ ตราMTT">Auto PVC Pipe Cutter</small></span></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td class="sz">ตัดท่อ ø 42mm</td>
             <td class="mat">SK-5</td>
           </tr>
@@ -678,13 +674,13 @@
           <th scope="col"><span data-th="รหัส" data-en="Item no.">รหัส</span></th>
           <th scope="col"><span data-th="ชื่อสินค้า" data-en="Product">ชื่อสินค้า</span></th>
           <th scope="col"><span data-th="ขนาด" data-en="Size">ขนาด</span></th>
-          <th scope="col"><span data-th="วัสดุ" data-en="Steel">วัสดุ</span></th>
+          <th scope="col"><span data-th="วัสดุ" data-en="Material">วัสดุ</span></th>
         </tr></thead>
         <tbody>
           <tr class="fam-lead" data-fam="0" data-nth="ค้อน2 ปอนด์ด้ามสั้น 11&quot;" data-nen="FIBER HANDLE OCTAGONAL HAMMER">
             <td class="pic"><a href="../assets/img/tools/ค้อนMTT.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ค้อนMTT"><img src="../assets/img/tools/ค้อนMTT-sm.webp" alt="ค้อน2 ปอนด์ด้ามสั้น 11&quot; ค้อนMTT ตรา M.T.T." width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา ค้อนMTT ค้อน2 ปอนด์ด้ามสั้น 11&quot; (2 LB ยาว 11&quot;)" href="#" target="_blank" rel="noopener">ค้อนMTT</a></td>
-            <td class="nm"><span class="nmtxt"><b data-th="ค้อน2 ปอนด์ด้ามสั้น 11&quot;" data-en="FIBER HANDLE OCTAGONAL HAMMER">ค้อน2 ปอนด์ด้ามสั้น 11&quot;</b><small data-th="FIBER HANDLE OCTAGONAL HAMMER" data-en="ค้อน2 ปอนด์ด้ามสั้น 11&quot;">FIBER HANDLE OCTAGONAL HAMMER</small></span></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td class="sz">2 LB ยาว 11&quot;</td>
             <td class="mat">SK-55</td>
           </tr>
@@ -708,7 +704,7 @@
           <tr class="fam-lead" data-fam="0" data-nth="ลวดเย็บกระดาษ MTT 10-1M 5มม." data-nen="STAPLES">
             <td class="pic"><a href="../assets/img/tools/ลวดเย็บMTT.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ลวดเย็บMTT"><img src="../assets/img/tools/ลวดเย็บMTT-sm.webp" alt="ลวดเย็บกระดาษ MTT 10-1M 5มม. ลวดเย็บMTT ตรา M.T.T." width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา ลวดเย็บMTT ลวดเย็บกระดาษ MTT 10-1M 5มม. (5 มม.)" href="#" target="_blank" rel="noopener">ลวดเย็บMTT</a></td>
-            <td class="nm"><span class="nmtxt"><b data-th="ลวดเย็บกระดาษ MTT 10-1M 5มม." data-en="STAPLES">ลวดเย็บกระดาษ MTT 10-1M 5มม.</b><small data-th="STAPLES" data-en="ลวดเย็บกระดาษ MTT 10-1M 5มม.">STAPLES</small></span></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td class="sz">5 มม.</td>
             <td class="pcs">1000ลวด /กล่องเล็ก</td>
           </tr>
@@ -762,7 +758,7 @@
           <tr class="fam-lead" data-fam="0" data-nth="กาวแท่งสีใส Ø 11มม. MTT" data-nen="GLUE STICK">
             <td class="pic"><a href="../assets/img/tools/W129.webp" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ W129"><img src="../assets/img/tools/W129-sm.webp" alt="กาวแท่งสีใส Ø 11มม. MTT W129 ตรา M.T.T." width="320" height="240" loading="lazy"></a></td>
             <td class="code"><a data-line-ask="สอบถามราคา W129 กาวแท่งสีใส Ø 11มม. MTT (ขนาดเส้นผ่าศูนย์กลาง Ø 11 มม. ยาว 11&quot;)" href="#" target="_blank" rel="noopener">W129</a></td>
-            <td class="nm"><span class="nmtxt"><b data-th="กาวแท่งสีใส Ø 11มม. MTT" data-en="GLUE STICK">กาวแท่งสีใส Ø 11มม. MTT</b><small data-th="GLUE STICK" data-en="กาวแท่งสีใส Ø 11มม. MTT">GLUE STICK</small></span></td>
+            <td class="nm"><span class="nmtxt"></span></td>
             <td class="sz">ขนาดเส้นผ่าศูนย์กลาง Ø 11 มม. ยาว 11&quot;</td>
             <td class="pcs">18แท่ง / 900แท่ง</td>
           </tr>

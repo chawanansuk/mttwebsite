@@ -90,9 +90,6 @@ const STYLE = `.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28
 @media(max-width:820px){.hero-grid{grid-template-columns:1fr}}
 .t-hero .muted{max-width:640px}
 .hero-pic img{width:100%;height:auto;display:block;border-radius:var(--radius-lg);border:1px solid var(--line);background:#fff}
-.secnav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
-.secnav a{font-size:.85rem;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink-2);text-decoration:none;white-space:nowrap}
-.secnav a:hover{border-color:var(--amber);color:var(--amber-dark)}
 .why{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 6px}
 @media(max-width:720px){.why{grid-template-columns:1fr}}
 .why .card{padding:18px}
@@ -101,8 +98,7 @@ const STYLE = `.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28
 .sec-h{font-size:clamp(1.25rem,2.6vw,1.6rem);margin:42px 0 4px;scroll-margin-top:140px}
 .sec-h .ic{font-size:1.2em;vertical-align:-2px;margin-right:4px}
 .sec-h small{display:block;font-family:var(--font-body);font-weight:500;font-size:.82rem;color:var(--ink-mute);margin-top:2px}
-.sec-lead{color:var(--ink-dim);max-width:760px;margin:0 0 6px;font-size:.92rem}
-@media(max-width:600px){.secnav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:-22px;margin-right:-22px;padding:0 22px 6px}.secnav::-webkit-scrollbar{display:none}.secnav a{flex:none}}`;
+.sec-lead{color:var(--ink-dim);max-width:760px;margin:0 0 6px;font-size:.92rem}`;
 
 const head = headHTML({
   title: TITLE, desc: DESC, kw: KW, url: URL,
@@ -130,7 +126,7 @@ ${crumbsHTML(`<a href="/products" data-th="สินค้า" data-en="Products
           <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
           <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Nationwide">🚚 ส่งทั่วไทย</span>
         </div>
-        <nav class="secnav" aria-label="หมวดสินค้าตรา M.T.T.">
+        <nav class="grpnav" aria-label="หมวดสินค้าตรา M.T.T.">
 ${SECTIONS.filter((s) => bySection[s.key].length).map((s) => `          <a href="#${s.key}">${s.icon} ${bi(s.th, s.en)}</a>`).join("\n")}
         </nav>
       </div>
@@ -150,7 +146,7 @@ ${SECTIONS.filter((s) => bySection[s.key].length).map((s) => `          <a href=
   <div class="wrap">
     <div class="findbar">
       <label class="vh" for="findInput" data-th="ค้นหาสินค้าตรา M.T.T." data-en="Search M.T.T. products">ค้นหาสินค้าตรา M.T.T.</label>
-      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น กุญแจสิงห์ทอง-40L หรือ เข็มกลัด">
+      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น กุญแจสิงห์ทอง-40L หรือ เข็มกลัด" data-th-placeholder="ค้นรหัสหรือชื่อสินค้า เช่น กุญแจสิงห์ทอง-40L หรือ เข็มกลัด" data-en-placeholder="Search code or name, e.g. safety pin">
       <div class="hit" id="findHit" hidden></div>
     </div>
 
