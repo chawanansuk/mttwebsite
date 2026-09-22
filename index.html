@@ -78,26 +78,32 @@
 .hero{position:relative;padding:76px 0 64px;overflow:hidden;
   background:radial-gradient(1100px 520px at 78% -10%,rgba(18,161,80,.14),transparent 60%),linear-gradient(180deg,#fff,var(--bg))}
 .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(2.3rem,5.4vw,3.7rem);font-weight:700;margin:16px 0 16px}
+/* V2: ลดขนาดหัวเรื่องลงและใช้ text-wrap:balance เพื่อไม่ให้บรรทัดแรกพับหลังเครื่องหมาย &
+   แล้วทิ้ง & ห้อยท้ายบรรทัด */
+.hero h1{font-size:clamp(2.1rem,4.4vw,3.05rem);font-weight:700;margin:16px 0 16px;text-wrap:balance}
 .hero h1 .hl{color:var(--amber-dark)}
-.hero p.lead{font-size:1.12rem;color:var(--ink-dim);max-width:42ch;margin:0 0 26px}
+.hero p.lead{font-size:1.12rem;color:var(--ink-dim);max-width:44ch;margin:0 0 28px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
-.hero-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
-.hero-vis{position:relative;height:470px} /* 430 ทำให้การ์ดใบที่ 3 ทับบรรทัดสุดท้ายของใบที่ 2 */
-.hv-card{position:absolute;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);
-  box-shadow:var(--shadow-lg);padding:20px;display:flex;flex-direction:column;gap:8px}
-.hv-1{width:255px;top:0;left:0;z-index:4;transform:rotate(-3deg)}
-.hv-2{width:225px;top:34px;right:6px;z-index:2;transform:rotate(4deg)}
-.hv-3{width:210px;bottom:0;right:40px;z-index:3;transform:rotate(-1.5deg)}
-.hv-3 .hv-img{height:84px}
-.hv-ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;color:var(--navy)}
-.hv-ic svg{width:28px;height:28px}
-.hv-img{width:100%;height:108px;object-fit:cover;border-radius:13px;border:1px solid var(--line)}
+/* V2: เดิมเป็นชิปอีโมจิ 4 ตัวที่ซ้ำความหมายกับแถบมืดด้านล่าง เหลือบรรทัดข้อความสั้นบรรทัดเดียว */
+.hero-proof{margin-top:22px;font-size:.95rem;color:var(--ink-mute);font-weight:500}
+/* V2: การ์ดโชว์สินค้าเปลี่ยนจากวางลอยเอียงคนละองศา มาเป็นกริด 1 ใหญ่ + 2 เล็ก ชนิดเนื้อหาเดียวกัน */
+.hero-vis{display:grid;gap:16px;align-content:start}
+.hv-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-sm);padding:18px;display:flex;flex-direction:column;gap:8px;color:inherit}
+a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
+.hv-1{grid-column:1/-1}
+.hv-duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hv-ic{width:44px;height:44px;border-radius:var(--radius-sm);display:grid;place-items:center;
+  background:var(--amber-soft);color:var(--amber-dark)}
+.hv-ic svg{width:24px;height:24px}
+/* ครอปสัดส่วนเดียวกันทุกใบ เดิมใบใหญ่ 108px ใบเล็ก 84px ทำให้สัดส่วนรูปไม่ตรงกัน */
+.hv-img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--radius-sm);border:1px solid var(--line)}
+/* คุมความกว้างคอลัมน์ขวาไม่ให้การ์ดยืดจนรูปใหญ่ครองจอ */
+.hero-vis{max-width:520px;width:100%;justify-self:end}
 .hv-card b{font-family:var(--font-head);font-size:1.05rem}
-.hv-card small{color:var(--ink-mute);font-size:.82rem}
+.hv-card small{color:var(--ink-mute);font-size:.84rem}
 .hv-price{font-family:var(--font-head);font-weight:700;color:var(--amber-dark);font-size:1.15rem}
-.hv-2 .hv-price{font-size:.98rem;white-space:nowrap} /* "ผู้นำเข้ารายเดียวในไทย" พับ 2 บรรทัดแล้วโดนการ์ดใบที่ 3 ทับ */
-.hv-glow{position:absolute;inset:auto 12% 6% auto;width:60%;height:60%;background:radial-gradient(closest-side,rgba(18,161,80,.35),transparent);filter:blur(30px);z-index:0}
+.hv-2 .hv-price,.hv-3 .hv-price{font-size:.92rem;color:var(--ink-dim);font-weight:600}
 .trust{background:var(--navy);color:#e7ebf3}
 .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:26px 22px}
 .trust .t{display:flex;gap:12px;align-items:center}
@@ -151,8 +157,7 @@
 .map-card .pin{font-size:2.6rem;margin-bottom:8px}
 @media(max-width:860px){
   .hero-grid{grid-template-columns:1fr}
-  .hero-vis{order:-1;height:330px;margin-bottom:6px}
-  .hv-3{display:none} /* จอเล็ก: ลดความรก เหลือ 2 การ์ด */
+  .hero-vis{order:-1;margin-bottom:6px}
   .trust .wrap{grid-template-columns:1fr 1fr;gap:18px}
   .cat-grid{grid-template-columns:1fr 1fr}
   .feat-grid{grid-template-columns:1fr 1fr}
@@ -162,12 +167,12 @@
   .contact-grid{grid-template-columns:1fr}
 }
 @media(max-width:520px){
-  /* จอแคบ การ์ด hero ซ้อนกันจนใบหลังโผล่ข้อความโดนตัดกลางคำ — เหลือใบเดียววางกลาง */
   .hero{padding:26px 0 40px} /* 76px บนทำให้ปุ่มหลักตกไปอยู่ใต้ tabbar บน iPhone */
-  .hero-vis{height:auto;display:grid;place-items:center;padding:4px 0 0}
-  .hv-2{display:none}
-  .hv-card{position:static;transform:none}
-  .hv-1{width:min(300px,88vw)}
+  /* V2: ปุ่มชุด hero เรียงซ้อนกันเต็มความกว้างเท่ากัน เดิมกว้างไม่เท่ากันจนขอบขวาไม่ตรงแนว */
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{width:100%}
+  /* จอแคบเหลือการ์ดใบเดียว ลดความรกและไม่ต้องอ่านการ์ดเล็กสองใบที่ตัวอักษรหด */
+  .hv-duo{display:none}
 }
 @media(max-width:480px){
   .cat-grid{grid-template-columns:1fr;gap:10px}
@@ -209,26 +214,22 @@
         <a class="btn btn-primary" href="#categories" data-th="ดูสินค้าทั้งหมด" data-en="Browse products">ดูสินค้าทั้งหมด</a>
         <a class="btn btn-dark" href="products/jet-lighter.html" data-th="สินค้าขายดี: ไฟฟู่" data-en="Bestseller: Jet lighter">สินค้าขายดี: ไฟฟู่</a>
       </div>
-      <div class="hero-chips">
-        <span class="pill">🚚 <span data-th="ส่งทั่วไทย" data-en="Nationwide shipping">ส่งทั่วไทย</span></span>
-        <span class="pill">💳 <span data-th="เก็บเงินปลายทาง" data-en="Cash on delivery">เก็บเงินปลายทาง</span></span>
-        <span class="pill">📦 <span data-th="ปลีก-ส่ง ยกกล่อง" data-en="Retail & wholesale">ปลีก-ส่ง ยกกล่อง</span></span>
-        <span class="pill">🔧 <span data-th="ผู้นำเข้า WYNNTOOLS ในไทย" data-en="Exclusive WYNNTOOLS importer">ผู้นำเข้า WYNNTOOLS ในไทย</span></span>
-      </div>
+      <p class="hero-proof" data-th="739 รายการในแคตตาล็อก · ราคาปลีกและราคาส่ง · ส่งทั่วไทย" data-en="739 catalogue items · retail &amp; wholesale · shipped nationwide">739 รายการในแคตตาล็อก · ราคาปลีกและราคาส่ง · ส่งทั่วไทย</p>
     </div>
     <div class="hero-vis">
-      <div class="hv-glow" aria-hidden="true"></div>
       <a class="hv-card hv-1" href="products/jet-lighter.html" aria-label="ไฟฟู่ M.T.T. ดูสินค้า">
         <img class="hv-img" src="assets/img/products/jet-lighter.webp" alt="ไฟฟู่ M.T.T." width="1200" height="900" fetchpriority="high">
         <b>ไฟฟู่ M.T.T.</b><small data-th="เจอลมไม่ดับ · เติมแก๊สได้" data-en="Windproof · refillable">เจอลมไม่ดับ · เติมแก๊สได้</small><span class="hv-price" id="hvPrice">฿—</span>
       </a>
+      <div class="hv-duo">
       <div class="hv-card hv-2" aria-hidden="true">
-        <div class="hv-ic" style="background:var(--blue-soft);color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 7 3 3M5 17l-2 4 4-2 11-11a2.1 2.1 0 0 0-3-3z"/></svg></div>
+        <div class="hv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 7 3 3M5 17l-2 4 4-2 11-11a2.1 2.1 0 0 0-3-3z"/></svg></div>
         <b>WYNNTOOLS</b><small data-th="เครื่องมือช่างของแท้ นำเข้าโดยตรง" data-en="Genuine tools, direct import">เครื่องมือช่างของแท้ นำเข้าโดยตรง</small><span class="hv-price" data-th="ผู้นำเข้ารายเดียวในไทย" data-en="Exclusive importer">ผู้นำเข้ารายเดียวในไทย</span>
       </div>
       <div class="hv-card hv-3" aria-hidden="true">
-        <img class="hv-img" src="assets/img/products/jet-lighter-box.webp" alt="ไฟฟู่ยกกล่อง" loading="lazy" width="1400" height="1050">
+        <div class="hv-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
         <b data-th="ยกกล่อง ราคาส่ง" data-en="Wholesale by box">ยกกล่อง ราคาส่ง</b><small data-th="คละสีได้ ครบ 5 สีในกล่อง" data-en="Mixed colors, all 5 per box">คละสีได้ ครบ 5 สีในกล่อง</small><span class="hv-price" data-th="กำไรดี ขายต่อสบาย" data-en="Great resale margin">กำไรดี ขายต่อสบาย</span>
+      </div>
       </div>
     </div>
   </div>

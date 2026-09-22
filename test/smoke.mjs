@@ -110,9 +110,11 @@ for (const path of ALL_PAGES) {
   await page.close();
 }
 
-/* ---- ไม่มี overflow แนวนอนบนมือถือ (BUG-1 guard) ---- */
-console.log("\n[ ไม่มี overflow แนวนอน @360/390 ]");
-for (const w of [360, 390]) {
+/* ---- ไม่มี overflow แนวนอน (BUG-1 guard) ----
+   เดิมตรวจแค่ 360/390 จึงไม่เคยจับการล้น 102px ของหน้าเข็มกลัดที่ 1024px
+   เพิ่ม 768 กับ 1024 ให้ครอบคลุมแท็บเล็ตและโน้ตบุ๊กจอเล็กด้วย */
+console.log("\n[ ไม่มี overflow แนวนอน @360/390/768/1024 ]");
+for (const w of [360, 390, 768, 1024]) {
   for (const path of ALL_PAGES) {
     const page = await newPage({ width: w, height: 780 });
     await page.goto(base + path, { waitUntil: "domcontentloaded" });

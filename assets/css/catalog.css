@@ -29,14 +29,14 @@
 .grpnav-more{margin:8px 0 0;font:inherit;font-size:.83rem;background:none;border:0;padding:6px 0;color:var(--amber-dark);font-weight:600;cursor:pointer;text-decoration:underline}
 @media(max-width:600px){.grpnav.clamped{max-height:none;overflow-x:auto}.grpnav-more{display:none}}
 
-/* ช่องค้นหา: ติดใต้ header (header สูง 64px z-index 60 — เดิม top:0 เลยมุดใต้ header) */
-.findbar{position:sticky;top:64px;z-index:50;background:var(--bg);padding:14px 0 10px;border-bottom:1px solid var(--line)}
+/* ช่องค้นหา: ติดใต้ header (header สูง 72px z-index 60 — เดิม top:0 เลยมุดใต้ header) */
+.findbar{position:sticky;top:72px;z-index:50;background:var(--bg);padding:14px 0 10px;border-bottom:1px solid var(--line)}
 .findbar input{width:100%;max-width:460px;padding:12px 16px;border:1px solid var(--line-strong);border-radius:var(--radius-sm);font:inherit;font-size:.95rem;background:var(--surface)}
 .findbar input:focus{outline:2px solid var(--amber);border-color:transparent}
 .findbar .hit{font-size:.83rem;color:var(--ink-mute);margin-top:8px}
 
 /* ---------- กลุ่มสินค้า ---------- */
-.grp-h{font-size:clamp(1.05rem,2.1vw,1.3rem);margin:34px 0 6px;scroll-margin-top:140px}
+.grp-h{font-size:clamp(1.05rem,2.1vw,1.3rem);margin:34px 0 6px;scroll-margin-top:148px}
 .grp-h .ge{font-family:var(--font-body);font-weight:500;font-size:.8rem;color:var(--ink-mute);display:block}
 .grp-h em{font-style:normal;font-family:var(--font-body);font-size:.78rem;color:var(--amber-dark);background:var(--amber-soft);border-radius:999px;padding:2px 10px;vertical-align:middle;white-space:nowrap}
 .grp-mat{font-size:.85rem;color:var(--ink-dim);margin:0 0 6px}
@@ -84,7 +84,7 @@ table.tools td.mat{white-space:normal;max-width:240px}
   .catnav a,.grpnav a{flex:none;scroll-snap-align:start}
   .catnav,.grpnav{-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}
   .findbar{padding:10px 0 8px}
-  .grp-h{scroll-margin-top:130px}
+  .grp-h{scroll-margin-top:138px}
 
   /* ตารางสเปก → การ์ดต่อแถว
      ตาราง 6 คอลัมน์กว้าง 680px บนจอ 390px เห็นแค่ 3 คอลัมน์ ชื่อสินค้าโดนตัดกลางคำ
