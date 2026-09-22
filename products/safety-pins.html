@@ -130,6 +130,9 @@
 .fchip:hover{border-color:var(--amber);color:var(--amber-dark)}
 /* ---- การ์ดรายเบอร์ ---- */
 .pin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,285px));justify-content:center;gap:16px;margin-top:14px}
+/* grid item ค่าเริ่มต้นคือ min-width:auto จึงหดต่ำกว่าเนื้อหาไม่ได้
+   ที่ 1024px กริด 5 คอลัมน์ทำให้การ์ดดันจนหน้าล้นออกไป 102px — ต้องอนุญาตให้หดได้ทุกความกว้าง */
+.pin-grid>*{min-width:0}
 @media(min-width:1000px){.pin-grid{grid-template-columns:repeat(5,1fr)}
   /* 5 คอลัมน์ทำให้การ์ดเหลือ ~210px ถ้า head เป็น flex คำว่า "เบอร์ 000" จะตกบรรทัด */
   .pin-card .head{display:block}
