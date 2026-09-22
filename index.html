@@ -82,7 +82,7 @@
    แล้วทิ้ง & ห้อยท้ายบรรทัด */
 .hero h1{font-size:clamp(2.1rem,4.4vw,3.05rem);font-weight:700;margin:16px 0 16px;text-wrap:balance}
 .hero h1 .hl{color:var(--amber-dark)}
-.hero p.lead{font-size:1.12rem;color:var(--ink-dim);max-width:44ch;margin:0 0 28px}
+.hero p.lead{font-size:1.15rem;color:var(--ink-dim);max-width:44ch;margin:0 0 28px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
 /* V2: เดิมเป็นชิปอีโมจิ 4 ตัวที่ซ้ำความหมายกับแถบมืดด้านล่าง เหลือบรรทัดข้อความสั้นบรรทัดเดียว */
 .hero-proof{margin-top:22px;font-size:.95rem;color:var(--ink-mute);font-weight:500}
@@ -101,9 +101,9 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
 /* คุมความกว้างคอลัมน์ขวาไม่ให้การ์ดยืดจนรูปใหญ่ครองจอ */
 .hero-vis{max-width:520px;width:100%;justify-self:end}
 .hv-card b{font-family:var(--font-head);font-size:1.05rem}
-.hv-card small{color:var(--ink-mute);font-size:.84rem}
+.hv-card small{color:var(--ink-mute);font-size:.82rem}
 .hv-price{font-family:var(--font-head);font-weight:700;color:var(--amber-dark);font-size:1.15rem}
-.hv-2 .hv-price,.hv-3 .hv-price{font-size:.92rem;color:var(--ink-dim);font-weight:600}
+.hv-2 .hv-price,.hv-3 .hv-price{font-size:.9rem;color:var(--ink-dim);font-weight:600}
 .trust{background:var(--navy);color:#e7ebf3}
 .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:26px 22px}
 .trust .t{display:flex;gap:12px;align-items:center}
@@ -112,15 +112,15 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
 .trust .t small{color:#9aa6bf;font-size:.82rem}
 .cat-grid{grid-template-columns:repeat(3,1fr)}
 .cat{padding:24px;display:flex;flex-direction:column;gap:4px;position:relative;overflow:hidden}
-.cat .ic{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;margin-bottom:12px;background:var(--amber-soft);color:var(--amber-dark)}
+.cat .ic{width:54px;height:54px;border-radius:var(--radius);display:grid;place-items:center;margin-bottom:12px;background:var(--amber-soft);color:var(--amber-dark)}
 .cat.blue .ic{background:var(--blue-soft);color:var(--blue)}
 .cat .ic svg{width:28px;height:28px}
-.cat h3{font-size:1.16rem;margin-bottom:2px}
+.cat h3{font-size:1.15rem;margin-bottom:2px}
 .cat p{color:var(--ink-dim);font-size:.9rem;margin:0 0 14px}
 .cat .go{margin-top:auto;font-weight:600;font-size:.9rem;color:var(--amber-dark);display:inline-flex;align-items:center;gap:6px}
 .cat .go svg{width:16px;height:16px;transition:transform .18s}
 .cat:hover .go svg{transform:translateX(4px)}
-.cat .soon{position:absolute;top:16px;right:16px;font-size:.68rem;font-weight:700;color:var(--ink-mute);background:var(--bg-soft);border:1px solid var(--line);padding:3px 9px;border-radius:999px}
+.cat .soon{position:absolute;top:16px;right:16px;font-size:.75rem;font-weight:700;color:var(--ink-mute);background:var(--bg-soft);border:1px solid var(--line);padding:3px 9px;border-radius:var(--radius-full)}
 .feat-grid{grid-template-columns:repeat(auto-fit,minmax(250px,300px));justify-content:center}
 @media(min-width:1100px){.feat-grid{grid-template-columns:repeat(4,1fr)}.cat-grid{grid-template-columns:repeat(5,1fr)}} /* 4 ใบในแถวเดียว ไม่ให้ใบที่ 4 ตกไปอยู่คนเดียว */
 .prod{overflow:hidden;display:flex;flex-direction:column}
@@ -128,18 +128,18 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
 .prod .thumb .glyph{font-size:3.4rem;filter:drop-shadow(0 8px 14px rgba(16,26,48,.18))}
 .prod .thumb .flag{position:absolute;top:12px;left:12px}
 .prod .body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1}
-.prod .body h3{font-size:1.06rem;margin-bottom:3px}
-.prod .body .desc{color:var(--ink-dim);font-size:.85rem;margin:0 0 12px;flex:1}
+.prod .body h3{font-size:1.05rem;margin-bottom:3px}
+.prod .body .desc{color:var(--ink-dim);font-size:.875rem;margin:0 0 12px;flex:1}
 .prod .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.prod .price{font-family:var(--font-head);font-weight:700;font-size:1.28rem}
+.prod .price{font-family:var(--font-head);font-weight:700;font-size:1.25rem}
 .prod .price.soon{font-size:.95rem;color:var(--ink-mute)}
 .section-alt{background:var(--bg-soft)}
 .why-grid{grid-template-columns:repeat(4,1fr)}
 .why-grid .w{padding:22px}
-.why-grid .w .ic{width:44px;height:44px;border-radius:12px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--amber-dark);margin-bottom:12px;box-shadow:var(--shadow-sm)}
+.why-grid .w .ic{width:44px;height:44px;border-radius:var(--radius-sm);background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--amber-dark);margin-bottom:12px;box-shadow:var(--shadow-sm)}
 .why-grid .w .ic svg{width:24px;height:24px}
 .why-grid .w h3{font-size:1.05rem;margin-bottom:5px}
-.why-grid .w p{color:var(--ink-dim);font-size:.88rem;margin:0}
+.why-grid .w p{color:var(--ink-dim);font-size:.875rem;margin:0}
 .cta-band{background:linear-gradient(120deg,var(--navy),var(--navy-2));color:#fff;border-radius:var(--radius-lg);padding:44px;display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
 .cta-band::before{content:"";position:absolute;inset:auto -60px -120px auto;width:340px;height:340px;background:radial-gradient(closest-side,rgba(18,161,80,.4),transparent);filter:blur(10px)}
 .cta-band h2{font-size:clamp(1.6rem,3.2vw,2.2rem);position:relative}
@@ -149,10 +149,10 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
 .contact-card{padding:28px}
 .contact-list{display:grid;gap:16px;margin-top:6px}
 .contact-list .row{display:flex;gap:13px;align-items:flex-start}
-.contact-list .ic{width:42px;height:42px;border-radius:12px;background:var(--amber-soft);color:var(--amber-dark);display:grid;place-items:center;flex:none}
+.contact-list .ic{width:42px;height:42px;border-radius:var(--radius-sm);background:var(--amber-soft);color:var(--amber-dark);display:grid;place-items:center;flex:none}
 .contact-list .ic svg{width:22px;height:22px}
 .contact-list b{font-family:var(--font-head);font-weight:600;font-size:.95rem;display:block}
-.contact-list span{color:var(--ink-dim);font-size:.92rem}
+.contact-list span{color:var(--ink-dim);font-size:.9rem}
 .map-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;min-height:280px;display:grid;place-items:center;text-align:center;padding:24px;background-image:linear-gradient(rgba(227,231,238,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(227,231,238,.6) 1px,transparent 1px);background-size:26px 26px}
 .map-card .pin{font-size:2.6rem;margin-bottom:8px}
 @media(max-width:860px){
@@ -179,10 +179,10 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
   /* การ์ดหมวดแบบวางซ้อนแนวตั้งสูงเกือบ 1/3 จอต่อใบ — จอเล็กจัดเป็นแถวแนวนอนให้แน่นและกวาดตาได้ */
   .cat{padding:13px 15px;display:grid;grid-template-columns:auto 1fr auto;
     grid-template-areas:"ic ttl arr" "ic desc arr";column-gap:13px;row-gap:2px;align-items:center;gap:0}
-  .cat .ic{grid-area:ic;width:46px;height:46px;border-radius:13px;margin:0}
+  .cat .ic{grid-area:ic;width:46px;height:46px;border-radius:var(--radius-sm);margin:0}
   .cat .ic svg{width:24px;height:24px}
-  .cat h3{grid-area:ttl;font-size:1.02rem;margin:0;align-self:end;line-height:1.3}
-  .cat p{grid-area:desc;font-size:.83rem;margin:0;align-self:start;line-height:1.45}
+  .cat h3{grid-area:ttl;font-size:1rem;margin:0;align-self:end;line-height:1.3}
+  .cat p{grid-area:desc;font-size:.82rem;margin:0;align-self:start;line-height:1.45}
   .cat .go{grid-area:arr;margin:0;font-size:0;align-self:center;color:var(--ink-mute)}
   .cat .go svg{width:18px;height:18px}
   .cat .soon{top:9px;right:34px}
@@ -193,9 +193,9 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
 .guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .gcard{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;color:var(--ink);text-decoration:none;transition:border-color .18s,box-shadow .18s,transform .18s}
 .gcard:hover{border-color:var(--amber);box-shadow:var(--shadow);transform:translateY(-2px)}
-.gcard .tag{display:inline-block;font-family:var(--font-head);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber-dark);background:var(--amber-soft);border-radius:999px;padding:3px 10px;margin-bottom:10px}
-.gcard h3{font-size:1.02rem;margin:0 0 6px}
-.gcard p{font-size:.86rem;color:var(--ink-dim);margin:0}
+.gcard .tag{display:inline-block;font-family:var(--font-head);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber-dark);background:var(--amber-soft);border-radius:var(--radius-full);padding:3px 10px;margin-bottom:10px}
+.gcard h3{font-size:1rem;margin:0 0 6px}
+.gcard p{font-size:.875rem;color:var(--ink-dim);margin:0}
 @media(max-width:900px){.guide-grid{grid-template-columns:1fr;gap:10px}.gcard{padding:16px}}
 </style>
 </head>
@@ -409,9 +409,9 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
       </div>
       <div class="map-card" id="mapCard">
         <div>
-          <div class="pin">📍</div>
+          <div class="pin" aria-hidden="true">📍</div>
           <b data-th="แผนที่ร้าน" data-en="Store location">แผนที่ร้าน</b>
-          <p class="muted" style="margin:6px 0 0;font-size:.88rem" data-th="แผนที่ร้าน" data-en="Store map">แผนที่ร้าน</p>
+          <p class="muted" style="margin:6px 0 0;font-size:.875rem" data-th="แผนที่ร้าน" data-en="Store map">แผนที่ร้าน</p>
         </div>
       </div>
     </div>

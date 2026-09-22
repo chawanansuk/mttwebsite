@@ -83,9 +83,9 @@ body{
    ไม่งั้นวรรณยุกต์บนตัวอักษรแถวบนโดนบรรทัดถัดไปเบียด */
 h1,h2,h3,h4{font-family:var(--font-head);letter-spacing:.2px;line-height:1.32;margin:0}
 h1{font-size:2rem}
-h2{font-size:1.5rem}
+h2{font-size:1.4rem}
 h3{font-size:1.25rem}
-h4{font-size:1.125rem}
+h4{font-size:1.15rem}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;height:auto;display:block} /* height:auto กัน attribute height ทำภาพยืด */
 button{font-family:inherit}
@@ -93,7 +93,7 @@ button{font-family:inherit}
 :focus-visible{outline:3px solid var(--amber);outline-offset:2px}
 /* กรอบโฟกัสเป็น outline เพราะ box-shadow แพ้เงาของ .btn-primary/.card/.fab-line และโดน overflow:hidden ตัด */
 .lang button:focus-visible{outline-offset:-3px}
-.skip{position:absolute;left:-999px;top:8px;z-index:200;background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600}
+.skip{position:absolute;left:-999px;top:8px;z-index:200;background:var(--navy);color:#fff;padding:10px 16px;border-radius:var(--radius-xs);font-weight:600}
 .skip:focus{left:8px}
 /* UP-1: กันข้อความไทยแวบก่อนสลับเป็นอังกฤษ (เฉพาะผู้ใช้ที่บันทึกภาษา EN ไว้) */
 html.pending-lang [data-th]{visibility:hidden}
@@ -136,14 +136,14 @@ html.pending-lang [data-th]{visibility:hidden}
 .site-header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.9);
   backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-.brand{display:flex;align-items:center;gap:11px;font-family:var(--font-head);font-weight:700;font-size:1.16rem;color:var(--ink)}
-.brand .mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;flex:none;
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--font-head);font-weight:700;font-size:1.15rem;color:var(--ink)}
+.brand .mark{width:38px;height:38px;border-radius:var(--radius-sm);display:grid;place-items:center;flex:none;
   background:linear-gradient(150deg,var(--navy),var(--navy-2));color:var(--amber);
   font-size:1rem;font-weight:700;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
 .brand .mark svg{width:20px;height:20px}
 .brand .b-th{display:flex;flex-direction:column;line-height:1.05}
-.brand .b-th small{font-family:var(--font-body);font-weight:500;font-size:.62rem;color:var(--ink-mute);letter-spacing:.14em;text-transform:uppercase}
-.nav-links{display:flex;align-items:center;gap:26px;font-size:.94rem;font-weight:500}
+.brand .b-th small{font-family:var(--font-body);font-weight:500;font-size:.75rem;color:var(--ink-mute);letter-spacing:.14em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:26px;font-size:.95rem;font-weight:500}
 /* พื้นที่กดต้องถึง 44px — เดิมสูง 34px ซึ่งต่ำกว่าเกณฑ์ และเมนูชุดนี้กลายเป็นเมนูมือถือตอนจอแคบ */
 .nav-links a{color:var(--ink-2);transition:color .15s;position:relative;
   display:inline-flex;align-items:center;min-height:44px;padding:0}
@@ -153,17 +153,17 @@ html.pending-lang [data-th]{visibility:hidden}
 .nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:2px;
   border-radius:2px;background:var(--amber)}
 .nav-right{display:flex;align-items:center;gap:10px}
-.lang{display:flex;border:1px solid var(--line-strong);border-radius:999px;overflow:hidden;font-family:var(--font-head)}
-.lang button{background:transparent;color:var(--ink-dim);border:0;padding:9px 12px;font-size:.78rem;cursor:pointer;font-family:inherit;font-weight:600;transition:.15s}
+.lang{display:flex;border:1px solid var(--line-strong);border-radius:var(--radius-full);overflow:hidden;font-family:var(--font-head)}
+.lang button{background:transparent;color:var(--ink-dim);border:0;padding:9px 12px;font-size:.75rem;cursor:pointer;font-family:inherit;font-weight:600;transition:.15s}
 .lang button.on{background:var(--navy);color:var(--amber)}
-.nav-toggle{display:none;background:transparent;border:1px solid var(--line-strong);border-radius:10px;width:42px;height:40px;cursor:pointer;color:var(--ink)}
+.nav-toggle{display:none;background:transparent;border:1px solid var(--line-strong);border-radius:var(--radius-sm);width:42px;height:40px;cursor:pointer;color:var(--ink)}
 .nav-toggle svg{width:22px;height:22px;margin:auto}
-.cart-btn{position:relative;display:grid;place-items:center;width:40px;height:40px;border-radius:10px;
+.cart-btn{position:relative;display:grid;place-items:center;width:40px;height:40px;border-radius:var(--radius-sm);
   border:1px solid var(--line-strong);color:var(--ink-2);transition:border-color .15s,color .15s}
 .cart-btn:hover{border-color:var(--amber);color:var(--amber-dark)}
 .cart-btn svg{width:20px;height:20px}
-.cart-badge{position:absolute;top:-7px;right:-7px;min-width:19px;height:19px;padding:0 5px;border-radius:999px;
-  background:var(--amber);color:#ffffff;font-family:var(--font-head);font-weight:700;font-size:.72rem;
+.cart-badge{position:absolute;top:-7px;right:-7px;min-width:19px;height:19px;padding:0 5px;border-radius:var(--radius-full);
+  background:var(--amber);color:#ffffff;font-family:var(--font-head);font-weight:700;font-size:.75rem;
   display:grid;place-items:center;line-height:1;box-shadow:0 2px 6px rgba(11,127,60,.4)}
 .cart-badge[hidden]{display:none}
 
@@ -172,9 +172,9 @@ section{padding:64px 0}
 .sec-head{max-width:64ch;margin-bottom:8px}
 .sec-head.ctr{margin-left:auto;margin-right:auto;text-align:center}
 .sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:10px 0 10px;font-weight:700}
-.sec-head p{color:var(--ink-dim);margin:0;font-size:1.02rem}
+.sec-head p{color:var(--ink-dim);margin:0;font-size:1rem}
 /* แถบ accent ใต้หัวข้อทุก section — เอกลักษณ์แบรนด์ */
-.sec-head h2::after{content:"";display:block;width:52px;height:4px;border-radius:999px;
+.sec-head h2::after{content:"";display:block;width:52px;height:4px;border-radius:var(--radius-full);
   margin-top:13px;background:linear-gradient(90deg,var(--amber),var(--amber-dark))}
 .sec-head.ctr h2::after{margin-left:auto;margin-right:auto}
 .sec-head p{margin-top:10px}
@@ -184,11 +184,11 @@ section{padding:64px 0}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);transition:transform .18s,box-shadow .2s,border-color .2s}
 .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line-strong)}
 .badge{display:inline-flex;align-items:center;gap:5px;background:var(--amber-soft);color:var(--amber-dark);
-  font-size:.72rem;font-weight:700;padding:4px 11px;border-radius:999px;letter-spacing:.02em}
+  font-size:.75rem;font-weight:700;padding:4px 11px;border-radius:var(--radius-full);letter-spacing:.02em}
 .badge.blue{background:var(--blue-soft);color:var(--blue)}
 .badge.green{background:#e4f6ec;color:#096e34}
 .pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--surface-2);
-  padding:6px 13px;border-radius:999px;font-size:.85rem;color:var(--ink-2)}
+  padding:6px 13px;border-radius:var(--radius-full);font-size:.875rem;color:var(--ink-2)}
 
 /* ---------- footer ---------- */
 .site-footer{background:var(--navy);color:#c8d0e0;padding:52px 0 26px;margin-top:24px}
@@ -199,13 +199,13 @@ section{padding:64px 0}
 .foot-brand .brand .mark{background:linear-gradient(150deg,var(--amber),var(--amber-dark));color:var(--navy)}
 .foot-brand .b-th small{color:#93a0bd}
 .foot-brand p{color:#93a0bd;font-size:.9rem;margin:14px 0 0;max-width:34ch}
-.foot-col h2{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#7a879f;font-weight:600;margin-bottom:14px;font-family:var(--font-head);line-height:1.2}
-.foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.92rem}
-.foot-contact{display:grid;gap:11px;font-size:.92rem}
+.foot-col h2{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:#7a879f;font-weight:600;margin-bottom:14px;font-family:var(--font-head);line-height:1.2}
+.foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.9rem}
+.foot-contact{display:grid;gap:11px;font-size:.9rem}
 .foot-contact .row{display:flex;gap:10px;align-items:flex-start}
 .foot-contact svg{width:18px;height:18px;color:var(--amber);flex:none;margin-top:2px}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:34px;padding-top:20px;
-  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:#7a879f;font-size:.84rem}
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:#7a879f;font-size:.82rem}
 
 /* ---------- แถบ CTA ท้ายหน้า (ใช้ร่วมทุกหน้าสินค้า/บทความ) ---------- */
 .cta-band{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:28px;margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
@@ -214,8 +214,8 @@ section{padding:64px 0}
 
 /* ---------- toast ---------- */
 .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
-  background:var(--navy);color:#fff;padding:12px 22px;border-radius:999px;font-weight:600;
-  opacity:0;pointer-events:none;transition:.3s;z-index:200;font-size:.92rem;box-shadow:var(--shadow-lg)}
+  background:var(--navy);color:#fff;padding:12px 22px;border-radius:var(--radius-full);font-weight:600;
+  opacity:0;pointer-events:none;transition:.3s;z-index:200;font-size:.9rem;box-shadow:var(--shadow-lg)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 .toast b{color:var(--amber)}
 
@@ -223,7 +223,7 @@ section{padding:64px 0}
 .order-form{display:grid;gap:10px;margin:6px 0 4px}
 .order-form label{font-size:.82rem;color:var(--ink-dim);font-weight:500;display:block;margin-bottom:3px}
 .order-form input,.order-form textarea{width:100%;font-family:inherit;font-size:.95rem;color:var(--ink);
-  background:var(--surface-2);border:1px solid var(--line);border-radius:11px;padding:11px 13px;transition:border-color .15s}
+  background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-sm);padding:11px 13px;transition:border-color .15s}
 .order-form input:focus,.order-form textarea:focus{border-color:var(--amber);background:var(--surface)}
 .order-form textarea{resize:vertical;min-height:64px}
 .order-form [aria-invalid="true"]{border-color:var(--red);background:#fff5f5}
@@ -231,16 +231,16 @@ section{padding:64px 0}
 @media(max-width:520px){.of-row{grid-template-columns:1fr}}
 
 /* savings badge on price options */
-.save{display:inline-block;background:#e4f6ec;color:#096e34;font-size:.68rem;font-weight:700;
-  padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.save{display:inline-block;background:#e4f6ec;color:#096e34;font-size:.75rem;font-weight:700;
+  padding:2px 7px;border-radius:var(--radius-full);margin-left:6px;vertical-align:middle}
 
 /* alt payment (bank copy) */
 .pay-alt{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);text-align:left}
-.pay-alt .lbl{font-size:.78rem;color:var(--ink-mute);margin-bottom:4px}
+.pay-alt .lbl{font-size:.75rem;color:var(--ink-mute);margin-bottom:4px}
 .pay-alt .acct{display:flex;align-items:center;gap:8px;justify-content:space-between;gap:10px}
 .pay-alt .acct b{font-family:var(--font-head);font-size:.9rem;font-weight:600;color:var(--ink)}
-.copy-btn{background:var(--surface-2);border:1px solid var(--line);border-radius:8px;color:var(--ink-2);
-  font-size:.78rem;font-weight:600;padding:5px 10px;cursor:pointer;white-space:nowrap;font-family:inherit}
+.copy-btn{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-xs);color:var(--ink-2);
+  font-size:.75rem;font-weight:600;padding:5px 10px;cursor:pointer;white-space:nowrap;font-family:inherit}
 .copy-btn:hover{border-color:var(--amber);color:var(--amber-dark)}
 
 /* ---------- sticky mobile checkout bar ---------- */
@@ -249,8 +249,8 @@ section{padding:64px 0}
   display:none;align-items:center;justify-content:space-between;gap:12px;transform:translateY(110%);transition:transform .25s,visibility .25s;visibility:hidden}
 .mobile-cta.show{transform:translateY(0);visibility:visible}
 .mobile-cta .mc-total{font-family:var(--font-head);line-height:1.1}
-.mobile-cta .mc-total small{display:block;color:var(--ink-mute);font-size:.72rem;font-weight:500;font-family:var(--font-body)}
-.mobile-cta .mc-total b{font-size:1.3rem;color:var(--amber-dark)}
+.mobile-cta .mc-total small{display:block;color:var(--ink-mute);font-size:.75rem;font-weight:500;font-family:var(--font-body)}
+.mobile-cta .mc-total b{font-size:1.25rem;color:var(--amber-dark)}
 .mobile-cta .btn{flex:1;max-width:220px}
 
 /* ---------- floating LINE ----------
@@ -259,7 +259,7 @@ section{padding:64px 0}
    กฎเดิมคงไว้ด้านล่างเผื่อกลับมาเปิดใช้ */
 .fab-line{display:none!important}
 .fab-line{position:fixed;right:20px;bottom:22px;z-index:120;background:#06c755;color:#fff;
-  border-radius:999px;padding:13px 20px;font-weight:600;display:inline-flex;align-items:center;gap:9px;
+  border-radius:var(--radius-full);padding:13px 20px;font-weight:600;display:inline-flex;align-items:center;gap:9px;
   box-shadow:0 10px 30px rgba(6,199,85,.4);transition:transform .15s}
 .fab-line:hover{transform:translateY(-3px)}
 .fab-line svg{width:20px;height:20px;flex:none}
@@ -277,13 +277,13 @@ section{padding:64px 0}
   height:calc(var(--tabbar-h) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);
   grid-auto-flow:column;grid-auto-columns:1fr;background:var(--surface);border-top:1px solid var(--line);
   box-shadow:0 -4px 18px rgba(16,26,48,.08)}
-.tabbar a{display:grid;place-items:center;align-content:center;gap:3px;min-height:48px;font-size:.7rem;font-weight:600;
+.tabbar a{display:grid;place-items:center;align-content:center;gap:3px;min-height:48px;font-size:.75rem;font-weight:600;
   color:var(--ink-mute);text-decoration:none;position:relative;-webkit-tap-highlight-color:transparent}
 .tabbar a svg{width:22px;height:22px}
 .tabbar a[aria-current="page"]{color:var(--amber-dark)}
 .tabbar a.tab-line{color:#06c755}
-.tabbar .tab-badge{position:absolute;top:6px;left:calc(50% + 6px);min-width:17px;height:17px;padding:0 4px;border-radius:999px;
-  background:var(--amber);color:#fff;font-size:.66rem;font-weight:700;display:grid;place-items:center;font-family:var(--font-head)}
+.tabbar .tab-badge{position:absolute;top:6px;left:calc(50% + 6px);min-width:17px;height:17px;padding:0 4px;border-radius:var(--radius-full);
+  background:var(--amber);color:#fff;font-size:.75rem;font-weight:700;display:grid;place-items:center;font-family:var(--font-head)}
 .tabbar .tab-badge[hidden]{display:none}
 
 /* ---------- responsive ---------- */

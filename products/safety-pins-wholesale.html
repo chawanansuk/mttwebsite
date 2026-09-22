@@ -62,7 +62,7 @@
 .wh-hero h1{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:6px 0 8px}
 .wh-hero .muted{max-width:680px}
 .trust{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 18px}
-.trust .badge{font-size:.83rem;padding:7px 14px}
+.trust .badge{font-size:.82rem;padding:7px 14px}
 .cta-row{display:flex;flex-wrap:wrap;gap:10px}
 .sec-h{font-size:clamp(1.2rem,2.4vw,1.55rem);margin:38px 0 12px}
 .sec-sub{color:var(--ink-dim);font-size:.9rem;margin:-6px 0 14px;max-width:760px}
@@ -76,13 +76,13 @@ table.box td b{font-family:var(--font-head)}
 table.box td a{color:var(--amber-dark);font-weight:600}
 .step-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .step{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
-.step .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--amber-soft);color:var(--amber-dark);font-family:var(--font-head);font-weight:700;margin-bottom:8px}
+.step .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:var(--radius-sm);background:var(--amber-soft);color:var(--amber-dark);font-family:var(--font-head);font-weight:700;margin-bottom:8px}
 .step b{display:block;font-family:var(--font-head);font-size:1rem;margin-bottom:3px}
-.step p{color:var(--ink-dim);font-size:.86rem;margin:0}
+.step p{color:var(--ink-dim);font-size:.875rem;margin:0}
 .who-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .who{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
 .who b{display:block;font-family:var(--font-head);font-size:1rem;margin-bottom:4px}
-.who p{color:var(--ink-dim);font-size:.86rem;margin:0}
+.who p{color:var(--ink-dim);font-size:.875rem;margin:0}
 .unitbox{background:var(--amber-soft);border:1px solid rgba(18,161,80,.25);border-radius:var(--radius-lg);padding:20px 24px;margin-top:8px}
 .unitbox b{font-family:var(--font-head);color:var(--amber-dark)}
 .unitbox ul{margin:10px 0 0;padding-left:20px;font-size:.9rem;color:var(--ink-2)}
@@ -91,13 +91,13 @@ table.box td a{color:var(--amber-dark);font-weight:600}
 .faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
 .faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:.95rem;padding:13px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-size:1.2rem;color:var(--amber);flex:none}
+.faq summary::after{content:"+";font-size:1.15rem;color:var(--amber);flex:none}
 .faq details[open] summary::after{content:"–"}
-.faq .a{padding:0 0 13px;color:var(--ink-2);font-size:.88rem}
+.faq .a{padding:0 0 13px;color:var(--ink-2);font-size:.875rem}
 .cta-band{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:28px;margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
 .cta-band h2{color:#fff;font-size:1.25rem;margin:0 0 4px}
 .cta-band p{color:#c2cbde;margin:0;font-size:.9rem}
-@media(max-width:760px){.step-grid,.who-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.step-grid,.who-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -111,10 +111,10 @@ table.box td a{color:var(--amber-dark);font-weight:600}
     <h1 data-th="เข็มกลัดซ่อนปลาย ขายส่ง ยกกล่อง ราคาส่งตรงจากสำเพ็ง" data-en="Safety pins wholesale — by the box, direct from Sampheng">เข็มกลัดซ่อนปลาย ขายส่ง ยกกล่อง ราคาส่งตรงจากสำเพ็ง</h1>
     <p class="muted" style="margin:0" data-th="ครบทั้ง 10 เบอร์ ตั้งแต่เบอร์จิ๋ว 000 (19 มม.) ถึงเบอร์ยักษ์ 7 (85 มม.) ซื้อตรงจากผู้นำเข้าหน้าร้านสำเพ็ง ไม่ผ่านคนกลาง นับจำนวนจริงทุกกล่อง ออกใบกำกับภาษีได้ ส่งทั่วไทย" data-en="All ten sizes, from tiny 000 (19 mm) to jumbo 7 (85 mm). Straight from the importer's Sampheng counter — no middleman, every box counted, tax invoice available, nationwide delivery.">ครบทั้ง 10 เบอร์ ตั้งแต่เบอร์จิ๋ว 000 (19 มม.) ถึงเบอร์ยักษ์ 7 (85 มม.) ซื้อตรงจากผู้นำเข้าหน้าร้านสำเพ็ง ไม่ผ่านคนกลาง นับจำนวนจริงทุกกล่อง ออกใบกำกับภาษีได้ ส่งทั่วไทย</p>
     <div class="trust">
-      <span class="badge" data-th="🔢 นับจำนวนจริง ไม่ชั่ง" data-en="🔢 Counted, not weighed">🔢 นับจำนวนจริง ไม่ชั่ง</span>
-      <span class="badge" data-th="📦 ไม่มีขั้นต่ำ" data-en="📦 No minimum order">📦 ไม่มีขั้นต่ำ</span>
-      <span class="badge" data-th="🧾 ออกใบกำกับภาษีได้" data-en="🧾 Tax invoice available">🧾 ออกใบกำกับภาษีได้</span>
-      <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Nationwide">🚚 ส่งทั่วไทย</span>
+      <span class="badge" data-th="นับจำนวนจริง ไม่ชั่ง" data-en="Counted, not weighed">นับจำนวนจริง ไม่ชั่ง</span>
+      <span class="badge" data-th="ไม่มีขั้นต่ำ" data-en="No minimum order">ไม่มีขั้นต่ำ</span>
+      <span class="badge" data-th="ออกใบกำกับภาษีได้" data-en="Tax invoice available">ออกใบกำกับภาษีได้</span>
+      <span class="badge" data-th="ส่งทั่วไทย" data-en="Nationwide">ส่งทั่วไทย</span>
     </div>
     <div class="cta-row">
       <a class="btn btn-primary" data-line-ask="ขอราคาส่งเข็มกลัดซ่อนปลาย ยกกล่อง แจ้งเบอร์และจำนวนที่ต้องการ" href="#" target="_blank" rel="noopener" data-th="ขอราคาส่งทาง LINE" data-en="Ask wholesale price on LINE">ขอราคาส่งทาง LINE</a>

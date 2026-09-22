@@ -120,12 +120,12 @@
 .pinvis{margin:10px 0 10px;min-height:38px;display:flex;align-items:center}
 .pinvis img{display:block;height:auto}
 .trust{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 4px}
-.trust .badge{font-size:.83rem;padding:7px 14px}
+.trust .badge{font-size:.82rem;padding:7px 14px}
 .sec-h{font-size:clamp(1.25rem,2.6vw,1.7rem);margin:42px 0 6px}
-.sec-sub{color:var(--ink-dim);font-size:.92rem;margin:0 0 18px}
+.sec-sub{color:var(--ink-dim);font-size:.9rem;margin:0 0 18px}
 /* ชิปลิงก์ไปหน้ารายเบอร์ */
 .filters{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 6px}
-.fchip{border:1px solid var(--line-strong);background:var(--surface);border-radius:999px;padding:8px 16px;
+.fchip{border:1px solid var(--line-strong);background:var(--surface);border-radius:var(--radius-full);padding:8px 16px;
   font-size:.9rem;font-weight:600;color:var(--ink-2);text-decoration:none;transition:.15s}
 .fchip:hover{border-color:var(--amber);color:var(--amber-dark)}
 /* ---- การ์ดรายเบอร์ ---- */
@@ -133,31 +133,32 @@
 /* grid item ค่าเริ่มต้นคือ min-width:auto จึงหดต่ำกว่าเนื้อหาไม่ได้
    ที่ 1024px กริด 5 คอลัมน์ทำให้การ์ดดันจนหน้าล้นออกไป 102px — ต้องอนุญาตให้หดได้ทุกความกว้าง */
 .pin-grid>*{min-width:0}
-@media(min-width:1000px){.pin-grid{grid-template-columns:repeat(5,1fr)}
-  /* 5 คอลัมน์ทำให้การ์ดเหลือ ~210px ถ้า head เป็น flex คำว่า "เบอร์ 000" จะตกบรรทัด */
-  .pin-card .head{display:block}
-  .pin-card .num{display:block;white-space:nowrap}
-  .pin-card .len{display:block;white-space:normal;margin-top:2px}} /* 10 เบอร์ = 2 แถวพอดี ไม่มีใบเดี่ยวตกแถว */
 .pin-card .num a{color:inherit;text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:4px}
 .pin-card .num a:hover{color:var(--amber-dark)}
 .pin-card .flagrow{margin:4px 0 0;min-height:24px}
 .pin-card{display:flex;flex-direction:column;padding:18px 18px 16px}
 .pin-card .head{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
-.pin-card .num{font-family:var(--font-head);font-weight:700;font-size:1.35rem}
+.pin-card .num{font-family:var(--font-head);font-weight:700;font-size:1.4rem}
 .pin-card .len{font-size:.82rem;color:var(--ink-mute);font-weight:600;white-space:nowrap}
+@media(min-width:1024px){.pin-grid{grid-template-columns:repeat(5,1fr)}
+  /* 5 คอลัมน์ทำให้การ์ดเหลือ ~210px ถ้า head เป็น flex คำว่า "เบอร์ 000" จะตกบรรทัด */
+  .pin-card .head{display:block}
+  .pin-card .num{display:block;white-space:nowrap}
+  .pin-card .len{display:block;white-space:normal;margin-top:2px}} /* 10 เบอร์ = 2 แถวพอดี ไม่มีใบเดี่ยวตกแถว */  /* บล็อกนี้ต้องอยู่หลังกฎพื้นฐานของ .len ไม่งั้น white-space:nowrap ด้านบนจะชนะ
+     แล้วป้ายความยาวดันการ์ดจนหน้าล้นที่ 1024px */
 .sizebar{height:12px;margin:12px 0 12px;position:relative}
-.sizebar i{position:absolute;left:0;top:2px;height:8px;border-radius:99px;
+.sizebar i{position:absolute;left:0;top:2px;height:8px;border-radius:var(--radius-full);
   background:linear-gradient(90deg,var(--amber),var(--amber-dark));box-shadow:0 2px 8px rgba(18,161,80,.35)}
 .sizebar::after{content:"";position:absolute;left:0;right:0;top:5px;height:2px;background:var(--line);z-index:-1;border-radius:2px}
-.pin-card .use{font-size:.85rem;color:var(--ink-2);margin:0 0 4px;min-height:2.6em}
-.pin-card .pack{font-size:.78rem;color:var(--ink-mute);margin:0 0 12px}
+.pin-card .use{font-size:.875rem;color:var(--ink-2);margin:0 0 4px;min-height:2.6em}
+.pin-card .pack{font-size:.75rem;color:var(--ink-mute);margin:0 0 12px}
 .pin-card .row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
-.pin-card .tagm{font-size:.8rem;font-weight:600;color:var(--amber-dark)}
+.pin-card .tagm{font-size:.82rem;font-weight:600;color:var(--amber-dark)}
 .pin-card .flag{margin-left:6px}
 /* ---- ตารางขนาด ---- */
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 .tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
-table.size{width:100%;border-collapse:collapse;font-size:.88rem;min-width:560px}
+table.size{width:100%;border-collapse:collapse;font-size:.875rem;min-width:560px}
 table.size th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
 table.size td{padding:9px 14px;border-top:1px solid var(--line)}
 table.size td:nth-child(4),table.size td:nth-child(5){white-space:nowrap}
@@ -167,25 +168,25 @@ table.size td b{font-family:var(--font-head)}
 .unit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
 .unit{padding:18px;text-align:center}
 .unit b{display:block;font-family:var(--font-head);font-size:1.15rem;margin-bottom:2px}
-.unit span{color:var(--ink-dim);font-size:.85rem}
+.unit span{color:var(--ink-dim);font-size:.875rem}
 /* ---- เครื่องคิดงานวิ่ง ---- */
 .calc{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:26px 26px 24px;margin-top:16px}
 .calc h3{color:#fff;font-size:1.15rem;margin-bottom:4px}
-.calc p{color:#c2cbde;font-size:.88rem;margin:0 0 14px}
+.calc p{color:#c2cbde;font-size:.875rem;margin:0 0 14px}
 .calc .rowc{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.calc input{width:130px;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.25);
+.calc input{width:130px;padding:10px 14px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.25);
   background:rgba(255,255,255,.08);color:#fff;font:inherit;font-size:1rem}
 .calc input:focus{outline:2px solid var(--amber)}
 .calc .res{font-family:var(--font-head);font-size:1.05rem;color:#7fe0a9}
 /* ---- FAQ ---- */
 .faq{margin-top:14px;display:grid;gap:10px}
 .faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
-.faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:.98rem;padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:1rem;padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-size:1.2rem;color:var(--amber);flex:none}
+.faq summary::after{content:"+";font-size:1.15rem;color:var(--amber);flex:none}
 .faq details[open] summary::after{content:"–"}
 .faq .a{padding:0 0 14px;color:var(--ink-2);font-size:.9rem}
-.brand-note{margin:26px 0 0;color:var(--ink-mute);font-size:.85rem}
+.brand-note{margin:26px 0 0;color:var(--ink-mute);font-size:.875rem}
 .hero-tall{display:none}
 .wirefig{margin:22px auto 0;max-width:520px}
 .wirefig img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
@@ -205,10 +206,10 @@ table.size td b{font-family:var(--font-head)}
     <h1 data-th="เข็มกลัดซ่อนปลาย เบอร์ 000–7" data-en="Safety pins, size 000–7">เข็มกลัดซ่อนปลาย เบอร์ 000–7</h1>
     <p class="muted" style="margin:0;max-width:660px" data-th="เหล็กสปริงชุบนิกเกิล ปลายเข็มซ่อนในฝาครอบ ไม่ทิ่มมือ — มีครบตั้งแต่เบอร์จิ๋ว 000 ถึงเบอร์ยักษ์ 7 ขายยกกล่องราคาส่ง แบ่งขายเป็นพวง/กุรุสก็ได้ กดที่เบอร์เพื่อเช็คราคาทาง LINE" data-en="Nickel-plated spring steel, point safely capped — every size from tiny 000 to jumbo 7. Wholesale by the box, or split by dozen/gross. Tap a size to ask price on LINE.">เหล็กสปริงชุบนิกเกิล ปลายเข็มซ่อนในฝาครอบ ไม่ทิ่มมือ — มีครบตั้งแต่เบอร์จิ๋ว 000 ถึงเบอร์ยักษ์ 7 ขายยกกล่องราคาส่ง แบ่งขายเป็นพวง/กุรุสก็ได้ กดที่เบอร์เพื่อเช็คราคาทาง LINE</p>
     <div class="trust">
-      <span class="badge" data-th="🧷 ครบ 000–7 ที่เดียว" data-en="🧷 All sizes 000–7">🧷 ครบ 000–7 ที่เดียว</span>
-      <span class="badge" data-th="🔢 นับจำนวนจริง ไม่ชั่ง" data-en="🔢 Counted, not weighed">🔢 นับจำนวนจริง ไม่ชั่ง</span>
-      <span class="badge" data-th="📦 แบ่งขาย พวง/กุรุส/กล่อง" data-en="📦 Dozen / gross / box">📦 แบ่งขาย พวง/กุรุส/กล่อง</span>
-      <span class="badge" data-th="🧾 ออกใบกำกับภาษีได้" data-en="🧾 Tax invoice available">🧾 ออกใบกำกับภาษีได้</span>
+      <span class="badge" data-th="ครบ 000–7 ที่เดียว" data-en="All sizes 000–7">ครบ 000–7 ที่เดียว</span>
+      <span class="badge" data-th="นับจำนวนจริง ไม่ชั่ง" data-en="Counted, not weighed">นับจำนวนจริง ไม่ชั่ง</span>
+      <span class="badge" data-th="แบ่งขาย พวง/กุรุส/กล่อง" data-en="Dozen / gross / box">แบ่งขาย พวง/กุรุส/กล่อง</span>
+      <span class="badge" data-th="ออกใบกำกับภาษีได้" data-en="Tax invoice available">ออกใบกำกับภาษีได้</span>
     </div>
     <div class="cta-row" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px">
       <a class="btn btn-primary" href="safety-pins-wholesale.html" data-th="ราคาส่ง ยกกล่อง ครบทุกเบอร์" data-en="Wholesale — all sizes by the box">ราคาส่ง ยกกล่อง ครบทุกเบอร์</a>
@@ -238,10 +239,10 @@ table.size td b{font-family:var(--font-head)}
     <p class="sec-sub" style="margin-top:0" data-th="เจาะลึกรายเบอร์ (ขนาด การใช้งาน คำถามที่พบบ่อย):" data-en="Deep-dive by size (specs, uses, FAQ):">เจาะลึกรายเบอร์ (ขนาด การใช้งาน คำถามที่พบบ่อย):</p>
     <div class="filters" style="margin:0 0 16px">
       <a class="fchip" href="safety-pins-000.html">เบอร์ 000</a><a class="fchip" href="safety-pins-00.html">เบอร์ 00</a><a class="fchip" href="safety-pins-0.html">เบอร์ 0</a><a class="fchip" href="safety-pins-1.html">เบอร์ 1</a><a class="fchip" href="safety-pins-2.html">เบอร์ 2</a><a class="fchip" href="safety-pins-3.html">เบอร์ 3</a><a class="fchip" href="safety-pins-4.html">เบอร์ 4</a><a class="fchip" href="safety-pins-5.html">เบอร์ 5</a><a class="fchip" href="safety-pins-6.html">เบอร์ 6</a><a class="fchip" href="safety-pins-7.html">เบอร์ 7</a>
-      <a class="fchip" href="safety-pins-running.html" data-th="🏃 เข็มกลัดงานวิ่ง" data-en="🏃 Race pins">🏃 เข็มกลัดงานวิ่ง</a>
-      <a class="fchip" href="safety-pins-tags.html" data-th="🏷️ เข็มกลัดติดป้ายราคา" data-en="🏷️ Tag pins">🏷️ เข็มกลัดติดป้ายราคา</a>
-      <a class="fchip" href="safety-pins-diaper.html" data-th="👶 เข็มกลัดผ้าอ้อม" data-en="👶 Diaper pins">👶 เข็มกลัดผ้าอ้อม</a>
-      <a class="fchip" href="../articles/which-safety-pin-size.html" data-th="📖 เบอร์ไหนใช้ทำอะไร" data-en="📖 Size-choosing guide">📖 เบอร์ไหนใช้ทำอะไร</a>
+      <a class="fchip" href="safety-pins-running.html" data-th="เข็มกลัดงานวิ่ง" data-en="Race pins">เข็มกลัดงานวิ่ง</a>
+      <a class="fchip" href="safety-pins-tags.html" data-th="เข็มกลัดติดป้ายราคา" data-en="Tag pins">เข็มกลัดติดป้ายราคา</a>
+      <a class="fchip" href="safety-pins-diaper.html" data-th="เข็มกลัดผ้าอ้อม" data-en="Diaper pins">เข็มกลัดผ้าอ้อม</a>
+      <a class="fchip" href="../articles/which-safety-pin-size.html" data-th="เบอร์ไหนใช้ทำอะไร" data-en="Size-choosing guide">เบอร์ไหนใช้ทำอะไร</a>
     </div>
     <div class="pin-grid" id="pinGrid"></div>
 
@@ -281,14 +282,14 @@ table.size td b{font-family:var(--font-head)}
     </div>
 
     <div class="calc">
-      <h3 data-th="🏃 จัดงานวิ่ง ต้องใช้เข็มกลัดกี่กล่อง?" data-en="🏃 Running a race — how many boxes?">🏃 จัดงานวิ่ง ต้องใช้เข็มกลัดกี่กล่อง?</h3>
+      <h3 data-th="จัดงานวิ่ง ต้องใช้เข็มกลัดกี่กล่อง?" data-en="Running a race — how many boxes?">จัดงานวิ่ง ต้องใช้เข็มกลัดกี่กล่อง?</h3>
       <p data-th="เบอร์วิ่ง (BIB) ใช้เข็มกลัดเบอร์ 2 คนละ 4 ตัว — กรอกจำนวนนักวิ่งได้เลย" data-en="Race bibs take four #2 pins per runner — enter your headcount">เบอร์วิ่ง (BIB) ใช้เข็มกลัดเบอร์ 2 คนละ 4 ตัว — กรอกจำนวนนักวิ่งได้เลย</p>
       <div class="rowc">
         <input type="number" id="runners" min="1" step="1" value="500" inputmode="numeric" aria-label="จำนวนนักวิ่ง">
         <span class="res" id="calcRes"></span>
         <a class="btn btn-primary btn-sm" id="calcAsk" href="#" target="_blank" rel="noopener" data-th="ขอราคางานวิ่ง" data-en="Get event quote">ขอราคางานวิ่ง</a>
       </div>
-      <p style="margin:12px 0 0;font-size:.85rem"><a href="safety-pins-running.html" style="color:#7fe0a9" data-th="คู่มือผู้จัดงานวิ่งฉบับเต็ม (เผื่อสำรอง ใบกำกับภาษี ระยะเวลาสั่ง) →" data-en="Full race-organizer guide →">คู่มือผู้จัดงานวิ่งฉบับเต็ม (เผื่อสำรอง ใบกำกับภาษี ระยะเวลาสั่ง) →</a></p>
+      <p style="margin:12px 0 0;font-size:.875rem"><a href="safety-pins-running.html" style="color:#7fe0a9" data-th="คู่มือผู้จัดงานวิ่งฉบับเต็ม (เผื่อสำรอง ใบกำกับภาษี ระยะเวลาสั่ง) →" data-en="Full race-organizer guide →">คู่มือผู้จัดงานวิ่งฉบับเต็ม (เผื่อสำรอง ใบกำกับภาษี ระยะเวลาสั่ง) →</a></p>
     </div>
 
     <h2 class="sec-h" data-th="สเปคสินค้า" data-en="Specifications">สเปคสินค้า</h2>

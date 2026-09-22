@@ -57,7 +57,7 @@ function sectionHTML(s) {
     const after = `\n    <p class="srcline"><a href="${CAT_FILE[g.srcCat.id]}" data-th="ดูทั้งหมวด${esc(g.srcCat.th)} →" data-en="See the whole ${esc(g.srcCat.en || g.srcCat.th)} category →">ดูทั้งหมวด${esc(g.srcCat.th)} →</a></p>`;
     return groupHTML(g, gi++, "ตรา M.T.T.", after);
   }).join("\n\n");
-  return `    <h2 class="sec-h" id="${s.key}"><span class="ic">${s.icon}</span> ${bi(s.th, s.en)} <small>${bi(s.en, s.th)} · ${n} ${bi("รายการ", "items")}</small></h2>
+  return `    <h2 class="sec-h" id="${s.key}"><span class="ic" aria-hidden="true">${s.icon}</span> ${bi(s.th, s.en)} <small>${bi(s.en, s.th)} · ${n} ${bi("รายการ", "items")}</small></h2>
     <p class="sec-lead" data-th="${esc(s.lead_th)}" data-en="${esc(s.lead_en)}">${esc(s.lead_th)}</p>
 ${tables}`;
 }
@@ -94,11 +94,11 @@ const STYLE = `.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28
 @media(max-width:720px){.why{grid-template-columns:1fr}}
 .why .card{padding:18px}
 .why h3{font-size:1rem;margin:0 0 6px}
-.why p{font-size:.86rem;color:var(--ink-dim);margin:0}
+.why p{font-size:.875rem;color:var(--ink-dim);margin:0}
 .sec-h{font-size:clamp(1.25rem,2.6vw,1.6rem);margin:42px 0 4px;scroll-margin-top:140px}
 .sec-h .ic{font-size:1.2em;vertical-align:-2px;margin-right:4px}
 .sec-h small{display:block;font-family:var(--font-body);font-weight:500;font-size:.82rem;color:var(--ink-mute);margin-top:2px}
-.sec-lead{color:var(--ink-dim);max-width:760px;margin:0 0 6px;font-size:.92rem}`;
+.sec-lead{color:var(--ink-dim);max-width:760px;margin:0 0 6px;font-size:.9rem}`;
 
 const head = headHTML({
   title: TITLE, desc: DESC, kw: KW, url: URL,
@@ -122,12 +122,12 @@ ${crumbsHTML(`<a href="/products" data-th="สินค้า" data-en="Products
         <h1>${bi("สินค้าตรา M.T.T.", "M.T.T. brand products")} <span style="color:var(--amber-dark)" data-th="ตราสิงโต" data-en="Lion brand">ตราสิงโต</span></h1>
         <p class="muted" data-th="สินค้าที่ผลิตภายใต้แบรนด์ของ ม.ทวีภัณฑ์ เอง ปั๊มรูปสิงโตและอักษร M.T.T. บนตัวสินค้า ครอบคลุมกุญแจ เข็มกลัดซ่อนปลาย ประแจเลื่อน มีดครัว และเครื่องมือช่าง — ทุกรายการมีรหัส ขนาด และจำนวนต่อลังระบุชัด กดที่รหัสเพื่อถามราคาทาง LINE ได้ทันที" data-en="Products made under M.T.T. Hardware's own brand, embossed with the lion and the letters M.T.T. — padlocks, safety pins, adjustable wrenches, kitchen knives and hand tools. Every item lists its code, size and carton quantity; tap a code to ask the price on LINE.">สินค้าที่ผลิตภายใต้แบรนด์ของ ม.ทวีภัณฑ์ เอง ปั๊มรูปสิงโตและอักษร M.T.T. บนตัวสินค้า ครอบคลุมกุญแจ เข็มกลัดซ่อนปลาย ประแจเลื่อน มีดครัว และเครื่องมือช่าง — ทุกรายการมีรหัส ขนาด และจำนวนต่อลังระบุชัด กดที่รหัสเพื่อถามราคาทาง LINE ได้ทันที</p>
         <div class="trust">
-          <span class="badge lion">🦁 ${total} ${bi("รายการ", "items")}</span>
-          <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
-          <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Nationwide">🚚 ส่งทั่วไทย</span>
+          <span class="badge lion">${total} ${bi("รายการ", "items")}</span>
+          <span class="badge" data-th="ราคาปลีก-ส่ง" data-en="Retail &amp; wholesale">ราคาปลีก-ส่ง</span>
+          <span class="badge" data-th="ส่งทั่วไทย" data-en="Nationwide">ส่งทั่วไทย</span>
         </div>
         <nav class="grpnav" aria-label="หมวดสินค้าตรา M.T.T.">
-${SECTIONS.filter((s) => bySection[s.key].length).map((s) => `          <a href="#${s.key}">${s.icon} ${bi(s.th, s.en)}</a>`).join("\n")}
+${SECTIONS.filter((s) => bySection[s.key].length).map((s) => `          <a href="#${s.key}"><span aria-hidden="true">${s.icon}</span> ${bi(s.th, s.en)}</a>`).join("\n")}
         </nav>
       </div>
       <div class="hero-pic"><img src="../assets/img/products/mtt-brand.webp" alt="สินค้าตรา M.T.T. ตราสิงโต — กุญแจ เข็มกลัด ประแจเลื่อน ปืนยิงกาว" width="1200" height="900" fetchpriority="high"></div>
