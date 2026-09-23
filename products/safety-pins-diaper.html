@@ -58,16 +58,16 @@
 .crumbs a{color:var(--ink-mute)}
 .pd-hero h1{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:6px 0 8px}
 .trust{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 18px}
-.trust .badge{font-size:.83rem;padding:7px 14px}
+.trust .badge{font-size:.82rem;padding:7px 14px}
 .cta-row{display:flex;flex-wrap:wrap;gap:10px}
 .sec-h{font-size:clamp(1.2rem,2.4vw,1.55rem);margin:38px 0 12px}
 .safe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .safe-grid .card{padding:18px}
 .safe-grid b{display:block;font-family:var(--font-head);font-size:1rem;margin-bottom:4px}
-.safe-grid p{color:var(--ink-dim);font-size:.86rem;margin:0}
+.safe-grid p{color:var(--ink-dim);font-size:.875rem;margin:0}
 .use-list{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;padding:0;margin:0;list-style:none}
 .use-list li{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);font-size:.9rem}
-.use-list li::before{content:"✔ ";color:var(--amber-dark);font-weight:700}
+.use-list li::before{content:"✔ " / "";color:var(--amber-dark);font-weight:700}
 .tip-band{background:var(--amber-soft);border:1px solid rgba(18,161,80,.25);border-radius:var(--radius-lg);padding:20px 22px;margin-top:16px}
 .tip-band b{font-family:var(--font-head);color:var(--amber-dark)}
 .tip-band ol{margin:8px 0 0 18px;padding:0;color:var(--ink-2);font-size:.9rem}
@@ -76,13 +76,13 @@
 .faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
 .faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:.95rem;padding:13px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-size:1.2rem;color:var(--amber);flex:none}
+.faq summary::after{content:"+";font-size:1.15rem;color:var(--amber);flex:none}
 .faq details[open] summary::after{content:"–"}
-.faq .a{padding:0 0 13px;color:var(--ink-2);font-size:.88rem}
+.faq .a{padding:0 0 13px;color:var(--ink-2);font-size:.875rem}
 .cta-band{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:28px;margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
 .cta-band h2{color:#fff;font-size:1.25rem;margin:0 0 4px}
 .cta-band p{color:#c2cbde;margin:0;font-size:.9rem}
-@media(max-width:760px){.safe-grid{grid-template-columns:1fr}.use-list{grid-template-columns:1fr}}
+@media(max-width:768px){.safe-grid{grid-template-columns:1fr}.use-list{grid-template-columns:1fr}}
 
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 .tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
@@ -99,9 +99,9 @@
     <h1 data-th="เข็มกลัดผ้าอ้อม เบอร์ 4 — ปลายซ่อน ไม่ทิ่มมือ" data-en="Diaper pins, size 4 — safely capped point">เข็มกลัดผ้าอ้อม เบอร์ 4 — ปลายซ่อน ไม่ทิ่มมือ</h1>
     <p class="muted" style="margin:0;max-width:660px" data-th="เข็มกลัดผ้าห่ม/ผ้าอ้อม (blanket pin) ขนาดมาตรฐาน 5.6 ซม. เหล็กสปริงชุบนิกเกิล ปลายเข็มซ่อนในฝาครอบเมื่อกลัดปิด สปริงแน่นไม่เด้งหลุดเอง — ขายปลีกเป็นพวง หรือยกกล่อง 432 ตัวราคาส่ง" data-en="Standard 5.6 cm blanket/diaper pins — nickel-plated spring steel, point hidden in the cap when closed, firm spring that stays shut. By the dozen or wholesale boxes of 432.">เข็มกลัดผ้าห่ม/ผ้าอ้อม (blanket pin) ขนาดมาตรฐาน 5.6 ซม. เหล็กสปริงชุบนิกเกิล ปลายเข็มซ่อนในฝาครอบเมื่อกลัดปิด สปริงแน่นไม่เด้งหลุดเอง — ขายปลีกเป็นพวง หรือยกกล่อง 432 ตัวราคาส่ง</p>
     <div class="trust">
-      <span class="badge" data-th="👶 มาตรฐานผ้าอ้อม เบอร์ 4" data-en="👶 Size 4 — diaper standard">👶 มาตรฐานผ้าอ้อม เบอร์ 4</span>
-      <span class="badge" data-th="🔒 ปลายซ่อนในฝาครอบ" data-en="🔒 Capped point">🔒 ปลายซ่อนในฝาครอบ</span>
-      <span class="badge" data-th="📦 พวง/กุรุส/ยกกล่อง" data-en="📦 Dozen / gross / box">📦 พวง/กุรุส/ยกกล่อง</span>
+      <span class="badge" data-th="มาตรฐานผ้าอ้อม เบอร์ 4" data-en="Size 4 — diaper standard">มาตรฐานผ้าอ้อม เบอร์ 4</span>
+      <span class="badge" data-th="ปลายซ่อนในฝาครอบ" data-en="Capped point">ปลายซ่อนในฝาครอบ</span>
+      <span class="badge" data-th="พวง/กุรุส/ยกกล่อง" data-en="Dozen / gross / box">พวง/กุรุส/ยกกล่อง</span>
     </div>
     <div class="cta-row">
       <a class="btn btn-primary" data-line-ask="สอบถามราคา เข็มกลัดผ้าอ้อม เบอร์ 4 (พวง/ยกกล่อง)" href="#" target="_blank" rel="noopener" data-th="เช็คราคาทาง LINE" data-en="Ask price on LINE">เช็คราคาทาง LINE</a>
@@ -133,7 +133,7 @@
     </ul>
 
     <h2 class="sec-h" data-th="ทำไมผ้าอ้อมผ้ายังต้องใช้เข็มกลัด" data-en="Why cloth diapers still need pins">ทำไมผ้าอ้อมผ้ายังต้องใช้เข็มกลัด</h2>
-    <p style="color:var(--ink-2);font-size:.92rem;max-width:760px" data-th="ผ้าอ้อมสำเร็จรูปแบบมีเทปกาวสะดวกกว่าก็จริง แต่ผ้าอ้อมผ้ายังเป็นตัวเลือกหลักของหลายบ้านเพราะซักใช้ซ้ำได้ ต้นทุนระยะยาวถูกกว่ามาก และเด็กที่แพ้ง่ายมักทนผ้าฝ้ายได้ดีกว่าวัสดุสังเคราะห์ เมื่อใช้ผ้าอ้อมผ้าก็ต้องมีตัวยึด ซึ่งเข็มกลัดเบอร์ 4 เป็นมาตรฐานที่ใช้กันมานาน เพราะยาวพอกลัดผ้าหลายทบและมีฝาครอบปิดปลายเข็ม โรงพยาบาลและเนอสเซอรีหลายแห่งก็ยังใช้อยู่" data-en="Disposables are more convenient, but cloth diapers remain the choice in many homes: washable, far cheaper over time, and gentler on skin that reacts to synthetics. Cloth needs a fastener, and the size-4 pin has long been the standard — long enough for folded cloth, with a cap over the point. Hospitals and nurseries still use them.">ผ้าอ้อมสำเร็จรูปแบบมีเทปกาวสะดวกกว่าก็จริง แต่ผ้าอ้อมผ้ายังเป็นตัวเลือกหลักของหลายบ้านเพราะซักใช้ซ้ำได้ ต้นทุนระยะยาวถูกกว่ามาก และเด็กที่แพ้ง่ายมักทนผ้าฝ้ายได้ดีกว่าวัสดุสังเคราะห์ เมื่อใช้ผ้าอ้อมผ้าก็ต้องมีตัวยึด ซึ่งเข็มกลัดเบอร์ 4 เป็นมาตรฐานที่ใช้กันมานาน เพราะยาวพอกลัดผ้าหลายทบและมีฝาครอบปิดปลายเข็ม โรงพยาบาลและเนอสเซอรีหลายแห่งก็ยังใช้อยู่</p>
+    <p style="color:var(--ink-2);font-size:.9rem;max-width:760px" data-th="ผ้าอ้อมสำเร็จรูปแบบมีเทปกาวสะดวกกว่าก็จริง แต่ผ้าอ้อมผ้ายังเป็นตัวเลือกหลักของหลายบ้านเพราะซักใช้ซ้ำได้ ต้นทุนระยะยาวถูกกว่ามาก และเด็กที่แพ้ง่ายมักทนผ้าฝ้ายได้ดีกว่าวัสดุสังเคราะห์ เมื่อใช้ผ้าอ้อมผ้าก็ต้องมีตัวยึด ซึ่งเข็มกลัดเบอร์ 4 เป็นมาตรฐานที่ใช้กันมานาน เพราะยาวพอกลัดผ้าหลายทบและมีฝาครอบปิดปลายเข็ม โรงพยาบาลและเนอสเซอรีหลายแห่งก็ยังใช้อยู่" data-en="Disposables are more convenient, but cloth diapers remain the choice in many homes: washable, far cheaper over time, and gentler on skin that reacts to synthetics. Cloth needs a fastener, and the size-4 pin has long been the standard — long enough for folded cloth, with a cap over the point. Hospitals and nurseries still use them.">ผ้าอ้อมสำเร็จรูปแบบมีเทปกาวสะดวกกว่าก็จริง แต่ผ้าอ้อมผ้ายังเป็นตัวเลือกหลักของหลายบ้านเพราะซักใช้ซ้ำได้ ต้นทุนระยะยาวถูกกว่ามาก และเด็กที่แพ้ง่ายมักทนผ้าฝ้ายได้ดีกว่าวัสดุสังเคราะห์ เมื่อใช้ผ้าอ้อมผ้าก็ต้องมีตัวยึด ซึ่งเข็มกลัดเบอร์ 4 เป็นมาตรฐานที่ใช้กันมานาน เพราะยาวพอกลัดผ้าหลายทบและมีฝาครอบปิดปลายเข็ม โรงพยาบาลและเนอสเซอรีหลายแห่งก็ยังใช้อยู่</p>
 
     <h2 class="sec-h" data-th="ต้องมีกี่ตัวถึงจะพอ" data-en="How many do you need">ต้องมีกี่ตัวถึงจะพอ</h2>
     <div class="tblwrap" tabindex="0" role="region" aria-label="ต้องมีกี่ตัวถึงจะพอ">

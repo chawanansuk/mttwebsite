@@ -51,7 +51,7 @@
 <style>
 .plist-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.14),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:52px 0 8px}
 .filters{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 6px}
-.fchip{cursor:pointer;border:1px solid var(--line-strong);background:var(--surface);border-radius:999px;padding:8px 16px;
+.fchip{cursor:pointer;border:1px solid var(--line-strong);background:var(--surface);border-radius:var(--radius-full);padding:8px 16px;
   font-size:.9rem;font-weight:600;color:var(--ink-2);font-family:inherit;transition:.15s}
 .fchip:hover{border-color:var(--amber)}
 .fchip.on{background:var(--navy);color:var(--amber);border-color:var(--navy)}
@@ -62,10 +62,10 @@
 .prod .thumb .glyph{font-size:3.4rem;filter:drop-shadow(0 8px 14px rgba(16,26,48,.18))}
 .prod .thumb .flag{position:absolute;top:12px;left:12px}
 .prod .body{padding:16px 16px 18px;display:flex;flex-direction:column;flex:1}
-.prod .body h3{font-size:1.06rem;margin-bottom:3px}
-.prod .body .desc{color:var(--ink-dim);font-size:.85rem;margin:0 0 12px;flex:1}
+.prod .body h3{font-size:1.05rem;margin-bottom:3px}
+.prod .body .desc{color:var(--ink-dim);font-size:.875rem;margin:0 0 12px;flex:1}
 .prod .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.prod .price{font-family:var(--font-head);font-weight:700;font-size:1.28rem}
+.prod .price{font-family:var(--font-head);font-weight:700;font-size:1.25rem}
 .prod .price.soon{font-size:.95rem;color:var(--ink-mute)}
 .empty{grid-column:1/-1;text-align:center;color:var(--ink-mute);padding:40px 0}
 @media(max-width:860px){.pgrid{grid-template-columns:1fr 1fr}}

@@ -203,12 +203,12 @@ ${crumbsHTML(`<a href="tools.html" data-th="เครื่องมือช่
     <h1>${bi(cat.th, cat.en)} ${bi(b.th, b.en)}</h1>
     <p class="muted" data-th="${esc(m.lead_th)}" data-en="${esc(m.lead_en)}">${esc(m.lead_th)}</p>
     <div class="trust">
-      <span class="badge">📋 ${total} ${bi("รายการ", "items")}</span>
+      <span class="badge">${total} ${bi("รายการ", "items")}</span>
 ${isMTT
-    ? `      <span class="badge lion" data-th="🦁 สินค้าตรา M.T.T. ของร้าน" data-en="🦁 Our own M.T.T. brand">🦁 สินค้าตรา M.T.T. ของร้าน</span>`
-    : `      <span class="badge" data-th="✔ ผู้นำเข้าโดยตรง" data-en="✔ Direct importer">✔ ผู้นำเข้าโดยตรง</span>`}
-      <span class="badge" data-th="🏷️ ราคาปลีก-ส่ง" data-en="🏷️ Retail &amp; wholesale">🏷️ ราคาปลีก-ส่ง</span>
-      <span class="badge" data-th="🚚 ส่งทั่วไทย" data-en="🚚 Nationwide">🚚 ส่งทั่วไทย</span>
+    ? `      <span class="badge lion" data-th="สินค้าตรา M.T.T. ของร้าน" data-en="Our own M.T.T. brand">สินค้าตรา M.T.T. ของร้าน</span>`
+    : `      <span class="badge" data-th="ผู้นำเข้าโดยตรง" data-en="Direct importer">ผู้นำเข้าโดยตรง</span>`}
+      <span class="badge" data-th="ราคาปลีก-ส่ง" data-en="Retail &amp; wholesale">ราคาปลีก-ส่ง</span>
+      <span class="badge" data-th="ส่งทั่วไทย" data-en="Nationwide">ส่งทั่วไทย</span>
     </div>
 ${isMTT ? `    <p class="brand-link"><a href="mtt-brand.html" data-th="ดูสินค้าตรา M.T.T. ทั้งหมด →" data-en="All M.T.T. brand products →">ดูสินค้าตรา M.T.T. ทั้งหมด →</a></p>\n` : ""}    <nav class="catnav" aria-label="หมวดเครื่องมือ">
       <a href="tools.html" data-th="ทุกหมวด" data-en="All categories">ทุกหมวด</a>
