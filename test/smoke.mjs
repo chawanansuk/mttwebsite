@@ -182,6 +182,22 @@ console.log("\n[ products/jet-lighter.html ]");
   await page.goto(base + "/products/jet-lighter.html", { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(200);
   assert((await page.$eval("#heroFrom", (e) => e.textContent)).includes("฿"), "ราคาเริ่มต้นจาก catalog");
+  /* schema อยู่ใน HTML ตรงๆ แล้ว (ไม่ได้สร้างด้วย JS) — ราคาต้องตรงกับ catalog.js เสมอ
+     ถ้าแก้ราคาใน catalog.js แต่ลืมแก้ JSON-LD ใน <head> ข้อนี้จะตก */
+  {
+    const r = await page.evaluate(() => {
+      const P = CATALOG.byId("jet-lighter");
+      const want = { low: CATALOG.boxMinPerPiece(P), high: CATALOG.unitPriceRange(P).max };
+      const blocks = [...document.querySelectorAll('script[type="application/ld+json"]')].map((s) => JSON.parse(s.textContent));
+      const prod = blocks.filter((b) => b["@type"] === "Product");
+      return { want, count: prod.length, got: prod[0] && prod[0].offers,
+               types: blocks.map((b) => b["@type"]).sort().join(",") };
+    });
+    assert(r.count === 1, `Product schema มีก้อนเดียว (พบ ${r.count})`);
+    assert(r.got && r.got.lowPrice === r.want.low && r.got.highPrice === r.want.high,
+      `ราคาใน schema ตรง catalog.js (schema ${r.got && r.got.lowPrice}–${r.got && r.got.highPrice} · catalog ${r.want.low}–${r.want.high})`);
+    assert(/BreadcrumbList/.test(r.types) && /FAQPage/.test(r.types), "มี FAQPage และ BreadcrumbList ใน HTML");
+  }
   assert(!!(await page.$('#heroVideo source[src$=".mp4"]')) && !!(await page.$('#heroVideo[poster]')), "คลิป hero มี source mp4 + poster");
   assert((await page.$$eval(".pcard .save", (e) => e.length)) >= 2, "มี badge ประหยัด % อย่างน้อย 2");
   await page.click(".add");
