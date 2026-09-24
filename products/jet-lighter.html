@@ -48,6 +48,95 @@
   "duration": "PT12S"
 }
 </script>
+<!-- schema สินค้า/FAQ/breadcrumb อยู่ใน HTML ตรงๆ — เดิมสร้างด้วย JavaScript ตอนเปิดหน้า
+     ทำให้ Google อ่านช้าและไม่แน่นอน ส่วน Bing และบอตอื่นส่วนใหญ่ไม่อ่านเลย
+     ราคาต้องตรงกับ assets/js/catalog.js — test/smoke.mjs ตรวจให้ทุกครั้ง -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "ไฟฟู่ M.T.T. — ไฟแช็กหัวพ่นไฟ (Jet Torch Lighter)",
+  "description": "ไฟฟู่ ไฟแช็กหัวพ่นไฟ เปลวไฟเจ็ทสีน้ำเงินแรงดันสูง เจอลมไม่ดับ เติมแก๊สบิวเทนใช้ซ้ำได้ มี 2 ขนาด 5 สี",
+  "image": [
+    "https://mtthardware.com/assets/img/products/jet-lighter.webp",
+    "https://mtthardware.com/assets/img/products/jet-large-colors.webp",
+    "https://mtthardware.com/assets/img/products/jet-compact-colors.webp",
+    "https://mtthardware.com/assets/img/products/jet-large-box.webp",
+    "https://mtthardware.com/assets/img/products/jet-compact-box.webp",
+    "https://mtthardware.com/assets/img/products/jet-lighter-flame.webp"
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "ตราสิงโต M.T.T. (ม.ทวีภัณฑ์)"
+  },
+  "model": "MTTFF01 (รุ่นใหญ่ 11 ซม.) / MTTFF02 (รุ่นเล็ก 8 ซม.)",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "THB",
+    "lowPrice": 24,
+    "highPrice": 59,
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "การจัดส่ง",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "การชำระเงิน",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ส่งออเดอร์ทาง LINE ทีมงานแจ้งยอดรวมและค่าส่งก่อน แล้วเลือกโอนธนาคารหรือเก็บเงินปลายทางก็ได้"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "เลือกสีในกล่องเองได้ไหม",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง รุ่นเล็กมี 5 สี (ส้ม เขียว ฟ้า ม่วง เหลือง) รุ่นใหญ่มี 5 สี (ส้ม แดง เหลือง เขียว น้ำเงิน)"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "หน้าแรก",
+      "item": "https://mtthardware.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "สินค้าทั้งหมด",
+      "item": "https://mtthardware.com/products"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ไฟฟู่ / ไฟแช็ก",
+      "item": "https://mtthardware.com/products/jet-lighter.html"
+    }
+  ]
+}
+</script>
 <style>
 .breadcrumb{background:var(--surface);border-bottom:1px solid var(--line);font-size:.875rem}
 .breadcrumb .wrap{display:flex;align-items:center;gap:8px;padding:12px 22px;color:var(--ink-mute)}
@@ -760,34 +849,7 @@ pickSwatch("green");
 wireForm();
 renderProduct();
 
-/* ---------- JSON-LD (Product + FAQ) ---------- */
-(function(){
-  const r=CATALOG.unitPriceRange(PRODUCT), box=CATALOG.boxMinPerPiece(PRODUCT);
-  const product={
-    "@context":"https://schema.org","@type":"Product",
-    "name":"ไฟฟู่ M.T.T. — ไฟแช็กหัวพ่นไฟ (Jet Torch Lighter)",
-    "description":"ไฟฟู่ ไฟแช็กหัวพ่นไฟ เปลวไฟเจ็ทสีน้ำเงินแรงดันสูง เจอลมไม่ดับ เติมแก๊สบิวเทนใช้ซ้ำได้ มี 2 ขนาด 5 สี",
-    "image":["https://mtthardware.com/assets/img/products/jet-lighter.webp","https://mtthardware.com/assets/img/products/jet-large-colors.webp","https://mtthardware.com/assets/img/products/jet-compact-colors.webp","https://mtthardware.com/assets/img/products/jet-large-box.webp","https://mtthardware.com/assets/img/products/jet-compact-box.webp","https://mtthardware.com/assets/img/products/jet-lighter-flame.webp"],
-    "brand":{"@type":"Brand","name":"ตราสิงโต M.T.T. (ม.ทวีภัณฑ์)"},
-    "model":"MTTFF01 (รุ่นใหญ่ 11 ซม.) / MTTFF02 (รุ่นเล็ก 8 ซม.)",
-    "offers":{"@type":"AggregateOffer","priceCurrency":"THB","lowPrice":box,"highPrice":r.max,"availability":"https://schema.org/InStock"}
-  };
-  const faq={
-    "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-      {"@type": "Question", "name": "การจัดส่ง", "acceptedAnswer": {"@type": "Answer", "text": "สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้"}},
-      {"@type": "Question", "name": "การชำระเงิน", "acceptedAnswer": {"@type": "Answer", "text": "ส่งออเดอร์ทาง LINE ทีมงานแจ้งยอดรวมและค่าส่งก่อน แล้วเลือกโอนธนาคารหรือเก็บเงินปลายทางก็ได้"}},
-      {"@type": "Question", "name": "เลือกสีในกล่องเองได้ไหม", "acceptedAnswer": {"@type": "Answer", "text": "ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง รุ่นเล็กมี 5 สี (ส้ม เขียว ฟ้า ม่วง เหลือง) รุ่นใหญ่มี 5 สี (ส้ม แดง เหลือง เขียว น้ำเงิน)"}}
-    ]
-  };
-  const breadcrumb={
-    "@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-      {"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://mtthardware.com/"},
-      {"@type":"ListItem","position":2,"name":"สินค้าทั้งหมด","item":"https://mtthardware.com/products"},
-      {"@type":"ListItem","position":3,"name":"ไฟฟู่ / ไฟแช็ก","item":"https://mtthardware.com/products/jet-lighter.html"}
-    ]
-  };
-  [product,faq,breadcrumb].forEach(d=>{const s=document.createElement("script");s.type="application/ld+json";s.textContent=JSON.stringify(d);document.head.appendChild(s);});
-})();
+/* JSON-LD ย้ายไปอยู่ใน <head> เป็น HTML ตรงๆ แล้ว */
 /* คลิป hero: เล่นวนแบบปิดเสียง กดปุ่มเพื่อเปิดเสียง; ผู้ใช้ที่ตั้งค่า reduce-motion จะเห็นภาพนิ่ง */
 (function(){
   var v=document.getElementById('heroVideo'), b=document.getElementById('heroSound'); if(!v||!b) return;
