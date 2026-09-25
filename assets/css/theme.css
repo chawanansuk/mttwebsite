@@ -105,8 +105,11 @@ html.pending-lang [data-th]{visibility:hidden}
 .prod:hover .thumb img{transform:scale(1.05)}
 
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-.eyebrow{font-family:var(--font-head);font-size:.75rem;letter-spacing:.24em;
+/* ไทยไม่ควรถ่างตัวอักษร — .24em ทำให้สระบนล่างและวรรณยุกต์ดูหลุดจากพยัญชนะ
+   ข้อความอังกฤษยังถ่างได้ตามสไตล์ตัวพิมพ์ใหญ่ */
+.eyebrow{font-family:var(--font-head);font-size:.82rem;letter-spacing:.03em;
   text-transform:uppercase;color:var(--amber-dark);font-weight:600}
+html[lang="en"] .eyebrow{letter-spacing:.16em;font-size:.75rem}
 .muted{color:var(--ink-dim)}
 
 /* ---------- buttons ---------- */
@@ -308,6 +311,9 @@ section{padding:64px 0}
      ทำให้ช่วง 401–900px มีทางเข้า LINE สองจุดซ้อนกัน (header + แถบล่าง) */
   .tabbar{display:grid}
   .site-header .btn-line{display:none}
+  /* แถบล่างมีปุ่มตะกร้าพร้อมตัวเลขอยู่แล้ว ปุ่มตะกร้าบน header จึงซ้ำกัน
+     และทำให้ header ที่จอ 320px ล้นออกไป 34px — ซ่อนแบบเดียวกับปุ่ม LINE */
+  .site-header .cart-btn{display:none}
   .fab-line{display:none}
   body{padding-bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom))}
   .mobile-cta{display:flex;bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom))}
