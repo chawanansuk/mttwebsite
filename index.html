@@ -86,6 +86,7 @@
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
 /* V2: เดิมเป็นชิปอีโมจิ 4 ตัวที่ซ้ำความหมายกับแถบมืดด้านล่าง เหลือบรรทัดข้อความสั้นบรรทัดเดียว */
 .hero-proof{margin-top:22px;font-size:.95rem;color:var(--ink-mute);font-weight:500}
+.hero-proof .nw{white-space:nowrap} /* "ส่งทั่วไทย" เคยถูกตัดเป็น ส่ง|ทั่วไทย */
 /* V2: การ์ดโชว์สินค้าเปลี่ยนจากวางลอยเอียงคนละองศา มาเป็นกริด 1 ใหญ่ + 2 เล็ก ชนิดเนื้อหาเดียวกัน */
 .hero-vis{display:grid;gap:16px;align-content:start}
 .hv-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
@@ -157,7 +158,10 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
 .map-card .pin{font-size:2.6rem;margin-bottom:8px}
 @media(max-width:860px){
   .hero-grid{grid-template-columns:1fr}
-  .hero-vis{order:-1;margin-bottom:6px}
+  /* V2: ข้อความและปุ่มต้องขึ้นก่อนรูป เดิม order:-1 ดันการ์ดรูปสูง 339px ขึ้นบนสุด
+     ปุ่มหลักจึงตกไปอยู่ที่ 834px ขณะที่จอมือถือเห็นได้ราว 786px คนเปิดมาไม่เห็นปุ่มเลย */
+  .hero-grid{gap:28px}
+  .hero-vis{margin-top:0;justify-self:stretch;max-width:none}
   .trust .wrap{grid-template-columns:1fr 1fr;gap:18px}
   .cat-grid{grid-template-columns:1fr 1fr}
   .feat-grid{grid-template-columns:1fr 1fr}
@@ -168,6 +172,11 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
 }
 @media(max-width:520px){
   .hero{padding:26px 0 40px} /* 76px บนทำให้ปุ่มหลักตกไปอยู่ใต้ tabbar บน iPhone */
+  /* 33.6px ทำให้ "เครื่องมือช่าง & ฮาร์ดแวร์" กว้าง 379px แต่มีที่ 346px จึงพับเป็น 3 บรรทัด
+     และ & ไปขึ้นต้นบรรทัดใหม่ — ขนาดตามความกว้างจอ ไม่เกิน 30px พอดีบรรทัดเดียวตั้งแต่จอ 320px */
+  .hero h1{font-size:clamp(1.5rem,7.6vw,1.875rem);line-height:1.38;margin:12px 0 14px}
+  .hero p.lead{font-size:1rem;line-height:1.7;margin:0 0 22px}
+  .hero-proof{margin-top:16px;font-size:.875rem}
   /* V2: ปุ่มชุด hero เรียงซ้อนกันเต็มความกว้างเท่ากัน เดิมกว้างไม่เท่ากันจนขอบขวาไม่ตรงแนว */
   .hero-cta{flex-direction:column;align-items:stretch}
   .hero-cta .btn{width:100%}
@@ -214,7 +223,7 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
         <a class="btn btn-primary" href="#categories" data-th="ดูสินค้าทั้งหมด" data-en="Browse products">ดูสินค้าทั้งหมด</a>
         <a class="btn btn-dark" href="products/jet-lighter.html" data-th="สินค้าขายดี: ไฟฟู่" data-en="Bestseller: Jet lighter">สินค้าขายดี: ไฟฟู่</a>
       </div>
-      <p class="hero-proof" data-th="739 รายการในแคตตาล็อก · ราคาปลีกและราคาส่ง · ส่งทั่วไทย" data-en="739 catalogue items · retail &amp; wholesale · shipped nationwide">739 รายการในแคตตาล็อก · ราคาปลีกและราคาส่ง · ส่งทั่วไทย</p>
+      <p class="hero-proof" data-th="&lt;span class=&quot;nw&quot;&gt;739 รายการในแคตตาล็อก&lt;/span&gt; · &lt;span class=&quot;nw&quot;&gt;ราคาปลีกและราคาส่ง&lt;/span&gt; · &lt;span class=&quot;nw&quot;&gt;ส่งทั่วไทย&lt;/span&gt;" data-en="&lt;span class=&quot;nw&quot;&gt;739 catalogue items&lt;/span&gt; · &lt;span class=&quot;nw&quot;&gt;retail &amp;amp; wholesale&lt;/span&gt; · &lt;span class=&quot;nw&quot;&gt;shipped nationwide&lt;/span&gt;"><span class="nw">739 รายการในแคตตาล็อก</span> · <span class="nw">ราคาปลีกและราคาส่ง</span> · <span class="nw">ส่งทั่วไทย</span></p>
     </div>
     <div class="hero-vis">
       <a class="hv-card hv-1" href="products/jet-lighter.html" aria-label="ไฟฟู่ M.T.T. ดูสินค้า">
