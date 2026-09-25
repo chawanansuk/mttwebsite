@@ -1,128 +1,15 @@
 /* ============================================================
    ม.ทวีภัณฑ์ — layout.js
-   ฉีด header/footer/ปุ่ม LINE ลอย/toast ให้ทุกหน้า (ไม่ต้องก็อปซ้ำ)
-   + สลับภาษา TH/EN (จำค่า) + เติมข้อมูลร้านจาก SHOP + badge ตะกร้า
-   หน้าเว็บตั้งค่า: window.MTT_BASE ("" หรือ "../"), window.MTT_PAGE
+   header/footer ฝังในไฟล์ HTML แล้ว (แก้ที่ _chrome.mjs แล้วรัน npm run bake)
+   ไฟล์นี้: สลับภาษา TH/EN (จำค่า) + เติมข้อมูลร้านจาก SHOP + เมนูมือถือ + badge ตะกร้า + toast
    ต้องโหลด "หลัง" shop-config.js, catalog.js, cart.js
    ============================================================ */
 (function () {
   var S = window.SHOP || {};
-  var BASE = window.MTT_BASE || "";
-  var PAGE = window.MTT_PAGE || "";
 
-  var LINE_ICON = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg>';
-  var BOLT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>';
-
-  var NAV = [
-    { key: "home",     th: "หน้าแรก",       en: "Home",       href: "/" },
-    { key: "cats",     th: "หมวดหมู่",       en: "Categories", href: "/#categories" },
-    { key: "products", th: "สินค้าทั้งหมด",  en: "Products",   href: "/products" },
-    { key: "tools",    th: "เครื่องมือช่าง",  en: "Tools",      href: BASE + "products/tools.html" },
-    { key: "pins",     th: "เข็มกลัด",        en: "Safety pins", href: BASE + "products/safety-pins.html" },
-    { key: "contact",  th: "ติดต่อ",         en: "Contact",    href: "/#contact" },
-  ];
-  var CHECKOUT = BASE + "products/jet-lighter.html#order";
-
-  /* ---------- markup ---------- */
-  function headerHTML() {
-    var links = NAV.map(function (n) {
-      return '<a href="' + n.href + '" data-nav="' + n.key + '" class="' + (n.key === PAGE ? "active" : "") +
-        '"' + (n.key === PAGE ? ' aria-current="page"' : '') + ' data-th="' + n.th + '" data-en="' + n.en + '">' + n.th + '</a>';
-    }).join("");
-    return '' +
-    '<header class="site-header"><div class="wrap nav">' +
-      '<a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก">' +
-        '<span class="mark">' + BOLT + '</span>' +
-        '<span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>' +
-      '<nav class="nav-links" id="navLinks">' + links + '</nav>' +
-      '<div class="nav-right">' +
-        '<a class="cart-btn" href="' + CHECKOUT + '" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า">' +
-          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>' +
-          '<span class="cart-badge" id="cartBadge" hidden>0</span></a>' +
-        '<div class="lang" role="group" aria-label="ภาษา">' +
-          '<button data-lang="th" aria-pressed="true">TH</button>' +
-          '<button data-lang="en" aria-pressed="false">EN</button></div>' +
-        '<a class="btn btn-line btn-sm" data-shop="line-url" href="#" target="_blank" rel="noopener" aria-label="สั่งทาง LINE">' +
-          LINE_ICON + '<span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>' +
-        '<button class="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>' +
-      '</div></div></header>';
-  }
-
-  function footerHTML() {
-    return '' +
-    '<footer class="site-footer"><div class="wrap"><div class="foot-grid">' +
-      '<div class="foot-brand"><div class="brand"><span class="mark">' + BOLT + '</span>' +
-        '<span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></div>' +
-        '<p data-th="ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย" data-en="Tools & hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand. Retail & wholesale, nationwide.">ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย</p></div>' +
-      '<div class="foot-col"><h2 data-th="สินค้า" data-en="Products">สินค้า</h2><ul>' +
-        '<li><a href="' + BASE + 'products/jet-lighter.html" data-th="ไฟฟู่ / ไฟแช็ก" data-en="Jet lighters">ไฟฟู่ / ไฟแช็ก</a></li>' +
-        '<li><a href="' + BASE + 'products/tools.html" data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS">เครื่องมือช่าง WYNNTOOLS</a></li>' +
-        '<li><a href="' + BASE + 'products/tools-wrenches.html" data-th="ประแจ ลูกบล็อก" data-en="Wrenches & sockets">ประแจ ลูกบล็อก</a></li>' +
-        '<li><a href="' + BASE + 'products/tools-holding.html" data-th="คีม แคลมป์ ปากกาจับ" data-en="Pliers & clamps">คีม แคลมป์ ปากกาจับ</a></li>' +
-        '<li><a href="' + BASE + 'products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a></li>' +
-        '<li><a href="' + BASE + 'products/mtt-brand.html" data-th="สินค้าตรา M.T.T. ตราสิงโต" data-en="M.T.T. brand products">สินค้าตรา M.T.T. ตราสิงโต</a></li>' +
-        '<li><a href="' + BASE + 'products/safety-pins-wholesale.html" data-th="เข็มกลัด ขายส่งยกกล่อง" data-en="Safety pins wholesale">เข็มกลัด ขายส่งยกกล่อง</a></li>' +
-        '<li><a href="' + BASE + 'products/safety-pins-canvas.html" data-th="เข็มกลัดผ้าใบ เต็นท์" data-en="Canvas & tent pins">เข็มกลัดผ้าใบ เต็นท์</a></li>' +
-        '<li><a href="/products" data-th="สินค้าทั้งหมด" data-en="All products">สินค้าทั้งหมด</a></li>' +
-        '<li><a href="/#categories" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a></li></ul></div>' +
-      '<div class="foot-col"><h2 data-th="บทความ" data-en="Guides">บทความ</h2><ul>' +
-        '<li><a href="' + BASE + 'articles/which-jet-lighter-brand.html" data-th="ไฟฟู่ยี่ห้อไหนดี" data-en="Which jet lighter">ไฟฟู่ยี่ห้อไหนดี</a></li>' +
-        '<li><a href="' + BASE + 'articles/which-safety-pin-size.html" data-th="เข็มกลัดเบอร์ไหนใช้ทำอะไร" data-en="Which safety-pin size">เข็มกลัดเบอร์ไหนใช้ทำอะไร</a></li></ul></div>' +
-      '<div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">ลิงก์</h2><ul>' +
-        '<li><a href="/#why" data-th="ทำไมต้องเรา" data-en="Why us">ทำไมต้องเรา</a></li>' +
-        '<li><a href="/#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a></li>' +
-        '<li><a href="' + BASE + 'privacy.html" data-th="ความเป็นส่วนตัว" data-en="Privacy">ความเป็นส่วนตัว</a></li>' +
-        '<li><a data-shop="line-url" href="#" target="_blank" rel="noopener">LINE OA</a></li></ul></div>' +
-      '<div class="foot-col"><h2 data-th="ติดต่อ" data-en="Contact">ติดต่อ</h2><div class="foot-contact">' +
-        '<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a data-shop="phone-tel" href="#"><span data-shop="phone">—</span></a></div>' +
-        '<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a data-shop="email-href" href="#"><span data-shop="email">—</span></a></div>' +
-        '<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-shop="address">—</span></div>' +
-      '</div></div>' +
-    '</div><div class="foot-bottom">' +
-      '<span>© 2026 ม.ทวีภัณฑ์ · ' + (S.legal_th || "") + ' · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>' +
-      '<span data-th="ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด" data-en="Built for the easiest ordering">ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด</span>' +
-    '</div></div></footer>';
-  }
-
-  /* แถบเมนูล่าง (มือถือ) — 4 ปลายทาง: หน้าแรก / สินค้า / ตะกร้า / LINE (ซ่อนบนจอใหญ่ผ่าน CSS) */
-  var PRODUCT_PAGES = { products: 1, tools: 1, pins: 1 };
-  function tabbarHTML() {
-    var cur = function (k) { return k === "home" ? (PAGE === "home") : (PAGE in PRODUCT_PAGES); };
-    return '<nav class="tabbar" aria-label="เมนูหลัก">' +
-      '<a href="/"' + (cur("home") ? ' aria-current="page"' : '') + '>' +
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg>' +
-        '<span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a>' +
-      '<a href="/products"' + (cur("products") ? ' aria-current="page"' : '') + '>' +
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M3 7 12 3l9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg>' +
-        '<span data-th="สินค้า" data-en="Products">สินค้า</span></a>' +
-      '<a href="' + CHECKOUT + '" aria-label="ตะกร้าสินค้า">' +
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>' +
-        '<span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>' +
-      '<a class="tab-line" data-shop="line-url" href="#" target="_blank" rel="noopener">' +
-        LINE_ICON + '<span data-th="ทัก LINE" data-en="LINE">ทัก LINE</span></a>' +
-    '</nav>';
-  }
-
-  function fabHTML() {
-    return '<a class="fab-line" data-shop="line-url" href="#" target="_blank" rel="noopener" aria-label="สั่งทาง LINE">' +
-      LINE_ICON + '<span data-th="สั่งทาง LINE" data-en="Order on LINE">สั่งทาง LINE</span></a>';
-  }
-
-  /* ---------- inject ---------- */
-  function inject(id, html, fallbackWhere) {
-    var slot = document.getElementById(id);
-    if (slot) { slot.outerHTML = html; return; }
-    if (fallbackWhere === "start") document.body.insertAdjacentHTML("afterbegin", html);
-    else document.body.insertAdjacentHTML("beforeend", html);
-  }
-  inject("site-header", headerHTML(), "start");
-  // ลิงก์ข้ามไปเนื้อหาสำหรับคีย์บอร์ด/screen reader (ทุกหน้ามี <main id="main">)
-  document.body.insertAdjacentHTML("afterbegin", '<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>');
+  /* ลิงก์ "ข้ามไปเนื้อหา" พาโฟกัสเข้า <main id="main"> ได้ */
   var mainEl = document.getElementById("main");
   if (mainEl && !mainEl.hasAttribute("tabindex")) mainEl.setAttribute("tabindex", "-1");
-  inject("site-footer", footerHTML(), "end");
-  document.body.insertAdjacentHTML("beforeend", fabHTML());
-  document.body.insertAdjacentHTML("beforeend", tabbarHTML());
   if (!document.querySelector(".toast")) {
     document.body.insertAdjacentHTML("beforeend", '<div class="toast" id="toast" role="status" aria-live="polite"></div>');
   }
@@ -255,7 +142,7 @@
     var a = e.target && e.target.closest ? e.target.closest("a,button") : null;
     if (!a) return;
     var href = a.getAttribute("href") || "";
-    if (a.matches("[data-shop=line-url], .btn-line, .fab-line") || href.indexOf("line.me") >= 0) {
+    if (a.matches("[data-shop=line-url], .btn-line") || href.indexOf("line.me") >= 0) {
       track("line_click", { where: (a.id || a.getAttribute("data-shop") || a.className || "").toString().slice(0, 60) });
     } else if (href.indexOf("tel:") === 0 || a.matches("[data-shop=phone-tel]")) {
       track("phone_click");

@@ -50,6 +50,34 @@ async function newPage(vp) {
 
 const ALL_PAGES = ["/", "/products", "/index.html", "/products/index.html", "/products/tools.html", "/products/tools-holding.html", "/products/tools-automotive.html", "/products/tools-wrenches.html", "/products/tools-electrical.html", "/products/tools-screwdrivers.html", "/products/tools-cutting.html", "/products/tools-cutter.html", "/products/tools-padlock.html", "/products/tools-striking.html", "/products/tools-garden.html", "/products/tools-upholster.html", "/products/tools-measuring.html", "/products/tools-blades.html", "/products/tools-soldering.html", "/products/tools-hydraulic.html", "/products/mtt-brand.html", "/products/safety-pins.html", "/products/safety-pins-wholesale.html", "/products/safety-pins-canvas.html", "/products/safety-pins-running.html", "/products/safety-pins-tags.html", "/products/safety-pins-diaper.html", "/articles/which-safety-pin-size.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/articles/jet-lighter-compact-or-large.html","/articles/jet-lighter-wholesale-margin.html","/articles/which-jet-lighter-brand.html", "/privacy.html", "/404.html"];
 
+/* ---- header/footer อยู่ใน HTML ดิบ (บอตที่ไม่รัน JS เห็น) และตรงกับ _chrome.mjs ---- */
+console.log("\n[ header/footer ฝังใน HTML ]");
+const { bakeChrome, SHOP } = await import(new URL("../_chrome.mjs", import.meta.url));
+const count = (s, needle) => s.split(needle).length - 1;
+for (const path of ALL_PAGES) {
+  const raw = await (await fetch(base + path)).text();
+  const ok = count(raw, '<header class="site-header"') === 1 && count(raw, '<footer class="site-footer"') === 1 &&
+    count(raw, '<nav class="tabbar"') === 1 && !raw.includes('id="site-header"></div>') && !raw.includes('id="site-footer"></div>');
+  assert(ok, path + " HTML ดิบมี header/footer/แถบล่าง อย่างละหนึ่ง");
+  assert(bakeChrome(raw) === raw, path + " ตรงกับ _chrome.mjs (ไม่ค้างเวอร์ชันเก่า)");
+  assert(raw.includes('href="' + SHOP.LINE_URL + '"') && raw.includes('href="tel:' + SHOP.PHONE_TEL + '"') && !/data-shop="(line-url|phone-tel)" href="#"/.test(raw),
+    path + " ลิงก์ LINE/โทร เป็นค่าจริงตั้งแต่ HTML");
+}
+
+/* ---- ปิด JS แล้วยังเห็นเมนู/ท้ายเว็บ (เหมือนบอตที่ไม่รัน JS) ---- */
+console.log("\n[ ปิด JavaScript ]");
+for (const w of [390, 1280]) {
+  const ctx = await browser.newContext({ javaScriptEnabled: false, viewport: { width: w, height: 800 } });
+  const page = await ctx.newPage();
+  await page.goto(base + "/products/tools.html", { waitUntil: "domcontentloaded" });
+  const r = await page.evaluate(() => {
+    const vis = (q) => { const el = document.querySelector(q); return !!el && el.getBoundingClientRect().height > 0 && getComputedStyle(el).visibility !== "hidden"; };
+    return { header: vis(".site-header .brand"), nav: vis(".nav-links"), tab: vis(".tabbar"), foot: document.querySelectorAll(".site-footer a[href]").length };
+  });
+  assert(r.header && r.foot >= 15 && (w < 901 ? r.tab : r.nav), `ปิด JS @${w}: เห็นโลโก้ ${w < 901 ? "แถบล่าง" : "เมนู"} และลิงก์ท้ายเว็บ ${r.foot} ลิงก์`);
+  await ctx.close();
+}
+
 /* ---- โหลดได้ ไม่มี JS error ทุกหน้า ---- */
 console.log("\n[ โหลดทุกหน้า ]");
 for (const path of ALL_PAGES) {
@@ -57,7 +85,8 @@ for (const path of ALL_PAGES) {
   await page.goto(base + path, { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(180);
   assert(page.__errs.length === 0, path + " ไม่มี JS error" + (page.__errs.length ? " → " + page.__errs.join(" | ") : ""));
-  assert(!!(await page.$(".site-header .brand")), path + " header ถูกฉีด");
+  const n = await page.evaluate(() => [".site-header", ".site-footer", ".tabbar", ".skip"].map((q) => document.querySelectorAll(q).length).join(","));
+  assert(n === "1,1,1,1", path + " header/footer/แถบล่าง/skip ไม่ซ้ำหลัง JS ทำงาน (" + n + ")");
   await page.close();
 }
 
