@@ -4,6 +4,7 @@
    โค้ดตาราง/หัว/สคริปต์ที่ใช้ร่วมกับ mtt-brand.html อยู่ใน _gen-lib.mjs
    ============================================================ */
 import { writeFileSync } from "fs";
+import { bakeChrome } from "./_chrome.mjs";
 import { SITE, DATA, esc, bi, mergeGroups, groupHTML, grpNavHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML } from "./_gen-lib.mjs";
 
 const META = {
@@ -247,7 +248,7 @@ const made = [];
 for (const cat of DATA.categories) {
   const m = META[cat.id];
   if (!m) continue;
-  writeFileSync("products/" + m.file, page(cat));
+  writeFileSync("products/" + m.file, bakeChrome(page(cat)));
   const groups = mergeGroups(cat.groups);
   made.push(`  products/${m.file}  ${cat.groups.reduce((n, g) => n + g.items.length, 0)} รายการ  ${cat.groups.length}→${groups.length} กลุ่ม  (title ${m.title.length} · desc ${m.desc.length})`);
 }

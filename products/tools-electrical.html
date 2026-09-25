@@ -97,7 +97,26 @@
 </script>
 </head>
 <body>
-<div id="site-header"></div>
+<!--chrome:header-->
+<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>
+  <nav class="nav-links" id="navLinks">
+      <a href="/" data-nav="home" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
+      <a href="/#categories" data-nav="cats" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a>
+      <a href="/products" data-nav="products" data-th="สินค้าทั้งหมด" data-en="Products">สินค้าทั้งหมด</a>
+      <a href="../products/tools.html" data-nav="tools" class="active" aria-current="page" data-th="เครื่องมือช่าง" data-en="Tools">เครื่องมือช่าง</a>
+      <a href="../products/safety-pins.html" data-nav="pins" data-th="เข็มกลัด" data-en="Safety pins">เข็มกลัด</a>
+      <a href="/#contact" data-nav="contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
+  </nav>
+  <div class="nav-right">
+    <a class="cart-btn" href="../products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="cart-badge" id="cartBadge" hidden>0</span></a>
+    <div class="lang" role="group" aria-label="ภาษา"><button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button></div>
+    <a class="btn btn-line btn-sm" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener" aria-label="สั่งทาง LINE"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>
+    <button class="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</div></header>
+<!--/chrome:header-->
 <main id="main">
 <section class="t-hero">
   <div class="wrap">
@@ -605,14 +624,55 @@
 </section>
 </main>
 
-<div id="site-footer"></div>
+<!--chrome:footer-->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid">
+  <div class="foot-brand"><div class="brand"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></div>
+    <p data-th="ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย" data-en="Tools &amp; hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand. Retail &amp; wholesale, nationwide.">ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย</p></div>
+  <div class="foot-col"><h2 data-th="สินค้า" data-en="Products">สินค้า</h2><ul>
+    <li><a href="../products/jet-lighter.html" data-th="ไฟฟู่ / ไฟแช็ก" data-en="Jet lighters">ไฟฟู่ / ไฟแช็ก</a></li>
+    <li><a href="../products/tools.html" data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS">เครื่องมือช่าง WYNNTOOLS</a></li>
+    <li><a href="../products/tools-wrenches.html" data-th="ประแจ ลูกบล็อก" data-en="Wrenches &amp; sockets">ประแจ ลูกบล็อก</a></li>
+    <li><a href="../products/tools-holding.html" data-th="คีม แคลมป์ ปากกาจับ" data-en="Pliers &amp; clamps">คีม แคลมป์ ปากกาจับ</a></li>
+    <li><a href="../products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a></li>
+    <li><a href="../products/mtt-brand.html" data-th="สินค้าตรา M.T.T. ตราสิงโต" data-en="M.T.T. brand products">สินค้าตรา M.T.T. ตราสิงโต</a></li>
+    <li><a href="../products/safety-pins-wholesale.html" data-th="เข็มกลัด ขายส่งยกกล่อง" data-en="Safety pins wholesale">เข็มกลัด ขายส่งยกกล่อง</a></li>
+    <li><a href="../products/safety-pins-canvas.html" data-th="เข็มกลัดผ้าใบ เต็นท์" data-en="Canvas &amp; tent pins">เข็มกลัดผ้าใบ เต็นท์</a></li>
+    <li><a href="/products" data-th="สินค้าทั้งหมด" data-en="All products">สินค้าทั้งหมด</a></li>
+    <li><a href="/#categories" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a></li>
+  </ul></div>
+  <div class="foot-col"><h2 data-th="บทความ" data-en="Guides">บทความ</h2><ul>
+    <li><a href="../articles/which-jet-lighter-brand.html" data-th="ไฟฟู่ยี่ห้อไหนดี" data-en="Which jet lighter">ไฟฟู่ยี่ห้อไหนดี</a></li>
+    <li><a href="../articles/which-safety-pin-size.html" data-th="เข็มกลัดเบอร์ไหนใช้ทำอะไร" data-en="Which safety-pin size">เข็มกลัดเบอร์ไหนใช้ทำอะไร</a></li>
+  </ul></div>
+  <div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">ลิงก์</h2><ul>
+    <li><a href="/#why" data-th="ทำไมต้องเรา" data-en="Why us">ทำไมต้องเรา</a></li>
+    <li><a href="/#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a></li>
+    <li><a href="../privacy.html" data-th="ความเป็นส่วนตัว" data-en="Privacy">ความเป็นส่วนตัว</a></li>
+    <li><a data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener">LINE OA</a></li>
+  </ul></div>
+  <div class="foot-col"><h2 data-th="ติดต่อ" data-en="Contact">ติดต่อ</h2><div class="foot-contact">
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a data-shop="phone-tel" href="tel:022217712"><span data-shop="phone">0-2221-7712</span></a></div>
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-shop="address">132/1 ถนนเยาวพานิช แขวงจักรวรรดิ เขตสัมพันธวงศ์ กรุงเทพฯ 10100</span></div>
+  </div></div>
+</div><div class="foot-bottom">
+  <span>© 2026 ม.ทวีภัณฑ์ · บริษัท วินส์ทูลส์ ฮาร์ดแวร์ (ประเทศไทย) จำกัด · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>
+  <span data-th="ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด" data-en="Built for the easiest ordering">ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด</span>
+</div></div></footer>
+<nav class="tabbar" aria-label="เมนูหลัก">
+  <a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg><span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a>
+  <a href="/products" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 7 12 3l9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg><span data-th="สินค้า" data-en="Products">สินค้า</span></a>
+  <a href="../products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
+  <a class="tab-line" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="ทัก LINE" data-en="LINE">ทัก LINE</span></a>
+</nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<!--/chrome:footer-->
 
 <script>window.MTT_BASE="../";window.MTT_PAGE="tools";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
 <script src="../assets/js/catalog.js?v=3"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script src="../assets/js/catalog-find.js?v=1"></script>
-<script src="../assets/js/layout.js?v=3"></script>
+<script src="../assets/js/layout.js?v=4"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

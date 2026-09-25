@@ -4,6 +4,7 @@
    แก้ข้อมูล/เลย์เอาต์ที่นี่ที่เดียวแล้วรันใหม่ ทั้ง 10 หน้าอัปเดตพร้อมกัน
    ============================================================ */
 import { writeFileSync } from "fs";
+import { bakeChrome } from "./_chrome.mjs";
 
 const SITE = "https://mtthardware.com";
 
@@ -338,7 +339,7 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 </script>
-<script src="../assets/js/layout.js?v=3"></script>
+<script src="../assets/js/layout.js?v=4"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>
@@ -348,7 +349,7 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
 let made = [];
 PINS.forEach((p, i) => {
   const file = `products/safety-pins-${p.no}.html`;
-  writeFileSync(file, pageHTML(p, i));
+  writeFileSync(file, bakeChrome(pageHTML(p, i)));
   made.push(file);
 });
 console.log("generated " + made.length + " pages:\n" + made.join("\n"));

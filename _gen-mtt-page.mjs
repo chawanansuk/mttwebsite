@@ -5,6 +5,7 @@
    โค้ดตาราง/หัว/สคริปต์ร่วมอยู่ใน _gen-lib.mjs
    ============================================================ */
 import { writeFileSync } from "fs";
+import { bakeChrome } from "./_chrome.mjs";
 import { SITE, DATA, esc, bi, groupHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML } from "./_gen-lib.mjs";
 
 const FILE = "mtt-brand.html";
@@ -164,6 +165,6 @@ ${scriptsHTML("products")}
 </html>
 `;
 
-writeFileSync("products/" + FILE, html);
+writeFileSync("products/" + FILE, bakeChrome(html));
 console.log(`สร้าง products/${FILE} — ${total} รายการ (title ${TITLE.length} · desc ${DESC.length})`);
 for (const s of SECTIONS) console.log(`  ${s.th}: ${bySection[s.key].reduce((m, g) => m + g.items.length, 0)}`);
