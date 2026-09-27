@@ -319,3 +319,14 @@ section{padding:64px 0}
   .cta-row>.btn{width:100%;justify-content:center}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+
+/* ---------- การ์ดบทความ (หน้าแรก + หน้ารวมบทความ /articles) ---------- */
+.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.gcard{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;color:var(--ink);text-decoration:none;transition:border-color .18s,box-shadow .18s,transform .18s}
+.gcard:hover{border-color:var(--amber);box-shadow:var(--shadow);transform:translateY(-2px)}
+.gcard .tag{display:inline-block;font-family:var(--font-head);font-size:.75rem;color:var(--amber-dark);background:var(--amber-soft);border-radius:var(--radius-full);padding:3px 10px;margin-bottom:10px}
+html[lang="en"] .gcard .tag{letter-spacing:.08em;text-transform:uppercase}
+.gcard h3{font-size:1rem;margin:0 0 6px}
+.gcard p{font-size:.875rem;color:var(--ink-dim);margin:0}
+.guide-more{text-align:center;margin:22px 0 0}
+@media(max-width:900px){.guide-grid{grid-template-columns:1fr;gap:10px}.gcard{padding:16px}}

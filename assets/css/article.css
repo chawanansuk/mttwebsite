@@ -6,14 +6,33 @@
 
 /* ---------- ส่วนหัว ---------- */
 .art-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.14),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:48px 0 20px}
-.art-hero h1{font-size:clamp(1.6rem,3.4vw,2.4rem);margin:6px 0 10px;max-width:800px}
+/* หัวบทความกว้างเท่าคอลัมน์เนื้อหา (860px) ให้ขอบซ้ายตรงกัน */
+.art-hero .wrap{max-width:860px}
+.art-hero h1{font-size:clamp(1.6rem,3.4vw,2.4rem);margin:6px 0 10px;text-wrap:balance}
 .crumbs{font-size:.82rem;color:var(--ink-mute);margin-bottom:14px}
 .crumbs a{color:var(--ink-mute);display:inline-block;padding:4px 0}
+.art-meta{font-size:.875rem;color:var(--ink-mute);margin:0}
+.art-hero .lead{max-width:760px;margin:0;color:var(--ink-2)}
+
+/* ---------- สารบัญ (สร้างโดย _gen-articles.mjs เมื่อมี h2 ตั้งแต่ 5 ข้อ) ---------- */
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0 4px}
+.toc b{font-family:var(--font-head);font-size:.9rem}
+.toc ol{margin:6px 0 0;padding-left:22px;font-size:.9rem;columns:2 260px;column-gap:28px}
+.toc li{padding:3px 0;break-inside:avoid}
+.toc a{color:var(--ink-2)}
+.toc a:hover{color:var(--amber-dark)}
 
 /* ---------- เนื้อความ ---------- */
 .art-body{max-width:860px}
 .art-body p.lead{font-size:1rem;color:var(--ink-2)}
 .sec-h{font-size:clamp(1.2rem,2.4vw,1.5rem);margin:36px 0 12px;scroll-margin-top:90px}
+
+/* ---------- รูปประกอบ ---------- */
+.fig{margin:18px 0 6px}
+.fig img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+.fig figcaption{font-size:.875rem;color:var(--ink-mute);margin-top:8px;line-height:1.6}
+.figs{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:18px 0 6px}
+.figs .fig{margin:0}
 
 /* ---------- การ์ดข้อละข้อ (มีเลขกำกับ) ---------- */
 .checks{display:grid;gap:12px;margin-top:6px}
@@ -27,6 +46,7 @@
 .types .t{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column}
 .types .t.pick{border-color:var(--amber);box-shadow:var(--shadow-sm)}
 .types .t h3{font-size:1rem;margin:0 0 8px}
+.types .t .colors{font-family:var(--font-head);font-weight:600;margin:0 0 8px}
 .types .t .tag{font-size:.75rem;font-family:var(--font-head);letter-spacing:.06em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:6px}
 .types .t ul{list-style:none;padding:0;margin:0;font-size:.875rem;color:var(--ink-2)}
 .types .t ul li{padding:5px 0 5px 20px;position:relative}
@@ -43,6 +63,26 @@ table.art td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:t
 table.art tr:nth-child(even) td{background:var(--bg-soft)}
 table.art td b{font-family:var(--font-head)}
 table.art td.num{white-space:nowrap;font-family:var(--font-head)}
+/* ตารางแคบที่พอดีจอมือถืออยู่แล้ว ไม่ต้องบังคับความกว้างขั้นต่ำ */
+table.art.fit{min-width:0}
+table.art.fit th{white-space:normal}
+table.art caption{caption-side:top;text-align:left;font-family:var(--font-head);font-weight:600;padding:12px 14px 10px;background:var(--surface)}
+.tbls{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+/* มือถือ: ตาราง class="art stack" แสดงเป็นการ์ดทีละแถว ป้ายหัวคอลัมน์มาจาก data-label (ใส่โดย _gen-articles.mjs) */
+@media(max-width:560px){
+  table.art.stack{min-width:0}
+  table.art.stack thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  table.art.stack tbody,table.art.stack tr,table.art.stack td{display:block}
+  table.art.stack tr{padding:12px 14px;border-top:1px solid var(--line)}
+  table.art.stack tbody tr:first-child{border-top:0}
+  table.art.stack tr:nth-child(even){background:var(--bg-soft)}
+  table.art.stack td{border:0;padding:2px 0;background:none!important;white-space:normal}
+  table.art.stack td:first-child{font-family:var(--font-head);font-weight:600;padding-bottom:6px}
+  /* ป้ายวางแบบ absolute ทางซ้าย เนื้อหาในช่อง (ข้อความ + ลิงก์) ยังไหลต่อกันเป็นบรรทัดเดียวได้ */
+  table.art.stack td[data-label]{position:relative;padding-left:calc(38% + 10px)}
+  table.art.stack td[data-label]::before{content:attr(data-label);position:absolute;left:0;top:2px;width:38%;color:var(--ink-mute);font-family:var(--font-body);font-weight:500}
+  html[lang="en"] table.art.stack td[data-label-en]::before{content:attr(data-label-en)}
+}
 
 /* ---------- ถาม-ตอบ ---------- */
 .qa h3{font-size:1rem;margin:18px 0 4px}

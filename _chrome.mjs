@@ -15,6 +15,8 @@ const sandbox = { window: {} };
 vm.runInNewContext(readFileSync(new URL("./assets/js/shop-config.js", import.meta.url), "utf8"), sandbox);
 export const SHOP = sandbox.window.SHOP;
 const S = SHOP;
+/* รายการบทความ (คอลัมน์ "บทความ" ใน footer) — แหล่งเดียวกับ _gen-articles.mjs */
+const ARTICLES = JSON.parse(readFileSync(new URL("./data/articles.json", import.meta.url), "utf8")).articles;
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 
@@ -81,8 +83,8 @@ function footerHTML(base) {
     ${li("/#categories", "หมวดหมู่", "Categories")}
   </ul></div>
   <div class="foot-col"><h2 data-th="บทความ" data-en="Guides">บทความ</h2><ul>
-    ${li(base + "articles/which-jet-lighter-brand.html", "ไฟฟู่ยี่ห้อไหนดี", "Which jet lighter")}
-    ${li(base + "articles/which-safety-pin-size.html", "เข็มกลัดเบอร์ไหนใช้ทำอะไร", "Which safety-pin size")}
+    ${ARTICLES.map((a) => li(base + "articles/" + a.slug + ".html", a.short_th, a.short_en)).join("\n    ")}
+    ${li("/articles", "บทความทั้งหมด", "All guides")}
   </ul></div>
   <div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">ลิงก์</h2><ul>
     ${li("/#why", "ทำไมต้องเรา", "Why us")}
@@ -116,9 +118,25 @@ function tabbarHTML(base, page) {
    ค่าที่ว่าง (อีเมล เวลาทำการ บัญชี) ปล่อยไว้ layout.js ซ่อนแถวเหมือนเดิม */
 const HREF = { "line-url": S.LINE_URL, "phone-tel": S.PHONE_TEL && "tel:" + S.PHONE_TEL, "email-href": S.EMAIL && "mailto:" + S.EMAIL };
 const TEXT = { phone: S.PHONE, address: S.ADDRESS_TH, "line-id": S.LINE_ID, email: S.EMAIL, hours: S.HOURS_TH };
+const unesc = (s) => s.replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;/g, "'").replace(/&amp;/g, "&");
+/* ลิงก์ "ทัก LINE พร้อมข้อความ" — ตรรกะเดียวกับ CATALOG.lineAsk() ใน assets/js/catalog.js */
+const lineAsk = (text) => {
+  const id = (S.LINE_ID || "").replace(/^@/, "");
+  return id ? "https://line.me/R/oaMessage/@" + id + "/?" + encodeURIComponent(text || "") : S.LINE_URL || "#";
+};
+/* ข้อความนโยบายที่ใช้หลายหน้า: data-shop-text="shipping" → SHOP.SHIPPING_TH/EN */
+const SHOP_TEXT = { shipping: [S.SHIPPING_TH, S.SHIPPING_EN], colors: [S.COLORS_TH, S.COLORS_EN] };
 function fillShop(html) {
   html = html.replace(/<a\b[^>]*\bdata-shop="(line-url|phone-tel|email-href)"[^>]*>/g, (tag, key) =>
     HREF[key] ? tag.replace(/\bhref="[^"]*"/, `href="${esc(HREF[key])}"`) : tag);
+  html = html.replace(/<a\b[^>]*\bdata-line-ask="([^"]*)"[^>]*>/g, (tag, ask) =>
+    tag.replace(/\bhref="[^"]*"/, `href="${esc(lineAsk(unesc(ask)))}"`));
+  html = html.replace(/<(p|span|div)\b([^>]*?)\s*\bdata-shop-text="(\w+)"([^>]*)>[^<]*<\/\1>/g, (m, tag, pre, key, post) => {
+    const t = SHOP_TEXT[key];
+    if (!t || !t[0]) return m;
+    const attrs = (pre + post).replace(/\s*\bdata-(th|en)="[^"]*"/g, "");
+    return `<${tag}${attrs} data-shop-text="${key}" data-th="${esc(t[0])}" data-en="${esc(t[1] || t[0])}">${esc(t[0])}</${tag}>`;
+  });
   return html.replace(/(<(span|b|strong)\b[^>]*\bdata-shop="(phone|address|line-id|email|hours)"[^>]*>)([^<]*)(<\/\2>)/g,
     (m, open, _tag, key, _text, close) => (TEXT[key] ? open + esc(TEXT[key]) + close : m));
 }

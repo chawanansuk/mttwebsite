@@ -7,7 +7,7 @@
     "test": "node test/smoke.mjs",
     "linkcheck": "node _links.mjs",
     "bake": "node _chrome.mjs",
-    "gen": "node _gen-tool-pages.mjs && node _gen-mtt-page.mjs && node _gen-pin-pages.mjs && node _gen-sitemap.mjs && node _chrome.mjs"
+    "gen": "node _gen-tool-pages.mjs && node _gen-mtt-page.mjs && node _gen-pin-pages.mjs && node _gen-articles.mjs && node _gen-sitemap.mjs && node _chrome.mjs"
   },
   "devDependencies": {
     "playwright": "^1.48.0"
