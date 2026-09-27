@@ -164,7 +164,7 @@ for (const a of ARTICLES) {
     const list = ARTICLES.filter((a) => a.cat === key);
     return list.length ? `    <h2 class="sec-h" id="${key}" ${bi(c.th, c.en)}</h2>
     <div class="guide-grid">
-${guideCards("", list)}
+${guideCards("/articles/", list)}
     </div>` : "";
   }).filter(Boolean).join("\n\n");
   const page = `<!DOCTYPE html>
