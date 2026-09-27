@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
+<!--art:head-->
+<title>สั่งเข็มกลัดยกกล่อง คิดยังไงว่าต้องกี่กล่อง | ม.ทวีภัณฑ์</title>
+<meta name="description" content="สูตรคิดจำนวนกล่องเข็มกลัดที่ใช้ได้ทุกเบอร์ พร้อมจำนวนต่อกล่องเบอร์ 000–7 และตัวอย่างคำนวณสำหรับโรงงานเสื้อผ้า งานวิ่ง และงานผ้าใบ">
+<meta name="keywords" content="เข็มกลัด ยกกล่อง, เข็มกลัด กล่องละกี่ตัว, เข็มกลัด กุรุส, เข็มกลัด ขายส่ง, สั่งเข็มกลัด โรงงาน">
+<link rel="canonical" href="https://mtthardware.com/articles/safety-pins-how-many-boxes.html">
+<meta property="og:title" content="สั่งเข็มกลัดยกกล่อง คิดยังไงว่าต้องกี่กล่อง">
+<meta property="og:description" content="สูตรเดียวใช้ได้ทุกเบอร์ พร้อมจำนวนต่อกล่องและตัวอย่างคำนวณ">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="th_TH">
+<meta property="og:url" content="https://mtthardware.com/articles/safety-pins-how-many-boxes.html">
+<meta property="og:image" content="https://mtthardware.com/assets/img/products/safety-pins-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-09-27">
+<meta property="article:modified_time" content="2026-09-27">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "สั่งเข็มกลัดยกกล่อง คิดยังไงว่าต้องกี่กล่อง",
+  "description": "สูตรคิดจำนวนกล่องเข็มกลัดที่ใช้ได้ทุกเบอร์ พร้อมจำนวนต่อกล่องเบอร์ 000–7 และตัวอย่างคำนวณสำหรับโรงงานเสื้อผ้า งานวิ่ง และงานผ้าใบ",
+  "image": "https://mtthardware.com/assets/img/products/safety-pins-og.png",
+  "inLanguage": "th",
+  "datePublished": "2026-09-27",
+  "dateModified": "2026-09-27",
+  "author": {
+    "@type": "Organization",
+    "name": "ม.ทวีภัณฑ์ (M.T.T. Hardware)"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ม.ทวีภัณฑ์ (M.T.T. Hardware)",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mtthardware.com/assets/img/apple-touch-icon.png?v=2"
+    }
+  },
+  "mainEntityOfPage": "https://mtthardware.com/articles/safety-pins-how-many-boxes.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "หน้าแรก",
+      "item": "https://mtthardware.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "เข็มกลัดซ่อนปลาย",
+      "item": "https://mtthardware.com/products/safety-pins.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "สั่งเข็มกลัดกี่กล่องดี",
+      "item": "https://mtthardware.com/articles/safety-pins-how-many-boxes.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1 กุรุส มีกี่ตัว",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1 กุรุส = 12 โหล = 144 ตัว เข็มกลัดเบอร์ 6 และเบอร์ 7 บรรจุกล่องละ 144 ตัวพอดี จึงเท่ากับ 1 กุรุส"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ทำไมจำนวนต่อกล่องของเบอร์เล็กเป็นช่วง",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "จำนวนต่อกล่องเป็นตัวเลขมาตรฐานของแต่ละล็อตผลิต เบอร์เล็กจึงต่างกันได้ตามล็อต เช่นเบอร์ 00 อยู่ที่ 864–1,440 ตัว ถามจำนวนของล็อตที่มีอยู่ก่อนสั่งเพื่อคำนวณให้ตรง"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "นับจำนวนจริง หรือชั่งน้ำหนักเอา",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "นับจำนวนจริงทุกกล่อง ไม่ได้ชั่งน้ำหนักแล้วประมาณ ร้านค้าและโรงงานจึงวางแผนวัตถุดิบได้แม่น"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "มีขั้นต่ำไหม สั่งคละเบอร์ได้ไหม",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ไม่มีขั้นต่ำ ซื้อเป็นซองหรือเป็นพวงก็ได้ ราคาส่งเริ่มเมื่อสั่งยกกล่อง และคละเบอร์ในออเดอร์เดียวกันได้"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ออกใบกำกับภาษีได้ไหม",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ออกใบกำกับภาษีเต็มรูปได้ แจ้งชื่อบริษัท เลขประจำตัวผู้เสียภาษี และที่อยู่มาทาง LINE ตอนสั่งซื้อ"
+      }
+    }
+  ]
+}
+</script>
+<!--/art:head-->
+<link rel="icon" href="../assets/img/favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=2">
+<meta name="theme-color" content="#101a30">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/theme.css?v=4">
+<link rel="stylesheet" href="../assets/css/article.css?v=2">
+</head>
+<body>
+<!--chrome:header-->
+<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>
+  <nav class="nav-links" id="navLinks">
+      <a href="/" data-nav="home" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
+      <a href="/#categories" data-nav="cats" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a>
+      <a href="/products" data-nav="products" data-th="สินค้าทั้งหมด" data-en="Products">สินค้าทั้งหมด</a>
+      <a href="../products/tools.html" data-nav="tools" data-th="เครื่องมือช่าง" data-en="Tools">เครื่องมือช่าง</a>
+      <a href="../products/safety-pins.html" data-nav="pins" class="active" aria-current="page" data-th="เข็มกลัด" data-en="Safety pins">เข็มกลัด</a>
+      <a href="/#contact" data-nav="contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
+  </nav>
+  <div class="nav-right">
+    <a class="cart-btn" href="../products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="cart-badge" id="cartBadge" hidden>0</span></a>
+    <div class="lang" role="group" aria-label="ภาษา"><button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button></div>
+    <a class="btn btn-line btn-sm" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener" aria-label="สั่งทาง LINE"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>
+    <button class="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</div></header>
+<!--/chrome:header-->
+<main id="main">
+
+<section class="art-hero">
+  <div class="wrap">
+<!--art:hero-->
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="../products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a> › <span data-th="สั่งเข็มกลัดกี่กล่องดี" data-en="How many boxes to order">สั่งเข็มกลัดกี่กล่องดี</span></nav>
+    <span class="eyebrow" data-th="สำหรับร้านค้า โรงงาน และผู้จัดงาน" data-en="For shops, factories and organisers">สำหรับร้านค้า โรงงาน และผู้จัดงาน</span>
+    <h1 data-th="สั่งเข็มกลัดยกกล่อง คิดยังไงว่าต้องกี่กล่อง" data-en="Ordering safety pins by the box: how many boxes do you need?">สั่งเข็มกลัดยกกล่อง คิดยังไงว่าต้องกี่กล่อง</h1>
+    <p class="art-meta" data-th="โดย ม.ทวีภัณฑ์ สำเพ็ง · เผยแพร่ &lt;time datetime=&quot;2026-09-27&quot;&gt;27 ก.ย. 2569&lt;/time&gt;" data-en="By M.T.T. Hardware, Sampheng · Published &lt;time datetime=&quot;2026-09-27&quot;&gt;27 Sep 2026&lt;/time&gt;">โดย ม.ทวีภัณฑ์ สำเพ็ง · เผยแพร่ <time datetime="2026-09-27">27 ก.ย. 2569</time></p>
+<!--/art:hero-->
+  </div>
+</section>
+
+<section style="padding-top:6px">
+  <div class="wrap art-body">
+    <p class="lead" data-th="ร้านค้าและโรงงานที่สั่งเข็มกลัดยกกล่องมักติดอยู่ที่คำถามเดียว คือต้องสั่งกี่กล่อง บทความนี้ให้สูตรเดียวที่ใช้ได้ทุกเบอร์ พร้อมจำนวนต่อกล่องของทั้ง 10 เบอร์และตัวอย่างคำนวณจากงานจริงสามแบบ" data-en="Shops and factories ordering pins by the box usually get stuck on one question: how many boxes? Here is a single formula that works for every size, the per-box count for all ten sizes, and three worked examples.">ร้านค้าและโรงงานที่สั่งเข็มกลัดยกกล่องมักติดอยู่ที่คำถามเดียว คือต้องสั่งกี่กล่อง บทความนี้ให้สูตรเดียวที่ใช้ได้ทุกเบอร์ พร้อมจำนวนต่อกล่องของทั้ง 10 เบอร์และตัวอย่างคำนวณจากงานจริงสามแบบ</p>
+<!--art:toc-->
+    <nav class="toc" aria-label="สารบัญ">
+      <b data-th="ในบทความนี้" data-en="In this article">ในบทความนี้</b>
+      <ol>
+        <li><a href="#formula" data-th="สูตรคิดจำนวนกล่อง" data-en="The formula">สูตรคิดจำนวนกล่อง</a></li>
+        <li><a href="#per-box" data-th="จำนวนต่อกล่องทั้ง 10 เบอร์" data-en="Pins per box, all ten sizes">จำนวนต่อกล่องทั้ง 10 เบอร์</a></li>
+        <li><a href="#examples" data-th="ตัวอย่างคำนวณ" data-en="Worked examples">ตัวอย่างคำนวณ</a></li>
+        <li><a href="#units" data-th="หน่วยนับที่ต้องรู้" data-en="Units worth knowing">หน่วยนับที่ต้องรู้</a></li>
+        <li><a href="#faq" data-th="คำถามที่ถามกันบ่อย" data-en="Common questions">คำถามที่ถามกันบ่อย</a></li>
+      </ol>
+    </nav>
+<!--/art:toc-->
+
+    <h2 class="sec-h" id="formula" data-th="สูตรคิดจำนวนกล่อง" data-en="The formula">สูตรคิดจำนวนกล่อง</h2>
+
+    <div class="checks">
+      <div class="ck"><span class="n">1</span><div>
+        <h3 data-th="หาจำนวนเข็มที่ต้องใช้" data-en="Work out how many pins you need">หาจำนวนเข็มที่ต้องใช้</h3>
+        <p data-th="เอาจำนวนชิ้นงานคูณด้วยจำนวนเข็มที่ใช้ต่อชิ้น เช่น เสื้อ 5,000 ตัว ติดแท็กตัวละ 1 เข็ม ก็ใช้ 5,000 ตัว" data-en="Multiply the number of items by the pins used per item. 5,000 shirts with one tag pin each need 5,000 pins.">เอาจำนวนชิ้นงานคูณด้วยจำนวนเข็มที่ใช้ต่อชิ้น เช่น เสื้อ 5,000 ตัว ติดแท็กตัวละ 1 เข็ม ก็ใช้ 5,000 ตัว</p>
+      </div></div>
+      <div class="ck"><span class="n">2</span><div>
+        <h3 data-th="หารด้วยจำนวนต่อกล่องของเบอร์นั้น" data-en="Divide by the per-box count for that size">หารด้วยจำนวนต่อกล่องของเบอร์นั้น</h3>
+        <p data-th="ดูจำนวนต่อกล่องจากตารางด้านล่าง แล้วหาร ผลที่ได้คือจำนวนกล่อง" data-en="Take the per-box count from the table below and divide. The result is the number of boxes.">ดูจำนวนต่อกล่องจากตารางด้านล่าง แล้วหาร ผลที่ได้คือจำนวนกล่อง</p>
+      </div></div>
+      <div class="ck"><span class="n">3</span><div>
+        <h3 data-th="ปัดขึ้นเป็นกล่องเต็ม" data-en="Round up to whole boxes">ปัดขึ้นเป็นกล่องเต็ม</h3>
+        <p data-th="ได้เศษเท่าไหร่ก็ปัดขึ้นเป็นกล่องเต็ม เช่นได้ 5.8 กล่อง ให้สั่ง 6 กล่อง" data-en="Always round up: 5.8 boxes means ordering 6.">ได้เศษเท่าไหร่ก็ปัดขึ้นเป็นกล่องเต็ม เช่นได้ 5.8 กล่อง ให้สั่ง 6 กล่อง</p>
+      </div></div>
+    </div>
+
+    <div class="rule-band" data-th="เบอร์เล็ก 000, 00 และ 0 มีจำนวนต่อกล่องเป็นช่วงกว้าง ขึ้นกับล็อตผลิต ถามจำนวนต่อกล่องของล็อตที่มีอยู่ตอนนั้นก่อนสั่งทุกครั้ง แล้วค่อยคำนวณ" data-en="Sizes 000, 00 and 0 come in a wide range of counts per box depending on the production lot, so always ask for the count of the lot in stock before you calculate.">เบอร์เล็ก 000, 00 และ 0 มีจำนวนต่อกล่องเป็นช่วงกว้าง ขึ้นกับล็อตผลิต ถามจำนวนต่อกล่องของล็อตที่มีอยู่ตอนนั้นก่อนสั่งทุกครั้ง แล้วค่อยคำนวณ</div>
+
+    <h2 class="sec-h" id="per-box" data-th="จำนวนต่อกล่องทั้ง 10 เบอร์" data-en="Pins per box, all ten sizes">จำนวนต่อกล่องทั้ง 10 เบอร์</h2>
+
+    <div class="tblwrap" tabindex="0" role="region" aria-label="จำนวนต่อกล่องเข็มกลัดทุกเบอร์">
+      <table class="art stack">
+        <thead><tr>
+          <th scope="col" data-th="เบอร์" data-en="Size">เบอร์</th>
+          <th scope="col" data-th="ความยาว" data-en="Length">ความยาว</th>
+          <th scope="col" data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</th>
+          <th scope="col" data-th="รูปแบบบรรจุ" data-en="Packed as">รูปแบบบรรจุ</th>
+        </tr></thead>
+        <tbody>
+          <tr><td><b><a href="../products/safety-pins-000.html">000</a></b></td><td data-th="19 มม." data-en="19 mm" data-label="ความยาว" data-label-en="Length">19 มม.</td><td data-th="720–1,500" data-en="720–1,500" data-label="บรรจุ/กล่อง" data-label-en="Per box">720–1,500</td><td data-th="ซอง" data-en="Sachet" data-label="รูปแบบบรรจุ" data-label-en="Packed as">ซอง</td></tr>
+          <tr><td><b><a href="../products/safety-pins-00.html">00</a></b></td><td data-th="23 มม." data-en="23 mm" data-label="ความยาว" data-label-en="Length">23 มม.</td><td data-th="864–1,440" data-en="864–1,440" data-label="บรรจุ/กล่อง" data-label-en="Per box">864–1,440</td><td data-th="ซอง" data-en="Sachet" data-label="รูปแบบบรรจุ" data-label-en="Packed as">ซอง</td></tr>
+          <tr><td><b><a href="../products/safety-pins-0.html">0</a></b></td><td data-th="28 มม." data-en="28 mm" data-label="ความยาว" data-label-en="Length">28 มม.</td><td data-th="864–1,728" data-en="864–1,728" data-label="บรรจุ/กล่อง" data-label-en="Per box">864–1,728</td><td data-th="ซอง" data-en="Sachet" data-label="รูปแบบบรรจุ" data-label-en="Packed as">ซอง</td></tr>
+          <tr><td><b><a href="../products/safety-pins-1.html">1</a></b></td><td data-th="32 มม." data-en="32 mm" data-label="ความยาว" data-label-en="Length">32 มม.</td><td data-th="864" data-en="864" data-label="บรรจุ/กล่อง" data-label-en="Per box">864</td><td data-th="ซอง" data-en="Sachet" data-label="รูปแบบบรรจุ" data-label-en="Packed as">ซอง</td></tr>
+          <tr><td><b><a href="../products/safety-pins-2.html">2</a></b></td><td data-th="38 มม." data-en="38 mm" data-label="ความยาว" data-label-en="Length">38 มม.</td><td data-th="864" data-en="864" data-label="บรรจุ/กล่อง" data-label-en="Per box">864</td><td data-th="พวง" data-en="Bunch" data-label="รูปแบบบรรจุ" data-label-en="Packed as">พวง</td></tr>
+          <tr><td><b><a href="../products/safety-pins-3.html">3</a></b></td><td data-th="46 มม." data-en="46 mm" data-label="ความยาว" data-label-en="Length">46 มม.</td><td data-th="408–432" data-en="408–432" data-label="บรรจุ/กล่อง" data-label-en="Per box">408–432</td><td data-th="พวง" data-en="Bunch" data-label="รูปแบบบรรจุ" data-label-en="Packed as">พวง</td></tr>
+          <tr><td><b><a href="../products/safety-pins-4.html">4</a></b></td><td data-th="56 มม." data-en="56 mm" data-label="ความยาว" data-label-en="Length">56 มม.</td><td data-th="432" data-en="432" data-label="บรรจุ/กล่อง" data-label-en="Per box">432</td><td data-th="พวง" data-en="Bunch" data-label="รูปแบบบรรจุ" data-label-en="Packed as">พวง</td></tr>
+          <tr><td><b><a href="../products/safety-pins-5.html">5</a></b></td><td data-th="65 มม." data-en="65 mm" data-label="ความยาว" data-label-en="Length">65 มม.</td><td data-th="216" data-en="216" data-label="บรรจุ/กล่อง" data-label-en="Per box">216</td><td data-th="พวง" data-en="Bunch" data-label="รูปแบบบรรจุ" data-label-en="Packed as">พวง</td></tr>
+          <tr><td><b><a href="../products/safety-pins-6.html">6</a></b></td><td data-th="75 มม." data-en="75 mm" data-label="ความยาว" data-label-en="Length">75 มม.</td><td data-th="144 (1 กุรุส)" data-en="144 (1 gross)" data-label="บรรจุ/กล่อง" data-label-en="Per box">144 (1 กุรุส)</td><td data-th="พวง" data-en="Bunch" data-label="รูปแบบบรรจุ" data-label-en="Packed as">พวง</td></tr>
+          <tr><td><b><a href="../products/safety-pins-7.html">7</a></b></td><td data-th="85 มม." data-en="85 mm" data-label="ความยาว" data-label-en="Length">85 มม.</td><td data-th="144 (1 กุรุส)" data-en="144 (1 gross)" data-label="บรรจุ/กล่อง" data-label-en="Per box">144 (1 กุรุส)</td><td data-th="พวง" data-en="Bunch" data-label="รูปแบบบรรจุ" data-label-en="Packed as">พวง</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:.875rem;color:var(--ink-mute);margin-top:12px" data-th="เบอร์ 000–1 มาเป็นซองซีลตราสิงโต ส่วนเบอร์ 2–7 มาเป็นพวงพร้อมป้ายห้อย จำนวนเป็นตัวเลขมาตรฐานของแต่ละล็อต รายละเอียดครบอยู่ที่หน้าเข็มกลัดขายส่ง" data-en="Sizes 000–1 come in sealed lion-brand sachets and sizes 2–7 in bunches with a hanging tag. Counts are each lot&#x27;s standard; full details are on the wholesale page.">เบอร์ 000–1 มาเป็นซองซีลตราสิงโต ส่วนเบอร์ 2–7 มาเป็นพวงพร้อมป้ายห้อย จำนวนเป็นตัวเลขมาตรฐานของแต่ละล็อต รายละเอียดครบอยู่ที่หน้าเข็มกลัดขายส่ง</p>
+
+    <h2 class="sec-h" id="examples" data-th="ตัวอย่างคำนวณ" data-en="Worked examples">ตัวอย่างคำนวณ</h2>
+
+    <div class="types">
+      <div class="t">
+        <span class="tag" data-th="เบอร์ 00" data-en="Size 00">เบอร์ 00</span>
+        <h3 data-th="โรงงานติดแท็กเสื้อ 5,000 ตัว" data-en="A factory tagging 5,000 shirts">โรงงานติดแท็กเสื้อ 5,000 ตัว</h3>
+        <ul>
+          <li data-th="ตัวละ 1 เข็ม ใช้ 5,000 ตัว" data-en="One pin each: 5,000 pins">ตัวละ 1 เข็ม ใช้ 5,000 ตัว</li>
+          <li data-th="ล็อตกล่องละ 864 ตัว สั่ง 6 กล่อง ได้ 5,184 ตัว" data-en="At 864 per box: 6 boxes, 5,184 pins">ล็อตกล่องละ 864 ตัว สั่ง 6 กล่อง ได้ 5,184 ตัว</li>
+          <li data-th="ล็อตกล่องละ 1,440 ตัว สั่ง 4 กล่อง ได้ 5,760 ตัว" data-en="At 1,440 per box: 4 boxes, 5,760 pins">ล็อตกล่องละ 1,440 ตัว สั่ง 4 กล่อง ได้ 5,760 ตัว</li>
+        </ul>
+      </div>
+      <div class="t">
+        <span class="tag" data-th="เบอร์ 2" data-en="Size 2">เบอร์ 2</span>
+        <h3 data-th="งานวิ่ง 1,000 คน" data-en="A 1,000-runner race">งานวิ่ง 1,000 คน</h3>
+        <ul>
+          <li data-th="คนละ 4 ตัว ใช้ 4,000 ตัว" data-en="Four per runner: 4,000 pins">คนละ 4 ตัว ใช้ 4,000 ตัว</li>
+          <li data-th="กล่องละ 864 ตัว สั่ง 5 กล่อง ได้ 4,320 ตัว" data-en="At 864 per box: 5 boxes, 4,320 pins">กล่องละ 864 ตัว สั่ง 5 กล่อง ได้ 4,320 ตัว</li>
+        </ul>
+      </div>
+      <div class="t">
+        <span class="tag" data-th="เบอร์ 6" data-en="Size 6">เบอร์ 6</span>
+        <h3 data-th="งานผ้าใบที่ต้องใช้ 500 ตัว" data-en="A canvas job needing 500 pins">งานผ้าใบที่ต้องใช้ 500 ตัว</h3>
+        <ul>
+          <li data-th="กล่องละ 144 ตัว (1 กุรุส)" data-en="144 per box (one gross)">กล่องละ 144 ตัว (1 กุรุส)</li>
+          <li data-th="สั่ง 4 กล่อง ได้ 576 ตัว" data-en="Order 4 boxes: 576 pins">สั่ง 4 กล่อง ได้ 576 ตัว</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="figs">
+      <figure class="fig">
+        <img src="../assets/img/products/pin-00.webp" alt="เข็มกลัดซ่อนปลาย เบอร์ 00 ยาว 23 มม. ลวด 0.65 มม." width="451" height="600" loading="lazy">
+        <figcaption data-th="เบอร์ 00 · 0.65 × 23 มม." data-en="Size 00 · 0.65 × 23 mm">เบอร์ 00 · 0.65 × 23 มม.</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="../assets/img/products/pin-2.webp" alt="เข็มกลัดซ่อนปลาย เบอร์ 2 ยาว 38 มม. ลวด 0.90 มม." width="450" height="600" loading="lazy">
+        <figcaption data-th="เบอร์ 2 · 0.90 × 38 มม." data-en="Size 2 · 0.90 × 38 mm">เบอร์ 2 · 0.90 × 38 มม.</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="../assets/img/products/pin-6.webp" alt="เข็มกลัดซ่อนปลาย เบอร์ 6 ยาว 75 มม. ลวด 1.25 มม." width="450" height="600" loading="lazy">
+        <figcaption data-th="เบอร์ 6 · 1.25 × 75 มม." data-en="Size 6 · 1.25 × 75 mm">เบอร์ 6 · 1.25 × 75 มม.</figcaption>
+      </figure>
+    </div>
+
+    <h2 class="sec-h" id="units" data-th="หน่วยนับที่ต้องรู้" data-en="Units worth knowing">หน่วยนับที่ต้องรู้</h2>
+
+    <div class="warn" style="background:var(--surface);border-color:var(--line)">
+      <ul>
+        <li data-th="1 โหล = 12 ตัว" data-en="1 dozen = 12 pins">1 โหล = 12 ตัว</li>
+        <li data-th="1 กุรุส = 12 โหล = 144 ตัว เบอร์ 6 และ 7 บรรจุกล่องละ 144 ตัว จึงเท่ากับ 1 กุรุสพอดี" data-en="1 gross = 12 dozen = 144 pins. Sizes 6 and 7 are packed 144 to a box, exactly one gross.">1 กุรุส = 12 โหล = 144 ตัว เบอร์ 6 และ 7 บรรจุกล่องละ 144 ตัว จึงเท่ากับ 1 กุรุสพอดี</li>
+        <li data-th="เบอร์ 000 มีอีกชื่อว่า 3/0 และเบอร์ 00 คือ 2/0" data-en="Size 000 is also called 3/0, and 00 is 2/0.">เบอร์ 000 มีอีกชื่อว่า 3/0 และเบอร์ 00 คือ 2/0</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:14px" data-th="ยังไม่แน่ใจว่าใช้เบอร์ไหน ดู&lt;a href=&quot;which-safety-pin-size.html&quot;&gt;คู่มือเลือกเบอร์&lt;/a&gt;ก่อน หรือถ้าเป็นงานติดแท็กสินค้า ดู&lt;a href=&quot;../products/safety-pins-tags.html&quot;&gt;หน้าเข็มกลัดติดป้ายราคา&lt;/a&gt;ที่เทียบเบอร์ 000 กับ 00 ไว้แล้ว" data-en="Not sure which size yet? Start with the &lt;a href=&quot;which-safety-pin-size.html&quot;&gt;size guide&lt;/a&gt;, or for product tags see the &lt;a href=&quot;../products/safety-pins-tags.html&quot;&gt;tag-pin page&lt;/a&gt;, which compares sizes 000 and 00.">ยังไม่แน่ใจว่าใช้เบอร์ไหน ดู<a href="which-safety-pin-size.html">คู่มือเลือกเบอร์</a>ก่อน หรือถ้าเป็นงานติดแท็กสินค้า ดู<a href="../products/safety-pins-tags.html">หน้าเข็มกลัดติดป้ายราคา</a>ที่เทียบเบอร์ 000 กับ 00 ไว้แล้ว</p>
+
+    <h2 class="sec-h" id="faq" data-th="คำถามที่ถามกันบ่อย" data-en="Common questions">คำถามที่ถามกันบ่อย</h2>
+
+    <div class="qa">
+      <h3 data-th="1 กุรุส มีกี่ตัว" data-en="How many pins in a gross?">1 กุรุส มีกี่ตัว</h3>
+      <p data-th="1 กุรุส = 12 โหล = 144 ตัว เข็มกลัดเบอร์ 6 และเบอร์ 7 บรรจุกล่องละ 144 ตัวพอดี จึงเท่ากับ 1 กุรุส" data-en="A gross is 12 dozen, 144 pins. Sizes 6 and 7 are packed exactly 144 to a box, so one box is one gross.">1 กุรุส = 12 โหล = 144 ตัว เข็มกลัดเบอร์ 6 และเบอร์ 7 บรรจุกล่องละ 144 ตัวพอดี จึงเท่ากับ 1 กุรุส</p>
+      <h3 data-th="ทำไมจำนวนต่อกล่องของเบอร์เล็กเป็นช่วง" data-en="Why is the per-box count a range for small sizes?">ทำไมจำนวนต่อกล่องของเบอร์เล็กเป็นช่วง</h3>
+      <p data-th="จำนวนต่อกล่องเป็นตัวเลขมาตรฐานของแต่ละล็อตผลิต เบอร์เล็กจึงต่างกันได้ตามล็อต เช่นเบอร์ 00 อยู่ที่ 864–1,440 ตัว ถามจำนวนของล็อตที่มีอยู่ก่อนสั่งเพื่อคำนวณให้ตรง" data-en="Each production lot has its own standard count, so small sizes vary from lot to lot; size 00, for example, runs 864–1,440 per box. Ask for the count of the lot in stock so your numbers are right.">จำนวนต่อกล่องเป็นตัวเลขมาตรฐานของแต่ละล็อตผลิต เบอร์เล็กจึงต่างกันได้ตามล็อต เช่นเบอร์ 00 อยู่ที่ 864–1,440 ตัว ถามจำนวนของล็อตที่มีอยู่ก่อนสั่งเพื่อคำนวณให้ตรง</p>
+      <h3 data-th="นับจำนวนจริง หรือชั่งน้ำหนักเอา" data-en="Are pins counted or weighed?">นับจำนวนจริง หรือชั่งน้ำหนักเอา</h3>
+      <p data-th="นับจำนวนจริงทุกกล่อง ไม่ได้ชั่งน้ำหนักแล้วประมาณ ร้านค้าและโรงงานจึงวางแผนวัตถุดิบได้แม่น" data-en="Every box is counted, not estimated by weight, so shops and factories can plan stock accurately.">นับจำนวนจริงทุกกล่อง ไม่ได้ชั่งน้ำหนักแล้วประมาณ ร้านค้าและโรงงานจึงวางแผนวัตถุดิบได้แม่น</p>
+      <h3 data-th="มีขั้นต่ำไหม สั่งคละเบอร์ได้ไหม" data-en="Is there a minimum? Can I mix sizes?">มีขั้นต่ำไหม สั่งคละเบอร์ได้ไหม</h3>
+      <p data-th="ไม่มีขั้นต่ำ ซื้อเป็นซองหรือเป็นพวงก็ได้ ราคาส่งเริ่มเมื่อสั่งยกกล่อง และคละเบอร์ในออเดอร์เดียวกันได้" data-en="No minimum. Sachets and bunches are fine, wholesale pricing starts at a full box, and you can mix sizes in one order.">ไม่มีขั้นต่ำ ซื้อเป็นซองหรือเป็นพวงก็ได้ ราคาส่งเริ่มเมื่อสั่งยกกล่อง และคละเบอร์ในออเดอร์เดียวกันได้</p>
+      <h3 data-th="ออกใบกำกับภาษีได้ไหม" data-en="Can you issue a tax invoice?">ออกใบกำกับภาษีได้ไหม</h3>
+      <p data-th="ออกใบกำกับภาษีเต็มรูปได้ แจ้งชื่อบริษัท เลขประจำตัวผู้เสียภาษี และที่อยู่มาทาง LINE ตอนสั่งซื้อ" data-en="Yes, a full tax invoice. Send the company name, tax ID and address on LINE when you order.">ออกใบกำกับภาษีเต็มรูปได้ แจ้งชื่อบริษัท เลขประจำตัวผู้เสียภาษี และที่อยู่มาทาง LINE ตอนสั่งซื้อ</p>
+    </div>
+
+<!--art:next-->
+    <h2 class="sec-h" id="read-next" data-th="อ่านต่อ" data-en="Read next">อ่านต่อ</h2>
+    <div class="nextlinks">
+      <a href="which-safety-pin-size.html"><b data-th="เข็มกลัดเบอร์ไหนใช้ทำอะไร" data-en="Which safety-pin size">เข็มกลัดเบอร์ไหนใช้ทำอะไร</b><span data-th="ตารางงาน→เบอร์ ครบทั้ง 10 เบอร์ 000–7 พร้อมวิธีวัดขนาดที่ถูกต้อง" data-en="Job-to-size table for all ten sizes 000–7, plus how to measure a pin">ตารางงาน→เบอร์ ครบทั้ง 10 เบอร์ 000–7 พร้อมวิธีวัดขนาดที่ถูกต้อง</span></a>
+      <a href="../products/safety-pins.html"><b data-th="เข็มกลัดซ่อนปลาย ครบทุกเบอร์" data-en="Safety pins, every size">เข็มกลัดซ่อนปลาย ครบทุกเบอร์</b><span data-th="ตารางขนาดฉบับเต็มและรูปจริงทุกเบอร์" data-en="Full size table with real photos">ตารางขนาดฉบับเต็มและรูปจริงทุกเบอร์</span></a>
+      <a href="../products/safety-pins-tags.html"><b data-th="เข็มกลัดติดป้ายราคา" data-en="Tag pins">เข็มกลัดติดป้ายราคา</b><span data-th="เบอร์ 000 กับ 00 สำหรับแท็กสินค้า" data-en="Sizes 000 and 00 for product tags">เบอร์ 000 กับ 00 สำหรับแท็กสินค้า</span></a>
+      <a href="../products/safety-pins-wholesale.html"><b data-th="เข็มกลัดขายส่งยกกล่อง" data-en="Safety pins wholesale">เข็มกลัดขายส่งยกกล่อง</b><span data-th="จำนวนต่อกล่องและราคาส่งทุกเบอร์" data-en="Per-box counts and wholesale prices">จำนวนต่อกล่องและราคาส่งทุกเบอร์</span></a>
+      <a href="/articles"><b data-th="บทความทั้งหมด" data-en="All guides">บทความทั้งหมด</b><span data-th="คู่มือเลือกซื้อไฟฟู่และเข็มกลัดทุกเรื่อง" data-en="Every buying guide on the site">คู่มือเลือกซื้อไฟฟู่และเข็มกลัดทุกเรื่อง</span></a>
+    </div>
+<!--/art:next-->
+
+    <div class="cta-band">
+      <div>
+        <h2 data-th="บอกเบอร์กับจำนวนชิ้นงาน เดี๋ยวคำนวณกล่องให้" data-en="Tell us the size and the job size, and we&#x27;ll work out the boxes">บอกเบอร์กับจำนวนชิ้นงาน เดี๋ยวคำนวณกล่องให้</h2>
+        <p data-th="ทัก LINE บอกเบอร์ จำนวนชิ้นงาน และจังหวัดปลายทาง ทางร้านแจ้งจำนวนต่อกล่องของล็อตที่มี ราคาส่ง และค่าส่งให้" data-en="Message us the size, how many items, and the destination province, and we&#x27;ll send the lot&#x27;s per-box count, wholesale price and shipping.">ทัก LINE บอกเบอร์ จำนวนชิ้นงาน และจังหวัดปลายทาง ทางร้านแจ้งจำนวนต่อกล่องของล็อตที่มี ราคาส่ง และค่าส่งให้</p>
+      </div>
+      <a class="btn btn-primary" data-line-ask="ขอคำนวณจำนวนกล่องเข็มกลัด เบอร์/จำนวนชิ้นงาน: " href="https://line.me/R/oaMessage/@wynnstools/?%E0%B8%82%E0%B8%AD%E0%B8%84%E0%B8%B3%E0%B8%99%E0%B8%A7%E0%B8%93%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%82%E0%B9%87%E0%B8%A1%E0%B8%81%E0%B8%A5%E0%B8%B1%E0%B8%94%20%E0%B9%80%E0%B8%9A%E0%B8%AD%E0%B8%A3%E0%B9%8C%2F%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%8A%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%87%E0%B8%B2%E0%B8%99%3A%20" target="_blank" rel="noopener" data-th="ทัก LINE ให้คำนวณ" data-en="Ask on LINE">ทัก LINE ให้คำนวณ</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<!--chrome:footer-->
+<footer class="site-footer"><div class="wrap"><div class="foot-grid">
+  <div class="foot-brand"><div class="brand"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></div>
+    <p data-th="ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย" data-en="Tools &amp; hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand. Retail &amp; wholesale, nationwide.">ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย</p></div>
+  <div class="foot-col"><h2 data-th="สินค้า" data-en="Products">สินค้า</h2><ul>
+    <li><a href="../products/jet-lighter.html" data-th="ไฟฟู่ / ไฟแช็ก" data-en="Jet lighters">ไฟฟู่ / ไฟแช็ก</a></li>
+    <li><a href="../products/tools.html" data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS">เครื่องมือช่าง WYNNTOOLS</a></li>
+    <li><a href="../products/tools-wrenches.html" data-th="ประแจ ลูกบล็อก" data-en="Wrenches &amp; sockets">ประแจ ลูกบล็อก</a></li>
+    <li><a href="../products/tools-holding.html" data-th="คีม แคลมป์ ปากกาจับ" data-en="Pliers &amp; clamps">คีม แคลมป์ ปากกาจับ</a></li>
+    <li><a href="../products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a></li>
+    <li><a href="../products/mtt-brand.html" data-th="สินค้าตรา M.T.T. ตราสิงโต" data-en="M.T.T. brand products">สินค้าตรา M.T.T. ตราสิงโต</a></li>
+    <li><a href="../products/safety-pins-wholesale.html" data-th="เข็มกลัด ขายส่งยกกล่อง" data-en="Safety pins wholesale">เข็มกลัด ขายส่งยกกล่อง</a></li>
+    <li><a href="../products/safety-pins-canvas.html" data-th="เข็มกลัดผ้าใบ เต็นท์" data-en="Canvas &amp; tent pins">เข็มกลัดผ้าใบ เต็นท์</a></li>
+    <li><a href="/products" data-th="สินค้าทั้งหมด" data-en="All products">สินค้าทั้งหมด</a></li>
+    <li><a href="/#categories" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a></li>
+  </ul></div>
+  <div class="foot-col"><h2 data-th="บทความ" data-en="Guides">บทความ</h2><ul>
+    <li><a href="../articles/which-jet-lighter-brand.html" data-th="ไฟฟู่ยี่ห้อไหนดี" data-en="Which jet lighter">ไฟฟู่ยี่ห้อไหนดี</a></li>
+    <li><a href="../articles/jet-lighter-compact-or-large.html" data-th="รุ่นเล็กหรือรุ่นใหญ่" data-en="Compact or large">รุ่นเล็กหรือรุ่นใหญ่</a></li>
+    <li><a href="../articles/jet-lighter-wholesale-margin.html" data-th="ซื้อยกกล่องไปขายต่อ" data-en="Reselling by the box">ซื้อยกกล่องไปขายต่อ</a></li>
+    <li><a href="../articles/jet-lighter-wont-light.html" data-th="ไฟฟู่จุดไม่ติด" data-en="Lighter won't light">ไฟฟู่จุดไม่ติด</a></li>
+    <li><a href="../articles/which-safety-pin-size.html" data-th="เข็มกลัดเบอร์ไหนใช้ทำอะไร" data-en="Which safety-pin size">เข็มกลัดเบอร์ไหนใช้ทำอะไร</a></li>
+    <li><a href="../articles/safety-pins-how-many-boxes.html" data-th="สั่งเข็มกลัดกี่กล่องดี" data-en="How many boxes to order">สั่งเข็มกลัดกี่กล่องดี</a></li>
+    <li><a href="/articles" data-th="บทความทั้งหมด" data-en="All guides">บทความทั้งหมด</a></li>
+  </ul></div>
+  <div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">ลิงก์</h2><ul>
+    <li><a href="/#why" data-th="ทำไมต้องเรา" data-en="Why us">ทำไมต้องเรา</a></li>
+    <li><a href="/#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a></li>
+    <li><a href="../privacy.html" data-th="ความเป็นส่วนตัว" data-en="Privacy">ความเป็นส่วนตัว</a></li>
+    <li><a data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener">LINE OA</a></li>
+  </ul></div>
+  <div class="foot-col"><h2 data-th="ติดต่อ" data-en="Contact">ติดต่อ</h2><div class="foot-contact">
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a data-shop="phone-tel" href="tel:022217712"><span data-shop="phone">0-2221-7712</span></a></div>
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-shop="address">132/1 ถนนเยาวพานิช แขวงจักรวรรดิ เขตสัมพันธวงศ์ กรุงเทพฯ 10100</span></div>
+  </div></div>
+</div><div class="foot-bottom">
+  <span>© 2026 ม.ทวีภัณฑ์ · บริษัท วินส์ทูลส์ ฮาร์ดแวร์ (ประเทศไทย) จำกัด · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>
+  <span data-th="ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด" data-en="Built for the easiest ordering">ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด</span>
+</div></div></footer>
+<nav class="tabbar" aria-label="เมนูหลัก">
+  <a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg><span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a>
+  <a href="/products" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 7 12 3l9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg><span data-th="สินค้า" data-en="Products">สินค้า</span></a>
+  <a href="../products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
+  <a class="tab-line" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="ทัก LINE" data-en="LINE">ทัก LINE</span></a>
+</nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<!--/chrome:footer-->
+
+<script>window.MTT_BASE="../";window.MTT_PAGE="pins";</script>
+<script src="../assets/js/shop-config.js?v=2"></script>
+<script src="../assets/js/catalog.js?v=3"></script>
+<script src="../assets/js/cart.js?v=2"></script>
+<script>
+document.querySelectorAll("[data-line-ask]").forEach(function(a){
+  a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
+});
+</script>
+<script src="../assets/js/layout.js?v=4"></script>
+<script src="/_vercel/insights/script.js" defer></script>
+</body>
+</html>

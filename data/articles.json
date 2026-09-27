@@ -1,22 +1,61 @@
 {
   "_readme": "แหล่งข้อมูลเดียวของบทความ — _gen-articles.mjs ใช้สร้างส่วนหัว/schema/อ่านต่อ/หน้ารวมบทความ/การ์ดหน้าแรก, _chrome.mjs ใช้สร้างคอลัมน์บทความใน footer, _gen-sitemap.mjs ใช้ lastmod. แก้เนื้อหาบทความเมื่อไหร่ให้เปลี่ยน modified เป็นวันที่แก้ แล้วรัน npm run gen",
   "categories": {
-    "jet": { "th": "ไฟฟู่ / ไฟแช็ก", "en": "Jet lighters", "tag_th": "ไฟฟู่", "tag_en": "Jet lighters", "href": "products/jet-lighter.html",
+    "jet": {
+      "th": "ไฟฟู่ / ไฟแช็ก",
+      "en": "Jet lighters",
+      "tag_th": "ไฟฟู่",
+      "tag_en": "Jet lighters",
+      "href": "products/jet-lighter.html",
       "links": [
-        { "href": "products/jet-lighter.html", "th": "หน้าสินค้าไฟฟู่ ตราสิงโต", "en": "Lion-brand jet lighter", "sub_th": "ดูคลิป เลือกสี และสั่งซื้อ", "sub_en": "Watch the clips, pick colours, order" }
-      ] },
-    "pins": { "th": "เข็มกลัดซ่อนปลาย", "en": "Safety pins", "tag_th": "เข็มกลัด", "tag_en": "Safety pins", "href": "products/safety-pins.html",
+        {
+          "href": "products/jet-lighter.html",
+          "th": "หน้าสินค้าไฟฟู่ ตราสิงโต",
+          "en": "Lion-brand jet lighter",
+          "sub_th": "ดูคลิป เลือกสี และสั่งซื้อ",
+          "sub_en": "Watch the clips, pick colours, order"
+        }
+      ]
+    },
+    "pins": {
+      "th": "เข็มกลัดซ่อนปลาย",
+      "en": "Safety pins",
+      "tag_th": "เข็มกลัด",
+      "tag_en": "Safety pins",
+      "href": "products/safety-pins.html",
       "links": [
-        { "href": "products/safety-pins.html", "th": "เข็มกลัดซ่อนปลาย ครบทุกเบอร์", "en": "Safety pins, every size", "sub_th": "ตารางขนาดฉบับเต็มและรูปจริงทุกเบอร์", "sub_en": "Full size table with real photos" },
-        { "href": "products/safety-pins-wholesale.html", "th": "เข็มกลัดขายส่งยกกล่อง", "en": "Safety pins wholesale", "sub_th": "จำนวนต่อกล่องและราคาส่งทุกเบอร์", "sub_en": "Per-box counts and wholesale prices" }
-      ] }
+        {
+          "href": "products/safety-pins.html",
+          "th": "เข็มกลัดซ่อนปลาย ครบทุกเบอร์",
+          "en": "Safety pins, every size",
+          "sub_th": "ตารางขนาดฉบับเต็มและรูปจริงทุกเบอร์",
+          "sub_en": "Full size table with real photos"
+        },
+        {
+          "href": "products/safety-pins-tags.html",
+          "th": "เข็มกลัดติดป้ายราคา",
+          "en": "Tag pins",
+          "sub_th": "เบอร์ 000 กับ 00 สำหรับแท็กสินค้า",
+          "sub_en": "Sizes 000 and 00 for product tags"
+        },
+        {
+          "href": "products/safety-pins-wholesale.html",
+          "th": "เข็มกลัดขายส่งยกกล่อง",
+          "en": "Safety pins wholesale",
+          "sub_th": "จำนวนต่อกล่องและราคาส่งทุกเบอร์",
+          "sub_en": "Per-box counts and wholesale prices"
+        }
+      ]
+    }
   },
   "articles": [
     {
       "slug": "which-jet-lighter-brand",
       "cat": "jet",
-      "short_th": "ไฟฟู่ยี่ห้อไหนดี", "short_en": "Which jet lighter",
-      "eyebrow_th": "คู่มือเลือกซื้อ ฉบับหน้าร้านสำเพ็ง", "eyebrow_en": "A Sampheng shop's buying guide",
+      "short_th": "ไฟฟู่ยี่ห้อไหนดี",
+      "short_en": "Which jet lighter",
+      "eyebrow_th": "คู่มือเลือกซื้อ ฉบับหน้าร้านสำเพ็ง",
+      "eyebrow_en": "A Sampheng shop's buying guide",
       "h1_th": "ไฟฟู่ยี่ห้อไหนดี? เทียบ 3 แบบที่ร้านค้าไทยเลือกใช้จริง",
       "h1_en": "Which jet lighter should you stock? The three options Thai shops actually buy",
       "title_th": "ไฟฟู่ยี่ห้อไหนดี? เทียบ 3 แบบที่ร้านค้าใช้จริง",
@@ -25,15 +64,24 @@
       "card_th": "วิธีเช็คหัวพ่น วาล์วเติมแก๊ส และการคิดราคาต่อชิ้นก่อนซื้อยกกล่อง",
       "card_en": "How to check the jet, the refill valve and the per-piece price before buying a box",
       "keywords": "ไฟฟู่ยี่ห้อไหนดี, ไฟฟู่ ยี่ห้อ, ไฟแช็คหัวพ่นไฟ ยี่ห้อไหนดี, ไฟฟู่ ราคาส่ง, ไฟฟู่ เติมแก๊สได้, เลือกไฟฟู่",
-      "image": "assets/img/og/which-jet-lighter-brand.webp", "image_w": 1200, "image_h": 630,
-      "published": "2026-09-09", "modified": "2026-09-27",
-      "related": ["jet-lighter-compact-or-large", "jet-lighter-wholesale-margin"]
+      "image": "assets/img/og/which-jet-lighter-brand.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-09-09",
+      "modified": "2026-09-27",
+      "related": [
+        "jet-lighter-compact-or-large",
+        "jet-lighter-wholesale-margin",
+        "jet-lighter-wont-light"
+      ]
     },
     {
       "slug": "jet-lighter-compact-or-large",
       "cat": "jet",
-      "short_th": "รุ่นเล็กหรือรุ่นใหญ่", "short_en": "Compact or large",
-      "eyebrow_th": "คู่มือเลือกซื้อ ฉบับหน้าร้านสำเพ็ง", "eyebrow_en": "A Sampheng shop's buying guide",
+      "short_th": "รุ่นเล็กหรือรุ่นใหญ่",
+      "short_en": "Compact or large",
+      "eyebrow_th": "คู่มือเลือกซื้อ ฉบับหน้าร้านสำเพ็ง",
+      "eyebrow_en": "A Sampheng shop's buying guide",
       "h1_th": "ไฟฟู่รุ่นเล็ก 8 ซม. หรือรุ่นใหญ่ 11 ซม. เลือกยังไงให้ตรงงาน",
       "h1_en": "Compact 8 cm or large 11 cm jet lighter: which one fits the job?",
       "title_th": "ไฟฟู่รุ่นเล็กหรือรุ่นใหญ่ เลือกยังไงให้ตรงงาน",
@@ -42,15 +90,23 @@
       "card_th": "เทียบขนาด 8 กับ 11 ซม. สีที่มี ราคา และจำนวนต่อกล่อง ช่องต่อช่อง",
       "card_en": "8 vs 11 cm: size, colours, price and pieces per box side by side",
       "keywords": "ไฟฟู่ รุ่นไหนดี, ไฟฟู่ รุ่นเล็ก, ไฟฟู่ รุ่นใหญ่, ไฟฟู่พกพา, ไฟฟู่ ขนาด, เลือกไฟฟู่, ไฟแช็กหัวพ่นไฟ ขนาด",
-      "image": "assets/img/og/jet-lighter-compact-or-large.webp", "image_w": 1200, "image_h": 630,
-      "published": "2026-09-19", "modified": "2026-09-27",
-      "related": ["jet-lighter-wholesale-margin", "which-jet-lighter-brand"]
+      "image": "assets/img/og/jet-lighter-compact-or-large.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-09-19",
+      "modified": "2026-09-27",
+      "related": [
+        "jet-lighter-wholesale-margin",
+        "which-jet-lighter-brand"
+      ]
     },
     {
       "slug": "jet-lighter-wholesale-margin",
       "cat": "jet",
-      "short_th": "ซื้อยกกล่องไปขายต่อ", "short_en": "Reselling by the box",
-      "eyebrow_th": "สำหรับร้านค้าที่ซื้อไปขายต่อ", "eyebrow_en": "For shops buying to resell",
+      "short_th": "ซื้อยกกล่องไปขายต่อ",
+      "short_en": "Reselling by the box",
+      "eyebrow_th": "สำหรับร้านค้าที่ซื้อไปขายต่อ",
+      "eyebrow_en": "For shops buying to resell",
       "h1_th": "ซื้อไฟฟู่ยกกล่องไปขายต่อ คิดกำไรยังไงให้ไม่ขาดทุน",
       "h1_en": "Reselling jet lighters by the box: working out the margin",
       "title_th": "ไฟฟู่ยกกล่องไปขายต่อ คิดกำไรยังไงให้ไม่ขาดทุน",
@@ -59,15 +115,48 @@
       "card_th": "ต้นทุนต่อชิ้น จุดคุ้มทุนต่อกล่อง และค่าใช้จ่ายที่ต้องบวกก่อนตั้งราคา",
       "card_en": "Cost per piece, break-even per box, and the costs to add before you price",
       "keywords": "ไฟฟู่ ราคาส่ง, ไฟฟู่ ยกกล่อง, ไฟฟู่ ขายส่ง, ซื้อไฟฟู่ไปขายต่อ, ไฟฟู่ ต้นทุน, ขายไฟฟู่ กำไร, สินค้าขายส่ง สำเพ็ง",
-      "image": "assets/img/og/jet-lighter-wholesale-margin.webp", "image_w": 1200, "image_h": 630,
-      "published": "2026-09-19", "modified": "2026-09-27",
-      "related": ["jet-lighter-compact-or-large", "which-jet-lighter-brand"]
+      "image": "assets/img/og/jet-lighter-wholesale-margin.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-09-19",
+      "modified": "2026-09-27",
+      "related": [
+        "jet-lighter-compact-or-large",
+        "jet-lighter-wont-light"
+      ]
+    },
+    {
+      "slug": "jet-lighter-wont-light",
+      "cat": "jet",
+      "short_th": "ไฟฟู่จุดไม่ติด",
+      "short_en": "Lighter won't light",
+      "eyebrow_th": "วิธีใช้และดูแล",
+      "eyebrow_en": "Use and care",
+      "h1_th": "ไฟฟู่จุดไม่ติด เช็ค 4 จุดนี้ก่อนส่งเปลี่ยน",
+      "h1_en": "Jet lighter won't light? Check these 4 things before sending it back",
+      "title_th": "ไฟฟู่จุดไม่ติด เช็ค 4 จุดนี้ก่อนส่งเปลี่ยน",
+      "desc_th": "ไฟฟู่กดแล้วไม่ติด ไล่เช็คสวิตช์ล็อก ระดับแก๊ส ปุ่มปรับแก๊ส และการเติมแก๊สใหม่ ถ้ายังไม่ติด ไฟฟู่ตราสิงโตแจ้งเปลี่ยนได้ภายใน 7 วัน",
+      "og_desc_th": "4 จุดที่เช็คเองได้ก่อนส่งเปลี่ยน พร้อมเงื่อนไขเปลี่ยนสินค้า",
+      "card_th": "เช็คสวิตช์ล็อก ระดับแก๊ส ปุ่มปรับแก๊ส ก่อนส่งกลับมาเปลี่ยน",
+      "card_en": "Check the lock, the gas level and the gas dial before sending it back",
+      "keywords": "ไฟฟู่จุดไม่ติด, ไฟแช็กหัวพ่นไฟ จุดไม่ติด, ไฟฟู่ ไม่ติด แก้ยังไง, ไฟฟู่ เติมแก๊ส, ไฟฟู่ ล็อก",
+      "image": "assets/img/og/jet-lighter-wont-light.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-09-27",
+      "modified": "2026-09-27",
+      "related": [
+        "which-jet-lighter-brand",
+        "jet-lighter-wholesale-margin"
+      ]
     },
     {
       "slug": "which-safety-pin-size",
       "cat": "pins",
-      "short_th": "เข็มกลัดเบอร์ไหนใช้ทำอะไร", "short_en": "Which safety-pin size",
-      "eyebrow_th": "คู่มือฉบับร้านค้าส่งสำเพ็ง", "eyebrow_en": "The Sampheng wholesaler's guide",
+      "short_th": "เข็มกลัดเบอร์ไหนใช้ทำอะไร",
+      "short_en": "Which safety-pin size",
+      "eyebrow_th": "คู่มือฉบับร้านค้าส่งสำเพ็ง",
+      "eyebrow_en": "The Sampheng wholesaler's guide",
       "h1_th": "เข็มกลัดเบอร์ไหนใช้ทำอะไร? คู่มือเลือกขนาด 000–7",
       "h1_en": "Which safety-pin size for which job? The 000–7 guide",
       "title_th": "เข็มกลัดเบอร์ไหนใช้ทำอะไร? เลือกขนาด 000–7",
@@ -76,9 +165,38 @@
       "card_th": "ตารางงาน→เบอร์ ครบทั้ง 10 เบอร์ 000–7 พร้อมวิธีวัดขนาดที่ถูกต้อง",
       "card_en": "Job-to-size table for all ten sizes 000–7, plus how to measure a pin",
       "keywords": "เข็มกลัดเบอร์ไหน, ขนาดเข็มกลัด, เข็มกลัดซ่อนปลาย เบอร์, เข็มกลัด 000, เข็มกลัดเบอร์ 2, เข็มกลัดผ้าอ้อม, เข็มกลัดผ้าใบ",
-      "image": "assets/img/products/safety-pins-og.png", "image_w": 1200, "image_h": 630,
-      "published": "2026-08-21", "modified": "2026-09-27",
-      "related": []
+      "image": "assets/img/products/safety-pins-og.png",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-08-21",
+      "modified": "2026-09-27",
+      "related": [
+        "safety-pins-how-many-boxes"
+      ]
+    },
+    {
+      "slug": "safety-pins-how-many-boxes",
+      "cat": "pins",
+      "short_th": "สั่งเข็มกลัดกี่กล่องดี",
+      "short_en": "How many boxes to order",
+      "eyebrow_th": "สำหรับร้านค้า โรงงาน และผู้จัดงาน",
+      "eyebrow_en": "For shops, factories and organisers",
+      "h1_th": "สั่งเข็มกลัดยกกล่อง คิดยังไงว่าต้องกี่กล่อง",
+      "h1_en": "Ordering safety pins by the box: how many boxes do you need?",
+      "title_th": "สั่งเข็มกลัดยกกล่อง คิดยังไงว่าต้องกี่กล่อง",
+      "desc_th": "สูตรคิดจำนวนกล่องเข็มกลัดที่ใช้ได้ทุกเบอร์ พร้อมจำนวนต่อกล่องเบอร์ 000–7 และตัวอย่างคำนวณสำหรับโรงงานเสื้อผ้า งานวิ่ง และงานผ้าใบ",
+      "og_desc_th": "สูตรเดียวใช้ได้ทุกเบอร์ พร้อมจำนวนต่อกล่องและตัวอย่างคำนวณ",
+      "card_th": "สูตรคิดจำนวนกล่อง จำนวนต่อกล่องทุกเบอร์ และตัวอย่างงานจริง",
+      "card_en": "The box formula, per-box counts for every size, and worked examples",
+      "keywords": "เข็มกลัด ยกกล่อง, เข็มกลัด กล่องละกี่ตัว, เข็มกลัด กุรุส, เข็มกลัด ขายส่ง, สั่งเข็มกลัด โรงงาน",
+      "image": "assets/img/products/safety-pins-og.png",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-09-27",
+      "modified": "2026-09-27",
+      "related": [
+        "which-safety-pin-size"
+      ]
     }
   ]
 }

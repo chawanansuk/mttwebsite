@@ -48,7 +48,7 @@ async function newPage(vp) {
   return page;
 }
 
-const ALL_PAGES = ["/", "/products", "/index.html", "/products/index.html", "/products/tools.html", "/products/tools-holding.html", "/products/tools-automotive.html", "/products/tools-wrenches.html", "/products/tools-electrical.html", "/products/tools-screwdrivers.html", "/products/tools-cutting.html", "/products/tools-cutter.html", "/products/tools-padlock.html", "/products/tools-striking.html", "/products/tools-garden.html", "/products/tools-upholster.html", "/products/tools-measuring.html", "/products/tools-blades.html", "/products/tools-soldering.html", "/products/tools-hydraulic.html", "/products/mtt-brand.html", "/products/safety-pins.html", "/products/safety-pins-wholesale.html", "/products/safety-pins-canvas.html", "/products/safety-pins-running.html", "/products/safety-pins-tags.html", "/products/safety-pins-diaper.html", "/articles/which-safety-pin-size.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/articles/jet-lighter-compact-or-large.html","/articles/jet-lighter-wholesale-margin.html","/articles/which-jet-lighter-brand.html", "/articles", "/privacy.html", "/404.html"];
+const ALL_PAGES = ["/", "/products", "/index.html", "/products/index.html", "/products/tools.html", "/products/tools-holding.html", "/products/tools-automotive.html", "/products/tools-wrenches.html", "/products/tools-electrical.html", "/products/tools-screwdrivers.html", "/products/tools-cutting.html", "/products/tools-cutter.html", "/products/tools-padlock.html", "/products/tools-striking.html", "/products/tools-garden.html", "/products/tools-upholster.html", "/products/tools-measuring.html", "/products/tools-blades.html", "/products/tools-soldering.html", "/products/tools-hydraulic.html", "/products/mtt-brand.html", "/products/safety-pins.html", "/products/safety-pins-wholesale.html", "/products/safety-pins-canvas.html", "/products/safety-pins-running.html", "/products/safety-pins-tags.html", "/products/safety-pins-diaper.html", "/articles/which-safety-pin-size.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/articles/jet-lighter-compact-or-large.html","/articles/jet-lighter-wholesale-margin.html","/articles/which-jet-lighter-brand.html", "/articles/jet-lighter-wont-light.html", "/articles/safety-pins-how-many-boxes.html", "/articles", "/privacy.html", "/404.html"];
 
 /* ---- header/footer อยู่ใน HTML ดิบ (บอตที่ไม่รัน JS เห็น) และตรงกับ _chrome.mjs ---- */
 console.log("\n[ header/footer ฝังใน HTML ]");
@@ -102,16 +102,16 @@ for (const a of ARTS) {
   const faq = ldBlocks(raw).map((b) => JSON.parse(b)).find((o) => o["@type"] === "FAQPage");
   const ans = (q) => faq.mainEntity.find((x) => x.name === q).acceptedAnswer.text;
   const { SHOP: S } = await import(new URL("../_chrome.mjs", import.meta.url));
-  assert(ans("การจัดส่ง") === S.SHIPPING_TH && ans("เลือกสีในกล่องเองได้ไหม") === S.COLORS_TH, "หน้าไฟฟู่: คำตอบเรื่องจัดส่ง/เลือกสีใน schema ตรงกับ shop-config");
+  assert(ans("การจัดส่ง") === S.SHIPPING_TH && ans("เลือกสีในกล่องเองได้ไหม") === S.COLORS_TH && ans("ไฟฟู่จุดไม่ติด เปลี่ยนได้ไหม") === S.RETURNS_TH, "หน้าไฟฟู่: คำตอบเรื่องจัดส่ง/เลือกสี/เปลี่ยนสินค้าใน schema ตรงกับ shop-config");
   let mismatch = [];
   for (const path of ["/products/jet-lighter.html", ...ARTS.filter((a) => a.cat === "jet").map((a) => "/articles/" + a.slug + ".html")]) {
     const r = await (await fetch(base + path)).text();
     for (const m of r.matchAll(/data-shop-text="(\w+)" data-th="([^"]*)"/g)) {
-      const want = m[1] === "shipping" ? S.SHIPPING_TH : S.COLORS_TH;
+      const want = { shipping: S.SHIPPING_TH, colors: S.COLORS_TH, returns: S.RETURNS_TH }[m[1]];
       if (untag(m[2]) !== want) mismatch.push(path + ":" + m[1]);
     }
   }
-  assert(mismatch.length === 0, "ข้อความจัดส่ง/เลือกสี เหมือนกันทุกหน้า (มาจาก shop-config)" + (mismatch.length ? " → " + mismatch.join(", ") : ""));
+  assert(mismatch.length === 0, "ข้อความจัดส่ง/เลือกสี/เปลี่ยนสินค้า เหมือนกันทุกหน้า (มาจาก shop-config)" + (mismatch.length ? " → " + mismatch.join(", ") : ""));
 }
 
 /* ---- ปิด JS แล้วยังเห็นเมนู/ท้ายเว็บ (เหมือนบอตที่ไม่รัน JS) ---- */

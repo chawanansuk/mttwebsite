@@ -89,7 +89,7 @@
       "name": "การจัดส่ง",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้ ทางร้านแจ้งค่าส่งให้ก่อนยืนยันออเดอร์"
+        "text": "สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งผ่าน DHL ส่งทั่วไทย เก็บเงินปลายทางได้ ทางร้านแจ้งค่าส่งให้ก่อนยืนยันออเดอร์"
       }
     },
     {
@@ -105,7 +105,15 @@
       "name": "เลือกสีในกล่องเองได้ไหม",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง ในตะกร้าหน้าสินค้าหรือแจ้งทาง LINE ทางร้านเช็คสต็อกสีให้ก่อนยืนยันออเดอร์"
+        "text": "ไม่ได้ สั่งยกกล่องจะได้แบบคละสีตามที่มาในกล่อง ถ้าต้องการสีเจาะจง สั่งเป็นชิ้นหรือแพ็ก 3 ชิ้นแล้วระบุสีในตะกร้า"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ไฟฟู่จุดไม่ติด เปลี่ยนได้ไหม",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ไฟฟู่ที่จุดไม่ติดจากการผลิต แจ้งทางร้านทาง LINE ภายใน 7 วัน พร้อมรูปหรือคลิป เพื่อเปลี่ยนสินค้า"
       }
     }
   ]
@@ -465,7 +473,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
     <div class="sec-head">
       <span class="eyebrow" data-th="แต่ละรุ่นมี 5 สี" data-en="5 colors per model">แต่ละรุ่นมี 5 สี</span>
       <h2 data-th="เลือกสีที่ใช่" data-en="Pick your color">เลือกสีที่ใช่</h2>
-      <p data-th="บอดี้ใสมองเห็นระดับแก๊สชัด — รุ่นใหญ่กับรุ่นเล็กใช้ชุดสีต่างกัน เลือกสีของแต่ละรุ่นได้ตอนสั่งซื้อ" data-en="Clear bodies, gas level always visible — large and compact come in different color sets; pick per model at checkout.">บอดี้ใสมองเห็นระดับแก๊สชัด — รุ่นใหญ่กับรุ่นเล็กใช้ชุดสีต่างกัน เลือกสีของแต่ละรุ่นได้ตอนสั่งซื้อ</p>
+      <p data-th="บอดี้ใสมองเห็นระดับแก๊สชัด — รุ่นใหญ่กับรุ่นเล็กใช้ชุดสีต่างกัน ซื้อเป็นชิ้นหรือแพ็ก 3 ระบุสีได้ตอนสั่ง ส่วนยกกล่องมาแบบคละสี" data-en="Clear bodies, gas level always visible. Large and compact come in different colour sets; pick colours for single pieces and 3-packs at checkout, while full boxes come colour-mixed.">บอดี้ใสมองเห็นระดับแก๊สชัด — รุ่นใหญ่กับรุ่นเล็กใช้ชุดสีต่างกัน ซื้อเป็นชิ้นหรือแพ็ก 3 ระบุสีได้ตอนสั่ง ส่วนยกกล่องมาแบบคละสี</p>
     </div>
     <div class="cblocks" id="colorBlocks"></div>
   </div>
@@ -501,7 +509,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
       <h2 data-th="ซื้อยกกล่อง กำไรดี ขายต่อสบาย" data-en="Buy by the box — better margin, easy to resell">ซื้อยกกล่อง กำไรดี ขายต่อสบาย</h2>
       <ul>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span data-th="ต้นทุนต่อชิ้นต่ำ ตั้งราคาขายต่อได้อิสระ" data-en="Low cost per unit, set your own resale price">ต้นทุนต่อชิ้นต่ำ ตั้งราคาขายต่อได้อิสระ</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span data-th="คละสีได้ ครบทั้ง 5 สีในกล่อง" data-en="Mixed colors — all 5 in a box">คละสีได้ ครบทั้ง 5 สีในกล่อง</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span data-th="คละสี ครบทั้ง 5 สีในกล่อง" data-en="Colour-mixed, all 5 in a box">คละสี ครบทั้ง 5 สีในกล่อง</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span data-th="สั่งจำนวนมากคุยราคาพิเศษเพิ่มได้ทาง LINE" data-en="Bulk orders? Ask for a special rate on LINE">สั่งจำนวนมากคุยราคาพิเศษเพิ่มได้ทาง LINE</span></li>
       </ul>
     </div>
@@ -525,7 +533,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
         <h3 data-th="ตะกร้าสินค้า" data-en="Cart">ตะกร้าสินค้า</h3>
         <div id="cartItems"></div>
         <div class="color-pick" id="colorPickWrap" style="display:none">
-          <div class="lbl" data-th="สีที่ต้องการ (เลือกได้หลายสี)" data-en="Colors you want (multi-select)">สีที่ต้องการ (เลือกได้หลายสี)</div>
+          <div class="lbl" data-th="สีที่ต้องการ สำหรับชิ้นเดี่ยว/แพ็ก 3 (เลือกได้หลายสี · ยกกล่องเป็นคละสี)" data-en="Colours for single pieces / 3-packs (multi-select · full boxes come mixed)">สีที่ต้องการ สำหรับชิ้นเดี่ยว/แพ็ก 3 (เลือกได้หลายสี · ยกกล่องเป็นคละสี)</div>
           <div class="chips" id="colorChips"></div>
         </div>
         <div class="order-form" id="orderForm" style="display:none">
@@ -580,7 +588,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
       <details class="faq-card">
         <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8zM5.5 18.5a2 2 0 1 0 0 .01M18.5 18.5a2 2 0 1 0 0 .01"/></svg></span>
         <h3 data-th="การจัดส่ง" data-en="Shipping">การจัดส่ง</h3></summary>
-        <p data-shop-text="shipping" data-th="สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้ ทางร้านแจ้งค่าส่งให้ก่อนยืนยันออเดอร์" data-en="Contains flammable gas, so it travels by ground couriers that accept it. Nationwide, cash on delivery available, and we confirm the shipping cost before you commit.">สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้ ทางร้านแจ้งค่าส่งให้ก่อนยืนยันออเดอร์</p>
+        <p data-shop-text="shipping" data-th="สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งผ่าน DHL ส่งทั่วไทย เก็บเงินปลายทางได้ ทางร้านแจ้งค่าส่งให้ก่อนยืนยันออเดอร์" data-en="Contains flammable gas and ships nationwide via DHL. Cash on delivery available, and we confirm the shipping cost before you commit.">สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งผ่าน DHL ส่งทั่วไทย เก็บเงินปลายทางได้ ทางร้านแจ้งค่าส่งให้ก่อนยืนยันออเดอร์</p>
       </details>
       <details class="faq-card">
         <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
@@ -590,7 +598,12 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
       <details class="faq-card">
         <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.4"/><circle cx="15" cy="10" r="1.4"/><circle cx="12" cy="15" r="1.4"/></svg></span>
         <h3 data-th="เลือกสีในกล่องเองได้ไหม" data-en="Can I choose the colour mix?">เลือกสีในกล่องเองได้ไหม</h3></summary>
-        <p data-shop-text="colors" data-th="ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง ในตะกร้าหน้าสินค้าหรือแจ้งทาง LINE ทางร้านเช็คสต็อกสีให้ก่อนยืนยันออเดอร์" data-en="Yes. Set how many of each colour you want when you order a box, in the cart on the product page or on LINE, and we check colour stock before confirming.">ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง ในตะกร้าหน้าสินค้าหรือแจ้งทาง LINE ทางร้านเช็คสต็อกสีให้ก่อนยืนยันออเดอร์</p>
+        <p data-shop-text="colors" data-th="ไม่ได้ สั่งยกกล่องจะได้แบบคละสีตามที่มาในกล่อง ถ้าต้องการสีเจาะจง สั่งเป็นชิ้นหรือแพ็ก 3 ชิ้นแล้วระบุสีในตะกร้า" data-en="No. Full boxes come colour-mixed as packed. If you need specific colours, order single pieces or 3-packs and note the colours in the cart.">ไม่ได้ สั่งยกกล่องจะได้แบบคละสีตามที่มาในกล่อง ถ้าต้องการสีเจาะจง สั่งเป็นชิ้นหรือแพ็ก 3 ชิ้นแล้วระบุสีในตะกร้า</p>
+      </details>
+      <details class="faq-card">
+        <summary><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.2L3 16M3 21v-5h5"/></svg></span>
+        <h3 data-th="ไฟฟู่จุดไม่ติด เปลี่ยนได้ไหม" data-en="What if a lighter won't light?">ไฟฟู่จุดไม่ติด เปลี่ยนได้ไหม</h3></summary>
+        <p data-shop-text="returns" data-th="ไฟฟู่ที่จุดไม่ติดจากการผลิต แจ้งทางร้านทาง LINE ภายใน 7 วัน พร้อมรูปหรือคลิป เพื่อเปลี่ยนสินค้า" data-en="If a lighter won't light because of a manufacturing fault, tell us on LINE within 7 days with a photo or clip and we'll exchange it.">ไฟฟู่ที่จุดไม่ติดจากการผลิต แจ้งทางร้านทาง LINE ภายใน 7 วัน พร้อมรูปหรือคลิป เพื่อเปลี่ยนสินค้า</p>
       </details>
     </div>
 
@@ -599,6 +612,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
       <a href="../articles/which-jet-lighter-brand.html"><b data-th="ไฟฟู่ยี่ห้อไหนดี" data-en="Which brand to stock">ไฟฟู่ยี่ห้อไหนดี</b><span data-th="5 จุดที่ต้องดูก่อนซื้อยกกล่อง" data-en="5 checks before buying a box">5 จุดที่ต้องดูก่อนซื้อยกกล่อง</span></a>
       <a href="../articles/jet-lighter-compact-or-large.html"><b data-th="รุ่นเล็กหรือรุ่นใหญ่ เลือกยังไง" data-en="Compact or large?">รุ่นเล็กหรือรุ่นใหญ่ เลือกยังไง</b><span data-th="เทียบขนาด สี และราคาช่องต่อช่อง" data-en="Size, colours and price side by side">เทียบขนาด สี และราคาช่องต่อช่อง</span></a>
       <a href="../articles/jet-lighter-wholesale-margin.html"><b data-th="ซื้อยกกล่องไปขายต่อ คิดกำไรยังไง" data-en="Reselling by the box">ซื้อยกกล่องไปขายต่อ คิดกำไรยังไง</b><span data-th="ต้นทุนต่อชิ้น จุดคุ้มทุน และวิธีตั้งราคา" data-en="Cost each, break-even, and pricing">ต้นทุนต่อชิ้น จุดคุ้มทุน และวิธีตั้งราคา</span></a>
+      <a href="../articles/jet-lighter-wont-light.html"><b data-th="ไฟฟู่จุดไม่ติด เช็คอะไรก่อน" data-en="Lighter won't light?">ไฟฟู่จุดไม่ติด เช็คอะไรก่อน</b><span data-th="4 จุดที่เช็คเองได้ และเงื่อนไขเปลี่ยนสินค้า" data-en="Four quick checks, and how exchanges work">4 จุดที่เช็คเองได้ และเงื่อนไขเปลี่ยนสินค้า</span></a>
     </div>
   </div>
 </section>
@@ -624,7 +638,9 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
     <li><a href="../articles/which-jet-lighter-brand.html" data-th="ไฟฟู่ยี่ห้อไหนดี" data-en="Which jet lighter">ไฟฟู่ยี่ห้อไหนดี</a></li>
     <li><a href="../articles/jet-lighter-compact-or-large.html" data-th="รุ่นเล็กหรือรุ่นใหญ่" data-en="Compact or large">รุ่นเล็กหรือรุ่นใหญ่</a></li>
     <li><a href="../articles/jet-lighter-wholesale-margin.html" data-th="ซื้อยกกล่องไปขายต่อ" data-en="Reselling by the box">ซื้อยกกล่องไปขายต่อ</a></li>
+    <li><a href="../articles/jet-lighter-wont-light.html" data-th="ไฟฟู่จุดไม่ติด" data-en="Lighter won't light">ไฟฟู่จุดไม่ติด</a></li>
     <li><a href="../articles/which-safety-pin-size.html" data-th="เข็มกลัดเบอร์ไหนใช้ทำอะไร" data-en="Which safety-pin size">เข็มกลัดเบอร์ไหนใช้ทำอะไร</a></li>
+    <li><a href="../articles/safety-pins-how-many-boxes.html" data-th="สั่งเข็มกลัดกี่กล่องดี" data-en="How many boxes to order">สั่งเข็มกลัดกี่กล่องดี</a></li>
     <li><a href="/articles" data-th="บทความทั้งหมด" data-en="All guides">บทความทั้งหมด</a></li>
   </ul></div>
   <div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">ลิงก์</h2><ul>
@@ -670,6 +686,8 @@ const COLOR_KEYS = new Set(PRODUCT.variants.flatMap(v=>v.colors.map(c=>v.key+":"
 Cart.colors().forEach(k=>{ if(!COLOR_KEYS.has(k)) Cart.toggleColor(k); });
 function colorOf(key){ const [vk,ck]=key.split(":"); const v=PRODUCT.variants.find(x=>x.key===vk); const c=v&&v.colors.find(x=>x.key===ck); return c?{v,c}:null; }
 function variantsInCart(){ return PRODUCT.variants.filter(v=>v.options.some(o=>Cart.qty(o.id)>0)); }
+/* ยกกล่องมาแบบคละสี เลือกสีไม่ได้ (ร้านยืนยัน) — ชิปสีจึงแสดงเฉพาะรุ่นที่มีชิ้นเดี่ยว/แพ็กในตะกร้า */
+function variantsColorPickable(){ return PRODUCT.variants.filter(v=>v.options.some(o=>!o.box&&Cart.qty(o.id)>0)); }
 const CONFIG = { LINE_URL: SHOP.LINE_URL };
 
 /* จุดเด่นสินค้า (marketing copy เฉพาะหน้านี้) */
@@ -722,7 +740,7 @@ function renderSwatches(){
       </div>
     </div>`).join("");
   // ชิปเลือกสีในตะกร้า: เฉพาะรุ่นที่มีของในตะกร้า
-  document.getElementById("colorChips").innerHTML=variantsInCart().map(v=>`
+  document.getElementById("colorChips").innerHTML=variantsColorPickable().map(v=>`
     <div class="cp-var"><span class="cp-name">${th?v.name_th:v.name_en}:</span>${v.colors.map(c=>{const k=v.key+":"+c.key;const on=Cart.hasColor(k);
       return `<button type="button" class="chip ${on?"on":""}" aria-pressed="${on}" onclick="toggleColor('${k}')"><span class="cd" style="background:${c.hex}"></span>${th?c.th:c.en}</button>`;}).join("")}</div>`).join("");
 }
@@ -795,7 +813,7 @@ function renderCart(){
         <div class="li-sum">฿${o.price*q}</div>
       </div>`;
     }).join("");
-    document.getElementById("colorPickWrap").style.display="block";
+    document.getElementById("colorPickWrap").style.display=variantsColorPickable().length?"block":"none";
     document.getElementById("orderForm").style.display="grid";
   }
   const total=cartTotal();
@@ -828,13 +846,15 @@ function buildOrderText(){
     lines.push(`• ${name} x${Cart.qty(id)} = ฿${o.price*Cart.qty(id)}`); });
   // สีที่เลือก แยกตามรุ่น
   const cols=Cart.colors();
+  const pickable=new Set(variantsColorPickable().map(v=>v.key));
   if(cols.length>0){
     lines.push("");
-    PRODUCT.variants.forEach(v=>{
+    PRODUCT.variants.filter(v=>pickable.has(v.key)).forEach(v=>{
       const names=cols.map(colorOf).filter(h=>h&&h.v.key===v.key).map(h=>th?h.c.th:h.c.en);
       if(names.length) lines.push((th?"🎨 สี ":"🎨 Colors ")+(th?v.name_th:v.name_en)+": "+names.join(", "));
     });
   }
+  if(ids.some(id=>{const o=optById(id);return o&&o.box;})) lines.push(th?"📦 ยกกล่อง: คละสีตามที่มาในกล่อง":"📦 Full boxes: colour-mixed as packed");
   lines.push("", (th?"💰 ยอดรวม: ฿":"💰 Total: ฿")+cartTotal().toLocaleString());
   lines.push("", th?"📍 ชื่อ-ที่อยู่จัดส่ง:":"📍 Shipping details:");
   if(buyer.name)  lines.push((th?"ชื่อ: ":"Name: ")+buyer.name);

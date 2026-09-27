@@ -125,7 +125,7 @@ const lineAsk = (text) => {
   return id ? "https://line.me/R/oaMessage/@" + id + "/?" + encodeURIComponent(text || "") : S.LINE_URL || "#";
 };
 /* ข้อความนโยบายที่ใช้หลายหน้า: data-shop-text="shipping" → SHOP.SHIPPING_TH/EN */
-const SHOP_TEXT = { shipping: [S.SHIPPING_TH, S.SHIPPING_EN], colors: [S.COLORS_TH, S.COLORS_EN] };
+const SHOP_TEXT = { shipping: [S.SHIPPING_TH, S.SHIPPING_EN], colors: [S.COLORS_TH, S.COLORS_EN], returns: [S.RETURNS_TH, S.RETURNS_EN] };
 function fillShop(html) {
   html = html.replace(/<a\b[^>]*\bdata-shop="(line-url|phone-tel|email-href)"[^>]*>/g, (tag, key) =>
     HREF[key] ? tag.replace(/\bhref="[^"]*"/, `href="${esc(HREF[key])}"`) : tag);

@@ -25,11 +25,13 @@ window.SHOP = {
   FACEBOOK_URL: "#",
 
   // ข้อความนโยบายที่ใช้ซ้ำหลายหน้า (หน้าสินค้าไฟฟู่ + บทความ) — แก้ที่นี่ที่เดียว แล้วรัน npm run bake
-  // ใส่ลงหน้าเว็บผ่าน data-shop-text="shipping" / "colors" (ดู _chrome.mjs)
-  SHIPPING_TH: "สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้ ทางร้านแจ้งค่าส่งให้ก่อนยืนยันออเดอร์",
-  SHIPPING_EN: "Contains flammable gas, so it travels by ground couriers that accept it. Nationwide, cash on delivery available, and we confirm the shipping cost before you commit.",
-  COLORS_TH: "ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง ในตะกร้าหน้าสินค้าหรือแจ้งทาง LINE ทางร้านเช็คสต็อกสีให้ก่อนยืนยันออเดอร์",
-  COLORS_EN: "Yes. Set how many of each colour you want when you order a box, in the cart on the product page or on LINE, and we check colour stock before confirming.",
+  // ใส่ลงหน้าเว็บผ่าน data-shop-text="shipping" / "colors" / "returns" (ดู _chrome.mjs)
+  SHIPPING_TH: "สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งผ่าน DHL ส่งทั่วไทย เก็บเงินปลายทางได้ ทางร้านแจ้งค่าส่งให้ก่อนยืนยันออเดอร์",
+  SHIPPING_EN: "Contains flammable gas and ships nationwide via DHL. Cash on delivery available, and we confirm the shipping cost before you commit.",
+  COLORS_TH: "ไม่ได้ สั่งยกกล่องจะได้แบบคละสีตามที่มาในกล่อง ถ้าต้องการสีเจาะจง สั่งเป็นชิ้นหรือแพ็ก 3 ชิ้นแล้วระบุสีในตะกร้า",
+  COLORS_EN: "No. Full boxes come colour-mixed as packed. If you need specific colours, order single pieces or 3-packs and note the colours in the cart.",
+  RETURNS_TH: "ไฟฟู่ที่จุดไม่ติดจากการผลิต แจ้งทางร้านทาง LINE ภายใน 7 วัน พร้อมรูปหรือคลิป เพื่อเปลี่ยนสินค้า",
+  RETURNS_EN: "If a lighter won't light because of a manufacturing fault, tell us on LINE within 7 days with a photo or clip and we'll exchange it.",
 
   // วาง URL ฝัง Google Maps ของร้าน (คัดลอกจาก Google Maps > แชร์ > ฝังแผนที่ > src="...")
   // ถ้าเว้นว่าง หน้าแรกจะซ่อนช่องแผนที่ให้อัตโนมัติ
