@@ -18,6 +18,19 @@ export const slug = (c) => String(c).replace(/\//g, "-");
 export const bi = (th, en, tag = "span", cls = "") =>
   `<${tag}${cls ? ` class="${cls}"` : ""} data-th="${esc(th)}" data-en="${esc(en || th)}">${esc(th)}</${tag}>`;
 
+/* ---------- บทความ (data/articles.json) ---------- */
+/* การ์ดบทความ ใช้ร่วมกันที่หน้าแรก หน้ารวมบทความ และหน้าสินค้าตรา M.T.T.
+   prefix = path ไปโฟลเดอร์ articles/ จากหน้าที่วางการ์ด */
+export const ARTICLE_DATA = JSON.parse(readFileSync("data/articles.json", "utf8"));
+export function guideCardsHTML(prefix, list = ARTICLE_DATA.articles) {
+  const C = ARTICLE_DATA.categories;
+  return list.map((a) => `      <a class="gcard" href="${prefix}${a.slug}.html">
+        ${bi(C[a.cat].tag_th, C[a.cat].tag_en, "span", "tag")}
+        ${bi(a.short_th, a.short_en, "h3")}
+        ${bi(a.card_th, a.card_en, "p")}
+      </a>`).join("\n");
+}
+
 /* ---------- จัดโครงข้อมูล ---------- */
 
 /* แคตตาล็อกต้นฉบับแยกกลุ่มต่อ SKU ในบางหมวด (กรรไกรตัดกิ่ง 13 กลุ่ม กลุ่มละ 1 รายการ)
@@ -189,7 +202,7 @@ export function headHTML({ title, desc, kw, url, ogTitle, ogDesc, ogImage, ld = 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=3">
+<link rel="stylesheet" href="../assets/css/theme.css?v=4">
 <link rel="stylesheet" href="../assets/css/catalog.css?v=1">
 ${ld.map((o) => `<script type="application/ld+json">\n${JSON.stringify(o, null, 2)}\n</script>`).join("\n")}
 ${style ? `<style>\n${style}\n</style>\n` : ""}</head>`;

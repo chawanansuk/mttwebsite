@@ -48,7 +48,7 @@ async function newPage(vp) {
   return page;
 }
 
-const ALL_PAGES = ["/", "/products", "/index.html", "/products/index.html", "/products/tools.html", "/products/tools-holding.html", "/products/tools-automotive.html", "/products/tools-wrenches.html", "/products/tools-electrical.html", "/products/tools-screwdrivers.html", "/products/tools-cutting.html", "/products/tools-cutter.html", "/products/tools-padlock.html", "/products/tools-striking.html", "/products/tools-garden.html", "/products/tools-upholster.html", "/products/tools-measuring.html", "/products/tools-blades.html", "/products/tools-soldering.html", "/products/tools-hydraulic.html", "/products/mtt-brand.html", "/products/safety-pins.html", "/products/safety-pins-wholesale.html", "/products/safety-pins-canvas.html", "/products/safety-pins-running.html", "/products/safety-pins-tags.html", "/products/safety-pins-diaper.html", "/articles/which-safety-pin-size.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/articles/jet-lighter-compact-or-large.html","/articles/jet-lighter-wholesale-margin.html","/articles/which-jet-lighter-brand.html", "/privacy.html", "/404.html"];
+const ALL_PAGES = ["/", "/products", "/index.html", "/products/index.html", "/products/tools.html", "/products/tools-holding.html", "/products/tools-automotive.html", "/products/tools-wrenches.html", "/products/tools-electrical.html", "/products/tools-screwdrivers.html", "/products/tools-cutting.html", "/products/tools-cutter.html", "/products/tools-padlock.html", "/products/tools-striking.html", "/products/tools-garden.html", "/products/tools-upholster.html", "/products/tools-measuring.html", "/products/tools-blades.html", "/products/tools-soldering.html", "/products/tools-hydraulic.html", "/products/mtt-brand.html", "/products/safety-pins.html", "/products/safety-pins-wholesale.html", "/products/safety-pins-canvas.html", "/products/safety-pins-running.html", "/products/safety-pins-tags.html", "/products/safety-pins-diaper.html", "/articles/which-safety-pin-size.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/articles/jet-lighter-compact-or-large.html","/articles/jet-lighter-wholesale-margin.html","/articles/which-jet-lighter-brand.html", "/articles", "/privacy.html", "/404.html"];
 
 /* ---- header/footer อยู่ใน HTML ดิบ (บอตที่ไม่รัน JS เห็น) และตรงกับ _chrome.mjs ---- */
 console.log("\n[ header/footer ฝังใน HTML ]");
@@ -62,6 +62,56 @@ for (const path of ALL_PAGES) {
   assert(bakeChrome(raw) === raw, path + " ตรงกับ _chrome.mjs (ไม่ค้างเวอร์ชันเก่า)");
   assert(raw.includes('href="' + SHOP.LINE_URL + '"') && raw.includes('href="tel:' + SHOP.PHONE_TEL + '"') && !/data-shop="(line-url|phone-tel)" href="#"/.test(raw),
     path + " ลิงก์ LINE/โทร เป็นค่าจริงตั้งแต่ HTML");
+}
+
+/* ---- ข้อมูลโครงสร้าง + บทความ (อ่านจาก HTML ดิบ ไม่ต้องเปิดเบราว์เซอร์) ---- */
+console.log("\n[ JSON-LD / บทความ ]");
+const ARTS = JSON.parse(readFileSync(join(ROOT, "data/articles.json"), "utf8")).articles;
+const SITEMAP = readFileSync(join(ROOT, "sitemap.xml"), "utf8");
+const untag = (h) => h.replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;/g, "'").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
+const ldBlocks = (raw) => [...raw.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+let badLd = [], askHash = [];
+for (const path of ALL_PAGES) {
+  const raw = await (await fetch(base + path)).text();
+  for (const b of ldBlocks(raw)) { try { JSON.parse(b); } catch (e) { badLd.push(path); } }
+  if (/<a\b[^>]*data-line-ask="[^"]*"[^>]*href="#"|<a\b[^>]*href="#"[^>]*data-line-ask=/.test(raw)) askHash.push(path);
+}
+assert(badLd.length === 0, "JSON-LD ทุกบล็อกทุกหน้า parse ได้" + (badLd.length ? " → " + badLd.join(", ") : ""));
+assert(askHash.length === 0, "ปุ่ม/ลิงก์ถาม LINE (data-line-ask) มีลิงก์จริงตั้งแต่ HTML ไม่มี href=\"#\"" + (askHash.length ? " → " + askHash.join(", ") : ""));
+for (const a of ARTS) {
+  const path = "/articles/" + a.slug + ".html", url = "https://mtthardware.com" + path;
+  const raw = await (await fetch(base + path)).text();
+  const lds = ldBlocks(raw).map((b) => JSON.parse(b));
+  const art = lds.find((o) => o["@type"] === "Article"), crumbs = lds.find((o) => o["@type"] === "BreadcrumbList"), faq = lds.find((o) => o["@type"] === "FAQPage");
+  const qa = (raw.match(/<div class="qa">([\s\S]*?)<\/div>/) || [])[1] || "";
+  const shown = [...qa.matchAll(/<h3\b[^>]*>([\s\S]*?)<\/h3>\s*<p\b[^>]*>([\s\S]*?)<\/p>/g)].map((m) => [untag(m[1]), untag(m[2])]);
+  const inLd = faq ? faq.mainEntity.map((q) => [q.name, q.acceptedAnswer.text]) : [];
+  assert(shown.length > 0 && JSON.stringify(shown) === JSON.stringify(inLd), `${a.slug}: คำถาม-คำตอบใน FAQPage ตรงกับที่แสดงบนหน้า (${shown.length}/${inLd.length} ข้อ)`);
+  const canon = (raw.match(/<link rel="canonical" href="([^"]+)"/) || [])[1], ogUrl = (raw.match(/property="og:url" content="([^"]+)"/) || [])[1];
+  assert(canon === url && ogUrl === url && art && art.mainEntityOfPage === url && crumbs && crumbs.itemListElement.at(-1).item === url, `${a.slug}: canonical = og:url = mainEntityOfPage = breadcrumb`);
+  const times = [...raw.matchAll(/<time datetime="([^"]+)"/g)].map((m) => m[1]);
+  const lastmod = (SITEMAP.match(new RegExp(url.replace(/[.]/g, "\\.") + "</loc>\\s*<lastmod>([^<]+)")) || [])[1];
+  assert(art && art.dateModified === a.modified && times.at(-1) === a.modified && lastmod === a.modified, `${a.slug}: วันที่อัปเดตตรงกันทั้งบนหน้า / schema / sitemap (${a.modified})`);
+  const title = (raw.match(/<title>([^<]*)<\/title>/) || [])[1] || "";
+  const ogImg = (raw.match(/property="og:image" content="([^"]+)"/) || [])[1] || "";
+  assert(title.length <= 60 && title.endsWith("| ม.ทวีภัณฑ์") && /og:image:width" content="1200"/.test(raw) && /og:image:height" content="630"/.test(raw) && existsSync(join(ROOT, ogImg.replace("https://mtthardware.com/", ""))),
+    `${a.slug}: title ≤60 มีชื่อร้าน · รูป OG 1200×630 มีไฟล์จริง`);
+}
+{
+  const raw = await (await fetch(base + "/products/jet-lighter.html")).text();
+  const faq = ldBlocks(raw).map((b) => JSON.parse(b)).find((o) => o["@type"] === "FAQPage");
+  const ans = (q) => faq.mainEntity.find((x) => x.name === q).acceptedAnswer.text;
+  const { SHOP: S } = await import(new URL("../_chrome.mjs", import.meta.url));
+  assert(ans("การจัดส่ง") === S.SHIPPING_TH && ans("เลือกสีในกล่องเองได้ไหม") === S.COLORS_TH, "หน้าไฟฟู่: คำตอบเรื่องจัดส่ง/เลือกสีใน schema ตรงกับ shop-config");
+  let mismatch = [];
+  for (const path of ["/products/jet-lighter.html", ...ARTS.filter((a) => a.cat === "jet").map((a) => "/articles/" + a.slug + ".html")]) {
+    const r = await (await fetch(base + path)).text();
+    for (const m of r.matchAll(/data-shop-text="(\w+)" data-th="([^"]*)"/g)) {
+      const want = m[1] === "shipping" ? S.SHIPPING_TH : S.COLORS_TH;
+      if (untag(m[2]) !== want) mismatch.push(path + ":" + m[1]);
+    }
+  }
+  assert(mismatch.length === 0, "ข้อความจัดส่ง/เลือกสี เหมือนกันทุกหน้า (มาจาก shop-config)" + (mismatch.length ? " → " + mismatch.join(", ") : ""));
 }
 
 /* ---- ปิด JS แล้วยังเห็นเมนู/ท้ายเว็บ (เหมือนบอตที่ไม่รัน JS) ---- */
@@ -92,7 +142,7 @@ for (const path of ALL_PAGES) {
 
 /* ---- รูปไม่ยืดผิดสัดส่วน (aspect-ratio guard) ---- */
 console.log("\n[ รูปไม่ยืดผิดสัดส่วน ]");
-for (const [path, w] of [["/products/jet-lighter.html", 1280], ["/products/jet-lighter.html", 390], ["/index.html", 1280]]) {
+for (const [path, w] of [["/products/jet-lighter.html", 1280], ["/products/jet-lighter.html", 390], ["/index.html", 1280], ["/articles/jet-lighter-compact-or-large.html", 390], ["/articles/jet-lighter-wholesale-margin.html", 1280], ["/articles/which-jet-lighter-brand.html", 390]]) {
   const page = await newPage({ width: w, height: 900 });
   await page.goto(base + path, { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(400);

@@ -72,6 +72,11 @@
       "permanent": true
     },
     {
+      "source": "/articles/index.html",
+      "destination": "/articles",
+      "permanent": true
+    },
+    {
       "source": "/products/jet-lighter-alternative-moto.html",
       "destination": "/products/jet-lighter.html",
       "permanent": true

@@ -6,7 +6,7 @@
    ============================================================ */
 import { writeFileSync } from "fs";
 import { bakeChrome } from "./_chrome.mjs";
-import { SITE, DATA, esc, bi, groupHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML } from "./_gen-lib.mjs";
+import { SITE, DATA, esc, bi, groupHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML, guideCardsHTML } from "./_gen-lib.mjs";
 
 const FILE = "mtt-brand.html";
 const URL = `${SITE}/products/${FILE}`;
@@ -152,6 +152,11 @@ ${SECTIONS.filter((s) => bySection[s.key].length).map((s) => `          <a href=
     </div>
 
 ${SECTIONS.map(sectionHTML).filter(Boolean).join("\n\n")}
+
+    <h2 class="sec-h" id="guides"><span data-th="คู่มือเลือกซื้อสินค้าตราสิงโต" data-en="Guides to our lion-brand products">คู่มือเลือกซื้อสินค้าตราสิงโต</span></h2>
+    <div class="guide-grid">
+${guideCardsHTML("../articles/")}
+    </div>
 
 ${ctaBandHTML("ต้องการราคาส่งสินค้าตรา M.T.T.? ทัก LINE ได้เลย", "Want wholesale prices on M.T.T. products? Message us on LINE", "สอบถามราคาสินค้าตรา M.T.T. (ตราสิงโต)")}
   </div>

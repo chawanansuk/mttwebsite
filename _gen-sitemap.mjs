@@ -8,7 +8,12 @@ import { globSync } from "fs";
 const SITE = "https://mtthardware.com";
 const today = new Date().toISOString().slice(0, 10);
 const dirty = new Set(execSync("git status --porcelain", { encoding: "utf8" }).split("\n").map((l) => l.slice(3).trim()).filter(Boolean));
-const lastmod = (f) => dirty.has(f) ? today : (execSync(`git log -1 --format=%cs -- "${f}"`, { encoding: "utf8" }).trim() || today);
+/* บทความใช้วันที่แก้เนื้อหาจริงจาก data/articles.json (ตรงกับวันที่บนหน้าและใน schema)
+   ไม่ใช้วันที่ commit เพราะการแก้ header/footer ร่วมทั้งเว็บไม่ได้แปลว่าบทความถูกแก้ */
+const ART = Object.fromEntries(JSON.parse(readFileSync("data/articles.json", "utf8")).articles.map((a) => [`articles/${a.slug}.html`, a.modified]));
+const ART_NEWEST = Object.values(ART).sort().at(-1);
+const lastmod = (f) => ART[f] || (f === "articles/index.html" ? ART_NEWEST : null)
+  || (dirty.has(f) ? today : (execSync(`git log -1 --format=%cs -- "${f}"`, { encoding: "utf8" }).trim() || today));
 
 /* priority/changefreq ตามบทบาทของหน้า */
 const rule = (f) => {
@@ -17,10 +22,11 @@ const rule = (f) => {
   if (/^products\/(index|tools|safety-pins|jet-lighter|mtt-brand)\.html$/.test(f)) return ["weekly", "0.9"];
   if (/^products\/tools-/.test(f)) return ["monthly", "0.8"];
   if (/^products\//.test(f)) return ["monthly", "0.7"];
+  if (f === "articles/index.html") return ["weekly", "0.7"];
   if (/^articles\//.test(f)) return ["monthly", "0.6"];
   return ["monthly", "0.5"];
 };
-const loc = (f) => f === "index.html" ? `${SITE}/` : f === "products/index.html" ? `${SITE}/products` : `${SITE}/${f}`;
+const loc = (f) => f === "index.html" ? `${SITE}/` : /^(products|articles)\/index\.html$/.test(f) ? `${SITE}/${f.split("/")[0]}` : `${SITE}/${f}`;
 
 const files = globSync("{index,privacy}.html").concat(globSync("products/*.html"), globSync("articles/*.html")).sort();
 const urls = files.map((f) => {

@@ -24,6 +24,13 @@ window.SHOP = {
   HOURS_TH: "",   // ยังไม่มีข้อมูลจากร้าน — ว่าง = ซ่อนแถวเวลาทำการ (ใส่เช่น "จันทร์–เสาร์ 8:30–17:30")
   FACEBOOK_URL: "#",
 
+  // ข้อความนโยบายที่ใช้ซ้ำหลายหน้า (หน้าสินค้าไฟฟู่ + บทความ) — แก้ที่นี่ที่เดียว แล้วรัน npm run bake
+  // ใส่ลงหน้าเว็บผ่าน data-shop-text="shipping" / "colors" (ดู _chrome.mjs)
+  SHIPPING_TH: "สินค้าบรรจุแก๊ส (ไวไฟ) จัดส่งทางรถขนส่งที่รองรับ ส่งทั่วไทย เก็บเงินปลายทางได้ ทางร้านแจ้งค่าส่งให้ก่อนยืนยันออเดอร์",
+  SHIPPING_EN: "Contains flammable gas, so it travels by ground couriers that accept it. Nationwide, cash on delivery available, and we confirm the shipping cost before you commit.",
+  COLORS_TH: "ได้ ตอนสั่งยกกล่องเลือกจำนวนแต่ละสีได้เอง ในตะกร้าหน้าสินค้าหรือแจ้งทาง LINE ทางร้านเช็คสต็อกสีให้ก่อนยืนยันออเดอร์",
+  COLORS_EN: "Yes. Set how many of each colour you want when you order a box, in the cart on the product page or on LINE, and we check colour stock before confirming.",
+
   // วาง URL ฝัง Google Maps ของร้าน (คัดลอกจาก Google Maps > แชร์ > ฝังแผนที่ > src="...")
   // ถ้าเว้นว่าง หน้าแรกจะซ่อนช่องแผนที่ให้อัตโนมัติ
   MAPS_EMBED_URL: ""
