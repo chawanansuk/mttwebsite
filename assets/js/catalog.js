@@ -36,7 +36,7 @@ window.CATALOG = (function () {
       category: "lighter",
       name_th: "ไฟฟู่ M.T.T.", name_en: "M.T.T. Jet Lighter",
       glyph: "🔥",
-      image: "assets/img/products/jet-lighter.webp",
+      image: "assets/img/products/jet-lighter.webp", image_sm: "assets/img/products/jet-lighter-640.webp", image_w: 1200,
       tagline_th: "หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี",
       tagline_en: "High-pressure jet, windproof, refillable, 5 colors",
       live: true,
@@ -75,19 +75,19 @@ window.CATALOG = (function () {
     /* live:false + url = มีหน้ารวมของตัวเองแล้ว (โชว์ "สอบถามราคา" ลิงก์ไปหน้านั้น ไม่ใช่ทัก LINE) */
     { id: "wynn-tools", category: "tools", glyph: "🧰", live: false,
       url: "products/tools.html",
-      image: "assets/img/products/wynn-tools.webp",
+      image: "assets/img/products/wynn-tools.webp", image_sm: "assets/img/products/wynn-tools-640.webp", image_w: 1200,
       name_th: "เครื่องมือช่าง WYNNTOOLS", name_en: "WYNNTOOLS hand tools",
       tagline_th: "คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย",
       tagline_en: "Pliers, wrenches, electrical, measuring — exclusive Thai importer" },
     { id: "safety-pins", category: "pins", glyph: "🧷", live: false,
-      image: "assets/img/products/safety-pins-hero.webp",
+      image: "assets/img/products/safety-pins-hero.webp", image_sm: "assets/img/products/safety-pins-hero-sm.webp", image_w: 1024,
       url: "products/safety-pins.html",
       name_th: "เข็มกลัดซ่อนปลาย เบอร์ 000–7", name_en: "Safety pins size 000–7",
       tagline_th: "ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง",
       tagline_en: "Every size in one place — box, gross, or dozen, counted not weighed" },
     { id: "mtt-brand", category: "mtt", glyph: "🦁", live: false,
       url: "products/mtt-brand.html",
-      image: "assets/img/products/mtt-brand.webp",
+      image: "assets/img/products/mtt-brand.webp", image_sm: "assets/img/products/mtt-brand-640.webp", image_w: 1200,
       name_th: "สินค้าตรา M.T.T. (ตราสิงโต)", name_en: "M.T.T. lion-brand products",
       tagline_th: "แบรนด์ของร้านเอง — กุญแจสิงห์เงิน-สิงห์ทอง คีย์อะไลค์ เข็มกลัด ประแจเลื่อน มีดครัว",
       tagline_en: "Our own brand — lion padlocks, keyed-alike sets, safety pins, wrenches, kitchen knives" },
@@ -167,7 +167,9 @@ window.CATALOG = (function () {
   function productThumb(p, base, eager) {
     base = base || "";
     // eager = การ์ดใบแรกที่อยู่ในจอตอนเปิดหน้า (LCP) — ห้าม lazy ไม่งั้นรอ 1.6 วิบน 4G
-    if (p.image) return '<img src="' + base + p.image + '" alt="' + (p.name_th || "") + '" width="1200" height="900"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + '>';
+    // รูปย่อ 640px สำหรับการ์ดที่แสดงกว้างราว 270–350px (ประหยัดดาต้า 2–3 เท่า) ต้นฉบับใช้เมื่อจอใหญ่/ความละเอียดสูง
+    var srcset = p.image_sm ? ' srcset="' + base + p.image_sm + ' 640w, ' + base + p.image + ' ' + (p.image_w || 1200) + 'w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px"' : "";
+    if (p.image) return '<img src="' + base + p.image + '"' + srcset + ' alt="' + (p.name_th || "") + '" width="1200" height="900"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + '>';
     return '<span class="glyph">' + (p.glyph || "📦") + '</span>';
   }
 

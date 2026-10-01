@@ -19,8 +19,9 @@
 <meta name="theme-color" content="#101a30">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=4">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="../assets/css/theme.css?v=5">
+<link rel="stylesheet" href="../assets/css/pins.css?v=1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,13 +51,7 @@
 </script>
 <style>
 .run-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.16),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:48px 0 26px}
-.crumbs{font-size:.82rem;color:var(--ink-mute);margin-bottom:14px}
-.crumbs a{color:var(--ink-mute)}
 .run-hero h1{font-size:clamp(1.8rem,3.8vw,2.6rem);margin:6px 0 8px}
-.trust{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 18px}
-.trust .badge{font-size:.82rem;padding:7px 14px}
-.cta-row{display:flex;flex-wrap:wrap;gap:10px}
-.sec-h{font-size:clamp(1.2rem,2.4vw,1.55rem);margin:38px 0 12px}
 .step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .step{padding:18px}
 .step .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:var(--radius-sm);background:var(--amber-soft);color:var(--amber-dark);font-family:var(--font-head);font-weight:700;margin-bottom:8px}
@@ -73,13 +68,6 @@
 .why-grid .card{padding:18px}
 .why-grid b{display:block;font-family:var(--font-head);font-size:1rem;margin-bottom:4px}
 .why-grid p{color:var(--ink-dim);font-size:.875rem;margin:0}
-.faq{margin-top:6px;display:grid;gap:10px}
-.faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
-.faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:.95rem;padding:13px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-size:1.15rem;color:var(--amber);flex:none}
-.faq details[open] summary::after{content:"–"}
-.faq .a{padding:0 0 13px;color:var(--ink-2);font-size:.875rem}
 @media(max-width:768px){.step-grid,.why-grid{grid-template-columns:1fr}}
 </style>
 </head>

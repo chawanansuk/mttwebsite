@@ -215,6 +215,17 @@ section{padding:64px 0}
 .cta-band h2{color:#fff;font-size:1.25rem;margin:0 0 4px}
 .cta-band p{color:#c2cbde;margin:0;font-size:.9rem}
 
+/* ---------- บล็อกที่ใช้ร่วมหลายหน้า (เดิมซ้ำใน catalog.css / article.css / <style> ของหน้า) ---------- */
+.crumbs{font-size:.82rem;color:var(--ink-mute);margin-bottom:14px}
+.crumbs a{color:var(--ink-mute);display:inline-block;padding:4px 0}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px}
+.sec-h{font-size:clamp(1.2rem,2.4vw,1.5rem);margin:38px 0 12px;scroll-margin-top:90px}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+/* ลิงก์ในลิสต์ท้ายเว็บและในตาราง: กล่องกดสูง 24px (WCAG 2.5.8) โดยไม่ขยับเลย์เอาต์ */
+.site-footer li a,.size-run .no a{display:inline-block;padding:4px 0;margin:-4px 0}
+table.size a,table.art a,table.cmp a,table.job a,table.box a{display:inline-block;padding:4px 6px;margin:-4px -6px}
+
 /* ---------- toast ---------- */
 .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
   background:var(--navy);color:#fff;padding:12px 22px;border-radius:var(--radius-full);font-weight:600;

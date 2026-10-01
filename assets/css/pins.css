@@ -1,0 +1,36 @@
+/* ============================================================
+   pins.css — หน้าเข็มกลัด (products/safety-pins-*.html)
+   เดิมฝัง <style> ชุดเดียวกันซ้ำ 15 หน้า ย้ายมาไฟล์เดียวให้แก้ที่เดียวและเบราว์เซอร์ cache ได้
+   กฎที่ใช้ทุกหน้า (.crumbs .sec-h .tblwrap .cta-band .cta-row) อยู่ใน theme.css
+   ============================================================ */
+.pd-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.16),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:48px 0 26px}
+.pd-hero h1{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:6px 0 8px}
+.trust{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 18px}
+.trust .badge{font-size:.82rem;padding:7px 14px}
+.sizebox{border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--surface);padding:22px;margin-top:8px}
+.pinvis{margin:8px 0 18px;min-height:44px;display:flex;align-items:center;max-width:360px}
+.sizebox-top{display:grid;grid-template-columns:190px minmax(0,1fr);gap:22px;align-items:start}
+.sizebox-body{min-width:0}
+.pinshot{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:var(--radius-sm);background:#fff}
+@media(max-width:640px){.sizebox-top{grid-template-columns:1fr;gap:14px}.pinshot{max-width:170px;margin:0 auto}.sizebox{padding:16px}}
+.pinvis img{display:block;height:auto;max-width:100%}
+.spec-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}
+.spec-grid .it{background:var(--bg-soft);border-radius:var(--radius);padding:12px 14px}
+.spec-grid .it small{display:block;color:var(--ink-mute);font-size:.75rem;margin-bottom:2px}
+.spec-grid .it b{font-family:var(--font-head);font-size:1rem}
+.use-list{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;padding:0;margin:0;list-style:none}
+.use-list li{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);font-size:.9rem}
+.use-list li::before{content:"✔ " / "";color:var(--amber-dark);font-weight:700}
+table.cmp{width:100%;border-collapse:collapse;font-size:.875rem;min-width:520px}
+table.cmp th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:9px 14px;white-space:nowrap}
+table.cmp td{padding:9px 14px;border-top:1px solid var(--line)}
+table.cmp tr.me td{background:#e9f8f0}
+.faq{margin-top:6px;display:grid;gap:10px}
+.faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
+.faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:.95rem;padding:13px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.15rem;color:var(--amber);flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 0 13px;color:var(--ink-2);font-size:.875rem}
+@media(max-width:900px){.spec-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.spec-grid{grid-template-columns:1fr 1fr}.use-list{grid-template-columns:1fr}}

@@ -22,8 +22,8 @@
 <meta name="theme-color" content="#101a30">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=4">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="../assets/css/theme.css?v=5">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -730,7 +730,7 @@ function renderSwatches(){
   // บล็อกสีตามรุ่น (รูปเรียง 5 สีของจริง + สวอตช์)
   document.getElementById("colorBlocks").innerHTML=PRODUCT.variants.map(v=>`
     <div class="cblock">
-      <img src="../${v.img_colors}" alt="ไฟฟู่ ${v.name_th} ${v.code} ครบ 5 สี — ${v.colors.map(c=>c.th).join(" ")}" loading="lazy" width="1100" height="1100">
+      <img src="../${v.img_colors}" srcset="../${v.img_colors.replace(/\.webp$/,"-640.webp")} 640w, ../${v.img_colors} 1100w" sizes="(max-width:900px) calc(100vw - 44px), 520px" alt="ไฟฟู่ ${v.name_th} ${v.code} ครบ 5 สี — ${v.colors.map(c=>c.th).join(" ")}" loading="lazy" width="1100" height="1100">
       <div class="cb-body">
         <div class="cb-head"><h3>${th?v.name_th:v.name_en} · 5 ${th?"สี":"colors"}</h3><span class="cb-code">${v.code} · ${th?"สูง":"H"} ${v.height_cm} ${th?"ซม.":"cm"}</span></div>
         <div class="swatches">${v.colors.map(c=>{const k=v.key+":"+c.key;return `
@@ -748,7 +748,7 @@ function renderPricing(){
   const th=L()==="th";
   document.getElementById("priceGrid").innerHTML=PRODUCT.variants.map(v=>`
     <div class="pcard">
-      <div class="pmedia"><img src="../${v.img_life}" alt="ไฟฟู่ ${v.name_th} ${v.code} สูง ${v.height_cm} ซม." loading="lazy" width="1100" height="1100"><span class="pcode">${v.code} · ${th?"สูง":"H"} ${v.height_cm} ${th?"ซม.":"cm"}</span></div>
+      <div class="pmedia"><img src="../${v.img_life}" srcset="../${v.img_life.replace(/\.webp$/,"-640.webp")} 640w, ../${v.img_life} 1100w" sizes="(max-width:900px) calc(100vw - 44px), 560px" alt="ไฟฟู่ ${v.name_th} ${v.code} สูง ${v.height_cm} ซม." loading="lazy" width="1100" height="1100"><span class="pcode">${v.code} · ${th?"สูง":"H"} ${v.height_cm} ${th?"ซม.":"cm"}</span></div>
       <span class="kicker">${th?"ไฟพ่นแก๊ส ตราสิงโต":"Lion-brand jet torch"} · ${v.code}</span>
       <h3>${th?v.name_th:v.name_en}</h3>
       <p class="spec">${th?v.spec_th:v.spec_en}</p>
@@ -773,7 +773,7 @@ function renderWholesale(){
     const o=v.options.find(x=>x.box); if(!o) return "";
     const per=CATALOG.perPiece(o), pct=CATALOG.savingsPct({...o,retail:v.retail});
     return `<div class="wbox">
-      <img src="../${v.img_box}" alt="ไฟฟู่ M.T.T. ตราสิงโต ${v.name_th} ${v.code} กล่อง ${o.qty} ชิ้น คละสี" loading="lazy" width="1200" height="1000">
+      <img src="../${v.img_box}" srcset="../${v.img_box.replace(/\.webp$/,"-640.webp")} 640w, ../${v.img_box} 1200w" sizes="(max-width:900px) calc(100vw - 44px), 560px" alt="ไฟฟู่ M.T.T. ตราสิงโต ${v.name_th} ${v.code} กล่อง ${o.qty} ชิ้น คละสี" loading="lazy" width="1200" height="1000">
       <div class="wb-body">
         <div class="wb-name">${th?v.name_th:v.name_en} <small>${v.code}</small></div>
         <div class="wb-meta">${o.qty} ${th?"ชิ้น/กล่อง":"pcs/box"} · ${th?"คละครบ 5 สี":"all 5 colors"} · ${th?"ประหยัด":"save"} <b>${pct}%</b></div>
@@ -937,6 +937,8 @@ renderProduct();
 (function(){
   var v=document.getElementById('heroVideo'), b=document.getElementById('heroSound'); if(!v||!b) return;
   if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ v.removeAttribute('autoplay'); v.pause(); }
+  // โหมดประหยัดดาต้า / เน็ตช้า: ไม่ดึงคลิป 1MB เอง ให้เห็นภาพนิ่ง (poster) แล้วกดเล่นเมื่อต้องการ
+  var c=navigator.connection||{}; if(c.saveData || /(^|-)2g$/.test(c.effectiveType||'')){ v.removeAttribute('autoplay'); v.preload='none'; v.controls=true; v.pause(); }
   b.addEventListener('click', function(){
     v.muted=!v.muted; if(v.paused) v.play();
     var th=(window.MTT&&window.MTT.getLang()||'th')==='th';

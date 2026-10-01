@@ -19,8 +19,9 @@
 <meta name="theme-color" content="#101a30">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=4">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="../assets/css/theme.css?v=5">
+<link rel="stylesheet" href="../assets/css/pins.css?v=1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -46,16 +47,7 @@
   ]
 }
 </script>
-<style>
-.pd-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.16),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:48px 0 26px}
-.crumbs{font-size:.82rem;color:var(--ink-mute);margin-bottom:14px}
-.crumbs a{color:var(--ink-mute)}
-.pd-hero h1{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:6px 0 8px}
-.trust{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 18px}
-.trust .badge{font-size:.82rem;padding:7px 14px}
-.cta-row{display:flex;flex-wrap:wrap;gap:10px}
-.sec-h{font-size:clamp(1.2rem,2.4vw,1.55rem);margin:38px 0 12px}
-.pick-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+<style>.pick-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .pick{padding:20px;display:flex;flex-direction:column}
 .pick .num{font-family:var(--font-head);font-weight:700;font-size:1.25rem}
 .pick .len{font-size:.82rem;color:var(--ink-mute);font-weight:600;margin-bottom:8px}
@@ -65,16 +57,6 @@
 .who-grid .card{padding:18px}
 .who-grid b{display:block;font-family:var(--font-head);font-size:1rem;margin-bottom:4px}
 .who-grid p{color:var(--ink-dim);font-size:.875rem;margin:0}
-.faq{margin-top:6px;display:grid;gap:10px}
-.faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:0 18px}
-.faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:.95rem;padding:13px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-size:1.15rem;color:var(--amber);flex:none}
-.faq details[open] summary::after{content:"–"}
-.faq .a{padding:0 0 13px;color:var(--ink-2);font-size:.875rem}
-.cta-band{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:28px;margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
-.cta-band h2{color:#fff;font-size:1.25rem;margin:0 0 4px}
-.cta-band p{color:#c2cbde;margin:0;font-size:.9rem}
 @media(max-width:768px){.pick-grid,.who-grid{grid-template-columns:1fr}}
 </style>
 </head>

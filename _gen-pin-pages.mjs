@@ -114,7 +114,7 @@ function neighbors(i) {
 }
 
 function pageHTML(p, i) {
-  const title = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} (${p.mm} มม.) ขายส่งยกกล่อง | ม.ทวีภัณฑ์`;
+  const title = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ${p.mm} มม. ขายส่งยกกล่อง | ม.ทวีภัณฑ์`;
   // meta description ต้อง <=155 ตัวอักษร (Google ตัดที่ราว ๆ นี้) — ต่อท้ายเท่าที่ยังพอดี
   const use = p.uses_th[0].split(' — ')[0];
   const descBase = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ยาว ${p.cm} ซม. (${p.mm} มม.) เหล็กชุบนิกเกิล เหมาะ${use} ขายยกกล่อง ${p.pack} ตัว ราคาส่ง`;
@@ -170,8 +170,8 @@ function pageHTML(p, i) {
 <meta name="theme-color" content="#101a30">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=4">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="../assets/css/theme.css?v=5">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -209,48 +209,7 @@ ${faqSchema}
   ]
 }
 </script>
-<style>
-.pd-hero{background:radial-gradient(900px 420px at 82% -20%,rgba(18,161,80,.16),transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:48px 0 26px}
-.crumbs{font-size:.82rem;color:var(--ink-mute);margin-bottom:14px}
-.crumbs a{color:var(--ink-mute)}
-.pd-hero h1{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:6px 0 8px}
-.trust{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 18px}
-.trust .badge{font-size:.82rem;padding:7px 14px}
-.cta-row{display:flex;flex-wrap:wrap;gap:10px}
-.sizebox{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);padding:22px;margin-top:8px}
-.pinvis{margin:8px 0 18px;min-height:44px;display:flex;align-items:center;max-width:360px} /* เบอร์ 7 = 360px ไม่ให้การ์ตูนเข็มกว้าง 880px กลบรูปจริง */
-.sizebox-top{display:grid;grid-template-columns:190px minmax(0,1fr);gap:22px;align-items:start}
-.sizebox-body{min-width:0}
-.pinshot{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:var(--radius-sm);background:#fff}
-@media(max-width:640px){.sizebox-top{grid-template-columns:1fr;gap:14px}.pinshot{max-width:170px;margin:0 auto}.sizebox{padding:16px}}
-.pinvis img{display:block;height:auto;max-width:100%}
-.spec-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}
-.spec-grid .it{background:var(--bg-soft);border-radius:var(--r);padding:12px 14px}
-.spec-grid .it small{display:block;color:var(--ink-mute);font-size:.75rem;margin-bottom:2px}
-.spec-grid .it b{font-family:var(--font-head);font-size:1rem}
-.sec-h{font-size:clamp(1.2rem,2.4vw,1.5rem);margin:38px 0 12px}
-.use-list{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;padding:0;margin:0;list-style:none}
-.use-list li{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);font-size:.9rem}
-.use-list li::before{content:"✔ " / "";color:var(--amber-dark);font-weight:700}
-.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
-.tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
-table.cmp{width:100%;border-collapse:collapse;font-size:.875rem;min-width:520px}
-table.cmp th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:9px 14px;white-space:nowrap}
-table.cmp td{padding:9px 14px;border-top:1px solid var(--line)}
-table.cmp tr.me td{background:#e9f8f0}
-.faq{margin-top:6px;display:grid;gap:10px}
-.faq details{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:0 18px}
-.faq summary{cursor:pointer;font-family:var(--font-head);font-weight:600;font-size:.95rem;padding:13px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-size:1.15rem;color:var(--amber);flex:none}
-.faq details[open] summary::after{content:"–"}
-.faq .a{padding:0 0 13px;color:var(--ink-2);font-size:.875rem}
-.cta-band{background:var(--navy);color:#fff;border-radius:var(--r-lg);padding:28px;margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
-.cta-band h2{color:#fff;font-size:1.25rem;margin:0 0 4px}
-.cta-band p{color:#c2cbde;margin:0;font-size:.9rem}
-@media(max-width:900px){.spec-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:640px){.spec-grid{grid-template-columns:1fr 1fr}.use-list{grid-template-columns:1fr}}
-</style>
+<link rel="stylesheet" href="../assets/css/pins.css?v=1">
 </head>
 <body>
 <div id="site-header"></div>
@@ -283,7 +242,7 @@ table.cmp tr.me td{background:#e9f8f0}
         <img class="pinshot" src="../assets/img/products/pin-${p.no}.webp" alt="เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ขนาด ${p.mm} มม. ลวด ${p.wire} มม. ชุบนิกเกิลสีเงิน" width="450" height="600" loading="lazy">
         <div class="sizebox-body">
           <small style="color:var(--ink-mute)" data-th="ความยาวเทียบเบอร์ใหญ่สุด (เบอร์ 7 = 85 มม.)" data-en="Length vs the largest size (7 = 85 mm)">ความยาวเทียบเบอร์ใหญ่สุด (เบอร์ 7 = 85 มม.)</small>
-          <div class="pinvis" aria-hidden="true"><img src="../assets/img/products/safety-pin.svg" alt="" style="width:${Math.round(p.mm / MAXMM * 100)}%"></div>
+          <div class="pinvis" aria-hidden="true"><img src="../assets/img/products/safety-pin.svg" alt="" width="200" height="72" style="width:${Math.round(p.mm / MAXMM * 100)}%"></div>
         </div>
       </div>
       <div class="spec-grid">

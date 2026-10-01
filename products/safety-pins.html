@@ -21,8 +21,8 @@
 <meta name="theme-color" content="#101a30">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/theme.css?v=4">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="../assets/css/theme.css?v=5">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -157,7 +157,6 @@
 .pin-card .flag{margin-left:6px}
 /* ---- ตารางขนาด ---- */
 .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
-.tblwrap:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
 table.size{width:100%;border-collapse:collapse;font-size:.875rem;min-width:560px}
 table.size th{font-family:var(--font-head);font-weight:600;text-align:left;background:var(--navy);color:#fff;padding:10px 14px;white-space:nowrap}
 table.size td{padding:9px 14px;border-top:1px solid var(--line)}
@@ -444,7 +443,7 @@ function renderPins(){
     /* การ์ดมี 2 ทาง: ชื่อเบอร์ → หน้ารายเบอร์ (สเปค/FAQ), ปุ่ม → ถามราคาทาง LINE (เดิมทั้งใบไป LINE ไม่มีทางเข้าหน้ารายเบอร์) */
     return `<div class="card pin-card" id="pin-${p.no}">
       <div class="head"><span class="num"><a href="safety-pins-${p.no}.html" aria-label="${name}">${th?"เบอร์ ":"#"}${p.no}</a></span><span class="len">${p.cm} ${th?"ซม.":"cm"} · ${p.mm} ${th?"มม.":"mm"}</span></div><div class="flagrow">${flag||""}</div>
-      <div class="pinvis" aria-hidden="true"><img src="../assets/img/products/safety-pin.svg" alt="" loading="lazy" style="width:${Math.round(p.mm/maxMM*maxW)}%"></div>
+      <div class="pinvis" aria-hidden="true"><img src="../assets/img/products/safety-pin.svg" alt="" width="200" height="72" loading="lazy" style="width:${Math.round(p.mm/maxMM*maxW)}%"></div>
       <p class="use">${th?p.uth:p.uen}</p>
       <p class="pack">${th?"บรรจุ ~":"~"}${p.pack} ${th?"ตัว/กล่อง":"pcs/box"}</p>
       <div class="row"><a class="tagm" href="safety-pins-${p.no}.html">${th?"ดูสเปคเบอร์ "+p.no+" →":"Size "+p.no+" specs →"}</a><a class="btn btn-primary btn-sm" href="${ask}" target="_blank" rel="noopener">${th?"เช็คราคา":"Ask price"}</a></div>

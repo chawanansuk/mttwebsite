@@ -131,7 +131,7 @@ ${crumbsHTML(`<a href="/products" data-th="สินค้า" data-en="Products
 ${SECTIONS.filter((s) => bySection[s.key].length).map((s) => `          <a href="#${s.key}"><span aria-hidden="true">${s.icon}</span> ${bi(s.th, s.en)}</a>`).join("\n")}
         </nav>
       </div>
-      <div class="hero-pic"><img src="../assets/img/products/mtt-brand.webp" alt="สินค้าตรา M.T.T. ตราสิงโต — กุญแจ เข็มกลัด ประแจเลื่อน ปืนยิงกาว" width="1200" height="900" fetchpriority="high"></div>
+      <div class="hero-pic"><img src="../assets/img/products/mtt-brand.webp" srcset="../assets/img/products/mtt-brand-640.webp 640w, ../assets/img/products/mtt-brand.webp 1200w" sizes="(max-width:860px) calc(100vw - 44px), 480px" alt="สินค้าตรา M.T.T. ตราสิงโต — กุญแจ เข็มกลัด ประแจเลื่อน ปืนยิงกาว" width="1200" height="900" fetchpriority="high"></div>
     </div>
 
     <h2 class="vh" data-th="ทำไมต้องสินค้าตรา M.T.T." data-en="Why M.T.T. brand">ทำไมต้องสินค้าตรา M.T.T.</h2>
