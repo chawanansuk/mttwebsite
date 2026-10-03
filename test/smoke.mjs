@@ -157,7 +157,8 @@ for (const [path, w] of [["/products/jet-lighter.html", 1280], ["/products/jet-l
       if (!im.naturalWidth) return null;
       const r = im.getBoundingClientRect();
       if (r.width < 10 || r.height < 10) return null;
-      if (getComputedStyle(im).objectFit === "cover") return null; // ตั้งใจ crop
+      const fit = getComputedStyle(im).objectFit;
+      if (fit === "cover" || fit === "contain" || fit === "scale-down") return null; // cover = ตั้งใจ crop, contain = ย่อทั้งรูปไม่บิดสัดส่วน
       const natAR = im.naturalWidth / im.naturalHeight, renAR = r.width / r.height;
       return Math.abs(natAR - renAR) / natAR > 0.02
         ? im.src.split("/").pop() + " " + natAR.toFixed(2) + "→" + renAR.toFixed(2) : null;

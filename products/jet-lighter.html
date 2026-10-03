@@ -240,7 +240,8 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
 /* การ์ดกล่องต่อรุ่น: รูปกล่อง + ราคา + ปุ่มหยิบ (สั่งยกกล่องได้จากตรงนี้เลย) */
 .whole-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .wbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
-.wbox img{width:100%;aspect-ratio:1/1;object-fit:contain;display:block;background:#fff}
+/* รูปกล่องทั้งสองรุ่นเป็น 1200×1000 เท่ากัน แสดงตามสัดส่วนจริง (เดิมบังคับเป็นสี่เหลี่ยมจัตุรัส Chrome รุ่นใหม่จึงเหลือแถบขาวบน-ล่าง) */
+.wbox img{width:100%;height:auto;display:block;background:#fff}
 .wbox .wb-body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
 .wbox .wb-name{font-family:var(--font-head);font-weight:600;color:#fff;font-size:1rem;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
 .wbox .wb-name small{font-family:var(--font-body);font-weight:600;color:#a9a5b8;font-size:.75rem}
@@ -371,7 +372,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
   .whole-cards{grid-template-columns:minmax(0,1fr);gap:10px}
   .wbox{display:grid;grid-template-columns:104px minmax(0,1fr)}
   .wbox .wb-row{flex-wrap:wrap;gap:6px 8px}
-  .wbox img{aspect-ratio:auto;height:100%}
+  .wbox img{height:100%;object-fit:cover}
   .wbox .wb-body{padding:10px 12px 12px}
   .wbox .wb-name{font-size:.95rem}
   .wbox .wb-meta{font-size:.75rem;margin-bottom:8px}
