@@ -36,5 +36,6 @@ for(const a of anchors){
 }
 const brokenList=[...new Set(broken)];
 console.log(brokenList.length?('BROKEN:\n'+brokenList.join('\n')):'ลิงก์ภายในทุกตัว OK ('+seen.size+' ไฟล์, '+anchors.length+' anchors)');
+if(process.env.GITHUB_ACTIONS) brokenList.forEach(b=>console.log('::error title=linkcheck::'+b));
 await b.close();server.close();
 process.exit(brokenList.length ? 1 : 0); // ให้ CI fail เมื่อเจอลิงก์/anchor เสีย

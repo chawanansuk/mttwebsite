@@ -32,7 +32,10 @@ const base = "http://localhost:" + port;
 
 const fails = [];
 const log = (m) => console.log("  " + m);
-function assert(cond, msg) { if (cond) log("✓ " + msg); else { fails.push(msg); log("✗ " + msg); } }
+// บน GitHub Actions ข้อที่ไม่ผ่านขึ้นเป็น annotation ด้วย (เห็นในหน้า PR/commit โดยไม่ต้องเปิด log)
+const GHA = !!process.env.GITHUB_ACTIONS;
+const ghaEsc = (m) => String(m).replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A");
+function assert(cond, msg) { if (cond) log("✓ " + msg); else { fails.push(msg); log("✗ " + msg); if (GHA) console.log("::error title=smoke::" + ghaEsc(msg)); } }
 
 process.on("unhandledRejection", (e) => { console.error("\n❌ UNHANDLED: " + (e && e.message || e)); process.exit(1); });
 
