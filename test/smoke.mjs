@@ -8,6 +8,7 @@ const { chromium } = pw;
 import http from "http";
 import { readFileSync, existsSync, statSync } from "fs";
 import { extname, join, resolve } from "path";
+import { useLocalFonts } from "./fonts.mjs";
 
 const ROOT = resolve(process.argv[2] || ".");
 const MIME = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript",
@@ -37,6 +38,8 @@ process.on("unhandledRejection", (e) => { console.error("\n❌ UNHANDLED: " + (e
 
 // ตั้ง CHROMIUM_PATH ได้ ถ้าเครื่องมี Chromium อยู่แล้วแต่เวอร์ชันไม่ตรงกับที่ Playwright ดาวน์โหลด
 const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
+// ฟอนต์จริงแบบออฟไลน์ (test/fonts.mjs) — เลย์เอาต์ตรงกับเว็บจริงทุกเครื่อง ไม่ขึ้นกับว่าต่อ Google Fonts ได้ไหม
+console.log(useLocalFonts(browser) ? "ฟอนต์: Kanit/Anuphan จาก @fontsource (ออฟไลน์)" : "ฟอนต์: ไม่พบ @fontsource — ใช้ฟอนต์จากเน็ต/ฟอนต์สำรอง");
 async function newPage(vp) {
   const page = await browser.newPage(vp ? { viewport: vp } : undefined);
   page.setDefaultNavigationTimeout(30000);      // การโหลดหน้า (cold start ช้าได้)

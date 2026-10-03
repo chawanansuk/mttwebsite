@@ -12,6 +12,8 @@
     "img": "node _img-variants.mjs"
   },
   "devDependencies": {
+    "@fontsource/anuphan": "^5.3.0",
+    "@fontsource/kanit": "^5.3.0",
     "playwright": "^1.48.0"
   }
 }
