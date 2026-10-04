@@ -48,7 +48,7 @@ function headerHTML(base, page) {
       ${links}
   </nav>
   <div class="nav-right">
-    <a class="cart-btn" href="${base}products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-en-aria-label="Cart" data-en-aria-label="Cart" data-th-title="ตะกร้าสินค้า" data-en-title="Cart">${CART_ICON}<span class="cart-badge" id="cartBadge" hidden>0</span></a>
+    <a class="cart-btn" href="${base}products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-en-aria-label="Cart" data-th-title="ตะกร้าสินค้า" data-en-title="Cart">${CART_ICON}<span class="cart-badge" id="cartBadge" hidden>0</span></a>
     <div class="lang" role="group" aria-label="ภาษา" data-th-aria-label="ภาษา" data-en-aria-label="Language"><button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button></div>
     <a class="btn btn-line btn-sm" ${LINE_ATTRS} aria-label="สั่งทาง LINE" data-th-aria-label="สั่งทาง LINE" data-en-aria-label="Order on LINE">${LINE_ICON}<span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>
     <button class="nav-toggle" aria-label="เปิดเมนู" data-th-aria-label="เปิดเมนู" data-en-aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
