@@ -115,7 +115,7 @@ function tocBlock(html) {
   const body = html.slice(html.indexOf("<!--/art:toc-->"), html.indexOf("<!--art:next-->"));
   const hs = [...body.matchAll(/<h2 class="sec-h" id="([^"]+)" data-th="([^"]*)" data-en="([^"]*)"/g)];
   if (hs.length < 5) return "";
-  return `    <nav class="toc" aria-label="สารบัญ">
+  return `    <nav class="toc" aria-label="สารบัญ" data-th-aria-label="สารบัญ" data-en-aria-label="Contents">
       <b data-th="ในบทความนี้" data-en="In this article">ในบทความนี้</b>
       <ol>
 ${hs.map((h) => `        <li><a href="#${h[1]}" data-th="${h[2]}" data-en="${h[3]}">${unesc(h[2])}</a></li>`).join("\n")}
@@ -189,7 +189,7 @@ ${guideCards("/articles/", list)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/theme.css?v=5">
+<link rel="stylesheet" href="../assets/css/theme.css?v=6">
 <link rel="stylesheet" href="../assets/css/article.css?v=3">
 ${ld({ "@type": "CollectionPage", name: "บทความและคู่มือเลือกซื้อ", description: DESC, url: URL, inLanguage: "th", dateModified: newest,
   mainEntity: { "@type": "ItemList", itemListElement: ARTICLES.map((a, i) => ({ "@type": "ListItem", position: i + 1, name: a.h1_th, url: `${SITE}/articles/${a.slug}.html` })) } })}
@@ -230,14 +230,14 @@ ${groups}
 
 <script>window.MTT_BASE="../";window.MTT_PAGE="";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=3"></script>
+<script src="../assets/js/catalog.js?v=4"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
 document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 </script>
-<script src="../assets/js/layout.js?v=4"></script>
+<script src="../assets/js/layout.js?v=5"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
 import { execSync } from "child_process";
 import { readFileSync, writeFileSync } from "fs";
 import { globSync } from "fs";
+import { hasEn, enUrl } from "./_gen-en.mjs";
 
 const SITE = "https://mtthardware.com";
 const today = new Date().toISOString().slice(0, 10);
@@ -29,9 +30,15 @@ const rule = (f) => {
 const loc = (f) => f === "index.html" ? `${SITE}/` : /^(products|articles)\/index\.html$/.test(f) ? `${SITE}/${f.split("/")[0]}` : `${SITE}/${f}`;
 
 const files = globSync("{index,privacy}.html").concat(globSync("products/*.html"), globSync("articles/*.html")).sort();
-const urls = files.map((f) => {
-  const [cf, pr] = rule(f);
-  return `  <url>\n    <loc>${loc(f)}</loc>\n    <lastmod>${lastmod(f)}</lastmod>\n    <changefreq>${cf}</changefreq>\n    <priority>${pr}</priority>\n  </url>`;
+/* หน้าที่มีฉบับอังกฤษ (/en/...): ทั้งสองภาษาประกาศ hreflang หากันใน sitemap ด้วย */
+const entry = (u, mod, cf, pr, alt) => `  <url>\n    <loc>${SITE}${u}</loc>\n    <lastmod>${mod}</lastmod>\n    <changefreq>${cf}</changefreq>\n    <priority>${pr}</priority>\n${alt}  </url>`;
+const alts = (u) => ["th", u, "en", enUrl(u), "x-default", u].reduce((s, v, k, a) => k % 2 ? s : s + `    <xhtml:link rel="alternate" hreflang="${v}" href="${SITE}${a[k + 1]}"/>\n`, "");
+let n = 0;
+const urls = files.flatMap((f) => {
+  const [cf, pr] = rule(f); const u = loc(f).slice(SITE.length) || "/"; const mod = lastmod(f);
+  if (!hasEn(u)) { n++; return [entry(u, mod, cf, pr, "")]; }
+  n += 2;
+  return [entry(u, mod, cf, pr, alts(u)), entry(enUrl(u), mod, cf, pr, alts(u))];
 });
-writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`);
-console.log(`sitemap.xml: ${files.length} URL`);
+writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join("\n")}\n</urlset>\n`);
+console.log(`sitemap.xml: ${n} URL`);

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="th" data-page-lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
+<script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')location.replace('/en/products'+location.hash);}catch(e){}</script>
 <title>สินค้าทั้งหมด เครื่องมือช่าง ไฟฟู่ เข็มกลัด | ม.ทวีภัณฑ์</title>
 <meta name="description" content="รวมสินค้าทั้งหมดของ ม.ทวีภัณฑ์ — ไฟฟู่ เครื่องมือช่าง WYNNTOOLS ฮาร์ดแวร์ ราคาปลีก-ส่ง ส่งทั่วไทย">
 <link rel="canonical" href="https://mtthardware.com/products">
+<link rel="alternate" hreflang="th" href="https://mtthardware.com/products">
+<link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products">
+<link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products">
 <meta property="og:title" content="สินค้าทั้งหมด | ม.ทวีภัณฑ์">
 <meta property="og:url" content="https://mtthardware.com/products">
 <meta property="og:description" content="ไฟฟู่ เครื่องมือช่าง WYNNTOOLS ฮาร์ดแวร์ ปลีก-ส่ง">
@@ -20,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/theme.css?v=5">
+<link rel="stylesheet" href="../assets/css/theme.css?v=6">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -76,7 +79,7 @@
 <!--chrome:header-->
 <a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
 <header class="site-header"><div class="wrap nav">
-  <a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>
+  <a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก" data-th-aria-label="ม.ทวีภัณฑ์ หน้าแรก" data-en-aria-label="M.T.T. Hardware home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>
   <nav class="nav-links" id="navLinks">
       <a href="/" data-nav="home" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
       <a href="/#categories" data-nav="cats" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a>
@@ -86,10 +89,10 @@
       <a href="/#contact" data-nav="contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
   </nav>
   <div class="nav-right">
-    <a class="cart-btn" href="../products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="cart-badge" id="cartBadge" hidden>0</span></a>
-    <div class="lang" role="group" aria-label="ภาษา"><button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button></div>
-    <a class="btn btn-line btn-sm" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener" aria-label="สั่งทาง LINE"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>
-    <button class="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <a class="cart-btn" href="../products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-en-aria-label="Cart" data-en-aria-label="Cart" data-th-title="ตะกร้าสินค้า" data-en-title="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="cart-badge" id="cartBadge" hidden>0</span></a>
+    <div class="lang" role="group" aria-label="ภาษา" data-th-aria-label="ภาษา" data-en-aria-label="Language"><button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button></div>
+    <a class="btn btn-line btn-sm" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener" aria-label="สั่งทาง LINE" data-th-aria-label="สั่งทาง LINE" data-en-aria-label="Order on LINE"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>
+    <button class="nav-toggle" aria-label="เปิดเมนู" data-th-aria-label="เปิดเมนู" data-en-aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
   </div>
 </div></header>
 <!--/chrome:header-->
@@ -108,33 +111,25 @@
   <div class="wrap">
     <h2 class="vh" data-th="รายการสินค้าทั้งหมด" data-en="All products">รายการสินค้าทั้งหมด</h2>
     <div class="pgrid" id="pgrid"><a class="card prod" href="/products/jet-lighter.html">
-      <div class="thumb"><img src="../assets/img/products/jet-lighter.webp" srcset="../assets/img/products/jet-lighter-640.webp 640w, ../assets/img/products/jet-lighter.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="ไฟฟู่ M.T.T." width="1200" height="900" fetchpriority="high"><span class="flag"><span class="badge">ขายดี</span></span></div>
-      <div class="body">
-        <h3>ไฟฟู่ M.T.T.</h3>
-        <p class="desc">หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี</p>
-        <div class="row"><div class="price">฿45–59</div><span class="btn btn-primary btn-sm">สั่งซื้อ</span></div>
-      </div>
+      <div class="thumb"><img src="../assets/img/products/jet-lighter.webp" srcset="../assets/img/products/jet-lighter-640.webp 640w, ../assets/img/products/jet-lighter.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="ไฟฟู่ M.T.T." data-th-alt="ไฟฟู่ M.T.T." data-en-alt="M.T.T. Jet Lighter" width="1200" height="900" fetchpriority="high"><span class="flag"><span class="badge" data-th="ขายดี" data-en="Bestseller">ขายดี</span></span></div>
+      <div class="body"><h3 data-th="ไฟฟู่ M.T.T." data-en="M.T.T. Jet Lighter">ไฟฟู่ M.T.T.</h3>
+      <p class="desc" data-th="หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี" data-en="High-pressure jet, windproof, refillable, 5 colours">หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี</p>
+      <div class="row"><div class="price">฿45–59</div><span class="btn btn-primary btn-sm" data-th="สั่งซื้อ" data-en="Order">สั่งซื้อ</span></div></div>
     </a><a class="card prod soon" href="/products/tools.html">
-      <div class="thumb"><img src="../assets/img/products/wynn-tools.webp" srcset="../assets/img/products/wynn-tools-640.webp 640w, ../assets/img/products/wynn-tools.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="เครื่องมือช่าง WYNNTOOLS" width="1200" height="900" loading="lazy"></div>
-      <div class="body">
-        <h3>เครื่องมือช่าง WYNNTOOLS</h3>
-        <p class="desc">คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย</p>
-        <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
-      </div>
+      <div class="thumb"><img src="../assets/img/products/wynn-tools.webp" srcset="../assets/img/products/wynn-tools-640.webp 640w, ../assets/img/products/wynn-tools.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="เครื่องมือช่าง WYNNTOOLS" data-th-alt="เครื่องมือช่าง WYNNTOOLS" data-en-alt="WYNNTOOLS hand tools" width="1200" height="900" loading="lazy"></div>
+      <div class="body"><h3 data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS hand tools">เครื่องมือช่าง WYNNTOOLS</h3>
+      <p class="desc" data-th="คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย" data-en="Pliers, wrenches, electrical, measuring — exclusive Thai importer">คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย</p>
+      <div class="row"><div class="price soon" data-th="สอบถามราคา" data-en="Ask price">สอบถามราคา</div><span class="btn btn-ghost btn-sm" data-th="ดูสินค้า" data-en="View">ดูสินค้า</span></div></div>
     </a><a class="card prod soon" href="/products/safety-pins.html">
-      <div class="thumb"><img src="../assets/img/products/safety-pins-hero.webp" srcset="../assets/img/products/safety-pins-hero-sm.webp 640w, ../assets/img/products/safety-pins-hero.webp 1024w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="เข็มกลัดซ่อนปลาย เบอร์ 000–7" width="1200" height="900" loading="lazy"></div>
-      <div class="body">
-        <h3>เข็มกลัดซ่อนปลาย เบอร์ 000–7</h3>
-        <p class="desc">ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง</p>
-        <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
-      </div>
+      <div class="thumb"><img src="../assets/img/products/safety-pins-hero.webp" srcset="../assets/img/products/safety-pins-hero-sm.webp 640w, ../assets/img/products/safety-pins-hero.webp 1024w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="เข็มกลัดซ่อนปลาย เบอร์ 000–7" data-th-alt="เข็มกลัดซ่อนปลาย เบอร์ 000–7" data-en-alt="Safety pins size 000–7" width="1200" height="900" loading="lazy"></div>
+      <div class="body"><h3 data-th="เข็มกลัดซ่อนปลาย เบอร์ 000–7" data-en="Safety pins size 000–7">เข็มกลัดซ่อนปลาย เบอร์ 000–7</h3>
+      <p class="desc" data-th="ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง" data-en="Every size in one place — box, gross, or dozen, counted not weighed">ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง</p>
+      <div class="row"><div class="price soon" data-th="สอบถามราคา" data-en="Ask price">สอบถามราคา</div><span class="btn btn-ghost btn-sm" data-th="ดูสินค้า" data-en="View">ดูสินค้า</span></div></div>
     </a><a class="card prod soon" href="/products/mtt-brand.html">
-      <div class="thumb"><img src="../assets/img/products/mtt-brand.webp" srcset="../assets/img/products/mtt-brand-640.webp 640w, ../assets/img/products/mtt-brand.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="สินค้าตรา M.T.T. (ตราสิงโต)" width="1200" height="900" loading="lazy"></div>
-      <div class="body">
-        <h3>สินค้าตรา M.T.T. (ตราสิงโต)</h3>
-        <p class="desc">แบรนด์ของร้านเอง — กุญแจสิงห์เงิน-สิงห์ทอง คีย์อะไลค์ เข็มกลัด ประแจเลื่อน มีดครัว</p>
-        <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
-      </div>
+      <div class="thumb"><img src="../assets/img/products/mtt-brand.webp" srcset="../assets/img/products/mtt-brand-640.webp 640w, ../assets/img/products/mtt-brand.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="สินค้าตรา M.T.T. (ตราสิงโต)" data-th-alt="สินค้าตรา M.T.T. (ตราสิงโต)" data-en-alt="M.T.T. lion-brand products" width="1200" height="900" loading="lazy"></div>
+      <div class="body"><h3 data-th="สินค้าตรา M.T.T. (ตราสิงโต)" data-en="M.T.T. lion-brand products">สินค้าตรา M.T.T. (ตราสิงโต)</h3>
+      <p class="desc" data-th="แบรนด์ของร้านเอง — กุญแจสิงห์เงิน-สิงห์ทอง คีย์อะไลค์ เข็มกลัด ประแจเลื่อน มีดครัว" data-en="Our own brand — lion padlocks, keyed-alike sets, safety pins, wrenches, kitchen knives">แบรนด์ของร้านเอง — กุญแจสิงห์เงิน-สิงห์ทอง คีย์อะไลค์ เข็มกลัด ประแจเลื่อน มีดครัว</p>
+      <div class="row"><div class="price soon" data-th="สอบถามราคา" data-en="Ask price">สอบถามราคา</div><span class="btn btn-ghost btn-sm" data-th="ดูสินค้า" data-en="View">ดูสินค้า</span></div></div>
     </a></div>
   </div>
 </section>
@@ -179,10 +174,10 @@
   <span>© 2026 ม.ทวีภัณฑ์ · บริษัท วินส์ทูลส์ ฮาร์ดแวร์ (ประเทศไทย) จำกัด · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>
   <span data-th="ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด" data-en="Built for the easiest ordering">ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด</span>
 </div></div></footer>
-<nav class="tabbar" aria-label="เมนูหลัก">
+<nav class="tabbar" aria-label="เมนูหลัก" data-th-aria-label="เมนูหลัก" data-en-aria-label="Main menu">
   <a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg><span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a>
   <a href="/products" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 7 12 3l9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg><span data-th="สินค้า" data-en="Products">สินค้า</span></a>
-  <a href="../products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
+  <a href="../products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-en-aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
   <a class="tab-line" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="ทัก LINE" data-en="LINE">ทัก LINE</span></a>
 </nav>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -190,22 +185,22 @@
 
 <script>window.MTT_BASE="../";window.MTT_PAGE="products";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=3"></script>
+<script src="../assets/js/catalog.js?v=4"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
 function L(){ return (window.MTT && window.MTT.getLang()) || "th"; }
+function bi(th,en){ const q=s=>String(s).replace(/"/g,"&quot;"); return `data-th="${q(th)}" data-en="${q(en)}">${L()==="th"?th:en}`; }
 let activeCat = "all";
 
-function catName(key){
-  const th=L()==="th";
-  if(key==="all") return th?"ทั้งหมด":"All";
+function catBi(key){
+  if(key==="all") return bi("ทั้งหมด","All");
   const c=CATALOG.categories.find(x=>x.key===key);
-  return c ? (th?c.th:c.en) : key;
+  return c ? bi(c.th,c.en) : `>${key}`;
 }
 function renderFilters(){
   const cats=["all", ...CATALOG.categories.map(c=>c.key)];
   document.getElementById("filters").innerHTML=cats.map(k=>
-    `<button type="button" class="fchip ${k===activeCat?"on":""}" aria-pressed="${k===activeCat}" onclick="setCat('${k}')">${catName(k)}</button>`
+    `<button type="button" class="fchip ${k===activeCat?"on":""}" aria-pressed="${k===activeCat}" onclick="setCat('${k}')" ${catBi(k)}</button>`
   ).join("");
 }
 function setCat(k){ activeCat=k; renderFilters(); renderGrid(); }
@@ -216,21 +211,20 @@ function renderGrid(){
   const el=document.getElementById("pgrid");
   if(!list.length){ el.innerHTML=`<div class="empty">${th?"ยังไม่มีสินค้าในหมวดนี้ — เร็ว ๆ นี้":"No items yet — coming soon"}</div>`; return; }
   el.innerHTML=list.map((p,i)=>{
-    const flagTxt=p.live?(th?p.flag_th:p.flag_en):"";
-    const flag=flagTxt?`<span class="flag"><span class="badge">${flagTxt}</span></span>`:"";
+    const flag=p.live&&p.flag_th?`<span class="flag"><span class="badge" ${bi(p.flag_th,p.flag_en)}</span></span>`:"";
     const linked=p.live||!!p.url;
-    const price=p.live?`<div class="price">${CATALOG.priceLabel(p,L())}</div>`:`<div class="price soon">${linked?(th?"สอบถามราคา":"Ask price"):(th?"เร็ว ๆ นี้":"Coming soon")}</div>`;
+    const price=p.live?`<div class="price">${CATALOG.priceLabel(p,L())}</div>`:`<div class="price soon" ${linked?bi("สอบถามราคา","Ask price"):bi("เร็ว ๆ นี้","Coming soon")}</div>`;
     // หน้านี้เสิร์ฟที่ /products (ไม่มีสแลชท้าย) base ของ relative link จึงเป็นราก ไม่ใช่ /products/
     // ลิงก์ต้องเป็น absolute ไม่งั้น jet-lighter.html จะกลายเป็น /jet-lighter.html แล้ว 404
-    const href=linked?("/"+p.url):CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
+    const href=linked?CATALOG.pageHref(p.url):CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
     const ext=linked?"":' target="_blank" rel="noopener"';
-    const ctaLabel=p.live?(th?"สั่งซื้อ":"Order"):(linked?(th?"ดูสินค้า":"View"):(th?"ถามของ":"Ask"));
+    const ctaLabel=p.live?bi("สั่งซื้อ","Order"):(linked?bi("ดูสินค้า","View"):bi("ถามของ","Ask"));
     const ctaCls=p.live?"btn btn-primary btn-sm":"btn btn-ghost btn-sm";
     return `<a class="card prod${p.live?"":" soon"}" href="${href}"${ext}>
       <div class="thumb">${CATALOG.productThumb(p,"../",i===0)}${flag}</div>
-      <div class="body"><h3>${th?p.name_th:p.name_en}</h3>
-      <p class="desc">${th?p.tagline_th:p.tagline_en}</p>
-      <div class="row">${price}<span class="${ctaCls}">${ctaLabel}</span></div></div>
+      <div class="body"><h3 ${bi(p.name_th,p.name_en)}</h3>
+      <p class="desc" ${bi(p.tagline_th,p.tagline_en)}</p>
+      <div class="row">${price}<span class="${ctaCls}" ${ctaLabel}</span></div></div>
     </a>`;
   }).join("");
 }
@@ -238,7 +232,7 @@ function renderAll(){ renderFilters(); renderGrid(); }
 document.addEventListener("langchange", renderAll);
 renderAll();
 </script>
-<script src="../assets/js/layout.js?v=4"></script>
+<script src="../assets/js/layout.js?v=5"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

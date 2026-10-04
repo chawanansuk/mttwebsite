@@ -100,6 +100,52 @@
       "source": "/privacy",
       "destination": "/privacy.html",
       "permanent": true
+    },
+    {
+      "source": "/en/index.html",
+      "destination": "/en",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/index.html",
+      "destination": "/en/products",
+      "permanent": true
+    },
+    {
+      "source": "/en/articles/index.html",
+      "destination": "/en/articles",
+      "permanent": true
+    },
+    {
+      "source": "/en/products/tools-:rest",
+      "destination": "/products/tools-:rest",
+      "permanent": false
+    },
+    {
+      "source": "/en/products/mtt-brand.html",
+      "destination": "/products/mtt-brand.html",
+      "permanent": false
+    },
+    {
+      "source": "/en/products/:slug([a-z0-9-]+)",
+      "destination": "/en/products/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/articles/:slug([a-z0-9-]+)",
+      "destination": "/en/articles/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/en/privacy",
+      "destination": "/en/privacy.html",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/en/assets/:path*",
+      "destination": "/assets/:path*"
     }
   ]
 }

@@ -69,10 +69,13 @@
   }
 
   /* ---------- language ---------- */
-  var lang = "th";
-  try { lang = localStorage.getItem("mtt_lang") || "th"; } catch (e) {}
+  /* หน้าที่มีทั้งฉบับไทยและอังกฤษ (data-page-lang) ภาษาตายตัวตาม URL
+     ปุ่ม TH/EN จะพาไปอีก URL (rel=alternate hreflang) แทนการสลับข้อความในหน้า */
+  var pageLang = document.documentElement.getAttribute("data-page-lang");
+  var lang = pageLang || "th";
+  if (!pageLang) try { lang = localStorage.getItem("mtt_lang") || "th"; } catch (e) {}
 
-  function applyLang(l) {
+  function applyLang(l, persist) {
     lang = l;
     document.documentElement.lang = l;
     document.documentElement.classList.remove("pending-lang"); // UP-1: เผยข้อความหลังสลับภาษาเสร็จ
@@ -81,7 +84,7 @@
       if (v != null) el.innerHTML = v;
     });
     /* แอตทริบิวต์ที่ผู้ใช้เห็น (placeholder/aria-label) สลับภาษาแยกจาก innerHTML */
-    ["placeholder", "aria-label", "title"].forEach(function (at) {
+    ["placeholder", "aria-label", "title", "alt"].forEach(function (at) {
       document.querySelectorAll("[data-th-" + at + "]").forEach(function (el) {
         var v = el.getAttribute("data-" + l + "-" + at);
         if (v != null) el.setAttribute(at, v);
@@ -92,11 +95,20 @@
       b.classList.toggle("on", on);
       b.setAttribute("aria-pressed", on ? "true" : "false");
     });
-    try { localStorage.setItem("mtt_lang", l); } catch (e) {}
+    if (persist !== false) try { localStorage.setItem("mtt_lang", l); } catch (e) {}
     document.dispatchEvent(new CustomEvent("langchange", { detail: l }));
   }
   document.querySelectorAll(".lang button").forEach(function (b) {
-    b.addEventListener("click", function () { applyLang(b.getAttribute("data-lang")); });
+    b.addEventListener("click", function () {
+      var l = b.getAttribute("data-lang");
+      var alt = pageLang && l !== pageLang && document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+      if (alt) {
+        try { localStorage.setItem("mtt_lang", l); } catch (e) {}
+        location.href = alt.getAttribute("href").replace(/^https?:\/\/[^/]+/, "") + location.hash;
+        return;
+      }
+      applyLang(l);
+    });
   });
   window.MTT = { getLang: function () { return lang; }, applyLang: applyLang };
 
@@ -149,6 +161,6 @@
     }
   }, true);
 
-  /* fire once so pages render in the saved language */
-  applyLang(lang);
+  /* fire once so pages render in the saved language (หน้าที่ภาษาตาม URL ไม่บันทึกทับค่าที่ผู้ใช้เลือก) */
+  applyLang(lang, !pageLang);
 })();

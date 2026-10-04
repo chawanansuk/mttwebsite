@@ -17,7 +17,7 @@ const IGNORE = [/fonts\.g/i, /_vercel/i, /favicon\.ico/i, /net::ERR/i, /Failed t
 const ignorable = (t) => IGNORE.some((r) => r.test(t));
 
 const server = http.createServer((req, res) => {
-  let p = decodeURIComponent(req.url.split("?")[0]);
+  let p = decodeURIComponent(req.url.split("?")[0]).replace(/^\/en\/assets\//, "/assets/"); // vercel.json rewrite
   if (p.endsWith("/")) p += "index.html";
   let f = join(ROOT, p);
   if (existsSync(f) && statSync(f).isDirectory()) f = join(f, "index.html"); // /products → products/index.html เหมือน Vercel
@@ -398,6 +398,87 @@ console.log("\n[ ตารางแบบจัดตระกูล + ช่อ
   assert((await visible()) === all, "ล้างคำค้นแล้วกลับมาครบ");
   assert((await page.$$eval("table.tools tbody tr", (rs) => rs.filter((r) => r.querySelector(".nmtxt b")).length)) === named, "ล้างคำค้นแล้วชื่อกลับไปพิมพ์ครั้งเดียวเท่าเดิม");
   await page.close();
+}
+
+/* ---- หน้าอังกฤษ /en (สร้างโดย _gen-en.mjs) ---- */
+console.log("\n[ หน้าอังกฤษ /en ]");
+{
+  const EN = await import(new URL("../_gen-en.mjs", import.meta.url));
+  const META = JSON.parse(readFileSync(join(ROOT, "data/en-meta.json"), "utf8"));
+  const sitemap = readFileSync(join(ROOT, "sitemap.xml"), "utf8");
+  const enLocs = [...sitemap.matchAll(/<loc>https:\/\/mtthardware\.com(\/en[^<]*)<\/loc>/g)].map((m) => m[1]);
+  const thPages = EN.enPages();
+  assert(enLocs.length === thPages.length && thPages.length >= 25, `sitemap มีหน้าอังกฤษครบคู่กับหน้าไทย (${enLocs.length}/${thPages.length})`);
+  const stale = [], leftover = [], noAlt = [];
+  for (const u of thPages) {
+    const thRaw = readFileSync(join(ROOT, EN.urlToFile(u)), "utf8");
+    const enRaw = readFileSync(join(ROOT, "en", EN.urlToFile(u)), "utf8");
+    if (EN.buildEn(EN.thHead(thRaw, u), u, META) !== enRaw || EN.thHead(thRaw, u) !== thRaw) stale.push(u);
+    if (EN.thaiLeft(enRaw).length) leftover.push(u);
+    if (!thRaw.includes(`hreflang="en" href="https://mtthardware.com${EN.enUrl(u)}"`)) noAlt.push(u);
+  }
+  assert(!stale.length, "หน้าอังกฤษตรงกับหน้าไทยล่าสุด (ไม่ค้างเวอร์ชันเก่า)" + (stale.length ? " → " + stale.join(", ") + " · รัน npm run bake" : ""));
+  assert(!leftover.length, "หน้าอังกฤษไม่มีข้อความไทยที่ยังไม่แปล" + (leftover.length ? " → " + leftover.join(", ") : ""));
+  assert(!noAlt.length, "หน้าไทยมี hreflang ชี้หน้าอังกฤษ" + (noAlt.length ? " → " + noAlt.join(", ") : ""));
+  const skipHasAlt = /hreflang=/.test(readFileSync(join(ROOT, "products/tools-wrenches.html"), "utf8"));
+  assert(!skipHasAlt, "แคตตาล็อกเครื่องมือรายหมวด (ยังไม่มีฉบับอังกฤษ) ไม่ประกาศ hreflang");
+
+  /* เปิดจริงทุกหน้า: ไม่มี JS error, รูปทุกรูปโหลดได้, ลิงก์ภายในไม่หลุดไปโฟลเดอร์ /en ที่ไม่มีไฟล์ */
+  const errs = [], badImg = [], badLink = [];
+  for (const u of enLocs) {
+    const page = await newPage({ width: 390, height: 844 });
+    page.on("pageerror", (e) => errs.push(u + ": " + e.message));
+    await page.goto(base + u, { waitUntil: "load" });
+    await page.waitForTimeout(250);
+    const r = await page.evaluate(async () => {
+      const imgs = [...document.images].map((i) => i.currentSrc || i.src).filter((s) => s.startsWith(location.origin));
+      const links = [...document.querySelectorAll("a[href]")].map((a) => a.href).filter((h) => h.startsWith(location.origin + "/en"));
+      const st = async (x) => (await fetch(x, { method: "HEAD" })).status;
+      const bi = []; for (const x of [...new Set(imgs)]) if (await st(x) !== 200) bi.push(x);
+      const bl = []; for (const x of [...new Set(links.map((h) => h.split("#")[0]))]) if (await st(x) !== 200) bl.push(x);
+      return { lang: document.documentElement.lang, bi, bl };
+    });
+    if (r.lang !== "en") errs.push(u + ": lang=" + r.lang);
+    badImg.push(...r.bi.map((x) => u + " → " + x)); badLink.push(...r.bl.map((x) => u + " → " + x));
+    await page.close();
+  }
+  assert(!errs.length, `เปิดหน้าอังกฤษ ${enLocs.length} หน้า ไม่มี JS error และ lang=en` + (errs.length ? " → " + errs.slice(0, 3).join(" | ") : ""));
+  assert(!badImg.length, "รูปในหน้าอังกฤษโหลดได้ทุกรูป" + (badImg.length ? " → " + badImg.slice(0, 3).join(" | ") : ""));
+  assert(!badLink.length, "ลิงก์ /en ทุกตัวมีหน้าจริง" + (badLink.length ? " → " + badLink.slice(0, 3).join(" | ") : ""));
+
+  /* ปุ่มภาษา: หน้าที่มีคู่ → ไปอีก URL · หน้าที่ไม่มีคู่ → สลับในหน้าเดิม */
+  {
+    const page = await newPage({ width: 1280, height: 900 });
+    await page.goto(base + "/products/jet-lighter.html", { waitUntil: "load" });
+    await Promise.all([page.waitForURL("**/en/products/jet-lighter.html"), page.click(".lang button[data-lang=en]")]);
+    assert(page.url().endsWith("/en/products/jet-lighter.html"), "กด EN ในหน้าไทย → ไปหน้า /en/products/jet-lighter.html");
+    await page.waitForTimeout(200);
+    await page.click(".add");
+    await page.waitForTimeout(150);
+    assert(/Large 1 pc/.test(await page.evaluate(() => buildOrderText())), "ตะกร้าในหน้าอังกฤษสรุปออเดอร์เป็นภาษาอังกฤษ");
+    await page.goto(base + "/products/safety-pins.html", { waitUntil: "load" });
+    assert(page.url().endsWith("/en/products/safety-pins.html"), "เคยเลือก EN ไว้ → เปิดหน้าไทยแล้วพาไปหน้าอังกฤษ");
+    await Promise.all([page.waitForURL("**/products/safety-pins.html"), page.click(".lang button[data-lang=th]")]);
+    assert(!page.url().includes("/en/"), "กด TH ในหน้าอังกฤษ → กลับหน้าไทย");
+    await page.close();
+  }
+  {
+    const page = await newPage({ width: 1280, height: 900 });
+    await page.goto(base + "/products/tools-wrenches.html", { waitUntil: "load" });
+    await page.click(".lang button[data-lang=en]");
+    await page.waitForTimeout(200);
+    assert(page.url().endsWith("/products/tools-wrenches.html") && (await page.evaluate(() => document.documentElement.lang)) === "en",
+      "หน้าที่ยังไม่มีฉบับอังกฤษ กด EN แล้วสลับภาษาในหน้าเดิม");
+    await page.close();
+  }
+  {
+    const page = await newPage({ width: 1280, height: 900 });
+    await page.goto(base + "/en", { waitUntil: "load" });
+    const hrefs = await page.$$eval("#featGrid a, #catGrid a", (as) => as.map((a) => a.getAttribute("href")));
+    assert(hrefs.length >= 4 && hrefs.filter((h) => h.startsWith("/en/")).length >= 3 && hrefs.includes("/products/mtt-brand.html"),
+      "การ์ดหน้าแรกอังกฤษ (วาดด้วย JS) ชี้ /en ส่วนหน้าตรา M.T.T. ชี้หน้าไทย");
+    await page.close();
+  }
 }
 
 await browser.close();

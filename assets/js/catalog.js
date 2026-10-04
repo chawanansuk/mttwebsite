@@ -169,14 +169,25 @@ window.CATALOG = (function () {
     // eager = การ์ดใบแรกที่อยู่ในจอตอนเปิดหน้า (LCP) — ห้าม lazy ไม่งั้นรอ 1.6 วิบน 4G
     // รูปย่อ 640px สำหรับการ์ดที่แสดงกว้างราว 270–350px (ประหยัดดาต้า 2–3 เท่า) ต้นฉบับใช้เมื่อจอใหญ่/ความละเอียดสูง
     var srcset = p.image_sm ? ' srcset="' + base + p.image_sm + ' 640w, ' + base + p.image + ' ' + (p.image_w || 1200) + 'w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px"' : "";
-    if (p.image) return '<img src="' + base + p.image + '"' + srcset + ' alt="' + (p.name_th || "") + '" width="1200" height="900"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + '>';
+    var en = document.documentElement.lang === "en", q = function (t) { return String(t || "").replace(/"/g, "&quot;"); };
+    var alt = ' alt="' + q(en ? p.name_en : p.name_th) + '" data-th-alt="' + q(p.name_th) + '" data-en-alt="' + q(p.name_en) + '"';
+    if (p.image) return '<img src="' + base + p.image + '"' + srcset + alt + ' width="1200" height="900"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + '>';
     return '<span class="glyph">' + (p.glyph || "📦") + '</span>';
+  }
+  /* ลิงก์หน้าเว็บจากการ์ดที่ JS สร้าง: หน้า /en ต้องชี้ไปหน้า /en ด้วย
+     ยกเว้นแคตตาล็อกเครื่องมือรายหมวดและหน้าตรา M.T.T. ที่ยังไม่มีฉบับอังกฤษ (ต้องตรงกับ EN_SKIP ใน _gen-en.mjs) */
+  function pageHref(u) {
+    if (/^(https?:|#)/.test(u)) return u;
+    var abs = u.charAt(0) === "/" ? u : "/" + u;
+    var en = document.documentElement.getAttribute("data-page-lang") === "en";
+    if (!en || /^\/products\/(tools-|mtt-brand)/.test(abs)) return abs;
+    return abs === "/" ? "/en" : "/en" + abs;
   }
 
   return {
     colors, colorsLarge, products, categories,
     byId, allOptions, optionById,
     unitPriceRange, boxMinPerPiece, savingsPct, perPiece, priceLabel, wholesaleCards,
-    lineAsk, productThumb,
+    lineAsk, productThumb, pageHref,
   };
 })();

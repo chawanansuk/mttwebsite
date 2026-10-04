@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="th" data-page-lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')document.documentElement.classList.add('pending-lang');}catch(e){}</script>
+<script>try{var l=localStorage.getItem('mtt_lang');if(l&&l!=='th')location.replace('/en'+location.hash);}catch(e){}</script>
 <title>ม.ทวีภัณฑ์ สำเพ็ง | เครื่องมือช่าง ไฟฟู่ เข็มกลัด ปลีก-ส่ง</title>
 <meta name="description" content="ม.ทวีภัณฑ์ สำเพ็ง ศูนย์รวมเครื่องมือช่าง ฮาร์ดแวร์ ไฟฟู่ เข็มกลัดซ่อนปลาย ผู้นำเข้า WYNNTOOLS รายเดียวในไทย ราคาปลีก-ส่ง ยกกล่อง ส่งทั่วไทย สั่งผ่าน LINE">
 <meta name="keywords" content="ม.ทวีภัณฑ์, ม.ทวีภัณฑ์ สำเพ็ง, เครื่องมือช่าง สำเพ็ง, WYNNTOOLS, วินส์ทูลส์, ไฟฟู่, ไฟแช็คไฟฟู่, ไฟแช็กหัวพ่นไฟ, ไฟแช็คแก๊ส, ไฟฟู่ราคาส่ง, ไฟแช็กยกกล่อง, ฮาร์ดแวร์ ปลีก ส่ง">
 <link rel="canonical" href="https://mtthardware.com/">
+<link rel="alternate" hreflang="th" href="https://mtthardware.com/">
+<link rel="alternate" hreflang="en" href="https://mtthardware.com/en">
+<link rel="alternate" hreflang="x-default" href="https://mtthardware.com/">
 <meta property="og:title" content="ม.ทวีภัณฑ์ สำเพ็ง — เครื่องมือช่าง &amp; ฮาร์ดแวร์ ผู้นำเข้า WYNNTOOLS">
 <meta property="og:description" content="เครื่องมือช่าง ฮาร์ดแวร์ ไฟฟู่ ราคาปลีก-ส่ง ส่งทั่วไทย สั่งง่ายผ่าน LINE">
 <meta property="og:type" content="website">
@@ -24,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="assets/css/theme.css?v=5">
+<link rel="stylesheet" href="assets/css/theme.css?v=6">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -205,7 +208,7 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
 <!--chrome:header-->
 <a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
 <header class="site-header"><div class="wrap nav">
-  <a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>
+  <a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก" data-th-aria-label="ม.ทวีภัณฑ์ หน้าแรก" data-en-aria-label="M.T.T. Hardware home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>
   <nav class="nav-links" id="navLinks">
       <a href="/" data-nav="home" class="active" aria-current="page" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
       <a href="/#categories" data-nav="cats" data-th="หมวดหมู่" data-en="Categories">หมวดหมู่</a>
@@ -215,10 +218,10 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
       <a href="/#contact" data-nav="contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
   </nav>
   <div class="nav-right">
-    <a class="cart-btn" href="products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="cart-badge" id="cartBadge" hidden>0</span></a>
-    <div class="lang" role="group" aria-label="ภาษา"><button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button></div>
-    <a class="btn btn-line btn-sm" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener" aria-label="สั่งทาง LINE"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>
-    <button class="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <a class="cart-btn" href="products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-en-aria-label="Cart" data-en-aria-label="Cart" data-th-title="ตะกร้าสินค้า" data-en-title="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="cart-badge" id="cartBadge" hidden>0</span></a>
+    <div class="lang" role="group" aria-label="ภาษา" data-th-aria-label="ภาษา" data-en-aria-label="Language"><button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button></div>
+    <a class="btn btn-line btn-sm" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener" aria-label="สั่งทาง LINE" data-th-aria-label="สั่งทาง LINE" data-en-aria-label="Order on LINE"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>
+    <button class="nav-toggle" aria-label="เปิดเมนู" data-th-aria-label="เปิดเมนู" data-en-aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
   </div>
 </div></header>
 <!--/chrome:header-->
@@ -238,9 +241,9 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
       <p class="hero-proof" data-th="&lt;span class=&quot;nw&quot;&gt;739 รายการในแคตตาล็อก&lt;/span&gt; · &lt;span class=&quot;nw&quot;&gt;ราคาปลีกและราคาส่ง&lt;/span&gt; · &lt;span class=&quot;nw&quot;&gt;ส่งทั่วไทย&lt;/span&gt;" data-en="&lt;span class=&quot;nw&quot;&gt;739 catalogue items&lt;/span&gt; · &lt;span class=&quot;nw&quot;&gt;retail &amp;amp; wholesale&lt;/span&gt; · &lt;span class=&quot;nw&quot;&gt;shipped nationwide&lt;/span&gt;"><span class="nw">739 รายการในแคตตาล็อก</span> · <span class="nw">ราคาปลีกและราคาส่ง</span> · <span class="nw">ส่งทั่วไทย</span></p>
     </div>
     <div class="hero-vis">
-      <a class="hv-card hv-1" href="products/jet-lighter.html" aria-label="ไฟฟู่ M.T.T. ดูสินค้า">
-        <img class="hv-img" src="assets/img/products/jet-lighter.webp" srcset="assets/img/products/jet-lighter-640.webp 640w, assets/img/products/jet-lighter.webp 1200w" sizes="(max-width:860px) calc(100vw - 44px), 520px" alt="ไฟฟู่ M.T.T." width="1200" height="900" fetchpriority="high">
-        <b>ไฟฟู่ M.T.T.</b><small data-th="เจอลมไม่ดับ · เติมแก๊สได้" data-en="Windproof · refillable">เจอลมไม่ดับ · เติมแก๊สได้</small><span class="hv-price" id="hvPrice">฿—</span>
+      <a class="hv-card hv-1" href="products/jet-lighter.html" aria-label="ไฟฟู่ M.T.T. ดูสินค้า" data-th-aria-label="ไฟฟู่ M.T.T. ดูสินค้า" data-en-aria-label="M.T.T. Jet Lighter, view product">
+        <img class="hv-img" src="assets/img/products/jet-lighter.webp" srcset="assets/img/products/jet-lighter-640.webp 640w, assets/img/products/jet-lighter.webp 1200w" sizes="(max-width:860px) calc(100vw - 44px), 520px" alt="ไฟฟู่ M.T.T." data-th-alt="ไฟฟู่ M.T.T." data-en-alt="M.T.T. Jet Lighter" width="1200" height="900" fetchpriority="high">
+        <b data-th="ไฟฟู่ M.T.T." data-en="M.T.T. Jet Lighter">ไฟฟู่ M.T.T.</b><small data-th="เจอลมไม่ดับ · เติมแก๊สได้" data-en="Windproof · refillable">เจอลมไม่ดับ · เติมแก๊สได้</small><span class="hv-price" id="hvPrice">฿—</span>
       </a>
       <div class="hv-duo">
       <div class="hv-card hv-2" aria-hidden="true">
@@ -274,36 +277,36 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
       <h2 data-th="เลือกช้อปตามหมวด" data-en="Shop by category">เลือกช้อปตามหมวด</h2>
       <p data-th="เริ่มจากสินค้าขายดี — หมวดอื่นทยอยเปิดเพิ่มเรื่อย ๆ" data-en="Growing catalog — starting with our bestsellers.">เริ่มจากสินค้าขายดี — หมวดอื่นทยอยเปิดเพิ่มเรื่อย ๆ</p>
     </div>
-    <div class="grid cat-grid" id="catGrid"><a class="card cat " href="products/jet-lighter.html">
+    <div class="grid cat-grid" id="catGrid"><a class="card cat " href="/products/jet-lighter.html">
       
-      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
-      <h3>ไฟฟู่ / ไฟแช็ก</h3>
-      <p>ไฟแช็กหัวฟู่ กันลม เติมแก๊สได้ ปลีก-ส่ง</p>
-      <span class="go">ดูสินค้า <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-    </a><a class="card cat blue" href="products/tools.html">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"></path></svg></div>
+      <h3 data-th="ไฟฟู่ / ไฟแช็ก" data-en="Jet lighters">ไฟฟู่ / ไฟแช็ก</h3>
+      <p data-th="ไฟแช็กหัวฟู่ กันลม เติมแก๊สได้ ปลีก-ส่ง" data-en="Windproof refillable jet lighters">ไฟแช็กหัวฟู่ กันลม เติมแก๊สได้ ปลีก-ส่ง</p>
+      <span class="go"><span data-th="ดูสินค้า" data-en="View">ดูสินค้า</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+    </a><a class="card cat blue" href="/products/tools.html">
       
-      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m14 7 3 3M5 17l-2 4 4-2 11-11a2.1 2.1 0 0 0-3-3z"/></svg></div>
-      <h3>เครื่องมือช่าง WYNNTOOLS</h3>
-      <p>คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ดูรายการแล้วเช็คราคาได้เลย</p>
-      <span class="go">ดูสินค้า <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-    </a><a class="card cat " href="products/safety-pins.html">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m14 7 3 3M5 17l-2 4 4-2 11-11a2.1 2.1 0 0 0-3-3z"></path></svg></div>
+      <h3 data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS hand tools">เครื่องมือช่าง WYNNTOOLS</h3>
+      <p data-th="คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ดูรายการแล้วเช็คราคาได้เลย" data-en="Pliers, wrenches, electrical, measuring — browse &amp; ask price">คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ดูรายการแล้วเช็คราคาได้เลย</p>
+      <span class="go"><span data-th="ดูสินค้า" data-en="View">ดูสินค้า</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+    </a><a class="card cat " href="/products/safety-pins.html">
       
-      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19a3.5 3.5 0 0 0 5 0l9-9a3.5 3.5 0 0 0-5-5l-8 8"/><path d="m14 5 5 5"/></svg></div>
-      <h3>เข็มกลัดซ่อนปลาย</h3>
-      <p>ครบทุกเบอร์ 000–7 ขายส่งยกกล่อง แบ่งขายได้</p>
-      <span class="go">ดูสินค้า <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-    </a><a class="card cat " href="products/mtt-brand.html">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19a3.5 3.5 0 0 0 5 0l9-9a3.5 3.5 0 0 0-5-5l-8 8"></path><path d="m14 5 5 5"></path></svg></div>
+      <h3 data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</h3>
+      <p data-th="ครบทุกเบอร์ 000–7 ขายส่งยกกล่อง แบ่งขายได้" data-en="All sizes 000–7, wholesale by the box">ครบทุกเบอร์ 000–7 ขายส่งยกกล่อง แบ่งขายได้</p>
+      <span class="go"><span data-th="ดูสินค้า" data-en="View">ดูสินค้า</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+    </a><a class="card cat " href="/products/mtt-brand.html">
       
-      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.4 3.4 8.2 8 9 4.6-.8 8-4.6 8-9V6l-8-3Z"/><path d="M9 12h6M12 9v6"/></svg></div>
-      <h3>สินค้าตรา M.T.T.</h3>
-      <p>แบรนด์ของร้านเอง — กุญแจตราสิงโต เข็มกลัด ประแจเลื่อน มีดครัว</p>
-      <span class="go">ดูสินค้า <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.4 3.4 8.2 8 9 4.6-.8 8-4.6 8-9V6l-8-3Z"></path><path d="M9 12h6M12 9v6"></path></svg></div>
+      <h3 data-th="สินค้าตรา M.T.T." data-en="M.T.T. brand">สินค้าตรา M.T.T.</h3>
+      <p data-th="แบรนด์ของร้านเอง — กุญแจตราสิงโต เข็มกลัด ประแจเลื่อน มีดครัว" data-en="Our own brand — lion padlocks, safety pins, wrenches, knives">แบรนด์ของร้านเอง — กุญแจตราสิงโต เข็มกลัด ประแจเลื่อน มีดครัว</p>
+      <span class="go"><span data-th="ดูสินค้า" data-en="View">ดูสินค้า</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a><a class="card cat " href="/products">
-      <span class="soon">เร็ว ๆ นี้</span>
-      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg></div>
-      <h3>ฮาร์ดแวร์ &amp; อื่น ๆ</h3>
-      <p>หน้าร้านสำเพ็งมีอีกเพียบ — ทักถามได้เลย</p>
-      <span class="go">กำลังจัดของ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      <span class="soon" data-th="เร็ว ๆ นี้" data-en="Soon">เร็ว ๆ นี้</span>
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"></path></svg></div>
+      <h3 data-th="ฮาร์ดแวร์ &amp; อื่น ๆ" data-en="Hardware &amp; more">ฮาร์ดแวร์ &amp; อื่น ๆ</h3>
+      <p data-th="หน้าร้านสำเพ็งมีอีกเพียบ — ทักถามได้เลย" data-en="Much more in-store at Sampheng — just ask">หน้าร้านสำเพ็งมีอีกเพียบ — ทักถามได้เลย</p>
+      <span class="go"><span data-th="กำลังจัดของ" data-en="Stocking soon">กำลังจัดของ</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a></div>
   </div>
 </section>
@@ -316,33 +319,33 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
       <h2 data-th="สินค้าขายดี พร้อมส่ง" data-en="Bestsellers, ready to ship">สินค้าขายดี พร้อมส่ง</h2>
       <p data-th="กดเข้าไปดูรายละเอียด เลือกสินค้า แล้วส่งออเดอร์ทาง LINE ได้เลย" data-en="Tap for details, pick what you need, then send the order on LINE.">กดเข้าไปดูรายละเอียด เลือกสินค้า แล้วส่งออเดอร์ทาง LINE ได้เลย</p>
     </div>
-    <div class="grid feat-grid" id="featGrid"><a class="card prod" href="products/jet-lighter.html">
-      <div class="thumb"><img src="assets/img/products/jet-lighter.webp" srcset="assets/img/products/jet-lighter-640.webp 640w, assets/img/products/jet-lighter.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="ไฟฟู่ M.T.T." width="1200" height="900" fetchpriority="high"><span class="flag"><span class="badge">ขายดี</span></span></div>
+    <div class="grid feat-grid" id="featGrid"><a class="card prod" href="/products/jet-lighter.html">
+      <div class="thumb"><img src="assets/img/products/jet-lighter.webp" srcset="assets/img/products/jet-lighter-640.webp 640w, assets/img/products/jet-lighter.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="ไฟฟู่ M.T.T." data-th-alt="ไฟฟู่ M.T.T." data-en-alt="M.T.T. Jet Lighter" width="1200" height="900" fetchpriority="high"><span class="flag"><span class="badge" data-th="ขายดี" data-en="Bestseller">ขายดี</span></span></div>
       <div class="body">
-        <h3>ไฟฟู่ M.T.T.</h3>
-        <p class="desc">หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี</p>
-        <div class="row"><div class="price">฿45–59</div><span class="btn btn-primary btn-sm">สั่งซื้อ</span></div>
+        <h3 data-th="ไฟฟู่ M.T.T." data-en="M.T.T. Jet Lighter">ไฟฟู่ M.T.T.</h3>
+        <p class="desc" data-th="หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี" data-en="High-pressure jet, windproof, refillable, 5 colours">หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี</p>
+        <div class="row"><div class="price">฿45–59</div><span class="btn btn-primary btn-sm" data-th="สั่งซื้อ" data-en="Order">สั่งซื้อ</span></div>
       </div>
-    </a><a class="card prod soon" href="products/tools.html">
-      <div class="thumb"><img src="assets/img/products/wynn-tools.webp" srcset="assets/img/products/wynn-tools-640.webp 640w, assets/img/products/wynn-tools.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="เครื่องมือช่าง WYNNTOOLS" width="1200" height="900" loading="lazy"></div>
+    </a><a class="card prod soon" href="/products/tools.html">
+      <div class="thumb"><img src="assets/img/products/wynn-tools.webp" srcset="assets/img/products/wynn-tools-640.webp 640w, assets/img/products/wynn-tools.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="เครื่องมือช่าง WYNNTOOLS" data-th-alt="เครื่องมือช่าง WYNNTOOLS" data-en-alt="WYNNTOOLS hand tools" width="1200" height="900" loading="lazy"></div>
       <div class="body">
-        <h3>เครื่องมือช่าง WYNNTOOLS</h3>
-        <p class="desc">คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย</p>
-        <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
+        <h3 data-th="เครื่องมือช่าง WYNNTOOLS" data-en="WYNNTOOLS hand tools">เครื่องมือช่าง WYNNTOOLS</h3>
+        <p class="desc" data-th="คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย" data-en="Pliers, wrenches, electrical, measuring — exclusive Thai importer">คีม ประแจ งานไฟฟ้า เครื่องมือวัด — ผู้นำเข้าแต่เพียงผู้เดียวในไทย</p>
+        <div class="row"><div class="price soon" data-th="สอบถามราคา" data-en="Ask price">สอบถามราคา</div><span class="btn btn-ghost btn-sm" data-th="ดูสินค้า" data-en="View">ดูสินค้า</span></div>
       </div>
-    </a><a class="card prod soon" href="products/safety-pins.html">
-      <div class="thumb"><img src="assets/img/products/safety-pins-hero.webp" srcset="assets/img/products/safety-pins-hero-sm.webp 640w, assets/img/products/safety-pins-hero.webp 1024w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="เข็มกลัดซ่อนปลาย เบอร์ 000–7" width="1200" height="900" loading="lazy"></div>
+    </a><a class="card prod soon" href="/products/safety-pins.html">
+      <div class="thumb"><img src="assets/img/products/safety-pins-hero.webp" srcset="assets/img/products/safety-pins-hero-sm.webp 640w, assets/img/products/safety-pins-hero.webp 1024w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="เข็มกลัดซ่อนปลาย เบอร์ 000–7" data-th-alt="เข็มกลัดซ่อนปลาย เบอร์ 000–7" data-en-alt="Safety pins size 000–7" width="1200" height="900" loading="lazy"></div>
       <div class="body">
-        <h3>เข็มกลัดซ่อนปลาย เบอร์ 000–7</h3>
-        <p class="desc">ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง</p>
-        <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
+        <h3 data-th="เข็มกลัดซ่อนปลาย เบอร์ 000–7" data-en="Safety pins size 000–7">เข็มกลัดซ่อนปลาย เบอร์ 000–7</h3>
+        <p class="desc" data-th="ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง" data-en="Every size in one place — box, gross, or dozen, counted not weighed">ครบทุกเบอร์ที่เดียว ขายส่งยกกล่อง แบ่งขายพวง/กุรุส นับจำนวนจริง</p>
+        <div class="row"><div class="price soon" data-th="สอบถามราคา" data-en="Ask price">สอบถามราคา</div><span class="btn btn-ghost btn-sm" data-th="ดูสินค้า" data-en="View">ดูสินค้า</span></div>
       </div>
-    </a><a class="card prod soon" href="products/mtt-brand.html">
-      <div class="thumb"><img src="assets/img/products/mtt-brand.webp" srcset="assets/img/products/mtt-brand-640.webp 640w, assets/img/products/mtt-brand.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="สินค้าตรา M.T.T. (ตราสิงโต)" width="1200" height="900" loading="lazy"></div>
+    </a><a class="card prod soon" href="/products/mtt-brand.html">
+      <div class="thumb"><img src="assets/img/products/mtt-brand.webp" srcset="assets/img/products/mtt-brand-640.webp 640w, assets/img/products/mtt-brand.webp 1200w" sizes="(max-width:600px) calc(100vw - 44px), (max-width:1024px) 45vw, 280px" alt="สินค้าตรา M.T.T. (ตราสิงโต)" data-th-alt="สินค้าตรา M.T.T. (ตราสิงโต)" data-en-alt="M.T.T. lion-brand products" width="1200" height="900" loading="lazy"></div>
       <div class="body">
-        <h3>สินค้าตรา M.T.T. (ตราสิงโต)</h3>
-        <p class="desc">แบรนด์ของร้านเอง — กุญแจสิงห์เงิน-สิงห์ทอง คีย์อะไลค์ เข็มกลัด ประแจเลื่อน มีดครัว</p>
-        <div class="row"><div class="price soon">สอบถามราคา</div><span class="btn btn-ghost btn-sm">ดูสินค้า</span></div>
+        <h3 data-th="สินค้าตรา M.T.T. (ตราสิงโต)" data-en="M.T.T. lion-brand products">สินค้าตรา M.T.T. (ตราสิงโต)</h3>
+        <p class="desc" data-th="แบรนด์ของร้านเอง — กุญแจสิงห์เงิน-สิงห์ทอง คีย์อะไลค์ เข็มกลัด ประแจเลื่อน มีดครัว" data-en="Our own brand — lion padlocks, keyed-alike sets, safety pins, wrenches, kitchen knives">แบรนด์ของร้านเอง — กุญแจสิงห์เงิน-สิงห์ทอง คีย์อะไลค์ เข็มกลัด ประแจเลื่อน มีดครัว</p>
+        <div class="row"><div class="price soon" data-th="สอบถามราคา" data-en="Ask price">สอบถามราคา</div><span class="btn btn-ghost btn-sm" data-th="ดูสินค้า" data-en="View">ดูสินค้า</span></div>
       </div>
     </a></div>
   </div>
@@ -507,10 +510,10 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
   <span>© 2026 ม.ทวีภัณฑ์ · บริษัท วินส์ทูลส์ ฮาร์ดแวร์ (ประเทศไทย) จำกัด · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>
   <span data-th="ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด" data-en="Built for the easiest ordering">ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด</span>
 </div></div></footer>
-<nav class="tabbar" aria-label="เมนูหลัก">
+<nav class="tabbar" aria-label="เมนูหลัก" data-th-aria-label="เมนูหลัก" data-en-aria-label="Main menu">
   <a href="/" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg><span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a>
   <a href="/products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 7 12 3l9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg><span data-th="สินค้า" data-en="Products">สินค้า</span></a>
-  <a href="products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
+  <a href="products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-en-aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
   <a class="tab-line" data-shop="line-url" href="https://line.me/R/ti/p/@wynnstools" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.42 8.03.33.07.77.22.88.5.1.26.07.66.03.92l-.14.85c-.04.26-.2 1.02.89.56 1.09-.46 5.86-3.45 8-5.91C21.4 13.4 22 11.85 22 10.13 22 5.64 17.52 2 12 2z"/></svg><span data-th="ทัก LINE" data-en="LINE">ทัก LINE</span></a>
 </nav>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -518,22 +521,24 @@ a.hv-card:hover{border-color:var(--amber);box-shadow:var(--shadow)}
 
 <script>window.MTT_BASE="";window.MTT_PAGE="home";</script>
 <script src="assets/js/shop-config.js?v=2"></script>
-<script src="assets/js/catalog.js?v=3"></script>
+<script src="assets/js/catalog.js?v=4"></script>
 <script src="assets/js/cart.js?v=2"></script>
 <script>
 /* ---------- render home from CATALOG ---------- */
 function L(){ return (window.MTT && window.MTT.getLang()) || "th"; }
+/* ข้อความสองภาษาในการ์ด: ใส่ data-th/data-en ไว้ด้วย → HTML ที่ prerender ไว้ (และหน้า /en) สลับภาษาได้ */
+function bi(th,en){ const q=s=>String(s).replace(/"/g,"&quot;"); return `data-th="${q(th)}" data-en="${q(en)}">${L()==="th"?th:en}`; }
 
 function renderCats(){
   const th = L()==="th";
   document.getElementById("catGrid").innerHTML = CATALOG.categories.map(c=>{
-    const soon = c.live ? "" : `<span class="soon">${th?"เร็ว ๆ นี้":"Soon"}</span>`;
-    const go = c.live ? (th?"ดูสินค้า":"View") : (th?"กำลังจัดของ":"Stocking soon");
-    return `<a class="card cat ${c.accent==='blue'?'blue':''}" href="${c.url}">
+    const soon = c.live ? "" : `<span class="soon" ${bi("เร็ว ๆ นี้","Soon")}</span>`;
+    const go = c.live ? `<span ${bi("ดูสินค้า","View")}</span>` : `<span ${bi("กำลังจัดของ","Stocking soon")}</span>`;
+    return `<a class="card cat ${c.accent==='blue'?'blue':''}" href="${CATALOG.pageHref(c.url)}">
       ${soon}
       <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${c.icon}</svg></div>
-      <h3>${th?c.th:c.en}</h3>
-      <p>${th?c.dth:c.den}</p>
+      <h3 ${bi(c.th,c.en)}</h3>
+      <p ${bi(c.dth,c.den)}</p>
       <span class="go">${go} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>`;
   }).join("");
@@ -542,23 +547,22 @@ function renderCats(){
 function renderFeatured(){
   const th = L()==="th";
   document.getElementById("featGrid").innerHTML = CATALOG.products.map((p,i)=>{
-    const flagTxt = p.live ? (th?p.flag_th:p.flag_en) : "";
-    const flag = flagTxt ? `<span class="flag"><span class="badge">${flagTxt}</span></span>` : "";
+    const flag = p.live && p.flag_th ? `<span class="flag"><span class="badge" ${bi(p.flag_th,p.flag_en)}</span></span>` : "";
     // ทั้งการ์ดคลิกได้: live → หน้าสั่งซื้อ, มี url (หน้ารวมของตัวเอง) → หน้านั้น, ไม่มีทั้งคู่ → ทัก LINE
     const linked = p.live || !!p.url;
     const price = p.live
       ? `<div class="price">${CATALOG.priceLabel(p, L())}</div>`
-      : `<div class="price soon">${linked?(th?"สอบถามราคา":"Ask price"):(th?"เร็ว ๆ นี้":"Coming soon")}</div>`;
-    const href = linked ? p.url : CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
+      : `<div class="price soon" ${linked?bi("สอบถามราคา","Ask price"):bi("เร็ว ๆ นี้","Coming soon")}</div>`;
+    const href = linked ? CATALOG.pageHref(p.url) : CATALOG.lineAsk((th?"สนใจสินค้า ":"Interested in ")+(th?p.name_th:p.name_en));
     const ext = linked ? "" : ' target="_blank" rel="noopener"';
-    const ctaLabel = p.live ? (th?"สั่งซื้อ":"Order") : (linked?(th?"ดูสินค้า":"View"):(th?"ถามของ":"Ask"));
+    const ctaLabel = p.live ? bi("สั่งซื้อ","Order") : (linked?bi("ดูสินค้า","View"):bi("ถามของ","Ask"));
     const ctaCls = p.live ? "btn btn-primary btn-sm" : "btn btn-ghost btn-sm";
     return `<a class="card prod${p.live?"":" soon"}" href="${href}"${ext}>
       <div class="thumb">${CATALOG.productThumb(p,"",i===0)}${flag}</div>
       <div class="body">
-        <h3>${th?p.name_th:p.name_en}</h3>
-        <p class="desc">${th?p.tagline_th:p.tagline_en}</p>
-        <div class="row">${price}<span class="${ctaCls}">${ctaLabel}</span></div>
+        <h3 ${bi(p.name_th,p.name_en)}</h3>
+        <p class="desc" ${bi(p.tagline_th,p.tagline_en)}</p>
+        <div class="row">${price}<span class="${ctaCls}" ${ctaLabel}</span></div>
       </div>
     </a>`;
   }).join("");
@@ -591,7 +595,7 @@ renderHome();
 
 /* JSON-LD ของร้าน ย้ายไปเป็นแท็ก ld+json แบบ static ใน head แล้ว (Google อ่านได้ทันทีไม่ต้องรัน JS) */
 </script>
-<script src="assets/js/layout.js?v=4"></script>
+<script src="assets/js/layout.js?v=5"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

@@ -208,7 +208,7 @@ export function headHTML({ title, desc, kw, url, ogTitle, ogDesc, ogImage, ld = 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/theme.css?v=5">
+<link rel="stylesheet" href="../assets/css/theme.css?v=6">
 <link rel="stylesheet" href="../assets/css/catalog.css?v=3">
 ${ld.map((o) => `<script type="application/ld+json">\n${JSON.stringify(o, null, 2)}\n</script>`).join("\n")}
 ${style ? `<style>\n${style}\n</style>\n` : ""}</head>`;
@@ -217,10 +217,10 @@ ${style ? `<style>\n${style}\n</style>\n` : ""}</head>`;
 export function scriptsHTML(page) {
   return `<script>window.MTT_BASE="../";window.MTT_PAGE="${page}";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=3"></script>
+<script src="../assets/js/catalog.js?v=4"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script src="../assets/js/catalog-find.js?v=2"></script>
-<script src="../assets/js/layout.js?v=4"></script>
+<script src="../assets/js/layout.js?v=5"></script>
 <script src="/_vercel/insights/script.js" defer></script>`;
 }
 

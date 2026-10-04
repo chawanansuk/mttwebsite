@@ -43,15 +43,15 @@ function headerHTML(base, page) {
   }).join("\n      ");
   return `<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
 <header class="site-header"><div class="wrap nav">
-  <a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก"><span class="mark">${BOLT}</span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>
+  <a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก" data-th-aria-label="ม.ทวีภัณฑ์ หน้าแรก" data-en-aria-label="M.T.T. Hardware home"><span class="mark">${BOLT}</span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>
   <nav class="nav-links" id="navLinks">
       ${links}
   </nav>
   <div class="nav-right">
-    <a class="cart-btn" href="${base}products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า">${CART_ICON}<span class="cart-badge" id="cartBadge" hidden>0</span></a>
-    <div class="lang" role="group" aria-label="ภาษา"><button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button></div>
-    <a class="btn btn-line btn-sm" ${LINE_ATTRS} aria-label="สั่งทาง LINE">${LINE_ICON}<span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>
-    <button class="nav-toggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <a class="cart-btn" href="${base}products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-en-aria-label="Cart" data-en-aria-label="Cart" data-th-title="ตะกร้าสินค้า" data-en-title="Cart">${CART_ICON}<span class="cart-badge" id="cartBadge" hidden>0</span></a>
+    <div class="lang" role="group" aria-label="ภาษา" data-th-aria-label="ภาษา" data-en-aria-label="Language"><button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button></div>
+    <a class="btn btn-line btn-sm" ${LINE_ATTRS} aria-label="สั่งทาง LINE" data-th-aria-label="สั่งทาง LINE" data-en-aria-label="Order on LINE">${LINE_ICON}<span data-th="สั่งทาง LINE" data-en="LINE">สั่งทาง LINE</span></a>
+    <button class="nav-toggle" aria-label="เปิดเมนู" data-th-aria-label="เปิดเมนู" data-en-aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
   </div>
 </div></header>`;
 }
@@ -105,10 +105,10 @@ function footerHTML(base) {
 function tabbarHTML(base, page) {
   const cur = (on) => (on ? ' aria-current="page"' : "");
   const isProducts = page === "products" || page === "tools" || page === "pins";
-  return `<nav class="tabbar" aria-label="เมนูหลัก">
+  return `<nav class="tabbar" aria-label="เมนูหลัก" data-th-aria-label="เมนูหลัก" data-en-aria-label="Main menu">
   <a href="/"${cur(page === "home")}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg><span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a>
   <a href="/products"${cur(isProducts)}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 7 12 3l9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg><span data-th="สินค้า" data-en="Products">สินค้า</span></a>
-  <a href="${base}products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า">${CART_ICON}<span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
+  <a href="${base}products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-en-aria-label="Cart">${CART_ICON}<span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
   <a class="tab-line" ${LINE_ATTRS}>${LINE_ICON}<span data-th="ทัก LINE" data-en="LINE">ทัก LINE</span></a>
 </nav>`;
 }
@@ -196,7 +196,8 @@ function compactJSON(s) {
 
 /* ---------- CLI: node _chrome.mjs [--check] ---------- */
 export function pageFiles() {
-  return execSync("git ls-files '*.html'", { encoding: "utf8" }).split("\n").filter(Boolean);
+  /* en/ สร้างจากหน้าไทยโดย _gen-en.mjs (header/footer เป็นภาษาอังกฤษแล้ว) ห้าม bake ทับ */
+  return execSync("git ls-files '*.html'", { encoding: "utf8" }).split("\n").filter((f) => f && !f.startsWith("en/"));
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const check = process.argv.includes("--check");

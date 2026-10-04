@@ -137,8 +137,8 @@ function pageHTML(p, i) {
   const compareRows = near.map(j => {
     const q = PINS[j];
     const self = j === i;
-    const name = self ? `<b>เบอร์ ${q.no} (หน้านี้)</b>` : `<a href="safety-pins-${q.no}.html">เบอร์ ${q.no}</a>`;
-    return `        <tr${self ? ' class="me"' : ""}><td>${name}</td><td>${q.mm} มม. (${q.cm} ซม.)</td><td>~${q.pack}</td><td data-th="${esc(q.uses_th[0])}" data-en="${esc(q.uses_en[0])}">${esc(q.uses_th[0])}</td></tr>`;
+    const name = self ? `<b data-th="เบอร์ ${q.no} (หน้านี้)" data-en="Size ${q.no} (this page)">เบอร์ ${q.no} (หน้านี้)</b>` : `<a href="safety-pins-${q.no}.html" data-th="เบอร์ ${q.no}" data-en="Size ${q.no}">เบอร์ ${q.no}</a>`;
+    return `        <tr${self ? ' class="me"' : ""}><td>${name}</td><td data-th="${q.mm} มม. (${q.cm} ซม.)" data-en="${q.mm} mm (${q.cm} cm)">${q.mm} มม. (${q.cm} ซม.)</td><td data-th="~${q.pack}" data-en="~${q.pack}">~${q.pack}</td><td data-th="${esc(q.uses_th[0])}" data-en="${esc(q.uses_en[0])}">${esc(q.uses_th[0])}</td></tr>`;
   }).join("\n");
 
   const useList = p.uses_th.map((u, k) =>
@@ -171,7 +171,7 @@ function pageHTML(p, i) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/theme.css?v=5">
+<link rel="stylesheet" href="../assets/css/theme.css?v=6">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -239,17 +239,17 @@ ${faqSchema}
 
     <div class="sizebox">
       <div class="sizebox-top">
-        <img class="pinshot" src="../assets/img/products/pin-${p.no}.webp" alt="เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ขนาด ${p.mm} มม. ลวด ${p.wire} มม. ชุบนิกเกิลสีเงิน" width="450" height="600" loading="lazy">
+        <img class="pinshot" src="../assets/img/products/pin-${p.no}.webp" alt="เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ขนาด ${p.mm} มม. ลวด ${p.wire} มม. ชุบนิกเกิลสีเงิน" data-th-alt="เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ขนาด ${p.mm} มม. ลวด ${p.wire} มม. ชุบนิกเกิลสีเงิน" data-en-alt="Size ${p.no} safety pin, ${p.mm} mm long, ${p.wire} mm wire, nickel-plated silver" width="450" height="600" loading="lazy">
         <div class="sizebox-body">
           <small style="color:var(--ink-mute)" data-th="ความยาวเทียบเบอร์ใหญ่สุด (เบอร์ 7 = 85 มม.)" data-en="Length vs the largest size (7 = 85 mm)">ความยาวเทียบเบอร์ใหญ่สุด (เบอร์ 7 = 85 มม.)</small>
           <div class="pinvis" aria-hidden="true"><img src="../assets/img/products/safety-pin.svg" alt="" width="200" height="72" style="width:${Math.round(p.mm / MAXMM * 100)}%"></div>
         </div>
       </div>
       <div class="spec-grid">
-        <div class="it"><small data-th="ความยาว" data-en="Length">ความยาว</small><b>${p.cm} ซม. · ${p.mm} มม. (${esc(p.inch)})</b></div>
-        <div class="it"><small data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</small><b>~${p.pack} ตัว</b></div>
+        <div class="it"><small data-th="ความยาว" data-en="Length">ความยาว</small><b data-th="${p.cm} ซม. · ${p.mm} มม. (${esc(p.inch)})" data-en="${p.cm} cm · ${p.mm} mm (${esc(p.inch)})">${p.cm} ซม. · ${p.mm} มม. (${esc(p.inch)})</b></div>
+        <div class="it"><small data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</small><b data-th="~${p.pack} ตัว" data-en="~${p.pack} pins">~${p.pack} ตัว</b></div>
         <div class="it"><small data-th="วัสดุ" data-en="Material">วัสดุ</small><b data-th="เหล็กสปริงชุบนิกเกิล" data-en="Nickel-plated steel">เหล็กสปริงชุบนิกเกิล</b></div>
-        <div class="it"><small data-th="ขนาดลวด" data-en="Wire gauge">ขนาดลวด</small><b>${p.wire} มม.</b></div>
+        <div class="it"><small data-th="ขนาดลวด" data-en="Wire gauge">ขนาดลวด</small><b data-th="${p.wire} มม." data-en="${p.wire} mm">${p.wire} มม.</b></div>
         <div class="it"><small data-th="สีที่มี" data-en="Colours">สีที่มี</small><b data-th="${esc(p.colors_th)}" data-en="${esc(p.colors_en)}">${esc(p.colors_th)}</b></div>
       </div>
     </div>
@@ -260,7 +260,7 @@ ${useList}
     </ul>
 
     <h2 class="sec-h" data-th="เปรียบเทียบกับเบอร์ใกล้เคียง" data-en="Compare with nearby sizes">เปรียบเทียบกับเบอร์ใกล้เคียง</h2>
-    <div class="tblwrap" tabindex="0" role="region" aria-label="เปรียบเทียบกับเบอร์ใกล้เคียง">
+    <div class="tblwrap" tabindex="0" role="region" aria-label="เปรียบเทียบกับเบอร์ใกล้เคียง" data-th-aria-label="เปรียบเทียบกับเบอร์ใกล้เคียง" data-en-aria-label="Compare with nearby sizes">
       <table class="cmp">
         <thead><tr><th data-th="เบอร์" data-en="Size">เบอร์</th><th data-th="ความยาว" data-en="Length">ความยาว</th><th data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</th><th data-th="งานเด่น" data-en="Best for">งานเด่น</th></tr></thead>
         <tbody>
@@ -290,7 +290,7 @@ ${faqHTML}
 
 <script>window.MTT_BASE="../";window.MTT_PAGE="pins";</script>
 <script src="../assets/js/shop-config.js?v=2"></script>
-<script src="../assets/js/catalog.js?v=3"></script>
+<script src="../assets/js/catalog.js?v=4"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script>
 /* ปุ่ม data-line-ask → ลิงก์ทัก LINE พร้อมข้อความ */
@@ -298,7 +298,7 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 </script>
-<script src="../assets/js/layout.js?v=4"></script>
+<script src="../assets/js/layout.js?v=5"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>
