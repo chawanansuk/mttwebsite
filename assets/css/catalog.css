@@ -116,3 +116,9 @@ table.tools td.mat{white-space:normal;max-width:240px}
   table.tools tr:not(.fam-lead) td.nm{display:contents}
   table.tools tr:not(.fam-lead) td.nm .note,table.tools tr:not(.fam-lead) td.nm .nmlink{flex:0 0 100%;order:4;margin:0}
 }
+
+/* ตารางที่ยังไม่เลื่อนถึง ไม่ต้องจัดหน้า/วาดก่อน (หน้าประแจ 179 รายการ เดิมใช้เวลาจัดหน้า ~0.6 วิ บนมือถือช้า)
+   ความสูงจองไว้ = จำนวนแถว × ความสูงแถวเฉลี่ยที่วัดจริง แล้ว "auto" จำความสูงจริงหลังวาดครั้งแรก */
+.tblwrap[style*="--rows"]{content-visibility:auto;contain-intrinsic-size:auto calc(var(--rows) * 95px + 48px)}
+@media(max-width:600px){.tblwrap[style*="--rows"]{contain-intrinsic-size:auto calc(var(--rows) * 115px)}}
+.cv-off .tblwrap[style*="--rows"]{content-visibility:visible}

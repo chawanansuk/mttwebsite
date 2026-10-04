@@ -120,9 +120,12 @@ const HREF = { "line-url": S.LINE_URL, "phone-tel": S.PHONE_TEL && "tel:" + S.PH
 const TEXT = { phone: S.PHONE, address: S.ADDRESS_TH, "line-id": S.LINE_ID, email: S.EMAIL, hours: S.HOURS_TH };
 const unesc = (s) => s.replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;/g, "'").replace(/&amp;/g, "&");
 /* ลิงก์ "ทัก LINE พร้อมข้อความ" — ตรรกะเดียวกับ CATALOG.lineAsk() ใน assets/js/catalog.js */
+/* อักษรไทยเก็บไว้ตรง ๆ ไม่ percent-encode — URL Standard อนุญาต และเบราว์เซอร์ encode ให้เองตอนกด
+   เดิม encode ทุกตัว (ไทย 1 ตัว = 9 ไบต์) หน้าแคตตาล็อกประแจหนัก ~290KB เพราะลิงก์พวกนี้ราว 80KB */
+const askQuery = (text) => encodeURIComponent(text || "").replace(/(?:%E0%B[89]%[89AB][0-9A-F])+/g, decodeURIComponent);
 const lineAsk = (text) => {
   const id = (S.LINE_ID || "").replace(/^@/, "");
-  return id ? "https://line.me/R/oaMessage/@" + id + "/?" + encodeURIComponent(text || "") : S.LINE_URL || "#";
+  return id ? "https://line.me/R/oaMessage/@" + id + "/?" + askQuery(text) : S.LINE_URL || "#";
 };
 /* ข้อความนโยบายที่ใช้หลายหน้า: data-shop-text="shipping" → SHOP.SHIPPING_TH/EN */
 const SHOP_TEXT = { shipping: [S.SHIPPING_TH, S.SHIPPING_EN], colors: [S.COLORS_TH, S.COLORS_EN], returns: [S.RETURNS_TH, S.RETURNS_EN] };

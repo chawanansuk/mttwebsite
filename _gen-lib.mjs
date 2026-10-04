@@ -158,7 +158,7 @@ export function groupHTML(g, i, brandTh = "WYNNTOOLS", after = "") {
   const notes = (g.notes_th || []).map((n) => `<li>${esc(n)}</li>`).join("");
   const n = g.items.length;
   return `    <h3 class="grp-h" id="g${i}">${bi(g.th, g.en)} ${g.en ? `<span class="ge" data-th="${esc(g.en)}" data-en="${esc(g.th)}">${esc(g.en)}</span>` : ""} <em>${n} ${bi("รายการ", "items")}</em></h3>
-${g.mat ? `    <p class="grp-mat">${bi("วัสดุ", "Material")}: ${esc(g.mat)}</p>\n` : ""}${notes ? `    <ul class="grp-notes">${notes}</ul>\n` : ""}    <div class="tblwrap" id="tw${i}" tabindex="0" role="region" aria-label="${esc(g.th)}">
+${g.mat ? `    <p class="grp-mat">${bi("วัสดุ", "Material")}: ${esc(g.mat)}</p>\n` : ""}${notes ? `    <ul class="grp-notes">${notes}</ul>\n` : ""}    <div class="tblwrap" id="tw${i}" style="--rows:${n}" tabindex="0" role="region" aria-label="${esc(g.th)}">
       <table class="tools${cols.pic ? " haspic" : ""}">
         <caption class="vh">${esc(g.th)}</caption>
         <thead><tr>
@@ -209,7 +209,7 @@ export function headHTML({ title, desc, kw, url, ogTitle, ogDesc, ogImage, ld = 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="../assets/css/theme.css?v=5">
-<link rel="stylesheet" href="../assets/css/catalog.css?v=2">
+<link rel="stylesheet" href="../assets/css/catalog.css?v=3">
 ${ld.map((o) => `<script type="application/ld+json">\n${JSON.stringify(o, null, 2)}\n</script>`).join("\n")}
 ${style ? `<style>\n${style}\n</style>\n` : ""}</head>`;
 }
@@ -219,7 +219,7 @@ export function scriptsHTML(page) {
 <script src="../assets/js/shop-config.js?v=2"></script>
 <script src="../assets/js/catalog.js?v=3"></script>
 <script src="../assets/js/cart.js?v=2"></script>
-<script src="../assets/js/catalog-find.js?v=1"></script>
+<script src="../assets/js/catalog-find.js?v=2"></script>
 <script src="../assets/js/layout.js?v=4"></script>
 <script src="/_vercel/insights/script.js" defer></script>`;
 }

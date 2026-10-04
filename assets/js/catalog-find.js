@@ -5,6 +5,16 @@
     a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
   });
 
+  /* ตารางใช้ content-visibility:auto (catalog.css) ให้หน้าเปิดเร็ว แต่ระหว่างเลื่อนแบบ smooth ไปหัวข้อกลุ่ม
+     ความสูงตารางที่ยังไม่วาดจะเปลี่ยน ทำให้เลื่อนไปไม่ถึงหัวข้อ → พอมีการกระโดดภายในหน้า ปิดการข้ามวาดทั้งหน้า */
+  var root = document.documentElement;
+  function fullLayout() { root.classList.add("cv-off"); }
+  if (location.hash) fullLayout();
+  window.addEventListener("hashchange", fullLayout);
+  document.addEventListener("click", function (e) {
+    if (e.target.closest && e.target.closest('a[href^="#"]')) fullLayout();
+  }, true);
+
   var inp = document.getElementById("findInput"), hit = document.getElementById("findHit");
   if (!inp) return;
   var wraps = [].slice.call(document.querySelectorAll(".tblwrap"));
