@@ -85,6 +85,21 @@
       "source": "/articles/moto-vs-lion-jet-lighter.html",
       "destination": "/articles/which-jet-lighter-brand.html",
       "permanent": true
+    },
+    {
+      "source": "/products/:slug([a-z0-9-]+)",
+      "destination": "/products/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/:slug([a-z0-9-]+)",
+      "destination": "/articles/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html",
+      "permanent": true
     }
   ]
 }
