@@ -409,7 +409,7 @@ console.log("\n[ แอตทริบิวต์ซ้ำ ]");
   for (const f of files) {
     const html = readFileSync(join(ROOT, f), "utf8").replace(/<script\b[\s\S]*?<\/script>/g, "");
     for (const m of html.matchAll(/<[a-zA-Z][a-zA-Z0-9]*((?:\s+[^\s=>/]+(?:="[^"]*"|='[^']*')?)*)\s*\/?>/g)) {
-      const names = [...m[1].matchAll(/\s([^\s=>/]+)(?==|\s|$)/g)].map((x) => x[1].toLowerCase());
+      const names = [...m[1].matchAll(/\s+([^\s=>/]+)(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+))?/g)].map((x) => x[1].toLowerCase());
       const d = names.find((n, i) => names.indexOf(n) !== i);
       if (d) { dup.push(`${f}: ${d}`); break; }
     }
