@@ -87,6 +87,8 @@ function fixLinks(html, u) {
         .replace(/productThumb\(p,"(?:\.\.\/)*"/g, 'productThumb(p,"/"');
     }
     return part
+      /* ลิงก์ที่ซ่อนอยู่ในค่า data-th/data-en (layout.js เอาไปใส่ innerHTML ตอนโหลด) ก็ต้องแก้ด้วย */
+      .replace(/\s(data-(?:th|en))="([^"]*)"/g, (a, at, v) => ` ${at}="${v.replace(/href=&quot;([^&]*(?:&amp;[^&]*)*)&quot;/g, (b, h) => `href=&quot;${absUrl(h.replace(/&amp;/g, "&"), baseUrl).replace(/&/g, "&amp;")}&quot;`)}"`)
       .replace(/\s(href|src|poster)="([^"]*)"/g, (a, at, v) => ` ${at}="${absUrl(v, baseUrl)}"`)
       .replace(/\ssrcset="([^"]*)"/g, (a, v) => ` srcset="${v.split(",").map((s) => { const [p, w] = s.trim().split(/\s+/); return absUrl(p, baseUrl) + (w ? " " + w : ""); }).join(", ")}"`)
       .replace(/url\((["']?)((?:\.\.\/)*assets\/[^)"']+)\1\)/g, (a, q, p) => `url(${q}/${p.replace(/^(\.\.\/)*/, "")}${q})`);
