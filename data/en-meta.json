@@ -41,7 +41,7 @@
  },
  "/articles": {
   "title": "Guides and buying advice | M.T.T. Hardware",
-  "desc": "Buying guides from our Sampheng counter: which jet lighter to stock, compact or large, reselling margins, and which safety-pin size fits which job."
+  "desc": "Buying guides from our Sampheng counter: which jet lighter to stock, compact or large, reselling margins, which safety-pin size fits which job, and how to choose wrenches and pliers."
  },
  "/articles/which-jet-lighter-brand.html": {
   "title": "Which jet lighter to stock? 3 options compared | M.T.T.",
@@ -116,5 +116,15 @@
  "/products/safety-pins-7.html": {
   "title": "Safety pin size 7, 85 mm, wholesale by the box | M.T.T.",
   "desc": "Size 7 safety pins, 8.5 cm (85 mm) long, nickel-plated steel, good for giant pins and keychains. 144 pins per box at wholesale prices, counted not weighed, nationwide delivery."
+ },
+ "/articles/which-wrench-for-which-job.html": {
+  "title": "Which wrench for which job? 6 types compared | M.T.T.",
+  "h1": "Which wrench for which job? A guide to the six common types",
+  "desc": "Adjustable, combination, double ring and ratchet wrenches, sockets and hex keys compared: what each suits, a pick-by-job table, and how to build a first kit."
+ },
+ "/articles/which-pliers-for-which-job.html": {
+  "title": "Which pliers for which job? Jaw shapes explained | M.T.T.",
+  "h1": "Which pliers for which job? Jaw shapes explained",
+  "desc": "Combination, long-nose, diagonal, water-pump, locking and circlip pliers: what each is for, a pick-by-job table, and what to check before you buy."
  }
 }

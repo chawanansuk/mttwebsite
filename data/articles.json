@@ -46,6 +46,29 @@
           "sub_en": "Per-box counts and wholesale prices"
         }
       ]
+    },
+    "tools": {
+      "th": "เครื่องมือช่าง WYNNTOOLS",
+      "en": "WYNNTOOLS hand tools",
+      "tag_th": "เครื่องมือช่าง",
+      "tag_en": "Hand tools",
+      "href": "products/tools.html",
+      "links": [
+        {
+          "href": "products/tools-wrenches.html",
+          "th": "แคตตาล็อกประแจ ลูกบล็อก",
+          "en": "Wrench and socket catalogue",
+          "sub_th": "ประแจ WYNNTOOLS ทุกแบบ พร้อมขนาดและจำนวนต่อลัง",
+          "sub_en": "Every WYNNTOOLS wrench with sizes and carton counts"
+        },
+        {
+          "href": "products/tools-holding.html",
+          "th": "แคตตาล็อกคีม แคลมป์ ปากกาจับ",
+          "en": "Pliers and clamp catalogue",
+          "sub_th": "คีมทุกทรงปาก คีมล็อก และปากกาจับชิ้นงาน",
+          "sub_en": "Every jaw shape, locking pliers and bench vises"
+        }
+      ]
     }
   },
   "articles": [
@@ -196,6 +219,54 @@
       "modified": "2026-10-04",
       "related": [
         "which-safety-pin-size"
+      ]
+    },
+    {
+      "slug": "which-wrench-for-which-job",
+      "cat": "tools",
+      "short_th": "ประแจแบบไหนใช้งานอะไร",
+      "short_en": "Which wrench for which job",
+      "eyebrow_th": "คู่มือเลือกเครื่องมือช่าง",
+      "eyebrow_en": "Hand tool buying guide",
+      "h1_th": "ประแจแต่ละแบบใช้ต่างกันยังไง เลือกให้ตรงงาน",
+      "h1_en": "Which wrench for which job? A guide to the six common types",
+      "title_th": "ประแจแต่ละแบบใช้ต่างกันยังไง เลือกให้ตรงงาน",
+      "desc_th": "เทียบประแจเลื่อน ประแจปากตายแหวนข้าง ประแจแหวนคู่ ประแจแหวนฟรี ลูกบล็อก และประแจหกเหลี่ยม ว่าเหมาะกับงานไหน พร้อมตารางเลือกตามงานและวิธีเริ่มชุดแรก",
+      "og_desc_th": "ประแจ 6 แบบใช้ต่างกันยังไง พร้อมตารางเลือกตามงาน",
+      "card_th": "ประแจ 6 แบบ ตารางเลือกตามงาน และวิธีเริ่มชุดแรก",
+      "card_en": "Six wrench types, a pick-by-job table and a first kit",
+      "keywords": "ประแจ แต่ละแบบ, ประแจเลื่อน, ประแจปากตาย, ประแจแหวน, ลูกบล็อก 4 หุน, ประแจหกเหลี่ยม, WYNNTOOLS",
+      "image": "assets/img/og/which-wrench-for-which-job.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-04",
+      "modified": "2026-10-04",
+      "related": [
+        "which-pliers-for-which-job"
+      ]
+    },
+    {
+      "slug": "which-pliers-for-which-job",
+      "cat": "tools",
+      "short_th": "คีมแบบไหนใช้ทำอะไร",
+      "short_en": "Which pliers for which job",
+      "eyebrow_th": "คู่มือเลือกเครื่องมือช่าง",
+      "eyebrow_en": "Hand tool buying guide",
+      "h1_th": "คีมแต่ละแบบใช้ทำอะไร เลือกคีมให้ถูกงาน",
+      "h1_en": "Which pliers for which job? Jaw shapes explained",
+      "title_th": "คีมแต่ละแบบใช้ทำอะไร เลือกคีมให้ถูกงาน",
+      "desc_th": "คีมปากรวม คีมปากแหลม คีมตัดปากเฉียง คีมคอม้า คีมล็อก และคีมหนีบแหวน ใช้ต่างกันยังไง พร้อมตารางเลือกตามงานและสิ่งที่ต้องดูก่อนซื้อ",
+      "og_desc_th": "ปากคีมแต่ละแบบใช้ทำอะไร พร้อมตารางเลือกตามงาน",
+      "card_th": "ปากคีม 6 แบบ ตารางเลือกตามงาน และสิ่งที่ต้องดูก่อนซื้อ",
+      "card_en": "Six jaw shapes, a pick-by-job table and what to check before buying",
+      "keywords": "คีม แต่ละแบบ, คีมปากรวม, คีมปากแหลม, คีมตัดปากเฉียง, คีมคอม้า, คีมล็อก, คีมหนีบแหวน, WYNNTOOLS",
+      "image": "assets/img/og/which-pliers-for-which-job.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-04",
+      "modified": "2026-10-04",
+      "related": [
+        "which-wrench-for-which-job"
       ]
     }
   ]

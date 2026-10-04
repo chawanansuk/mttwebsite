@@ -95,3 +95,6 @@ table.art caption{caption-side:top;text-align:left;font-family:var(--font-head);
 .nextlinks a span{font-size:.82rem;color:var(--ink-dim)}
 
 /* ---------- แถบปิดท้าย: .cta-band อยู่ใน theme.css ---------- */
+/* ลิงก์ในเนื้อความ (ย่อหน้า ตาราง รายการ) ต้องมองออกว่ากดได้ — theme.css ตั้ง a{color:inherit} ไว้ทั้งเว็บ */
+.art-body :is(p,td,li,figcaption) a:not(.btn){color:var(--amber-dark);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.art-body :is(p,td,li,figcaption) a:not(.btn):hover{text-decoration-thickness:2px}

@@ -158,7 +158,7 @@ for (const a of ARTICLES) {
 {
   const URL = `${SITE}/articles`;
   const TITLE = `บทความและคู่มือเลือกซื้อ | ${SHOP_NAME}`;
-  const DESC = "รวมคู่มือเลือกซื้อจากหน้าร้านสำเพ็ง — ไฟฟู่ยี่ห้อไหนดี รุ่นเล็กหรือรุ่นใหญ่ คิดกำไรขายส่ง และเข็มกลัดเบอร์ไหนใช้ทำอะไร";
+  const DESC = "รวมคู่มือเลือกซื้อจากหน้าร้านสำเพ็ง — ไฟฟู่ยี่ห้อไหนดี คิดกำไรขายส่ง เข็มกลัดเบอร์ไหนใช้ทำอะไร และวิธีเลือกประแจกับคีมให้ตรงงาน";
   const newest = ARTICLES.map((a) => a.modified).sort().at(-1);
   const groups = Object.entries(CATS).map(([key, c]) => {
     const list = ARTICLES.filter((a) => a.cat === key);
@@ -190,7 +190,7 @@ ${guideCards("/articles/", list)}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="../assets/css/theme.css?v=6">
-<link rel="stylesheet" href="../assets/css/article.css?v=3">
+<link rel="stylesheet" href="../assets/css/article.css?v=4">
 ${ld({ "@type": "CollectionPage", name: "บทความและคู่มือเลือกซื้อ", description: DESC, url: URL, inLanguage: "th", dateModified: newest,
   mainEntity: { "@type": "ItemList", itemListElement: ARTICLES.map((a, i) => ({ "@type": "ListItem", position: i + 1, name: a.h1_th, url: `${SITE}/articles/${a.slug}.html` })) } })}
 ${ld({ "@type": "BreadcrumbList", itemListElement: [
