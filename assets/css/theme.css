@@ -339,5 +339,6 @@ table.size a,table.art a,table.cmp a,table.job a,table.box a{display:inline-bloc
 html[lang="en"] .gcard .tag{letter-spacing:.08em;text-transform:uppercase}
 .gcard h3{font-size:1rem;margin:0 0 6px}
 .gcard p{font-size:.875rem;color:var(--ink-dim);margin:0}
+.gcard .gdate{display:block;font-size:.75rem;color:var(--ink-dim);margin-top:10px}
 .guide-more{text-align:center;margin:22px 0 0}
 @media(max-width:900px){.guide-grid{grid-template-columns:1fr;gap:10px}.gcard{padding:16px}}

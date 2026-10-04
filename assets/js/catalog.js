@@ -38,7 +38,7 @@ window.CATALOG = (function () {
       glyph: "🔥",
       image: "assets/img/products/jet-lighter.webp", image_sm: "assets/img/products/jet-lighter-640.webp", image_w: 1200,
       tagline_th: "หัวฟู่แรงดันสูง เจอลมไม่ดับ เติมแก๊สใช้ซ้ำ 5 สี",
-      tagline_en: "High-pressure jet, windproof, refillable, 5 colors",
+      tagline_en: "High-pressure jet, windproof, refillable, 5 colours",
       live: true,
       flag_th: "ขายดี", flag_en: "Bestseller",
       colors: colors,

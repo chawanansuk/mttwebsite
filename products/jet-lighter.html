@@ -441,7 +441,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
       <div class="p-hero-tags">
         <span class="p-tag"><b data-th="กันลม" data-en="Windproof">กันลม</b> <span data-th="พายุก็จุดติด" data-en="even in storms">พายุก็จุดติด</span></span>
         <span class="p-tag"><b data-th="เติมแก๊ส" data-en="Refillable">เติมแก๊ส</b> <span data-th="ใช้ซ้ำได้" data-en="reuse it">ใช้ซ้ำได้</span></span>
-        <span class="p-tag"><b>5</b> <span data-th="สีนีออน" data-en="neon colors">สีนีออน</span></span>
+        <span class="p-tag"><b>5</b> <span data-th="สีนีออน" data-en="neon colours">สีนีออน</span></span>
       </div>
     </div>
     <div class="stage">
@@ -472,8 +472,8 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
 <section>
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow" data-th="แต่ละรุ่นมี 5 สี" data-en="5 colors per model">แต่ละรุ่นมี 5 สี</span>
-      <h2 data-th="เลือกสีที่ใช่" data-en="Pick your color">เลือกสีที่ใช่</h2>
+      <span class="eyebrow" data-th="แต่ละรุ่นมี 5 สี" data-en="5 colours per model">แต่ละรุ่นมี 5 สี</span>
+      <h2 data-th="เลือกสีที่ใช่" data-en="Pick your colour">เลือกสีที่ใช่</h2>
       <p data-th="บอดี้ใสมองเห็นระดับแก๊สชัด — รุ่นใหญ่กับรุ่นเล็กใช้ชุดสีต่างกัน ซื้อเป็นชิ้นหรือแพ็ก 3 ระบุสีได้ตอนสั่ง ส่วนยกกล่องมาแบบคละสี" data-en="Clear bodies, gas level always visible. Large and compact come in different colour sets; pick colours for single pieces and 3-packs at checkout, while full boxes come colour-mixed.">บอดี้ใสมองเห็นระดับแก๊สชัด — รุ่นใหญ่กับรุ่นเล็กใช้ชุดสีต่างกัน ซื้อเป็นชิ้นหรือแพ็ก 3 ระบุสีได้ตอนสั่ง ส่วนยกกล่องมาแบบคละสี</p>
     </div>
     <div class="cblocks" id="colorBlocks"></div>
@@ -827,7 +827,10 @@ function renderCart(){
 function cartTotal(){ let s=0; Cart.ids().forEach(id=>{const o=optById(id); if(o)s+=o.price*Cart.qty(id);}); return s; }
 
 /* ---------- actions ---------- */
-function addToCart(id){ Cart.add(id,1); mttToast(L()==="th"?"เพิ่มลงตะกร้าแล้ว":"Added to cart"); }
+function addToCart(id){ Cart.add(id,1); mttToast(L()==="th"?"เพิ่มลงตะกร้าแล้ว":"Added to cart"); track("add_to_cart",{item:id}); }
+/* นับ funnel: หยิบลงตะกร้า → คัดลอกสรุป → ส่งเข้า LINE (window.va ไม่มี = เงียบ) */
+function track(name,data){ if(window.mttTrack) window.mttTrack(name,data); }
+function orderStats(){ return { pieces: Cart.ids().reduce((n,id)=>n+Cart.qty(id),0), lines: Cart.ids().length, value: cartTotal() }; }
 function chgQty(id,d){ Cart.add(id,d); }
 function toggleColor(k){ Cart.toggleColor(k); }
 function pickSwatch(k){
@@ -884,6 +887,7 @@ function copyOrder(){
   const txt=buildOrderText();
   if(!txt){mttToast(th?"ยังไม่มีสินค้าในตะกร้า":"Cart is empty");return;}
   copyText(txt).then(()=>mttToast(th?"คัดลอกสรุปออเดอร์แล้ว":"Order copied"));
+  track("order_copy",orderStats());
 }
 /* ก่อนส่งเข้า LINE ต้องมีชื่อ เบอร์ ที่อยู่ — เดิมส่งได้ทั้งที่ว่าง ร้านต้องถามกลับทุกออเดอร์ */
 function buyerMissing(){
@@ -899,6 +903,7 @@ function copyAndLine(){
   if(!txt){mttToast(th?"ยังไม่มีสินค้าในตะกร้า":"Cart is empty");return;}
   if(buyerMissing()) return;
   copyText(txt).then(()=>mttToast(th?"คัดลอกแล้ว! วางในแชท LINE ได้เลย":"Copied! Paste in LINE chat"));
+  track("order_sent",orderStats());
   // เปิด LINE แบบ synchronous ภายใน click handler — ถ้าหน่วงผ่าน setTimeout จะโดน popup blocker (โดยเฉพาะ iOS)
   window.open(CONFIG.LINE_URL,"_blank","noopener");
 }

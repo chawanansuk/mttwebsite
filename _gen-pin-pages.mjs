@@ -250,7 +250,7 @@ ${faqSchema}
         <div class="it"><small data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</small><b>~${p.pack} ตัว</b></div>
         <div class="it"><small data-th="วัสดุ" data-en="Material">วัสดุ</small><b data-th="เหล็กสปริงชุบนิกเกิล" data-en="Nickel-plated steel">เหล็กสปริงชุบนิกเกิล</b></div>
         <div class="it"><small data-th="ขนาดลวด" data-en="Wire gauge">ขนาดลวด</small><b>${p.wire} มม.</b></div>
-        <div class="it"><small data-th="สีที่มี" data-en="Colors">สีที่มี</small><b data-th="${esc(p.colors_th)}" data-en="${esc(p.colors_en)}">${esc(p.colors_th)}</b></div>
+        <div class="it"><small data-th="สีที่มี" data-en="Colours">สีที่มี</small><b data-th="${esc(p.colors_th)}" data-en="${esc(p.colors_en)}">${esc(p.colors_th)}</b></div>
       </div>
     </div>
 

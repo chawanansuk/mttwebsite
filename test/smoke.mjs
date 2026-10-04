@@ -314,6 +314,26 @@ console.log("\n[ ฟอร์มที่อยู่จำค่า ]");
   await page.close();
 }
 
+/* ---- นับ funnel การสั่งซื้อ (Vercel Analytics custom events) ---- */
+console.log("\n[ event หยิบลงตะกร้า / ส่งออเดอร์ ]");
+{
+  const page = await newPage({ width: 1280, height: 900 });
+  await page.addInitScript(() => { window.__ev = []; window.va = (t, d) => window.__ev.push(d); window.open = () => null; });
+  await page.goto(base + "/products/jet-lighter.html", { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(200);
+  await page.click(".add"); await page.click(".add");
+  await page.waitForTimeout(150);
+  await page.fill("#ofName", "คุณทดสอบ"); await page.fill("#ofPhone", "0812345678"); await page.fill("#ofAddr", "สำเพ็ง กรุงเทพฯ");
+  await page.click("#lineOrder");
+  await page.waitForTimeout(150);
+  const ev = await page.evaluate(() => window.__ev);
+  const sent = ev.find((e) => e.name === "order_sent");
+  assert(ev.filter((e) => e.name === "add_to_cart").length === 2, "หยิบลงตะกร้า 2 ครั้ง → event add_to_cart 2 ครั้ง");
+  assert(sent && sent.pieces === 2 && sent.lines === 1 && sent.value === 118, `ส่งออเดอร์ → event order_sent จำนวน/ยอดถูก (${JSON.stringify(sent)})`);
+  assert(ev.some((e) => e.name === "line_click"), "ปุ่มส่งออเดอร์ยังนับเป็น line_click ด้วย");
+  await page.close();
+}
+
 /* ---- สรุปออเดอร์ EN (UF-4) ---- */
 console.log("\n[ สรุปออเดอร์ EN ]");
 {

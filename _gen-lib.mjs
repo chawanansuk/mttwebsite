@@ -22,12 +22,18 @@ export const bi = (th, en, tag = "span", cls = "") =>
 /* การ์ดบทความ ใช้ร่วมกันที่หน้าแรก หน้ารวมบทความ และหน้าสินค้าตรา M.T.T.
    prefix = path ไปโฟลเดอร์ articles/ จากหน้าที่วางการ์ด */
 export const ARTICLE_DATA = JSON.parse(readFileSync("data/articles.json", "utf8"));
+const TH_MONTH = ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."];
+const EN_MONTH = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+export const dTH = (iso) => { const [y, m, d] = iso.split("-").map(Number); return `${d} ${TH_MONTH[m - 1]} ${y + 543}`; };
+export const dEN = (iso) => { const [y, m, d] = iso.split("-").map(Number); return `${d} ${EN_MONTH[m - 1]} ${y}`; };
+
 export function guideCardsHTML(prefix, list = ARTICLE_DATA.articles) {
   const C = ARTICLE_DATA.categories;
   return list.map((a) => `      <a class="gcard" href="${prefix}${a.slug}.html">
         ${bi(C[a.cat].tag_th, C[a.cat].tag_en, "span", "tag")}
         ${bi(a.short_th, a.short_en, "h3")}
         ${bi(a.card_th, a.card_en, "p")}
+        <time class="gdate" datetime="${a.modified}" data-th="อัปเดต ${dTH(a.modified)}" data-en="Updated ${dEN(a.modified)}">อัปเดต ${dTH(a.modified)}</time>
       </a>`).join("\n");
 }
 
