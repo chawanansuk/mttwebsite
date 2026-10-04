@@ -162,7 +162,36 @@ export function bakeChrome(html) {
   const ownToast = html.replace(/<!--chrome:footer-->[\s\S]*?<!--\/chrome:footer-->/, "").includes('class="toast"');
   const toast = ownToast ? "" : '\n<div class="toast" id="toast" role="status" aria-live="polite"></div>';
   html = put(html, "footer", '<div id="site-footer"></div>', footerHTML(base) + "\n" + tabbarHTML(base, page) + toast);
-  return fillShop(html);
+  return bakeStoreSchema(fillShop(html));
+}
+
+/* ---------- ข้อมูลร้านให้ Google: schema Store ในหน้าแรก + แท็กยืนยัน Search Console ----------
+   ช่องที่ร้านยังไม่ให้ข้อมูล (เวลาเปิด พิกัด อีเมล Facebook) จะไม่ใส่เลย — ห้ามเดา */
+const isUrl = (u) => /^https?:\/\/\S+$/.test(u || "");
+function bakeStoreSchema(html) {
+  html = html.replace(/\n<meta name="google-site-verification" content="[^"]*">/, "");
+  const re = /(<script type="application\/ld\+json">\n)(\{[\s\S]*?"@id": "https:\/\/mtthardware\.com\/#store"[\s\S]*?\})(\n<\/script>)/;
+  const m = html.match(re);
+  if (!m) return html;
+  if (S.SEARCH_CONSOLE_VERIFY) html = html.replace(/(<meta name="viewport"[^>]*>)/, `$1\n<meta name="google-site-verification" content="${esc(S.SEARCH_CONSOLE_VERIFY)}">`);
+  const o = JSON.parse(m[2]);
+  for (const k of ["openingHoursSpecification", "geo", "hasMap", "email"]) delete o[k];
+  const hours = (S.HOURS_SPEC || []).filter((h) => h && h.days && h.days.length && h.opens && h.closes);
+  if (hours.length) o.openingHoursSpecification = hours.map((h) => ({ "@type": "OpeningHoursSpecification", dayOfWeek: h.days, opens: h.opens, closes: h.closes }));
+  const g = S.GEO || {};
+  if (typeof g.lat === "number" && typeof g.lng === "number") o.geo = { "@type": "GeoCoordinates", latitude: g.lat, longitude: g.lng };
+  if (isUrl(S.MAPS_URL)) o.hasMap = S.MAPS_URL;
+  if (S.EMAIL) o.email = S.EMAIL;
+  o.sameAs = [S.LINE_URL, S.FACEBOOK_URL].filter(isUrl);
+  /* เรียงคีย์ใหม่ให้อ่านง่าย: ข้อมูลติดต่อ/ที่ตั้งอยู่ก่อน hasOfferCatalog */
+  const { hasOfferCatalog, ...rest } = o;
+  const out = JSON.stringify(hasOfferCatalog ? { ...rest, hasOfferCatalog } : rest, null, 2);
+  return html.replace(re, (all, a, _b, c) => a + compactJSON(out) + c);
+}
+/* JSON.stringify ขยายทุก array/object ทีละบรรทัด — ย่อ object เล็กกลับเป็นบรรทัดเดียวแบบไฟล์เดิม */
+function compactJSON(s) {
+  return s.replace(/\{\n\s+("@type": "(?:OfferCatalog|Country)"[^{}\[\]]*?)\n\s+\}/g, (all, body) => "{ " + body.replace(/\n\s+/g, " ") + " }")
+          .replace(/\[\n\s+((?:"[^"\n]*",?\n\s+)*"[^"\n]*")\n\s+\]/g, (all, body) => "[" + body.replace(/\n\s+/g, " ") + "]");
 }
 
 /* ---------- CLI: node _chrome.mjs [--check] ---------- */

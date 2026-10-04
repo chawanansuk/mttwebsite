@@ -33,6 +33,17 @@ window.SHOP = {
   RETURNS_TH: "ไฟฟู่ที่จุดไม่ติดจากการผลิต แจ้งทางร้านทาง LINE ภายใน 7 วัน พร้อมรูปหรือคลิป เพื่อเปลี่ยนสินค้า",
   RETURNS_EN: "If a lighter won't light because of a manufacturing fault, tell us on LINE within 7 days with a photo or clip and we'll exchange it.",
 
+  // ===== ข้อมูลให้ Google (ใส่แล้วรัน npm run bake — ระบบเขียนลง schema ร้านในหน้าแรกให้เอง) =====
+  // เวลาเปิด-ปิดแบบที่ Google อ่านได้ เว้นว่าง = ไม่ใส่ เช่น
+  //   [{ days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], opens: "08:30", closes: "17:30" }]
+  HOURS_SPEC: [],
+  // พิกัดหน้าร้าน (Google Maps > กดค้างที่หมุด > ตัวเลขแรก = lat ตัวที่สอง = lng) เว้น null = ไม่ใส่
+  GEO: { lat: null, lng: null },
+  // ลิงก์ร้านบน Google Maps (ปุ่มแชร์ > คัดลอกลิงก์) เว้นว่าง = ไม่ใส่
+  MAPS_URL: "",
+  // Google Search Console > เพิ่ม property > ยืนยันด้วย "แท็ก HTML" > คัดลอกเฉพาะค่าใน content="..."
+  SEARCH_CONSOLE_VERIFY: "",
+
   // วาง URL ฝัง Google Maps ของร้าน (คัดลอกจาก Google Maps > แชร์ > ฝังแผนที่ > src="...")
   // ถ้าเว้นว่าง หน้าแรกจะซ่อนช่องแผนที่ให้อัตโนมัติ
   MAPS_EMBED_URL: ""
