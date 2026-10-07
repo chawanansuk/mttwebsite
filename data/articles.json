@@ -44,6 +44,13 @@
           "en": "Safety pins wholesale",
           "sub_th": "จำนวนต่อกล่องและราคาส่งทุกเบอร์",
           "sub_en": "Per-box counts and wholesale prices"
+        },
+        {
+          "href": "products/safety-pins-running.html",
+          "th": "เข็มกลัดงานวิ่ง",
+          "en": "Race-bib pins",
+          "sub_th": "คำนวณจำนวนกล่องตามจำนวนนักวิ่ง เบอร์ 0 และเบอร์ 2",
+          "sub_en": "Box calculator by runner count, sizes 0 and 2"
         }
       ]
     },
@@ -267,6 +274,56 @@
       "modified": "2026-10-04",
       "related": [
         "which-wrench-for-which-job"
+      ]
+    },
+    {
+      "slug": "race-kit-bib-pickup-checklist",
+      "cat": "pins",
+      "short_th": "เช็คลิสต์ถุงนักวิ่ง",
+      "short_en": "Race-kit checklist",
+      "eyebrow_th": "สำหรับผู้จัดงานวิ่ง",
+      "eyebrow_en": "For race organizers",
+      "h1_th": "เช็คลิสต์ถุงนักวิ่งและวันรับเบอร์ สำหรับผู้จัดงานวิ่ง",
+      "h1_en": "Race-kit and bib-pickup checklist for race organizers",
+      "title_th": "เช็คลิสต์ถุงนักวิ่งและวันรับเบอร์ ผู้จัดงานวิ่ง",
+      "desc_th": "ของที่ต้องมีในถุงนักวิ่ง วิธีคิดจำนวนเข็มกลัดพร้อมตารางจำนวนกล่องเบอร์ 0 และเบอร์ 2 ตั้งแต่ 500 ถึง 20,000 คน และวิธีจัดวันรับเบอร์ให้คิวไม่ติด",
+      "og_desc_th": "ของในถุงนักวิ่ง ตารางจำนวนเข็มกลัด และวิธีจัดวันรับเบอร์",
+      "card_th": "ของในถุงนักวิ่ง ตารางจำนวนกล่องเข็มกลัด และการจัดวันรับเบอร์",
+      "card_en": "Kit contents, a pin box table, and running bib pickup",
+      "keywords": "เช็คลิสต์จัดงานวิ่ง, ของในถุงนักวิ่ง, race kit, วันรับเบอร์วิ่ง, เข็มกลัดงานวิ่ง กี่กล่อง, เข็มกลัดติดเบอร์วิ่ง",
+      "image": "assets/img/og/race-pins.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-07",
+      "modified": "2026-10-07",
+      "related": [
+        "how-to-pin-race-bib",
+        "safety-pins-how-many-boxes"
+      ]
+    },
+    {
+      "slug": "how-to-pin-race-bib",
+      "cat": "pins",
+      "short_th": "วิธีติดเบอร์วิ่ง",
+      "short_en": "How to pin a race bib",
+      "eyebrow_th": "สำหรับนักวิ่ง",
+      "eyebrow_en": "For runners",
+      "h1_th": "วิธีติดเบอร์วิ่งให้แน่น ไม่สะบัด ไม่ฉีกระหว่างวิ่ง",
+      "h1_en": "How to pin a race bib so it stays put the whole race",
+      "title_th": "วิธีติดเบอร์วิ่งให้แน่น ไม่สะบัด ไม่ฉีก",
+      "desc_th": "ติดเบอร์วิ่งด้วยเข็มกลัด 4 ตัวให้แน่นตลอดระยะ กลัดตรงไหน ใส่เสื้อก่อนหรือหลัง ทำไมห้ามกลัดทับชิปจับเวลา และทางเลือกถ้าไม่อยากเจาะเสื้อ",
+      "og_desc_th": "เข็มกลัด 4 ตัว 5 ขั้น เบอร์วิ่งไม่สะบัด ไม่ฉีก",
+      "card_th": "กลัดครบ 4 มุม ใส่เสื้อก่อนกลัด และอย่ากลัดทับชิปจับเวลา",
+      "card_en": "Pin all four corners, wear the shirt first, and keep clear of the chip",
+      "keywords": "วิธีติดเบอร์วิ่ง, ติดเบอร์วิ่ง เข็มกลัด, BIB ติดตรงไหน, เบอร์วิ่งฉีก, เข็มกลัดติดเบอร์วิ่ง",
+      "image": "assets/img/og/race-pins.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-07",
+      "modified": "2026-10-07",
+      "related": [
+        "race-kit-bib-pickup-checklist",
+        "which-safety-pin-size"
       ]
     }
   ]

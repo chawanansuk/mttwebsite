@@ -61,7 +61,15 @@
       "name": "Which size, and how many per runner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Size 2 (38 mm), four per runner — one per bib corner. See the size-2 page for full specs."
+        "text": "Four per runner, one in each bib corner. Organizers use size 2 (38 mm) or the smaller size 0 (28 mm); compare them in size 0 or size 2 ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can size-0 pins be used on race bibs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Some organizers choose size 0 (28 mm), which is smaller than size 2, still four per runner. Size 0 packs 864–1,728 pins a box depending on the lot, and we confirm the actual count in your quotation."
       }
     },
     {
@@ -106,6 +114,14 @@
 .calc input{width:150px;padding:12px 16px;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font:inherit;font-size:1.05rem}
 .calc input:focus{outline:2px solid var(--amber)}
 .calc .res{font-family:var(--font-head);font-size:1.15rem;color:#7fe0a9}
+.calc .seg{display:inline-flex;border:1px solid rgba(255,255,255,.25);border-radius:var(--radius-sm);overflow:hidden}
+.calc .seg button{font:inherit;font-size:.9rem;color:#c2cbde;background:transparent;border:0;padding:11px 14px;cursor:pointer;min-height:44px}
+.calc .seg button.on{background:var(--amber);color:#fff}
+.calc .calc-note{font-size:.8rem;margin:10px 0 0}
+/* ตารางเทียบ 3 คอลัมน์ต้องพอดีจอมือถือ (table.cmp ตั้ง min-width 520px ไว้สำหรับตารางเทียบหลายเบอร์) */
+table.cmp.run-cmp{min-width:0;margin:14px 0 0}
+table.cmp.run-cmp th,table.cmp.run-cmp td{padding:9px 10px}
+.run-proof{margin:18px 0 0;display:inline-block;background:var(--amber-soft);color:var(--amber-dark);border-radius:var(--radius-sm);padding:10px 14px;font-size:.9rem;font-weight:600}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .why-grid .card{padding:18px}
 .why-grid b{display:block;font-family:var(--font-head);font-size:1rem;margin-bottom:4px}
@@ -141,17 +157,18 @@
     <nav class="crumbs" aria-label="breadcrumb"><a href="/en" data-th="หน้าแรก" data-en="Home">Home</a> › <a href="/en/products/safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">Safety pins</a> › <span data-th="เข็มกลัดงานวิ่ง" data-en="Race pins">Race pins</span></nav>
     <span class="eyebrow" data-th="สำหรับผู้จัดงานวิ่ง · อีเวนต์ · โรงเรียน" data-en="For race organizers · events · schools">For race organizers · events · schools</span>
     <h1 data-th="เข็มกลัดติดเบอร์วิ่ง (BIB) ยกกล่อง ราคาส่ง" data-en="Race-bib safety pins by the box">Race-bib safety pins by the box</h1>
-    <p class="muted" style="margin:0;max-width:660px" data-th="งานวิ่งใช้เข็มกลัดซ่อนปลาย เบอร์ 2 (38 มม.) คนละ 4 ตัว กลัด 4 มุมเบอร์วิ่ง — สั่งยกกล่อง 864 ตัว นับจำนวนจริงไม่ชั่ง ออกใบกำกับภาษีได้ ส่งทั่วไทย" data-en="Races use size-2 pins (38 mm), four per runner. Boxes of 864, counted not weighed, tax invoice available, nationwide shipping.">Races use size-2 pins (38 mm), four per runner. Boxes of 864, counted not weighed, tax invoice available, nationwide shipping.</p>
+    <p class="muted" style="margin:0;max-width:660px" data-th="งานวิ่งใช้เข็มกลัดซ่อนปลายคนละ 4 ตัว กลัด 4 มุมเบอร์วิ่ง เลือกได้ทั้งเบอร์ 2 (38 มม.) และเบอร์ 0 (28 มม.) ที่เล็กกว่า สั่งยกกล่อง นับจำนวนจริงไม่ชั่ง ออกใบกำกับภาษีได้ ส่งทั่วไทย" data-en="Races use four safety pins per runner, one in each bib corner. Choose size 2 (38 mm) or the smaller size 0 (28 mm). Sold by the box, counted not weighed, with tax invoices and nationwide shipping.">Races use four safety pins per runner, one in each bib corner. Choose size 2 (38 mm) or the smaller size 0 (28 mm). Sold by the box, counted not weighed, with tax invoices and nationwide shipping.</p>
     <div class="trust">
-      <span class="badge" data-th="เบอร์ 2 มาตรฐานงานวิ่ง" data-en="Size 2 — race standard">Size 2 — race standard</span>
+      <span class="badge" data-th="เบอร์ 0 และเบอร์ 2 สำหรับงานวิ่ง" data-en="Sizes 0 and 2 for races">Sizes 0 and 2 for races</span>
       <span class="badge" data-th="ใบกำกับภาษี/ใบเสนอราคา" data-en="Tax invoice & quotation">Tax invoice & quotation</span>
       <span class="badge" data-th="ส่งทั่วไทย" data-en="Ships nationwide">Ships nationwide</span>
     </div>
     <div class="cta-row">
-      <a class="btn btn-primary" data-line-ask="ขอใบเสนอราคาเข็มกลัดเบอร์ 2 สำหรับงานวิ่ง" href="https://line.me/R/oaMessage/@wynnstools/?ขอใบเสนอราคาเข็มกลัดเบอร์%202%20สำหรับงานวิ่ง" target="_blank" rel="noopener" data-th="ขอใบเสนอราคางานวิ่ง" data-en="Get an event quote">Get an event quote</a>
-      <a class="btn btn-ghost" href="/en/products/safety-pins-2.html" data-th="ดูสเปคเข็มกลัดเบอร์ 2" data-en="Size-2 pin specs">Size-2 pin specs</a>
+      <a class="btn btn-primary" data-line-ask="ขอใบเสนอราคาเข็มกลัดสำหรับงานวิ่ง" href="https://line.me/R/oaMessage/@wynnstools/?ขอใบเสนอราคาเข็มกลัดสำหรับงานวิ่ง" target="_blank" rel="noopener" data-th="ขอใบเสนอราคางานวิ่ง" data-en="Get an event quote">Get an event quote</a>
+      <a class="btn btn-ghost" href="#sizes" data-th="เบอร์ 0 หรือเบอร์ 2 เลือกยังไง" data-en="Size 0 or size 2?">Size 0 or size 2?</a>
       <a class="btn btn-ghost" href="/en/products/safety-pins-wholesale.html" data-th="สั่งยกกล่อง ราคาส่ง" data-en="Wholesale by the box">Wholesale by the box</a>
     </div>
+    <p class="run-proof" data-th="ออเดอร์ล่าสุดจากผู้จัดงานวิ่ง: เข็มกลัดเบอร์ 0 จำนวน 100 กล่อง นับจำนวนจริงทุกกล่อง พร้อมใบกำกับภาษีในนามบริษัท" data-en="A recent race order: 100 boxes of size-0 pins, every box counted, invoiced to the organizer&#x27;s company.">A recent race order: 100 boxes of size-0 pins, every box counted, invoiced to the organizer's company.</p>
   </div>
 </section>
 
@@ -160,11 +177,16 @@
 
     <div class="calc">
       <h2 data-th="คำนวณจำนวนที่ต้องใช้" data-en="Calculate what you need">Calculate what you need</h2>
-      <p data-th="กรอกจำนวนนักวิ่ง — ระบบคิดให้ทันที (4 ตัว/คน + แนะนำเผื่อสำรอง 10%)" data-en="Enter your headcount — 4 pins per runner plus a 10% buffer">Enter your headcount — 4 pins per runner plus a 10% buffer</p>
+      <p data-th="เลือกเบอร์และกรอกจำนวนนักวิ่ง ระบบคิดให้ทันที (4 ตัว/คน + แนะนำเผื่อสำรอง 10%)" data-en="Pick a size and enter your headcount: 4 pins per runner plus a 10% buffer">Pick a size and enter your headcount: 4 pins per runner plus a 10% buffer</p>
       <div class="rowc">
+        <div class="seg" role="group" aria-label="Choose a pin size" data-th-aria-label="เลือกเบอร์เข็มกลัด" data-en-aria-label="Choose a pin size">
+          <button type="button" class="on" data-size="2" aria-pressed="true" data-th="เบอร์ 2 · 38 มม." data-en="Size 2 · 38 mm">Size 2 · 38 mm</button>
+          <button type="button" data-size="0" aria-pressed="false" data-th="เบอร์ 0 · 28 มม." data-en="Size 0 · 28 mm">Size 0 · 28 mm</button>
+        </div>
         <input type="number" id="runners" min="1" step="1" value="1000" inputmode="numeric" aria-label="Number of runners" data-th-aria-label="จำนวนนักวิ่ง" data-en-aria-label="Number of runners">
         <span class="res" id="calcRes"></span>
       </div>
+      <p class="calc-note" id="calcNote"></p>
       <div class="rowc" style="margin-top:14px">
         <a class="btn btn-primary" id="calcAsk" href="#" target="_blank" rel="noopener" data-th="ส่งตัวเลขนี้ขอราคาใน LINE" data-en="Send to LINE for a quote">Send to LINE for a quote</a>
       </div>
@@ -180,11 +202,24 @@
         <p data-th="ของพร้อมส่งจากสำเพ็ง สั่งล่วงหน้า 3–7 วันทัน (งานใหญ่แนะนำ 2 สัปดาห์)" data-en="Ships from Sampheng stock — 3–7 days lead time (2 weeks for big events).">Ships from Sampheng stock — 3–7 days lead time (2 weeks for big events).</p></div>
     </div>
 
-    <h2 class="sec-h" data-th="ทำไมงานวิ่งถึงใช้เบอร์ 2" data-en="Why races settle on size 2">Why races settle on size 2</h2>
-    <p style="color:var(--ink-2);font-size:.9rem;max-width:780px" data-th="เบอร์ 2 ยาว 38 มม. ลวด 0.90 มม. เป็นจุดสมดุลที่งานวิ่งทั่วโลกใช้กัน ยาวพอจะแทงทะลุกระดาษเบอร์วิ่งกับเนื้อผ้าเทคนิคสองชั้นแล้วยังกลัดกลับได้ถนัด แต่ไม่ยาวจนปลายเข็มเหลือแกว่งไปทิ่มตัวนักวิ่งตอนแขนแกว่ง ถ้าเล็กกว่านี้อย่างเบอร์ 1 (32 มม.) จะกลัดผ้าหนา ๆ ยากและหลุดง่ายตอนวิ่ง ถ้าใหญ่กว่าอย่างเบอร์ 3 (46 มม.) รูที่เจาะบนเสื้อจะใหญ่เกินจำเป็นและเบอร์วิ่งจะสะบัดมากขึ้น" data-en="Size 2 — 38 mm on 0.90 mm wire — is the balance races everywhere land on. Long enough to pass through the bib and two layers of technical fabric and still close comfortably, short enough that no spare point swings against the runner. Size 1 (32 mm) struggles with thicker fabric and works loose; size 3 (46 mm) leaves a bigger hole and lets the bib flap.">Size 2 — 38 mm on 0.90 mm wire — is the balance races everywhere land on. Long enough to pass through the bib and two layers of technical fabric and still close comfortably, short enough that no spare point swings against the runner. Size 1 (32 mm) struggles with thicker fabric and works loose; size 3 (46 mm) leaves a bigger hole and lets the bib flap.</p>
+    <h2 class="sec-h" id="sizes" data-th="เบอร์ 0 หรือเบอร์ 2 เลือกแบบไหน" data-en="Size 0 or size 2: which to choose">Size 0 or size 2: which to choose</h2>
+    <p style="color:var(--ink-2);font-size:.9rem;max-width:780px" data-th="ผู้จัดงานวิ่งเลือกได้ทั้งสองเบอร์ เบอร์ 2 ยาวกว่าและลวดหนากว่า ส่วนเบอร์ 0 เล็กและเบากว่า และบางล็อตบรรจุได้มากถึง 1,728 ตัวต่อกล่อง ถ้าไม่แน่ใจว่าเบอร์ไหนเหมาะกับวัสดุเบอร์วิ่งของงาน ส่งรูปหรือบอกชนิดวัสดุมาทาง LINE ทางร้านช่วยดูให้ก่อนสั่ง" data-en="Organizers use both sizes. Size 2 is longer with thicker wire; size 0 is smaller and lighter, and some lots pack up to 1,728 pins a box. If you&#x27;re unsure which suits your bib material, send a photo or tell us what it&#x27;s made of on LINE and we&#x27;ll help before you order.">Organizers use both sizes. Size 2 is longer with thicker wire; size 0 is smaller and lighter, and some lots pack up to 1,728 pins a box. If you're unsure which suits your bib material, send a photo or tell us what it's made of on LINE and we'll help before you order.</p>
+    <div class="tblwrap" tabindex="0" role="region" aria-label="Size 0 vs size 2" data-th-aria-label="เทียบเบอร์ 0 กับเบอร์ 2" data-en-aria-label="Size 0 vs size 2">
+      <table class="cmp run-cmp">
+        <thead><tr><th data-th="" data-en=""></th><th><a href="/en/products/safety-pins-0.html" data-th="เบอร์ 0" data-en="Size 0">Size 0</a></th><th><a href="/en/products/safety-pins-2.html" data-th="เบอร์ 2" data-en="Size 2">Size 2</a></th></tr></thead>
+        <tbody>
+          <tr><td data-th="ความยาว" data-en="Length">Length</td><td data-th="28 มม. (2.8 ซม.)" data-en="28 mm (2.8 cm)">28 mm (2.8 cm)</td><td data-th="38 มม. (3.8 ซม.)" data-en="38 mm (3.8 cm)">38 mm (3.8 cm)</td></tr>
+          <tr><td data-th="ขนาดลวด" data-en="Wire gauge">Wire gauge</td><td data-th="0.70 มม." data-en="0.70 mm">0.70 mm</td><td data-th="0.90 มม." data-en="0.90 mm">0.90 mm</td></tr>
+          <tr><td data-th="บรรจุ/กล่อง" data-en="Per box">Per box</td><td data-th="864–1,728 ตัว (ตามล็อต)" data-en="864–1,728 (varies by lot)">864–1,728 (varies by lot)</td><td data-th="864 ตัว" data-en="864">864</td></tr>
+          <tr><td data-th="พอสำหรับนักวิ่ง (4 ตัว/คน)" data-en="Runners per box (4 each)">Runners per box (4 each)</td><td data-th="216–432 คน/กล่อง" data-en="216–432">216–432</td><td data-th="216 คน/กล่อง" data-en="216">216</td></tr>
+        </tbody>
+      </table>
+    </div>
+
 
     <h2 class="sec-h" data-th="เตรียมของให้ทันวันแจกเบอร์" data-en="Getting stock in before bib pickup">Getting stock in before bib pickup</h2>
     <p style="color:var(--ink-2);font-size:.9rem;max-width:780px" data-th="งานวิ่งส่วนใหญ่แจกเบอร์ก่อนวันแข่ง 1–2 วัน และเข็มกลัดมักเป็นของที่นึกได้ทีหลังสุด สั่งล่วงหน้าอย่างน้อย 1 สัปดาห์จะปลอดภัยที่สุด เพราะถ้าสั่งจำนวนมากอาจต้องรอรอบผลิต และควรเผื่อจำนวนไว้ 10 เปอร์เซ็นต์เสมอ สำหรับตัวที่ตกหล่นตอนแพ็กถุงนักวิ่งและนักวิ่งที่มาขอเพิ่มหน้างาน ถ้าเป็นงานที่จัดประจำทุกปี สั่งเก็บไว้ล่วงหน้าได้เลยเพราะเข็มกลัดไม่มีวันหมดอายุ เก็บในที่แห้งใช้ได้หลายปี" data-en="Bibs usually go out one or two days before race day, and pins are the last thing anyone remembers. Order at least a week ahead — large quantities may wait on a production run — and add ten percent for pins lost while stuffing race packs and runners asking at the desk. For an annual event, buy ahead: pins do not expire and keep for years in a dry place.">Bibs usually go out one or two days before race day, and pins are the last thing anyone remembers. Order at least a week ahead — large quantities may wait on a production run — and add ten percent for pins lost while stuffing race packs and runners asking at the desk. For an annual event, buy ahead: pins do not expire and keep for years in a dry place.</p>
+    <p style="color:var(--ink-2);font-size:.9rem;max-width:780px" data-th="เตรียมของอย่างอื่นในถุงนักวิ่งด้วย ดู&lt;a href=&quot;/en/articles/race-kit-bib-pickup-checklist.html&quot;&gt;เช็คลิสต์ถุงนักวิ่งและวันรับเบอร์&lt;/a&gt; และส่ง&lt;a href=&quot;/en/articles/how-to-pin-race-bib.html&quot;&gt;วิธีติดเบอร์วิ่งให้แน่น&lt;/a&gt;ให้นักวิ่งอ่านก่อนวันงาน" data-en="For the rest of the kit, see the &lt;a href=&quot;/en/articles/race-kit-bib-pickup-checklist.html&quot;&gt;race-kit and bib-pickup checklist&lt;/a&gt;, and send runners &lt;a href=&quot;/en/articles/how-to-pin-race-bib.html&quot;&gt;how to pin a race bib&lt;/a&gt; before race day.">For the rest of the kit, see the <a href="/en/articles/race-kit-bib-pickup-checklist.html">race-kit and bib-pickup checklist</a>, and send runners <a href="/en/articles/how-to-pin-race-bib.html">how to pin a race bib</a> before race day.</p>
 
     <h2 class="sec-h" data-th="ทำไมผู้จัดงานเลือกสั่งกับเรา" data-en="Why organizers order from us">Why organizers order from us</h2>
     <div class="why-grid">
@@ -199,7 +234,9 @@
     <h2 class="sec-h" data-th="คำถามที่พบบ่อยจากผู้จัดงาน" data-en="Organizer FAQ">Organizer FAQ</h2>
     <div class="faq">
       <details><summary data-th="เข็มกลัดติดเบอร์วิ่งใช้เบอร์อะไร กี่ตัวต่อคน?" data-en="Which size, and how many per runner?">Which size, and how many per runner?</summary>
-        <div class="a" data-th="มาตรฐานงานวิ่งใช้เบอร์ 2 (38 มม.) คนละ 4 ตัว กลัดมุมเบอร์วิ่ง (BIB) ทั้ง 4 มุม — ดูสเปคเต็มที่&lt;a href=&quot;/en/products/safety-pins-2.html&quot;&gt;หน้าเข็มกลัดเบอร์ 2&lt;/a&gt;" data-en="Size 2 (38 mm), four per runner — one per bib corner. See the &lt;a href=&quot;/en/products/safety-pins-2.html&quot;&gt;size-2 page&lt;/a&gt; for full specs.">Size 2 (38 mm), four per runner — one per bib corner. See the <a href="/en/products/safety-pins-2.html">size-2 page</a> for full specs.</div></details>
+        <div class="a" data-th="คนละ 4 ตัว กลัดมุมเบอร์วิ่ง (BIB) ทั้ง 4 มุม เบอร์ที่ผู้จัดงานใช้คือ&lt;a href=&quot;/en/products/safety-pins-2.html&quot;&gt;เบอร์ 2&lt;/a&gt; (38 มม.) และ&lt;a href=&quot;/en/products/safety-pins-0.html&quot;&gt;เบอร์ 0&lt;/a&gt; (28 มม.) ที่เล็กกว่า ดูตารางเทียบได้ในหัวข้อ&lt;a href=&quot;#sizes&quot;&gt;เบอร์ 0 หรือเบอร์ 2&lt;/a&gt;" data-en="Four per runner, one in each bib corner. Organizers use &lt;a href=&quot;/en/products/safety-pins-2.html&quot;&gt;size 2&lt;/a&gt; (38 mm) or the smaller &lt;a href=&quot;/en/products/safety-pins-0.html&quot;&gt;size 0&lt;/a&gt; (28 mm); compare them in &lt;a href=&quot;#sizes&quot;&gt;size 0 or size 2&lt;/a&gt;.">Four per runner, one in each bib corner. Organizers use <a href="/en/products/safety-pins-2.html">size 2</a> (38 mm) or the smaller <a href="/en/products/safety-pins-0.html">size 0</a> (28 mm); compare them in <a href="#sizes">size 0 or size 2</a>.</div></details>
+      <details><summary data-th="ใช้เข็มกลัดเบอร์ 0 ติดเบอร์วิ่งได้ไหม?" data-en="Can size-0 pins be used on race bibs?">Can size-0 pins be used on race bibs?</summary>
+        <div class="a" data-th="ได้ ผู้จัดงานวิ่งบางรายเลือกเบอร์ 0 (28 มม.) ที่เล็กกว่าเบอร์ 2 ใช้คนละ 4 ตัวเหมือนกัน เบอร์ 0 บรรจุ 864–1,728 ตัวต่อกล่องตามล็อต ทางร้านแจ้งจำนวนจริงของล็อตที่ส่งตอนเสนอราคา" data-en="Yes. Some organizers choose size 0 (28 mm), which is smaller than size 2, still four per runner. Size 0 packs 864–1,728 pins a box depending on the lot, and we confirm the actual count in your quotation.">Yes. Some organizers choose size 0 (28 mm), which is smaller than size 2, still four per runner. Size 0 packs 864–1,728 pins a box depending on the lot, and we confirm the actual count in your quotation.</div></details>
       <details><summary data-th="งานวิ่ง 1,000 คน ต้องใช้กี่กล่อง?" data-en="How many boxes for 1,000 runners?">How many boxes for 1,000 runners?</summary>
         <div class="a" data-th="1,000 คน × 4 ตัว = 4,000 ตัว ≈ 5 กล่อง (กล่องละ 864 ตัว) และควรเผื่อสำรอง 5–10% สำหรับของหายหรือชำรุดหน้างาน" data-en="1,000 × 4 = 4,000 pins ≈ 5 boxes of 864 — plus a 5–10% buffer for race-day losses.">1,000 × 4 = 4,000 pins ≈ 5 boxes of 864 — plus a 5–10% buffer for race-day losses.</div></details>
       <details><summary data-th="ต้องสั่งล่วงหน้ากี่วัน?" data-en="How much lead time?">How much lead time?</summary>
@@ -218,7 +255,7 @@
         <h2 data-th="ส่งจำนวนนักวิ่งมา เดี๋ยวจัดราคาให้" data-en="Tell us the runner count — we'll quote">Tell us the runner count — we'll quote</h2>
         <p data-th="บอกจำนวนคนและวันงาน ทีมงานคำนวณจำนวนกล่อง เผื่อสำรอง และแจ้งราคาส่งพร้อมค่าจัดส่งให้ทาง LINE" data-en="Give us the head count and event date — we work out boxes plus spares and quote wholesale with shipping on LINE.">Give us the head count and event date — we work out boxes plus spares and quote wholesale with shipping on LINE.</p>
       </div>
-      <a class="btn btn-primary" data-line-ask="สอบถามเข็มกลัดเบอร์ 2 สำหรับงานวิ่ง จำนวนนักวิ่ง ... คน" href="https://line.me/R/oaMessage/@wynnstools/?สอบถามเข็มกลัดเบอร์%202%20สำหรับงานวิ่ง%20จำนวนนักวิ่ง%20...%20คน" target="_blank" rel="noopener" data-th="ทัก LINE ขอราคางานวิ่ง" data-en="Ask on LINE">Ask on LINE</a>
+      <a class="btn btn-primary" data-line-ask="สอบถามเข็มกลัดสำหรับงานวิ่ง จำนวนนักวิ่ง ... คน" href="https://line.me/R/oaMessage/@wynnstools/?สอบถามเข็มกลัดสำหรับงานวิ่ง%20จำนวนนักวิ่ง%20...%20คน" target="_blank" rel="noopener" data-th="ทัก LINE ขอราคางานวิ่ง" data-en="Ask on LINE">Ask on LINE</a>
     </div>
 </div></section>
 </main>
@@ -247,6 +284,8 @@
     <li><a href="/en/articles/safety-pins-how-many-boxes.html" data-th="สั่งเข็มกลัดกี่กล่องดี" data-en="How many boxes to order">How many boxes to order</a></li>
     <li><a href="/en/articles/which-wrench-for-which-job.html" data-th="ประแจแบบไหนใช้งานอะไร" data-en="Which wrench for which job">Which wrench for which job</a></li>
     <li><a href="/en/articles/which-pliers-for-which-job.html" data-th="คีมแบบไหนใช้ทำอะไร" data-en="Which pliers for which job">Which pliers for which job</a></li>
+    <li><a href="/en/articles/race-kit-bib-pickup-checklist.html" data-th="เช็คลิสต์ถุงนักวิ่ง" data-en="Race-kit checklist">Race-kit checklist</a></li>
+    <li><a href="/en/articles/how-to-pin-race-bib.html" data-th="วิธีติดเบอร์วิ่ง" data-en="How to pin a race bib">How to pin a race bib</a></li>
     <li><a href="/en/articles" data-th="บทความทั้งหมด" data-en="All guides">All guides</a></li>
   </ul></div>
   <div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">Links</h2><ul>
@@ -281,17 +320,37 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 function L(){ return (window.MTT && window.MTT.getLang()) || "th"; }
+/* จำนวนต่อกล่อง: เบอร์ 2 = 864 ตัว, เบอร์ 0 = 864–1,728 ตัวตามล็อต (คิดจากค่าต่ำสุด เพื่อไม่ให้ของขาดหน้างาน) */
+const PER_BOX = { "2": 864, "0": 864 };
+let size = "2";
 function renderCalc(){
   const th = L()==="th";
   const n = Math.max(1, parseInt(document.getElementById("runners").value, 10) || 0);
-  const pins = n*4, buffer = Math.ceil(pins*0.1), total = pins+buffer, boxes = Math.ceil(total/864);
+  const pins = n*4, buffer = Math.ceil(pins*0.1), total = pins+buffer, boxes = Math.ceil(total/PER_BOX[size]);
+  const upTo = size==="0" ? (th?"ไม่เกิน ":"at most ") : "≈ ";
   document.getElementById("calcRes").textContent = th
-    ? `${pins.toLocaleString()} ตัว + สำรอง ${buffer.toLocaleString()} = ${total.toLocaleString()} ตัว ≈ ${boxes} กล่อง`
-    : `${pins.toLocaleString()} + ${buffer.toLocaleString()} buffer = ${total.toLocaleString()} pins ≈ ${boxes} boxes`;
+    ? `${pins.toLocaleString()} ตัว + สำรอง ${buffer.toLocaleString()} = ${total.toLocaleString()} ตัว ${upTo}${boxes} กล่อง`
+    : `${pins.toLocaleString()} + ${buffer.toLocaleString()} buffer = ${total.toLocaleString()} pins, ${upTo}${boxes} boxes`;
+  document.getElementById("calcNote").textContent = size==="0"
+    ? (th?"เบอร์ 0 บรรจุ 864–1,728 ตัวต่อกล่องตามล็อต ตัวเลขนี้คิดจาก 864 ตัว ทางร้านแจ้งจำนวนกล่องจริงตอนเสนอราคา":"Size 0 packs 864–1,728 a box depending on the lot. This uses 864, and we confirm the real box count in the quote.")
+    : (th?"เบอร์ 2 บรรจุกล่องละ 864 ตัว":"Size 2 comes 864 to a box.");
   document.getElementById("calcAsk").href = CATALOG.lineAsk(th
-    ? `ขอใบเสนอราคาเข็มกลัดเบอร์ 2 งานวิ่ง ${n.toLocaleString()} คน (รวมสำรอง ≈ ${boxes} กล่อง)`
-    : `Quote: size-2 pins for ${n.toLocaleString()} runners (~${boxes} boxes incl. buffer)`);
+    ? `ขอใบเสนอราคาเข็มกลัดเบอร์ ${size} งานวิ่ง ${n.toLocaleString()} คน (รวมสำรอง ${upTo}${boxes} กล่อง)`
+    : `Quote: size-${size} pins for ${n.toLocaleString()} runners (${upTo}${boxes} boxes incl. buffer)`);
+  calcState = { size: size, runners: n, boxes: boxes };
 }
+let calcState = {};
+document.querySelectorAll(".calc .seg button").forEach(function(b){
+  b.addEventListener("click", function(){
+    size = b.getAttribute("data-size");
+    document.querySelectorAll(".calc .seg button").forEach(function(x){ const on = x===b; x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); });
+    renderCalc();
+  });
+});
+/* นับว่าผู้จัดงานกดขอราคาจากเครื่องคำนวณกี่ครั้ง เบอร์ไหน กี่คน (window.va ไม่มี = เงียบ) */
+document.getElementById("calcAsk").addEventListener("click", function(){
+  if (window.mttTrack) window.mttTrack("race_quote", calcState);
+});
 document.getElementById("runners").addEventListener("input", renderCalc);
 document.addEventListener("langchange", renderCalc);
 renderCalc();

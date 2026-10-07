@@ -101,7 +101,7 @@
     { "@type": "Question", "name": "เข็มกลัดเบอร์ไหนเล็กสุด / ใหญ่สุด?",
       "acceptedAnswer": { "@type": "Answer", "text": "เบอร์ 000 เล็กสุด (ยาวประมาณ 1.9 ซม.) และเบอร์ 7 ใหญ่สุด (ยาวประมาณ 8.5 ซม.)" } },
     { "@type": "Question", "name": "เข็มกลัดติดเบอร์วิ่งใช้เบอร์อะไร?",
-      "acceptedAnswer": { "@type": "Answer", "text": "นิยมใช้เบอร์ 2 (ยาวประมาณ 38 มม.) โดยทั่วไปใช้ 4 ตัวต่อนักวิ่ง 1 คน" } },
+      "acceptedAnswer": { "@type": "Answer", "text": "นิยมใช้เบอร์ 2 (ยาวประมาณ 38 มม.) และมีผู้จัดงานเลือกเบอร์ 0 (ยาวประมาณ 28 มม.) ที่เล็กกว่า โดยทั่วไปใช้ 4 ตัวต่อนักวิ่ง 1 คน" } },
     { "@type": "Question", "name": "เข็มกลัดผ้าอ้อมใช้เบอร์อะไร?",
       "acceptedAnswer": { "@type": "Answer", "text": "นิยมใช้เบอร์ 4 (ยาวประมาณ 56 มม.) หรือแบบหัวพลาสติกล็อค" } },
     { "@type": "Question", "name": "เข็มกลัดติดป้ายราคาใช้เบอร์อะไร?",
@@ -303,7 +303,7 @@ table.size td b{font-family:var(--font-head)}
 
     <div class="calc">
       <h3 data-th="จัดงานวิ่ง ต้องใช้เข็มกลัดกี่กล่อง?" data-en="Running a race — how many boxes?">จัดงานวิ่ง ต้องใช้เข็มกลัดกี่กล่อง?</h3>
-      <p data-th="เบอร์วิ่ง (BIB) ใช้เข็มกลัดเบอร์ 2 คนละ 4 ตัว — กรอกจำนวนนักวิ่งได้เลย" data-en="Race bibs take four #2 pins per runner — enter your headcount">เบอร์วิ่ง (BIB) ใช้เข็มกลัดเบอร์ 2 คนละ 4 ตัว — กรอกจำนวนนักวิ่งได้เลย</p>
+      <p data-th="เบอร์วิ่ง (BIB) ใช้เข็มกลัดคนละ 4 ตัว เลือกได้ทั้งเบอร์ 2 และเบอร์ 0 — กรอกจำนวนนักวิ่งได้เลย" data-en="Race bibs take four pins per runner, in size 2 or size 0 — enter your headcount">เบอร์วิ่ง (BIB) ใช้เข็มกลัดคนละ 4 ตัว เลือกได้ทั้งเบอร์ 2 และเบอร์ 0 — กรอกจำนวนนักวิ่งได้เลย</p>
       <div class="rowc">
         <input type="number" id="runners" min="1" step="1" value="500" inputmode="numeric" aria-label="จำนวนนักวิ่ง" data-th-aria-label="จำนวนนักวิ่ง" data-en-aria-label="Number of runners">
         <span class="res" id="calcRes"></span>
@@ -332,7 +332,7 @@ table.size td b{font-family:var(--font-head)}
       <details><summary data-th="เข็มกลัดเบอร์ไหนเล็กสุด / ใหญ่สุด?" data-en="Which size is smallest / largest?">เข็มกลัดเบอร์ไหนเล็กสุด / ใหญ่สุด?</summary>
         <div class="a" data-th="เบอร์ 000 เล็กสุด (ยาวประมาณ 1.9 ซม.) และเบอร์ 7 ใหญ่สุด (ยาวประมาณ 8.5 ซม.)" data-en="000 is the smallest (~1.9 cm) and 7 the largest (~8.5 cm).">เบอร์ 000 เล็กสุด (ยาวประมาณ 1.9 ซม.) และเบอร์ 7 ใหญ่สุด (ยาวประมาณ 8.5 ซม.)</div></details>
       <details><summary data-th="เข็มกลัดติดเบอร์วิ่ง (BIB) ใช้เบอร์อะไร?" data-en="Which size for race bibs?">เข็มกลัดติดเบอร์วิ่ง (BIB) ใช้เบอร์อะไร?</summary>
-        <div class="a" data-th="นิยมใช้เบอร์ 2 (38 มม.) ใช้ 4 ตัวต่อนักวิ่ง 1 คน — สั่งยกกล่องสำหรับงานอีเวนต์ได้ราคาส่ง" data-en="Size 2 (38 mm), four pins per runner — order by the box for events.">นิยมใช้เบอร์ 2 (38 มม.) ใช้ 4 ตัวต่อนักวิ่ง 1 คน — สั่งยกกล่องสำหรับงานอีเวนต์ได้ราคาส่ง</div></details>
+        <div class="a" data-th="นิยมใช้เบอร์ 2 (38 มม.) และมีผู้จัดงานเลือกเบอร์ 0 (28 มม.) ที่เล็กกว่า ใช้ 4 ตัวต่อนักวิ่ง 1 คน — สั่งยกกล่องสำหรับงานอีเวนต์ได้ราคาส่ง" data-en="Size 2 (38 mm) is the usual choice, and some organizers pick the smaller size 0 (28 mm). Four pins per runner; order by the box for events.">นิยมใช้เบอร์ 2 (38 มม.) และมีผู้จัดงานเลือกเบอร์ 0 (28 มม.) ที่เล็กกว่า ใช้ 4 ตัวต่อนักวิ่ง 1 คน — สั่งยกกล่องสำหรับงานอีเวนต์ได้ราคาส่ง</div></details>
       <details><summary data-th="เข็มกลัดผ้าอ้อมใช้เบอร์อะไร?" data-en="Which size for diapers?">เข็มกลัดผ้าอ้อมใช้เบอร์อะไร?</summary>
         <div class="a" data-th="นิยมใช้เบอร์ 4 (56 มม.) ที่เรียกกันว่าเข็มกลัดผ้าห่ม/ผ้าอ้อม หรือเลือกแบบหัวพลาสติกล็อคเพื่อความปลอดภัยเพิ่ม" data-en="Size 4 (56 mm), a.k.a. blanket/diaper pins — or plastic-head locking pins for extra safety.">นิยมใช้เบอร์ 4 (56 มม.) ที่เรียกกันว่าเข็มกลัดผ้าห่ม/ผ้าอ้อม หรือเลือกแบบหัวพลาสติกล็อคเพื่อความปลอดภัยเพิ่ม</div></details>
       <details><summary data-th="เข็มกลัดติดป้ายราคา/แท็กสินค้าใช้เบอร์อะไร?" data-en="Which size for price tags?">เข็มกลัดติดป้ายราคา/แท็กสินค้าใช้เบอร์อะไร?</summary>
@@ -377,6 +377,8 @@ table.size td b{font-family:var(--font-head)}
     <li><a href="../articles/safety-pins-how-many-boxes.html" data-th="สั่งเข็มกลัดกี่กล่องดี" data-en="How many boxes to order">สั่งเข็มกลัดกี่กล่องดี</a></li>
     <li><a href="../articles/which-wrench-for-which-job.html" data-th="ประแจแบบไหนใช้งานอะไร" data-en="Which wrench for which job">ประแจแบบไหนใช้งานอะไร</a></li>
     <li><a href="../articles/which-pliers-for-which-job.html" data-th="คีมแบบไหนใช้ทำอะไร" data-en="Which pliers for which job">คีมแบบไหนใช้ทำอะไร</a></li>
+    <li><a href="../articles/race-kit-bib-pickup-checklist.html" data-th="เช็คลิสต์ถุงนักวิ่ง" data-en="Race-kit checklist">เช็คลิสต์ถุงนักวิ่ง</a></li>
+    <li><a href="../articles/how-to-pin-race-bib.html" data-th="วิธีติดเบอร์วิ่ง" data-en="How to pin a race bib">วิธีติดเบอร์วิ่ง</a></li>
     <li><a href="/articles" data-th="บทความทั้งหมด" data-en="All guides">บทความทั้งหมด</a></li>
   </ul></div>
   <div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">ลิงก์</h2><ul>
@@ -423,7 +425,7 @@ table.size td b{font-family:var(--font-head)}
 const PINS = [
   { no:"000", mm:19,  cm:"1.9",     pack:"720–1,500",  uth:"ติดป้ายราคา/แท็ก งานฝีมือ ร้อยลูกปัด กลัดจี้เล็ก", uen:"Price tags, crafts, beading",  flag_th:"เบอร์จิ๋ว", flag_en:"Tiny" },
   { no:"00",  mm:23,  cm:"2.3",     pack:"864–1,440",  uth:"ติดป้ายสินค้า งาน OEM ร้านเสื้อผ้า กลัดถุง",        uen:"Garment tags, OEM, retail" },
-  { no:"0",   mm:28,  cm:"2.8",     pack:"864–1,728",  uth:"ใช้ทั่วไป โรงแรม ซักรีด ติดหมายเลขผ้า",             uen:"General use, laundry, hotels" },
+  { no:"0",   mm:28,  cm:"2.8",     pack:"864–1,728",  uth:"ใช้ทั่วไป งานวิ่ง โรงแรม ซักรีด ติดหมายเลขผ้า",     uen:"General use, race bibs, laundry, hotels" },
   { no:"1",   mm:32,  cm:"3.2", pack:"864",        uth:"ร้อยยางยืดขอบกางเกง งานตัดเย็บทั่วไป",              uen:"Elastic threading, sewing" },
   { no:"2",   mm:38,  cm:"3.8",     pack:"864",        uth:"กลัดเบอร์วิ่ง (BIB) ชุดนักเรียน ป้ายชื่อ",           uen:"Race bibs, uniforms, name tags", flag_th:"งานวิ่งใช้เบอร์นี้", flag_en:"Race-bib size" },
   { no:"3",   mm:46,  cm:"4.6",     pack:"408–432",    uth:"ควิลท์/ผ้านวม ผ้าหนา ยีนส์ ยางยืดกว้าง",            uen:"Quilting, denim, thick fabric" },

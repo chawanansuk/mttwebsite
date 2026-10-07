@@ -49,7 +49,7 @@ export function visibleFaq(html) {
 
 /* ---------- ตาราง stack: ใส่ data-label จากหัวตาราง ---------- */
 function labelTables(html) {
-  return html.replace(/<table class="art stack"[\s\S]*?<\/table>/g, (tbl) => {
+  return html.replace(/<table class="art stack(?: [^"]*)?"[\s\S]*?<\/table>/g, (tbl) => {
     const heads = [...tbl.matchAll(/<th\b[^>]*data-th="([^"]*)"[^>]*data-en="([^"]*)"/g)].map((h) => [h[1], h[2]]);
     return tbl.replace(/<tr>([\s\S]*?)<\/tr>/g, (row, cells) => {
       if (cells.includes("<th")) return row;

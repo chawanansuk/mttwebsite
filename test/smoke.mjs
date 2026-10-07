@@ -55,6 +55,10 @@ async function newPage(vp) {
 }
 
 const ALL_PAGES = ["/", "/products", "/index.html", "/products/index.html", "/products/tools.html", "/products/tools-holding.html", "/products/tools-automotive.html", "/products/tools-wrenches.html", "/products/tools-electrical.html", "/products/tools-screwdrivers.html", "/products/tools-cutting.html", "/products/tools-cutter.html", "/products/tools-padlock.html", "/products/tools-striking.html", "/products/tools-garden.html", "/products/tools-upholster.html", "/products/tools-measuring.html", "/products/tools-blades.html", "/products/tools-soldering.html", "/products/tools-hydraulic.html", "/products/mtt-brand.html", "/products/safety-pins.html", "/products/safety-pins-wholesale.html", "/products/safety-pins-canvas.html", "/products/safety-pins-running.html", "/products/safety-pins-tags.html", "/products/safety-pins-diaper.html", "/articles/which-safety-pin-size.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/articles/jet-lighter-compact-or-large.html","/articles/jet-lighter-wholesale-margin.html","/articles/which-jet-lighter-brand.html", "/articles/jet-lighter-wont-light.html", "/articles/safety-pins-how-many-boxes.html", "/articles", "/privacy.html", "/404.html"];
+/* บทความทุกชิ้นใน data/articles.json ต้องอยู่ในการตรวจด้วย (เดิมรายการมือขาดบทความใหม่) */
+for (const a of JSON.parse(readFileSync(join(ROOT, "data/articles.json"), "utf8")).articles) {
+  const u = `/articles/${a.slug}.html`; if (!ALL_PAGES.includes(u)) ALL_PAGES.push(u);
+}
 
 /* ---- header/footer อยู่ใน HTML ดิบ (บอตที่ไม่รัน JS เห็น) และตรงกับ _chrome.mjs ---- */
 console.log("\n[ header/footer ฝังใน HTML ]");
@@ -397,6 +401,27 @@ console.log("\n[ ตารางแบบจัดตระกูล + ช่อ
   await page.waitForTimeout(300);
   assert((await visible()) === all, "ล้างคำค้นแล้วกลับมาครบ");
   assert((await page.$$eval("table.tools tbody tr", (rs) => rs.filter((r) => r.querySelector(".nmtxt b")).length)) === named, "ล้างคำค้นแล้วชื่อกลับไปพิมพ์ครั้งเดียวเท่าเดิม");
+  await page.close();
+}
+
+/* ---- เครื่องคำนวณเข็มกลัดงานวิ่ง: เลือกเบอร์ 0/2 ---- */
+console.log("\n[ เครื่องคำนวณงานวิ่ง ]");
+{
+  const page = await newPage({ width: 390, height: 844 });
+  await page.addInitScript(() => { window.__ev = []; window.va = (t, d) => window.__ev.push(d); });
+  await page.goto(base + "/products/safety-pins-running.html", { waitUntil: "load" });
+  await page.waitForTimeout(150);
+  assert(/4,400 ตัว ≈ 6 กล่อง/.test(await page.textContent("#calcRes")), "ค่าเริ่มต้นเบอร์ 2 · 1,000 คน = 4,400 ตัว ≈ 6 กล่อง");
+  await page.click('.calc .seg button[data-size="0"]');
+  await page.fill("#runners", "20000");
+  await page.waitForTimeout(100);
+  const res = await page.textContent("#calcRes"), href = decodeURIComponent(await page.getAttribute("#calcAsk", "href"));
+  assert(/88,000 ตัว ไม่เกิน 102 กล่อง/.test(res) && /เบอร์ 0 งานวิ่ง 20,000 คน/.test(href), `เลือกเบอร์ 0 · 20,000 คน → ไม่เกิน 102 กล่อง และข้อความ LINE ระบุเบอร์ 0 (${res})`);
+  await page.evaluate(() => document.getElementById("calcAsk").addEventListener("click", (e) => e.preventDefault(), true));
+  await page.click("#calcAsk");
+  const ev = (await page.evaluate(() => window.__ev)).find((e) => e.name === "race_quote");
+  assert(ev && ev.size === "0" && ev.runners === 20000 && ev.boxes === 102, "กดขอราคา → event race_quote บันทึกเบอร์ จำนวนคน และจำนวนกล่อง");
+  assert(await page.$eval("table.run-cmp", (t) => t.parentElement.scrollWidth <= t.parentElement.clientWidth + 1), "ตารางเทียบเบอร์ 0 กับ 2 พอดีจอมือถือ 390px");
   await page.close();
 }
 
