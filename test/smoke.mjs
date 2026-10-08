@@ -7,6 +7,7 @@ import pw from "playwright";
 const { chromium } = pw;
 import http from "http";
 import { readFileSync, existsSync, statSync } from "fs";
+import { execSync } from "child_process";
 import { extname, join, resolve } from "path";
 import { useLocalFonts } from "./fonts.mjs";
 
@@ -54,7 +55,7 @@ async function newPage(vp) {
   return page;
 }
 
-const ALL_PAGES = ["/", "/products", "/index.html", "/products/index.html", "/products/tools.html", "/products/tools-holding.html", "/products/tools-automotive.html", "/products/tools-wrenches.html", "/products/tools-electrical.html", "/products/tools-screwdrivers.html", "/products/tools-cutting.html", "/products/tools-cutter.html", "/products/tools-padlock.html", "/products/tools-striking.html", "/products/tools-garden.html", "/products/tools-upholster.html", "/products/tools-measuring.html", "/products/tools-blades.html", "/products/tools-soldering.html", "/products/tools-hydraulic.html", "/products/mtt-brand.html", "/products/safety-pins.html", "/products/safety-pins-wholesale.html", "/products/safety-pins-canvas.html", "/products/safety-pins-running.html", "/products/safety-pins-tags.html", "/products/safety-pins-diaper.html", "/articles/which-safety-pin-size.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/articles/jet-lighter-compact-or-large.html","/articles/jet-lighter-wholesale-margin.html","/articles/which-jet-lighter-brand.html", "/articles/jet-lighter-wont-light.html", "/articles/safety-pins-how-many-boxes.html", "/articles", "/privacy.html", "/404.html"];
+const ALL_PAGES = ["/", "/products", "/index.html", "/products/index.html", "/products/tools.html", "/products/tools-holding.html", "/products/tools-automotive.html", "/products/tools-wrenches.html", "/products/tools-electrical.html", "/products/tools-screwdrivers.html", "/products/tools-cutting.html", "/products/tools-cutter.html", "/products/tools-padlock.html", "/products/tools-striking.html", "/products/tools-garden.html", "/products/tools-upholster.html", "/products/tools-measuring.html", "/products/tools-blades.html", "/products/tools-soldering.html", "/products/tools-hydraulic.html", "/products/mtt-brand.html", "/products/safety-pins.html", "/products/safety-pins-wholesale.html", "/products/safety-pins-canvas.html", "/products/safety-pins-running.html", "/products/safety-pins-tags.html", "/products/safety-pins-lion-brand.html", "/products/safety-pins-diaper.html", "/articles/which-safety-pin-size.html", "/products/safety-pins-000.html", "/products/safety-pins-00.html", "/products/safety-pins-0.html", "/products/safety-pins-1.html", "/products/safety-pins-2.html", "/products/safety-pins-3.html", "/products/safety-pins-4.html", "/products/safety-pins-5.html", "/products/safety-pins-6.html", "/products/safety-pins-7.html", "/products/jet-lighter.html", "/articles/jet-lighter-compact-or-large.html","/articles/jet-lighter-wholesale-margin.html","/articles/which-jet-lighter-brand.html", "/articles/jet-lighter-wont-light.html", "/articles/safety-pins-how-many-boxes.html", "/articles", "/privacy.html", "/404.html"];
 /* บทความทุกชิ้นใน data/articles.json ต้องอยู่ในการตรวจด้วย (เดิมรายการมือขาดบทความใหม่) */
 for (const a of JSON.parse(readFileSync(join(ROOT, "data/articles.json"), "utf8")).articles) {
   const u = `/articles/${a.slug}.html`; if (!ALL_PAGES.includes(u)) ALL_PAGES.push(u);
@@ -425,10 +426,51 @@ console.log("\n[ เครื่องคำนวณงานวิ่ง ]");
   await page.close();
 }
 
+/* ---- เข็มกลัดตราสิงโต: ทุกหน้าอ่านจาก data/pins.json และส่วนที่ไม่มีข้อมูลต้องไม่แสดง ---- */
+console.log("\n[ ข้อมูลเข็มกลัด data/pins.json ]");
+{
+  const L = await import(new URL("../_gen-pins-lib.mjs", import.meta.url));
+  const read = (f) => readFileSync(join(ROOT, f), "utf8");
+  const hub = read("products/safety-pins.html"), whole = read("products/safety-pins-wholesale.html"), run = read("products/safety-pins-running.html");
+  const bad = [];
+  for (const p of L.PINS) {
+    const pg = read(`products/safety-pins-${p.no}.html`), ps = L.packStr(p);
+    if (!pg.includes(`~${ps} ตัว`)) bad.push(`หน้าเบอร์ ${p.no} ไม่มี "${ps}"`);
+    if (!new RegExp(`safety-pins-${p.no}\\.html"><b>${p.no}</b></a></td><td>${p.mm}</td><td>${p.cm}</td><td>[^<]*</td><td>${ps}</td>`).test(hub)) bad.push(`ตารางหน้ารวม เบอร์ ${p.no}`);
+    if (!new RegExp(`safety-pins-${p.no}\\.html">${p.no}</a></b>[^<]*(<span[^>]*>[^<]*</span>)?</td><td[^>]*>${p.mm} มม\\.</td><td[^>]*>${p.wire} มม\\.</td><td>${ps}`).test(whole)) bad.push(`ตารางขายส่ง เบอร์ ${p.no}`);
+    if (!pg.includes(`"@id":"${L.BRAND.id}"`)) bad.push(`หน้าเบอร์ ${p.no} ไม่อ้าง Brand @id`);
+  }
+  assert(!bad.length, "จำนวนต่อกล่อง/ขนาดทุกหน้าตรง data/pins.json และหน้าเบอร์อ้าง Brand" + (bad.length ? " → " + bad.slice(0, 4).join(" | ") : ""));
+  const pdm = run.match(/window\.PINS_DATA=(\{[\s\S]*?\});<\/script>/);
+  const pd = pdm ? JSON.parse(pdm[1]) : null;
+  assert(pd && L.PINS.every((p) => pd.sizes[p.no] && pd.sizes[p.no].pack.min === p.pack.min), "เครื่องคำนวณงานวิ่งได้จำนวนต่อกล่องจาก data/pins.json");
+  /* ไม่มีราคาใน pins.json → ห้ามมีตารางราคา/Offer โผล่ */
+  const priced = L.PINS.filter(L.hasPrice).map((p) => p.no);
+  const pinFiles = execSync("git ls-files 'products/safety-pins*.html'", { cwd: ROOT, encoding: "utf8" }).split("\n").filter(Boolean);
+  const leak = pinFiles.filter((f) => { const h = read(f); const no = (f.match(/safety-pins-(\w+)\.html/) || [])[1];
+    return (/class="(cmp|box) price"/.test(h) && !priced.length) || (/"offers"/.test(h) && !priced.includes(no)); });
+  assert(!leak.length, `ไม่มีตารางราคาหรือ Offer ในหน้าที่ pins.json ยังไม่มีราคา (เบอร์ที่มีราคา: ${priced.length ? priced.join(",") : "ไม่มี"})` + (leak.length ? " → " + leak.join(", ") : ""));
+  const noStrip = pinFiles.filter((f) => !f.includes("lion-brand") && !read(f).includes('class="origin-strip"'));
+  assert(!noStrip.length, "ทุกหน้าเข็มกลัดมีแถบซื้อตรงจากต้นทาง" + (noStrip.length ? " → " + noStrip.join(", ") : ""));
+  const brandPage = read("products/safety-pins-lion-brand.html");
+  assert(brandPage.includes(`"@type": "Brand"`) && brandPage.includes(`"@id": "${L.BRAND.id}"`), "หน้าแบรนด์มี Brand schema พร้อม @id");
+  assert(read("index.html").includes(`"brand": { "@id": "${L.BRAND.id}" }`) || read("index.html").includes(`"brand": {"@id": "${L.BRAND.id}"}`), "Store schema หน้าแรกอ้าง Brand ตราสิงโต");
+  for (const f of ["products/safety-pins.html", "products/safety-pins-wholesale.html", "products/safety-pins-running.html", "products/safety-pins-lion-brand.html"])
+    assert(L.fillPinMarkers(read(f), { base: "../", from: "x" }).replace(/\(จากหน้า[^)]*\)/g, "") === read(f).replace(/\(จากหน้า[^)]*\)/g, ""), `${f} ตรง data/pins.json (ไม่ค้างเวอร์ชันเก่า)`);
+  /* ท่อราคาทำงานเมื่อมีข้อมูล (ทดสอบด้วยค่าสมมติในหน่วยความจำ ไม่แตะไฟล์) */
+  const fake = { ...L.PINS[4], price: { box: 500, gross: null, bunch: null, packet: null }, tier: { min_boxes: 10, box: 450 }, in_stock: true };
+  const t = L.priceTableOne(fake, "ทดสอบ");
+  assert(/฿500/.test(t) && /฿0\.58/.test(t) && /tier/.test(t) && /฿450/.test(t), "ตารางราคารายเบอร์คำนวณราคาต่อตัวและราคาขั้นบันไดถูกต้อง");
+  const of = L.offerFor(fake, "https://x/"); const none = L.offerFor(L.PINS[4], "https://x/");
+  assert(of && of.price === 500 && of.availability === "https://schema.org/InStock" && none === null, "Offer schema มีเฉพาะเมื่อมีราคา และบอกสถานะสต็อก");
+  assert(L.stockBadge(L.PINS[4]) === "" && /พร้อมส่ง/.test(L.stockBadge(fake)), "ป้ายสต็อกแสดงเฉพาะเมื่อ in_stock ไม่ใช่ null");
+  assert(L.shippingHTML() === "" || L.DATA.shipping, "ไม่มีนโยบายค่าส่งใน pins.json → ไม่แสดงบล็อกค่าส่ง");
+}
+
 /* ---- tag ใดก็ตามต้องไม่มีแอตทริบิวต์ซ้ำ (เบราว์เซอร์ใช้ตัวแรก ตัวหลังหายเงียบ) ---- */
 console.log("\n[ แอตทริบิวต์ซ้ำ ]");
 {
-  const { execSync } = await import("child_process");
+  // execSync import ที่หัวไฟล์
   const files = execSync("git ls-files '*.html'", { cwd: ROOT, encoding: "utf8" }).split("\n").filter(Boolean);
   const dup = [];
   for (const f of files) {

@@ -79,6 +79,7 @@ function footerHTML(base) {
     ${li(base + "products/mtt-brand.html", "สินค้าตรา M.T.T. ตราสิงโต", "M.T.T. brand products")}
     ${li(base + "products/safety-pins-wholesale.html", "เข็มกลัด ขายส่งยกกล่อง", "Safety pins wholesale")}
     ${li(base + "products/safety-pins-canvas.html", "เข็มกลัดผ้าใบ เต็นท์", "Canvas &amp; tent pins")}
+    ${li(base + "products/safety-pins-lion-brand.html", "เข็มกลัดตราสิงโต", "Lion-brand safety pins")}
     ${li("/products", "สินค้าทั้งหมด", "All products")}
     ${li("/#categories", "หมวดหมู่", "Categories")}
   </ul></div>
@@ -170,7 +171,8 @@ export function bakeChrome(html) {
 const isUrl = (u) => /^https?:\/\/\S+$/.test(u || "");
 function bakeStoreSchema(html) {
   html = html.replace(/\n<meta name="google-site-verification" content="[^"]*">/, "");
-  const re = /(<script type="application\/ld\+json">\n)(\{[\s\S]*?"@id": "https:\/\/mtthardware\.com\/#store"[\s\S]*?\})(\n<\/script>)/;
+  /* จับเฉพาะบล็อก ld+json ที่ @id ระดับบนเป็น #store (ไม่ใช่หน้าที่แค่อ้าง publisher #store) */
+  const re = /(<script type="application\/ld\+json">\n)(\{\n  "@context": "https:\/\/schema\.org",\n  "@type": "[A-Za-z]+",\n  "@id": "https:\/\/mtthardware\.com\/#store",[\s\S]*?\n\})(\n<\/script>)/;
   const m = html.match(re);
   if (!m) return html;
   if (S.SEARCH_CONSOLE_VERIFY) html = html.replace(/(<meta name="viewport"[^>]*>)/, `$1\n<meta name="google-site-verification" content="${esc(S.SEARCH_CONSOLE_VERIFY)}">`);
@@ -183,6 +185,8 @@ function bakeStoreSchema(html) {
   if (isUrl(S.MAPS_URL)) o.hasMap = S.MAPS_URL;
   if (S.EMAIL) o.email = S.EMAIL;
   o.sameAs = [S.LINE_URL, S.FACEBOOK_URL].filter(isUrl);
+  /* ตราสิงโต = แบรนด์ของร้าน (หน้าแบรนด์ประกาศ Brand @id นี้) */
+  o.brand = { "@id": "https://mtthardware.com/#lion-brand" };
   /* เรียงคีย์ใหม่ให้อ่านง่าย: ข้อมูลติดต่อ/ที่ตั้งอยู่ก่อน hasOfferCatalog */
   const { hasOfferCatalog, ...rest } = o;
   const out = JSON.stringify(hasOfferCatalog ? { ...rest, hasOfferCatalog } : rest, null, 2);
@@ -191,6 +195,7 @@ function bakeStoreSchema(html) {
 /* JSON.stringify ขยายทุก array/object ทีละบรรทัด — ย่อ object เล็กกลับเป็นบรรทัดเดียวแบบไฟล์เดิม */
 function compactJSON(s) {
   return s.replace(/\{\n\s+("@type": "(?:OfferCatalog|Country)"[^{}\[\]]*?)\n\s+\}/g, (all, body) => "{ " + body.replace(/\n\s+/g, " ") + " }")
+          .replace(/\{\n\s+("@id": "[^"\n]*")\n\s+\}/g, (all, body) => "{ " + body + " }")
           .replace(/\[\n\s+((?:"[^"\n]*",?\n\s+)*"[^"\n]*")\n\s+\]/g, (all, body) => "[" + body.replace(/\n\s+/g, " ") + "]");
 }
 

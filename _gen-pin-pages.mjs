@@ -8,88 +8,8 @@ import { bakeChrome } from "./_chrome.mjs";
 
 const SITE = "https://mtthardware.com";
 
-const PINS = [
-  { no: "000", mm: 19, cm: "1.9", inch: '3/4"', pack: "720–1,500", wire: "0.65",
-    aka_th: "เบอร์จิ๋ว (3/0)", aka_en: "tiny (3/0)",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "งานฝีมือ ร้านเสื้อผ้า ร้านเครื่องประดับ", groups_en: "crafts, garment shops, jewellery",
-    uses_th: ["ติดป้ายราคา (hang tag) / ป้ายผ้า", "ร้อยลูกปัด งานฝีมือ DIY", "กลัดจี้ / พระเครื่ององค์เล็ก", "งานเครื่องประดับ"],
-    uses_en: ["Price / hang tags", "Beading & DIY crafts", "Small pendants & amulets", "Jewellery work"],
-    faqx_th: ["เบอร์ 000 ต่างจากเบอร์ 00 ยังไง?", "เบอร์ 000 (3/0) เล็กกว่า — ยาว 1.9 ซม. ส่วนเบอร์ 00 (2/0) ยาว 2.3 ซม. งานแท็กเล็กมาก ๆ ใช้ 000 ถ้าอยากได้อึดขึ้นนิดใช้ 00"],
-    faqx_en: ["How is 000 different from 00?", "000 (3/0) is smaller at 1.9 cm; 00 (2/0) is 2.3 cm. Use 000 for the tiniest tags, 00 for a bit more strength."] },
-  { no: "00", mm: 23, cm: "2.3", inch: '7/8"', pack: "864–1,440", wire: "0.65",
-    aka_th: "2/0", aka_en: "2/0",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "ร้านเสื้อผ้า โรงงานผลิต งานพิมพ์ป้าย", groups_en: "garment trade, factories, tag printers",
-    uses_th: ["ติดป้ายสินค้า / แท็กเสื้อผ้า", "กลัดถุงพลาสติก ซองเอกสาร", "งาน OEM โรงงานเสื้อผ้า", "ร้านขายส่งประตูน้ำ-โบ๊เบ๊"],
-    uses_en: ["Garment tags", "Bags & document pouches", "OEM garment work", "Wholesale clothing markets"],
-    faqx_th: ["เบอร์ 2/0 กับ 00 เหมือนกันไหม?", "เหมือนกัน — 2/0 เป็นอีกชื่อของเบอร์ 00 (และ 3/0 คือ 000)"],
-    faqx_en: ["Is 2/0 the same as 00?", "Yes — 2/0 is another name for size 00 (and 3/0 is 000)."] },
-  { no: "0", mm: 28, cm: "2.8", inch: '1-1/16"', pack: "864–1,728", wire: "0.70",
-    aka_th: "—", aka_en: "—",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "ใช้ทั่วไป ผู้จัดงานวิ่ง โรงแรม ร้านซักรีด", groups_en: "general use, race organizers, hotels, laundries",
-    uses_th: ["กลัดเสื้อผ้าชั่วคราว", "ติดเบอร์วิ่ง (BIB) งานวิ่ง คนละ 4 ตัว", "ติดหมายเลขผ้าซักรีด / โรงแรม", "ร้อยยางยืดเส้นเล็ก", "งานบ้านสารพัดประโยชน์"],
-    uses_en: ["Temporary garment pinning", "Race bibs, four per runner", "Laundry numbering", "Threading thin elastic", "Everyday household use"],
-    faqx_th: ["ร้านซักรีดนิยมใช้เบอร์อะไร?", "เบอร์ 0–1 กำลังดี — เล็กพอไม่ทำลายผ้า แต่แข็งแรงพอกลัดป้ายหมายเลขผ้าได้แน่น"],
-    faqx_en: ["Which size do laundries use?", "Sizes 0–1 — small enough to spare the fabric, strong enough to hold number tags."] },
-  { no: "1", mm: 32, cm: "3.2", inch: '1-1/4"', pack: "864", wire: "0.80",
-    aka_th: "—", aka_en: "—",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "งานตัดเย็บ ใช้ทั่วไป", groups_en: "sewing, general use",
-    uses_th: ["ร้อยยางยืดขอบกางเกง/กระโปรง", "กลัดเสื้อผ้าชำรุดชั่วคราว", "กลัดผ้าคลุมไหล่", "งานเย็บผ้าทั่วไป"],
-    uses_en: ["Threading waistband elastic", "Emergency garment fixes", "Pinning shawls", "General sewing"],
-    faqx_th: ["ร้อยยางยืดใช้เข็มกลัดเบอร์ไหนดี?", "ยางยืดเส้นเล็ก-กลางใช้เบอร์ 1 ถ้ายางยืดหน้ากว้างใช้เบอร์ 3 จะจับง่ายกว่า"],
-    faqx_en: ["Best size for threading elastic?", "Size 1 for narrow elastic; size 3 grips wide elastic better."] },
-  { no: "2", mm: 38, cm: "3.8", inch: '1-1/2"', pack: "864", wire: "0.90",
-    aka_th: "เบอร์งานวิ่ง", aka_en: "race-bib size",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "งานวิ่ง กีฬา โรงเรียน อีเวนต์", groups_en: "races, sports, schools, events",
-    uses_th: ["กลัดเบอร์วิ่ง (BIB) มาราธอน — ใช้ 4 ตัว/คน", "กลัดชุดนักเรียน / ป้ายชื่อ", "งานอีเวนต์ แจกผู้เข้าร่วม", "ใช้ทั่วไปขนาดมาตรฐาน"],
-    uses_en: ["Race bibs — 4 pins per runner", "School uniforms & name tags", "Event handouts", "Standard general use"],
-    faqx_th: ["จัดงานวิ่งต้องใช้เข็มกลัดกี่ตัว?", "นักวิ่ง 1 คนใช้ 4 ตัว — เช่นงาน 500 คนใช้ 2,000 ตัว ≈ 3 กล่อง (864 ตัว/กล่อง) ควรเผื่อสำรอง 5–10%"],
-    faqx_en: ["How many pins for a race?", "Four per runner — a 500-runner race needs 2,000 pins ≈ 3 boxes of 864. Add a 5–10% buffer."] },
-  { no: "3", mm: 46, cm: "4.6", inch: '1-13/16"', pack: "408–432", wire: "1.00",
-    aka_th: "—", aka_en: "—",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "งานตัดเย็บ งานผ้าหนา", groups_en: "sewing, thick fabrics",
-    uses_th: ["ควิลท์ / ผ้านวม", "กลัดผ้าหนา ผ้ายีนส์", "ร้อยยางยืดหน้ากว้าง", "งานเย็บที่ต้องการเข็มยาว"],
-    uses_en: ["Quilting & duvets", "Denim & thick fabric", "Wide elastic threading", "Long-reach pinning"],
-    faqx_th: ["งานควิลท์ใช้เข็มกลัดเบอร์อะไร?", "เบอร์ 3 (46 มม.) ยาวพอทะลุผ้าหลายชั้น — สายควิลท์จริงจังอาจใช้แบบหัวโค้ง (curved) เพิ่ม ทักถามได้"],
-    faqx_en: ["Which size for quilting?", "Size 3 (46 mm) reaches through layered fabric; serious quilters may also want curved pins — just ask."] },
-  { no: "4", mm: 56, cm: "5.6", inch: '2-1/4"', pack: "432", wire: "1.10",
-    aka_th: "เข็มกลัดผ้าห่ม / ผ้าอ้อม (blanket pin)", aka_en: "blanket / diaper pin",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "แม่และเด็ก โรงพยาบาล โรงแรม", groups_en: "mother & baby, hospitals, hotels",
-    uses_th: ["เข็มกลัดผ้าอ้อมเด็ก", "กลัดผ้าห่ม ผ้าขนหนู", "ผ้าคลุมเตียงโรงแรม/โรงพยาบาล", "ผ้าคลุมต่าง ๆ ที่ต้องกลัดแน่น"],
-    uses_en: ["Cloth diapers", "Blankets & towels", "Hospital/hotel bedding", "Secure heavy-fabric pinning"],
-    faqx_th: ["ใช้กลัดผ้าอ้อมปลอดภัยไหม?", "เบอร์ 4 เป็นขนาดผ้าอ้อมมาตรฐาน ปลายซ่อนในฝาครอบ — ถ้าต้องการปลอดภัยขึ้นอีกมีแบบหัวพลาสติกล็อค ทัก LINE ถามได้"],
-    faqx_en: ["Safe for diapers?", "Size 4 is the standard diaper pin with a capped point — plastic-head locking pins are also available, just ask."] },
-  { no: "5", mm: 65, cm: "6.5", inch: '2-1/2"', pack: "216", wire: "1.10",
-    aka_th: "—", aka_en: "—",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "งานแสดง เวที เครื่องแต่งกาย", groups_en: "stage, costume, display",
-    uses_th: ["กลัดผ้าเวที / ผ้าประดับงาน", "ผ้าม่าน ผ้าใบ", "ชุดคอสเพลย์ / ชุดการแสดง", "จับจีบผ้าจัดบูธ"],
-    uses_en: ["Stage & event draping", "Curtains & canvas", "Cosplay & costumes", "Booth fabric styling"],
-    faqx_th: ["จับจีบผ้าจัดงานใช้เบอร์อะไร?", "เบอร์ 5 (65 มม.) กลัดผ้าหลายทบได้อยู่ ถ้าผ้าใบหนาหรือกลางแจ้งขยับไปเบอร์ 6–7"],
-    faqx_en: ["Which size for event draping?", "Size 5 (65 mm) holds multiple folds; go 6–7 for heavy canvas or outdoor work."] },
-  { no: "6", mm: 75, cm: "7.5", inch: '3"', pack: "144", wire: "1.25",
-    aka_th: "—", aka_en: "—",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "อุตสาหกรรม ก่อสร้าง การเกษตร", groups_en: "industry, construction, farming",
-    uses_th: ["กลัดผ้าใบกันแดด", "ตาข่ายกันนก / ตาข่ายเกษตร", "ถุงกระสอบ", "งานกลางแจ้งที่ต้องการเข็มใหญ่"],
-    uses_en: ["Shade tarps", "Netting", "Sacks & bags", "Heavy outdoor pinning"],
-    faqx_th: ["กลัดผ้าใบ/กระสอบ เบอร์ 6 พอไหม?", "งานผ้าใบทั่วไปเบอร์ 6 เอาอยู่ — ถ้าผืนใหญ่หนามากหรือรับแรงดึงสูง ใช้เบอร์ 7 (85 มม.)"],
-    faqx_en: ["Is size 6 enough for tarps?", "Yes for typical tarps — for very heavy or high-tension work, step up to size 7 (85 mm)."] },
-  { no: "7", mm: 85, cm: "8.5", inch: '3-1/4"', pack: "144", wire: "1.35",
-    aka_th: "เข็มกลัดยักษ์", aka_en: "jumbo pin",
-    colors_th: "เงิน (ชุบนิกเกิล)", colors_en: "silver (nickel plated)",
-    groups_th: "อุตสาหกรรม งานตกแต่ง กิ๊ฟต์ช็อป", groups_en: "industry, décor, gift shops",
-    uses_th: ["เข็มกลัดยักษ์ทำพวงกุญแจ", "กลัดป้ายผ้าขนาดใหญ่ / แบนเนอร์", "แขวนสินค้ากิ๊ฟต์ช็อป", "งานตกแต่ง display"],
-    uses_en: ["Jumbo keychain pins", "Large fabric banners", "Gift-shop hanging", "Display décor"],
-    faqx_th: ["เข็มกลัดยักษ์เอาไปทำอะไรได้บ้าง?", "ยอดฮิตคือพวงกุญแจ/งานคราฟต์ แขวนป้ายผ้าใหญ่ และแขวนสินค้าหน้าร้าน — ตัวใหญ่เห็นชัด จับถนัดมือ"],
-    faqx_en: ["What are jumbo pins for?", "Keychains and crafts, hanging big fabric signs, and shop displays — big enough to see and handle easily."] },
-];
+import { PINS, packStr, packMin, packCell, priceTableOne, stockBadge, originStrip, offerFor, brandRef } from "./_gen-pins-lib.mjs";
+
 
 /* ---------- ลิงก์คู่มือที่เกี่ยวข้องรายเบอร์ (landing/บทความ) ---------- */
 const REL = {
@@ -118,7 +38,7 @@ function pageHTML(p, i) {
   const title = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ${p.mm} มม. ขายส่งยกกล่อง | ม.ทวีภัณฑ์`;
   // meta description ต้อง <=155 ตัวอักษร (Google ตัดที่ราว ๆ นี้) — ต่อท้ายเท่าที่ยังพอดี
   const use = p.uses_th[0].split(' — ')[0];
-  const descBase = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ยาว ${p.cm} ซม. (${p.mm} มม.) เหล็กชุบนิกเกิล เหมาะ${use} ขายยกกล่อง ${p.pack} ตัว ราคาส่ง`;
+  const descBase = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ยาว ${p.cm} ซม. (${p.mm} มม.) เหล็กชุบนิกเกิล เหมาะ${use} ขายยกกล่อง ${packStr(p)} ตัว ราคาส่ง`;
   const desc = [' นับจำนวนจริง', ' ส่งทั่วไทย'].reduce((acc, tail) => (acc + tail).length <= 155 ? acc + tail : acc, descBase);
   const url = `${SITE}/products/safety-pins-${p.no}.html`;
   const near = neighbors(i);
@@ -127,8 +47,8 @@ function pageHTML(p, i) {
   const faq = [
     [`เข็มกลัดเบอร์ ${p.no} ยาวกี่เซน?`, `ยาวประมาณ ${p.cm} ซม. (${p.mm} มม. / ${p.inch}) วัดจากหัวฝาถึงปลายขดสปริง — ผู้ผลิตแต่ละเจ้าอาจต่างกัน ±2–3 มม.`,
      `How long is size ${p.no}?`, `About ${p.cm} cm (${p.mm} mm / ${p.inch}), measured cap to coil; makers vary by ±2–3 mm.`],
-    [`เบอร์ ${p.no} กล่องละกี่ตัว?`, `ประมาณ ${p.pack} ตัว/กล่อง (นับจำนวนจริง ไม่ชั่งน้ำหนัก) — แบ่งขายเป็นพวง 12 ตัว หรือกุรุส 144 ตัวก็ได้`,
-     `How many per box?`, `About ${p.pack} pins per box (counted, not weighed) — also sold by the dozen bunch or 144-pin gross.`],
+    [`เบอร์ ${p.no} กล่องละกี่ตัว?`, `ประมาณ ${packStr(p)} ตัว/กล่อง (นับจำนวนจริง ไม่ชั่งน้ำหนัก) — แบ่งขายเป็นพวง 12 ตัว หรือกุรุส 144 ตัวก็ได้`,
+     `How many per box?`, `About ${packStr(p)} pins per box (counted, not weighed) — also sold by the dozen bunch or 144-pin gross.`],
     [p.faqx_th[0], p.faqx_th[1], p.faqx_en[0], p.faqx_en[1]],
   ];
 
@@ -139,7 +59,7 @@ function pageHTML(p, i) {
     const q = PINS[j];
     const self = j === i;
     const name = self ? `<b data-th="เบอร์ ${q.no} (หน้านี้)" data-en="Size ${q.no} (this page)">เบอร์ ${q.no} (หน้านี้)</b>` : `<a href="safety-pins-${q.no}.html" data-th="เบอร์ ${q.no}" data-en="Size ${q.no}">เบอร์ ${q.no}</a>`;
-    return `        <tr${self ? ' class="me"' : ""}><td>${name}</td><td data-th="${q.mm} มม. (${q.cm} ซม.)" data-en="${q.mm} mm (${q.cm} cm)">${q.mm} มม. (${q.cm} ซม.)</td><td data-th="~${q.pack}" data-en="~${q.pack}">~${q.pack}</td><td data-th="${esc(q.uses_th[0])}" data-en="${esc(q.uses_en[0])}">${esc(q.uses_th[0])}</td></tr>`;
+    return `        <tr${self ? ' class="me"' : ""}><td>${name}</td><td data-th="${q.mm} มม. (${q.cm} ซม.)" data-en="${q.mm} mm (${q.cm} cm)">${q.mm} มม. (${q.cm} ซม.)</td><td data-th="~${packStr(q)}" data-en="~${packStr(q)}">~${packStr(q)}</td><td data-th="${esc(q.uses_th[0])}" data-en="${esc(q.uses_en[0])}">${esc(q.uses_th[0])}</td></tr>`;
   }).join("\n");
 
   const useList = p.uses_th.map((u, k) =>
@@ -192,11 +112,12 @@ function pageHTML(p, i) {
   "description": ${jstr(desc)},
   "image": ["${SITE}/assets/img/products/pin-${p.no}.webp", "${SITE}/assets/img/products/safety-pin-sizes.webp"],
   "url": "${url}",
-  "category": "เข็มกลัดซ่อนปลาย / Safety pins",
+  "brand": ${jstr(brandRef())},
+  "category": "เข็มกลัดซ่อนปลาย / Safety pins",${offerFor(p, url) ? `\n  "offers": ${JSON.stringify(offerFor(p, url))},` : ""}
   "additionalProperty": [
     { "@type": "PropertyValue", "name": "ความยาว", "value": "${p.mm} มม. (${p.cm} ซม.)" },
     { "@type": "PropertyValue", "name": "ขนาดลวด", "value": "${p.wire} มม." },
-    { "@type": "PropertyValue", "name": "บรรจุต่อกล่อง", "value": "${p.pack} ตัว" },
+    { "@type": "PropertyValue", "name": "บรรจุต่อกล่อง", "value": "${packStr(p)} ตัว" },
     { "@type": "PropertyValue", "name": "วัสดุ", "value": "เหล็กสปริงชุบนิกเกิล" }
   ]
 }
@@ -210,7 +131,7 @@ ${faqSchema}
   ]
 }
 </script>
-<link rel="stylesheet" href="../assets/css/pins.css?v=1">
+<link rel="stylesheet" href="../assets/css/pins.css?v=2">
 </head>
 <body>
 <div id="site-header"></div>
@@ -226,12 +147,14 @@ ${faqSchema}
       <span class="badge" data-th="นับจำนวนจริง ไม่ชั่ง" data-en="Counted, not weighed">นับจำนวนจริง ไม่ชั่ง</span>
       <span class="badge" data-th="แบ่งขาย พวง/กุรุส/กล่อง" data-en="Dozen / gross / box">แบ่งขาย พวง/กุรุส/กล่อง</span>
       <span class="badge" data-th="ส่งทั่วไทย" data-en="Ships nationwide">ส่งทั่วไทย</span>
+      ${stockBadge(p)}
     </div>
     <div class="cta-row">
       <a class="btn btn-primary" data-line-ask="${esc(lineMsg)}" href="#" target="_blank" rel="noopener" data-th="เช็คราคาเบอร์ ${p.no} ทาง LINE" data-en="Ask price on LINE">เช็คราคาเบอร์ ${p.no} ทาง LINE</a>
       <a class="btn btn-ghost" href="safety-pins.html" data-th="ดูครบทุกเบอร์ 000–7" data-en="See all sizes 000–7">ดูครบทุกเบอร์ 000–7</a>
       <a class="btn btn-ghost" href="safety-pins-wholesale.html" data-th="ราคาส่ง ยกกล่อง" data-en="Wholesale by the box">ราคาส่ง ยกกล่อง</a>
     </div>
+${originStrip("../")}
   </div>
 </section>
 
@@ -248,13 +171,14 @@ ${faqSchema}
       </div>
       <div class="spec-grid">
         <div class="it"><small data-th="ความยาว" data-en="Length">ความยาว</small><b data-th="${p.cm} ซม. · ${p.mm} มม. (${esc(p.inch)})" data-en="${p.cm} cm · ${p.mm} mm (${esc(p.inch)})">${p.cm} ซม. · ${p.mm} มม. (${esc(p.inch)})</b></div>
-        <div class="it"><small data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</small><b data-th="~${p.pack} ตัว" data-en="~${p.pack} pins">~${p.pack} ตัว</b></div>
+        <div class="it"><small data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</small><b data-th="~${packStr(p)} ตัว" data-en="~${packStr(p)} pins">~${packStr(p)} ตัว</b></div>
         <div class="it"><small data-th="วัสดุ" data-en="Material">วัสดุ</small><b data-th="เหล็กสปริงชุบนิกเกิล" data-en="Nickel-plated steel">เหล็กสปริงชุบนิกเกิล</b></div>
         <div class="it"><small data-th="ขนาดลวด" data-en="Wire gauge">ขนาดลวด</small><b data-th="${p.wire} มม." data-en="${p.wire} mm">${p.wire} มม.</b></div>
         <div class="it"><small data-th="สีที่มี" data-en="Colours">สีที่มี</small><b data-th="${esc(p.colors_th)}" data-en="${esc(p.colors_en)}">${esc(p.colors_th)}</b></div>
       </div>
     </div>
 
+${priceTableOne(p, `เข็มกลัดเบอร์ ${p.no}`)}
     <h2 class="sec-h" data-th="เบอร์ ${p.no} เหมาะกับงานอะไร" data-en="What size ${p.no} is for">เบอร์ ${p.no} เหมาะกับงานอะไร</h2>
     <ul class="use-list">
 ${useList}
