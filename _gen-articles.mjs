@@ -148,10 +148,15 @@ for (const a of ARTICLES) {
   console.log(`${file}: FAQ ${faq.length} ข้อ · title ${a.title_th.length + SHOP_NAME.length + 3}`);
 }
 
-/* ---------- หน้าแรก: การ์ดบทความ ---------- */
+/* ---------- หน้าแรก: การ์ดบทความ ----------
+   หน้าแรกแสดงหมวดละ 1 ชิ้น (ชิ้นที่อัปเดตล่าสุด ถ้าวันเท่ากันเอาชิ้นที่อยู่ก่อนใน articles.json)
+   เดิมแสดงครบทุกชิ้น 10 การ์ดกินพื้นที่ 23% ของหน้าแรกบนมือถือ — ที่เหลืออยู่ในหน้า /articles */
+export const homePicks = () => Object.keys(CATS)
+  .map((k) => ARTICLES.filter((a) => a.cat === k).reduce((best, a) => (!best || a.modified > best.modified ? a : best), null))
+  .filter(Boolean);
 {
   const html = readFileSync("index.html", "utf8");
-  writeFileSync("index.html", bakeChrome(put(html, "home", guideCards("articles/"), "index.html")));
+  writeFileSync("index.html", bakeChrome(put(html, "home", guideCards("articles/", homePicks()), "index.html")));
 }
 
 /* ---------- หน้ารวมบทความ /articles ---------- */

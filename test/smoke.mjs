@@ -223,13 +223,18 @@ console.log("\n[ index.html ]");
   await page.goto(base + "/index.html", { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(200);
   // นับจาก CATALOG ตรง ๆ — เพิ่มสินค้า/หมวดใหม่แล้วเทสต์ไม่ล้าสมัย
-  const nCats = await page.evaluate(() => CATALOG.categories.length);
   const nProds = await page.evaluate(() => CATALOG.products.length);
-  assert((await page.$$eval("#catGrid .cat", (e) => e.length)) === nCats, `แสดงหมวดหมู่ครบ ${nCats} ตาม catalog`);
-  assert((await page.$$eval("#featGrid .prod", (e) => e.length)) === nProds, `แสดงสินค้าเด่นครบ ${nProds} การ์ดตาม catalog`);
-  assert((await page.$eval("#hvPrice", (e) => e.textContent)).includes("฿"), "ราคา hero มาจาก catalog");
-  const iconW = await page.$eval("#why .why-grid .ic svg", (e) => Math.round(e.getBoundingClientRect().width));
-  assert(iconW > 0 && iconW < 40, `ไอคอน 'ทำไมต้องเรา' ขนาดปกติ (${iconW}px, ต้อง < 40)`);
+  assert((await page.$$eval("#featGrid .prod", (e) => e.length)) === nProds, `แสดงสินค้าใน hero ครบ ${nProds} กลุ่มตาม catalog`);
+  assert((await page.$eval("#featGrid .price:not(.ask)", (e) => e.textContent)).includes("฿"), "ราคาในการ์ดสินค้ามาจาก catalog");
+  const iconW = await page.$eval("#why .a svg", (e) => Math.round(e.getBoundingClientRect().width));
+  assert(iconW > 0 && iconW < 40, `ไอคอนแถบความมั่นใจขนาดปกติ (${iconW}px, ต้อง < 40)`);
+  /* หน้าแรก V3: ส่วนที่ซ้ำกันถูกรวมแล้ว ต้องไม่กลับมา */
+  assert(!(await page.$("#catGrid")) && (await page.$$eval(".cta-band", (e) => e.length)) === 0, "หน้าแรกไม่มีหมวดหมู่ซ้ำกับสินค้า และไม่มีแถบ CTA ซ้อนกัน");
+  const nGuides = await page.$$eval("#guides .gcard", (e) => e.length);
+  const nGuideCats = await page.evaluate(async () => Object.keys((await (await fetch("/data/articles.json")).json()).categories).length);
+  assert(nGuides === nGuideCats, `คู่มือหน้าแรกหมวดละ 1 ชิ้น (${nGuides}/${nGuideCats})`);
+  assert(await page.$eval("#races a[href$='safety-pins-running.html']", () => true).catch(() => false), "หน้าแรกยังมีทางไปเครื่องคำนวณงานวิ่ง");
+  assert((await page.$eval(".hero-cta a[href='/products']", (a) => !!a)), "ปุ่ม 'ดูสินค้าทั้งหมด' ไปหน้า /products");
   await page.click(".lang button[data-lang=en]");
   await page.waitForTimeout(200);
   assert((await page.$eval('.nav-links a[data-nav=home]', (e) => e.textContent)) === "Home", "สลับเป็น EN ได้");
@@ -247,7 +252,7 @@ console.log("\n[ ไม่มี flash TH→EN ]");
   const p2 = await ctx.newPage();
   await p2.goto(base + "/index.html", { waitUntil: "domcontentloaded" });
   await p2.waitForTimeout(180);
-  assert((await p2.$eval(".hero h1", (e) => e.textContent)).includes("all in one"), "เปิดหน้าใหม่แสดง EN ถูกต้อง (จำภาษาได้)");
+  assert((await p2.$eval(".hero h1", (e) => e.textContent)).includes("the source for"), "เปิดหน้าใหม่แสดง EN ถูกต้อง (จำภาษาได้)");
   await p2.close();
   await ctx.close();
 }
@@ -558,7 +563,7 @@ console.log("\n[ หน้าอังกฤษ /en ]");
   {
     const page = await newPage({ width: 1280, height: 900 });
     await page.goto(base + "/en", { waitUntil: "load" });
-    const hrefs = await page.$$eval("#featGrid a, #catGrid a", (as) => as.map((a) => a.getAttribute("href")));
+    const hrefs = await page.$$eval("#featGrid a", (as) => as.map((a) => a.getAttribute("href")));
     assert(hrefs.length >= 4 && hrefs.filter((h) => h.startsWith("/en/")).length >= 3 && hrefs.includes("/products/mtt-brand.html"),
       "การ์ดหน้าแรกอังกฤษ (วาดด้วย JS) ชี้ /en ส่วนหน้าตรา M.T.T. ชี้หน้าไทย");
     await page.close();

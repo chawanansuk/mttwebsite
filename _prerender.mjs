@@ -10,7 +10,7 @@ import { readFileSync, writeFileSync, existsSync, statSync } from "fs";
 import { join, extname } from "path";
 
 const TARGETS = [
-  { file: "index.html", url: "/index.html", ids: ["catGrid", "featGrid"] },
+  { file: "index.html", url: "/index.html", ids: ["featGrid"] },
   { file: "products/index.html", url: "/products/index.html", ids: ["pgrid"] },
 ];
 const CHECK = process.argv.includes("--check");
