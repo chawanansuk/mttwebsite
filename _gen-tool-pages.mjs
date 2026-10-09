@@ -9,8 +9,11 @@ import { SITE, DATA, ARTICLE_DATA, esc, bi, mergeGroups, groupHTML, grpNavHTML, 
 
 /* คู่มือที่เกี่ยวข้องท้ายหน้าหมวด (ลิงก์ในเนื้อหาจากหน้าสินค้าไปบทความ) — slug ต้องมีใน data/articles.json */
 const GUIDES = {
-  wrenches: ["adjustable-wrench-sizes", "which-wrench-for-which-job"],
-  holding: ["which-pliers-for-which-job"],
+  wrenches: ["adjustable-wrench-sizes", "which-wrench-for-which-job", "tool-rust-care"],
+  holding: ["which-pliers-for-which-job", "tool-rust-care"],
+  screwdrivers: ["screwdriver-tip-types"],
+  measuring: ["spirit-level-plumb-bob"],
+  padlock: ["how-to-choose-padlock"],
 };
 function guidesHTML(id) {
   const list = (GUIDES[id] || []).map((s) => ARTICLE_DATA.articles.find((a) => a.slug === s)).filter(Boolean);

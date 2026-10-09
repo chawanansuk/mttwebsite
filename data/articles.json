@@ -403,6 +403,106 @@
         "safety-pins-how-many-boxes",
         "which-safety-pin-size"
       ]
+    },
+    {
+      "slug": "how-to-choose-padlock",
+      "cat": "tools",
+      "short_th": "วิธีเลือกกุญแจคล้อง",
+      "short_en": "Choosing a padlock",
+      "eyebrow_th": "คู่มือเลือกเครื่องมือช่าง",
+      "eyebrow_en": "Hand tool buying guide",
+      "h1_th": "วิธีเลือกกุญแจคล้อง ขนาดไหน คอสั้นหรือคอยาว",
+      "h1_en": "How to choose a padlock: size, shackle and material",
+      "title_th": "วิธีเลือกกุญแจคล้อง ขนาด คอสั้นคอยาว ทองเหลือง",
+      "desc_th": "วิธีเลือกกุญแจคล้องให้เหมาะกับงาน ตัวเลขมิลบนกุญแจหมายถึงอะไร คอสั้นกับคอยาวต่างกันยังไง ระบบลูกปืนกับสปริง ทองเหลืองหรือเหล็ก และกุญแจคีย์อะไลค์คืออะไร",
+      "og_desc_th": "เลือกขนาด ความยาวคอ ระบบล็อก และวัสดุกุญแจคล้องให้ตรงงาน",
+      "card_th": "ขนาด คอสั้นหรือคอยาว ระบบลูกปืน ทองเหลืองหรือเหล็ก และคีย์อะไลค์",
+      "card_en": "Size, short or long shackle, ball-bearing locking, brass or steel, and keyed alike",
+      "keywords": "วิธีเลือกกุญแจคล้อง, กุญแจคล้อง ขนาด, กุญแจคอสั้น คอยาว, กุญแจคีย์อะไลค์, กุญแจทองเหลือง, กุญแจระบบลูกปืน, กุญแจ ขายส่ง",
+      "image": "assets/img/og/how-to-choose-padlock.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "related": [
+        "hardware-shop-starter-list",
+        "tool-rust-care"
+      ]
+    },
+    {
+      "slug": "screwdriver-tip-types",
+      "cat": "tools",
+      "short_th": "ไขควงแต่ละหัวต่างกันยังไง",
+      "short_en": "Screwdriver tip types",
+      "eyebrow_th": "คู่มือเลือกเครื่องมือช่าง",
+      "eyebrow_en": "Hand tool buying guide",
+      "h1_th": "ไขควงหัวแฉก PH PZ หัวแบน และท็อกซ์ ต่างกันยังไง",
+      "h1_en": "Screwdriver tips: Phillips, Pozidriv, slotted and Torx explained",
+      "title_th": "ไขควงหัวแฉก PH PZ หัวแบน ท็อกซ์ ต่างกันยังไง",
+      "desc_th": "ไขควงหัวแบน หัวแฉก PH กับ PZ ท็อกซ์ หกเหลี่ยม และหัว Y ดูจากหัวสกรูยังไง เลือกเบอร์ให้พอดีร่อง และไขควงตอกต่างจากไขควงเปลี่ยนหัวยังไง",
+      "og_desc_th": "ไขควงแต่ละหัวใช้กับสกรูแบบไหน และเลือกเบอร์ยังไง",
+      "card_th": "แบน แฉก PH PZ ท็อกซ์ หกเหลี่ยม ดูจากหัวสกรู และเลือกเบอร์",
+      "card_en": "Slotted, PH, PZ, Torx and hex: reading the screw head and picking the size",
+      "keywords": "ไขควง PH PZ ต่างกัน, ไขควงหัวแฉก, ไขควงหัวแบน, ไขควงท็อกซ์, ไขควงตอก, ชุดไขควงเปลี่ยนหัว, ไขควงซ่อมมือถือ, WYNNTOOLS",
+      "image": "assets/img/og/screwdriver-tip-types.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "related": [
+        "hardware-shop-starter-list",
+        "which-wrench-for-which-job"
+      ]
+    },
+    {
+      "slug": "spirit-level-plumb-bob",
+      "cat": "tools",
+      "short_th": "วิธีใช้ระดับน้ำและลูกดิ่ง",
+      "short_en": "Levels and plumb bobs",
+      "eyebrow_th": "คู่มือใช้เครื่องมือช่าง",
+      "eyebrow_en": "Hand tool how-to",
+      "h1_th": "วิธีใช้ระดับน้ำและลูกดิ่ง และเช็คว่าระดับน้ำเพี้ยนไหม",
+      "h1_en": "How to use a spirit level and plumb bob, and check a level for accuracy",
+      "title_th": "วิธีใช้ระดับน้ำและลูกดิ่ง เช็คยังไงว่าเพี้ยน",
+      "desc_th": "วิธีอ่านระดับน้ำทั้งแนวนอนและแนวตั้ง วิธีเช็คว่าระดับน้ำเพี้ยนด้วยการกลับหัวท้าย วิธีใช้ลูกดิ่งหาแนวตั้งและถ่ายจุดลงพื้น และเลือกความยาวระดับน้ำตามงาน",
+      "og_desc_th": "อ่านระดับน้ำ เช็คความเพี้ยน และใช้ลูกดิ่งหาแนวตั้ง",
+      "card_th": "อ่านฟองระดับน้ำ เช็คความเพี้ยน ใช้ลูกดิ่ง และเลือกขนาดตามงาน",
+      "card_en": "Reading the bubble, checking accuracy, using a plumb bob and picking a length",
+      "keywords": "วิธีใช้ระดับน้ำ, วิธีใช้ลูกดิ่ง, ระดับน้ำเพี้ยน, ระดับน้ำแม่เหล็ก, ระดับน้ำตอร์ปิโด, ลูกดิ่ง, WYNNTOOLS",
+      "image": "assets/img/og/spirit-level-plumb-bob.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "related": [
+        "hardware-shop-starter-list",
+        "tool-rust-care"
+      ]
+    },
+    {
+      "slug": "tool-rust-care",
+      "cat": "tools",
+      "short_th": "เครื่องมือช่างไม่ให้เป็นสนิม",
+      "short_en": "Keeping tools rust-free",
+      "eyebrow_th": "คู่มือดูแลเครื่องมือช่าง",
+      "eyebrow_en": "Tool care guide",
+      "h1_th": "วิธีดูแลเครื่องมือช่างไม่ให้เป็นสนิม",
+      "h1_en": "How to keep hand tools from rusting",
+      "title_th": "ดูแลเครื่องมือช่างไม่ให้เป็นสนิม ทำยังไง",
+      "desc_th": "วิธีดูแลเครื่องมือช่างไม่ให้เป็นสนิมในอากาศชื้น เช็ดและลงน้ำมันหลังใช้ เก็บให้ถูกที่ ขัดสนิมที่เกิดแล้ว และวัสดุ CR-V SK-55 สแตนเลส ต่างกันยังไง",
+      "og_desc_th": "เช็ด ลงน้ำมัน เก็บให้ถูกที่ และขัดสนิมเครื่องมือช่าง",
+      "card_th": "เช็ด ลงน้ำมัน เก็บให้แห้ง ขัดสนิม และวัสดุแต่ละแบบ",
+      "card_en": "Wiping, oiling, dry storage, removing rust, and how materials compare",
+      "keywords": "เครื่องมือช่าง เป็นสนิม, วิธีกันสนิมเครื่องมือ, ขัดสนิม, CR-V เป็นสนิมไหม, SK-55, สแตนเลส เป็นสนิมไหม",
+      "image": "assets/img/og/tool-rust-care.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "related": [
+        "which-pliers-for-which-job",
+        "which-wrench-for-which-job"
+      ]
     }
   ]
 }
