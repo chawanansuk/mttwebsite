@@ -252,7 +252,7 @@ console.log("\n[ ไม่มี flash TH→EN ]");
   const p2 = await ctx.newPage();
   await p2.goto(base + "/index.html", { waitUntil: "domcontentloaded" });
   await p2.waitForTimeout(180);
-  assert((await p2.$eval(".hero h1", (e) => e.textContent)).includes("the source for"), "เปิดหน้าใหม่แสดง EN ถูกต้อง (จำภาษาได้)");
+  assert((await p2.$eval(".hero h1", (e) => e.textContent)).includes("jet lighters and safety pins"), "เปิดหน้าใหม่แสดง EN ถูกต้อง (จำภาษาได้)");
   await p2.close();
   await ctx.close();
 }
