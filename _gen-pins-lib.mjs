@@ -42,16 +42,24 @@ const UNIT = {
 export const hasPrice = (p) => Object.values(p.price || {}).some((v) => typeof v === "number");
 export const anyPrice = () => PINS.some(hasPrice);
 const perPiece = (price, n) => n ? (price / n).toFixed(2) : null;
+/* ราคาต่อตัวของกล่อง: จำนวนต่อกล่องบางเบอร์เป็นช่วงตามล็อต (เช่น 720–1,500) จึงหารด้วยจำนวนขั้นต่ำ
+   ได้ "ราคาสูงสุดต่อตัว" — ต้องบอกว่า "ไม่เกิน" ไม่ให้คนซื้อเข้าใจว่าเป็นตัวเลขแน่นอน */
+const boxPerPiece = (p, price) => {
+  const v = perPiece(price, p.pack.min);
+  if (!v) return "—";
+  return p.pack.max > p.pack.min ? `<span ${bi(`ไม่เกิน ฿${v}`, `up to ฿${v}`)}</span>` : `฿${v}`;
+};
 
 /* ตารางราคาของเบอร์เดียว (หน้ารายเบอร์) — ว่างถ้ายังไม่มีราคา */
 export function priceTableOne(p, from) {
   if (!hasPrice(p)) return "";
   const rows = p.units.filter((u) => typeof p.price[u] === "number").map((u) => {
     const U = UNIT[u], pp = perPiece(p.price[u], U.per(p));
-    return `          <tr><td ${bi(U.th, U.en)}</td><td ${bi(U.qty(p) + " ตัว", U.qty(p) + " pcs")}</td><td><b>${baht(p.price[u])}</b></td><td>${pp ? `฿${pp}` : "—"}</td></tr>`;
+    const cell = u === "box" ? boxPerPiece(p, p.price[u]) : (pp ? `฿${pp}` : "—");
+    return `          <tr><td ${bi(U.th, U.en)}</td><td ${bi(U.qty(p) + " ตัว", U.qty(p) + " pcs")}</td><td><b>${baht(p.price[u])}</b></td><td>${cell}</td></tr>`;
   });
   if (p.tier && typeof p.tier.box === "number") {
-    rows.push(`          <tr class="tier"><td ${bi(`สั่ง ${p.tier.min_boxes} กล่องขึ้นไป`, `${p.tier.min_boxes}+ boxes`)}</td><td ${bi(packStr(p) + " ตัว/กล่อง", packStr(p) + " pcs/box")}</td><td><b>${baht(p.tier.box)}</b> <span ${bi("ต่อกล่อง", "per box")}</span></td><td>฿${perPiece(p.tier.box, p.pack.min)}</td></tr>`);
+    rows.push(`          <tr class="tier"><td ${bi(`สั่ง ${p.tier.min_boxes} กล่องขึ้นไป`, `${p.tier.min_boxes}+ boxes`)}</td><td ${bi(packStr(p) + " ตัว/กล่อง", packStr(p) + " pcs/box")}</td><td><b>${baht(p.tier.box)}</b> <span ${bi("ต่อกล่อง", "per box")}</span></td><td>${boxPerPiece(p, p.tier.box)}</td></tr>`);
   }
   const ask = `สั่งเข็มกลัดเบอร์ ${p.no} ยกกล่อง จำนวน ... กล่อง (จากหน้า${from})`;
   return `    <h2 class="sec-h" id="price" ${bi(`ราคาเข็มกลัดเบอร์ ${p.no}`, `Size ${p.no} prices`)}</h2>
@@ -78,7 +86,7 @@ export function priceTableAll(from) {
   const rows = PINS.map((p) => {
     const cells = [`<td><b><a href="safety-pins-${p.no}.html" ${bi(`เบอร์ ${p.no}`, `Size ${p.no}`)}</a></b></td>`, `<td>${packStr(p)}</td>`]
       .concat(units.map((u) => `<td>${typeof (p.price || {})[u] === "number" ? baht(p.price[u]) : "—"}</td>`))
-      .concat([`<td>${typeof (p.price || {}).box === "number" ? "฿" + perPiece(p.price.box, p.pack.min) : "—"}</td>`])
+      .concat([`<td>${typeof (p.price || {}).box === "number" ? boxPerPiece(p, p.price.box) : "—"}</td>`])
       .concat(tier ? [`<td>${p.tier && typeof p.tier.box === "number" ? `${baht(p.tier.box)} <span ${bi(`(ตั้งแต่ ${p.tier.min_boxes} กล่อง)`, `(from ${p.tier.min_boxes})`)}</span>` : "—"}</td>`] : []);
     return `          <tr>${cells.join("")}</tr>`;
   });
@@ -138,7 +146,9 @@ export function whereToBuy() {
     [`หน้าร้าน ม.ทวีภัณฑ์ สำเพ็ง ${addr}`, `M.T.T. Hardware, Sampheng ${addr}`],
     [`เว็บนี้ สั่งทาง LINE ส่งทั่วไทย ออกใบกำกับภาษีได้`, `This site, ordering on LINE with nationwide shipping and tax invoices`],
   ];
-  for (const m of DATA.marketplaces || []) if (m && m.url && m.name) items.push([`ร้านทางการบน ${esc(m.name)}: <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.url)}</a>`, `Official ${esc(m.name)} store: <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.url)}</a>`]);
+  /* ลิงก์ร้านทางการติด UTM ไว้แยกยอดใน Analytics ของแพลตฟอร์ม และ layout.js ส่ง event marketplace_click */
+  const utm = (u) => u + (u.includes("?") ? "&" : "?") + "utm_source=mtthardware.com&utm_medium=referral&utm_campaign=lion_brand_page";
+  for (const m of DATA.marketplaces || []) if (m && m.url && m.name) items.push([`ร้านทางการบน ${esc(m.name)}: <a href="${esc(utm(m.url))}" target="_blank" rel="noopener">${esc(m.url)}</a>`, `Official ${esc(m.name)} store: <a href="${esc(utm(m.url))}" target="_blank" rel="noopener">${esc(m.url)}</a>`]);
   const rs = (DATA.resellers || []).filter((r) => r && r.name && r.consent);
   let resellers = "";
   if (rs.length) {

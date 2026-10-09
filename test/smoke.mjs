@@ -466,10 +466,38 @@ console.log("\n[ ข้อมูลเข็มกลัด data/pins.json ]");
   const fake = { ...L.PINS[4], price: { box: 500, gross: null, bunch: null, packet: null }, tier: { min_boxes: 10, box: 450 }, in_stock: true };
   const t = L.priceTableOne(fake, "ทดสอบ");
   assert(/฿500/.test(t) && /฿0\.58/.test(t) && /tier/.test(t) && /฿450/.test(t), "ตารางราคารายเบอร์คำนวณราคาต่อตัวและราคาขั้นบันไดถูกต้อง");
+  /* เบอร์ที่จำนวนต่อกล่องเป็นช่วง (เบอร์ 000 = 720–1,500) ราคาต่อตัวคิดจากจำนวนขั้นต่ำ ต้องขึ้นว่า "ไม่เกิน" */
+  const fr = { ...L.PINS.find((x) => x.pack.max > x.pack.min), price: { box: 500, gross: null, bunch: null, packet: null }, tier: null };
+  const tr = L.priceTableOne(fr, "ทดสอบ");
+  assert(tr.includes(`ไม่เกิน ฿${(500 / fr.pack.min).toFixed(2)}`), `ราคาต่อตัวของเบอร์ที่จำนวนต่อกล่องเป็นช่วงบอกว่า "ไม่เกิน" (เบอร์ ${fr.no})`);
   const of = L.offerFor(fake, "https://x/"); const none = L.offerFor(L.PINS[4], "https://x/");
   assert(of && of.price === 500 && of.availability === "https://schema.org/InStock" && none === null, "Offer schema มีเฉพาะเมื่อมีราคา และบอกสถานะสต็อก");
   assert(L.stockBadge(L.PINS[4]) === "" && /พร้อมส่ง/.test(L.stockBadge(fake)), "ป้ายสต็อกแสดงเฉพาะเมื่อ in_stock ไม่ใช่ null");
   assert(L.shippingHTML() === "" || L.DATA.shipping, "ไม่มีนโยบายค่าส่งใน pins.json → ไม่แสดงบล็อกค่าส่ง");
+}
+
+/* ---- SEO: คำค้นเป้าหมาย sitemap ลิงก์ภายใน และไฟล์ภายในไม่ขึ้นเว็บ ---- */
+console.log("\n[ SEO เป้าหมายและโครงสร้าง ]");
+{
+  const read = (f) => readFileSync(join(ROOT, f), "utf8");
+  const seo = await import(new URL("../_seo-report.mjs", import.meta.url));
+  const bad = seo.runAll().filter((r) => !r.ok);
+  assert(!bad.length, `หน้าเป้าหมายพร้อมทุกคำค้นใน data/seo-targets.json (npm run seo)` + (bad.length ? " → " + bad.slice(0, 3).map((r) => `${r.kw}: ${r.fails[0]}`).join(" | ") : ""));
+  let docOk = true; try { execSync("node _gen-docs.mjs --check", { cwd: ROOT, stdio: "pipe" }); } catch { docOk = false; }
+  assert(docOk, "docs/marketplace-listing.md ตรงกับ data/pins.json และ catalog.js");
+  const locs = [...read("sitemap.xml").matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  const fileOf = (u) => { const p = u.replace("https://mtthardware.com", "") || "/"; if (p === "/") return "index.html"; if (p === "/en") return "en/index.html";
+    if (/^(\/en)?\/(products|articles)$/.test(p)) return p.slice(1) + "/index.html"; return p.slice(1); };
+  const wrongCanon = locs.filter((u) => { const h = read(fileOf(u)); return (h.match(/<link rel="canonical" href="([^"]+)"/) || [])[1] !== u; });
+  assert(new Set(locs).size === locs.length && !wrongCanon.length, `sitemap ไม่มี URL ซ้ำ และทุก URL ตรงกับ canonical ของหน้านั้น (${locs.length} URL)` + (wrongCanon.length ? " → " + wrongCanon.slice(0, 3).join(", ") : ""));
+  /* ทุกบทความต้องมีลิงก์ในเนื้อหา (ไม่นับ header/footer) จากหน้าอื่นอย่างน้อย 1 หน้า นอกจากหน้ารวมบทความ */
+  const arts = JSON.parse(read("data/articles.json")).articles.map((a) => a.slug);
+  const pages = execSync("git ls-files 'products/*.html' 'articles/*.html' index.html", { cwd: ROOT, encoding: "utf8" }).split("\n").filter((f) => f && f !== "articles/index.html");
+  const mains = pages.map((f) => [f, (read(f).match(/<main[\s\S]*?<\/main>/) || [""])[0]]);
+  const orphan = arts.filter((s) => !mains.some(([f, m]) => f !== `articles/${s}.html` && m.includes(`${s}.html`)));
+  assert(!orphan.length, "ทุกบทความมีลิงก์ในเนื้อหาจากหน้าอื่น" + (orphan.length ? " → " + orphan.join(", ") : ""));
+  const vi = existsSync(join(ROOT, ".vercelignore")) ? read(".vercelignore") : "";
+  assert(["docs/", "data/", "test/", "_*.mjs"].every((x) => vi.split("\n").includes(x)), ".vercelignore กันไฟล์ภายใน (docs data test _*.mjs) ไม่ให้ขึ้นเว็บจริง");
 }
 
 /* ---- tag ใดก็ตามต้องไม่มีแอตทริบิวต์ซ้ำ (เบราว์เซอร์ใช้ตัวแรก ตัวหลังหายเงียบ) ---- */

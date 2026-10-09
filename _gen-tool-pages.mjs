@@ -5,7 +5,22 @@
    ============================================================ */
 import { writeFileSync } from "fs";
 import { bakeChrome } from "./_chrome.mjs";
-import { SITE, DATA, esc, bi, mergeGroups, groupHTML, grpNavHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML } from "./_gen-lib.mjs";
+import { SITE, DATA, ARTICLE_DATA, esc, bi, mergeGroups, groupHTML, grpNavHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML, guideCardsHTML } from "./_gen-lib.mjs";
+
+/* คู่มือที่เกี่ยวข้องท้ายหน้าหมวด (ลิงก์ในเนื้อหาจากหน้าสินค้าไปบทความ) — slug ต้องมีใน data/articles.json */
+const GUIDES = {
+  wrenches: ["adjustable-wrench-sizes", "which-wrench-for-which-job"],
+  holding: ["which-pliers-for-which-job"],
+};
+function guidesHTML(id) {
+  const list = (GUIDES[id] || []).map((s) => ARTICLE_DATA.articles.find((a) => a.slug === s)).filter(Boolean);
+  if (!list.length) return "";
+  return `    <h2 class="sec-h" id="guides" data-th="คู่มือเลือกซื้อที่เกี่ยวข้อง" data-en="Related buying guides">คู่มือเลือกซื้อที่เกี่ยวข้อง</h2>
+    <div class="guide-grid">
+${guideCardsHTML("../articles/", list)}
+    </div>
+`;
+}
 
 const META = {
   holding: {
@@ -13,8 +28,8 @@ const META = {
     title: "คีม ประแจจับท่อ ปากกาจับชิ้นงาน WYNNTOOLS ราคาส่ง",
     desc: "คีมช่าง WYNNTOOLS ครบทุกแบบ — คีมปากรวม ปากแหลม ปากตัด คีมล็อค คีมหนีบแหวน ประแจจับท่อ ซีแคลมป์ ปากกาจับชิ้นงาน มีรหัสและสเปคครบ",
     kw: "คีมช่าง, คีมปากรวม, คีมล็อค, คีมปากแหลม, คีมหนีบแหวน, ประแจจับท่อ, ซีแคลมป์, ปากกาจับชิ้นงาน, WYNNTOOLS, วินส์ทูลส์",
-    lead_th: "คีมและอุปกรณ์จับยึดทุกแบบที่ช่างใช้จริง ตั้งแต่คีมมินิ 5 นิ้วสำหรับงานละเอียด ไปจนถึงประแจจับท่อ 900 มม. และปากกาจับชิ้นงาน 8 นิ้ว ทุกตัวมีรหัสสินค้า ขนาด จำนวนต่อลัง และเกรดเหล็กระบุชัด",
-    lead_en: "Every holding tool a workshop actually uses — from 5-inch mini pliers for fine work to 900 mm pipe wrenches and 8-inch bench vises. Item numbers, sizes, carton quantities and steel grades all listed.",
+    lead_th: "คีมและอุปกรณ์จับยึดทุกแบบที่ช่างใช้จริง ทั้งคีมล็อค คีมปากรวม ประแจจับท่อ และปากกาจับชิ้นงาน ขายปลีกและราคาส่งยกลัง ตั้งแต่คีมมินิ 5 นิ้วสำหรับงานละเอียด ไปจนถึงประแจจับท่อ 900 มม. และปากกาจับชิ้นงาน 8 นิ้ว ทุกตัวมีรหัสสินค้า ขนาด จำนวนต่อลัง และเกรดเหล็กระบุชัด",
+    lead_en: "Every holding tool a workshop actually uses, including locking pliers, sold singly or at wholesale carton prices — from 5-inch mini pliers for fine work to 900 mm pipe wrenches and 8-inch bench vises. Item numbers, sizes, carton quantities and steel grades all listed.",
     eyebrow_th: "หมวดจับยึด", eyebrow_en: "Holding tools",
   },
   wrenches: {
@@ -22,8 +37,8 @@ const META = {
     title: "ประแจ ลูกบล็อก ประแจแหวน WYNNTOOLS ครบทุกเบอร์",
     desc: "ประแจ WYNNTOOLS — ประแจเลื่อน ปากตายแหวนข้าง แหวนคู่ แหวนฟรี 72 เฟือง ลูกบล็อก ด้ามบล็อก ประแจหางหนู หกเหลี่ยม พร้อมรหัสและขนาดครบ",
     kw: "ประแจ, ประแจเลื่อน, ประแจแหวน, ประแจปากตาย, ประแจแหวนฟรี, ลูกบล็อก, ด้ามบล็อก, ประแจหางหนู, ประแจหกเหลี่ยม, WYNNTOOLS",
-    lead_th: "หมวดที่ใหญ่ที่สุดของแคตตาล็อก มีตั้งแต่ประแจเลื่อน 6 นิ้วถึง 24 นิ้ว ประแจปากตายแหวนข้างครบเบอร์ 8–32 มม. ประแจแหวนฟรี 72 เฟือง ลูกบล็อกสั้น-ยาว 1/2 นิ้ว ไปจนถึงชุดประแจสำเร็จรูปหลายขนาด",
-    lead_en: "The biggest section in the catalogue: adjustable wrenches from 6 to 24 inches, combination wrenches in every size from 8 to 32 mm, 72-tooth ratchet wrenches, short and deep 1/2-inch sockets, and ready-made wrench sets.",
+    lead_th: "หมวดที่ใหญ่ที่สุดของแคตตาล็อก ขายปลีกและขายส่งยกลัง มีตั้งแต่ประแจเลื่อน 6 นิ้วถึง 24 นิ้ว ประแจปากตายแหวนข้างครบเบอร์ 8–32 มม. ประแจแหวนฟรี 72 เฟือง ลูกบล็อกสั้น-ยาว 1/2 นิ้ว ไปจนถึงชุดประแจสำเร็จรูปหลายขนาด",
+    lead_en: "The biggest section in the catalogue, sold singly or wholesale by the carton: adjustable wrenches from 6 to 24 inches, combination wrenches in every size from 8 to 32 mm, 72-tooth ratchet wrenches, short and deep 1/2-inch sockets, and ready-made wrench sets.",
     eyebrow_th: "หมวดประแจ", eyebrow_en: "Wrenches",
   },
   electrical: {
@@ -91,7 +106,7 @@ const META = {
   },
   measuring: {
     file: "tools-measuring.html",
-    title: "ตลับเมตร วัดระดับน้ำ ฉากผสม ลูกดิ่ง WYNNTOOLS",
+    title: "วัดระดับน้ำ ฉากผสม ลูกดิ่ง ไม้บรรทัดพับ WYNNTOOLS", /* เดิมขึ้นต้น "ตลับเมตร" แต่แคตตาล็อกไม่มีตลับเมตรเลย */
     desc: "เครื่องมือวัด WYNNTOOLS — วัดระดับน้ำอลูมิเนียมแบบแม่เหล็ก ไม้บรรทัดพับ 600 มม. ฉากผสม ฉากสามเหลี่ยมสแตนเลส ลูกดิ่ง พร้อมรหัสครบ",
     kw: "วัดระดับน้ำ, ระดับน้ำแม่เหล็ก, ไม้บรรทัดพับ, ฉากผสม, ฉากสามเหลี่ยม, ลูกดิ่ง, เครื่องมือวัด, WYNNTOOLS, วินส์ทูลส์",
     lead_th: "เครื่องมือวัดสำหรับงานก่อสร้างและงานไม้ วัดระดับน้ำอลูมิเนียมทั้งแบบธรรมดาและแบบมีแถบแม่เหล็กยึดติดเหล็กได้ ไม้บรรทัดพับอลูมิเนียม 600 มม. ฉากผสมปรับองศา ฉากสามเหลี่ยมสแตนเลส และลูกดิ่งแบบมีล้อเก็บสาย",
@@ -130,7 +145,7 @@ const META = {
     title: "กุญแจสิงห์เงิน กุญแจสิงห์ทอง กุญแจคีย์อะไลค์ ตรา M.T.T.",
     desc: "กุญแจ ม.ทวีภัณฑ์ — กุญแจสิงห์เงินและสิงห์ทองระบบลูกปืน ไส้ทองเหลืองแท้ กุญแจคีย์อะไลค์ไขดอกเดียว กุญแจห่วงเฮง ครบทุกขนาด 20–60 มม.",
     kw: "กุญแจ, กุญแจสิงห์เงิน, กุญแจสิงห์ทอง, กุญแจคีย์อะไลค์, กุญแจลูกปืน, กุญแจทองเหลือง, กุญแจห่วงเฮง, ตรา M.T.T., ตราสิงโต",
-    lead_th: "กุญแจตรา M.T.T. ของร้านเอง ปั๊มรูปสิงโตบนตัวกุญแจ มีทั้งสิงห์เงินระบบลูกปืนและสิงห์ทองไส้ทองเหลืองแท้ คอสั้นและคอยาว ขนาด 20 ถึง 60 มม. พร้อมชุดคีย์อะไลค์ที่ไขด้วยดอกเดียวกันทั้งชุด เหมาะกับร้านค้า โกดัง และหอพักที่ต้องถือกุญแจดอกเดียว",
+    lead_th: "กุญแจตราสิงโต M.T.T. ของร้านเอง ปั๊มรูปสิงโตบนตัวกุญแจ มีทั้งสิงห์เงินระบบลูกปืนและสิงห์ทองไส้ทองเหลืองแท้ คอสั้นและคอยาว ขนาด 20 ถึง 60 มม. พร้อมชุดคีย์อะไลค์ที่ไขด้วยดอกเดียวกันทั้งชุด เหมาะกับร้านค้า โกดัง และหอพักที่ต้องถือกุญแจดอกเดียว",
     lead_en: "The shop's own M.T.T. padlocks, lion-embossed on the body: silver-lion ball-locking and gold-lion solid brass cylinders, short or long shackle, 20 to 60 mm, plus keyed-alike sets that open on one key — made for shops, warehouses and rental blocks.",
     eyebrow_th: "หมวดกุญแจ", eyebrow_en: "Padlocks",
   },
@@ -231,7 +246,7 @@ ${grpNavHTML(groups)}
     <h2 class="vh">${esc(cat.th)} — ${total} รายการ</h2>
 ${groups.map((g, i) => groupHTML(g, i, b.th)).join("\n\n")}
 
-${ctaBandHTML("เจอรหัสที่ต้องการแล้ว? กดที่รหัสเพื่อถามราคา", "Found your item number? Tap it to ask price", `สอบถามราคา${b.th === "WYNNTOOLS" ? "เครื่องมือ WYNNTOOLS หมวด" : ""}${cat.th}`)}
+${guidesHTML(cat.id)}${ctaBandHTML("เจอรหัสที่ต้องการแล้ว? กดที่รหัสเพื่อถามราคา", "Found your item number? Tap it to ask price", `สอบถามราคา${b.th === "WYNNTOOLS" ? "เครื่องมือ WYNNTOOLS หมวด" : ""}${cat.th}`)}
   </div>
 </section>
 </main>

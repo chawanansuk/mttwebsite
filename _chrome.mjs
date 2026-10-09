@@ -65,7 +65,7 @@ function footerHTML(base) {
     S.EMAIL && row('<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
       `<a data-shop="email-href" href="mailto:${esc(S.EMAIL)}"><span data-shop="email">${esc(S.EMAIL)}</span></a>`),
     S.ADDRESS_TH && row('<path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
-      `<span data-shop="address">${esc(S.ADDRESS_TH)}</span>`),
+      `<span data-shop="address" lang="th">${esc(S.ADDRESS_TH)}</span>`), /* ที่อยู่คงเป็นไทยให้ขนส่งอ่านได้ — lang="th" ให้โปรแกรมอ่านหน้าจอออกเสียงถูก */
   ].filter(Boolean).join("\n      ");
   return `<footer class="site-footer"><div class="wrap"><div class="foot-grid">
   <div class="foot-brand"><div class="brand"><span class="mark">${BOLT}</span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></div>
@@ -97,7 +97,7 @@ function footerHTML(base) {
       ${contact}
   </div></div>
 </div><div class="foot-bottom">
-  <span>© 2026 ม.ทวีภัณฑ์ · ${esc(S.legal_th || "")} · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>
+  <span>© 2026 <span data-th="ม.ทวีภัณฑ์" data-en="M.T.T. Hardware">ม.ทวีภัณฑ์</span> · <span data-th="${esc(S.legal_th || "")}" data-en="${esc(S.legal_en || S.legal_th || "")}">${esc(S.legal_th || "")}</span> · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>
   <span data-th="ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด" data-en="Built for the easiest ordering">ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด</span>
 </div></div></footer>`;
 }
@@ -109,7 +109,7 @@ function tabbarHTML(base, page) {
   return `<nav class="tabbar" aria-label="เมนูหลัก" data-th-aria-label="เมนูหลัก" data-en-aria-label="Main menu">
   <a href="/"${cur(page === "home")}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg><span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a>
   <a href="/products"${cur(isProducts)}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M3 7 12 3l9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg><span data-th="สินค้า" data-en="Products">สินค้า</span></a>
-  <a href="${base}products/jet-lighter.html#order" aria-label="ตะกร้าสินค้า" data-th-aria-label="ตะกร้าสินค้า" data-en-aria-label="Cart">${CART_ICON}<span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
+  <a href="${base}products/jet-lighter.html#order">${CART_ICON}<span data-th="ตะกร้า" data-en="Cart">ตะกร้า</span><span class="tab-badge" id="tabCartBadge" hidden>0</span></a>
   <a class="tab-line" ${LINE_ATTRS}>${LINE_ICON}<span data-th="ทัก LINE" data-en="LINE">ทัก LINE</span></a>
 </nav>`;
 }
@@ -184,7 +184,7 @@ function bakeStoreSchema(html) {
   if (typeof g.lat === "number" && typeof g.lng === "number") o.geo = { "@type": "GeoCoordinates", latitude: g.lat, longitude: g.lng };
   if (isUrl(S.MAPS_URL)) o.hasMap = S.MAPS_URL;
   if (S.EMAIL) o.email = S.EMAIL;
-  o.sameAs = [S.LINE_URL, S.FACEBOOK_URL].filter(isUrl);
+  o.sameAs = [S.LINE_URL, S.FACEBOOK_URL, S.GBP_URL].filter(isUrl);
   /* ตราสิงโต = แบรนด์ของร้าน (หน้าแบรนด์ประกาศ Brand @id นี้) */
   o.brand = { "@id": "https://mtthardware.com/#lion-brand" };
   /* เรียงคีย์ใหม่ให้อ่านง่าย: ข้อมูลติดต่อ/ที่ตั้งอยู่ก่อน hasOfferCatalog */

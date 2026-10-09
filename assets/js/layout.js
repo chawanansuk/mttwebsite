@@ -158,6 +158,9 @@
       track("line_click", { where: (a.id || a.getAttribute("data-shop") || a.className || "").toString().slice(0, 60) });
     } else if (href.indexOf("tel:") === 0 || a.matches("[data-shop=phone-tel]")) {
       track("phone_click");
+    } else if (/(^|\.)(shopee|lazada)\./i.test((a.hostname || ""))) {
+      /* กดไปร้านทางการบนแพลตฟอร์ม (data/pins.json marketplaces) — แยกยอดว่าคนจากเว็บไปซื้อในแอปกี่ครั้ง */
+      track("marketplace_click", { to: a.hostname.replace(/^www\./, ""), page: location.pathname.slice(0, 60) });
     }
   }, true);
 

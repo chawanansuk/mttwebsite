@@ -158,6 +158,11 @@ export const homePicks = () => Object.keys(CATS)
   const html = readFileSync("index.html", "utf8");
   writeFileSync("index.html", bakeChrome(put(html, "home", guideCards("articles/", homePicks()), "index.html")));
 }
+/* หน้ารวมเครื่องมือช่าง: การ์ดบทความหมวดเครื่องมือทุกชิ้น (ลิงก์ในเนื้อหาจากหน้าสินค้าไปคู่มือ) */
+{
+  const f = "products/tools.html";
+  writeFileSync(f, bakeChrome(put(readFileSync(f, "utf8"), "tools", guideCards("../articles/", ARTICLES.filter((a) => a.cat === "tools")), f)));
+}
 
 /* ---------- หน้ารวมบทความ /articles ---------- */
 {
@@ -194,7 +199,7 @@ ${guideCards("/articles/", list)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/theme.css?v=7">
+<link rel="stylesheet" href="../assets/css/theme.css?v=8">
 <link rel="stylesheet" href="../assets/css/article.css?v=4">
 ${ld({ "@type": "CollectionPage", name: "บทความและคู่มือเลือกซื้อ", description: DESC, url: URL, inLanguage: "th", dateModified: newest,
   mainEntity: { "@type": "ItemList", itemListElement: ARTICLES.map((a, i) => ({ "@type": "ListItem", position: i + 1, name: a.h1_th, url: `${SITE}/articles/${a.slug}.html` })) } })}
@@ -242,7 +247,7 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 </script>
-<script src="../assets/js/layout.js?v=5"></script>
+<script src="../assets/js/layout.js?v=6"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

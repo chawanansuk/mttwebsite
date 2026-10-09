@@ -6,10 +6,11 @@
   "scripts": {
     "test": "node test/smoke.mjs",
     "linkcheck": "node _links.mjs",
-    "bake": "node _gen-pins-shared.mjs && node _chrome.mjs && node _gen-en.mjs",
-    "gen": "node _gen-tool-pages.mjs && node _gen-mtt-page.mjs && node _gen-pin-pages.mjs && node _gen-pins-shared.mjs && node _gen-articles.mjs && node _gen-sitemap.mjs && node _chrome.mjs && node _prerender.mjs && node _gen-en.mjs",
+    "bake": "node _gen-pins-shared.mjs && node _gen-docs.mjs && node _chrome.mjs && node _gen-en.mjs",
+    "gen": "node _gen-tool-pages.mjs && node _gen-mtt-page.mjs && node _gen-pin-pages.mjs && node _gen-pins-shared.mjs && node _gen-articles.mjs && node _gen-docs.mjs && node _gen-sitemap.mjs && node _chrome.mjs && node _prerender.mjs && node _gen-en.mjs",
     "audit": "node _audit.mjs",
-    "img": "node _img-variants.mjs"
+    "img": "node _img-variants.mjs",
+    "seo": "node _seo-report.mjs"
   },
   "devDependencies": {
     "@fontsource/anuphan": "^5.3.0",

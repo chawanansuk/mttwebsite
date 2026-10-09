@@ -1,0 +1,11 @@
+# ไฟล์ภายในที่ไม่ใช่หน้าเว็บ — ไม่ต้องขึ้นเว็บจริง (เดิมเปิดอ่านได้ที่ mtthardware.com/docs/... /data/... /_gen-*.mjs)
+# หน้าเว็บไม่มีหน้าไหนโหลดไฟล์ในนี้ ข้อมูลที่หน้าเว็บใช้ถูกฝังลง HTML ตอน npm run gen แล้ว
+docs/
+data/
+test/
+_*.mjs
+README.md
+RELEASE.md
+package.json
+package-lock.json
+.github/

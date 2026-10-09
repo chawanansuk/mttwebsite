@@ -7,6 +7,7 @@ window.SHOP = {
   name_en: "M. Taweephan",
   abbr: "M.T.T.",
   legal_th: "บริษัท วินส์ทูลส์ ฮาร์ดแวร์ (ประเทศไทย) จำกัด",
+  legal_en: "Wynns Tools Hardware (Thailand) Co., Ltd.", // ชื่อบริษัทภาษาอังกฤษ ใช้ใน footer หน้า /en (ตรงกับหน้าแบรนด์ตราสิงโต)
   tagline_th: "ศูนย์รวมเครื่องมือช่าง & ฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย",
   tagline_en: "Professional tools & hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand",
 
@@ -41,6 +42,8 @@ window.SHOP = {
   GEO: { lat: null, lng: null },
   // ลิงก์ร้านบน Google Maps (ปุ่มแชร์ > คัดลอกลิงก์) เว้นว่าง = ไม่ใส่
   MAPS_URL: "",
+  // ลิงก์ Google Business Profile ของร้าน (หลังยืนยันร้านแล้ว: โปรไฟล์ > แชร์ > คัดลอกลิงก์) เว้นว่าง = ไม่ใส่ — ดู docs/google-business.md
+  GBP_URL: "",
   // Google Search Console > เพิ่ม property > ยืนยันด้วย "แท็ก HTML" > คัดลอกเฉพาะค่าใน content="..."
   SEARCH_CONSOLE_VERIFY: "",
 

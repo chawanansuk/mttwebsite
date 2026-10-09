@@ -10,6 +10,31 @@ const SITE = "https://mtthardware.com";
 
 import { PINS, packStr, packMin, packCell, priceTableOne, stockBadge, originStrip, offerFor, brandRef } from "./_gen-pins-lib.mjs";
 
+/* FAQ เฉพาะเบอร์ 2 ข้อ (จาก data/pins.json ล้วน ไม่มีตัวเลขเดา): วิธีบรรจุ/หน่วยที่แบ่งซื้อได้ และความหนาลวดเทียบเบอร์ถัดไป */
+const UNIT_TH = { packet: "ซอง", bunch: "พวง 12 ตัว", gross: "กุรุส 144 ตัว", box: "ยกกล่อง" };
+const UNIT_EN = { packet: "by the packet", bunch: "by the 12-pin bunch", gross: "by the 144-pin gross", box: "by the box" };
+function packFaq(p) {
+  const order = ["packet", "bunch", "gross", "box"].filter((u) => p.units.includes(u));
+  const sealed = p.packing_th === "ซอง";
+  const th = `${sealed ? "บรรจุในซองซีลตราสิงโต แล้วรวมเป็นกล่อง" : "ร้อยเป็นพวงละ 12 ตัว แล้วบรรจุกล่อง"}ละ ${packStr(p)} ตัว ซื้อได้ทั้ง${order.slice(0, -1).map((u) => UNIT_TH[u]).join(" ")} หรือ${UNIT_TH[order.at(-1)]} ไม่มีขั้นต่ำ ราคาส่งเริ่มเมื่อสั่งยกกล่อง`;
+  const en = `${sealed ? "Packed in sealed Lion-brand packets, then boxed" : "Strung in bunches of 12, then boxed"} at ${packStr(p)} pins per box. Buy ${order.slice(0, -1).map((u) => UNIT_EN[u]).join(", ")} or ${UNIT_EN[order.at(-1)]}, with no minimum; wholesale pricing starts at a full box.`;
+  return [`เบอร์ ${p.no} บรรจุแบบไหน ซื้อแบ่งได้ไหม?`, th, `How is size ${p.no} packed, and can I buy less than a box?`, en];
+}
+function wireFaq(p, i) {
+  const nx = PINS[i + 1], pv = PINS[i - 1];
+  let th = `ลวดหนา ${p.wire} มม. เป็นเหล็กสปริงชุบนิกเกิล`, en = `${p.wire} mm nickel-plated spring steel wire.`;
+  if (nx) {
+    const same = Number(nx.wire) === Number(p.wire);
+    th += ` เบอร์ถัดไปคือเบอร์ ${nx.no} ยาว ${nx.mm} มม. ลวด ${nx.wire} มม. ${same ? "ลวดหนาเท่ากัน ต่างกันที่ความยาว" : "ลวดหนากว่าจึงแข็งกว่า เหมาะกับผ้าที่หนาขึ้น"}`;
+    en += ` The next size up, ${nx.no}, is ${nx.mm} mm long on ${nx.wire} mm wire, ${same ? "so the wire is the same and only the length differs" : "so it is stiffer and better for thicker fabric"}.`;
+  } else if (pv) {
+    th += ` เป็นเบอร์ที่ยาวที่สุดและลวดหนาที่สุดของตราสิงโต ถ้าใหญ่ไปให้ดูเบอร์ ${pv.no} ยาว ${pv.mm} มม. ลวด ${pv.wire} มม.`;
+    en += ` It is the longest, heaviest-wire Lion-brand size; if it is too big, size ${pv.no} is ${pv.mm} mm on ${pv.wire} mm wire.`;
+  }
+  return [`เบอร์ ${p.no} ลวดหนาเท่าไหร่ แข็งแรงพอไหม?`, th, `How thick is the wire on size ${p.no}?`, en];
+}
+
+
 
 /* ---------- ลิงก์คู่มือที่เกี่ยวข้องรายเบอร์ (landing/บทความ) ---------- */
 const REL = {
@@ -50,6 +75,8 @@ function pageHTML(p, i) {
     [`เบอร์ ${p.no} กล่องละกี่ตัว?`, `ประมาณ ${packStr(p)} ตัว/กล่อง (นับจำนวนจริง ไม่ชั่งน้ำหนัก) — แบ่งขายเป็นพวง 12 ตัว หรือกุรุส 144 ตัวก็ได้`,
      `How many per box?`, `About ${packStr(p)} pins per box (counted, not weighed) — also sold by the dozen bunch or 144-pin gross.`],
     [p.faqx_th[0], p.faqx_th[1], p.faqx_en[0], p.faqx_en[1]],
+    packFaq(p),
+    wireFaq(p, i),
   ];
 
   const faqSchema = faq.map(f => `    { "@type": "Question", "name": ${jstr(f[0])},
@@ -92,7 +119,7 @@ function pageHTML(p, i) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/theme.css?v=7">
+<link rel="stylesheet" href="../assets/css/theme.css?v=8">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -223,7 +250,7 @@ document.querySelectorAll("[data-line-ask]").forEach(function(a){
   a.href = CATALOG.lineAsk(a.getAttribute("data-line-ask"));
 });
 </script>
-<script src="../assets/js/layout.js?v=5"></script>
+<script src="../assets/js/layout.js?v=6"></script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

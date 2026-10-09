@@ -223,9 +223,10 @@
       "image_w": 1200,
       "image_h": 630,
       "published": "2026-09-27",
-      "modified": "2026-10-04",
+      "modified": "2026-10-09",
       "related": [
-        "which-safety-pin-size"
+        "which-safety-pin-size",
+        "lion-pins-direct-or-reseller"
       ]
     },
     {
@@ -249,7 +250,8 @@
       "published": "2026-10-04",
       "modified": "2026-10-04",
       "related": [
-        "which-pliers-for-which-job"
+        "which-pliers-for-which-job",
+        "adjustable-wrench-sizes"
       ]
     },
     {
@@ -273,7 +275,8 @@
       "published": "2026-10-04",
       "modified": "2026-10-04",
       "related": [
-        "which-wrench-for-which-job"
+        "which-wrench-for-which-job",
+        "hardware-shop-starter-list"
       ]
     },
     {
@@ -323,6 +326,81 @@
       "modified": "2026-10-07",
       "related": [
         "race-kit-bib-pickup-checklist",
+        "which-safety-pin-size"
+      ]
+    },
+    {
+      "slug": "adjustable-wrench-sizes",
+      "cat": "tools",
+      "short_th": "ประแจเลื่อนขนาดไหนดี",
+      "short_en": "Adjustable wrench sizes",
+      "eyebrow_th": "คู่มือเลือกเครื่องมือช่าง",
+      "eyebrow_en": "Hand tool buying guide",
+      "h1_th": "ประแจเลื่อนขนาดไหน เหมาะกับงานอะไร",
+      "h1_en": "Adjustable wrench sizes: which length for which job",
+      "title_th": "ประแจเลื่อนขนาดไหนเหมาะกับงานอะไร 6–24 นิ้ว",
+      "desc_th": "ประแจเลื่อนเรียกขนาดตามความยาวด้าม 6 ถึง 24 นิ้ว เทียบนิ้วกับมิล เลือกขนาดตามงาน และรุ่นในแคตตาล็อก WYNNTOOLS กับตรา M.T.T. พร้อมจำนวนต่อลังสำหรับร้านค้า",
+      "og_desc_th": "ประแจเลื่อน 6–24 นิ้ว เลือกขนาดตามงาน พร้อมรุ่นที่มี",
+      "card_th": "ขนาด 6–24 นิ้ว เทียบมิล เลือกตามงาน และรุ่นที่มี",
+      "card_en": "Sizes 6–24 inches in millimetres, by job, with the models in stock",
+      "keywords": "ประแจเลื่อน ขนาด, ประแจเลื่อน 8 นิ้ว, ประแจเลื่อน 12 นิ้ว, ประแจเลื่อน กี่มิล, ประแจเลื่อนจับท่อ, ประแจเลื่อน ขายส่ง, WYNNTOOLS",
+      "image": "assets/img/og/adjustable-wrench-sizes.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "related": [
+        "which-wrench-for-which-job",
+        "hardware-shop-starter-list"
+      ]
+    },
+    {
+      "slug": "hardware-shop-starter-list",
+      "cat": "tools",
+      "short_th": "เปิดร้านฮาร์ดแวร์",
+      "short_en": "Starting a hardware shop",
+      "eyebrow_th": "สำหรับร้านค้า",
+      "eyebrow_en": "For shops",
+      "h1_th": "เปิดร้านฮาร์ดแวร์ต้องมีอะไรบ้าง รายการเครื่องมือเริ่มต้นจากแคตตาล็อก",
+      "h1_en": "What a new hardware shop needs: a starter tool list from the catalogue",
+      "title_th": "เปิดร้านฮาร์ดแวร์ต้องมีอะไรบ้าง รายการเริ่มต้น",
+      "desc_th": "รายการเครื่องมือพื้นฐาน 8 หมวดสำหรับร้านฮาร์ดแวร์เปิดใหม่ จากแคตตาล็อก WYNNTOOLS และตรา M.T.T. พร้อมรหัสตัวอย่าง จำนวนต่อแพ็กและต่อลัง และวิธีสั่งล็อตแรก",
+      "og_desc_th": "เครื่องมือ 8 หมวดที่ร้านฮาร์ดแวร์เปิดใหม่ควรมี พร้อมรหัสและจำนวนต่อแพ็ก",
+      "card_th": "เครื่องมือ 8 หมวดที่ควรมี จำนวนต่อแพ็ก และวิธีสั่งล็อตแรก",
+      "card_en": "Eight tool groups to stock, pack sizes and how to place a first order",
+      "keywords": "เปิดร้านฮาร์ดแวร์, ร้านฮาร์ดแวร์ต้องมีอะไรบ้าง, เครื่องมือช่าง ขายส่ง, ลงของร้านเครื่องมือ, WYNNTOOLS ขายส่ง",
+      "image": "assets/img/og/hardware-shop-starter-list.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "related": [
+        "adjustable-wrench-sizes",
+        "which-pliers-for-which-job"
+      ]
+    },
+    {
+      "slug": "lion-pins-direct-or-reseller",
+      "cat": "pins",
+      "short_th": "ซื้อต้นทางหรือร้านขายต่อ",
+      "short_en": "Direct or reseller",
+      "eyebrow_th": "คู่มือก่อนซื้อ",
+      "eyebrow_en": "Before you buy",
+      "h1_th": "ซื้อเข็มกลัดตราสิงโตจากต้นทาง ต่างจากร้านขายต่อยังไง",
+      "h1_en": "Lion-brand safety pins: buying direct vs from a reseller",
+      "title_th": "เข็มกลัดตราสิงโต ซื้อต้นทางหรือร้านขายต่อ",
+      "desc_th": "เข็มกลัดตราสิงโตซื้อจากต้นทางกับจากร้านขายต่อต่างกันตรงไหน เมื่อไหร่ร้านใกล้บ้านเหมาะกว่า และวิธีเทียบราคาต่อตัว จำนวนต่อกล่อง ค่าส่ง และเอกสาร",
+      "og_desc_th": "ซื้อเข็มกลัดตราสิงโตจากต้นทางหรือร้านขายต่อ และวิธีเทียบข้อเสนอ",
+      "card_th": "ต่างกันตรงไหน เมื่อไหร่ร้านใกล้บ้านเหมาะกว่า และวิธีเทียบข้อเสนอ",
+      "card_en": "How they differ, when a nearby shop fits better, and how to compare offers",
+      "keywords": "เข็มกลัดตราสิงโต, เข็มกลัดตราสิงโต ซื้อที่ไหน, เข็มกลัด MTT, เข็มกลัดซ่อนปลาย ต้นทาง, เข็มกลัดยกกล่อง ราคาต่อตัว",
+      "image": "assets/img/products/safety-pins-og.png",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-09",
+      "modified": "2026-10-09",
+      "related": [
+        "safety-pins-how-many-boxes",
         "which-safety-pin-size"
       ]
     }

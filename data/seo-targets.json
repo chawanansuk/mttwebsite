@@ -1,0 +1,299 @@
+{
+  "_doc": "คำค้นเป้าหมาย 30 คำ ใช้กับ npm run seo (ตรวจหน้าเว็บเรา) และใช้ติดตามตำแหน่งใน Search Console ทุกสัปดาห์ ดู docs/seo-baseline.md — url คือหน้าของเราที่ควรติดคำนั้น, schema คือชนิด JSON-LD ที่หน้านั้นต้องมี, also คือคำสะกดอื่นที่นับว่าตรง (เช่น ไฟแช็ก/ไฟแช็ค), started คือวันที่เริ่มติดตาม ห้ามใส่ตัวเลขตำแหน่งหรือยอดดูที่ไม่ได้มาจาก Search Console",
+  "started": "2026-10-09",
+  "groups": {
+    "brand": "แบรนด์และชื่อร้าน",
+    "pins": "เข็มกลัดซ่อนปลาย",
+    "jet": "ไฟฟู่",
+    "tools": "เครื่องมือช่าง"
+  },
+  "targets": [
+    {
+      "kw": "ตราสิงโต",
+      "group": "brand",
+      "url": "/products/safety-pins-lion-brand.html",
+      "schema": [
+        "Brand"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดตราสิงโต",
+      "group": "brand",
+      "url": "/products/safety-pins-lion-brand.html",
+      "schema": [
+        "Brand",
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "เข็มกลัด MTT",
+      "group": "brand",
+      "url": "/products/safety-pins-lion-brand.html",
+      "schema": [
+        "Brand"
+      ],
+      "also": [
+        "เข็มกลัด M.T.T."
+      ]
+    },
+    {
+      "kw": "ม.ทวีภัณฑ์",
+      "group": "brand",
+      "url": "/",
+      "schema": [
+        "Store"
+      ]
+    },
+    {
+      "kw": "ม.ทวีภัณฑ์ สำเพ็ง",
+      "group": "brand",
+      "url": "/",
+      "schema": [
+        "Store"
+      ]
+    },
+    {
+      "kw": "กุญแจตราสิงโต",
+      "group": "brand",
+      "url": "/products/tools-padlock.html",
+      "schema": [
+        "ItemList"
+      ],
+      "also": [
+        "กุญแจสิงห์"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดซ่อนปลาย",
+      "group": "pins",
+      "url": "/products/safety-pins.html",
+      "schema": [
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดซ่อนปลาย ขายส่ง",
+      "group": "pins",
+      "url": "/products/safety-pins-wholesale.html",
+      "schema": [
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดยกกล่อง",
+      "group": "pins",
+      "url": "/products/safety-pins-wholesale.html",
+      "schema": [
+        "FAQPage"
+      ],
+      "also": [
+        "เข็มกลัด ยกกล่อง"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดกล่องละกี่ตัว",
+      "group": "pins",
+      "url": "/articles/safety-pins-how-many-boxes.html",
+      "schema": [
+        "Article",
+        "FAQPage"
+      ],
+      "also": [
+        "เข็มกลัด กล่องละกี่ตัว"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดเบอร์ 000",
+      "group": "pins",
+      "url": "/products/safety-pins-000.html",
+      "schema": [
+        "Product",
+        "FAQPage"
+      ],
+      "also": [
+        "เข็มกลัด เบอร์000"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดเบอร์ 0",
+      "group": "pins",
+      "url": "/products/safety-pins-0.html",
+      "schema": [
+        "Product",
+        "FAQPage"
+      ],
+      "also": [
+        "เข็มกลัด เบอร์0"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดเบอร์ 2",
+      "group": "pins",
+      "url": "/products/safety-pins-2.html",
+      "schema": [
+        "Product",
+        "FAQPage"
+      ],
+      "also": [
+        "เข็มกลัด เบอร์2"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดงานวิ่ง",
+      "group": "pins",
+      "url": "/products/safety-pins-running.html",
+      "schema": [
+        "FAQPage"
+      ],
+      "also": [
+        "เข็มกลัด งานวิ่ง"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดติดเบอร์วิ่ง",
+      "group": "pins",
+      "url": "/products/safety-pins-running.html",
+      "schema": [
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดติดป้ายราคา",
+      "group": "pins",
+      "url": "/products/safety-pins-tags.html",
+      "schema": [
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดผ้าอ้อม",
+      "group": "pins",
+      "url": "/products/safety-pins-diaper.html",
+      "schema": [
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "เข็มกลัดเบอร์ไหนใช้ทำอะไร",
+      "group": "pins",
+      "url": "/articles/which-safety-pin-size.html",
+      "schema": [
+        "Article",
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "ไฟฟู่",
+      "group": "jet",
+      "url": "/products/jet-lighter.html",
+      "schema": [
+        "Product"
+      ]
+    },
+    {
+      "kw": "ไฟฟู่ขายส่ง",
+      "group": "jet",
+      "url": "/products/jet-lighter.html",
+      "schema": [
+        "Product"
+      ],
+      "also": [
+        "ไฟฟู่ ราคาส่ง",
+        "ไฟฟู่ ยกกล่อง"
+      ]
+    },
+    {
+      "kw": "ไฟแช็กหัวพ่นไฟ ยกกล่อง",
+      "group": "jet",
+      "url": "/products/jet-lighter.html",
+      "schema": [
+        "Product"
+      ],
+      "also": [
+        "ไฟแช็คหัวพ่นไฟ ยกกล่อง"
+      ]
+    },
+    {
+      "kw": "ไฟฟู่ยี่ห้อไหนดี",
+      "group": "jet",
+      "url": "/articles/which-jet-lighter-brand.html",
+      "schema": [
+        "Article",
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "ไฟฟู่ยกกล่องไปขายต่อ",
+      "group": "jet",
+      "url": "/articles/jet-lighter-wholesale-margin.html",
+      "schema": [
+        "Article",
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "WYNNTOOLS",
+      "group": "tools",
+      "url": "/products/tools.html",
+      "schema": [
+        "ItemList"
+      ]
+    },
+    {
+      "kw": "เครื่องมือช่าง ขายส่ง",
+      "group": "tools",
+      "url": "/products/tools.html",
+      "schema": [
+        "ItemList"
+      ],
+      "also": [
+        "เครื่องมือช่าง ราคาส่ง",
+        "เครื่องมือช่าง ปลีก-ส่ง"
+      ]
+    },
+    {
+      "kw": "ร้านเครื่องมือช่าง สำเพ็ง",
+      "group": "tools",
+      "url": "/",
+      "schema": [
+        "Store"
+      ]
+    },
+    {
+      "kw": "ประแจเลื่อน ขนาดไหน",
+      "group": "tools",
+      "url": "/articles/adjustable-wrench-sizes.html",
+      "schema": [
+        "Article",
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "ประแจเลื่อน ขายส่ง",
+      "group": "tools",
+      "url": "/products/tools-wrenches.html",
+      "schema": [
+        "ItemList"
+      ]
+    },
+    {
+      "kw": "คีมล็อก ราคาส่ง",
+      "group": "tools",
+      "url": "/products/tools-holding.html",
+      "schema": [
+        "ItemList"
+      ],
+      "also": [
+        "คีมล็อค ราคาส่ง"
+      ]
+    },
+    {
+      "kw": "คีมย้ำหางปลา",
+      "group": "tools",
+      "url": "/products/tools-electrical.html",
+      "schema": [
+        "ItemList"
+      ]
+    }
+  ]
+}
