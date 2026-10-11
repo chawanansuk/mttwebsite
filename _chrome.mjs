@@ -43,7 +43,7 @@ function headerHTML(base, page) {
   }).join("\n      ");
   return `<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
 <header class="site-header"><div class="wrap nav">
-  <a class="brand" href="/" aria-label="ม.ทวีภัณฑ์ หน้าแรก" data-th-aria-label="ม.ทวีภัณฑ์ หน้าแรก" data-en-aria-label="M.T.T. Hardware home"><span class="mark">${BOLT}</span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></a>
+  <a class="brand" href="/" aria-label="MTT Hardware หน้าแรก" data-th-aria-label="MTT Hardware หน้าแรก" data-en-aria-label="MTT Hardware home"><span class="mark">${BOLT}</span><span class="b-th">MTT Hardware<small data-th="เครื่องมือช่าง สำเพ็ง" data-en="Tools · Sampheng">เครื่องมือช่าง สำเพ็ง</small></span></a>
   <nav class="nav-links" id="navLinks">
       ${links}
   </nav>
@@ -68,7 +68,7 @@ function footerHTML(base) {
       `<span data-shop="address" lang="th">${esc(S.ADDRESS_TH)}</span>`), /* ที่อยู่คงเป็นไทยให้ขนส่งอ่านได้ — lang="th" ให้โปรแกรมอ่านหน้าจอออกเสียงถูก */
   ].filter(Boolean).join("\n      ");
   return `<footer class="site-footer"><div class="wrap"><div class="foot-grid">
-  <div class="foot-brand"><div class="brand"><span class="mark">${BOLT}</span><span class="b-th">ม.ทวีภัณฑ์<small>M.T.T. Hardware</small></span></div>
+  <div class="foot-brand"><div class="brand"><span class="mark">${BOLT}</span><span class="b-th">MTT Hardware<small data-th="เครื่องมือช่าง สำเพ็ง" data-en="Tools · Sampheng">เครื่องมือช่าง สำเพ็ง</small></span></div>
     <p data-th="ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย" data-en="Tools &amp; hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand. Retail &amp; wholesale, nationwide.">ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย</p></div>
   <div class="foot-col"><h2 data-th="สินค้า" data-en="Products">สินค้า</h2><ul>
     ${li(base + "products/jet-lighter.html", "ไฟฟู่ / ไฟแช็ก", "Jet lighters")}
@@ -97,7 +97,7 @@ function footerHTML(base) {
       ${contact}
   </div></div>
 </div><div class="foot-bottom">
-  <span>© 2026 <span data-th="ม.ทวีภัณฑ์" data-en="M.T.T. Hardware">ม.ทวีภัณฑ์</span> · <span data-th="${esc(S.legal_th || "")}" data-en="${esc(S.legal_en || S.legal_th || "")}">${esc(S.legal_th || "")}</span> · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>
+  <span>© 2026 MTT Hardware · <span data-th="${esc(S.legal_th || "")}" data-en="${esc(S.legal_en || S.legal_th || "")}">${esc(S.legal_th || "")}</span> · <span data-th="สงวนลิขสิทธิ์" data-en="All rights reserved">สงวนลิขสิทธิ์</span></span>
   <span data-th="ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด" data-en="Built for the easiest ordering">ออกแบบเพื่อการสั่งซื้อที่ง่ายที่สุด</span>
 </div></div></footer>`;
 }

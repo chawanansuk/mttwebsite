@@ -11,8 +11,8 @@ import { SITE, DATA, esc, bi, groupHTML, headHTML, scriptsHTML, crumbsHTML, ctaB
 const FILE = "mtt-brand.html";
 const URL = `${SITE}/products/${FILE}`;
 const TITLE = "สินค้าตรา M.T.T. ตราสิงโต กุญแจ เข็มกลัด ประแจ มีดครัว";
-const DESC = "สินค้าแบรนด์ของ ม.ทวีภัณฑ์ เอง — กุญแจสิงห์เงิน-สิงห์ทองปั๊มรูปสิงโต ชุดคีย์อะไลค์ เข็มกลัดซ่อนปลาย ประแจเลื่อนรมดำ มีดครัวตราสิงห์คู่ พร้อมรหัสครบ";
-const KW = "ตรา M.T.T., ตราสิงโต, MTT International, กุญแจสิงห์เงิน, กุญแจสิงห์ทอง, คีย์อะไลค์, เข็มกลัด MTT, ประแจเลื่อนรมดำ, มีดครัวตราสิงห์คู่, ม.ทวีภัณฑ์";
+const DESC = "สินค้าแบรนด์ของ MTT Hardware เอง — กุญแจสิงห์เงิน-สิงห์ทองปั๊มรูปสิงโต ชุดคีย์อะไลค์ เข็มกลัดซ่อนปลาย ประแจเลื่อนรมดำ มีดครัวตราสิงห์คู่ พร้อมรหัสครบ";
+const KW = "ตรา M.T.T., ตราสิงโต, MTT International, กุญแจสิงห์เงิน, กุญแจสิงห์ทอง, คีย์อะไลค์, เข็มกลัด MTT, ประแจเลื่อนรมดำ, มีดครัวตราสิงห์คู่, MTT Hardware";
 if (TITLE.length > 62) throw new Error("title ยาวเกิน " + TITLE.length);
 if (DESC.length > 155) throw new Error("desc ยาวเกิน " + DESC.length);
 
@@ -65,7 +65,7 @@ ${tables}`;
 
 const itemList = {
   "@context": "https://schema.org", "@type": "ItemList",
-  name: "สินค้าตรา M.T.T. (ตราสิงโต) ม.ทวีภัณฑ์", description: DESC, numberOfItems: total,
+  name: "สินค้าตรา M.T.T. (ตราสิงโต) MTT Hardware", description: DESC, numberOfItems: total,
   itemListElement: SECTIONS.filter((s) => bySection[s.key].length).map((s, i) => ({
     "@type": "ListItem", position: i + 1, name: s.th, url: `${URL}#${s.key}`,
     description: `${bySection[s.key].reduce((m, g) => m + g.items.length, 0)} รายการ`,
@@ -75,7 +75,7 @@ const brand = {
   "@context": "https://schema.org", "@type": "Brand",
   name: "M.T.T.", alternateName: ["ตราสิงโต", "ตรา M.T.T.", "MTT International"],
   url: URL, logo: `${SITE}/assets/img/products/mtt-brand.webp`,
-  description: "แบรนด์สินค้าของ ม.ทวีภัณฑ์ สำเพ็ง — กุญแจ เข็มกลัด ประแจ มีดครัว และเครื่องมือช่าง ปั๊มรูปสิงโตบนตัวสินค้า",
+  description: "แบรนด์สินค้าของ MTT Hardware สำเพ็ง — กุญแจ เข็มกลัด ประแจ มีดครัว และเครื่องมือช่าง ปั๊มรูปสิงโตบนตัวสินค้า",
 };
 const crumbs = {
   "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -103,7 +103,7 @@ const STYLE = `.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28
 
 const head = headHTML({
   title: TITLE, desc: DESC, kw: KW, url: URL,
-  ogTitle: `สินค้าตรา M.T.T. ตราสิงโต — ${total} รายการ แบรนด์ของ ม.ทวีภัณฑ์`,
+  ogTitle: `สินค้าตรา M.T.T. ตราสิงโต — ${total} รายการ แบรนด์ของ MTT Hardware`,
   ogDesc: DESC.slice(0, 110),
   ogImage: `${SITE}/assets/img/products/mtt-brand.webp`,
   ld: [crumbs, brand, itemList],
@@ -119,9 +119,9 @@ const html = `${head}
 ${crumbsHTML(`<a href="/products" data-th="สินค้า" data-en="Products">สินค้า</a>`, "สินค้าตรา M.T.T.")}
     <div class="hero-grid">
       <div>
-        <span class="eyebrow" data-th="แบรนด์ของร้านเอง · ม.ทวีภัณฑ์ สำเพ็ง" data-en="Our own brand · M.T.T. Hardware, Sampheng">แบรนด์ของร้านเอง · ม.ทวีภัณฑ์ สำเพ็ง</span>
+        <span class="eyebrow" data-th="แบรนด์ของร้านเอง · MTT Hardware สำเพ็ง" data-en="Our own brand · MTT Hardware, Sampheng">แบรนด์ของร้านเอง · MTT Hardware สำเพ็ง</span>
         <h1>${bi("สินค้าตรา M.T.T.", "M.T.T. brand products")} <span style="color:var(--amber-dark)" data-th="ตราสิงโต" data-en="Lion brand">ตราสิงโต</span></h1>
-        <p class="muted" data-th="สินค้าที่ผลิตภายใต้แบรนด์ของ ม.ทวีภัณฑ์ เอง ปั๊มรูปสิงโตและอักษร M.T.T. บนตัวสินค้า ครอบคลุมกุญแจ เข็มกลัดซ่อนปลาย ประแจเลื่อน มีดครัว และเครื่องมือช่าง — ทุกรายการมีรหัส ขนาด และจำนวนต่อลังระบุชัด กดที่รหัสเพื่อถามราคาทาง LINE ได้ทันที" data-en="Products made under M.T.T. Hardware's own brand, embossed with the lion and the letters M.T.T. — padlocks, safety pins, adjustable wrenches, kitchen knives and hand tools. Every item lists its code, size and carton quantity; tap a code to ask the price on LINE.">สินค้าที่ผลิตภายใต้แบรนด์ของ ม.ทวีภัณฑ์ เอง ปั๊มรูปสิงโตและอักษร M.T.T. บนตัวสินค้า ครอบคลุมกุญแจ เข็มกลัดซ่อนปลาย ประแจเลื่อน มีดครัว และเครื่องมือช่าง — ทุกรายการมีรหัส ขนาด และจำนวนต่อลังระบุชัด กดที่รหัสเพื่อถามราคาทาง LINE ได้ทันที</p>
+        <p class="muted" data-th="สินค้าที่ผลิตภายใต้แบรนด์ของ MTT Hardware เอง ปั๊มรูปสิงโตและอักษร M.T.T. บนตัวสินค้า ครอบคลุมกุญแจ เข็มกลัดซ่อนปลาย ประแจเลื่อน มีดครัว และเครื่องมือช่าง — ทุกรายการมีรหัส ขนาด และจำนวนต่อลังระบุชัด กดที่รหัสเพื่อถามราคาทาง LINE ได้ทันที" data-en="Products made under MTT Hardware's own brand, embossed with the lion and the letters M.T.T. — padlocks, safety pins, adjustable wrenches, kitchen knives and hand tools. Every item lists its code, size and carton quantity; tap a code to ask the price on LINE.">สินค้าที่ผลิตภายใต้แบรนด์ของ MTT Hardware เอง ปั๊มรูปสิงโตและอักษร M.T.T. บนตัวสินค้า ครอบคลุมกุญแจ เข็มกลัดซ่อนปลาย ประแจเลื่อน มีดครัว และเครื่องมือช่าง — ทุกรายการมีรหัส ขนาด และจำนวนต่อลังระบุชัด กดที่รหัสเพื่อถามราคาทาง LINE ได้ทันที</p>
         <div class="trust">
           <span class="badge lion">${total} ${bi("รายการ", "items")}</span>
           <span class="badge" data-th="ราคาปลีก-ส่ง" data-en="Retail &amp; wholesale">ราคาปลีก-ส่ง</span>

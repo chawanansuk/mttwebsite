@@ -16,8 +16,8 @@ import { bakeChrome } from "./_chrome.mjs";
 import { guideCardsHTML as guideCards } from "./_gen-lib.mjs";
 
 const SITE = "https://mtthardware.com";
-const SHOP_NAME = "ม.ทวีภัณฑ์";
-const ORG = { "@type": "Organization", name: "ม.ทวีภัณฑ์ (M.T.T. Hardware)" };
+const SHOP_NAME = "MTT Hardware";
+const ORG = { "@type": "Organization", name: "MTT Hardware" };
 const PUBLISHER = { ...ORG, logo: { "@type": "ImageObject", url: `${SITE}/assets/img/apple-touch-icon.png?v=2` } };
 const { categories: CATS, articles: ARTICLES } = JSON.parse(readFileSync("data/articles.json", "utf8"));
 const BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
@@ -103,8 +103,8 @@ ${blocks.join("\n")}`;
 function heroBlock(a) {
   const cat = CATS[a.cat];
   const pub = `<time datetime="${a.published}">`, mod = `<time datetime="${a.modified}">`;
-  const bylineTH = `โดย ม.ทวีภัณฑ์ สำเพ็ง · เผยแพร่ ${pub}${dTH(a.published)}</time>` + (a.modified !== a.published ? ` · อัปเดต ${mod}${dTH(a.modified)}</time>` : "");
-  const bylineEN = `By M.T.T. Hardware, Sampheng · Published ${pub}${dEN(a.published)}</time>` + (a.modified !== a.published ? ` · Updated ${mod}${dEN(a.modified)}</time>` : "");
+  const bylineTH = `โดย MTT Hardware สำเพ็ง · เผยแพร่ ${pub}${dTH(a.published)}</time>` + (a.modified !== a.published ? ` · อัปเดต ${mod}${dTH(a.modified)}</time>` : "");
+  const bylineEN = `By MTT Hardware, Sampheng · Published ${pub}${dEN(a.published)}</time>` + (a.modified !== a.published ? ` · Updated ${mod}${dEN(a.modified)}</time>` : "");
   return `    <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="../${cat.href}" ${bi(cat.th, cat.en)}</a> › <span ${bi(a.short_th, a.short_en)}</span></nav>
     <span class="eyebrow" ${bi(a.eyebrow_th, a.eyebrow_en)}</span>
     <h1 ${bi(a.h1_th, a.h1_en)}</h1>
@@ -186,12 +186,12 @@ ${guideCards("/articles/", list)}
 <title>${esc(TITLE)}</title>
 <meta name="description" content="${esc(DESC)}">
 <link rel="canonical" href="${URL}">
-<meta property="og:title" content="บทความและคู่มือเลือกซื้อ ม.ทวีภัณฑ์">
+<meta property="og:title" content="บทความและคู่มือเลือกซื้อ MTT Hardware">
 <meta property="og:description" content="${esc(DESC)}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="th_TH">
 <meta property="og:url" content="${URL}">
-<meta property="og:image" content="${SITE}/assets/img/og-image.png?v=2">
+<meta property="og:image" content="${SITE}/assets/img/og-image.png?v=3">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../assets/img/favicon.svg?v=2" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=2">
@@ -199,7 +199,7 @@ ${guideCards("/articles/", list)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/theme.css?v=8">
+<link rel="stylesheet" href="../assets/css/theme.css?v=9">
 <link rel="stylesheet" href="../assets/css/article.css?v=4">
 ${ld({ "@type": "CollectionPage", name: "บทความและคู่มือเลือกซื้อ", description: DESC, url: URL, inLanguage: "th", dateModified: newest,
   mainEntity: { "@type": "ItemList", itemListElement: ARTICLES.map((a, i) => ({ "@type": "ListItem", position: i + 1, name: a.h1_th, url: `${SITE}/articles/${a.slug}.html` })) } })}

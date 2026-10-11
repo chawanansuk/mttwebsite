@@ -1,5 +1,5 @@
 /* ============================================================
-   ม ทวีภัณฑ์ — Shared Design System (theme.css)
+   MTT Hardware — Shared Design System (theme.css)
    Industrial-retail: ink navy + emerald green
    ใช้ร่วมกันทุกหน้า (หน้าหลัก + หน้าสินค้า)
    ============================================================ */
@@ -147,6 +147,7 @@ html[lang="en"] .eyebrow{letter-spacing:.16em;font-size:.75rem}
 .brand .mark svg{width:20px;height:20px}
 .brand .b-th{display:flex;flex-direction:column;line-height:1.05}
 .brand .b-th small{font-family:var(--font-body);font-weight:500;font-size:.75rem;color:var(--ink-mute);letter-spacing:.14em;text-transform:uppercase}
+html[lang="th"] .brand .b-th small{letter-spacing:.02em;text-transform:none;margin-top:3px}
 .nav-links{display:flex;align-items:center;gap:26px;font-size:.95rem;font-weight:500}
 /* พื้นที่กดต้องถึง 44px — เดิมสูง 34px ซึ่งต่ำกว่าเกณฑ์ และเมนูชุดนี้กลายเป็นเมนูมือถือตอนจอแคบ */
 .nav-links a{color:var(--ink-2);transition:color .15s;position:relative;

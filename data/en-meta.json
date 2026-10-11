@@ -1,11 +1,11 @@
 {
  "/": {
-  "title": "M.T.T. Hardware, Sampheng | Tools, jet lighters, safety pins",
-  "desc": "M.T.T. Hardware in Sampheng, Bangkok: hand tools, hardware, jet lighters and safety pins. Exclusive WYNNTOOLS importer in Thailand, retail and wholesale by the box, nationwide delivery, order on LINE."
+  "title": "MTT Hardware, Sampheng | Tools, jet lighters, safety pins",
+  "desc": "MTT Hardware in Sampheng, Bangkok: hand tools, hardware, jet lighters and safety pins. Exclusive WYNNTOOLS importer in Thailand, retail and wholesale by the box, nationwide delivery, order on LINE."
  },
  "/products": {
   "title": "All products: tools, jet lighters, safety pins | M.T.T.",
-  "desc": "Everything M.T.T. Hardware sells: jet lighters, WYNNTOOLS hand tools and hardware, at retail and wholesale prices with nationwide delivery."
+  "desc": "Everything MTT Hardware sells: jet lighters, WYNNTOOLS hand tools and hardware, at retail and wholesale prices with nationwide delivery."
  },
  "/products/jet-lighter.html": {
   "title": "Windproof jet lighter by the box, ฿24 each | M.T.T.",
@@ -40,7 +40,7 @@
   "desc": "Tag pins for price tags and clothing labels: size 000 (1.9 cm) and size 00 (2.3 cm), nickel-plated against rust, wholesale by the box for shops and OEM factories, nationwide delivery."
  },
  "/articles": {
-  "title": "Guides and buying advice | M.T.T. Hardware",
+  "title": "Guides and buying advice | MTT Hardware",
   "desc": "Buying guides from our Sampheng counter: which jet lighter to stock, compact or large, reselling margins, which safety-pin size fits which job, and how to choose wrenches and pliers."
  },
  "/articles/which-jet-lighter-brand.html": {
@@ -74,8 +74,8 @@
   "desc": "A box-count formula that works for every safety-pin size, with pins per box for sizes 000–7 and worked examples for garment factories, races and canvas work."
  },
  "/privacy.html": {
-  "title": "Privacy and terms | M.T.T. Hardware",
-  "desc": "Privacy policy (PDPA) and the ordering and shipping terms for flammable goods at M.T.T. Hardware."
+  "title": "Privacy and terms | MTT Hardware",
+  "desc": "Privacy policy (PDPA) and the ordering and shipping terms for flammable goods at MTT Hardware."
  },
  "/products/safety-pins-000.html": {
   "title": "Safety pin size 000, 19 mm, wholesale by the box | M.T.T.",
@@ -138,8 +138,8 @@
   "desc": "Pin a race bib with four safety pins so it doesn't flap or tear: where to pin, shirt on or off, why to keep clear of the timing chip, and what to do if you'd rather not pierce your shirt."
  },
  "/products/safety-pins-lion-brand.html": {
-  "title": "Lion-brand safety pins, M.T.T. Hardware's own brand | M.T.T.",
-  "desc": "Lion-brand safety pins from M.T.T. Hardware, Sampheng: all ten sizes 000–7 in nickel-plated spring steel with a capped point. Order direct from the source, counted not weighed, nationwide delivery."
+  "title": "Lion-brand safety pins, MTT Hardware's own brand | M.T.T.",
+  "desc": "Lion-brand safety pins from MTT Hardware, Sampheng: all ten sizes 000–7 in nickel-plated spring steel with a capped point. Order direct from the source, counted not weighed, nationwide delivery."
  },
  "/articles/adjustable-wrench-sizes.html": {
   "title": "Adjustable wrench sizes: which length for which job | M.T.T.",

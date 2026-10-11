@@ -60,7 +60,7 @@ function neighbors(i) {
 }
 
 function pageHTML(p, i) {
-  const title = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ${p.mm} มม. ขายส่งยกกล่อง | ม.ทวีภัณฑ์`;
+  const title = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ${p.mm} มม. ขายส่งยกกล่อง | MTT Hardware`;
   // meta description ต้อง <=155 ตัวอักษร (Google ตัดที่ราว ๆ นี้) — ต่อท้ายเท่าที่ยังพอดี
   const use = p.uses_th[0].split(' — ')[0];
   const descBase = `เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ยาว ${p.cm} ซม. (${p.mm} มม.) เหล็กชุบนิกเกิล เหมาะ${use} ขายยกกล่อง ${packStr(p)} ตัว ราคาส่ง`;
@@ -104,7 +104,7 @@ function pageHTML(p, i) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
-<meta property="og:title" content="${esc(`เข็มกลัดซ่อนปลาย เบอร์ ${p.no} (${p.mm} มม.) | ม.ทวีภัณฑ์`)}">
+<meta property="og:title" content="${esc(`เข็มกลัดซ่อนปลาย เบอร์ ${p.no} (${p.mm} มม.) | MTT Hardware`)}">
 <meta property="og:url" content="${url}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:type" content="product">
@@ -119,7 +119,7 @@ function pageHTML(p, i) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/theme.css?v=8">
+<link rel="stylesheet" href="../assets/css/theme.css?v=9">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -1,5 +1,5 @@
 /* ============================================================
-   ม.ทวีภัณฑ์ — layout.js
+   MTT Hardware — layout.js
    header/footer ฝังในไฟล์ HTML แล้ว (แก้ที่ _chrome.mjs แล้วรัน npm run bake)
    ไฟล์นี้: สลับภาษา TH/EN (จำค่า) + เติมข้อมูลร้านจาก SHOP + เมนูมือถือ + badge ตะกร้า + toast
    ต้องโหลด "หลัง" shop-config.js, catalog.js, cart.js

@@ -133,8 +133,8 @@ ${rows.join("\n")}
 
 /* ---------- แถบ "ซื้อตรงจากต้นทาง" ---------- */
 export function originStrip(base) {
-  const th = `ตราสิงโตเป็นแบรนด์ของ ม.ทวีภัณฑ์ สั่งที่นี่คือซื้อตรงจากต้นทาง ไม่ผ่านคนขายต่อ <a href="${base}products/safety-pins-lion-brand.html">รู้จักเข็มกลัดตราสิงโต</a>`;
-  const en = `Lion brand belongs to M.T.T. Hardware. Ordering here means buying straight from the source, not a reseller. <a href="${base}products/safety-pins-lion-brand.html">About Lion-brand pins</a>`;
+  const th = `ตราสิงโตเป็นแบรนด์ของ MTT Hardware สั่งที่นี่คือซื้อตรงจากต้นทาง ไม่ผ่านคนขายต่อ <a href="${base}products/safety-pins-lion-brand.html">รู้จักเข็มกลัดตราสิงโต</a>`;
+  const en = `Lion brand belongs to MTT Hardware. Ordering here means buying straight from the source, not a reseller. <a href="${base}products/safety-pins-lion-brand.html">About Lion-brand pins</a>`;
   return `    <p class="origin-strip" ${bi(th, en, true)}</p>`;
 }
 
@@ -143,7 +143,7 @@ export function whereToBuy() {
   /* ที่อยู่ใส่ค่าจริงทั้งใน attribute และเนื้อใน ให้บอตและหน้า /en เห็นโดยไม่ต้องรอ JS */
   const addr = `<span data-shop="address">${esc(SHOP.ADDRESS_TH || "")}</span>`;
   const items = [
-    [`หน้าร้าน ม.ทวีภัณฑ์ สำเพ็ง ${addr}`, `M.T.T. Hardware, Sampheng ${addr}`],
+    [`หน้าร้าน MTT Hardware สำเพ็ง ${addr}`, `MTT Hardware, Sampheng ${addr}`],
     [`เว็บนี้ สั่งทาง LINE ส่งทั่วไทย ออกใบกำกับภาษีได้`, `This site, ordering on LINE with nationwide shipping and tax invoices`],
   ];
   /* ลิงก์ร้านทางการติด UTM ไว้แยกยอดใน Analytics ของแพลตฟอร์ม และ layout.js ส่ง event marketplace_click */
@@ -164,7 +164,7 @@ export function reviewsHTML() {
   if (!list.length) return "";
   return `    <h2 class="sec-h" id="reviews" ${bi("เสียงจากลูกค้า", "What customers say")}</h2>
     <div class="reviews">
-` + list.map((t) => `      <blockquote class="review"><p ${bi(t.text_th, t.text_en || t.text_th)}</p><footer ${bi(t.who_th || "ลูกค้า ม.ทวีภัณฑ์", t.who_en || t.who_th || "M.T.T. customer")}</footer></blockquote>`).join("\n") + `
+` + list.map((t) => `      <blockquote class="review"><p ${bi(t.text_th, t.text_en || t.text_th)}</p><footer ${bi(t.who_th || "ลูกค้า MTT Hardware", t.who_en || t.who_th || "MTT Hardware customer")}</footer></blockquote>`).join("\n") + `
     </div>
 `;
 }

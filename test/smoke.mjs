@@ -105,7 +105,7 @@ for (const a of ARTS) {
   assert(art && art.dateModified === a.modified && times.at(-1) === a.modified && lastmod === a.modified, `${a.slug}: วันที่อัปเดตตรงกันทั้งบนหน้า / schema / sitemap (${a.modified})`);
   const title = (raw.match(/<title>([^<]*)<\/title>/) || [])[1] || "";
   const ogImg = (raw.match(/property="og:image" content="([^"]+)"/) || [])[1] || "";
-  assert(title.length <= 60 && title.endsWith("| ม.ทวีภัณฑ์") && /og:image:width" content="1200"/.test(raw) && /og:image:height" content="630"/.test(raw) && existsSync(join(ROOT, ogImg.replace("https://mtthardware.com/", ""))),
+  assert(title.length <= 60 && title.endsWith("| MTT Hardware") && /og:image:width" content="1200"/.test(raw) && /og:image:height" content="630"/.test(raw) && existsSync(join(ROOT, ogImg.replace("https://mtthardware.com/", ""))),
     `${a.slug}: title ≤60 มีชื่อร้าน · รูป OG 1200×630 มีไฟล์จริง`);
 }
 {
@@ -355,7 +355,7 @@ console.log("\n[ สรุปออเดอร์ EN ]");
   await page.click(".add");
   await page.waitForTimeout(150);
   const txt = await page.evaluate(() => buildOrderText());
-  assert(txt.split("\n")[0].includes("M.T.T. order"), "หัวออเดอร์ EN ถูกต้อง");
+  assert(txt.split("\n")[0].includes("MTT Hardware order"), "หัวออเดอร์ EN ถูกต้อง");
   assert(/Large 1 pc/.test(txt), "รายการ EN ถูกต้อง");
   await page.close();
 }
@@ -498,6 +498,11 @@ console.log("\n[ SEO เป้าหมายและโครงสร้า�
   assert(!orphan.length, "ทุกบทความมีลิงก์ในเนื้อหาจากหน้าอื่น" + (orphan.length ? " → " + orphan.join(", ") : ""));
   const vi = existsSync(join(ROOT, ".vercelignore")) ? read(".vercelignore") : "";
   assert(["docs/", "data/", "test/", "_*.mjs"].every((x) => vi.split("\n").includes(x)), ".vercelignore กันไฟล์ภายใน (docs data test _*.mjs) ไม่ให้ขึ้นเว็บจริง");
+  /* ชื่อร้านคือ MTT Hardware — ชื่อเดิม ม.ทวีภัณฑ์ เหลือได้ที่เดียวคือ alternateName ใน schema ร้าน (ให้คนที่ค้นชื่อเดิมยังเจอ) */
+  const served = execSync("git ls-files '*.html' '*.js' '*.webmanifest' '*.xml'", { cwd: ROOT, encoding: "utf8" }).split("\n").filter(Boolean);
+  const oldName = served.filter((f) => read(f).replace(/"alternateName": \[[^\]]*\]/g, "").includes("ทวีภัณฑ์"));
+  const storeAlt = /"alternateName": \[[^\]]*"ม\.ทวีภัณฑ์"/.test(read("index.html")) && /"name": "MTT Hardware",/.test(read("index.html"));
+  assert(!oldName.length && storeAlt, "ชื่อร้านเป็น MTT Hardware ทุกหน้า ชื่อเดิมอยู่แค่ alternateName ของ schema ร้าน" + (oldName.length ? " → " + oldName.slice(0, 5).join(", ") : ""));
 }
 
 /* ---- tag ใดก็ตามต้องไม่มีแอตทริบิวต์ซ้ำ (เบราว์เซอร์ใช้ตัวแรก ตัวหลังหายเงียบ) ---- */

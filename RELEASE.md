@@ -1,4 +1,4 @@
-# ✅ Release Checklist — ม ทวีภัณฑ์
+# ✅ Release Checklist — MTT Hardware
 
 ทำตามลำดับก่อนเปิดเว็บให้ลูกค้าจริง
 

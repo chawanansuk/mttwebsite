@@ -2,7 +2,7 @@
   "name": "mttwebsite",
   "version": "1.0.0",
   "private": true,
-  "description": "เว็บไซต์ร้าน ม ทวีภัณฑ์ (static site)",
+  "description": "เว็บไซต์ร้าน MTT Hardware (static site)",
   "scripts": {
     "test": "node test/smoke.mjs",
     "linkcheck": "node _links.mjs",
