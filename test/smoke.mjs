@@ -498,11 +498,11 @@ console.log("\n[ SEO เป้าหมายและโครงสร้า�
   assert(!orphan.length, "ทุกบทความมีลิงก์ในเนื้อหาจากหน้าอื่น" + (orphan.length ? " → " + orphan.join(", ") : ""));
   const vi = existsSync(join(ROOT, ".vercelignore")) ? read(".vercelignore") : "";
   assert(["docs/", "data/", "test/", "_*.mjs"].every((x) => vi.split("\n").includes(x)), ".vercelignore กันไฟล์ภายใน (docs data test _*.mjs) ไม่ให้ขึ้นเว็บจริง");
-  /* ชื่อร้านคือ MTT Hardware — ชื่อเดิม ม.ทวีภัณฑ์ เหลือได้ที่เดียวคือ alternateName ใน schema ร้าน (ให้คนที่ค้นชื่อเดิมยังเจอ) */
-  const served = execSync("git ls-files '*.html' '*.js' '*.webmanifest' '*.xml'", { cwd: ROOT, encoding: "utf8" }).split("\n").filter(Boolean);
-  const oldName = served.filter((f) => read(f).replace(/"alternateName": \[[^\]]*\]/g, "").includes("ทวีภัณฑ์"));
-  const storeAlt = /"alternateName": \[[^\]]*"ม\.ทวีภัณฑ์"/.test(read("index.html")) && /"name": "MTT Hardware",/.test(read("index.html"));
-  assert(!oldName.length && storeAlt, "ชื่อร้านเป็น MTT Hardware ทุกหน้า ชื่อเดิมอยู่แค่ alternateName ของ schema ร้าน" + (oldName.length ? " → " + oldName.slice(0, 5).join(", ") : ""));
+  /* ชื่อร้านคือ MTT Hardware ชื่อเดิมต้องไม่เหลือที่ไหนเลย รวมถึง schema (สะกดแยกคำไว้ ไฟล์นี้จะได้ไม่มีชื่อเดิมด้วย) */
+  const OLD = ["ทวี", "ภัณฑ์"].join("");
+  const served = execSync("git ls-files '*.html' '*.js' '*.webmanifest' '*.xml' '*.json' '*.md' '*.csv'", { cwd: ROOT, encoding: "utf8" }).split("\n").filter(Boolean);
+  const oldName = served.filter((f) => read(f).includes(OLD) || read(f).includes(["M.T.T.", "Hardware"].join(" ")));
+  assert(!oldName.length && /"name": "MTT Hardware",/.test(read("index.html")), "ชื่อร้านเป็น MTT Hardware ทุกไฟล์ ไม่มีชื่อเดิมเหลือ" + (oldName.length ? " → " + oldName.slice(0, 5).join(", ") : ""));
 }
 
 /* ---- tag ใดก็ตามต้องไม่มีแอตทริบิวต์ซ้ำ (เบราว์เซอร์ใช้ตัวแรก ตัวหลังหายเงียบ) ---- */

@@ -1,5 +1,5 @@
 {
-  "_doc": "คำค้นเป้าหมาย 34 คำ ใช้กับ npm run seo (ตรวจหน้าเว็บเรา) และใช้ติดตามตำแหน่งใน Search Console ทุกสัปดาห์ ดู docs/seo-baseline.md — url คือหน้าของเราที่ควรติดคำนั้น, schema คือชนิด JSON-LD ที่หน้านั้นต้องมี, also คือคำสะกดอื่นที่นับว่าตรง (เช่น ไฟแช็ก/ไฟแช็ค), started คือวันที่เริ่มติดตาม ห้ามใส่ตัวเลขตำแหน่งหรือยอดดูที่ไม่ได้มาจาก Search Console",
+  "_doc": "คำค้นเป้าหมาย 35 คำ ใช้กับ npm run seo (ตรวจหน้าเว็บเรา) และใช้ติดตามตำแหน่งใน Search Console ทุกสัปดาห์ ดู docs/seo-baseline.md — url คือหน้าของเราที่ควรติดคำนั้น, schema คือชนิด JSON-LD ที่หน้านั้นต้องมี, also คือคำสะกดอื่นที่นับว่าตรง (เช่น ไฟแช็ก/ไฟแช็ค), started คือวันที่เริ่มติดตาม ห้ามใส่ตัวเลขตำแหน่งหรือยอดดูที่ไม่ได้มาจาก Search Console",
   "started": "2026-10-09",
   "groups": {
     "brand": "แบรนด์และชื่อร้าน",
@@ -329,6 +329,15 @@
       "kw": "เครื่องมือช่าง เป็นสนิม",
       "group": "tools",
       "url": "/articles/tool-rust-care.html",
+      "schema": [
+        "Article",
+        "FAQPage"
+      ]
+    },
+    {
+      "kw": "กุญแจทองเหลือง",
+      "group": "tools",
+      "url": "/articles/brass-padlock.html",
       "schema": [
         "Article",
         "FAQPage"

@@ -503,6 +503,31 @@
         "which-pliers-for-which-job",
         "which-wrench-for-which-job"
       ]
+    },
+    {
+      "slug": "brass-padlock",
+      "cat": "tools",
+      "short_th": "กุญแจทองเหลือง",
+      "short_en": "Brass padlocks",
+      "eyebrow_th": "คู่มือเลือกเครื่องมือช่าง",
+      "eyebrow_en": "Hand tool buying guide",
+      "h1_th": "กุญแจทองเหลืองแท้ ต่างจากชุบทองเหลืองยังไง ใช้ที่ไหนคุ้ม",
+      "h1_en": "Brass padlocks: solid brass vs plated, and where brass is worth it",
+      "title_th": "กุญแจทองเหลืองแท้ ดูยังไง ต่างจากชุบยังไง",
+      "desc_th": "กุญแจทองเหลืองแท้ ไส้ทองเหลือง และเหล็กชุบทองเหลืองต่างกันยังไง ใช้แม่เหล็กเช็คทองเหลืองแท้ ใช้ที่ไหนคุ้ม วิธีดูแล และขนาดกุญแจทองเหลืองที่มี",
+      "og_desc_th": "ทองเหลืองแท้ ไส้ทองเหลือง หรือชุบ ดูยังไงและเลือกให้ตรงที่ใช้",
+      "card_th": "ทองเหลืองแท้ ไส้ทองเหลือง หรือชุบ วิธีเช็ค และใช้ที่ไหนคุ้ม",
+      "card_en": "Solid, brass cylinder or plated, how to check, and where it pays off",
+      "keywords": "กุญแจทองเหลือง, กุญแจทองเหลืองแท้, กุญแจชุบทองเหลือง, กุญแจไม่เป็นสนิม, กุญแจกลางแจ้ง, กุญแจไส้ทองเหลือง, กุญแจ ขายส่ง",
+      "image": "assets/img/og/brass-padlock.webp",
+      "image_w": 1200,
+      "image_h": 630,
+      "published": "2026-10-16",
+      "modified": "2026-10-16",
+      "related": [
+        "how-to-choose-padlock",
+        "tool-rust-care"
+      ]
     }
   ]
 }

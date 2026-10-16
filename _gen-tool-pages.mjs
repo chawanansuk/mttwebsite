@@ -13,7 +13,7 @@ const GUIDES = {
   holding: ["which-pliers-for-which-job", "tool-rust-care"],
   screwdrivers: ["screwdriver-tip-types"],
   measuring: ["spirit-level-plumb-bob"],
-  padlock: ["how-to-choose-padlock"],
+  padlock: ["how-to-choose-padlock", "brass-padlock"],
 };
 function guidesHTML(id) {
   const list = (GUIDES[id] || []).map((s) => ARTICLE_DATA.articles.find((a) => a.slug === s)).filter(Boolean);
