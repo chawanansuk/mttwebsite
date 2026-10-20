@@ -1,7 +1,7 @@
 {
  "/": {
-  "title": "MTT Hardware, Sampheng | Tools, jet lighters, safety pins",
-  "desc": "MTT Hardware in Sampheng, Bangkok: hand tools, hardware, jet lighters and safety pins. Exclusive WYNNTOOLS importer in Thailand, retail and wholesale by the box, nationwide delivery, order on LINE."
+  "title": "MTT Hardware | Tools, jet lighters, safety pins",
+  "desc": "MTT Hardware: hand tools, hardware, jet lighters and safety pins. Exclusive WYNNTOOLS importer in Thailand, retail and wholesale by the box, nationwide delivery, order on LINE."
  },
  "/products": {
   "title": "All products: tools, jet lighters, safety pins | MTT Hardware",
@@ -20,12 +20,12 @@
   "desc": "Safety pins in sizes 000–7, nickel-plated steel, wholesale by the box or split by the bunch or gross, counted not weighed. For race bibs, price tags and diapers, delivered nationwide."
  },
  "/products/safety-pins-wholesale.html": {
-  "title": "Safety pins wholesale by the box, from Sampheng | MTT Hardware",
+  "title": "Safety pins wholesale by the box, nationwide | MTT Hardware",
   "desc": "Wholesale safety pins in every size 000–7, 144 to 1,728 pins per box, counted not weighed. Small sizes come in packets, large sizes in bunches. Tax invoices available, nationwide delivery."
  },
  "/products/safety-pins-canvas.html": {
   "title": "Safety pins for canvas, tents and heavy work, sizes 5–7 | MTT",
-  "desc": "Size 5, 6 and 7 safety pins (65–85 mm) with thick 1.10–1.35 mm wire for canvas, tents, covers, stage work and fabric banners. Wholesale by the box from Sampheng."
+  "desc": "Size 5, 6 and 7 safety pins (65–85 mm) with thick 1.10–1.35 mm wire for canvas, tents, covers, stage work and fabric banners. Wholesale by the box, shipped nationwide."
  },
  "/products/safety-pins-diaper.html": {
   "title": "Size 4 diaper pins with capped point, wholesale | MTT Hardware",
@@ -41,7 +41,7 @@
  },
  "/articles": {
   "title": "Guides and buying advice | MTT Hardware",
-  "desc": "Buying guides from our Sampheng counter: which jet lighter to stock, compact or large, reselling margins, which safety-pin size fits which job, and how to choose wrenches and pliers."
+  "desc": "Buying guides from MTT Hardware: which jet lighter to stock, compact or large, reselling margins, which safety-pin size fits which job, and how to choose wrenches and pliers."
  },
  "/articles/which-jet-lighter-brand.html": {
   "title": "Which jet lighter to stock? 3 options compared | MTT Hardware",
@@ -139,7 +139,7 @@
  },
  "/products/safety-pins-lion-brand.html": {
   "title": "Lion-brand safety pins, MTT Hardware's own brand | MTT",
-  "desc": "Lion-brand safety pins from MTT Hardware, Sampheng: all ten sizes 000–7 in nickel-plated spring steel with a capped point. Order direct from the source, counted not weighed, nationwide delivery."
+  "desc": "Lion-brand safety pins from MTT Hardware: all ten sizes 000–7 in nickel-plated spring steel with a capped point. Order direct from the source, counted not weighed, nationwide delivery."
  },
  "/articles/adjustable-wrench-sizes.html": {
   "title": "Adjustable wrench sizes: which length for which job | MTT",

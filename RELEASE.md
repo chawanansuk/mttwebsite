@@ -5,9 +5,7 @@
 ## 1) ข้อมูลร้าน (บล็อกการเปิดจริง)
 - [ ] แก้ `assets/js/shop-config.js` ให้เป็นข้อมูลจริงทุกช่อง
   - [ ] `LINE_URL` + `LINE_ID` (ถ้ายังไม่มี LINE OA ให้สมัครก่อน)
-  - [ ] `PHONE`, `PHONE_TEL`, `EMAIL`, `ADDRESS_TH`, `HOURS_TH`, `BANK_ACCOUNT`
-  - [ ] `MAPS_EMBED_URL` — คัดลอกจาก Google Maps › แชร์ › ฝังแผนที่ › ค่าใน `src="..."`
-        (เว้นว่างได้ ระบบจะซ่อนช่องแผนที่ให้เอง)
+  - [ ] `PHONE`, `PHONE_TEL`, `EMAIL`, `HOURS_TH`, `BANK_ACCOUNT` (ร้านออนไลน์ ไม่มีหน้าร้าน จึงไม่มีช่องที่อยู่และแผนที่)
 
 ## 2) รูปสินค้า (C-2 — โครงพร้อมแล้ว รอรูปจริง)
 - [ ] ถ่ายรูปสินค้า พื้นหลังขาว/เทาอ่อน สัดส่วน 4:3 ขนาด ≥1200px (WebP/JPG)
@@ -22,7 +20,7 @@
 - [x] URL ในโค้ดชี้ไป `https://mtthardware.com` แล้วทุกจุด
       (`sitemap.xml`, `robots.txt`, tag `canonical` และ `og:*` ทุกหน้า)
 - [ ] ยืนยันเว็บใน Google Search Console + submit `sitemap.xml`
-- [ ] สร้าง Google Business Profile (ปักหมุดร้าน) — เอา URL ฝังมาใส่ `MAPS_EMBED_URL`
+- [ ] Google Business Profile: ร้านออนไลน์อย่างเดียวมักไม่เข้าเงื่อนไข อ่าน `docs/google-business.md` ก่อน
 
 ## 4) Deploy & ทดสอบ
 - [ ] `npm test` เขียวทั้งหมด (โหลดทุกหน้า, ตะกร้า, ภาษา, จำค่า, ไม่ล้นแนวนอน)

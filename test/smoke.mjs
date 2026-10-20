@@ -333,7 +333,7 @@ console.log("\n[ event หยิบลงตะกร้า / ส่งออเ
   await page.waitForTimeout(200);
   await page.click(".add"); await page.click(".add");
   await page.waitForTimeout(150);
-  await page.fill("#ofName", "คุณทดสอบ"); await page.fill("#ofPhone", "0812345678"); await page.fill("#ofAddr", "สำเพ็ง กรุงเทพฯ");
+  await page.fill("#ofName", "คุณทดสอบ"); await page.fill("#ofPhone", "0812345678"); await page.fill("#ofAddr", "บางรัก กรุงเทพฯ");
   await page.click("#lineOrder");
   await page.waitForTimeout(150);
   const ev = await page.evaluate(() => window.__ev);
@@ -503,6 +503,12 @@ console.log("\n[ SEO เป้าหมายและโครงสร้า�
   const served = execSync("git ls-files '*.html' '*.js' '*.webmanifest' '*.xml' '*.json' '*.md' '*.csv'", { cwd: ROOT, encoding: "utf8" }).split("\n").filter(Boolean);
   const oldName = served.filter((f) => read(f).includes(OLD) || read(f).includes(["M.T.T.", "Hardware"].join(" ")));
   assert(!oldName.length && /"name": "MTT Hardware",/.test(read("index.html")), "ชื่อร้านเป็น MTT Hardware ทุกไฟล์ ไม่มีชื่อเดิมเหลือ" + (oldName.length ? " → " + oldName.slice(0, 5).join(", ") : ""));
+  /* ร้านออนไลน์ ไม่มีหน้าร้าน: ไม่มีที่อยู่ ย่าน หรือเบอร์เดิมในไฟล์ไหน และ schema ร้านเป็น OnlineStore ไม่มี address */
+  const gone = [["เยาว", "พานิช"], ["สัมพันธ", "วงศ์"], ["สำ", "เพ็ง"], ["Samp", "heng"], ["2221", "-7712"], ["0222", "17712"]].map((p) => p.join(""));
+  const leftover = served.filter((f) => gone.some((g) => read(f).includes(g)));
+  const store = (read("index.html").match(/"@type": "OnlineStore",[\s\S]*?\n\}\n<\/script>/) || [""])[0];
+  assert(!leftover.length && store && !/"address"|PostalAddress|"geo"/.test(store) && store.includes('"telephone": "+66616629659"') && SHOP.PHONE === "061-662-9659" && !("ADDRESS_TH" in SHOP),
+    "ร้านออนไลน์ ไม่มีที่อยู่หรือเบอร์เดิมเหลือ เบอร์ใหม่ 061-662-9659 และ schema เป็น OnlineStore" + (leftover.length ? " → " + leftover.slice(0, 5).join(", ") : ""));
 }
 
 /* ---- tag ใดก็ตามต้องไม่มีแอตทริบิวต์ซ้ำ (เบราว์เซอร์ใช้ตัวแรก ตัวหลังหายเงียบ) ---- */

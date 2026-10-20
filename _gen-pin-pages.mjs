@@ -167,7 +167,7 @@ ${faqSchema}
 <section class="pd-hero">
   <div class="wrap">
     <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="safety-pins.html" data-th="เข็มกลัดซ่อนปลาย" data-en="Safety pins">เข็มกลัดซ่อนปลาย</a> › <span data-th="เบอร์ ${p.no}" data-en="Size ${p.no}">เบอร์ ${p.no}</span></nav>
-    <span class="eyebrow" data-th="เข็มกลัดซ่อนปลาย · ขายส่ง สำเพ็ง" data-en="Safety pins · Sampheng wholesale">เข็มกลัดซ่อนปลาย · ขายส่ง สำเพ็ง</span>
+    <span class="eyebrow" data-th="เข็มกลัดซ่อนปลาย · ขายส่งทั่วไทย" data-en="Safety pins · Wholesale nationwide">เข็มกลัดซ่อนปลาย · ขายส่งทั่วไทย</span>
     <h1 data-th="เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ขนาด ${p.mm} มม." data-en="Safety pin size ${p.no} — ${p.mm} mm">เข็มกลัดซ่อนปลาย เบอร์ ${p.no} ขนาด ${p.mm} มม.</h1>
     <p class="muted" style="margin:0;max-width:640px" data-th="${esc(`เหล็กสปริงชุบนิกเกิล ปลายซ่อนในฝาครอบ ไม่ทิ่มมือ — กลุ่มที่ใช้บ่อย: ${p.groups_th} ขายยกกล่องราคาส่ง แบ่งขายพวง/กุรุสได้`)}" data-en="${esc(`Nickel-plated spring steel with a capped point — popular with ${p.groups_en}. Wholesale by the box, split by dozen or gross.`)}">เหล็กสปริงชุบนิกเกิล ปลายซ่อนในฝาครอบ ไม่ทิ่มมือ — กลุ่มที่ใช้บ่อย: ${esc(p.groups_th)} ขายยกกล่องราคาส่ง แบ่งขายพวง/กุรุสได้</p>
     <div class="trust">

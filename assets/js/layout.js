@@ -29,7 +29,6 @@
     fill("[data-shop=email]", S.EMAIL || "");
     // ไม่มีอีเมล = ไม่ต้องใส่ href (กันลิงก์ mailto: เปล่าค้างใน DOM)
     if (S.EMAIL) fill("[data-shop=email-href]", "mailto:" + S.EMAIL, "href");
-    fill("[data-shop=address]", S.ADDRESS_TH || "");
     fill("[data-shop=hours]", S.HOURS_TH || "");
     // เวลาทำการยังไม่มีข้อมูลจริง → ซ่อนแถวไว้ก่อน (เดิมโชว์ "โทรสอบถามเวลาทำการ" ในช่องเวลาทำการ)
     if (!S.HOURS_TH) document.querySelectorAll("[data-shop=hours]").forEach(function (el) { var row = el.closest(".row") || el; row.style.display = "none"; });

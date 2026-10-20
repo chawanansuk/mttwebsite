@@ -71,7 +71,7 @@ ${rows.join("\n")}
         </tbody>
       </table>
     </div>
-    <p class="price-note" ${bi("ราคาหน้าร้านสำเพ็ง ยังไม่รวมค่าส่ง สั่งจำนวนมากทักมาคุยได้", "Sampheng counter prices before shipping. Message us for larger quantities.")}</p>
+    <p class="price-note" ${bi("ราคาของร้าน ยังไม่รวมค่าส่ง สั่งจำนวนมากทักมาคุยได้", "Our prices before shipping. Message us for larger quantities.")}</p>
     <p><a class="btn btn-primary" data-line-ask="${esc(ask)}" href="#" target="_blank" rel="noopener" ${bi(`สั่งเบอร์ ${p.no} ทาง LINE`, `Order size ${p.no} on LINE`)}</a></p>
 `;
 }
@@ -99,7 +99,7 @@ ${rows.join("\n")}
         </tbody>
       </table>
     </div>
-    <p class="price-note" ${bi("ราคาหน้าร้านสำเพ็ง ยังไม่รวมค่าส่ง สั่งคละเบอร์ในออเดอร์เดียวได้", "Sampheng counter prices before shipping. Mix sizes in one order.")}</p>
+    <p class="price-note" ${bi("ราคาของร้าน ยังไม่รวมค่าส่ง สั่งคละเบอร์ในออเดอร์เดียวได้", "Our prices before shipping. Mix sizes in one order.")}</p>
     <p><a class="btn btn-primary" data-line-ask="${esc(`สั่งเข็มกลัดตราสิงโต เบอร์ ... จำนวน ... กล่อง (จากหน้า${from})`)}" href="#" target="_blank" rel="noopener" ${bi("สั่งทาง LINE ระบุเบอร์และจำนวน", "Order on LINE with size and quantity")}</a></p>
 `;
 }
@@ -140,11 +140,8 @@ export function originStrip(base) {
 
 /* ---------- ซื้อที่ไหนได้บ้าง (หน้าแบรนด์) ---------- */
 export function whereToBuy() {
-  /* ที่อยู่ใส่ค่าจริงทั้งใน attribute และเนื้อใน ให้บอตและหน้า /en เห็นโดยไม่ต้องรอ JS */
-  const addr = `<span data-shop="address">${esc(SHOP.ADDRESS_TH || "")}</span>`;
   const items = [
-    [`หน้าร้าน MTT Hardware สำเพ็ง ${addr}`, `MTT Hardware, Sampheng ${addr}`],
-    [`เว็บนี้ สั่งทาง LINE ส่งทั่วไทย ออกใบกำกับภาษีได้`, `This site, ordering on LINE with nationwide shipping and tax invoices`],
+    [`เว็บนี้และ LINE @wynnstools ร้านออนไลน์ ไม่มีหน้าร้าน ส่งทั่วไทย ออกใบกำกับภาษีได้`, `This site and LINE @wynnstools: we sell online only, with no walk-in shop, ship nationwide and issue tax invoices`],
   ];
   /* ลิงก์ร้านทางการติด UTM ไว้แยกยอดใน Analytics ของแพลตฟอร์ม และ layout.js ส่ง event marketplace_click */
   const utm = (u) => u + (u.includes("?") ? "&" : "?") + "utm_source=mtthardware.com&utm_medium=referral&utm_campaign=lion_brand_page";

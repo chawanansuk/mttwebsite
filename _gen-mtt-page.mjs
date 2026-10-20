@@ -75,7 +75,7 @@ const brand = {
   "@context": "https://schema.org", "@type": "Brand",
   name: "M.T.T.", alternateName: ["ตราสิงโต", "ตรา M.T.T.", "MTT International"],
   url: URL, logo: `${SITE}/assets/img/products/mtt-brand.webp`,
-  description: "แบรนด์สินค้าของ MTT Hardware สำเพ็ง — กุญแจ เข็มกลัด ประแจ มีดครัว และเครื่องมือช่าง ปั๊มรูปสิงโตบนตัวสินค้า",
+  description: "แบรนด์สินค้าของ MTT Hardware — กุญแจ เข็มกลัด ประแจ มีดครัว และเครื่องมือช่าง ปั๊มรูปสิงโตบนตัวสินค้า",
 };
 const crumbs = {
   "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -119,7 +119,7 @@ const html = `${head}
 ${crumbsHTML(`<a href="/products" data-th="สินค้า" data-en="Products">สินค้า</a>`, "สินค้าตรา M.T.T.")}
     <div class="hero-grid">
       <div>
-        <span class="eyebrow" data-th="แบรนด์ของร้านเอง · MTT Hardware สำเพ็ง" data-en="Our own brand · MTT Hardware, Sampheng">แบรนด์ของร้านเอง · MTT Hardware สำเพ็ง</span>
+        <span class="eyebrow" data-th="แบรนด์ของร้านเอง · MTT Hardware" data-en="Our own brand · MTT Hardware">แบรนด์ของร้านเอง · MTT Hardware</span>
         <h1>${bi("สินค้าตรา M.T.T.", "M.T.T. brand products")} <span style="color:var(--amber-dark)" data-th="ตราสิงโต" data-en="Lion brand">ตราสิงโต</span></h1>
         <p class="muted" data-th="สินค้าที่ผลิตภายใต้แบรนด์ของ MTT Hardware เอง ปั๊มรูปสิงโตและอักษร M.T.T. บนตัวสินค้า ครอบคลุมกุญแจ เข็มกลัดซ่อนปลาย ประแจเลื่อน มีดครัว และเครื่องมือช่าง — ทุกรายการมีรหัส ขนาด และจำนวนต่อลังระบุชัด กดที่รหัสเพื่อถามราคาทาง LINE ได้ทันที" data-en="Products made under MTT Hardware's own brand, embossed with the lion and the letters M.T.T. — padlocks, safety pins, adjustable wrenches, kitchen knives and hand tools. Every item lists its code, size and carton quantity; tap a code to ask the price on LINE.">สินค้าที่ผลิตภายใต้แบรนด์ของ MTT Hardware เอง ปั๊มรูปสิงโตและอักษร M.T.T. บนตัวสินค้า ครอบคลุมกุญแจ เข็มกลัดซ่อนปลาย ประแจเลื่อน มีดครัว และเครื่องมือช่าง — ทุกรายการมีรหัส ขนาด และจำนวนต่อลังระบุชัด กดที่รหัสเพื่อถามราคาทาง LINE ได้ทันที</p>
         <div class="trust">

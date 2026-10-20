@@ -43,7 +43,7 @@ function headerHTML(base, page) {
   }).join("\n      ");
   return `<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
 <header class="site-header"><div class="wrap nav">
-  <a class="brand" href="/" aria-label="MTT Hardware หน้าแรก" data-th-aria-label="MTT Hardware หน้าแรก" data-en-aria-label="MTT Hardware home"><span class="mark">${BOLT}</span><span class="b-th">MTT Hardware<small data-th="เครื่องมือช่าง สำเพ็ง" data-en="Tools · Sampheng">เครื่องมือช่าง สำเพ็ง</small></span></a>
+  <a class="brand" href="/" aria-label="MTT Hardware หน้าแรก" data-th-aria-label="MTT Hardware หน้าแรก" data-en-aria-label="MTT Hardware home"><span class="mark">${BOLT}</span><span class="b-th">MTT Hardware<small data-th="เครื่องมือช่าง ส่งทั่วไทย" data-en="Tools · Ships nationwide">เครื่องมือช่าง ส่งทั่วไทย</small></span></a>
   <nav class="nav-links" id="navLinks">
       ${links}
   </nav>
@@ -64,12 +64,10 @@ function footerHTML(base) {
       `<a ${TEL_HREF}><span data-shop="phone">${esc(S.PHONE)}</span></a>`),
     S.EMAIL && row('<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
       `<a data-shop="email-href" href="mailto:${esc(S.EMAIL)}"><span data-shop="email">${esc(S.EMAIL)}</span></a>`),
-    S.ADDRESS_TH && row('<path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
-      `<span data-shop="address" lang="th">${esc(S.ADDRESS_TH)}</span>`), /* ที่อยู่คงเป็นไทยให้ขนส่งอ่านได้ — lang="th" ให้โปรแกรมอ่านหน้าจอออกเสียงถูก */
   ].filter(Boolean).join("\n      ");
   return `<footer class="site-footer"><div class="wrap"><div class="foot-grid">
-  <div class="foot-brand"><div class="brand"><span class="mark">${BOLT}</span><span class="b-th">MTT Hardware<small data-th="เครื่องมือช่าง สำเพ็ง" data-en="Tools · Sampheng">เครื่องมือช่าง สำเพ็ง</small></span></div>
-    <p data-th="ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย" data-en="Tools &amp; hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand. Retail &amp; wholesale, nationwide.">ศูนย์รวมเครื่องมือช่างและฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย</p></div>
+  <div class="foot-brand"><div class="brand"><span class="mark">${BOLT}</span><span class="b-th">MTT Hardware<small data-th="เครื่องมือช่าง ส่งทั่วไทย" data-en="Tools · Ships nationwide">เครื่องมือช่าง ส่งทั่วไทย</small></span></div>
+    <p data-th="ร้านเครื่องมือช่างและฮาร์ดแวร์ออนไลน์ — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย" data-en="Online tools &amp; hardware — exclusive WYNNTOOLS importer in Thailand. Retail &amp; wholesale, nationwide.">ร้านเครื่องมือช่างและฮาร์ดแวร์ออนไลน์ — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย ราคาปลีก-ส่ง ส่งทั่วไทย</p></div>
   <div class="foot-col"><h2 data-th="สินค้า" data-en="Products">สินค้า</h2><ul>
     ${li(base + "products/jet-lighter.html", "ไฟฟู่ / ไฟแช็ก", "Jet lighters")}
     ${li(base + "products/tools.html", "เครื่องมือช่าง WYNNTOOLS", "WYNNTOOLS")}
@@ -118,7 +116,7 @@ function tabbarHTML(base, page) {
 /* ใส่ค่าจริงแทน href="#" / "—" ให้บอตเห็นเบอร์ ที่อยู่ ลิงก์ LINE โดยไม่ต้องรัน JS
    ค่าที่ว่าง (อีเมล เวลาทำการ บัญชี) ปล่อยไว้ layout.js ซ่อนแถวเหมือนเดิม */
 const HREF = { "line-url": S.LINE_URL, "phone-tel": S.PHONE_TEL && "tel:" + S.PHONE_TEL, "email-href": S.EMAIL && "mailto:" + S.EMAIL };
-const TEXT = { phone: S.PHONE, address: S.ADDRESS_TH, "line-id": S.LINE_ID, email: S.EMAIL, hours: S.HOURS_TH };
+const TEXT = { phone: S.PHONE, "line-id": S.LINE_ID, email: S.EMAIL, hours: S.HOURS_TH };
 const unesc = (s) => s.replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;/g, "'").replace(/&amp;/g, "&");
 /* ลิงก์ "ทัก LINE พร้อมข้อความ" — ตรรกะเดียวกับ CATALOG.lineAsk() ใน assets/js/catalog.js */
 /* อักษรไทยเก็บไว้ตรง ๆ ไม่ percent-encode — URL Standard อนุญาต และเบราว์เซอร์ encode ให้เองตอนกด
@@ -177,12 +175,8 @@ function bakeStoreSchema(html) {
   if (!m) return html;
   if (S.SEARCH_CONSOLE_VERIFY) html = html.replace(/(<meta name="viewport"[^>]*>)/, `$1\n<meta name="google-site-verification" content="${esc(S.SEARCH_CONSOLE_VERIFY)}">`);
   const o = JSON.parse(m[2]);
-  for (const k of ["openingHoursSpecification", "geo", "hasMap", "email"]) delete o[k];
-  const hours = (S.HOURS_SPEC || []).filter((h) => h && h.days && h.days.length && h.opens && h.closes);
-  if (hours.length) o.openingHoursSpecification = hours.map((h) => ({ "@type": "OpeningHoursSpecification", dayOfWeek: h.days, opens: h.opens, closes: h.closes }));
-  const g = S.GEO || {};
-  if (typeof g.lat === "number" && typeof g.lng === "number") o.geo = { "@type": "GeoCoordinates", latitude: g.lat, longitude: g.lng };
-  if (isUrl(S.MAPS_URL)) o.hasMap = S.MAPS_URL;
+  /* ร้านออนไลน์ ไม่มีหน้าร้าน: ไม่มีที่อยู่ พิกัด แผนที่ หรือเวลาเปิดร้านใน schema */
+  for (const k of ["openingHoursSpecification", "geo", "hasMap", "address", "email"]) delete o[k];
   if (S.EMAIL) o.email = S.EMAIL;
   o.sameAs = [S.LINE_URL, S.FACEBOOK_URL, S.GBP_URL].filter(isUrl);
   /* ตราสิงโต = แบรนด์ของร้าน (หน้าแบรนด์ประกาศ Brand @id นี้) */

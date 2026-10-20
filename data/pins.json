@@ -14,7 +14,7 @@
  "shipping": null,
  "_marketplaces_doc": "ร้านทางการบนแพลตฟอร์ม เช่น {\"name\":\"Shopee\",\"url\":\"https://shopee.co.th/...\"} ว่าง = ไม่แสดง",
  "marketplaces": [],
- "_resellers_doc": "ร้านที่ซื้อจากเราไปขายต่อ ใส่เฉพาะที่ได้คำยินยอมแล้ว เช่น {\"name\":\"...\",\"area\":\"สำเพ็ง\",\"url\":null,\"consent\":\"2026-10-08\"}",
+ "_resellers_doc": "ร้านที่ซื้อจากเราไปขายต่อ ใส่เฉพาะที่ได้คำยินยอมแล้ว เช่น {\"name\":\"...\",\"area\":\"เชียงใหม่\",\"url\":null,\"consent\":\"2026-10-08\"}",
  "resellers": [],
  "_price_doc": "price ต่อหน่วยเป็นบาท: box = ต่อกล่อง, gross = ต่อกุรุส 144 ตัว, bunch = ต่อพวง 12 ตัว, packet = ต่อซอง (เฉพาะเบอร์ที่มีซอง) | tier = {\"min_boxes\":10,\"box\":123} | in_stock: true/false/null | pack: จำนวนต่อกล่องของล็อตปัจจุบัน {min,max} ถ้าแน่นอนให้ min = max",
  "sizes": [

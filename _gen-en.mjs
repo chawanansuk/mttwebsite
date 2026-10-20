@@ -26,7 +26,7 @@ const unesc = (s) => s.replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&g
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const THAI = /[฀-฾เ-๿]/; /* ไม่นับ ฿ (U+0E3F) */
 /* ข้อความไทยที่ยอมให้อยู่ในหน้าอังกฤษ: ชื่อร้าน ชื่อนิติบุคคล และที่อยู่ไทย (ใช้ส่งของ/เรียกรถ) */
-const THAI_OK = /ถนนเยาวพานิช|วินส์ทูลส์/;
+const THAI_OK = /วินส์ทูลส์/;
 
 /* ---------- 1) ข้อความ: element ที่มี data-th + data-en → เนื้อในเป็น data-en ---------- */
 const VOID = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"]);

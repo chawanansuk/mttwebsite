@@ -103,8 +103,8 @@ ${blocks.join("\n")}`;
 function heroBlock(a) {
   const cat = CATS[a.cat];
   const pub = `<time datetime="${a.published}">`, mod = `<time datetime="${a.modified}">`;
-  const bylineTH = `โดย MTT Hardware สำเพ็ง · เผยแพร่ ${pub}${dTH(a.published)}</time>` + (a.modified !== a.published ? ` · อัปเดต ${mod}${dTH(a.modified)}</time>` : "");
-  const bylineEN = `By MTT Hardware, Sampheng · Published ${pub}${dEN(a.published)}</time>` + (a.modified !== a.published ? ` · Updated ${mod}${dEN(a.modified)}</time>` : "");
+  const bylineTH = `โดย MTT Hardware · เผยแพร่ ${pub}${dTH(a.published)}</time>` + (a.modified !== a.published ? ` · อัปเดต ${mod}${dTH(a.modified)}</time>` : "");
+  const bylineEN = `By MTT Hardware · Published ${pub}${dEN(a.published)}</time>` + (a.modified !== a.published ? ` · Updated ${mod}${dEN(a.modified)}</time>` : "");
   return `    <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <a href="../${cat.href}" ${bi(cat.th, cat.en)}</a> › <span ${bi(a.short_th, a.short_en)}</span></nav>
     <span class="eyebrow" ${bi(a.eyebrow_th, a.eyebrow_en)}</span>
     <h1 ${bi(a.h1_th, a.h1_en)}</h1>
@@ -168,7 +168,7 @@ export const homePicks = () => Object.keys(CATS)
 {
   const URL = `${SITE}/articles`;
   const TITLE = `บทความและคู่มือเลือกซื้อ | ${SHOP_NAME}`;
-  const DESC = "รวมคู่มือเลือกซื้อจากหน้าร้านสำเพ็ง — ไฟฟู่ยี่ห้อไหนดี คิดกำไรขายส่ง เข็มกลัดเบอร์ไหนใช้ทำอะไร และวิธีเลือกประแจกับคีมให้ตรงงาน";
+  const DESC = "รวมคู่มือเลือกซื้อจาก MTT Hardware — ไฟฟู่ยี่ห้อไหนดี คิดกำไรขายส่ง เข็มกลัดเบอร์ไหนใช้ทำอะไร และวิธีเลือกประแจกับคีมให้ตรงงาน";
   const newest = ARTICLES.map((a) => a.modified).sort().at(-1);
   const groups = Object.entries(CATS).map(([key, c]) => {
     const list = ARTICLES.filter((a) => a.cat === key);
@@ -191,7 +191,7 @@ ${guideCards("/articles/", list)}
 <meta property="og:type" content="website">
 <meta property="og:locale" content="th_TH">
 <meta property="og:url" content="${URL}">
-<meta property="og:image" content="${SITE}/assets/img/og-image.png?v=3">
+<meta property="og:image" content="${SITE}/assets/img/og-image.png?v=4">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../assets/img/favicon.svg?v=2" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=2">
@@ -215,7 +215,7 @@ ${ld({ "@type": "BreadcrumbList", itemListElement: [
 <section class="art-hero">
   <div class="wrap">
     <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › <span data-th="บทความ" data-en="Guides">บทความ</span></nav>
-    <span class="eyebrow" data-th="คู่มือเลือกซื้อ ฉบับหน้าร้านสำเพ็ง" data-en="Buying guides from a Sampheng shop">คู่มือเลือกซื้อ ฉบับหน้าร้านสำเพ็ง</span>
+    <span class="eyebrow" data-th="คู่มือเลือกซื้อ ฉบับร้านขายส่ง" data-en="Buying guides from MTT Hardware">คู่มือเลือกซื้อ ฉบับร้านขายส่ง</span>
     <h1 data-th="บทความและคู่มือเลือกซื้อ" data-en="Guides and buying advice">บทความและคู่มือเลือกซื้อ</h1>
     <p class="lead" ${bi("เทียบรุ่น เทียบเบอร์ และคิดต้นทุนต่อชิ้น ก่อนสั่งไฟฟู่หรือเข็มกลัด ตัวเลขทุกตัวตรงกับราคาและสเปกจริงบนหน้าสินค้า", "Compare models and sizes and work out the cost per piece before you order jet lighters or safety pins. Every figure matches the live product pages.")}</p>
   </div>
@@ -228,7 +228,7 @@ ${groups}
     <div class="cta-band">
       <div>
         <h2 data-th="มีคำถามที่ไม่มีในบทความ? ถามทาง LINE ได้เลย" data-en="Question not covered here? Ask on LINE">มีคำถามที่ไม่มีในบทความ? ถามทาง LINE ได้เลย</h2>
-        <p data-th="บอกงานที่จะใช้หรือจำนวนที่ต้องการ ทีมงานสำเพ็งแนะนำและแจ้งราคาให้" data-en="Tell us the job or the quantity and we'll advise and quote.">บอกงานที่จะใช้หรือจำนวนที่ต้องการ ทีมงานสำเพ็งแนะนำและแจ้งราคาให้</p>
+        <p data-th="บอกงานที่จะใช้หรือจำนวนที่ต้องการ ทีมงานแนะนำและแจ้งราคาให้" data-en="Tell us the job or the quantity and we'll advise and quote.">บอกงานที่จะใช้หรือจำนวนที่ต้องการ ทีมงานแนะนำและแจ้งราคาให้</p>
       </div>
       <a class="btn btn-primary" data-line-ask="สอบถามจากหน้าบทความ" href="#" target="_blank" rel="noopener" data-th="ทัก LINE ถามเลย" data-en="Ask on LINE">ทัก LINE ถามเลย</a>
     </div>

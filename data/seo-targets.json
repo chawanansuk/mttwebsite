@@ -41,15 +41,15 @@
       "group": "brand",
       "url": "/",
       "schema": [
-        "Store"
+        "OnlineStore"
       ]
     },
     {
-      "kw": "MTT Hardware สำเพ็ง",
+      "kw": "MTT Hardware เครื่องมือช่าง",
       "group": "brand",
       "url": "/",
       "schema": [
-        "Store"
+        "OnlineStore"
       ]
     },
     {
@@ -252,11 +252,11 @@
       ]
     },
     {
-      "kw": "ร้านเครื่องมือช่าง สำเพ็ง",
+      "kw": "ร้านเครื่องมือช่างออนไลน์",
       "group": "tools",
       "url": "/",
       "schema": [
-        "Store"
+        "OnlineStore"
       ]
     },
     {

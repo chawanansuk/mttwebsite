@@ -8,21 +8,20 @@ window.SHOP = {
   abbr: "M.T.T.",
   legal_th: "บริษัท วินส์ทูลส์ ฮาร์ดแวร์ (ประเทศไทย) จำกัด",
   legal_en: "Wynns Tools Hardware (Thailand) Co., Ltd.", // ชื่อบริษัทภาษาอังกฤษ ใช้ใน footer หน้า /en (ตรงกับหน้าแบรนด์ตราสิงโต)
-  tagline_th: "ศูนย์รวมเครื่องมือช่าง & ฮาร์ดแวร์ สำเพ็ง — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย",
-  tagline_en: "Professional tools & hardware, Sampheng — exclusive WYNNTOOLS importer in Thailand",
+  tagline_th: "ร้านเครื่องมือช่าง & ฮาร์ดแวร์ออนไลน์ — ผู้นำเข้า WYNNTOOLS แต่เพียงผู้เดียวในไทย",
+  tagline_en: "Online tools & hardware — exclusive WYNNTOOLS importer in Thailand",
 
   // ✅ LINE OA จริงของร้าน
   LINE_URL: "https://line.me/R/ti/p/@wynnstools",
   LINE_ID: "@wynnstools",
   BANK_ACCOUNT: "",                                  // บัญชีธนาคาร (เว้นว่าง = ไม่แสดง) — ร้านรับออเดอร์และแจ้งวิธีชำระทาง LINE
 
-  // ✅ ข้อมูลจริง (จาก Thailand YellowPages — โปรไฟล์ร้าน MTT Hardware สำเพ็ง)
-  PHONE: "0-2221-7712",
-  PHONE_TEL: "022217712",
+  // ✅ ข้อมูลจริงจากร้าน (ร้านออนไลน์ ไม่มีหน้าร้าน จึงไม่มีที่อยู่ แผนที่ และเวลาเปิดหน้าร้าน)
+  PHONE: "061-662-9659",
+  PHONE_TEL: "0616629659",
   PHONE_MORE: "",                                    // เบอร์เพิ่มเติม — ร้านขอให้ใช้เบอร์เดียว (เว้นว่าง = ไม่แสดง)
   EMAIL: "",                                         // ยังไม่มีอีเมลสาธารณะ (เว้นว่าง = ไม่แสดง)
-  ADDRESS_TH: "132/1 ถนนเยาวพานิช แขวงจักรวรรดิ เขตสัมพันธวงศ์ กรุงเทพฯ 10100",
-  HOURS_TH: "",   // ยังไม่มีข้อมูลจากร้าน — ว่าง = ซ่อนแถวเวลาทำการ (ใส่เช่น "จันทร์–เสาร์ 8:30–17:30")
+  HOURS_TH: "",   // เวลาตอบแชทและรับโทร ว่าง = ซ่อนแถวนี้ (ใส่เช่น "จันทร์–เสาร์ 8:30–17:30")
   FACEBOOK_URL: "#",
 
   // ข้อความนโยบายที่ใช้ซ้ำหลายหน้า (หน้าสินค้าไฟฟู่ + บทความ) — แก้ที่นี่ที่เดียว แล้วรัน npm run bake
@@ -35,19 +34,9 @@ window.SHOP = {
   RETURNS_EN: "If a lighter won't light because of a manufacturing fault, tell us on LINE within 7 days with a photo or clip and we'll exchange it.",
 
   // ===== ข้อมูลให้ Google (ใส่แล้วรัน npm run bake — ระบบเขียนลง schema ร้านในหน้าแรกให้เอง) =====
-  // เวลาเปิด-ปิดแบบที่ Google อ่านได้ เว้นว่าง = ไม่ใส่ เช่น
-  //   [{ days: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], opens: "08:30", closes: "17:30" }]
-  HOURS_SPEC: [],
-  // พิกัดหน้าร้าน (Google Maps > กดค้างที่หมุด > ตัวเลขแรก = lat ตัวที่สอง = lng) เว้น null = ไม่ใส่
-  GEO: { lat: null, lng: null },
-  // ลิงก์ร้านบน Google Maps (ปุ่มแชร์ > คัดลอกลิงก์) เว้นว่าง = ไม่ใส่
-  MAPS_URL: "",
+  // ร้านออนไลน์ ไม่มีหน้าร้าน: ไม่ใส่ที่อยู่ พิกัด แผนที่ และเวลาเปิดหน้าร้านใน schema
   // ลิงก์ Google Business Profile ของร้าน (หลังยืนยันร้านแล้ว: โปรไฟล์ > แชร์ > คัดลอกลิงก์) เว้นว่าง = ไม่ใส่ — ดู docs/google-business.md
   GBP_URL: "",
   // Google Search Console > เพิ่ม property > ยืนยันด้วย "แท็ก HTML" > คัดลอกเฉพาะค่าใน content="..."
-  SEARCH_CONSOLE_VERIFY: "",
-
-  // วาง URL ฝัง Google Maps ของร้าน (คัดลอกจาก Google Maps > แชร์ > ฝังแผนที่ > src="...")
-  // ถ้าเว้นว่าง หน้าแรกจะซ่อนช่องแผนที่ให้อัตโนมัติ
-  MAPS_EMBED_URL: ""
+  SEARCH_CONSOLE_VERIFY: ""
 };
