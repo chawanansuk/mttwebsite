@@ -422,7 +422,7 @@ console.log("\n[ เครื่องคำนวณงานวิ่ง ]");
   await page.fill("#runners", "20000");
   await page.waitForTimeout(100);
   const res = await page.textContent("#calcRes"), href = decodeURIComponent(await page.getAttribute("#calcAsk", "href"));
-  assert(/88,000 ตัว ไม่เกิน 102 กล่อง/.test(res) && /เบอร์ 0 งานวิ่ง 20,000 คน/.test(href), `เลือกเบอร์ 0 · 20,000 คน → ไม่เกิน 102 กล่อง และข้อความ LINE ระบุเบอร์ 0 (${res})`);
+  assert(/88,000 ตัว ≈ 102 กล่อง/.test(res) && /เบอร์ 0 งานวิ่ง 20,000 คน/.test(href), `เลือกเบอร์ 0 · 20,000 คน → ≈ 102 กล่อง (กล่องละ 864 เท่าเบอร์ 2) และข้อความ LINE ระบุเบอร์ 0 (${res})`);
   await page.evaluate(() => document.getElementById("calcAsk").addEventListener("click", (e) => e.preventDefault(), true));
   await page.click("#calcAsk");
   const ev = (await page.evaluate(() => window.__ev)).find((e) => e.name === "race_quote");
@@ -466,8 +466,8 @@ console.log("\n[ ข้อมูลเข็มกลัด data/pins.json ]");
   const fake = { ...L.PINS[4], price: { box: 500, gross: null, bunch: null, packet: null }, tier: { min_boxes: 10, box: 450 }, in_stock: true };
   const t = L.priceTableOne(fake, "ทดสอบ");
   assert(/฿500/.test(t) && /฿0\.58/.test(t) && /tier/.test(t) && /฿450/.test(t), "ตารางราคารายเบอร์คำนวณราคาต่อตัวและราคาขั้นบันไดถูกต้อง");
-  /* เบอร์ที่จำนวนต่อกล่องเป็นช่วง (เบอร์ 000 = 720–1,500) ราคาต่อตัวคิดจากจำนวนขั้นต่ำ ต้องขึ้นว่า "ไม่เกิน" */
-  const fr = { ...L.PINS.find((x) => x.pack.max > x.pack.min), price: { box: 500, gross: null, bunch: null, packet: null }, tier: null };
+  /* ถ้าล็อตไหนจำนวนต่อกล่องเป็นช่วง ราคาต่อตัวคิดจากจำนวนขั้นต่ำ ต้องขึ้นว่า "ไม่เกิน" (ทดสอบด้วยล็อตสมมติในหน่วยความจำ) */
+  const fr = { ...L.PINS[0], pack: { min: 720, max: 1500 }, price: { box: 500, gross: null, bunch: null, packet: null }, tier: null };
   const tr = L.priceTableOne(fr, "ทดสอบ");
   assert(tr.includes(`ไม่เกิน ฿${(500 / fr.pack.min).toFixed(2)}`), `ราคาต่อตัวของเบอร์ที่จำนวนต่อกล่องเป็นช่วงบอกว่า "ไม่เกิน" (เบอร์ ${fr.no})`);
   const of = L.offerFor(fake, "https://x/"); const none = L.offerFor(L.PINS[4], "https://x/");

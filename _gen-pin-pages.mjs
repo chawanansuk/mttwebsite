@@ -72,8 +72,8 @@ function pageHTML(p, i) {
   const faq = [
     [`เข็มกลัดเบอร์ ${p.no} ยาวกี่เซน?`, `ยาวประมาณ ${p.cm} ซม. (${p.mm} มม. / ${p.inch}) วัดจากหัวฝาถึงปลายขดสปริง — ผู้ผลิตแต่ละเจ้าอาจต่างกัน ±2–3 มม.`,
      `How long is size ${p.no}?`, `About ${p.cm} cm (${p.mm} mm / ${p.inch}), measured cap to coil; makers vary by ±2–3 mm.`],
-    [`เบอร์ ${p.no} กล่องละกี่ตัว?`, `ประมาณ ${packStr(p)} ตัว/กล่อง (นับจำนวนจริง ไม่ชั่งน้ำหนัก) — แบ่งขายเป็นพวง 12 ตัว หรือกุรุส 144 ตัวก็ได้`,
-     `How many per box?`, `About ${packStr(p)} pins per box (counted, not weighed) — also sold by the dozen bunch or 144-pin gross.`],
+    [`เบอร์ ${p.no} กล่องละกี่ตัว?`, `${p.pack.max > p.pack.min ? "ประมาณ " : ""}${packStr(p)} ตัว/กล่อง${p.pack.max === p.pack.min ? ` เท่ากับ ${p.pack.min / 144} กุรุส` : ""} (นับจำนวนจริง ไม่ชั่งน้ำหนัก) — แบ่งขายเป็นพวง 12 ตัว หรือกุรุส 144 ตัวก็ได้`,
+     `How many per box?`, `${p.pack.max > p.pack.min ? "About " : ""}${packStr(p)} pins per box${p.pack.max === p.pack.min ? `, or ${p.pack.min / 144} gross` : ""} (counted, not weighed) — also sold by the dozen bunch or 144-pin gross.`],
     [p.faqx_th[0], p.faqx_th[1], p.faqx_en[0], p.faqx_en[1]],
     packFaq(p),
     wireFaq(p, i),

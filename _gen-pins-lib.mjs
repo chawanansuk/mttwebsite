@@ -42,7 +42,7 @@ const UNIT = {
 export const hasPrice = (p) => Object.values(p.price || {}).some((v) => typeof v === "number");
 export const anyPrice = () => PINS.some(hasPrice);
 const perPiece = (price, n) => n ? (price / n).toFixed(2) : null;
-/* ราคาต่อตัวของกล่อง: จำนวนต่อกล่องบางเบอร์เป็นช่วงตามล็อต (เช่น 720–1,500) จึงหารด้วยจำนวนขั้นต่ำ
+/* ราคาต่อตัวของกล่อง: ถ้าล็อตไหนจำนวนต่อกล่องเป็นช่วง (pack.min < pack.max) จะหารด้วยจำนวนขั้นต่ำ
    ได้ "ราคาสูงสุดต่อตัว" — ต้องบอกว่า "ไม่เกิน" ไม่ให้คนซื้อเข้าใจว่าเป็นตัวเลขแน่นอน */
 const boxPerPiece = (p, price) => {
   const v = perPiece(price, p.pack.min);
