@@ -86,7 +86,7 @@ function pageHTML(p, i) {
     const q = PINS[j];
     const self = j === i;
     const name = self ? `<b data-th="เบอร์ ${q.no} (หน้านี้)" data-en="Size ${q.no} (this page)">เบอร์ ${q.no} (หน้านี้)</b>` : `<a href="safety-pins-${q.no}.html" data-th="เบอร์ ${q.no}" data-en="Size ${q.no}">เบอร์ ${q.no}</a>`;
-    return `        <tr${self ? ' class="me"' : ""}><td>${name}</td><td data-th="${q.mm} มม. (${q.cm} ซม.)" data-en="${q.mm} mm (${q.cm} cm)">${q.mm} มม. (${q.cm} ซม.)</td><td data-th="~${packStr(q)}" data-en="~${packStr(q)}">~${packStr(q)}</td><td data-th="${esc(q.uses_th[0])}" data-en="${esc(q.uses_en[0])}">${esc(q.uses_th[0])}</td></tr>`;
+    return `        <tr${self ? ' class="me"' : ""}><td>${name}</td><td data-th="${q.mm} มม. (${q.cm} ซม.)" data-en="${q.mm} mm (${q.cm} cm)">${q.mm} มม. (${q.cm} ซม.)</td><td data-th="${packStr(q)}" data-en="${packStr(q)}">${packStr(q)}</td><td data-th="${esc(q.uses_th[0])}" data-en="${esc(q.uses_en[0])}">${esc(q.uses_th[0])}</td></tr>`;
   }).join("\n");
 
   const useList = p.uses_th.map((u, k) =>
@@ -198,7 +198,7 @@ ${originStrip("../")}
       </div>
       <div class="spec-grid">
         <div class="it"><small data-th="ความยาว" data-en="Length">ความยาว</small><b data-th="${p.cm} ซม. · ${p.mm} มม. (${esc(p.inch)})" data-en="${p.cm} cm · ${p.mm} mm (${esc(p.inch)})">${p.cm} ซม. · ${p.mm} มม. (${esc(p.inch)})</b></div>
-        <div class="it"><small data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</small><b data-th="~${packStr(p)} ตัว" data-en="~${packStr(p)} pins">~${packStr(p)} ตัว</b></div>
+        <div class="it"><small data-th="บรรจุ/กล่อง" data-en="Per box">บรรจุ/กล่อง</small><b data-th="${packStr(p)} ตัว" data-en="${packStr(p)} pins">${packStr(p)} ตัว</b></div>
         <div class="it"><small data-th="วัสดุ" data-en="Material">วัสดุ</small><b data-th="เหล็กสปริงชุบนิกเกิล" data-en="Nickel-plated steel">เหล็กสปริงชุบนิกเกิล</b></div>
         <div class="it"><small data-th="ขนาดลวด" data-en="Wire gauge">ขนาดลวด</small><b data-th="${p.wire} มม." data-en="${p.wire} mm">${p.wire} มม.</b></div>
         <div class="it"><small data-th="สีที่มี" data-en="Colours">สีที่มี</small><b data-th="${esc(p.colors_th)}" data-en="${esc(p.colors_en)}">${esc(p.colors_th)}</b></div>

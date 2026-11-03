@@ -440,7 +440,7 @@ console.log("\n[ ข้อมูลเข็มกลัด data/pins.json ]");
   const bad = [];
   for (const p of L.PINS) {
     const pg = read(`products/safety-pins-${p.no}.html`), ps = L.packStr(p);
-    if (!pg.includes(`~${ps} ตัว`)) bad.push(`หน้าเบอร์ ${p.no} ไม่มี "${ps}"`);
+    if (!pg.includes(`>${ps} ตัว<`)) bad.push(`หน้าเบอร์ ${p.no} ไม่มี "${ps}"`);
     if (!new RegExp(`safety-pins-${p.no}\\.html"><b>${p.no}</b></a></td><td>${p.mm}</td><td>${p.cm}</td><td>[^<]*</td><td>${ps}</td>`).test(hub)) bad.push(`ตารางหน้ารวม เบอร์ ${p.no}`);
     if (!new RegExp(`safety-pins-${p.no}\\.html">${p.no}</a></b>[^<]*(<span[^>]*>[^<]*</span>)?</td><td[^>]*>${p.mm} มม\\.</td><td[^>]*>${p.wire} มม\\.</td><td>${ps}`).test(whole)) bad.push(`ตารางขายส่ง เบอร์ ${p.no}`);
     if (!pg.includes(`"@id":"${L.BRAND.id}"`)) bad.push(`หน้าเบอร์ ${p.no} ไม่อ้าง Brand @id`);
