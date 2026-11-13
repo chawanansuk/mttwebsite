@@ -67,7 +67,7 @@ function labelTables(html) {
 /* ---------- ช่องต่าง ๆ ของบทความ ---------- */
 function headBlock(a, faq) {
   const url = `${SITE}/articles/${a.slug}.html`;
-  const cat = CATS[a.cat];
+  const cat = a.crumb || CATS[a.cat];
   const title = `${a.title_th} | ${SHOP_NAME}`;
   if (title.length > 60) throw new Error(`${a.slug}: title ยาว ${title.length} ตัวอักษร (เกิน 60)`);
   if (a.desc_th.length > 155) throw new Error(`${a.slug}: description ยาว ${a.desc_th.length} (เกิน 155)`);
@@ -101,7 +101,7 @@ ${blocks.join("\n")}`;
 }
 
 function heroBlock(a) {
-  const cat = CATS[a.cat];
+  const cat = a.crumb || CATS[a.cat]; // บทความที่ไม่ใช่สินค้าหลักของหมวด (เช่น กุญแจ) ชี้ breadcrumb ไปแคตตาล็อกของตัวเอง
   const pub = `<time datetime="${a.published}">`, mod = `<time datetime="${a.modified}">`;
   const bylineTH = `โดย MTT Hardware · เผยแพร่ ${pub}${dTH(a.published)}</time>` + (a.modified !== a.published ? ` · อัปเดต ${mod}${dTH(a.modified)}</time>` : "");
   const bylineEN = `By MTT Hardware · Published ${pub}${dEN(a.published)}</time>` + (a.modified !== a.published ? ` · Updated ${mod}${dEN(a.modified)}</time>` : "");
@@ -126,8 +126,8 @@ ${hs.map((h) => `        <li><a href="#${h[1]}" data-th="${h[2]}" data-en="${h[3
 function nextBlock(a) {
   const cards = a.related.map((s) => BY_SLUG[s]).map((r) =>
     `      <a href="${r.slug}.html"><b ${bi(r.short_th, r.short_en)}</b><span ${bi(r.card_th, r.card_en)}</span></a>`);
-  for (const l of CATS[a.cat].links) cards.push(`      <a href="../${l.href}"><b ${bi(l.th, l.en)}</b><span ${bi(l.sub_th, l.sub_en)}</span></a>`);
-  cards.push(`      <a href="/articles"><b data-th="บทความทั้งหมด" data-en="All guides">บทความทั้งหมด</b><span data-th="คู่มือเลือกซื้อไฟฟู่และเข็มกลัดทุกเรื่อง" data-en="Every buying guide on the site">คู่มือเลือกซื้อไฟฟู่และเข็มกลัดทุกเรื่อง</span></a>`);
+  for (const l of a.links || CATS[a.cat].links) cards.push(`      <a href="../${l.href}"><b ${bi(l.th, l.en)}</b><span ${bi(l.sub_th, l.sub_en)}</span></a>`);
+  cards.push(`      <a href="/articles"><b data-th="บทความทั้งหมด" data-en="All guides">บทความทั้งหมด</b><span data-th="คู่มือเลือกซื้อและวิธีใช้ทุกเรื่อง" data-en="Every buying and how-to guide">คู่มือเลือกซื้อและวิธีใช้ทุกเรื่อง</span></a>`);
   return `    <h2 class="sec-h" id="read-next" data-th="อ่านต่อ" data-en="Read next">อ่านต่อ</h2>
     <div class="nextlinks">
 ${cards.join("\n")}

@@ -106,6 +106,8 @@ const HTML_TAG = /<html lang="(?:th|en)"(?: data-page-lang="(?:th|en)")?([^>]*)>
 function enHead(html, u, meta) {
   html = html.replace(HTML_TAG, '<html lang="en" data-page-lang="en"$1>');
   html = html.replace(HEAD_SCRIPT, langScript("en", u));
+  /* ปุ่มภาษา: หน้า /en ต้องกด EN ค้างตั้งแต่ HTML ไม่รอ JS */
+  html = html.replace('<button data-lang="th" aria-pressed="true">TH</button><button data-lang="en" aria-pressed="false">EN</button>', '<button data-lang="th" aria-pressed="false">TH</button><button data-lang="en" aria-pressed="true">EN</button>');
   html = html.replace(/<title>[^<]*<\/title>/, `<title>${esc(meta.title)}</title>`);
   html = html.replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(meta.desc)}">`);
   html = html.replace(/\n<meta name="keywords" content="[^"]*">/, "");

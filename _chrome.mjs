@@ -7,6 +7,7 @@
    ============================================================ */
 import { readFileSync, writeFileSync } from "fs";
 import { execSync } from "child_process";
+import { createHash } from "crypto";
 import vm from "vm";
 import { fileURLToPath } from "url";
 
@@ -17,6 +18,16 @@ export const SHOP = sandbox.window.SHOP;
 const S = SHOP;
 /* รายการบทความ (คอลัมน์ "บทความ" ใน footer) — แหล่งเดียวกับ _gen-articles.mjs */
 const ARTICLES = JSON.parse(readFileSync(new URL("./data/articles.json", import.meta.url), "utf8")).articles;
+/* footer แสดงหมวดละ 2 ชิ้นที่อัปเดตล่าสุด (รวม 6) — เดิมใส่ครบทุกชิ้นทุกหน้า ยาวเกินและซ้ำกับหน้า /articles */
+const FOOT_ARTICLES = [...new Set(ARTICLES.map((a) => a.cat))].flatMap((cat) =>
+  ARTICLES.filter((a) => a.cat === cat).map((a, i) => ({ a, i })).sort((x, y) => (y.a.modified > x.a.modified) - (y.a.modified < x.a.modified) || x.i - y.i).slice(0, 2).map((x) => x.a));
+
+/* ---------- เวอร์ชันไฟล์ CSS/JS = แฮชของเนื้อไฟล์ ----------
+   vercel.json ให้เบราว์เซอร์เก็บ /assets/css และ /assets/js ไว้ 1 ปี (immutable)
+   จึงต้องเปลี่ยน ?v= ทุกครั้งที่เนื้อไฟล์เปลี่ยน — ทำอัตโนมัติที่นี่ ไม่ต้องจำแก้เลขเอง */
+const verCache = {};
+const assetVer = (rel) => verCache[rel] ??= createHash("sha1").update(readFileSync(new URL("./" + rel, import.meta.url))).digest("hex").slice(0, 8);
+const stampAssets = (html) => html.replace(/(\s(?:href|src)="(?:\.\.\/|\/)*)(assets\/(?:css|js)\/[\w.-]+\.(?:css|js))(?:\?v=\w+)?"/g, (m, pre, rel) => `${pre}${rel}?v=${assetVer(rel)}"`);
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 
@@ -82,7 +93,7 @@ function footerHTML(base) {
     ${li("/#categories", "หมวดหมู่", "Categories")}
   </ul></div>
   <div class="foot-col"><h2 data-th="บทความ" data-en="Guides">บทความ</h2><ul>
-    ${ARTICLES.map((a) => li(base + "articles/" + a.slug + ".html", a.short_th, a.short_en)).join("\n    ")}
+    ${FOOT_ARTICLES.map((a) => li(base + "articles/" + a.slug + ".html", a.short_th, a.short_en)).join("\n    ")}
     ${li("/articles", "บทความทั้งหมด", "All guides")}
   </ul></div>
   <div class="foot-col"><h2 data-th="ลิงก์" data-en="Links">ลิงก์</h2><ul>
@@ -161,7 +172,7 @@ export function bakeChrome(html) {
   const ownToast = html.replace(/<!--chrome:footer-->[\s\S]*?<!--\/chrome:footer-->/, "").includes('class="toast"');
   const toast = ownToast ? "" : '\n<div class="toast" id="toast" role="status" aria-live="polite"></div>';
   html = put(html, "footer", '<div id="site-footer"></div>', footerHTML(base) + "\n" + tabbarHTML(base, page) + toast);
-  return bakeStoreSchema(fillShop(html));
+  return stampAssets(bakeStoreSchema(fillShop(html)));
 }
 
 /* ---------- ข้อมูลร้านให้ Google: schema Store ในหน้าแรก + แท็กยืนยัน Search Console ----------

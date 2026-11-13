@@ -427,6 +427,20 @@
       "related": [
         "hardware-shop-starter-list",
         "tool-rust-care"
+      ],
+      "crumb": {
+        "href": "products/tools-padlock.html",
+        "th": "กุญแจคล้อง ตรา M.T.T.",
+        "en": "M.T.T. padlocks"
+      },
+      "links": [
+        {
+          "href": "products/tools-padlock.html",
+          "th": "แคตตาล็อกกุญแจคล้อง",
+          "en": "Padlock catalogue",
+          "sub_th": "กุญแจคล้องตรา M.T.T. ทุกขนาด พร้อมจำนวนต่อลัง",
+          "sub_en": "Every M.T.T. padlock size with carton counts"
+        }
       ]
     },
     {
@@ -452,6 +466,20 @@
       "related": [
         "hardware-shop-starter-list",
         "which-wrench-for-which-job"
+      ],
+      "crumb": {
+        "href": "products/tools-screwdrivers.html",
+        "th": "ไขควง WYNNTOOLS",
+        "en": "WYNNTOOLS screwdrivers"
+      },
+      "links": [
+        {
+          "href": "products/tools-screwdrivers.html",
+          "th": "แคตตาล็อกไขควง",
+          "en": "Screwdriver catalogue",
+          "sub_th": "ไขควง WYNNTOOLS ทุกแบบ พร้อมขนาดและจำนวนต่อลัง",
+          "sub_en": "Every WYNNTOOLS screwdriver with sizes and carton counts"
+        }
       ]
     },
     {
@@ -477,6 +505,20 @@
       "related": [
         "hardware-shop-starter-list",
         "tool-rust-care"
+      ],
+      "crumb": {
+        "href": "products/tools-measuring.html",
+        "th": "เครื่องมือวัด WYNNTOOLS",
+        "en": "WYNNTOOLS measuring tools"
+      },
+      "links": [
+        {
+          "href": "products/tools-measuring.html",
+          "th": "แคตตาล็อกเครื่องมือวัด",
+          "en": "Measuring tool catalogue",
+          "sub_th": "ระดับน้ำ ฉาก ลูกดิ่ง พร้อมขนาดและจำนวนต่อลัง",
+          "sub_en": "Levels, squares and plumb bobs with sizes and carton counts"
+        }
       ]
     },
     {
@@ -527,6 +569,20 @@
       "related": [
         "how-to-choose-padlock",
         "tool-rust-care"
+      ],
+      "crumb": {
+        "href": "products/tools-padlock.html",
+        "th": "กุญแจคล้อง ตรา M.T.T.",
+        "en": "M.T.T. padlocks"
+      },
+      "links": [
+        {
+          "href": "products/tools-padlock.html",
+          "th": "แคตตาล็อกกุญแจคล้อง",
+          "en": "Padlock catalogue",
+          "sub_th": "กุญแจคล้องตรา M.T.T. ทุกขนาด พร้อมจำนวนต่อลัง",
+          "sub_en": "Every M.T.T. padlock size with carton counts"
+        }
       ]
     }
   ]
