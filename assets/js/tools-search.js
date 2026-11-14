@@ -1,5 +1,5 @@
 /* ค้นหาเครื่องมือข้ามทุกหมวด (หน้ารวม products/tools.html)
-   ดัชนี /assets/data/tools-index.json สร้างโดย _gen-tool-pages.mjs — โหลดเมื่อผู้ใช้แตะช่องค้นหาเท่านั้น
+   ดัชนี /assets/search/tools-index.json สร้างโดย _gen-tool-pages.mjs — โหลดเมื่อผู้ใช้แตะช่องค้นหาเท่านั้น
    กดผลลัพธ์ → ไปหน้าหมวดพร้อม ?q=รหัส (catalog-find.js กรองให้เหลือแถวนั้น) */
 (function () {
   var inp = document.getElementById("allFind"), out = document.getElementById("allFindOut"), hit = document.getElementById("allFindHit");
@@ -8,7 +8,7 @@
   function en() { return document.documentElement.lang === "en"; }
   function load() {
     if (data || loading) return loading;
-    loading = fetch("/assets/data/tools-index.json").then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    loading = fetch("/assets/search/tools-index.json").then(function (r) { if (!r.ok) throw 0; return r.json(); })
       .then(function (d) {
         d.items.forEach(function (x) { x.push((x[0] + " " + x[1] + " " + x[2] + " " + x[3]).toLowerCase()); });
         data = d; render();

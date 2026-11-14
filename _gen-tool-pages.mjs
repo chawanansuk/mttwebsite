@@ -275,5 +275,5 @@ for (const cat of DATA.categories) {
   for (const g of groups) for (const x of g.items) index.items.push([x.code, x.th, x.en || "", x.size || "", ci]);
   made.push(`  products/${m.file}  ${cat.groups.reduce((n, g) => n + g.items.length, 0)} รายการ  ${cat.groups.length}→${groups.length} กลุ่ม  (title ${m.title.length} · desc ${m.desc.length})`);
 }
-writeFileSync("assets/data/tools-index.json", JSON.stringify(index));
+writeFileSync("assets/search/tools-index.json", JSON.stringify(index));
 console.log("สร้างแล้ว " + made.length + " หน้า:\n" + made.join("\n"));

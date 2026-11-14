@@ -414,9 +414,13 @@ console.log("\n[ ตารางแบบจัดตระกูล + ช่อ
 /* ---- ค้นหาเครื่องมือข้ามหมวด + รายการขอราคาหลายรหัส ---- */
 console.log("\n[ ค้นหาข้ามหมวด + รายการขอราคา ]");
 {
-  const idx = JSON.parse(readFileSync(join(ROOT, "assets/data/tools-index.json"), "utf8"));
+  const idx = JSON.parse(readFileSync(join(ROOT, "assets/search/tools-index.json"), "utf8"));
   const total = JSON.parse(readFileSync(join(ROOT, "data/wynn-tools.json"), "utf8")).categories.reduce((n, c) => n + c.groups.reduce((m, g) => m + g.items.length, 0), 0);
   assert(idx.items.length === total && idx.cats.every((c) => existsSync(join(ROOT, "products", c[0]))), `ดัชนีค้นหามีครบทุกรายการ (${idx.items.length}/${total}) และชี้หน้าหมวดที่มีจริง`);
+  /* .vercelignore ใช้รูปแบบ gitignore: "data/" ตัดโฟลเดอร์ชื่อ data ทุกระดับ (เคยทำดัชนีใน assets/data/ หายจากเว็บจริง) */
+  const ignored = readFileSync(join(ROOT, ".vercelignore"), "utf8").split("\n").map((l) => l.trim()).filter((l) => l && !l.startsWith("#") && l.endsWith("/")).map((l) => l.slice(0, -1));
+  const used = readFileSync(join(ROOT, "assets/js/tools-search.js"), "utf8").match(/fetch\("([^"]+)"\)/)[1];
+  assert(existsSync(join(ROOT, used)) && !used.split("/").some((seg) => ignored.includes(seg)), "ไฟล์ดัชนีที่หน้าเว็บเรียก (" + used + ") มีจริงและไม่โดน .vercelignore ตัดออก");
   const page = await newPage({ width: 390, height: 844 });
   await page.goto(base + "/products/tools.html", { waitUntil: "domcontentloaded" });
   await page.fill("#allFind", "WS005L");
