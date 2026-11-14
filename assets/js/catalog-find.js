@@ -47,7 +47,15 @@
     relead();
     if (grpnav) grpnav.hidden = !!q; /* สารบัญกลุ่มไม่มีความหมายตอนกรองอยู่ */
     var en = document.documentElement.lang === "en";
-    if (q) { hit.hidden = false; hit.textContent = n ? (en ? n + " item(s) found" : "พบ " + n + " รายการ") : (en ? "No match — try a shorter code or name" : "ไม่พบรายการที่ค้นหา — ลองพิมพ์รหัสหรือชื่อสั้นลง"); }
+    if (q) {
+      hit.hidden = false; hit.textContent = n ? (en ? n + " item(s) found" : "พบ " + n + " รายการ") : (en ? "No match in this category. " : "ไม่พบในหมวดนี้ ");
+      if (!n) { /* ไม่เจอในหมวดนี้ → ส่งคำค้นไปค้นทุกหมวดที่หน้ารวม */
+        var all = document.createElement("a");
+        all.href = "tools.html?q=" + encodeURIComponent(inp.value.trim());
+        all.textContent = en ? "Search every category →" : "ค้นหาในทุกหมวด →";
+        hit.appendChild(all);
+      }
+    }
     else { hit.hidden = true; }
   }
 
@@ -99,4 +107,7 @@
   }
 
   inp.addEventListener("input", apply);
+  /* มาจากผลค้นหาข้ามหมวด (tools.html) : ?q=รหัส → กรองให้เลย */
+  var q0 = new URLSearchParams(location.search).get("q");
+  if (q0) { inp.value = q0; fullLayout(); apply(); }
 })();

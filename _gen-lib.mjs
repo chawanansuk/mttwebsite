@@ -220,6 +220,7 @@ export function scriptsHTML(page) {
 <script src="../assets/js/catalog.js?v=4"></script>
 <script src="../assets/js/cart.js?v=2"></script>
 <script src="../assets/js/catalog-find.js?v=2"></script>
+<script src="../assets/js/quote-list.js"></script>
 <script src="../assets/js/layout.js?v=6"></script>
 <script src="/_vercel/insights/script.js" defer></script>`;
 }

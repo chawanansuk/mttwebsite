@@ -344,3 +344,30 @@ html[lang="en"] .gcard .tag{letter-spacing:.08em;text-transform:uppercase}
 .gcard .gdate{display:block;font-size:.75rem;color:var(--ink-dim);margin-top:10px}
 .guide-more{text-align:center;margin:22px 0 0}
 @media(max-width:900px){.guide-grid{grid-template-columns:1fr;gap:10px}.gcard{padding:16px}}
+
+/* ---------- รายการขอราคา (assets/js/quote-list.js) ---------- */
+.qadd{display:inline-grid;place-items:center;width:32px;height:32px;margin-left:8px;vertical-align:middle;border:1px solid var(--line-strong);border-radius:var(--radius-full);background:var(--surface);color:var(--ink-2);font:inherit;font-weight:700;line-height:1;cursor:pointer}
+.qadd:hover{border-color:var(--amber);color:var(--amber-dark)}
+.qadd[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.qbar{position:fixed;right:16px;bottom:16px;z-index:124;width:min(440px,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line-strong);border-radius:var(--radius);box-shadow:0 10px 30px rgba(16,26,48,.22)}
+.qbar[hidden],.qpanel[hidden]{display:none}
+.qrow{display:flex;align-items:center;gap:10px;padding:8px 10px}
+.qtoggle{flex:1;min-height:44px;text-align:left;border:0;background:transparent;font:inherit;font-family:var(--font-head);font-weight:600;color:var(--ink);cursor:pointer;padding:0 6px}
+.qsend{white-space:nowrap}
+.qpanel{max-height:min(52vh,420px);overflow:auto;border-bottom:1px solid var(--line)}
+.qpanel ul{list-style:none;margin:0;padding:0}
+.qpanel li{display:flex;align-items:center;gap:8px;padding:8px 12px;border-bottom:1px solid var(--line);font-size:.85rem}
+.qpanel .qn{flex:1;min-width:0;overflow-wrap:anywhere}
+.qpanel .qn b{font-family:var(--font-head);color:var(--amber-dark)}
+.qpanel input{width:68px;min-height:36px;padding:4px 6px;border:1px solid var(--line-strong);border-radius:var(--radius-xs);font:inherit;text-align:center;background:var(--surface)}
+.qrm{width:36px;height:36px;border:0;background:transparent;font-size:1.2rem;line-height:1;color:var(--ink-mute);cursor:pointer;border-radius:var(--radius-full)}
+.qrm:hover{background:var(--bg-soft);color:var(--ink)}
+.qfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 12px;font-size:.78rem;color:var(--ink-mute)}
+.qclear{border:0;background:transparent;font:inherit;color:var(--ink-2);text-decoration:underline;cursor:pointer;min-height:32px;white-space:nowrap}
+.has-qbar body{padding-bottom:76px}
+.has-qbar .toast{bottom:92px}
+@media(max-width:900px){
+  .qbar{left:8px;right:8px;width:auto;bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 8px)}
+  .has-qbar body{padding-bottom:calc(var(--tabbar-h) + 76px)}
+  .has-qbar .toast{bottom:calc(var(--tabbar-h) + 84px)}
+}

@@ -263,11 +263,17 @@ ${scriptsHTML("tools")}
 }
 
 const made = [];
+/* ดัชนีค้นหาข้ามหมวด (assets/js/tools-search.js ในหน้ารวมเครื่องมือ โหลดเมื่อผู้ใช้เริ่มพิมพ์)
+   แถวละ [รหัส, ชื่อไทย, ชื่ออังกฤษ, ขนาด, ลำดับหมวดใน cats] — เก็บเป็น array ให้ไฟล์เล็ก */
+const index = { cats: [], items: [] };
 for (const cat of DATA.categories) {
   const m = META[cat.id];
   if (!m) continue;
   writeFileSync("products/" + m.file, bakeChrome(page(cat)));
   const groups = mergeGroups(cat.groups);
+  const ci = index.cats.push([m.file, cat.th, cat.en || cat.th]) - 1;
+  for (const g of groups) for (const x of g.items) index.items.push([x.code, x.th, x.en || "", x.size || "", ci]);
   made.push(`  products/${m.file}  ${cat.groups.reduce((n, g) => n + g.items.length, 0)} รายการ  ${cat.groups.length}→${groups.length} กลุ่ม  (title ${m.title.length} · desc ${m.desc.length})`);
 }
+writeFileSync("assets/data/tools-index.json", JSON.stringify(index));
 console.log("สร้างแล้ว " + made.length + " หน้า:\n" + made.join("\n"));

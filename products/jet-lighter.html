@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Anuphan:wght@400;500;600;700&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/theme.css?v=ff92729b">
+<link rel="stylesheet" href="../assets/css/theme.css?v=0365f44a">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -450,7 +450,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
     <div class="stage">
       <div class="hero-shot">
         <span class="hero-flag"><span aria-hidden="true">🎬</span> <span data-th="รุ่นเล็ก MTTFF02 · ยกกล่อง 20 ชิ้น" data-en="Compact MTTFF02 · box of 20">รุ่นเล็ก MTTFF02 · ยกกล่อง 20 ชิ้น</span></span>
-        <video class="hero-photo" id="heroVideo" autoplay muted loop playsinline preload="metadata" width="720" height="600"
+        <video class="hero-photo" id="heroVideo" muted loop playsinline preload="none" width="720" height="600"
           poster="../assets/img/products/jet-lighter-compact-poster.webp"
           aria-label="คลิปไฟฟู่รุ่นเล็ก M.T.T. ตราสิงโต พร้อมกล่อง 20 ชิ้น" data-th-aria-label="คลิปไฟฟู่รุ่นเล็ก M.T.T. ตราสิงโต พร้อมกล่อง 20 ชิ้น" data-en-aria-label="Clip of the M.T.T. Lion compact jet lighter with its box of 20">
           <source src="../assets/video/jet-lighter-compact.mp4" type="video/mp4">
@@ -493,7 +493,7 @@ video.sizes-video{aspect-ratio:1/1;object-fit:cover;background:#fff}
           <p data-th="มี 2 ขนาดให้เลือก — <b>รุ่นใหญ่</b> บอดี้สูง แก๊สเยอะ ใช้ทน · <b>รุ่นเล็ก</b> กะทัดรัด พกพาง่าย" data-en="Two sizes — <b>Large</b> holds more gas, lasts longer · <b>Compact</b> fits in your pocket">มี 2 ขนาดให้เลือก — <b>รุ่นใหญ่</b> บอดี้สูง แก๊สเยอะ ใช้ทน · <b>รุ่นเล็ก</b> กะทัดรัด พกพาง่าย</p>
         </div>
       </div>
-      <video class="sizes-photo sizes-video" id="modelsVideo" muted loop playsinline preload="metadata" width="640" height="640"
+      <video class="sizes-photo sizes-video" id="modelsVideo" muted loop playsinline preload="none" width="640" height="640"
         poster="../assets/img/products/jet-lighter-models-poster.webp"
         aria-label="คลิปไฟฟู่ M.T.T. ตราสิงโต รุ่นเล็ก 5 สี และรุ่นใหญ่ 5 สี" data-th-aria-label="คลิปไฟฟู่ M.T.T. ตราสิงโต รุ่นเล็ก 5 สี และรุ่นใหญ่ 5 สี" data-en-aria-label="Clip of the M.T.T. Lion compact and large jet lighters, 5 colours each">
         <source src="../assets/video/jet-lighter-models.mp4" type="video/mp4">
@@ -943,9 +943,18 @@ renderProduct();
 /* คลิป hero: เล่นวนแบบปิดเสียง กดปุ่มเพื่อเปิดเสียง; ผู้ใช้ที่ตั้งค่า reduce-motion จะเห็นภาพนิ่ง */
 (function(){
   var v=document.getElementById('heroVideo'), b=document.getElementById('heroSound'); if(!v||!b) return;
-  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ v.removeAttribute('autoplay'); v.pause(); }
-  // โหมดประหยัดดาต้า / เน็ตช้า: ไม่ดึงคลิป 1MB เอง ให้เห็นภาพนิ่ง (poster) แล้วกดเล่นเมื่อต้องการ
-  var c=navigator.connection||{}; if(c.saveData || /(^|-)2g$/.test(c.effectiveType||'')){ v.removeAttribute('autoplay'); v.preload='none'; v.controls=true; v.pause(); }
+  /* คลิปไม่ autoplay จาก HTML แล้ว (preload="none"): ภาพนิ่ง poster ขึ้นก่อน แล้วค่อยดึงคลิป 0.7MB
+     หลังหน้าโหลดเสร็จและคลิปยังอยู่ในจอ — ไม่แย่งเน็ตกับ CSS/รูป/ฟอนต์ตอนเปิดหน้า
+     ผู้ใช้ reduce-motion เห็นภาพนิ่ง; โหมดประหยัดดาต้า/เน็ต 2G ได้ปุ่มเล่นให้กดเอง */
+  var still=window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c=navigator.connection||{}; if(c.saveData || /(^|-)2g$/.test(c.effectiveType||'')){ v.controls=true; still=true; }
+  if(!still){
+    var start=function(){
+      if(!('IntersectionObserver' in window)){ v.play().catch(function(){}); return; }
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ v.play().catch(function(){}); } else { v.pause(); } }); },{threshold:.25}).observe(v);
+    };
+    if(document.readyState==='complete') start(); else window.addEventListener('load', start);
+  }
   b.addEventListener('click', function(){
     v.muted=!v.muted; if(v.paused) v.play();
     var th=(window.MTT&&window.MTT.getLang()||'th')==='th';

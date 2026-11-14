@@ -295,6 +295,7 @@ console.log("\n[ products/jet-lighter.html ]");
     assert(/BreadcrumbList/.test(r.types) && /FAQPage/.test(r.types), "มี FAQPage และ BreadcrumbList ใน HTML");
   }
   assert(!!(await page.$('#heroVideo source[src$=".mp4"]')) && !!(await page.$('#heroVideo[poster]')), "คลิป hero มี source mp4 + poster");
+  assert((await page.$$eval("video", (v) => v.every((x) => x.getAttribute("preload") === "none" && !x.hasAttribute("autoplay")))), "คลิปไม่ถูกดึงตอนเปิดหน้า (preload=none ไม่มี autoplay ใน HTML)");
   assert((await page.$$eval(".pcard .save", (e) => e.length)) >= 2, "มี badge ประหยัด % อย่างน้อย 2");
   await page.click(".add");
   await page.waitForTimeout(180);
@@ -407,6 +408,46 @@ console.log("\n[ ตารางแบบจัดตระกูล + ช่อ
   await page.waitForTimeout(300);
   assert((await visible()) === all, "ล้างคำค้นแล้วกลับมาครบ");
   assert((await page.$$eval("table.tools tbody tr", (rs) => rs.filter((r) => r.querySelector(".nmtxt b")).length)) === named, "ล้างคำค้นแล้วชื่อกลับไปพิมพ์ครั้งเดียวเท่าเดิม");
+  await page.close();
+}
+
+/* ---- ค้นหาเครื่องมือข้ามหมวด + รายการขอราคาหลายรหัส ---- */
+console.log("\n[ ค้นหาข้ามหมวด + รายการขอราคา ]");
+{
+  const idx = JSON.parse(readFileSync(join(ROOT, "assets/data/tools-index.json"), "utf8"));
+  const total = JSON.parse(readFileSync(join(ROOT, "data/wynn-tools.json"), "utf8")).categories.reduce((n, c) => n + c.groups.reduce((m, g) => m + g.items.length, 0), 0);
+  assert(idx.items.length === total && idx.cats.every((c) => existsSync(join(ROOT, "products", c[0]))), `ดัชนีค้นหามีครบทุกรายการ (${idx.items.length}/${total}) และชี้หน้าหมวดที่มีจริง`);
+  const page = await newPage({ width: 390, height: 844 });
+  await page.goto(base + "/products/tools.html", { waitUntil: "domcontentloaded" });
+  await page.fill("#allFind", "WS005L");
+  await page.waitForSelector("#allFindOut li a");
+  const href = await page.getAttribute("#allFindOut li a", "href");
+  assert((await page.$$eval("#allFindOut li", (e) => e.length)) === 1 && /^\/products\/tools-[a-z]+\.html\?q=WS005L$/.test(href), "ค้นรหัสจากหน้ารวมเจอ 1 รายการ และลิงก์ไปหน้าหมวดพร้อม ?q= (" + href + ")");
+  await page.goto(base + href, { waitUntil: "domcontentloaded" });
+  await page.waitForTimeout(400);
+  const vis = () => page.$$eval("table.tools tbody tr", (rs) => rs.filter((r) => !r.hidden).length);
+  assert((await vis()) === 1 && (await page.inputValue("#findInput")) === "WS005L", "เปิดหน้าหมวดด้วย ?q= แล้วกรองเหลือแถวที่ค้น");
+  await page.fill("#findInput", "ไม่มีสินค้านี้แน่");
+  await page.waitForTimeout(300);
+  assert((await page.getAttribute("#findHit a", "href")).startsWith("tools.html?q="), "ค้นไม่เจอในหมวด มีลิงก์ไปค้นทุกหมวด");
+  await page.fill("#findInput", "");
+  await page.waitForTimeout(300);
+  assert(await page.locator(".qbar").isHidden(), "ยังไม่เลือกสินค้า แถบรายการขอราคาไม่ขึ้น");
+  await page.locator(".qadd").nth(0).click();
+  await page.locator(".qadd").nth(2).click();
+  const codes = await page.$$eval(".qadd", (b) => [b[0].dataset.code, b[2].dataset.code]);
+  await page.click(".qtoggle");
+  await page.locator(".qpanel input").first().fill("24");
+  await page.locator(".qpanel input").first().dispatchEvent("change");
+  const msg = decodeURIComponent(await page.getAttribute(".qsend", "href"));
+  assert(msg.startsWith("https://line.me/R/oaMessage/") && msg.includes("ขอราคาสินค้า 2 รายการ") && msg.includes("1. " + codes[0]) && msg.includes(" x 24") && msg.includes("2. " + codes[1]),
+    "เลือก 2 รหัส ใส่จำนวน แล้วลิงก์ LINE มีครบทั้งสองรหัสและจำนวน");
+  assert((await page.getAttribute(".qadd >> nth=0", "aria-pressed")) === "true", "ปุ่ม + ของรหัสที่เลือกแสดงสถานะเลือกแล้ว");
+  await page.goto(base + "/products/tools-padlock.html", { waitUntil: "domcontentloaded" });
+  assert(/2/.test(await page.textContent(".qtoggle")), "รายการขอราคาตามไปหน้าหมวดอื่น");
+  await page.click(".qtoggle");
+  await page.click(".qclear");
+  assert(await page.locator(".qbar").isHidden(), "ล้างรายการแล้วแถบหาย");
   await page.close();
 }
 

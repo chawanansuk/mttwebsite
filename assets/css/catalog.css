@@ -32,6 +32,7 @@
 .findbar input{width:100%;max-width:460px;padding:12px 16px;border:1px solid var(--line-strong);border-radius:var(--radius-sm);font:inherit;font-size:.95rem;background:var(--surface)}
 .findbar input:focus{outline:2px solid var(--amber);border-color:transparent}
 .findbar .hit{font-size:.82rem;color:var(--ink-mute);margin-top:8px}
+.findbar .hit a{color:var(--amber-dark);font-weight:600;display:inline-block;padding:4px 0}
 
 /* ---------- กลุ่มสินค้า ---------- */
 .grp-h{font-size:clamp(1.05rem,2.1vw,1.3rem);margin:34px 0 6px;scroll-margin-top:148px}
