@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mtthardware.com/articles/adjustable-wrench-sizes.html</loc>
     <lastmod>2026-10-09</lastmod>
@@ -8,6 +8,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/adjustable-wrench-sizes.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/adjustable-wrench-sizes.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/adjustable-wrench-sizes.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9806.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS300J.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/adjustable-wrench-sizes.html</loc>
@@ -17,6 +21,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/adjustable-wrench-sizes.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/adjustable-wrench-sizes.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/adjustable-wrench-sizes.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9806.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS300J.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/brass-padlock.html</loc>
@@ -26,6 +34,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/brass-padlock.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/brass-padlock.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/brass-padlock.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/SOHENG-40S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%87-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/84-20.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/LUCKY-262.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/brass-padlock.html</loc>
@@ -35,6 +47,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/brass-padlock.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/brass-padlock.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/brass-padlock.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/SOHENG-40S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%87-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/84-20.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/LUCKY-262.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/hardware-shop-starter-list.html</loc>
@@ -44,6 +60,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/hardware-shop-starter-list.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/hardware-shop-starter-list.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/hardware-shop-starter-list.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3144.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0345A.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/hardware-shop-starter-list.html</loc>
@@ -53,6 +71,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/hardware-shop-starter-list.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/hardware-shop-starter-list.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/hardware-shop-starter-list.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3144.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0345A.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/how-to-choose-padlock.html</loc>
@@ -62,6 +82,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/how-to-choose-padlock.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/how-to-choose-padlock.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/how-to-choose-padlock.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%87-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/SOHENG-40S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-40-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/361.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/how-to-choose-padlock.html</loc>
@@ -71,6 +95,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/how-to-choose-padlock.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/how-to-choose-padlock.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/how-to-choose-padlock.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%87-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/SOHENG-40S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-40-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/361.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/how-to-pin-race-bib.html</loc>
@@ -80,6 +108,7 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/how-to-pin-race-bib.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/how-to-pin-race-bib.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/how-to-pin-race-bib.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/how-to-pin-race-bib.html</loc>
@@ -89,6 +118,7 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/how-to-pin-race-bib.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/how-to-pin-race-bib.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/how-to-pin-race-bib.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles</loc>
@@ -116,6 +146,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/jet-lighter-compact-or-large.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/jet-lighter-compact-or-large.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/jet-lighter-compact-or-large.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-compact-lifestyle.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-large-lifestyle.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-compact-colors.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-large-colors.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/jet-lighter-compact-or-large.html</loc>
@@ -125,6 +159,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/jet-lighter-compact-or-large.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/jet-lighter-compact-or-large.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/jet-lighter-compact-or-large.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-compact-lifestyle.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-large-lifestyle.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-compact-colors.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-large-colors.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/jet-lighter-wholesale-margin.html</loc>
@@ -134,6 +172,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/jet-lighter-wholesale-margin.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/jet-lighter-wholesale-margin.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/jet-lighter-wholesale-margin.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-compact-box.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-large-box.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/jet-lighter-wholesale-margin.html</loc>
@@ -143,6 +183,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/jet-lighter-wholesale-margin.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/jet-lighter-wholesale-margin.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/jet-lighter-wholesale-margin.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-compact-box.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-large-box.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/jet-lighter-wont-light.html</loc>
@@ -152,6 +194,7 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/jet-lighter-wont-light.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/jet-lighter-wont-light.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/jet-lighter-wont-light.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-lighter-flame.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/jet-lighter-wont-light.html</loc>
@@ -161,6 +204,7 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/jet-lighter-wont-light.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/jet-lighter-wont-light.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/jet-lighter-wont-light.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-lighter-flame.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/lion-pins-direct-or-reseller.html</loc>
@@ -188,6 +232,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/race-kit-bib-pickup-checklist.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/race-kit-bib-pickup-checklist.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/race-kit-bib-pickup-checklist.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-0.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/race-kit-bib-pickup-checklist.html</loc>
@@ -197,6 +243,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/race-kit-bib-pickup-checklist.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/race-kit-bib-pickup-checklist.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/race-kit-bib-pickup-checklist.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-0.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/safety-pins-how-many-boxes.html</loc>
@@ -206,6 +254,9 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/safety-pins-how-many-boxes.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/safety-pins-how-many-boxes.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/safety-pins-how-many-boxes.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-00.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-6.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/safety-pins-how-many-boxes.html</loc>
@@ -215,6 +266,9 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/safety-pins-how-many-boxes.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/safety-pins-how-many-boxes.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/safety-pins-how-many-boxes.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-00.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-6.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/screwdriver-tip-types.html</loc>
@@ -224,6 +278,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/screwdriver-tip-types.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/screwdriver-tip-types.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/screwdriver-tip-types.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3492.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2580A.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/screwdriver-tip-types.html</loc>
@@ -233,6 +289,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/screwdriver-tip-types.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/screwdriver-tip-types.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/screwdriver-tip-types.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3492.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2580A.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/spirit-level-plumb-bob.html</loc>
@@ -242,6 +300,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/spirit-level-plumb-bob.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/spirit-level-plumb-bob.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/spirit-level-plumb-bob.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0332B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0083.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0476B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0235.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/spirit-level-plumb-bob.html</loc>
@@ -251,6 +313,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/spirit-level-plumb-bob.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/spirit-level-plumb-bob.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/spirit-level-plumb-bob.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0332B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0083.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0476B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0235.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/tool-rust-care.html</loc>
@@ -260,6 +326,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/tool-rust-care.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/tool-rust-care.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/tool-rust-care.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250E.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/tool-rust-care.html</loc>
@@ -269,6 +337,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/tool-rust-care.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/tool-rust-care.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/tool-rust-care.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250E.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/which-jet-lighter-brand.html</loc>
@@ -278,6 +348,9 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/which-jet-lighter-brand.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/which-jet-lighter-brand.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/which-jet-lighter-brand.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-lighter-flame.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-compact-colors.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-large-colors.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/which-jet-lighter-brand.html</loc>
@@ -287,6 +360,9 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/which-jet-lighter-brand.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/which-jet-lighter-brand.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/which-jet-lighter-brand.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-lighter-flame.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-compact-colors.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-large-colors.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/which-pliers-for-which-job.html</loc>
@@ -296,6 +372,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/which-pliers-for-which-job.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/which-pliers-for-which-job.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/which-pliers-for-which-job.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3144.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W508P.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0475A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0037.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/which-pliers-for-which-job.html</loc>
@@ -305,6 +385,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/which-pliers-for-which-job.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/which-pliers-for-which-job.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/which-pliers-for-which-job.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3144.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W508P.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0475A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0037.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/which-safety-pin-size.html</loc>
@@ -314,6 +398,7 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/which-safety-pin-size.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/which-safety-pin-size.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/which-safety-pin-size.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pin-sizes.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/which-safety-pin-size.html</loc>
@@ -323,6 +408,7 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/which-safety-pin-size.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/which-safety-pin-size.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/which-safety-pin-size.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pin-sizes.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/articles/which-wrench-for-which-job.html</loc>
@@ -332,6 +418,10 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/which-wrench-for-which-job.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/which-wrench-for-which-job.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/which-wrench-for-which-job.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0304A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0306A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0013A.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/articles/which-wrench-for-which-job.html</loc>
@@ -341,28 +431,40 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/articles/which-wrench-for-which-job.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/articles/which-wrench-for-which-job.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/articles/which-wrench-for-which-job.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0304A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0306A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0013A.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/home-jet-colors.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/wynn-tools.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/home-pins-row.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/mtt-brand.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/home-jet-colors.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/wynn-tools.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/home-pins-row.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/mtt-brand.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/privacy.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/privacy.html"/>
@@ -371,7 +473,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/en/privacy.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/privacy.html"/>
@@ -380,25 +482,33 @@
   </url>
   <url>
     <loc>https://mtthardware.com/products</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-lighter.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/wynn-tools.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pins-hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/mtt-brand.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/jet-lighter.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/wynn-tools.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pins-hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/mtt-brand.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/jet-lighter.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/jet-lighter.html"/>
@@ -407,7 +517,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/jet-lighter.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/jet-lighter.html"/>
@@ -416,193 +526,251 @@
   </url>
   <url>
     <loc>https://mtthardware.com/products/mtt-brand.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/mtt-brand.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/mtt-brand.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/mtt-brand.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/mtt-brand.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-40-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%87-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B9%80%E0%B8%82%E0%B9%87%E0%B8%A1%E0%B8%81%E0%B8%A5%E0%B8%B1%E0%B8%94MTT-000.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9806.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9810.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%87%E0%B8%B1%E0%B8%94%E0%B8%A2%E0%B8%B2%E0%B8%87MTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM201A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%84%E0%B9%89%E0%B8%AD%E0%B8%99MTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%A5%E0%B8%A7%E0%B8%94%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%9AMTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/QYT-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W129.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/mtt-brand.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/mtt-brand.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/mtt-brand.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/mtt-brand.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/mtt-brand.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-40-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%87-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B9%80%E0%B8%82%E0%B9%87%E0%B8%A1%E0%B8%81%E0%B8%A5%E0%B8%B1%E0%B8%94MTT-000.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9806.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9810.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%87%E0%B8%B1%E0%B8%94%E0%B8%A2%E0%B8%B2%E0%B8%87MTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM201A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%84%E0%B9%89%E0%B8%AD%E0%B8%99MTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%A5%E0%B8%A7%E0%B8%94%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%9AMTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/QYT-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W129.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-0.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-0.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-0.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-0.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-0.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-0.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-0.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-0.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-0.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-0.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-00.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-00.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-00.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-00.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-00.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-00.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-00.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-00.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-00.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-00.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-000.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-000.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-000.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-000.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-000.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-000.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-000.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-000.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-000.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-000.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-1.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-1.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-1.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-1.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-1.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-1.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-1.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-1.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-2.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-2.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-2.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-2.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-2.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-2.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-2.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-2.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-3.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-3.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-3.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-3.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-3.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-3.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-3.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-3.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-3.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-3.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-4.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-4.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-4.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-4.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-4.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-4.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-4.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-4.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-4.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-4.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-5.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-5.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-5.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-5.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-5.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-5.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-5.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-5.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-5.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-5.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-6.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-6.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-6.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-6.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-6.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-6.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-6.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-6.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-6.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-6.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-7.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-7.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-7.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-7.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-7.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-7.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-7.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins-7.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins-7.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/pin-7.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-canvas.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-canvas.html"/>
@@ -611,7 +779,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-canvas.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-canvas.html"/>
@@ -620,7 +788,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-diaper.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-diaper.html"/>
@@ -629,7 +797,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-diaper.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-diaper.html"/>
@@ -638,7 +806,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-lion-brand.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-lion-brand.html"/>
@@ -647,7 +815,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-lion-brand.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-lion-brand.html"/>
@@ -656,7 +824,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-running.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-running.html"/>
@@ -665,7 +833,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-running.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-running.html"/>
@@ -674,7 +842,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-tags.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-tags.html"/>
@@ -683,7 +851,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-tags.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-tags.html"/>
@@ -692,7 +860,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins-wholesale.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-wholesale.html"/>
@@ -701,7 +869,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins-wholesale.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins-wholesale.html"/>
@@ -710,115 +878,1081 @@
   </url>
   <url>
     <loc>https://mtthardware.com/products/safety-pins.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pin-sizes.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pin-sizes-tall.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pin-wire.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/safety-pins.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/safety-pins.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/safety-pins.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/safety-pins.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pin-sizes.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pin-sizes-tall.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/products/safety-pin-wire.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-automotive.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-automotive.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-automotive.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-automotive.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4584.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0456A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0458A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2916B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0196.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3480.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0584.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3223.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0153A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0459A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS01.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0454B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0454A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0389B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4610.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4139.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS4.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS2.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%97%E0%B8%97%E0%B8%AD%E0%B8%87.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%97%E0%B8%9E%E0%B8%B1%E0%B8%9A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS01-%E0%B8%81%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%97.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%87%E0%B8%B1%E0%B8%94%E0%B8%A2%E0%B8%B2%E0%B8%87MTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0014C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0021B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0479.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2757.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0586.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4355.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4618.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WTD-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WF-75S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WF-75G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0169A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB-101.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB-102.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB-103.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB-104.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3245.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0474.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0229B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0027.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2602.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4653.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3099A.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-automotive.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-automotive.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-automotive.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-automotive.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4584.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0456A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0458A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2916B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0196.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3480.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0584.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3223.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0153A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0459A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS01.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0454B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0454A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0389B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4610.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4139.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS4.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS2.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%97%E0%B8%97%E0%B8%AD%E0%B8%87.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%97%E0%B8%9E%E0%B8%B1%E0%B8%9A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS01-%E0%B8%81%E0%B8%B2%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%97.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%87%E0%B8%B1%E0%B8%94%E0%B8%A2%E0%B8%B2%E0%B8%87MTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0014C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0021B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0479.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2757.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0586.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4355.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4618.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WTD-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WF-75S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WF-75G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0169A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB-101.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB-102.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB-103.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB-104.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3245.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0474.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0229B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0027.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2602.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4653.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3099A.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-blades.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-blades.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-blades.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-blades.html"/>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-blades.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-blades.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-blades.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-blades.html"/>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-cutter.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-cutter.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-cutter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-cutter.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W700RP.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0095.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0096.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0258.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W06500.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W06500A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0099.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0810.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0197.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W201C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0200.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W201A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W302.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0203.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM201A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2606A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2605A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3078.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2607A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0289A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086AB.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086CB.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086DB.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086BB.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0496A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0497AA.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS10B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS12B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0490A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS05B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS09B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4297.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0441.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0442.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS08B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0607.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0609.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3723-6.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3723-8.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0610.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4358A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WA0106A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2776A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2673B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2674A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM789.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3074B.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-cutter.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-cutter.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-cutter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-cutter.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W700RP.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0095.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0096.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0258.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W06500.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W06500A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0099.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0810.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0197.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W201C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0200.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W201A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W302.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0203.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM201A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2606A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2605A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3078.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2607A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0289A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086AB.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086CB.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086DB.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0086BB.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0496A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0497AA.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS10B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS12B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0490A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS05B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS09B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4297.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0441.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0442.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS08B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0607.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0609.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3723-6.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3723-8.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0610.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4358A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WA0106A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2776A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2673B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2674A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM789.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3074B.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-cutting.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-cutting.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-cutting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-cutting.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0118A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0122A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W09.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0425A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0113.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS706B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS9010.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WCC-325.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WTCR-325.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1110A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W608C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2997.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W838.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4142.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0589.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4143.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0278.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0278B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2921.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2925.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2924.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM3202-%E0%B9%80%E0%B8%A5%E0%B9%87%E0%B8%81.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-cutting.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-cutting.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-cutting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-cutting.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0118A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0122A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W09.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0425A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0113.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS706B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS9010.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WCC-325.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WTCR-325.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1110A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W608C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2997.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W838.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4142.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0589.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4143.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0278.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0278B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2921.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2925.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2924.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM3202-%E0%B9%80%E0%B8%A5%E0%B9%87%E0%B8%81.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-electrical.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-electrical.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-electrical.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-electrical.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1051.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1052.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1053.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS1055.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS1056.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS1057.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3366A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS205A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0249.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS0246.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS2502.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS2203.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W01A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1040.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0475.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0283.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/DD-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/YG-202B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-005.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-6L.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-16L.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-25LA.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-38L.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3389B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0337.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0338D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0617.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3089.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2803.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3104.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0300A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS0413.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0453.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0452.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0647.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS90.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0226.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0226B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0183.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0225B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0360A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W669.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-electrical.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-electrical.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-electrical.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-electrical.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1051.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1052.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1053.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS1055.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS1056.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS1057.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3366A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS205A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0249.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS0246.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS2502.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS2203.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W01A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1040.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0475.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0283.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/DD-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/YG-202B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-005.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-6L.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-16L.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-25LA.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/HD-38L.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3389B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0337.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0338D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0617.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3089.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2803.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3104.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0300A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS0413.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0453.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0452.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0647.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS90.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0226.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0226B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0183.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0225B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0360A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W669.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-garden.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-garden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-garden.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-garden.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W860.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W866.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W132.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS889.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0279.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W133.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W103.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4113A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS0339D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3101.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1004.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B9%82%E0%B8%84%E0%B9%89%E0%B8%87%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B4%E0%B9%88%E0%B8%87.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0633.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0632.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3177A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%A2%E0%B8%B7%E0%B8%94.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%A1%E0%B9%89.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AA%E0%B9%89%E0%B8%A1.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0267B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0676.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2775.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0631.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%A2%E0%B8%B7%E0%B8%944.5%E0%B8%A1..webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2668.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-garden.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-garden.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-garden.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-garden.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W860.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W866.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W132.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS889.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0279.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W133.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W103.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4113A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS0339D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3101.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W1004.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B9%82%E0%B8%84%E0%B9%89%E0%B8%87%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%81%E0%B8%B4%E0%B9%88%E0%B8%87.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0633.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0632.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3177A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%A2%E0%B8%B7%E0%B8%94.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B9%84%E0%B8%A1%E0%B9%89.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%AA%E0%B9%89%E0%B8%A1.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0267B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0676.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2775.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0631.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%A2%E0%B8%B7%E0%B8%944.5%E0%B8%A1..webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2668.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-holding.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-holding.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-holding.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-holding.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105N.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105M.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105K.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105H.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105N.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3455.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3144.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/AC208.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WN218N.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W00100.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W00200.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W00300.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3456.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W508P.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W208P.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W106.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W608P.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB208.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W208K.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WHS175B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WHB175B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WSS175B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WSB175B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS001.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3272.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0378.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0555.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0089A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0087A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0088A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0144.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W450C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W450B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0133.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0559.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0473A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2488.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2484.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS508A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0475A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS506E.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS508D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0039.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0028.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0033.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0042.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0041.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WSB10.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0125.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0127.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0130.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0037.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/88-10.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-holding.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-holding.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-holding.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-holding.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105N.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105M.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105K.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105H.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/S105N.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3455.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3144.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/AC208.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WN218N.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W00100.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W00200.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W00300.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3456.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W508P.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W208P.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W106.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W608P.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS105D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WB208.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W208K.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WHS175B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WHB175B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WSS175B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WSB175B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS001.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3272.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0378.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0555.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0089A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0087A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0088A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0144.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W450C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W450B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0133.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0559.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0473A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2488.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2484.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS508A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0475A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS506E.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS508D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0039.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0028.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0033.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0042.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0041.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WSB10.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0125.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0127.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0130.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0037.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/88-10.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-hydraulic.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-hydraulic.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-hydraulic.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-hydraulic.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS-YQK70.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS-YQK300.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS-5T.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2604A.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-hydraulic.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-hydraulic.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-hydraulic.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-hydraulic.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS-YQK70.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS-YQK300.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS-5T.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2604A.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-measuring.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-measuring.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-measuring.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-measuring.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0083.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0081.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0091D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0082.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0093D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0094A-25B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0332B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0266B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0235.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3070.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0476B.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-measuring.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-measuring.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-measuring.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-measuring.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0083.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0081.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0091D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0082.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0093D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0094A-25B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0332B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0266B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0235.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3070.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0476B.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-padlock.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-padlock.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-padlock.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-padlock.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-40-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%87-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/84-20.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/LUCKY-262.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/SOHENG-40S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/361.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-padlock.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-padlock.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-padlock.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-padlock.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99-40-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%87-30S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/84-20.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/LUCKY-262.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/SOHENG-40S.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/361.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-screwdrivers.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-screwdrivers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-screwdrivers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-screwdrivers.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0345A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0393A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2089A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0352A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0179A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3492.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0407.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0568.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0276.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0291B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3476.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2580A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0582.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0411A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0356A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0557.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3313A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0618.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0611.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3314.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-screwdrivers.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-screwdrivers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-screwdrivers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-screwdrivers.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0345A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0393A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2089A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0352A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0179A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3492.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0407.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0568.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0276.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0291B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3476.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2580A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0582.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0411A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0356A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0557.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3313A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0618.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0611.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3314.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-soldering.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-soldering.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-soldering.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-soldering.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2866.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0293B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W41902.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W41903.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W41901.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W380.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0645.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0646.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-soldering.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-soldering.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-soldering.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-soldering.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2866.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0293B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W41902.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W41903.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W41901.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W380.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0645.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0646.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-striking.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-striking.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-striking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-striking.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3001A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2619.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4127.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0552.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0625B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0072C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3081A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0165A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2610B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2628C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0166C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0180A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0372A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%84%E0%B9%89%E0%B8%AD%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C-27.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%84%E0%B9%89%E0%B8%AD%E0%B8%99%20SOHENG.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%84%E0%B9%89%E0%B8%AD%E0%B8%99MTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3495A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0449.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0448.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0151B.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-striking.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-striking.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-striking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-striking.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3001A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2619.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4127.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0552.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0625B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0072C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3081A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0165A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2610B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2628C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0166C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0180A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0372A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%84%E0%B9%89%E0%B8%AD%E0%B8%99%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C-27.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%84%E0%B9%89%E0%B8%AD%E0%B8%99%20SOHENG.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%84%E0%B9%89%E0%B8%AD%E0%B8%99MTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3495A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0449.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0448.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0151B.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-upholster.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-upholster.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-upholster.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-upholster.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W209.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W109B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/w104b.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0566.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0558.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0531.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%A5%E0%B8%A7%E0%B8%94%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%9AMTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2669.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W10948.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/QYT-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0565.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B9%80%E0%B8%82%E0%B9%87%E0%B8%A1%E0%B8%81%E0%B8%A5%E0%B8%B1%E0%B8%94MTT-000.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W129.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2520.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2521.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0213.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0212.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2773.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-upholster.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-upholster.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-upholster.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-upholster.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W209.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W109B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/w104b.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0566.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0558.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0531.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B8%A5%E0%B8%A7%E0%B8%94%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%9AMTT.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2669.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W10948.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/QYT-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0565.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/%E0%B9%80%E0%B8%82%E0%B9%87%E0%B8%A1%E0%B8%81%E0%B8%A5%E0%B8%B1%E0%B8%94MTT-000.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W129.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2520.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2521.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0213.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0212.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2773.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools-wrenches.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-wrenches.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-wrenches.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-wrenches.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2914.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250E.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9806.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9810.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0304A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0306A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS1001.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0311A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0286B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS008C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0287A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0427A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0327B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0329A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0601.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0599.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0603.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0602.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0327AC.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0560U.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0560V.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS300J.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS005A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS007A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS007G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0013A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS0416.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0367.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2595C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0175.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2837.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2838C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4567.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0293.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0474D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0297.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0295.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0294.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0361A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0173A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0174A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0409.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0408.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W9918A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W9921A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W9925.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0439.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0199A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W9912A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2758B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS200J.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0172.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/T-SOHENG.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0619C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3490B.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://mtthardware.com/en/products/tools-wrenches.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools-wrenches.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mtthardware.com/en/products/tools-wrenches.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mtthardware.com/products/tools-wrenches.html"/>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2914.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150F.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS250E.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS150B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9806.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WM9810.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0304A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0306A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS1001.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0311A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0286B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS008C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0287A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0427A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0327B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0329A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0601.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0599.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0603.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0602.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0327AC.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0560U.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0560V.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS300J.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS005A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS007A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS007G.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0013A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WS0416.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0367.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2595C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0175.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2837.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2838C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W4567.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0293.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0474D.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0297.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0295.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0294.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0361A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0173A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0174A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0409.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0408.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W9918A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W9921A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W9925.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0439.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0199A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W9912A.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W2758B.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/WNS200J.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0172.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/T-SOHENG.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W0619C.webp</image:loc></image:image>
+    <image:image><image:loc>https://mtthardware.com/assets/img/tools/W3490B.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://mtthardware.com/products/tools.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools.html"/>
@@ -827,7 +1961,7 @@
   </url>
   <url>
     <loc>https://mtthardware.com/en/products/tools.html</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="th" href="https://mtthardware.com/products/tools.html"/>

@@ -48,6 +48,7 @@
   var row = el("div", "qrow");
   var toggle = el("button", "qtoggle"); toggle.type = "button"; toggle.setAttribute("aria-expanded", "false"); toggle.setAttribute("aria-controls", "qpanel");
   var send = el("a", "btn btn-line btn-sm qsend"); send.target = "_blank"; send.rel = "noopener";
+  send.href = (window.SHOP && SHOP.LINE_URL) || "#"; /* มี href ตั้งแต่สร้าง (ลิงก์ที่ไม่มี href = ลิงก์ที่ crawler/โปรแกรมอ่านจอข้าม) */
   row.appendChild(toggle); row.appendChild(send);
   bar.appendChild(panel); bar.appendChild(row);
   document.body.appendChild(bar);

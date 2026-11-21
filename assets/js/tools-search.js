@@ -31,7 +31,7 @@
       : "พบ " + found.length + " รายการ" + (found.length > MAX ? " แสดง " + MAX + " รายการแรก" : "");
     found.slice(0, MAX).forEach(function (x) {
       var cat = data.cats[x[4]];
-      var a = el("a"); a.href = "/products/" + cat[0] + "?q=" + encodeURIComponent(x[0]);
+      var a = el("a"); a.href = (window.CATALOG ? CATALOG.pageHref("/products/" + cat[0]) : "/products/" + cat[0]) + "?q=" + encodeURIComponent(x[0]);
       a.appendChild(el("b", "", x[0]));
       a.appendChild(el("span", "nm", (en() && x[2] ? x[2] : x[1]) + (x[3] ? " · " + x[3] : "")));
       a.appendChild(el("small", "", en() ? cat[2] : cat[1]));

@@ -5,7 +5,7 @@
    ============================================================ */
 import { writeFileSync } from "fs";
 import { bakeChrome } from "./_chrome.mjs";
-import { SITE, DATA, ARTICLE_DATA, esc, bi, mergeGroups, groupHTML, grpNavHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML, guideCardsHTML } from "./_gen-lib.mjs";
+import { SITE, DATA, ARTICLE_DATA, esc, bi, tr, assertTranslated, mergeGroups, groupHTML, grpNavHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML, guideCardsHTML } from "./_gen-lib.mjs";
 
 /* คู่มือที่เกี่ยวข้องท้ายหน้าหมวด (ลิงก์ในเนื้อหาจากหน้าสินค้าไปบทความ) — slug ต้องมีใน data/articles.json */
 const GUIDES = {
@@ -27,6 +27,7 @@ ${guideCardsHTML("../articles/", list)}
 
 const META = {
   holding: {
+    name_en: "Pliers, clamps & vises",
     file: "tools-holding.html",
     title: "คีม ประแจจับท่อ ปากกาจับชิ้นงาน WYNNTOOLS ราคาส่ง",
     desc: "คีมช่าง WYNNTOOLS ครบทุกแบบ — คีมปากรวม ปากแหลม ปากตัด คีมล็อค คีมหนีบแหวน ประแจจับท่อ ซีแคลมป์ ปากกาจับชิ้นงาน มีรหัสและสเปคครบ",
@@ -36,6 +37,7 @@ const META = {
     eyebrow_th: "หมวดจับยึด", eyebrow_en: "Holding tools",
   },
   wrenches: {
+    name_en: "Wrenches & sockets",
     file: "tools-wrenches.html",
     title: "ประแจ ลูกบล็อก ประแจแหวน WYNNTOOLS ครบทุกเบอร์",
     desc: "ประแจ WYNNTOOLS — ประแจเลื่อน ปากตายแหวนข้าง แหวนคู่ แหวนฟรี 72 เฟือง ลูกบล็อก ด้ามบล็อก ประแจหางหนู หกเหลี่ยม พร้อมรหัสและขนาดครบ",
@@ -45,6 +47,7 @@ const META = {
     eyebrow_th: "หมวดประแจ", eyebrow_en: "Wrenches",
   },
   electrical: {
+    name_en: "Electrical tools",
     file: "tools-electrical.html",
     title: "เครื่องมือช่างไฟฟ้า WYNNTOOLS คีมย้ำ มิเตอร์ หัวแร้ง",
     desc: "เครื่องมือช่างไฟ WYNNTOOLS — คีมตัด-ปอก-ย้ำสายไฟ คีมย้ำหางปลา คีมเข้าสายแลน มิเตอร์ดิจิตอล แคลมป์มิเตอร์ หัวแร้งบัดกรี ปืนลมร้อน",
@@ -54,6 +57,7 @@ const META = {
     eyebrow_th: "หมวดช่างไฟฟ้า", eyebrow_en: "Electrical tools",
   },
   automotive: {
+    name_en: "Automotive tools",
     file: "tools-automotive.html",
     title: "เครื่องมือช่างยนต์ WYNNTOOLS เหล็กดูด กากบาท อัดจารบี",
     desc: "เครื่องมือช่างยนต์ WYNNTOOLS — เหล็กดูด 3 ขา ถอดกรองน้ำมัน ประแจกากบาท เหล็กงัดยาง กระบอกอัดจารบี ปืนฉีดลม เกจวัดลมยาง โคมไฟซ่อมรถ",
@@ -63,6 +67,7 @@ const META = {
     eyebrow_th: "หมวดช่างยนต์", eyebrow_en: "Automotive tools",
   },
   screwdrivers: {
+    name_en: "Screwdrivers & bit sets",
     file: "tools-screwdrivers.html",
     title: "ไขควง WYNNTOOLS ไขควงตอก ชุดซ่อมมือถือ ดอกถอนเกลียว",
     desc: "ไขควง WYNNTOOLS — ไขควงตอกแม่เหล็ก ชุดไขควงเปลี่ยนหัว ชุดซ่อมคอม-มือถือ 22/34/45 ชิ้น หัวไขควงดอกสว่าน และดอกถอนเกลียวซ้าย",
@@ -72,6 +77,7 @@ const META = {
     eyebrow_th: "หมวดไขควง", eyebrow_en: "Screwdrivers",
   },
   cutting: {
+    name_en: "Bolt & cable cutters",
     file: "tools-cutting.html",
     title: "กรรไกรตัดเหล็กเส้น คีมตัดเคเบิล กรรไกรตัดสังกะสี WYNNTOOLS",
     desc: "เครื่องมือประเภทตัด WYNNTOOLS — กรรไกรตัดเหล็กเส้น 18–42 นิ้ว คีมตัดสายเคเบิลแบบล้อเฟือง คีมตัดลวดสลิง กรรไกรตัดสังกะสี พร้อมรหัสและสเปค",
@@ -81,6 +87,7 @@ const META = {
     eyebrow_th: "หมวดตัด", eyebrow_en: "Cutting tools",
   },
   cutter: {
+    name_en: "Utility knives, saws, files & drills",
     file: "tools-cutter.html",
     title: "คัตเตอร์ ตะไบ เลื่อยเหล็ก โฮลซอว์ ดอกสว่าน WYNNTOOLS",
     desc: "เครื่องมือประเภทคัตเตอร์ WYNNTOOLS — คัตเตอร์อเนกประสงค์ คีมตัดท่อ PVC ตะไบ เลื่อยเหล็ก ชุดโฮลซอว์ ดอกสว่านไฮสปีด ตัวตอกเลข พร้อมรหัสครบ",
@@ -90,6 +97,7 @@ const META = {
     eyebrow_th: "หมวดคัตเตอร์", eyebrow_en: "Cutter tools",
   },
   garden: {
+    name_en: "Garden tools",
     file: "tools-garden.html",
     title: "กรรไกรตัดกิ่ง กรรไกรตัดหญ้า เลื่อยพับ WYNNTOOLS ราคาส่ง",
     desc: "เครื่องมือการเกษตร WYNNTOOLS — กรรไกรตัดกิ่ง กรรไกรตัดกิ่งด้ามยาว กรรไกรตัดหญ้า เลื่อยพับ เลื่อยธนู ปืนฉีดน้ำ พร้อมรหัสและขนาดครบ",
@@ -99,15 +107,17 @@ const META = {
     eyebrow_th: "หมวดการเกษตร", eyebrow_en: "Garden tools",
   },
   striking: {
+    name_en: "Hammers, chisels & trowels",
     file: "tools-striking.html",
     title: "ค้อน ค้อนหงอน ค้อนปอนด์ สิ่ว เหล็กสกัด WYNNTOOLS",
     desc: "เครื่องมือทุบและตอก WYNNTOOLS — ค้อนหงอนด้ามไฟเบอร์ ค้อนปอนด์ ค้อนหัวกลม ค้อนยาง สิ่วไม้ ชุดเหล็กสกัด เกรียงโป๊ว พร้อมรหัสและน้ำหนักครบ",
     kw: "ค้อน, ค้อนหงอน, ค้อนปอนด์, ค้อนหัวกลม, ค้อนยาง, ค้อนไม้, สิ่วไม้, เหล็กสกัด, เกรียงโป๊ว, ตราสิงห์, WYNNTOOLS",
     lead_th: "ค้อนและเครื่องมือตอกครบทุกแบบ ค้อนหงอนด้ามไฟเบอร์กันลื่น ค้อนปอนด์ด้ามไฟเบอร์และด้ามสั้น ค้อนหัวกลม ค้อนไม้ตีกิฟ พร้อมสิ่วไม้ด้ามใส ชุดเหล็กสกัด 12 ชิ้น และเกรียงโป๊วสี — รวมค้อนตราสิงห์และตรา M.T.T. ของร้าน",
-    lead_en: "Hammers and striking tools of every kind: fibre-handle claw hammers, sledge and short-handle club hammers, round-head and mallet types, crystal-handle wood chisels, 12-piece cold chisel sets and putty knives — including the shop's own ตราสิงห์ and M.T.T. hammers.",
+    lead_en: "Hammers and striking tools of every kind: fibre-handle claw hammers, sledge and short-handle club hammers, round-head and mallet types, crystal-handle wood chisels, 12-piece cold chisel sets and putty knives — including the shop's own Lion-brand and M.T.T. hammers.",
     eyebrow_th: "หมวดทุบและตอก", eyebrow_en: "Striking tools",
   },
   measuring: {
+    name_en: "Levels, squares & rulers",
     file: "tools-measuring.html",
     title: "วัดระดับน้ำ ฉากผสม ลูกดิ่ง ไม้บรรทัดพับ WYNNTOOLS", /* เดิมขึ้นต้น "ตลับเมตร" แต่แคตตาล็อกไม่มีตลับเมตรเลย */
     desc: "เครื่องมือวัด WYNNTOOLS — วัดระดับน้ำอลูมิเนียมแบบแม่เหล็ก ไม้บรรทัดพับ 600 มม. ฉากผสม ฉากสามเหลี่ยมสแตนเลส ลูกดิ่ง พร้อมรหัสครบ",
@@ -117,6 +127,7 @@ const META = {
     eyebrow_th: "หมวดเครื่องมือวัด", eyebrow_en: "Measuring tools",
   },
   upholster: {
+    name_en: "Riveters, staplers & glue guns",
     file: "tools-upholster.html",
     title: "คีมย้ำรีเวท ปืนยิงกาว ปืนยิงแม็ก เข็มกลัด WYNNTOOLS",
     desc: "เครื่องมือแต่งบ้าน WYNNTOOLS — คีมย้ำรีเวทอลูมิเนียม ปืนยิงกาวซิลิโคน ค้อนยิงลวดแม็ก เลื่อยฉลุผนัง ถ้วยดูดกระจก และเข็มกลัดตรา M.T.T.",
@@ -126,6 +137,7 @@ const META = {
     eyebrow_th: "หมวดแต่งบ้าน", eyebrow_en: "Upholster tools",
   },
   soldering: {
+    name_en: "Tool storage & safety gear",
     file: "tools-soldering.html",
     title: "กล่องเครื่องมือ กระเป๋าเครื่องมือ แว่นเซฟตี้ WYNNTOOLS",
     desc: "กล่องเครื่องมือและอุปกรณ์เซฟตี้ WYNNTOOLS — กล่องเครื่องมือเหล็ก 14–18 นิ้ว กระเป๋าเครื่องมือผ้า แว่นตาเซฟตี้ใส ถุงมือเซฟตี้ พร้อมรหัสครบ",
@@ -135,6 +147,7 @@ const META = {
     eyebrow_th: "หมวดกล่องเครื่องมือ", eyebrow_en: "Tool storage & safety",
   },
   hydraulic: {
+    name_en: "Hydraulic tools",
     file: "tools-hydraulic.html",
     title: "คีมย้ำหางปลาไฮดรอลิค เหล็กดูดไฮดรอลิค WYNNTOOLS",
     desc: "เครื่องมือไฮดรอลิค WYNNTOOLS — ชุดคีมย้ำหางปลาไฮดรอลิค 8 ตัน ชุดเครื่องดูดลูกปืนมูเล่ย์ไฮดรอลิค และขาตั้งรถยนต์ พร้อมรหัสและสเปคครบ",
@@ -144,6 +157,7 @@ const META = {
     eyebrow_th: "หมวดไฮดรอลิค", eyebrow_en: "Hydraulic tools",
   },
   padlock: {
+    name_en: "Padlocks",
     file: "tools-padlock.html",
     title: "กุญแจสิงห์เงิน กุญแจสิงห์ทอง กุญแจคีย์อะไลค์ ตรา M.T.T.",
     desc: "กุญแจ MTT Hardware — กุญแจสิงห์เงินและสิงห์ทองระบบลูกปืน ไส้ทองเหลืองแท้ กุญแจคีย์อะไลค์ไขดอกเดียว กุญแจห่วงเฮง ครบทุกขนาด 20–60 มม.",
@@ -153,6 +167,7 @@ const META = {
     eyebrow_th: "หมวดกุญแจ", eyebrow_en: "Padlocks",
   },
   blades: {
+    name_en: "Knives, razor blades & scissors",
     file: "tools-blades.html",
     title: "มีดครัวตราสิงห์คู่ ใบมีดโกน กรรไกรตัดผม ตรา M.T.T.",
     desc: "ของมีคมใช้ในบ้าน MTT Hardware — มีดครัวตราสิงห์คู่ M.T.T. ใบมีดสแตนเลส 2 คม มีดโกน SPORTS กรรไกรตัดผม และกรรไกรซอยผม พร้อมรหัสครบ",
@@ -171,7 +186,7 @@ const BRAND = {
 };
 const brandOf = (id) => BRAND[id] || { th: "WYNNTOOLS", en: "WYNNTOOLS", eyebrow_th: "WYNNTOOLS (วินส์ทูลส์)", eyebrow_en: "WYNNTOOLS" };
 
-const NAV = Object.entries(META).map(([id, m]) => { const c = DATA.categories.find((c) => c.id === id); return { id, file: m.file, th: c?.th || id, en: c?.en || "" }; });
+const NAV = Object.entries(META).map(([id, m]) => { const c = DATA.categories.find((c) => c.id === id); return { id, file: m.file, th: c?.th || id, en: m.name_en }; });
 
 function page(cat) {
   const m = META[cat.id];
@@ -217,9 +232,9 @@ function page(cat) {
 <main id="main">
 <section class="t-hero${isMTT ? " mtt" : ""}">
   <div class="wrap">
-${crumbsHTML(`<a href="tools.html" data-th="เครื่องมือช่าง" data-en="Hand tools">เครื่องมือช่าง</a>`, cat.th)}
+${crumbsHTML(`<a href="tools.html" data-th="เครื่องมือช่าง" data-en="Hand tools">เครื่องมือช่าง</a>`, cat.th, m.name_en)}
     <span class="eyebrow" data-th="${esc(m.eyebrow_th)} · ${esc(b.eyebrow_th)}" data-en="${esc(m.eyebrow_en)} · ${esc(b.eyebrow_en)}">${esc(m.eyebrow_th)} · ${esc(b.eyebrow_th)}</span>
-    <h1>${bi(cat.th, cat.en)} ${bi(b.th, b.en)}</h1>
+    <h1>${bi(cat.th, m.name_en)} ${bi(b.th, b.en)}</h1>
     <p class="muted" data-th="${esc(m.lead_th)}" data-en="${esc(m.lead_en)}">${esc(m.lead_th)}</p>
     <div class="trust">
       <span class="badge">${total} ${bi("รายการ", "items")}</span>
@@ -229,9 +244,9 @@ ${isMTT
       <span class="badge" data-th="ราคาปลีก-ส่ง" data-en="Retail &amp; wholesale">ราคาปลีก-ส่ง</span>
       <span class="badge" data-th="ส่งทั่วไทย" data-en="Nationwide">ส่งทั่วไทย</span>
     </div>
-${isMTT ? `    <p class="brand-link"><a href="mtt-brand.html" data-th="ดูสินค้าตรา M.T.T. ทั้งหมด →" data-en="All M.T.T. brand products →">ดูสินค้าตรา M.T.T. ทั้งหมด →</a></p>\n` : ""}    <nav class="catnav" aria-label="หมวดเครื่องมือ">
+${isMTT ? `    <p class="brand-link"><a href="mtt-brand.html" data-th="ดูสินค้าตรา M.T.T. ทั้งหมด →" data-en="All M.T.T. brand products →">ดูสินค้าตรา M.T.T. ทั้งหมด →</a></p>\n` : ""}    <nav class="catnav" aria-label="หมวดเครื่องมือ" data-th-aria-label="หมวดเครื่องมือ" data-en-aria-label="Tool categories">
       <a href="tools.html" data-th="ทุกหมวด" data-en="All categories">ทุกหมวด</a>
-      <a class="on" aria-current="page" href="${m.file}" data-th="${esc(cat.th)}" data-en="${esc(cat.en || cat.th)}">${esc(cat.th)}</a>
+      <a class="on" aria-current="page" href="${m.file}" data-th="${esc(cat.th)}" data-en="${esc(m.name_en)}">${esc(cat.th)}</a>
 ${other.map((n) => `      <a href="${n.file}" data-th="${esc(n.th)}" data-en="${esc(n.en || n.th)}">${esc(n.th)}</a>`).join("\n")}
     </nav>
   </div>
@@ -241,12 +256,12 @@ ${other.map((n) => `      <a href="${n.file}" data-th="${esc(n.th)}" data-en="${
   <div class="wrap">
     <div class="findbar">
       <label class="vh" for="findInput" data-th="ค้นหาในหมวดนี้" data-en="Search this category">ค้นหาในหมวดนี้</label>
-      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น ${esc(groups[0].items[0].code)} หรือ ${esc(groups[0].items[0].th.split(/[\s(]/)[0])}" data-th-placeholder="ค้นรหัสหรือชื่อสินค้า เช่น ${esc(groups[0].items[0].code)} หรือ ${esc(groups[0].items[0].th.split(/[\s(]/)[0])}" data-en-placeholder="Search code or name, e.g. ${esc(groups[0].items[0].code)}">
+      <input id="findInput" type="search" autocomplete="off" placeholder="ค้นรหัสหรือชื่อสินค้า เช่น ${esc(groups[0].items[0].code)} หรือ ${esc(groups[0].items[0].th.split(/[\s(]/)[0])}" data-th-placeholder="ค้นรหัสหรือชื่อสินค้า เช่น ${esc(groups[0].items[0].code)} หรือ ${esc(groups[0].items[0].th.split(/[\s(]/)[0])}" data-en-placeholder="Search code or name, e.g. ${esc(/[\u0e00-\u0e7f]/.test(groups[0].items[0].code) ? (groups[0].items[0].en || "").toLowerCase() : groups[0].items[0].code)}">
       <div class="hit" id="findHit" hidden></div>
     </div>
 ${grpNavHTML(groups)}
 
-    <h2 class="vh">${esc(cat.th)} — ${total} รายการ</h2>
+    ${bi(`${cat.th} — ${total} รายการ`, `${m.name_en}: ${total} items`, "h2", "vh")}
 ${groups.map((g, i) => groupHTML(g, i, b.th)).join("\n\n")}
 
 ${guidesHTML(cat.id)}${ctaBandHTML("เจอรหัสที่ต้องการแล้ว? กดที่รหัสเพื่อถามราคา", "Found your item number? Tap it to ask price", `สอบถามราคา${b.th === "WYNNTOOLS" ? "เครื่องมือ WYNNTOOLS หมวด" : ""}${cat.th}`)}
@@ -271,9 +286,10 @@ for (const cat of DATA.categories) {
   if (!m) continue;
   writeFileSync("products/" + m.file, bakeChrome(page(cat)));
   const groups = mergeGroups(cat.groups);
-  const ci = index.cats.push([m.file, cat.th, cat.en || cat.th]) - 1;
+  const ci = index.cats.push([m.file, cat.th, m.name_en]) - 1;
   for (const g of groups) for (const x of g.items) index.items.push([x.code, x.th, x.en || "", x.size || "", ci]);
   made.push(`  products/${m.file}  ${cat.groups.reduce((n, g) => n + g.items.length, 0)} รายการ  ${cat.groups.length}→${groups.length} กลุ่ม  (title ${m.title.length} · desc ${m.desc.length})`);
 }
+assertTranslated("หน้าหมวดเครื่องมือ");
 writeFileSync("assets/search/tools-index.json", JSON.stringify(index));
 console.log("สร้างแล้ว " + made.length + " หน้า:\n" + made.join("\n"));

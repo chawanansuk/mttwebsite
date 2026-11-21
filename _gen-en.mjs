@@ -12,10 +12,8 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 
 export const SITE = "https://mtthardware.com";
-/* หน้าที่ยังไม่มีฉบับอังกฤษ: แคตตาล็อกเครื่องมือรายหมวดและหน้าตรา M.T.T.
-   ชื่อสินค้า/กลุ่ม/วัสดุราว 2,200 รายการยังไม่มีคำแปล — ต้องตรงกับ pageHref() ใน assets/js/catalog.js */
-export const EN_SKIP = /^\/products\/(tools-|mtt-brand)/;
-export const hasEn = (u) => !u.startsWith("/en") && u !== "/404.html" && !EN_SKIP.test(u);
+/* ทุกหน้ามีฉบับอังกฤษแล้ว (แคตตาล็อกเครื่องมือรายหมวดและหน้าตรา M.T.T. ได้ฉบับอังกฤษจาก data/en-tools.json) */
+export const hasEn = (u) => !u.startsWith("/en") && u !== "/404.html";
 export const enUrl = (u) => u === "/" ? "/en" : "/en" + u;
 export const urlToFile = (u) => u === "/" ? "index.html" : u === "/products" ? "products/index.html" : u === "/articles" ? "articles/index.html" : u.slice(1);
 /* หน้าไทยทั้งหมดที่จะมีฉบับอังกฤษ (อ่านจาก sitemap ที่ _gen-sitemap.mjs สร้าง) */

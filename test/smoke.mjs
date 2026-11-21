@@ -6,7 +6,7 @@
 import pw from "playwright";
 const { chromium } = pw;
 import http from "http";
-import { readFileSync, existsSync, statSync } from "fs";
+import { readFileSync, existsSync, statSync, readdirSync } from "fs";
 import { execSync } from "child_process";
 import { extname, join, resolve } from "path";
 import { useLocalFonts } from "./fonts.mjs";
@@ -593,8 +593,13 @@ console.log("\n[ หน้าอังกฤษ /en ]");
   assert(!stale.length, "หน้าอังกฤษตรงกับหน้าไทยล่าสุด (ไม่ค้างเวอร์ชันเก่า)" + (stale.length ? " → " + stale.join(", ") + " · รัน npm run bake" : ""));
   assert(!leftover.length, "หน้าอังกฤษไม่มีข้อความไทยที่ยังไม่แปล" + (leftover.length ? " → " + leftover.join(", ") : ""));
   assert(!noAlt.length, "หน้าไทยมี hreflang ชี้หน้าอังกฤษ" + (noAlt.length ? " → " + noAlt.join(", ") : ""));
-  const skipHasAlt = /hreflang=/.test(readFileSync(join(ROOT, "products/tools-wrenches.html"), "utf8"));
-  assert(!skipHasAlt, "แคตตาล็อกเครื่องมือรายหมวด (ยังไม่มีฉบับอังกฤษ) ไม่ประกาศ hreflang");
+  const toolEn = ["products/mtt-brand.html", ...readdirSync(join(ROOT, "products")).filter((f) => /^tools-.+\.html$/.test(f)).map((f) => "products/" + f)];
+  const toolNoEn = toolEn.filter((f) => !existsSync(join(ROOT, "en", f)) || !readFileSync(join(ROOT, f), "utf8").includes(`hreflang="en" href="https://mtthardware.com/en/${f}"`));
+  assert(toolEn.length === 16 && !toolNoEn.length, `แคตตาล็อกเครื่องมือ 15 หมวด + หน้าตรา M.T.T. มีฉบับอังกฤษและ hreflang ครบ` + (toolNoEn.length ? " → " + toolNoEn.join(", ") : ""));
+  /* image sitemap: รูปทุกรูปที่ประกาศมีไฟล์จริง */
+  const imgLocs = [...readFileSync(join(ROOT, "sitemap.xml"), "utf8").matchAll(/<image:loc>https:\/\/mtthardware\.com([^<]+)<\/image:loc>/g)].map((m) => decodeURI(m[1]));
+  const imgMissing = imgLocs.filter((p) => !existsSync(join(ROOT, p)));
+  assert(imgLocs.length >= 400 && !imgMissing.length, `image sitemap มีรูป ${imgLocs.length} รายการ และทุกรูปมีไฟล์จริง` + (imgMissing.length ? " → " + imgMissing.slice(0, 3).join(", ") : ""));
 
   /* เปิดจริงทุกหน้า: ไม่มี JS error, รูปทุกรูปโหลดได้, ลิงก์ภายในไม่หลุดไปโฟลเดอร์ /en ที่ไม่มีไฟล์ */
   const errs = [], badImg = [], badLink = [];
@@ -638,18 +643,17 @@ console.log("\n[ หน้าอังกฤษ /en ]");
   {
     const page = await newPage({ width: 1280, height: 900 });
     await page.goto(base + "/products/tools-wrenches.html", { waitUntil: "load" });
-    await page.click(".lang button[data-lang=en]");
-    await page.waitForTimeout(200);
-    assert(page.url().endsWith("/products/tools-wrenches.html") && (await page.evaluate(() => document.documentElement.lang)) === "en",
-      "หน้าที่ยังไม่มีฉบับอังกฤษ กด EN แล้วสลับภาษาในหน้าเดิม");
+    await Promise.all([page.waitForURL("**/en/products/tools-wrenches.html"), page.click(".lang button[data-lang=en]")]);
+    assert(page.url().endsWith("/en/products/tools-wrenches.html") && (await page.evaluate(() => document.documentElement.lang)) === "en",
+      "แคตตาล็อกเครื่องมือ: กด EN แล้วไปหน้า /en/products/tools-wrenches.html");
     await page.close();
   }
   {
     const page = await newPage({ width: 1280, height: 900 });
     await page.goto(base + "/en", { waitUntil: "load" });
     const hrefs = await page.$$eval("#featGrid a", (as) => as.map((a) => a.getAttribute("href")));
-    assert(hrefs.length >= 4 && hrefs.filter((h) => h.startsWith("/en/")).length >= 3 && hrefs.includes("/products/mtt-brand.html"),
-      "การ์ดหน้าแรกอังกฤษ (วาดด้วย JS) ชี้ /en ส่วนหน้าตรา M.T.T. ชี้หน้าไทย");
+    assert(hrefs.length >= 4 && hrefs.every((h) => h.startsWith("/en/")),
+      "การ์ดหน้าแรกอังกฤษ (วาดด้วย JS) ชี้หน้า /en ทุกใบ รวมหน้าตรา M.T.T.");
     await page.close();
   }
 }

@@ -6,7 +6,7 @@
    ============================================================ */
 import { writeFileSync } from "fs";
 import { bakeChrome } from "./_chrome.mjs";
-import { SITE, DATA, esc, bi, groupHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML, guideCardsHTML } from "./_gen-lib.mjs";
+import { SITE, DATA, esc, bi, assertTranslated, groupHTML, headHTML, scriptsHTML, crumbsHTML, ctaBandHTML, guideCardsHTML } from "./_gen-lib.mjs";
 
 const FILE = "mtt-brand.html";
 const URL = `${SITE}/products/${FILE}`;
@@ -116,7 +116,7 @@ const html = `${head}
 <main id="main">
 <section class="t-hero mtt">
   <div class="wrap">
-${crumbsHTML(`<a href="/products" data-th="สินค้า" data-en="Products">สินค้า</a>`, "สินค้าตรา M.T.T.")}
+${crumbsHTML(`<a href="/products" data-th="สินค้า" data-en="Products">สินค้า</a>`, "สินค้าตรา M.T.T.", "M.T.T. brand products")}
     <div class="hero-grid">
       <div>
         <span class="eyebrow" data-th="แบรนด์ของร้านเอง · MTT Hardware" data-en="Our own brand · MTT Hardware">แบรนด์ของร้านเอง · MTT Hardware</span>
@@ -127,11 +127,11 @@ ${crumbsHTML(`<a href="/products" data-th="สินค้า" data-en="Products
           <span class="badge" data-th="ราคาปลีก-ส่ง" data-en="Retail &amp; wholesale">ราคาปลีก-ส่ง</span>
           <span class="badge" data-th="ส่งทั่วไทย" data-en="Nationwide">ส่งทั่วไทย</span>
         </div>
-        <nav class="grpnav" aria-label="หมวดสินค้าตรา M.T.T.">
+        <nav class="grpnav" aria-label="หมวดสินค้าตรา M.T.T." data-th-aria-label="หมวดสินค้าตรา M.T.T." data-en-aria-label="M.T.T. product sections">
 ${SECTIONS.filter((s) => bySection[s.key].length).map((s) => `          <a href="#${s.key}"><span aria-hidden="true">${s.icon}</span> ${bi(s.th, s.en)}</a>`).join("\n")}
         </nav>
       </div>
-      <div class="hero-pic"><img src="../assets/img/products/mtt-brand.webp" srcset="../assets/img/products/mtt-brand-640.webp 640w, ../assets/img/products/mtt-brand.webp 1200w" sizes="(max-width:860px) calc(100vw - 44px), 480px" alt="สินค้าตรา M.T.T. ตราสิงโต — กุญแจ เข็มกลัด ประแจเลื่อน ปืนยิงกาว" width="1200" height="900" fetchpriority="high"></div>
+      <div class="hero-pic"><img src="../assets/img/products/mtt-brand.webp" srcset="../assets/img/products/mtt-brand-640.webp 640w, ../assets/img/products/mtt-brand.webp 1200w" sizes="(max-width:860px) calc(100vw - 44px), 480px" alt="สินค้าตรา M.T.T. ตราสิงโต — กุญแจ เข็มกลัด ประแจเลื่อน ปืนยิงกาว" data-th-alt="สินค้าตรา M.T.T. ตราสิงโต — กุญแจ เข็มกลัด ประแจเลื่อน ปืนยิงกาว" data-en-alt="M.T.T. lion-brand products: padlocks, safety pins, adjustable wrenches, caulking guns" width="1200" height="900" fetchpriority="high"></div>
     </div>
 
     <h2 class="vh" data-th="ทำไมต้องสินค้าตรา M.T.T." data-en="Why M.T.T. brand">ทำไมต้องสินค้าตรา M.T.T.</h2>
@@ -170,6 +170,7 @@ ${scriptsHTML("products")}
 </html>
 `;
 
+assertTranslated("หน้าสินค้าตรา M.T.T.");
 writeFileSync("products/" + FILE, bakeChrome(html));
 console.log(`สร้าง products/${FILE} — ${total} รายการ (title ${TITLE.length} · desc ${DESC.length})`);
 for (const s of SECTIONS) console.log(`  ${s.th}: ${bySection[s.key].reduce((m, g) => m + g.items.length, 0)}`);

@@ -2,7 +2,8 @@
    รันด้วย: node _gen-sitemap.mjs  (อยู่ใน npm run gen)
    เดิมแก้มือแล้วลืมอัปเดต 24/41 URL เก่ากว่าของจริง Google จะเลิกเชื่อ lastmod ทั้งไฟล์ */
 import { execSync } from "child_process";
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, existsSync } from "fs";
+import { posix } from "path";
 import { globSync } from "fs";
 import { hasEn, enUrl } from "./_gen-en.mjs";
 
@@ -30,15 +31,35 @@ const rule = (f) => {
 const loc = (f) => f === "index.html" ? `${SITE}/` : /^(products|articles)\/index\.html$/.test(f) ? `${SITE}/${f.split("/")[0]}` : `${SITE}/${f}`;
 
 const files = globSync("{index,privacy}.html").concat(globSync("products/*.html"), globSync("articles/*.html")).sort();
+/* image sitemap: รูปสินค้าที่อยู่ใน HTML ของหน้า (ไม่นับไอคอน svg) — ใช้ไฟล์ขนาดเต็มแทนรูปย่อ -sm/-640
+   ช่วยให้ Google Images เก็บรูปเครื่องมือราว 500 รูปที่ส่วนใหญ่อยู่ลึกในตารางยาว */
+const xmlEsc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+function imagesOf(f) {
+  const html = readFileSync(f, "utf8").replace(/<script\b[\s\S]*?<\/script>/g, "");
+  const dir = posix.dirname(f), out = new Set();
+  for (const m of html.matchAll(/<img\b[^>]*?\ssrc="([^"$]+)"|<a\b[^>]*?\shref="([^"$]*assets\/img\/[^"]+\.(?:webp|png|jpe?g))"/g)) {
+    const raw = (m[1] || m[2]).split("?")[0];
+    if (/^(https?:|data:)/.test(raw)) continue;
+    let p = raw.startsWith("/") ? raw.slice(1) : posix.normalize(posix.join(dir, raw));
+    if (!p.startsWith("assets/img/") || /\.svg$|apple-touch|favicon|\/og\//.test(p)) continue;
+    const full = p.replace(/-(?:sm|640)\.webp$/, ".webp");
+    if (full !== p && existsSync(full)) p = full;
+    if (existsSync(p)) out.add(p);
+  }
+  return [...out];
+}
+const imgXml = (imgs) => imgs.map((p) => `    <image:image><image:loc>${xmlEsc(SITE + encodeURI("/" + p))}</image:loc></image:image>\n`).join("");
+let nImg = 0;
 /* หน้าที่มีฉบับอังกฤษ (/en/...): ทั้งสองภาษาประกาศ hreflang หากันใน sitemap ด้วย */
-const entry = (u, mod, cf, pr, alt) => `  <url>\n    <loc>${SITE}${u}</loc>\n    <lastmod>${mod}</lastmod>\n    <changefreq>${cf}</changefreq>\n    <priority>${pr}</priority>\n${alt}  </url>`;
+const entry = (u, mod, cf, pr, alt, imgs = "") => `  <url>\n    <loc>${SITE}${u}</loc>\n    <lastmod>${mod}</lastmod>\n    <changefreq>${cf}</changefreq>\n    <priority>${pr}</priority>\n${alt}${imgs}  </url>`;
 const alts = (u) => ["th", u, "en", enUrl(u), "x-default", u].reduce((s, v, k, a) => k % 2 ? s : s + `    <xhtml:link rel="alternate" hreflang="${v}" href="${SITE}${a[k + 1]}"/>\n`, "");
 let n = 0;
 const urls = files.flatMap((f) => {
   const [cf, pr] = rule(f); const u = loc(f).slice(SITE.length) || "/"; const mod = lastmod(f);
-  if (!hasEn(u)) { n++; return [entry(u, mod, cf, pr, "")]; }
+  const imgs = imagesOf(f); nImg += imgs.length; const ix = imgXml(imgs);
+  if (!hasEn(u)) { n++; return [entry(u, mod, cf, pr, "", ix)]; }
   n += 2;
-  return [entry(u, mod, cf, pr, alts(u)), entry(enUrl(u), mod, cf, pr, alts(u))];
+  return [entry(u, mod, cf, pr, alts(u), ix), entry(enUrl(u), mod, cf, pr, alts(u), ix)];
 });
-writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join("\n")}\n</urlset>\n`);
-console.log(`sitemap.xml: ${n} URL`);
+writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${urls.join("\n")}\n</urlset>\n`);
+console.log(`sitemap.xml: ${n} URL · รูป ${nImg} รายการ`);

@@ -18,6 +18,29 @@ export const slug = (c) => String(c).replace(/\//g, "-");
 export const bi = (th, en, tag = "span", cls = "") =>
   `<${tag}${cls ? ` class="${cls}"` : ""} data-th="${esc(th)}" data-en="${esc(en || th)}">${esc(th)}</${tag}>`;
 
+/* ---------- คำแปลข้อความในแคตตาล็อก (วัสดุ ขนาด จำนวนบรรจุ โน้ต) ----------
+   data/en-tools.json = { "ข้อความไทย": "English" } ใช้ทำหน้าหมวดเครื่องมือฉบับอังกฤษ (/en/products/tools-*.html)
+   ข้อความที่ต่อกันด้วย " · " (โน้ตที่ mergeGroups รวมมา) แปลทีละท่อน
+   ไม่มีคำแปล → build ล้มพร้อมรายการ (ห้ามปล่อยไทยไปหน้าอังกฤษเงียบ ๆ) */
+const TR = JSON.parse(readFileSync("data/en-tools.json", "utf8"));
+const THAI_RE = /[\u0e00-\u0e7f]/;
+export const TR_MISSING = new Set();
+export function tr(s) {
+  if (s == null || s === "") return s;
+  return String(s).split(" · ").map((p) => {
+    const k = p.trim();
+    if (!THAI_RE.test(k)) return p;
+    if (TR[k] == null) { TR_MISSING.add(k); return p; }
+    return TR[k];
+  }).join(" · ");
+}
+export function assertTranslated(where) {
+  if (!TR_MISSING.size) return;
+  throw new Error(`${where}: ข้อความไทย ${TR_MISSING.size} ข้อความยังไม่มีคำแปลใน data/en-tools.json\n  ` + [...TR_MISSING].slice(0, 20).join("\n  "));
+}
+/* รหัสสินค้าที่เป็นภาษาไทย (เช่น กุญแจสิงห์เงิน-30S) คือรหัสที่ร้านใช้จริง ไม่แปล แต่ติด lang="th" */
+const langTh = (s) => THAI_RE.test(s || "") ? ' lang="th"' : "";
+
 /* ---------- บทความ (data/articles.json) ---------- */
 /* การ์ดบทความ ใช้ร่วมกันที่หน้าแรก หน้ารวมบทความ และหน้าสินค้าตรา M.T.T.
    prefix = path ไปโฟลเดอร์ articles/ จากหน้าที่วางการ์ด */
@@ -125,27 +148,30 @@ export function rows(items, cols, brandTh = "WYNNTOOLS", groupTh = null) {
     f.items.forEach((x, xi) => {
       const lead = xi === 0;
       const brand = x.brand === "MTT" ? "ตรา M.T.T." : brandTh;
+      const brandEn = brand === "ตรา M.T.T." ? "M.T.T. brand" : brand;
+      const altTh = `${x.th}${oneSharedPic ? "" : " " + x.code} ${brand}`;
+      const altEn = `${x.en || x.th}${oneSharedPic || THAI_RE.test(x.code) ? "" : " " + x.code} ${brandEn}`;
       const ask = `สอบถามราคา ${x.code} ${x.th}${x.size ? " (" + x.size + ")" : ""}`;
       /* แสดงรูปที่ "แถวแรกที่ใช้ไฟล์นั้น" — โรงงานถ่ายรูปเดียวใช้หลายเบอร์ ถ้าวางทุกแถวจะกลายเป็น
          แถว 8 มม. โชว์รูปประแจ 19 มม. แต่ถ้าให้เฉพาะแถวหัวก็จะซ่อนรูปของแถวอื่นที่มีรูปของตัวเองทิ้ง */
       const showPic = !!x.img && !shownImgs.has(x.img);
       if (x.img) shownImgs.add(x.img);
       const pic = !cols.pic ? "" : (showPic
-        ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(x.th)}${oneSharedPic ? "" : " " + esc(x.code)} ${esc(brand)}" width="320" height="240" loading="lazy"></a></td>`
+        ? `\n            <td class="pic"><a href="../${x.img}" target="_blank" rel="noopener" aria-label="ดูรูปใหญ่ ${esc(x.code)}" data-th-aria-label="ดูรูปใหญ่ ${esc(x.code)}" data-en-aria-label="View larger photo${THAI_RE.test(x.code) ? "" : " " + esc(x.code)}"><img src="../${x.img.replace(".webp", "-sm.webp")}" alt="${esc(altTh)}" data-th-alt="${esc(altTh)}" data-en-alt="${esc(altEn)}" width="320" height="240" loading="lazy"></a></td>`
         : `\n            <td class="pic"></td>`);
       const famnote = (lead && oneSharedPic && sizes.size > 1) ? `<div class="famnote" data-th="${FAMNOTE_TH}" data-en="${FAMNOTE_EN}">${FAMNOTE_TH}</div>` : "";
-      const note = (x.notes_th && (!sharedNote || lead)) ? `<div class="note">${esc(x.notes_th)}</div>` : "";
+      const note = (x.notes_th && (!sharedNote || lead)) ? bi(x.notes_th, tr(x.notes_th), "div", "note") : "";
       const pin = pinPage(x);
       const pinlink = pin ? `<a class="nmlink" href="${pin}" data-th="ดูหน้าเบอร์ ${esc(x.code.split("-")[1])} พร้อมราคา →" data-en="Size ${esc(x.code.split("-")[1])} page with prices →">ดูหน้าเบอร์ ${esc(x.code.split("-")[1])} พร้อมราคา →</a>` : "";
       /* กลุ่มรายการเดียวที่ชื่อสินค้าตรงกับหัวกลุ่มอยู่แล้ว ไม่ต้องพิมพ์ซ้ำในแถว (เปลืองสองบรรทัดต่อสินค้า) */
       const dupOfGroup = items.length === 1 && groupTh && x.th === groupTh;
       const nameHTML = (lead && !dupOfGroup) ? `<b data-th="${esc(x.th)}" data-en="${esc(x.en || x.th)}">${esc(x.th)}</b><small data-th="${esc(x.en || "")}" data-en="${esc(x.en ? x.th : "")}">${esc(x.en || "")}</small>` : "";
       out.push(`          <tr${lead ? ' class="fam-lead"' : ""} data-fam="${fi}" data-nth="${esc(x.th)}" data-nen="${esc(x.en || "")}">${pic}
-            <td class="code"><a data-line-ask="${esc(ask)}" href="#" target="_blank" rel="noopener">${esc(x.code)}</a></td>
+            <td class="code"><a data-line-ask="${esc(ask)}" href="#" target="_blank" rel="noopener"${langTh(x.code)}>${esc(x.code)}</a></td>
             <td class="nm"><span class="nmtxt">${nameHTML}</span>${famnote}${note}${pinlink}</td>${cols.size ? `
-            <td class="sz">${esc(x.size || "")}</td>` : ""}${cols.pcs ? `
-            <td class="pcs">${esc(x.pcs || "")}</td>` : ""}${cols.mat ? `
-            <td class="mat">${esc(x.mat || "")}</td>` : ""}
+            ${bi(x.size || "", tr(x.size || ""), "td", "sz")}` : ""}${cols.pcs ? `
+            ${bi(x.pcs || "", tr(x.pcs || ""), "td", "pcs")}` : ""}${cols.mat ? `
+            ${bi(x.mat || "", tr(x.mat || ""), "td", "mat")}` : ""}
           </tr>`);
     });
   });
@@ -155,12 +181,12 @@ export function rows(items, cols, brandTh = "WYNNTOOLS", groupTh = null) {
 /* หนึ่งกลุ่ม = หัวข้อ + วัสดุ + โน้ต + ตาราง (+ HTML ต่อท้าย เช่น ลิงก์กลับหมวดเดิมในหน้า M.T.T.) */
 export function groupHTML(g, i, brandTh = "WYNNTOOLS", after = "") {
   const cols = columns(g.items);
-  const notes = (g.notes_th || []).map((n) => `<li>${esc(n)}</li>`).join("");
+  const notes = (g.notes_th || []).map((n) => bi(n, tr(n), "li")).join("");
   const n = g.items.length;
   return `    <h3 class="grp-h" id="g${i}">${bi(g.th, g.en)} ${g.en ? `<span class="ge" data-th="${esc(g.en)}" data-en="${esc(g.th)}">${esc(g.en)}</span>` : ""} <em>${n} ${bi("รายการ", "items")}</em></h3>
-${g.mat ? `    <p class="grp-mat">${bi("วัสดุ", "Material")}: ${esc(g.mat)}</p>\n` : ""}${notes ? `    <ul class="grp-notes">${notes}</ul>\n` : ""}    <div class="tblwrap" id="tw${i}" style="--rows:${n}" tabindex="0" role="region" aria-label="${esc(g.th)}">
+${g.mat ? `    <p class="grp-mat">${bi("วัสดุ", "Material")}: ${bi(g.mat, tr(g.mat))}</p>\n` : ""}${notes ? `    <ul class="grp-notes">${notes}</ul>\n` : ""}    <div class="tblwrap" id="tw${i}" style="--rows:${n}" tabindex="0" role="region" aria-label="${esc(g.th)}" data-th-aria-label="${esc(g.th)}" data-en-aria-label="${esc(g.en || g.th)}">
       <table class="tools${cols.pic ? " haspic" : ""}">
-        <caption class="vh">${esc(g.th)}</caption>
+        ${bi(g.th, g.en, "caption", "vh")}
         <thead><tr>
 ${cols.pic ? `          <th scope="col" class="pic">${bi("รูป", "Photo")}</th>\n` : ""}          <th scope="col">${bi("รหัส", "Item no.")}</th>
           <th scope="col">${bi("ชื่อสินค้า", "Product")}</th>
@@ -173,9 +199,9 @@ ${rows(g.items, cols, brandTh, g.th)}
 }
 
 /* สารบัญกลุ่มในหน้า — หน้า cutter มี 48 กลุ่มยาว 23,000px แต่ไม่มีทางกระโดด ทั้งที่ h3 มี id อยู่แล้ว */
-export function grpNavHTML(groups, label = "กลุ่มสินค้าในหมวดนี้") {
+export function grpNavHTML(groups, label = "กลุ่มสินค้าในหมวดนี้", labelEn = "Product groups in this category") {
   if (groups.length < 4) return "";
-  return `    <nav class="grpnav" aria-label="${esc(label)}">
+  return `    <nav class="grpnav" aria-label="${esc(label)}" data-th-aria-label="${esc(label)}" data-en-aria-label="${esc(labelEn)}">
 ${groups.map((g, i) => `      <a href="#g${i}">${bi(g.th, g.en)} <small>${g.items.length}</small></a>`).join("\n")}
     </nav>`;
 }
@@ -226,8 +252,8 @@ export function scriptsHTML(page) {
 }
 
 /* breadcrumb ที่มองเห็น — ลิงก์หน้าแรกใช้ "/" ให้ตรง canonical (เดิม ../index.html ทำให้ Google เห็น 2 URL) */
-export function crumbsHTML(mid, last) {
-  return `    <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › ${mid} › <span>${esc(last)}</span></nav>`;
+export function crumbsHTML(mid, last, lastEn) {
+  return `    <nav class="crumbs" aria-label="breadcrumb"><a href="/" data-th="หน้าแรก" data-en="Home">หน้าแรก</a> › ${mid} › ${bi(last, lastEn || last)}</nav>`;
 }
 
 export function ctaBandHTML(h2th, h2en, ask) {

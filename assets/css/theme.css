@@ -346,7 +346,7 @@ html[lang="en"] .gcard .tag{letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:900px){.guide-grid{grid-template-columns:1fr;gap:10px}.gcard{padding:16px}}
 
 /* ---------- รายการขอราคา (assets/js/quote-list.js) ---------- */
-.qadd{display:inline-grid;place-items:center;width:32px;height:32px;margin-left:8px;vertical-align:middle;border:1px solid var(--line-strong);border-radius:var(--radius-full);background:var(--surface);color:var(--ink-2);font:inherit;font-weight:700;line-height:1;cursor:pointer}
+.qadd{display:inline-grid;place-items:center;width:32px;height:32px;margin-left:14px;vertical-align:middle;border:1px solid var(--line-strong);border-radius:var(--radius-full);background:var(--surface);color:var(--ink-2);font:inherit;font-weight:700;line-height:1;cursor:pointer}
 .qadd:hover{border-color:var(--amber);color:var(--amber-dark)}
 .qadd[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
 .qbar{position:fixed;right:16px;bottom:16px;z-index:124;width:min(440px,calc(100vw - 32px));background:var(--surface);border:1px solid var(--line-strong);border-radius:var(--radius);box-shadow:0 10px 30px rgba(16,26,48,.22)}

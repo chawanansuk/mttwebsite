@@ -174,13 +174,12 @@ window.CATALOG = (function () {
     if (p.image) return '<img src="' + base + p.image + '"' + srcset + alt + ' width="1200" height="900"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + '>';
     return '<span class="glyph">' + (p.glyph || "📦") + '</span>';
   }
-  /* ลิงก์หน้าเว็บจากการ์ดที่ JS สร้าง: หน้า /en ต้องชี้ไปหน้า /en ด้วย
-     ยกเว้นแคตตาล็อกเครื่องมือรายหมวดและหน้าตรา M.T.T. ที่ยังไม่มีฉบับอังกฤษ (ต้องตรงกับ EN_SKIP ใน _gen-en.mjs) */
+  /* ลิงก์หน้าเว็บจากการ์ดที่ JS สร้าง: หน้า /en ต้องชี้ไปหน้า /en ด้วย (ทุกหน้ามีฉบับอังกฤษแล้ว) */
   function pageHref(u) {
     if (/^(https?:|#)/.test(u)) return u;
     var abs = u.charAt(0) === "/" ? u : "/" + u;
     var en = document.documentElement.getAttribute("data-page-lang") === "en";
-    if (!en || /^\/products\/(tools-|mtt-brand)/.test(abs)) return abs;
+    if (!en) return abs;
     return abs === "/" ? "/en" : "/en" + abs;
   }
 
