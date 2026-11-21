@@ -596,6 +596,11 @@ console.log("\n[ หน้าอังกฤษ /en ]");
   const toolEn = ["products/mtt-brand.html", ...readdirSync(join(ROOT, "products")).filter((f) => /^tools-.+\.html$/.test(f)).map((f) => "products/" + f)];
   const toolNoEn = toolEn.filter((f) => !existsSync(join(ROOT, "en", f)) || !readFileSync(join(ROOT, f), "utf8").includes(`hreflang="en" href="https://mtthardware.com/en/${f}"`));
   assert(toolEn.length === 16 && !toolNoEn.length, `แคตตาล็อกเครื่องมือ 15 หมวด + หน้าตรา M.T.T. มีฉบับอังกฤษและ hreflang ครบ` + (toolNoEn.length ? " → " + toolNoEn.join(", ") : ""));
+  /* redirect ใน vercel.json ต้องไม่ดักหน้าอังกฤษที่มีไฟล์จริง (เคยมี redirect ชั่วคราว /en/products/tools-* → หน้าไทย ค้างอยู่) */
+  const VJ = JSON.parse(readFileSync(join(ROOT, "vercel.json"), "utf8"));
+  const toRe = (src) => new RegExp("^" + src.replace(/\./g, "\\.").replace(/:[a-z]+\(([^)]*)\)/g, "($1)").replace(/:[a-z]+\*?/g, "[^/]+") + "$");
+  const shadowed = enLocs.filter((u) => (VJ.redirects || []).some((r) => toRe(r.source).test(u)));
+  assert(!shadowed.length, "ไม่มี redirect ใน vercel.json ดักหน้า /en ที่มีอยู่จริง" + (shadowed.length ? " → " + shadowed.slice(0, 5).join(", ") : ""));
   /* image sitemap: รูปทุกรูปที่ประกาศมีไฟล์จริง */
   const imgLocs = [...readFileSync(join(ROOT, "sitemap.xml"), "utf8").matchAll(/<image:loc>https:\/\/mtthardware\.com([^<]+)<\/image:loc>/g)].map((m) => decodeURI(m[1]));
   const imgMissing = imgLocs.filter((p) => !existsSync(join(ROOT, p)));

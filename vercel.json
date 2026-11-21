@@ -117,16 +117,6 @@
       "permanent": true
     },
     {
-      "source": "/en/products/tools-:rest",
-      "destination": "/products/tools-:rest",
-      "permanent": false
-    },
-    {
-      "source": "/en/products/mtt-brand.html",
-      "destination": "/products/mtt-brand.html",
-      "permanent": false
-    },
-    {
       "source": "/en/products/:slug([a-z0-9-]+)",
       "destination": "/en/products/:slug.html",
       "permanent": true
